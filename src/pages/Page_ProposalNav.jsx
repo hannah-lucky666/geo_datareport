@@ -52,7 +52,7 @@ export default function Page_ProposalNav() {
               </p>
             </div>
 
-            <div className="w-4/5 h-px bg-zinc-200 mt-4" />
+            <div className="w-4/5 h-[2px] bg-gradient-to-r from-[#004CE5]/25 via-[#004CE5]/5 to-transparent mt-4" />
           </div>
 
           <div className="flex flex-col gap-3">

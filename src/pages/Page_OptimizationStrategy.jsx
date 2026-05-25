@@ -50,25 +50,25 @@ export default function Page_OptimizationStrategy() {
 
           let cardBg = "from-blue-50/80 to-indigo-50/40 border-blue-200/80";
           let badgeBg = "bg-[#004CE5] shadow-[0_4px_12px_rgba(0,76,229,0.25)]";
-          let watermarkColor = "text-blue-500/[0.08]";
+          let watermarkGradient = "from-blue-500/[0.28] via-blue-400/[0.1] to-transparent";
           
           if (isGreen) {
             cardBg = "from-emerald-50/80 to-teal-50/40 border-emerald-200/80";
             badgeBg = "bg-emerald-600 shadow-[0_4px_12px_rgba(5,150,105,0.25)]";
-            watermarkColor = "text-emerald-500/[0.08]";
+            watermarkGradient = "from-emerald-500/[0.28] via-emerald-400/[0.1] to-transparent";
           } else if (isPurple) {
             cardBg = "from-purple-50/80 to-pink-50/40 border-purple-200/80";
             badgeBg = "bg-purple-600 shadow-[0_4px_12px_rgba(147,51,234,0.25)]";
-            watermarkColor = "text-purple-500/[0.08]";
+            watermarkGradient = "from-purple-500/[0.28] via-purple-400/[0.1] to-transparent";
           }
 
           return (
             <div 
               key={idx} 
-              className={`relative rounded-[2rem] border bg-gradient-to-br ${cardBg} p-8 shadow-[0_12px_35px_rgba(15,23,42,0.02)] flex flex-col justify-start overflow-y-auto custom-scrollbar group hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(15,23,42,0.06)] transition-all duration-500`}
+              className={`relative rounded-[2rem] border bg-gradient-to-br ${cardBg} p-8 shadow-[0_12px_35px_rgba(15,23,42,0.02)] flex flex-col justify-start overflow-hidden group hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(15,23,42,0.06)] transition-all duration-500`}
             >
-              {/* Giant Number Watermark */}
-              <span className={`absolute -top-6 -right-2 text-[10rem] font-black ${watermarkColor} font-['Montserrat',sans-serif] select-none group-hover:scale-105 transition-transform duration-500`}>
+              {/* Giant Number Watermark centered at the bottom of the card with a fading gradient effect */}
+              <span className={`absolute -bottom-24 left-1/2 -translate-x-1/2 text-[17rem] font-black font-['Montserrat',sans-serif] select-none bg-gradient-to-t ${watermarkGradient} bg-clip-text text-transparent leading-none pointer-events-none group-hover:scale-105 group-hover:-bottom-20 transition-all duration-700`}>
                 {strategy.num}
               </span>
 
@@ -90,23 +90,6 @@ export default function Page_OptimizationStrategy() {
           );
         })}
       </div>
-
-      <style dangerouslySetInnerHTML={{
-        __html: `
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: rgba(0, 0, 0, 0.1);
-          border-radius: 4px;
-        }
-        .custom-scrollbar:hover::-webkit-scrollbar-thumb {
-          background: rgba(0, 0, 0, 0.2);
-        }
-      `}} />
     </div>
   );
 }
