@@ -11,12 +11,12 @@ export default function Page_ProposalChapterCover({
     const chapterNum = String(chapterIndex + 1).padStart(2, '0');
 
     return (
-        <div className="w-full h-full relative overflow-hidden bg-black">
+        <div className="w-full h-full relative overflow-hidden bg-gradient-to-br from-slate-50 via-zinc-100 to-white">
 
             {/* ── 背景图 ── */}
             {bgImage && (
                 <div
-                    className="absolute inset-0 bg-cover bg-center z-0"
+                    className="absolute inset-0 bg-cover bg-center z-0 opacity-15 mix-blend-multiply"
                     style={{ backgroundImage: `url(${bgImage})` }}
                 />
             )}
@@ -26,9 +26,9 @@ export default function Page_ProposalChapterCover({
                 className="absolute flex items-center gap-[16px]"
                 style={{ top: '38px', right: '93px' }}
             >
-                <div className="h-[1px] bg-white/30" style={{ width: '200px' }} />
+                <div className="h-[1px] bg-zinc-800/20" style={{ width: '200px' }} />
                 <span
-                    className="text-white font-light"
+                    className="text-zinc-800 font-light"
                     style={{ fontSize: '26px', letterSpacing: '0.3em', fontFamily: "'Montserrat', sans-serif" }}
                 >
                     {brandLabel}
@@ -38,7 +38,7 @@ export default function Page_ProposalChapterCover({
             {/* ── 左侧中偏上：章节大标题 ── */}
             {title && (
                 <h1
-                    className="absolute text-white font-black"
+                    className="absolute text-zinc-900 font-black"
                     style={{
                         fontFamily: "'AlimamaShuHeiTi', sans-serif",
                         fontSize: '182px',
@@ -69,7 +69,7 @@ export default function Page_ProposalChapterCover({
                         >
                             <span
                                 style={{
-                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(255,255,255,0.45)',
+                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(24,24,27,0.4)',
                                     fontWeight: isActive ? '500' : '400',
                                     letterSpacing: '0.02em',
                                 }}
@@ -78,7 +78,7 @@ export default function Page_ProposalChapterCover({
                             </span>
                             <span
                                 style={{
-                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(255,255,255,0.45)',
+                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(24,24,27,0.4)',
                                     fontWeight: isActive ? '500' : '400',
                                     letterSpacing: '0.02em',
                                     marginLeft: '2px',
@@ -97,7 +97,7 @@ export default function Page_ProposalChapterCover({
                 style={{ right: '45px', bottom: '74px' }}
             >
                 <span
-                    className="text-white leading-none"
+                    className="text-zinc-900/[0.08] leading-none"
                     style={{
                         fontFamily: "'Roboto', 'AlimamaShuHeiTi', sans-serif",
                         fontSize: '428px',
@@ -110,7 +110,7 @@ export default function Page_ProposalChapterCover({
                 </span>
                 {subtitle && (
                     <span
-                        className="text-white uppercase"
+                        className="text-zinc-500 uppercase"
                         style={{
                             fontSize: '34px',
                             marginTop: '42px',

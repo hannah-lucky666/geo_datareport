@@ -4,11 +4,11 @@ export default function CoverSlide({ bgImage, brand, subtitle, date }) {
     const subtitleLines = subtitle ? subtitle.split('\n') : [];
 
     return (
-        <div className="w-full h-full flex flex-col relative overflow-hidden bg-black">
+        <div className="w-full h-full flex flex-col relative overflow-hidden bg-gradient-to-br from-slate-50 via-zinc-100 to-white">
             {/* Background image */}
             {bgImage && (
                 <div
-                    className="absolute inset-0 bg-cover bg-center z-0"
+                    className="absolute inset-0 bg-cover bg-center z-0 opacity-15 mix-blend-multiply"
                     style={{ backgroundImage: `url(${bgImage})` }}
                 />
             )}
@@ -19,7 +19,7 @@ export default function CoverSlide({ bgImage, brand, subtitle, date }) {
                 <div className="absolute z-10 flex items-center gap-[8px]" style={{ top: '36px', left: '62px' }}>
                     <div className="w-[4px] h-[24px] bg-[#004CE5] rounded-sm" />
                     <span
-                        className="text-white font-bold"
+                        className="text-zinc-900 font-bold"
                         style={{ fontSize: '32px', letterSpacing: '0.08em' }}
                     >
                         {brand}
@@ -32,13 +32,13 @@ export default function CoverSlide({ bgImage, brand, subtitle, date }) {
                 {subtitleLines.map((line, i) => (
                     <h1
                         key={i}
-                        className="text-white font-bold"
+                        className="text-zinc-900 font-bold"
                         style={{
                             fontFamily: "'AlimamaShuHeiTi', sans-serif",
                             fontSize: '130px',
                             lineHeight: '1.2',
                             letterSpacing: '0em',
-                            color: 'white',
+                            color: '#18181b',
                         }}
                     >
                         {line}
@@ -50,7 +50,7 @@ export default function CoverSlide({ bgImage, brand, subtitle, date }) {
             {date && (
                 <div className="absolute z-10" style={{ bottom: '29px', right: '69px' }}>
                     <span
-                        className="text-white font-bold"
+                        className="text-zinc-800 font-bold"
                         style={{ fontSize: '25px', letterSpacing: '0em' }}
                     >
                         {date}

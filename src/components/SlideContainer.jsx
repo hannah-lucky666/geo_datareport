@@ -48,10 +48,10 @@ export default function SlideContainer({ children }) {
     }, [isFullscreen]);
 
     return (
-        <div className={`w-screen h-screen bg-zinc-950 flex items-center justify-center overflow-hidden antialiased selection:bg-zinc-100 ${isFullscreen ? 'p-0' : 'p-4 sm:p-8'}`}>
+        <div className={`w-screen h-screen bg-slate-100 flex items-center justify-center overflow-hidden antialiased selection:bg-zinc-200 ${isFullscreen ? 'p-0' : 'p-4 sm:p-8'}`}>
             <div ref={containerRef} className="w-full h-full flex items-center justify-center relative">
                 <div
-                    className={`relative bg-white overflow-hidden origin-center transition-shadow duration-500 ${isFullscreen ? '' : 'shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-xl'}`}
+                    className={`relative bg-white overflow-hidden origin-center transition-shadow duration-500 ${isFullscreen ? '' : 'shadow-[0_20px_50px_rgba(15,23,42,0.06)] rounded-xl'}`}
                     style={{
                         width: `${SLIDE_WIDTH}px`,
                         height: `${SLIDE_HEIGHT}px`,

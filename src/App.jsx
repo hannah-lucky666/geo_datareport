@@ -196,7 +196,7 @@ export default function App() {
           e.stopPropagation();
           setIsMenuOpen(true);
         }}
-        className="absolute top-4 left-4 sm:top-8 sm:left-8 z-50 p-3 rounded-full bg-zinc-900/50 hover:bg-zinc-800 text-zinc-400 hover:text-white transition-colors backdrop-blur-md opacity-0 hover:opacity-100 focus:opacity-100 group"
+        className="absolute top-4 left-4 sm:top-8 sm:left-8 z-50 p-3 rounded-full bg-white/80 hover:bg-white border border-zinc-200/60 text-zinc-500 hover:text-zinc-800 shadow-sm transition-colors backdrop-blur-md opacity-0 hover:opacity-100 focus:opacity-100 group"
         title="打开目录"
       >
         <div className="w-5 h-4 flex flex-col justify-between opacity-50 group-hover:opacity-100">
@@ -210,28 +210,28 @@ export default function App() {
       {!isMenuOpen && (
         <div className="absolute top-4 left-4 sm:top-8 sm:left-8 z-40 p-3 pointer-events-none opacity-20 transition-opacity">
           <div className="w-5 h-4 flex flex-col justify-between">
-            <span className="w-full h-[2px] bg-white rounded-full" />
-            <span className="w-full h-[2px] bg-white rounded-full" />
-            <span className="w-full h-[2px] bg-white rounded-full" />
+            <span className="w-full h-[2px] bg-zinc-800 rounded-full" />
+            <span className="w-full h-[2px] bg-zinc-800 rounded-full" />
+            <span className="w-full h-[2px] bg-zinc-800 rounded-full" />
           </div>
         </div>
       )}
 
       {/* TOC Sidebar Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 sm:w-80 bg-zinc-950/95 backdrop-blur-2xl border-r border-zinc-800/50 z-50 transform transition-transform duration-500 ease-out shadow-2xl flex flex-col ${
+        className={`fixed top-0 left-0 h-full w-64 sm:w-80 bg-white/95 backdrop-blur-2xl border-r border-zinc-200/80 z-50 transform transition-transform duration-500 ease-out shadow-2xl flex flex-col ${
           isMenuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="p-8 flex flex-col h-full">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-zinc-100 font-medium tracking-widest text-sm uppercase">
+            <h2 className="text-zinc-800 font-semibold tracking-widest text-sm uppercase">
               目录面板
             </h2>
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="text-zinc-500 hover:text-white transition-colors p-2 -mr-2"
+              className="text-zinc-400 hover:text-zinc-900 transition-colors p-2 -mr-2"
             >
               ✕
             </button>
@@ -257,16 +257,16 @@ export default function App() {
                           {...provided.draggableProps}
                           className={`flex items-center rounded-xl transition-all duration-200 ${
                             snapshot.isDragging
-                              ? 'bg-zinc-800 shadow-xl opacity-90 z-50 scale-[1.02]'
+                              ? 'bg-zinc-100 shadow-xl opacity-90 z-50 scale-[1.02]'
                               : currentSlide === index
-                                ? 'bg-zinc-800 text-white font-medium'
-                                : 'text-zinc-400 hover:bg-zinc-900/80 hover:text-zinc-200 cursor-pointer'
+                                ? 'bg-[#004CE5]/10 text-[#004CE5] font-semibold'
+                                : 'text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 cursor-pointer'
                           }`}
                           onClick={() => jumpToSlide(index)}
                         >
                           <div
                             {...provided.dragHandleProps}
-                            className="p-3 text-zinc-600 hover:text-zinc-300 cursor-grab active:cursor-grabbing flex items-center justify-center"
+                            className="p-3 text-zinc-400 hover:text-zinc-600 cursor-grab active:cursor-grabbing flex items-center justify-center"
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +289,7 @@ export default function App() {
                           </div>
 
                           <div className="py-3 pr-4 flex-grow truncate flex items-center">
-                            <span className="text-[10px] opacity-40 mr-3 font-mono bg-zinc-900 px-1.5 py-0.5 rounded">
+                            <span className="text-[10px] opacity-60 mr-3 font-mono bg-zinc-100 text-zinc-500 px-1.5 py-0.5 rounded">
                               {String(index + 1).padStart(2, '0')}
                             </span>
                             <span className="truncate">{slide.name}</span>
@@ -305,7 +305,7 @@ export default function App() {
           </DragDropContext>
 
           {/* Save button area */}
-          <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-zinc-950 via-zinc-950/90 to-transparent pt-12">
+          <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-white via-white/90 to-transparent pt-12">
             <div className="flex flex-col gap-3">
               {isOrderDirty && (
                 <button
@@ -313,9 +313,9 @@ export default function App() {
                   disabled={isSaving}
                   className={`w-full py-3 rounded-xl font-medium text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-lg ${
                     saveStatus === 'success'
-                      ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/50'
+                      ? 'bg-emerald-500/20 text-emerald-600 border border-emerald-500/50'
                       : saveStatus === 'error'
-                        ? 'bg-red-500/20 text-red-400 border border-red-500/50'
+                        ? 'bg-red-500/20 text-red-600 border border-red-500/50'
                         : 'bg-blue-600 hover:bg-blue-500 text-white shadow-blue-900/20'
                   }`}
                 >
@@ -363,7 +363,7 @@ export default function App() {
                 </button>
               )}
 
-              <p className="text-[10px] text-zinc-600 font-mono tracking-wide text-center">
+              <p className="text-[10px] text-zinc-400 font-mono tracking-wide text-center">
                 SLIDE ENGINE v1.0
               </p>
             </div>
@@ -392,7 +392,7 @@ export default function App() {
             if (document.exitFullscreen) document.exitFullscreen();
           }
         }}
-        className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 p-3 rounded-full bg-zinc-900/50 hover:bg-zinc-800 text-zinc-400 hover:text-white transition-colors backdrop-blur-md opacity-20 hover:opacity-100 group pointer-events-auto"
+        className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 p-3 rounded-full bg-white/80 hover:bg-white border border-zinc-200/60 text-zinc-500 hover:text-zinc-800 shadow-sm transition-colors backdrop-blur-md opacity-20 hover:opacity-100 group pointer-events-auto"
         title="全屏演示"
       >
         <svg

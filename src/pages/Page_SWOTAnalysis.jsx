@@ -27,38 +27,38 @@ export default function Page_SWOTAnalysis() {
     };
 
     return (
-        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
+        <div className="w-full h-full flex flex-col relative bg-transparent overflow-hidden text-zinc-800 font-sans">
 
             {/* Main Content Area */}
-            <div className="flex-1 relative z-10 w-full px-8 lg:px-16 pb-12 mt-8 flex items-center justify-center">
+            <div className="flex-1 relative z-10 w-full px-8 lg:px-16 pb-12 mt-4 flex items-center justify-center">
 
                 <div className="w-full max-w-[1500px] h-full relative">
 
                     {/* SVG Cross Lines */}
                     <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
-                        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-                        <div className="absolute h-full w-[1px] bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+                        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-zinc-300/60 to-transparent" />
+                        <div className="absolute h-full w-[1px] bg-gradient-to-b from-transparent via-zinc-300/60 to-transparent" />
                     </div>
 
                     {/* 2x2 Grid */}
                     <div className="grid grid-cols-2 grid-rows-2 h-full gap-6 sm:gap-8 pt-2 pb-2">
 
                         {/* Top Left: Strengths */}
-                        <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-rose-500/20 p-5 overflow-hidden group">
-                            <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent pointer-events-none" />
+                        <div className="relative flex flex-col items-start bg-rose-50/30 backdrop-blur-sm rounded-2xl border border-rose-200 p-5 overflow-hidden group">
+                            <div className="absolute inset-0 bg-gradient-to-br from-rose-500/[0.03] to-transparent pointer-events-none" />
                             <div className="w-full flex justify-start items-center mb-6 relative z-10">
                                 <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
-                                    <span className="text-rose-400">优势</span>
-                                    <span className="text-xl text-white/90">（Strengths）</span>
+                                    <span className="text-rose-500">优势</span>
+                                    <span className="text-xl text-zinc-500">（Strengths）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-4 relative z-10 w-full">
+                            <div className="flex flex-col gap-4 relative z-10 w-full overflow-y-auto custom-scrollbar pr-1">
                                 {swotData.S.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-rose-400 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-rose-500 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[1.05rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.95rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] text-zinc-800">{item.title}</span>
+                                            <p className="text-[0.95rem] text-zinc-500">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -66,21 +66,21 @@ export default function Page_SWOTAnalysis() {
                         </div>
 
                         {/* Top Right: Weaknesses */}
-                        <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-white/5 p-5 overflow-hidden group">
-                            <div className="absolute inset-0 bg-gradient-to-bl from-white/5 to-transparent pointer-events-none" />
+                        <div className="relative flex flex-col items-start bg-slate-50/50 backdrop-blur-sm rounded-2xl border border-slate-200/80 p-5 overflow-hidden group">
+                            <div className="absolute inset-0 bg-gradient-to-bl from-slate-500/[0.02] to-transparent pointer-events-none" />
                             <div className="w-full flex justify-end items-center mb-6 relative z-10">
                                 <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
-                                    <span className="text-white/90">劣势</span>
-                                    <span className="text-xl text-white/70">（Weaknesses）</span>
+                                    <span className="text-zinc-800">劣势</span>
+                                    <span className="text-xl text-zinc-500">（Weaknesses）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-4 relative z-10 w-full">
+                            <div className="flex flex-col gap-4 relative z-10 w-full overflow-y-auto custom-scrollbar pr-1">
                                 {swotData.W.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-white/70 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-zinc-500 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[1.05rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.95rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] text-zinc-800">{item.title}</span>
+                                            <p className="text-[0.95rem] text-zinc-500">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -88,21 +88,21 @@ export default function Page_SWOTAnalysis() {
                         </div>
 
                         {/* Bottom Left: Threats */}
-                        <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-white/5 p-5 overflow-hidden group">
-                            <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
+                        <div className="relative flex flex-col items-start bg-slate-50/50 backdrop-blur-sm rounded-2xl border border-slate-200/80 p-5 overflow-hidden group">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-slate-500/[0.02] to-transparent pointer-events-none" />
                             <div className="w-full flex justify-start items-center mb-6 relative z-10">
                                 <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
-                                    <span className="text-white/90">威胁</span>
-                                    <span className="text-xl text-white/70">（Threats）</span>
+                                    <span className="text-zinc-800">威胁</span>
+                                    <span className="text-xl text-zinc-500">（Threats）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-4 relative z-10 w-full">
+                            <div className="flex flex-col gap-4 relative z-10 w-full overflow-y-auto custom-scrollbar pr-1">
                                 {swotData.T.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-white/70 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-zinc-500 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[1.05rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.95rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] text-zinc-800">{item.title}</span>
+                                            <p className="text-[0.95rem] text-zinc-500">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -110,21 +110,21 @@ export default function Page_SWOTAnalysis() {
                         </div>
 
                         {/* Bottom Right: Opportunities */}
-                        <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-rose-500/20 p-5 overflow-hidden group">
-                            <div className="absolute inset-0 bg-gradient-to-tl from-rose-500/5 to-transparent pointer-events-none" />
+                        <div className="relative flex flex-col items-start bg-rose-50/30 backdrop-blur-sm rounded-2xl border border-rose-200 p-5 overflow-hidden group">
+                            <div className="absolute inset-0 bg-gradient-to-tl from-rose-500/[0.03] to-transparent pointer-events-none" />
                             <div className="w-full flex justify-end items-center mb-6 relative z-10">
                                 <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
-                                    <span className="text-rose-400">机遇</span>
-                                    <span className="text-xl text-white/90">（Opportunities）</span>
+                                    <span className="text-rose-500">机遇</span>
+                                    <span className="text-xl text-zinc-500">（Opportunities）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-4 relative z-10 w-full">
+                            <div className="flex flex-col gap-4 relative z-10 w-full overflow-y-auto custom-scrollbar pr-1">
                                 {swotData.O.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-rose-400 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-rose-500 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[1.05rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.95rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] text-zinc-800">{item.title}</span>
+                                            <p className="text-[0.95rem] text-zinc-500">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -134,25 +134,25 @@ export default function Page_SWOTAnalysis() {
                     </div>
 
                     {/* Center Medal */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[180px] h-[180px] z-20 flex items-center justify-center pointer-events-none drop-shadow-2xl">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[180px] h-[180px] z-20 flex items-center justify-center pointer-events-none drop-shadow-xl">
                         {/* Outer Ring */}
-                        <div className="absolute inset-0 rounded-full bg-black/60 backdrop-blur-xl border-4 border-[#222] overflow-hidden">
+                        <div className="absolute inset-0 rounded-full bg-white border-4 border-slate-200 overflow-hidden shadow-lg">
                             {/* Colorful Segments matching reference */}
-                            <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-rose-600" />
-                            <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[#555]" />
-                            <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#666]" />
-                            <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-rose-500" />
+                            <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-rose-500" />
+                            <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-zinc-300" />
+                            <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-zinc-400" />
+                            <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-rose-400" />
                         </div>
                         {/* Inner Ring Data Text */}
                         <div className="absolute inset-[15px] rounded-full bg-white flex items-center justify-center p-4">
                             <div className="grid grid-cols-2 grid-rows-2 w-full h-full text-center relative gap-1">
-                                <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black/10 -translate-x-1/2" />
-                                <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-black/10 -translate-y-1/2" />
+                                <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-slate-200 -translate-x-1/2" />
+                                <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-slate-200 -translate-y-1/2" />
 
-                                <div className="flex items-center justify-center text-4xl font-black text-rose-600 tracking-tighter">S</div>
-                                <div className="flex items-center justify-center text-4xl font-black text-[#666] tracking-tighter">W</div>
-                                <div className="flex items-center justify-center text-4xl font-black text-[#555] tracking-tighter">T</div>
-                                <div className="flex items-center justify-center text-4xl font-black text-rose-600 tracking-tighter">O</div>
+                                <div className="flex items-center justify-center text-4xl font-black text-rose-500 tracking-tighter">S</div>
+                                <div className="flex items-center justify-center text-4xl font-black text-zinc-500 tracking-tighter">W</div>
+                                <div className="flex items-center justify-center text-4xl font-black text-zinc-400 tracking-tighter">T</div>
+                                <div className="flex items-center justify-center text-4xl font-black text-rose-400 tracking-tighter">O</div>
                             </div>
                         </div>
                     </div>
@@ -169,11 +169,11 @@ export default function Page_SWOTAnalysis() {
                     background: transparent;
                 }
                 .custom-scrollbar::-webkit-scrollbar-thumb {
-                    background: rgba(255, 255, 255, 0.15);
+                    background: rgba(0, 0, 0, 0.1);
                     border-radius: 4px;
                 }
                 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
-                    background: rgba(255, 255, 255, 0.3);
+                    background: rgba(0, 0, 0, 0.2);
                 }
             `}} />
         </div>
