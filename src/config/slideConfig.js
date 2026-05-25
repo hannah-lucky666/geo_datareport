@@ -1,5 +1,6 @@
 import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
+import Page_OptimizationStrategy from '../pages/Page_OptimizationStrategy';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -26,6 +27,7 @@ export const slideConfig = [
   { type: 'section', title: '核心数据与验收情况' },
   { type: 'page', title: '核心数据总览（2026年5月）', component: Page_CoreDataOverview },
   { type: 'page', title: '竞品分析', component: Page_CompetitorAnalysis },
+  { type: 'page', title: '重点优化策略', component: Page_OptimizationStrategy },
 
   // ——— 篇章2: 异常数据排查结果 ———
   { type: 'chapter', title: '异常数据排查结果', subtitle: 'DATA TROUBLESHOOTING', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
