@@ -24,11 +24,11 @@ export default function Page_CompetitorAnalysis() {
       <div className="flex-1 min-h-0 flex flex-col gap-6">
         
         {/* Three Images Side-by-Side Area */}
-        <div className="grid grid-cols-3 gap-6 h-[340px] shrink-0">
+        <div className="grid grid-cols-3 gap-6 h-[480px] shrink-0">
           
           {/* Card 1: Mention Rate */}
-          <div className="rounded-2xl border border-zinc-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.03)] overflow-hidden relative flex flex-col p-4">
-            <h3 className="text-xl font-extrabold text-zinc-900 text-center mb-2 shrink-0">提及率对比</h3>
+          <div className="rounded-2xl border border-zinc-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.03)] overflow-hidden relative flex flex-col pt-4 pb-2 px-4">
+            <h3 className="text-2xl font-black text-zinc-900 text-center mb-3 shrink-0">提及率对比</h3>
             <div className="flex-1 min-h-0 bg-white flex items-center justify-center relative">
               {!img1Error ? (
                 <img 
@@ -44,8 +44,8 @@ export default function Page_CompetitorAnalysis() {
           </div>
 
           {/* Card 2: Top1 Mention Rate */}
-          <div className="rounded-2xl border border-zinc-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.03)] overflow-hidden relative flex flex-col p-4">
-            <h3 className="text-xl font-extrabold text-zinc-900 text-center mb-2 shrink-0">Top1提及率对比</h3>
+          <div className="rounded-2xl border border-zinc-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.03)] overflow-hidden relative flex flex-col pt-4 pb-2 px-4">
+            <h3 className="text-2xl font-black text-zinc-900 text-center mb-3 shrink-0">Top1提及率对比</h3>
             <div className="flex-1 min-h-0 bg-white flex items-center justify-center relative">
               {!img2Error ? (
                 <img 
@@ -61,8 +61,8 @@ export default function Page_CompetitorAnalysis() {
           </div>
 
           {/* Card 3: Rank Position */}
-          <div className="rounded-2xl border border-zinc-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.03)] overflow-hidden relative flex flex-col p-4">
-            <h3 className="text-xl font-extrabold text-zinc-900 text-center mb-2 shrink-0">提及位次对比</h3>
+          <div className="rounded-2xl border border-zinc-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.03)] overflow-hidden relative flex flex-col pt-4 pb-2 px-4">
+            <h3 className="text-2xl font-black text-zinc-900 text-center mb-3 shrink-0">提及位次对比</h3>
             <div className="flex-1 min-h-0 bg-white flex items-center justify-center relative">
               {!img3Error ? (
                 <img 
