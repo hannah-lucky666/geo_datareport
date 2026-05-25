@@ -77,7 +77,7 @@ export default function Page_CoreDataOverview() {
                     <span className="font-extrabold text-zinc-900 text-3xl">{row.metric}</span>
                   </td>
                   <td className="py-6 px-8">
-                    <span className="text-5xl font-black text-[#004CE5] tracking-tight font-mono">{row.value}</span>
+                    <span className="text-5xl font-black text-[#004CE5] tracking-tight font-['Montserrat',sans-serif]">{row.value}</span>
                   </td>
                   <td className="py-6 px-8">
                     <p className="text-xl sm:text-2xl leading-relaxed text-zinc-600 font-normal">{row.desc}</p>
