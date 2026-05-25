@@ -36,7 +36,7 @@ export default function Page_CoreDataOverview() {
       {/* Image Area */}
       <div className="flex-1 min-h-0 flex flex-col gap-6">
         <div className="h-[440px] w-full rounded-2xl border border-zinc-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.03)] overflow-hidden relative group">
-          <div className="absolute inset-0 bg-slate-50 flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-white flex items-center justify-center p-4">
             {!imgError ? (
               <img 
                 src={imgSrc} 
@@ -65,22 +65,22 @@ export default function Page_CoreDataOverview() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-slate-50/80 border-b border-zinc-200/80">
-                <th className="py-5 px-8 text-lg font-bold text-zinc-800 tracking-wider w-1/4">核心数据指标</th>
-                <th className="py-5 px-8 text-lg font-bold text-zinc-800 tracking-wider w-1/5">本月数据</th>
-                <th className="py-5 px-8 text-lg font-bold text-zinc-800 tracking-wider">数据说明</th>
+                <th className="py-5 px-8 text-2xl font-bold text-zinc-800 tracking-wider w-1/4">核心数据指标</th>
+                <th className="py-5 px-8 text-2xl font-bold text-zinc-800 tracking-wider w-1/5">本月数据</th>
+                <th className="py-5 px-8 text-2xl font-bold text-zinc-800 tracking-wider">数据说明</th>
               </tr>
             </thead>
             <tbody>
               {tableData.map((row, idx) => (
                 <tr key={idx} className="border-b border-zinc-100 last:border-none hover:bg-slate-50/30 transition-colors">
                   <td className="py-6 px-8">
-                    <span className="font-bold text-zinc-800 text-xl">{row.metric}</span>
+                    <span className="font-extrabold text-zinc-900 text-3xl">{row.metric}</span>
                   </td>
                   <td className="py-6 px-8">
-                    <span className="text-3xl font-black text-[#004CE5] tracking-tight font-mono">{row.value}</span>
+                    <span className="text-5xl font-black text-[#004CE5] tracking-tight font-mono">{row.value}</span>
                   </td>
                   <td className="py-6 px-8">
-                    <p className="text-[1.05rem] leading-relaxed text-zinc-500 font-normal">{row.desc}</p>
+                    <p className="text-xl sm:text-2xl leading-relaxed text-zinc-600 font-normal">{row.desc}</p>
                   </td>
                 </tr>
               ))}
