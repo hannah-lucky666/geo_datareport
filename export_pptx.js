@@ -37,9 +37,10 @@ async function run() {
     const pptx = new pptxgen();
     pptx.layout = 'LAYOUT_16x9';
 
-    const totalSlides = 108;
+    const slideOrder = JSON.parse(fs.readFileSync(new URL('./src/slideOrder.json', import.meta.url), 'utf-8'));
+    const totalSlides = slideOrder.length;
 
-    console.log(`Found ${totalSlides} slides. Starting capture...`);
+    console.log(`Found ${totalSlides} slides from slideOrder.json. Starting capture...`);
 
     const args = process.argv.slice(2);
     let startPage = 1;

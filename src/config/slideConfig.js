@@ -38,7 +38,7 @@ export const slideConfig = [
   { type: 'page', title: 'KPI验收情况', component: Page_KpiAcceptance },
 
   // ——— 篇章2: 异常数据排查结果 ———
-  { type: 'chapter', title: '异常数据排查结果', subtitle: 'DATA TROUBLESHOOTING', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
+  { type: 'chapter', title: '异常数据排查', subtitle: 'DATA TROUBLESHOOTING', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
   { type: 'section', title: '异常数据排查结果' },
   { type: 'page', title: '数据排查与核心变量测试', component: Page_DataTroubleshooting },
   { type: 'page', title: '排查归因总结与下一步规划', component: Page_DataTroubleshootingSummary },
