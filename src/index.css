@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0 overflow-hidden bg-zinc-950 text-zinc-900;
+  }
+}
+
+@font-face {
+  font-family: 'AlimamaShuHeiTi';
+  src: url('/fonts/AlimamaShuHeiTi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MiSans';
+  src: url('/fonts/MiSans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MiSans';
+  src: url('/fonts/MiSans-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MiSans';
+  src: url('/fonts/MiSans-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MiSans';
+  src: url('/fonts/MiSans-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MiSans';
+  src: url('/fonts/MiSans-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
