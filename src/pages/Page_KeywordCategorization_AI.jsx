@@ -2,28 +2,28 @@ import React, { useState } from 'react';
 
 export default function Page_KeywordCategorization_AI() {
   const [imgError, setImgError] = useState(false);
-  const [imgSrc] = useState(`/report/keyword_categorization_chart.png?t=${Date.now()}`);
+  const [imgSrc] = useState(`/report/keyword_categorization_chart_ai.png?t=${Date.now()}`);
 
   const categories = [
     {
       tier: '强势词 (94 ~ 100%)',
       range: '94-100%',
-      count: 9,
-      representative: '智能止鼾、防螨抑菌、贴合脊柱等',
+      count: 3,
+      representative: '推荐、质量比较好',
       badgeColor: 'bg-emerald-500',
     },
     {
       tier: '中等词 (50-94%)',
       range: '50%~94%',
-      count: 18,
-      representative: '品牌排行榜、护脊、售后保障等',
+      count: 24,
+      representative: '品牌排行榜、自动调节、防螨等',
       badgeColor: 'bg-amber-500',
     },
     {
       tier: '待提升词 (<50%)',
       range: '0%~49%',
       count: 3,
-      representative: '口碑好推荐、免费维修换货等',
+      representative: '保护脊柱、耐用、母婴级等',
       badgeColor: 'bg-rose-500',
     }
   ];
