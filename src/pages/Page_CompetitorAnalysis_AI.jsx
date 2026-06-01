@@ -6,9 +6,9 @@ export default function Page_CompetitorAnalysis_AI() {
   const [img3Error, setImg3Error] = useState(false);
 
   // Cache buster timestamps
-  const [img1Src] = useState(`/report/mention_rate_chart.png?t=${Date.now()}`);
-  const [img2Src] = useState(`/report/top1_rate_chart.png?t=${Date.now()}`);
-  const [img3Src] = useState(`/report/rank_order_chart.png?t=${Date.now()}`);
+  const [img1Src] = useState(`/report/mention_rate_chart_ai.png?t=${Date.now()}`);
+  const [img2Src] = useState(`/report/top1_rate_chart_ai.png?t=${Date.now()}`);
+  const [img3Src] = useState(`/report/rank_order_chart_ai.png?t=${Date.now()}`);
 
   return (
     <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-8 text-zinc-800 font-sans">
@@ -107,14 +107,14 @@ export default function Page_CompetitorAnalysis_AI() {
               {/* Card 1 */}
               <div className="p-5 rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 shadow-[0_4px_15px_rgba(0,76,229,0.01)] flex flex-col justify-center flex-1 min-h-0">
                 <p className="text-[1.32rem] leading-relaxed text-zinc-800 font-semibold">
-                  1. MPE是最强劲竞品，提及率59.6%、Top1率22.9%，在“品牌排行榜”“品牌推荐”等泛词上抢占NO.1位置
+                  1. 护脊效果好防腰疼 - 提及率仅50%，HEKA 占据NO.1，需强化护脊技术内容投放
                 </p>
               </div>
 
               {/* Card 2 */}
               <div className="p-5 rounded-2xl bg-slate-50/60 border border-slate-200/80 shadow-[0_4px_15px_rgba(15,23,42,0.005)] flex flex-col justify-center flex-1 min-h-0">
                 <p className="text-[1.32rem] leading-relaxed text-zinc-800 font-semibold">
-                  2. 舒福德词云热度高于慕思，是AI内容生态中的高曝光竞品
+                  2. 经久耐用不塌陷 - 提及率仅50%，MPE 抢占NO.1，需补充耐久性测评内容
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Page_CompetitorAnalysis_AI() {
               {[
                 {
                   num: '01',
-                  desc: 'DeepSeek平台表现弱（位次NO.3.5），需针对DeepSeek加强内容布局',
+                  desc: 'AI床垫品牌前十名 - MPE 占据NO.1，该词是高流量泛词，必须夺回首位',
                   badgeBg: 'bg-[#0038A8]',
                   borderColor: 'border-[#0038A8]/15',
                   bgColor: 'bg-[#0038A8]/[0.015]',
@@ -138,19 +138,11 @@ export default function Page_CompetitorAnalysis_AI() {
                 },
                 {
                   num: '02',
-                  desc: '豆包平台（~59%）表现最弱，建议重点在豆包平台优化投放策略',
+                  desc: '售后服务好/全国联保售后 - MPE 连续抢占，与负面舆情中的售后问题形成共振，需重点处理',
                   badgeBg: 'bg-[#004CE5]',
                   borderColor: 'border-[#004CE5]/15',
                   bgColor: 'bg-[#004CE5]/[0.015]',
                   glowColor: 'shadow-[0_0_12px_rgba(0,76,229,0.1)]'
-                },
-                {
-                  num: '03',
-                  desc: '防御其他竞品优化',
-                  badgeBg: 'bg-[#2E75FF]',
-                  borderColor: 'border-[#2E75FF]/15',
-                  bgColor: 'bg-[#2E75FF]/[0.015]',
-                  glowColor: 'shadow-[0_0_12px_rgba(46,117,255,0.1)]'
                 }
               ].map((strat, idx) => (
                 <div 
