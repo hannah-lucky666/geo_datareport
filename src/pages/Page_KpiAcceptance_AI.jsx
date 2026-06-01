@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 export default function Page_KpiAcceptance_AI() {
   const [imgError, setImgError] = useState(false);
-  const [imgSrc] = useState(`/report/kpi_acceptance_chart.png?t=${Date.now()}`);
+  const [imgSrc] = useState(`/report/kpi_acceptance_chart_ai.png?t=${Date.now()}`);
 
-  const criteriaTags = ['提及率 ≥ 70%', '平均位次 ≤ 3'];
+  const criteriaTags = ['提及率 ≥ 65%', '平均位次 ≤ 4'];
 
   return (
     <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-2 text-zinc-900 font-sans">
@@ -32,7 +32,7 @@ export default function Page_KpiAcceptance_AI() {
                 提及率 + 平均位次
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                曝光稳定型：检查多少词条同时做到频繁提及和排名靠前
+                曝光稳定型：检查有多少词条同时做到被频繁提及和排名靠前。
               </p>
             </div>
           </div>
