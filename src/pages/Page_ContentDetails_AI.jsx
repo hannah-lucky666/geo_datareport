@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Page_ContentDetails() {
+export default function Page_ContentDetails_AI() {
   const topArticles = [
     {
       rank: 1,

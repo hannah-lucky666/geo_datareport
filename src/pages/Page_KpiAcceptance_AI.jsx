@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Page_KpiAcceptance() {
+export default function Page_KpiAcceptance_AI() {
   const [imgError, setImgError] = useState(false);
   const [imgSrc] = useState(`/report/kpi_acceptance_chart.png?t=${Date.now()}`);
 

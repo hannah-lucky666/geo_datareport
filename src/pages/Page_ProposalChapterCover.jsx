@@ -26,9 +26,9 @@ export default function Page_ProposalChapterCover({
                 className="absolute flex items-center gap-[16px]"
                 style={{ top: '38px', right: '93px' }}
             >
-                <div className="h-[1px] bg-zinc-800/20" style={{ width: '200px' }} />
+                <div className="h-[1px] bg-zinc-800/40" style={{ width: '200px' }} />
                 <span
-                    className="text-zinc-800 font-light"
+                    className="text-zinc-900 font-semibold"
                     style={{ fontSize: '26px', letterSpacing: '0.3em', fontFamily: "'Montserrat', sans-serif" }}
                 >
                     {brandLabel}
@@ -55,7 +55,7 @@ export default function Page_ProposalChapterCover({
 
             {/* ── 左下角：章节列表 ── */}
             <div
-                className="absolute flex flex-col gap-[10px]"
+                className={`absolute flex flex-col ${chapters.length > 4 ? 'gap-[6px]' : 'gap-[10px]'}`}
                 style={{ bottom: '90px', left: '96px' }}
             >
                 {chapters.map((ch, i) => {
@@ -64,13 +64,16 @@ export default function Page_ProposalChapterCover({
                     return (
                         <div
                             key={i}
-                            className="flex items-center gap-[2px]"
-                            style={{ fontSize: '32px', lineHeight: '1.4' }}
+                            className="flex items-center gap-[4px]"
+                            style={{ 
+                                fontSize: chapters.length > 4 ? '20px' : '32px', 
+                                lineHeight: '1.4' 
+                            }}
                         >
                             <span
                                 style={{
-                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(24,24,27,0.4)',
-                                    fontWeight: isActive ? '500' : '400',
+                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(24,24,27,0.72)',
+                                    fontWeight: isActive ? '600' : '500',
                                     letterSpacing: '0.02em',
                                 }}
                             >
@@ -78,8 +81,8 @@ export default function Page_ProposalChapterCover({
                             </span>
                             <span
                                 style={{
-                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(24,24,27,0.4)',
-                                    fontWeight: isActive ? '500' : '400',
+                                    color: isActive ? 'rgb(0, 76, 229)' : 'rgba(24,24,27,0.72)',
+                                    fontWeight: isActive ? '600' : '500',
                                     letterSpacing: '0.02em',
                                     marginLeft: '2px',
                                 }}
@@ -97,26 +100,26 @@ export default function Page_ProposalChapterCover({
                 style={{ right: '45px', bottom: '74px' }}
             >
                 <span
-                    className="text-zinc-900/[0.08] leading-none"
+                    className="text-[#004CE5]/[0.25] leading-none"
                     style={{
                         fontFamily: "'Roboto', 'AlimamaShuHeiTi', sans-serif",
                         fontSize: '428px',
                         lineHeight: '0.85',
                         letterSpacing: '-0.02em',
-                        fontWeight: 300,
+                        fontWeight: 400,
                     }}
                 >
                     {chapterNum}
                 </span>
                 {subtitle && (
                     <span
-                        className="text-zinc-500 uppercase"
+                        className="text-zinc-700 uppercase"
                         style={{
                             fontSize: '34px',
                             marginTop: '42px',
                             fontFamily: "'MiSans', sans-serif",
                             letterSpacing: 0,
-                            fontWeight: 300,
+                            fontWeight: 500,
                             marginRight: '79px',
                         }}
                     >

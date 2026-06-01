@@ -17,9 +17,9 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
 
       {/* Top-right brand line */}
       <div className={`absolute z-10 flex items-center gap-[16px] ${dbg}`} style={{ top: '38px', right: '93px' }}>
-        <div className="h-[1px] bg-zinc-800/20" style={{ width: '200px' }} />
+        <div className="h-[1px] bg-zinc-800/40" style={{ width: '200px' }} />
         <span
-          className="text-zinc-800 font-light"
+          className="text-zinc-900 font-semibold"
           style={{ fontSize: '26px', letterSpacing: '0.3em', fontFamily: "'Montserrat', sans-serif" }}
         >
           {brandLabel}
@@ -37,18 +37,31 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
       </div>
 
       {/* Left: chapter list */}
-      <div className={`absolute z-10 flex flex-col ${dbg}`} style={{ top: '607px', left: '132px', gap: '0px' }}>
+      <div 
+        className={`absolute z-10 ${chapters.length > 3 ? 'grid grid-cols-2 gap-x-[120px] gap-y-[40px]' : 'flex flex-col gap-[20px]'} ${dbg}`} 
+        style={{ 
+          top: chapters.length > 3 ? '460px' : '607px', 
+          left: '132px',
+          width: chapters.length > 3 ? '1360px' : 'auto'
+        }}
+      >
         {chapters.map((chapter, i) => (
-          <div key={i} className="flex items-baseline" style={{ gap: '43px', lineHeight: '1.4' }}>
+          <div key={i} className="flex items-baseline" style={{ gap: chapters.length > 3 ? '24px' : '43px', lineHeight: '1.4' }}>
             <span
-              className="text-[#004CE5]"
-              style={{ fontSize: '70px', fontFamily: "'MiSans', sans-serif", fontWeight: 300 }}
+              className="text-[#004CE5] shrink-0 font-light"
+              style={{ 
+                fontSize: chapters.length > 3 ? '44px' : '72px', 
+                fontFamily: "'MiSans', sans-serif" 
+              }}
             >
               {String(i + 1).padStart(2, '0')}.
             </span>
             <span
-              className="text-zinc-800"
-              style={{ fontSize: '68px', letterSpacing: '0px', fontFamily: "'MiSans', sans-serif", fontWeight: 300 }}
+              className="text-zinc-900 font-semibold tracking-wide"
+              style={{ 
+                fontSize: chapters.length > 3 ? '38px' : '70px', 
+                fontFamily: "'MiSans', sans-serif" 
+              }}
             >
               {chapter.title}
             </span>
@@ -59,13 +72,13 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
       {/* Right: MENU */}
       <div className={`absolute z-10 flex flex-col items-end ${dbg}`} style={{ right: '114px', top: '76%', transform: 'translateY(-50%)' }}>
         <span
-          className="text-zinc-900/[0.05] font-black leading-none select-none"
+          className="text-[#004CE5]/[0.25] font-black leading-none select-none"
           style={{ fontSize: '261px', letterSpacing: '0', fontFamily: "'Roboto', sans-serif" }}
         >
           {menuText}
         </span>
         <span
-          className="text-zinc-500 font-light"
+          className="text-zinc-700 font-semibold"
           style={{ fontSize: '32px', letterSpacing: '0', marginTop: '42px', marginRight: '10px' }}
         >
           {serviceGuide}

@@ -48,6 +48,7 @@ flatSlides.forEach((slide) => {
           pageIndex={slide.pageIndex}
           component={slide.component}
           title={slide.name}
+          subtitle={slide.subtitle}
         />
       );
       break;

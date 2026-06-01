@@ -8,6 +8,7 @@ async function run() {
     console.log('Launching browser...');
     const browser = await puppeteer.launch({
         headless: "new",
+        executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
         defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 2 },
         args: ['--window-size=1920,1080']
     });

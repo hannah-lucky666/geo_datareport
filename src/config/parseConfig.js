@@ -48,6 +48,7 @@ export function parseConfig(flatConfig) {
         if (currentSection) {
           currentSection.pages.push({
             title: item.title,
+            subtitle: item.subtitle || '',
             component: item.component || null,
             components: item.components || null,
           });
@@ -108,6 +109,7 @@ export function generateSlides(parsed) {
                 id: `chapter-${ci}-${si}-${pi}-${subPi}`,
                 type: 'content',
                 name: page.title,
+                subtitle: page.subtitle || '',
                 chapterIndex: ci,
                 sectionIndex: si,
                 pageIndex: pi,
@@ -120,6 +122,7 @@ export function generateSlides(parsed) {
               id: `chapter-${ci}-${si}-${pi}`,
               type: 'content',
               name: page.title,
+              subtitle: page.subtitle || '',
               chapterIndex: ci,
               sectionIndex: si,
               pageIndex: pi,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Page_CompetitorAnalysis() {
+export default function Page_CompetitorAnalysis_AI() {
   const [img1Error, setImg1Error] = useState(false);
   const [img2Error, setImg2Error] = useState(false);
   const [img3Error, setImg3Error] = useState(false);

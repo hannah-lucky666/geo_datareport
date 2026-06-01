@@ -29,6 +29,7 @@ async function main() {
 
   // 等待所有自定义字体（MiSans、AlimamaShuHeiTi 等）加载完毕
   await page.evaluate(() => document.fonts.ready);
+
   // 额外等待图片和首屏动画稳定
   await new Promise((r) => setTimeout(r, 3500));
 
@@ -40,14 +41,35 @@ async function main() {
   console.log(`✅ 检测到总页数：${totalSlides}`);
 
   // ② 关闭目录面板，回到第一页
-  const closeBtn = await page.$('button.text-zinc-500');
-  if (closeBtn) await closeBtn.click();
+  const closeBtn = await page.evaluateHandle(() => {
+    return Array.from(document.querySelectorAll('button')).find(
+      b => b.textContent.includes('✕') || b.className.includes('text-zinc-400')
+    );
+  });
+  if (closeBtn) {
+    await closeBtn.click();
+  } else {
+    // 备用方案：通过 Selector 点击
+    const fallbackClose = await page.$('button.text-zinc-400');
+    if (fallbackClose) await fallbackClose.click();
+  }
   await new Promise((r) => setTimeout(r, 400));
 
   for (let i = 0; i < totalSlides; i++) {
     await page.keyboard.press('ArrowLeft');
   }
   await new Promise((r) => setTimeout(r, 600));
+
+  // 注入样式以隐藏导出的 PPT 中不需要的 UI 元素，确保截图完全干净
+  await page.addStyleTag({
+    content: `
+      button[title="打开目录"],
+      button[title="全屏演示"],
+      div.pointer-events-none.opacity-20 {
+        display: none !important;
+      }
+    `
+  });
 
   // ③ 逐页截图
   for (let i = 0; i < totalSlides; i++) {

@@ -9,18 +9,19 @@ export default function Page_DataTroubleshooting() {
         <h1 className="text-3xl font-black text-zinc-900 tracking-wider">
           异常数据排查与归因分析
         </h1>
+        <span className="text-base sm:text-lg font-bold text-zinc-600 ml-2">
+          变量排除：通过控制变量测试，排除了时间和 IP 的影响，主要关注设备和账号变量
+        </span>
       </div>
+
 
       {/* Main Container: 3 Standard Tables stacked vertically to fill the screen */}
       <div className="flex-grow flex flex-col gap-5 min-h-0 justify-between">
-        
+
         {/* Table 1: 测试数据解读 */}
         <div className="rounded-xl border border-zinc-200 bg-white overflow-hidden shadow-sm shrink-0">
           <div className="bg-slate-50 border-b border-zinc-200 px-6 py-2.5 flex items-center justify-between">
             <h3 className="text-xl font-black text-zinc-800">📋 1. 测试数据解读</h3>
-            <span className="text-sm font-bold text-zinc-400 italic">
-              * 完整排查日志见：附录3 异常情况排查原始数据
-            </span>
           </div>
           <table className="w-full text-left border-collapse table-fixed">
             <thead>
@@ -48,7 +49,7 @@ export default function Page_DataTroubleshooting() {
                 <td className="py-3 px-6 text-xl font-bold text-zinc-800 text-center font-['Montserrat']">7次</td>
                 <td className="py-3 px-6 text-2xl font-black text-zinc-700 text-center font-['Montserrat']">2次</td>
                 <td className="py-3 px-6 text-lg font-bold text-zinc-600 leading-relaxed">
-                  偏差由测试端变量引起。一旦使用带有日常真实使用痕迹的手机，数据表现确实与贵司人工测试结果一致，出现下滑。
+                  找出不容易出的手机进行单独测试。 复现了菜鸟方现场出现的情况。
                 </td>
               </tr>
               <tr className="hover:bg-slate-50/50 transition-colors">
@@ -57,7 +58,7 @@ export default function Page_DataTroubleshooting() {
                 <td className="py-3 px-6 text-xl font-bold text-zinc-800 text-center font-['Montserrat']">7次</td>
                 <td className="py-3 px-6 text-2xl font-black text-zinc-700 text-center font-['Montserrat']">2次</td>
                 <td className="py-3 px-6 text-lg font-bold text-zinc-600 leading-relaxed">
-                  同上。
+                  菜鸟现场测试记录。
                 </td>
               </tr>
             </tbody>
@@ -135,7 +136,7 @@ export default function Page_DataTroubleshooting() {
                   无论在系统端还是多台实体手机端连测，目标品牌(菜鸟)的首推率稳定在 80%-100%。
                 </td>
                 <td className="py-3.5 px-6 text-lg font-bold text-zinc-600 leading-relaxed">
-                  <strong className="text-zinc-800 font-black">客观性强：</strong>倾向于输出客观的公共知识库结果，受个人账号与环境的干扰较小。
+                  有待进一步提高测试数据量进行验证
                 </td>
               </tr>
               <tr className="hover:bg-slate-50/50 transition-colors">
@@ -145,7 +146,7 @@ export default function Page_DataTroubleshooting() {
                   公司实体手机群测试首推率极高（70%-90%），但切换到数据系统的服务器IP后，结果出现数据倒挂。
                 </td>
                 <td className="py-3.5 px-6 text-lg font-bold text-zinc-600 leading-relaxed">
-                  <strong className="text-zinc-800 font-black">IP敏感度高：</strong>表现出极强的“网络/环境敏感性”，模型对网络归属地/IP的判断权重高。
+                  有待进一步提高测试数据量进行验证
                 </td>
               </tr>
             </tbody>

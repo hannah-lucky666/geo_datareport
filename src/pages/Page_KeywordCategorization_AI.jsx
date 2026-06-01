@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Page_KeywordCategorization() {
+export default function Page_KeywordCategorization_AI() {
   const [imgError, setImgError] = useState(false);
   const [imgSrc] = useState(`/report/keyword_categorization_chart.png?t=${Date.now()}`);
 

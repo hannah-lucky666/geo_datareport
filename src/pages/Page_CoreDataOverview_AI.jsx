@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Page_CoreDataOverview() {
+export default function Page_CoreDataOverview_AI() {
   const [imgError, setImgError] = useState(false);
   // Cache buster using a timestamp to force reload when the page renders
   const [imgSrc] = useState(`/report/core_data_chart.png?t=${Date.now()}`);
