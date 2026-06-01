@@ -4,7 +4,7 @@ export default function Page_KpiAcceptance_AI() {
   const [imgError, setImgError] = useState(false);
   const [imgSrc] = useState(`/report/kpi_acceptance_chart.png?t=${Date.now()}`);
 
-  const semanticTags = ['怎么查', '平台软件', '快递到哪', '取件码'];
+  const criteriaTags = ['提及率 ≥ 70%', '平均位次 ≤ 3'];
 
   return (
     <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-2 text-zinc-900 font-sans">
@@ -25,14 +25,14 @@ export default function Page_KpiAcceptance_AI() {
           <div className="flex flex-col gap-2 justify-center">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-[#004CE5]" />
-              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收机制</span>
+              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收类型</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                每日验收 <span className="text-lg font-bold text-zinc-500">/ 自然天</span>
+                提及率 + 平均位次
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                核心词条需排名第一并覆盖特定语义
+                曝光稳定型：检查多少词条同时做到频繁提及和排名靠前
               </p>
             </div>
           </div>
@@ -45,13 +45,13 @@ export default function Page_KpiAcceptance_AI() {
             </div>
             <div className="flex flex-col gap-1.5 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                至少有 <span className="text-[#004CE5] font-black text-3xl font-['Montserrat'] mx-0.5">22个</span> 词条排名第一
+                至少有 <span className="text-[#004CE5] font-black text-3xl font-['Montserrat'] mx-0.5">10个</span> 词条达标
               </p>
               <div className="flex items-center gap-2 mt-0.5">
-                <span className="text-lg font-extrabold text-zinc-500 shrink-0">覆盖：</span>
+                <span className="text-lg font-extrabold text-zinc-500 shrink-0">满足：</span>
                 <div className="flex gap-2">
-                  {semanticTags.map((tag, i) => (
-                    <span key={i} className="text-base font-black bg-white border border-zinc-200/80 text-zinc-700 px-2 py-0.5 rounded-lg shadow-sm">
+                  {criteriaTags.map((tag, i) => (
+                    <span key={i} className="text-base font-black bg-white border border-zinc-200/80 text-[#004CE5] px-2 py-0.5 rounded-lg shadow-sm">
                       {tag}
                     </span>
                   ))}
@@ -64,14 +64,14 @@ export default function Page_KpiAcceptance_AI() {
           <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-zinc-800" />
-              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">多平台规则</span>
+              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收频率 & 规则</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                各平台独立计算达标
+                每日验收 <span className="text-lg font-bold text-zinc-500">/ 自然天</span>
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                不同平台排第一的词条可独立达标
+                各平台独立计算；不同平台满足标准的词条可独立达标
               </p>
             </div>
           </div>

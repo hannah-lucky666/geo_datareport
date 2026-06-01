@@ -55,10 +55,12 @@ export const slideConfig = [
   // ——— 篇章3: 附录 ———
   { type: 'chapter', title: '慕思智能床 · 附录', subtitle: 'SMART BED - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '附录数据明细' },
-  { type: 'page', title: '附录1 词条数据明细' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '通义千问' },
+  { type: 'page', title: '附录1 词条数据明细', subtitle: '元宝' },
+  { type: 'page', title: '附录1 词条数据明细', subtitle: '文心一言' },
+  { type: 'page', title: '附录1 词条数据明细', subtitle: 'Kimi' },
   { type: 'page', title: '附录2 投放文章引用统计' },
   { type: 'page', title: '附录3 异常情况排查原始数据' },
 
@@ -81,7 +83,6 @@ export const slideConfig = [
   // ——— 篇章6: 附录 ———
   { type: 'chapter', title: '慕思AI床垫 · 附录', subtitle: 'AI MATTRESS - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '附录数据明细' },
-  { type: 'page', title: '附录1 词条数据明细' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '通义千问' },
