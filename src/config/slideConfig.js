@@ -61,8 +61,6 @@ export const slideConfig = [
   { type: 'page', title: '附录1 词条数据明细', subtitle: '元宝' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '文心一言' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Kimi' },
-  { type: 'page', title: '附录2 投放文章引用统计' },
-  { type: 'page', title: '附录3 异常情况排查原始数据' },
 
   // ==================== 产品二：慕思AI床垫 ====================
 
@@ -86,6 +84,4 @@ export const slideConfig = [
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '通义千问' },
-  { type: 'page', title: '投放文章引用统计' },
-  { type: 'page', title: '异常情况排查原始数据' },
 ];

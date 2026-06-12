@@ -18,7 +18,7 @@ export default function Page_KpiAcceptance_AI() {
 
       {/* Main Grid: Info Section & Image Placeholder */}
       <div className="flex-grow flex flex-col gap-6 min-h-0">
-        
+
         {/* Top Compact Info Row (Unified and highly optimized for space, 4 columns) */}
         <div className="grid grid-cols-4 gap-6 shrink-0 bg-slate-50/60 border border-zinc-200/80 rounded-[1.5rem] p-6 shadow-[0_4px_20px_rgba(15,23,42,0.01)] overflow-hidden">
           {/* Col 1: Basic Info */}
@@ -84,10 +84,10 @@ export default function Page_KpiAcceptance_AI() {
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-900 leading-snug">
-                4.30 - 5.25 日
+                5.01 - 5.31 日
               </p>
               <p className="text-lg sm:text-[1.28rem] font-bold text-zinc-700 leading-snug mt-0.5">
-                总共 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">26天</span> 全部达标
+                总共 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">31天</span> 全部达标
               </p>
             </div>
           </div>
@@ -97,9 +97,9 @@ export default function Page_KpiAcceptance_AI() {
         <div className="flex-1 min-h-0 rounded-[2rem] border border-zinc-200/80 bg-white shadow-[0_12px_45px_rgba(15,23,42,0.02)] overflow-hidden relative group">
           <div className="absolute inset-0 bg-white flex items-center justify-center p-2">
             {!imgError ? (
-              <img 
-                src={imgSrc} 
-                alt="KPI验收图表" 
+              <img
+                src={imgSrc}
+                alt="KPI验收图表"
                 className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.01]"
                 onError={() => {
                   console.warn("Failed to load KPI acceptance chart, showing fallback.");
@@ -109,7 +109,7 @@ export default function Page_KpiAcceptance_AI() {
             ) : (
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-slate-50 to-zinc-100">
                 <div className="w-16 h-16 rounded-2xl bg-zinc-100 text-zinc-400 flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg>
                 </div>
                 <h3 className="text-2xl font-black text-zinc-800">KPI 达标多平台数据看板</h3>
                 <p className="text-lg text-zinc-400 mt-1 max-w-md">每日 Top 1 词条统计与语义覆盖追踪图</p>

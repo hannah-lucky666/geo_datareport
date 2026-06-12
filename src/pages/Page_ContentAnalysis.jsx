@@ -63,24 +63,24 @@ export default function Page_ContentAnalysis() {
         </h1>
       </div>
 
-      {/* Main Content Area: uses justify-between to distribute the 3 major blocks perfectly */}
-      <div className="flex-grow flex flex-col justify-between my-4 min-h-0">
+      {/* Main Content Area: Mathematically even and premium vertical layout */}
+      <div className="flex-grow flex flex-col justify-evenly my-2 min-h-0">
         
         {/* Block 1: Table 1 (Summary) */}
         <div className="rounded-[1.25rem] border border-zinc-200 bg-white shadow-[0_6px_30px_rgba(0,0,0,0.015)] overflow-hidden shrink-0">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-slate-50 border-b border-zinc-200">
-                <th className="py-3 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[18%] pl-10">类型</th>
-                <th className="py-3 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[18%]">占比</th>
-                <th className="py-3 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[24%]">趋势</th>
-                <th className="py-3 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider">核心关键词</th>
+                <th className="py-5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[18%] pl-10">类型</th>
+                <th className="py-5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[18%]">占比</th>
+                <th className="py-5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[24%]">趋势</th>
+                <th className="py-5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider">核心关键词</th>
               </tr>
             </thead>
             <tbody>
               {summaryData.map((row, idx) => (
                 <tr key={idx} className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/40 transition-colors ${row.colorClass}`}>
-                  <td className="py-4 px-8 pl-9">
+                  <td className="py-7 px-8 pl-9">
                     <span className="font-black text-xl flex items-center gap-3.5 text-zinc-800">
                       {row.isPositive ? (
                         <span className="flex items-center justify-center w-7 h-7 rounded-lg border-2 border-emerald-500 text-emerald-500 bg-white shrink-0 shadow-sm shadow-emerald-500/5">
@@ -94,14 +94,14 @@ export default function Page_ContentAnalysis() {
                       {row.type}
                     </span>
                   </td>
-                  <td className="py-4 px-8">
+                  <td className="py-7 px-8">
                     <span className={`text-2xl font-black font-['Montserrat',sans-serif] ${row.isPositive ? 'text-emerald-600' : 'text-rose-600'}`}>{row.ratio}</span>
                   </td>
-                  <td className="py-4 px-8">
+                  <td className="py-7 px-8">
                     <span className="text-[1.15rem] font-bold text-zinc-700">{row.trend}</span>
                   </td>
-                  <td className="py-4 px-8">
-                    <p className="text-[1.12rem] font-semibold text-zinc-650">{row.desc}</p>
+                  <td className="py-7 px-8">
+                    <p className="text-[1.12rem] font-semibold text-zinc-655">{row.desc}</p>
                   </td>
                 </tr>
               ))}
@@ -121,23 +121,23 @@ export default function Page_ContentAnalysis() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-slate-50 border-b border-zinc-200">
-                  <th className="py-3.5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[32%]">出现负面的词条</th>
-                  <th className="py-3.5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[22%]">负面类型</th>
-                  <th className="py-3.5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider">具体问题摘要</th>
+                  <th className="py-5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[32%]">出现负面的词条</th>
+                  <th className="py-5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider w-[22%]">负面类型</th>
+                  <th className="py-5 px-8 text-[1.12rem] font-bold text-zinc-700 tracking-wider">具体问题摘要</th>
                 </tr>
               </thead>
               <tbody>
                 {distributionData.map((row, idx) => (
                   <tr key={idx} className="border-b border-zinc-100 last:border-none hover:bg-slate-50/50 even:bg-slate-50/15 transition-colors">
-                    <td className="py-3 px-8 text-[1.12rem] font-bold text-zinc-800">
+                    <td className="py-6 px-8 text-[1.12rem] font-bold text-zinc-800">
                       {row.keyword}
                     </td>
-                    <td className="py-3 px-8">
+                    <td className="py-6 px-8">
                       <span className={`inline-block px-3.5 py-1 rounded-lg text-sm font-extrabold tracking-wide ${row.badgeClass}`}>
                         {row.type}
                       </span>
                     </td>
-                    <td className="py-3 px-8 text-[1.12rem] font-semibold text-zinc-655">
+                    <td className="py-6 px-8 text-[1.12rem] font-semibold text-zinc-655">
                       {row.summary}
                     </td>
                   </tr>
@@ -147,15 +147,15 @@ export default function Page_ContentAnalysis() {
           </div>
         </div>
 
-        {/* Divider Line */}
-        <div className="border-t border-zinc-200 shrink-0" />
-
-        {/* Block 3: Bottom Section (Content Optimization Banner Card) */}
-        <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-5 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)] shrink-0">
-          <h3 className="text-[1.38rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
-          <p className="text-[1.18rem] leading-relaxed text-zinc-700 font-bold">
-            “售后/维修/换货”相关词提及率偏低（<strong className="text-[#004CE5] font-black font-['Montserrat']">43-57%</strong>），且出现负面回答，需针对性优化售后服务的AI内容表达。
-          </p>
+        {/* Block 3 Group: Divider + Bottom Section */}
+        <div className="flex flex-col gap-5 shrink-0">
+          <div className="border-t border-zinc-200" />
+          <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-5 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
+            <h3 className="text-[1.38rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
+            <p className="text-[1.18rem] leading-relaxed text-zinc-700 font-bold">
+              “售后/维修/换货”相关词提及率偏低（<strong className="text-[#004CE5] font-black font-['Montserrat']">43-57%</strong>），且出现负面回答，需针对性优化售后服务的AI内容表达。
+            </p>
+          </div>
         </div>
 
       </div>

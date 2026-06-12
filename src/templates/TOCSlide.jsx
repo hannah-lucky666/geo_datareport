@@ -38,19 +38,19 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
 
       {/* Left: chapter list */}
       <div 
-        className={`absolute z-10 ${chapters.length > 3 ? 'grid grid-cols-2 gap-x-[120px] gap-y-[40px]' : 'flex flex-col gap-[20px]'} ${dbg}`} 
+        className={`absolute z-10 flex flex-col gap-[16px] ${dbg}`} 
         style={{ 
-          top: chapters.length > 3 ? '460px' : '607px', 
+          top: '488px', 
           left: '132px',
-          width: chapters.length > 3 ? '1360px' : 'auto'
+          width: 'auto'
         }}
       >
         {chapters.map((chapter, i) => (
-          <div key={i} className="flex items-baseline" style={{ gap: chapters.length > 3 ? '24px' : '43px', lineHeight: '1.4' }}>
+          <div key={i} className="flex items-baseline" style={{ gap: '20px', lineHeight: '1.4' }}>
             <span
               className="text-[#004CE5] shrink-0 font-light"
               style={{ 
-                fontSize: chapters.length > 3 ? '44px' : '72px', 
+                fontSize: '36px', 
                 fontFamily: "'MiSans', sans-serif" 
               }}
             >
@@ -59,7 +59,7 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
             <span
               className="text-zinc-900 font-semibold tracking-wide"
               style={{ 
-                fontSize: chapters.length > 3 ? '38px' : '70px', 
+                fontSize: '30px', 
                 fontFamily: "'MiSans', sans-serif" 
               }}
             >

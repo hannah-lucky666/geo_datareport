@@ -47,7 +47,7 @@ export default function Page_CoreDataOverview_AI() {
           {/* Metrics Row */}
           <div className="grid grid-cols-6 gap-3.5">
             {[
-              { label: '执行天数', value: '21', unit: '天' },
+              { label: '执行天数', value: '31', unit: '天' },
               { label: '监测词条', value: '30', unit: '个' },
               { label: '覆盖平台', value: '6', unit: '个' },
               { label: '总查询次数', value: '720', unit: '次' },
@@ -126,7 +126,7 @@ export default function Page_CoreDataOverview_AI() {
                     <div className="flex items-center gap-3">
                       <span className="text-4xl font-black text-[#004CE5] tracking-tight font-['Montserrat',sans-serif]">{row.after}</span>
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-sm font-extrabold bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500"><polyline points="18 15 12 9 6 15"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500"><polyline points="18 15 12 9 6 15" /></svg>
                         提升 {row.diff}
                       </span>
                     </div>
