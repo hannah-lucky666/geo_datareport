@@ -23,7 +23,7 @@ export const slideConfig = [
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO 索引未来',
-    subtitle: '慕思GEO \n 阶段性报告',
+    subtitle: '古井贡酒GEO \n 阶段性报告',
     date: 'May 2026',
   },
 
@@ -36,10 +36,10 @@ export const slideConfig = [
     serviceGuide: 'GEO DATA REPORT',
   },
 
-  // ==================== 产品一：慕思智能床 ====================
+  // ==================== 产品一：古井贡酒古16 ====================
 
   // ——— 篇章1: 核心数据总览 ———
-  { type: 'chapter', title: '慕思智能床 · 核心数据总览', subtitle: 'SMART BED - CORE DATA OVERVIEW', backgroundImage: '/' },
+  { type: 'chapter', title: '古井贡酒古16核心数据总览', subtitle: 'GU16 - CORE DATA OVERVIEW', backgroundImage: '/' },
   { type: 'section', title: '核心数据与验收情况' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
   { type: 'page', title: '竞品分析', component: Page_CompetitorAnalysis },
@@ -48,12 +48,12 @@ export const slideConfig = [
   { type: 'page', title: '内容分析总结', component: Page_ContentAnalysis },
 
   // ——— 篇章2: 投放内容明细 ———
-  { type: 'chapter', title: '慕思智能床 · 投放内容明细', subtitle: 'SMART BED - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: '古井贡酒古16投放内容明细', subtitle: 'GU16 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '投放渠道与数据明细' },
   { type: 'page', title: '投放文章与数据解读', component: Page_ContentDetails },
 
   // ——— 篇章3: 附录 ———
-  { type: 'chapter', title: '慕思智能床 · 附录', subtitle: 'SMART BED - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'chapter', title: '古井贡酒古16附录', subtitle: 'GU16 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '附录数据明细' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },
@@ -62,10 +62,10 @@ export const slideConfig = [
   { type: 'page', title: '附录1 词条数据明细', subtitle: '文心一言' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Kimi' },
 
-  // ==================== 产品二：慕思AI床垫 ====================
+  // ==================== 产品二：古井贡酒古20 ====================
 
   // ——— 篇章4: 核心数据总览 ———
-  { type: 'chapter', title: '慕思AI床垫 · 核心数据总览', subtitle: 'AI MATTRESS - CORE DATA OVERVIEW', backgroundImage: '/' },
+  { type: 'chapter', title: '古井贡酒古20  核心数据总览', subtitle: 'GU20 - CORE DATA OVERVIEW', backgroundImage: '/' },
   { type: 'section', title: '核心数据与验收情况' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview_AI },
   { type: 'page', title: '竞品分析', component: Page_CompetitorAnalysis_AI },
@@ -74,12 +74,12 @@ export const slideConfig = [
   { type: 'page', title: '内容分析总结', component: Page_ContentAnalysis_AI },
 
   // ——— 篇章5: 投放内容明细 ———
-  { type: 'chapter', title: '慕思AI床垫 · 投放内容明细', subtitle: 'AI MATTRESS - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: '古井贡酒古20  投放内容明细', subtitle: 'GU20 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '投放渠道与数据明细' },
   { type: 'page', title: '投放文章与数据解读', component: Page_ContentDetails_AI },
 
   // ——— 篇章6: 附录 ———
-  { type: 'chapter', title: '慕思AI床垫 · 附录', subtitle: 'AI MATTRESS - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'chapter', title: '古井贡酒古20  附录', subtitle: 'GU20 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '附录数据明细' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },

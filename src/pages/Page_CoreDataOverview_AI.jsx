@@ -8,24 +8,24 @@ export default function Page_CoreDataOverview_AI() {
   const tableData = [
     {
       metric: '提及率',
-      before: '40.5%',
-      after: '82.4%',
-      diff: '41.9%',
-      desc: '在各大核心AI平台关于目标词条的回答中，优化后整体展现（提及）率达82.4%，相比优化前的40.5%提升了41.9%。表明在AI检索场景下，该产品已被系统非常优秀地收录和推荐。',
+      before: '80.5%',
+      after: '88.3%',
+      diff: '7.8%',
+      desc: '提及率保持稳定上涨趋势，本月达到88.3%。这表明古20在AI生态中的基础收录与曝光广度进一步扩大。',
+    },
+    {
+      metric: 'Top1提及率',
+      before: '32.90%',
+      after: '42.60%',
+      diff: '9.70%',
+      desc: '在竞争更加激烈的高端/次高端酒水推荐中，古20正在快速从竞品手中抢夺“第一顺位”，突围效果显著。',
     },
     {
       metric: '平均提及位次',
-      before: '5.26',
-      after: 'NO. 2.5',
-      diff: '2.76 位',
-      desc: '当AI提及相关品牌时，优化后平均顺位由第5.26位提升至第2.5位（位次提升2.76位）。表明产品在AI系统推荐列表中位次非常靠前，整体呈现极佳态势。',
-    },
-    {
-      metric: '行业影响力排名',
-      before: '21.8%',
-      after: 'NO. 1',
-      diff: '夺得首位',
-      desc: '优化前Top1提及率为21.8%。优化后，慕思AI床垫在各大核心AI平台的综合推荐顺位中成功夺得行业第一名（NO. 1），成为大模型系统在该品类下的首选推荐品牌。',
+      before: 'NO. 5.5',
+      after: 'NO. 4.7',
+      diff: '0.8 位',
+      desc: '平均顺位从5.5名提升至4.7名，当AI给出多个高端酒水选项时，古20已经获得了更靠前、更易获取用户注意力的视觉权重。',
     },
   ];
 
@@ -47,12 +47,12 @@ export default function Page_CoreDataOverview_AI() {
           {/* Metrics Row */}
           <div className="grid grid-cols-6 gap-3.5">
             {[
-              { label: '执行天数', value: '31', unit: '天' },
-              { label: '监测词条', value: '30', unit: '个' },
-              { label: '覆盖平台', value: '6', unit: '个' },
-              { label: '总查询次数', value: '720', unit: '次' },
-              { label: '引用文章', value: '7,548', unit: '篇' },
-              { label: '识别竞品', value: '131', unit: '家' }
+              { label: '执行天数', value: '28', unit: '天' },
+              { label: '监测词条', value: '14', unit: '个' },
+              { label: '覆盖平台', value: '4', unit: '个' },
+              { label: '总查询次数', value: '300', unit: '次' },
+              { label: '引用文章', value: '2,463', unit: '篇' },
+              { label: '识别竞品', value: '69', unit: '家' }
             ].map((metric, idx) => (
               <div
                 key={idx}
@@ -71,7 +71,7 @@ export default function Page_CoreDataOverview_AI() {
           <div className="rounded-2xl border border-[#004CE5]/20 bg-slate-50/[0.5] py-4 px-6 flex items-center shadow-[0_4px_15px_rgba(0,76,229,0.005)]">
             <p className="text-lg sm:text-[1.32rem] font-black text-zinc-800 leading-relaxed">
               <span className="text-[#004CE5] font-black mr-2">【总述】</span>
-              目前数据情况来看，慕思AI床垫在各大AI平台整体表现<strong className="text-[#004CE5] font-black mx-1">非常优异</strong>，多项指标已<strong className="text-[#004CE5] font-black mx-1">超出预期</strong>并成功夺得品类首位。之后的策略是持续稳固领先优势，进一步加强深度内容覆盖。
+              目前数据情况来看，处于第一梯队，整体 KPI 完成，之后整体策略是保持稳定，减少波动。
             </p>
           </div>
         </div>
@@ -108,8 +108,8 @@ export default function Page_CoreDataOverview_AI() {
             <thead>
               <tr className="bg-[#004CE5]/[0.02] border-b border-[#004CE5]/20">
                 <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[18%]">核心数据指标</th>
-                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[10%]">优化前</th>
-                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[22%]">优化后 (本月)</th>
+                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[10%]">4月</th>
+                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[22%]">5月 (本月)</th>
                 <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[50%]">数据说明</th>
               </tr>
             </thead>

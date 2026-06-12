@@ -107,14 +107,14 @@ export default function Page_CompetitorAnalysis_AI() {
               {/* Card 1 */}
               <div className="p-5 rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 shadow-[0_4px_15px_rgba(0,76,229,0.01)] flex flex-col justify-center flex-1 min-h-0">
                 <p className="text-[1.32rem] leading-relaxed text-zinc-800 font-semibold">
-                  1. 护脊效果好防腰疼 - 提及率仅50%，HEKA 占据NO.1，需强化护脊技术内容投放
+                  1. 五粮液是最大的核心实质性威胁。五粮液高端品牌力极强，虽然总体提及率（67.4%）排第四，但其Top1提及率高达34.5%（紧咬古20），AI极倾向首推它。
                 </p>
               </div>
 
               {/* Card 2 */}
               <div className="p-5 rounded-2xl bg-slate-50/60 border border-slate-200/80 shadow-[0_4px_15px_rgba(15,23,42,0.005)] flex flex-col justify-center flex-1 min-h-0">
                 <p className="text-[1.32rem] leading-relaxed text-zinc-800 font-semibold">
-                  2. 经久耐用不塌陷 - 提及率仅50%，MPE 抢占NO.1，需补充耐久性测评内容
+                  2. 剑南春、洋河沦为高频“伴随型”备选。两品牌总体提及率双双达73.3%（并列第二）常同台出现，但洋河Top1率仅6.4%，剑南春未进前五，缺乏首推竞争力。
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Page_CompetitorAnalysis_AI() {
               {[
                 {
                   num: '01',
-                  desc: 'AI床垫品牌前十名 - MPE 占据NO.1，该词是高流量泛词，必须夺回首位',
+                  desc: '针对五粮液开展“场景差异化”超车。增加投放带有明确限定词的语料，引导AI在具体场景下将古20的排位提至五粮液之前。',
                   badgeBg: 'bg-[#0038A8]',
                   borderColor: 'border-[#0038A8]/15',
                   bgColor: 'bg-[#0038A8]/[0.015]',
@@ -138,7 +138,7 @@ export default function Page_CompetitorAnalysis_AI() {
                 },
                 {
                   num: '02',
-                  desc: '售后服务好/全国联保售后 - MPE 连续抢占，与负面舆情中的售后问题形成共振，需重点处理',
+                  desc: '针对“多品牌同台”进行降维打击拦截。主动铺设对比评测内容，在语料中植入“古20档次更高”、“古20年份原浆品质更优”的结论，确保定性评价稳压竞品。',
                   badgeBg: 'bg-[#004CE5]',
                   borderColor: 'border-[#004CE5]/15',
                   bgColor: 'bg-[#004CE5]/[0.015]',
@@ -152,7 +152,7 @@ export default function Page_CompetitorAnalysis_AI() {
                   <div className={`w-12 h-12 rounded-xl ${strat.badgeBg} ${strat.glowColor} text-white flex items-center justify-center font-black text-lg shrink-0 font-['Montserrat',sans-serif]`}>
                     {strat.num}
                   </div>
-                  <p className="text-[1.28rem] leading-relaxed text-zinc-800 font-semibold flex-1 min-h-0">
+                  <p className="text-[1.2rem] leading-normal text-zinc-800 font-semibold flex-1 min-h-0">
                     {strat.desc}
                   </p>
                 </div>

@@ -4,17 +4,17 @@ export default function Page_ContentAnalysis() {
   const summaryData = [
     {
       type: '正面',
-      ratio: '97.60%',
-      trend: '持续向好 (96% → 99%)',
-      desc: '正面核心关键词：产品推荐、生态联动、技术先进',
+      ratio: '99.7%',
+      trend: '保持极高水平',
+      desc: '正面核心关键词：包装喜庆、品牌认可、口感普适',
       isPositive: true,
       colorClass: 'border-l-4 border-emerald-500',
     },
     {
       type: '负面',
-      ratio: '2.40%',
-      trend: '共13条负面回答',
-      desc: '负面核心关键词：产品质量问题、售后服务差、质量问题',
+      ratio: '0.3%',
+      trend: '个别问答存在优化空间',
+      desc: '负面核心关键词：品牌认知',
       isPositive: false,
       colorClass: 'border-l-4 border-rose-500',
     }
@@ -22,34 +22,16 @@ export default function Page_ContentAnalysis() {
 
   const distributionData = [
     {
-      keyword: '支持上门维护的智能床推荐',
+      keyword: '300-500元左右不易醉的婚宴用酒',
       type: '负面回答',
-      summary: 'AI优先推荐MPE、喜临门等竞品的上门服务',
+      summary: '竞品截流',
       badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
     },
     {
-      keyword: '品质稳定售后有保障的智能床推荐',
+      keyword: '500元左右性价比高婚宴用酒推荐',
       type: '负面回答',
-      summary: 'AI推荐MPE"航天级品质 + 25年超长质保"，未优先提及慕思',
+      summary: '未将本品作为高优推荐',
       badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
-    },
-    {
-      keyword: '2万左右能缓解入睡困难的智能床推荐',
-      type: '负面回答',
-      summary: '竞品"哄睡模式"相关内容被优先引用',
-      badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
-    },
-    {
-      keyword: '实用性强不吃灰',
-      type: '产品信息错误',
-      summary: '存在产品信息描述不准确',
-      badgeClass: 'bg-amber-50 text-amber-600 border border-amber-100',
-    },
-    {
-      keyword: '部分词条',
-      type: '价格错误',
-      summary: '存在价格信息错误',
-      badgeClass: 'bg-red-50 text-red-600 border border-red-100',
     }
   ];
 
@@ -153,7 +135,7 @@ export default function Page_ContentAnalysis() {
           <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-5 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
             <h3 className="text-[1.38rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
             <p className="text-[1.18rem] leading-relaxed text-zinc-700 font-bold">
-              “售后/维修/换货”相关词提及率偏低（<strong className="text-[#004CE5] font-black font-['Montserrat']">43-57%</strong>），且出现负面回答，需针对性优化售后服务的AI内容表达。
+              定向制作并投放一批绑定“<strong className="text-[#004CE5] font-black mx-0.5">300-500元预算</strong>”、“<strong className="text-[#004CE5] font-black mx-0.5">高性价比婚宴酒</strong>”、“<strong className="text-[#004CE5] font-black mx-0.5">包装喜庆</strong>”、“<strong className="text-[#004CE5] font-black mx-0.5">好喝不易醉</strong>”等长尾关键词的优质语料。
             </p>
           </div>
         </div>

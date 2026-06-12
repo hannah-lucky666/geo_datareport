@@ -64,14 +64,14 @@ export default function Page_KpiAcceptance() {
           <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-zinc-800" />
-              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收频率 & 规则</span>
+              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收频率</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                每日验收 <span className="text-lg font-bold text-zinc-500">/ 自然天</span>
+                每周验收
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                各平台独立计算；不同平台满足标准的词条可独立达标
+                按周评估各大AI平台，检测多少词条同时做到频繁提及与排名靠前
               </p>
             </div>
           </div>
