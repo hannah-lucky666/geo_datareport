@@ -22,46 +22,36 @@ export default function Page_KpiAcceptance_AI() {
         {/* Top Compact Info Row (Unified and highly optimized for space, 4 columns) */}
         <div className="grid grid-cols-4 gap-6 shrink-0 bg-slate-50/60 border border-zinc-200/80 rounded-[1.5rem] p-6 shadow-[0_4px_20px_rgba(15,23,42,0.01)] overflow-hidden">
           {/* Col 1: Basic Info */}
-          <div className="flex flex-col gap-2 justify-center">
+          <div className="flex flex-col gap-2 justify-start">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-[#004CE5]" />
               <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收类型</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                提及率 + 平均位次
+                提及率
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                曝光稳定型：检查有多少词条同时做到被频繁提及和排名靠前。
+                曝光稳定型：检查多少词条达到指定提及率标准
               </p>
             </div>
           </div>
 
           {/* Col 2: Target Numbers & Tags */}
-          <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
+          <div className="flex flex-col gap-2 justify-start border-l border-zinc-200/80 pl-6">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-emerald-500" />
               <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">具体达标条件</span>
             </div>
-            <div className="flex flex-col gap-1.5 mt-1">
+            <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
                 至少有 <span className="text-[#004CE5] font-black text-3xl font-['Montserrat'] mx-0.5">10个</span> 词条达标
               </p>
-              <div className="flex items-center gap-2 mt-0.5">
-                <span className="text-lg font-extrabold text-zinc-500 shrink-0">满足：</span>
-                <div className="flex gap-2">
-                  {criteriaTags.map((tag, i) => (
-                    <span key={i} className="text-base font-black bg-white border border-zinc-200/80 text-[#004CE5] px-2 py-0.5 rounded-lg shadow-sm">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
 
           {/* Col 3: Rules */}
-          <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
+          <div className="flex flex-col gap-2 justify-start border-l border-zinc-200/80 pl-6">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-zinc-800" />
               <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收频率</span>
@@ -71,13 +61,13 @@ export default function Page_KpiAcceptance_AI() {
                 每周验收
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                按周评估各大AI平台，检测多少词条同时做到频繁提及与排名靠前
+                按周评估各大AI平台，检测多少词条达到指定提及率标准
               </p>
             </div>
           </div>
 
           {/* Col 4: Conclusion (Highlighted style, slightly bold but clean) */}
-          <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6 bg-[#004CE5]/[0.03] -my-6 -mr-6 p-6 rounded-r-[1.5rem]">
+          <div className="flex flex-col gap-2 justify-start border-l border-zinc-200/80 pl-6 bg-[#004CE5]/[0.03] -my-6 -mr-6 p-6 rounded-r-[1.5rem]">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-[#004CE5] shadow-[0_0_8px_rgba(0,76,229,0.25)]" />
               <span className="text-base font-extrabold text-[#004CE5] tracking-widest">结论</span>
@@ -87,7 +77,7 @@ export default function Page_KpiAcceptance_AI() {
                 5.01 - 5.31 日
               </p>
               <p className="text-lg sm:text-[1.28rem] font-bold text-zinc-700 leading-snug mt-0.5">
-                总共 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">31天</span> 全部达标
+                总共 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">四周</span> 全部达标
               </p>
             </div>
           </div>

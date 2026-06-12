@@ -39,7 +39,7 @@ export const slideConfig = [
   // ==================== 产品一：古井贡酒古16 ====================
 
   // ——— 篇章1: 核心数据总览 ———
-  { type: 'chapter', title: '古井贡酒古16核心数据总览', subtitle: 'GU16 - CORE DATA OVERVIEW', backgroundImage: '/' },
+  { type: 'chapter', title: '古井贡酒古16\n核心数据总览', subtitle: 'GU16 - CORE DATA OVERVIEW', backgroundImage: '/' },
   { type: 'section', title: '核心数据与验收情况' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
   { type: 'page', title: '竞品分析', component: Page_CompetitorAnalysis },
@@ -48,12 +48,12 @@ export const slideConfig = [
   { type: 'page', title: '内容分析总结', component: Page_ContentAnalysis },
 
   // ——— 篇章2: 投放内容明细 ———
-  { type: 'chapter', title: '古井贡酒古16投放内容明细', subtitle: 'GU16 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: '古井贡酒古16\n投放内容明细', subtitle: 'GU16 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '投放渠道与数据明细' },
   { type: 'page', title: '投放文章与数据解读', component: Page_ContentDetails },
 
   // ——— 篇章3: 附录 ———
-  { type: 'chapter', title: '古井贡酒古16附录', subtitle: 'GU16 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'chapter', title: '古井贡酒古16\n附录', subtitle: 'GU16 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '附录数据明细' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },
@@ -65,21 +65,21 @@ export const slideConfig = [
   // ==================== 产品二：古井贡酒古20 ====================
 
   // ——— 篇章4: 核心数据总览 ———
-  { type: 'chapter', title: '古井贡酒古20  核心数据总览', subtitle: 'GU20 - CORE DATA OVERVIEW', backgroundImage: '/' },
+  { type: 'chapter', title: '古井贡酒古20\n核心数据总览', subtitle: 'GU20 - CORE DATA OVERVIEW', backgroundImage: '/' },
   { type: 'section', title: '核心数据与验收情况' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview_AI },
   { type: 'page', title: '竞品分析', component: Page_CompetitorAnalysis_AI },
   { type: 'page', title: '词条归类与优化策略', component: Page_KeywordCategorization_AI },
   { type: 'page', title: 'KPI验收情况', component: Page_KpiAcceptance_AI },
-  { type: 'page', title: '内容分析总结', component: Page_ContentAnalysis_AI },
+  // { type: 'page', title: '内容分析总结', component: Page_ContentAnalysis_AI },
 
   // ——— 篇章5: 投放内容明细 ———
-  { type: 'chapter', title: '古井贡酒古20  投放内容明细', subtitle: 'GU20 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: '古井贡酒古20\n投放内容明细', subtitle: 'GU20 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '投放渠道与数据明细' },
   { type: 'page', title: '投放文章与数据解读', component: Page_ContentDetails_AI },
 
   // ——— 篇章6: 附录 ———
-  { type: 'chapter', title: '古井贡酒古20  附录', subtitle: 'GU20 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'chapter', title: '古井贡酒古20\n附录', subtitle: 'GU20 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '附录数据明细' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
   { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },

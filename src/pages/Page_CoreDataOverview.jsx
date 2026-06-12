@@ -47,7 +47,7 @@ export default function Page_CoreDataOverview() {
           {/* Metrics Row */}
           <div className="grid grid-cols-6 gap-3.5">
             {[
-              { label: '执行天数', value: '28', unit: '天' },
+              { label: '执行天数', value: '31', unit: '天' },
               { label: '监测词条', value: '15', unit: '个' },
               { label: '覆盖平台', value: '4', unit: '个' },
               { label: '总查询次数', value: '300', unit: '次' },

@@ -47,7 +47,7 @@ export default function Page_CoreDataOverview_AI() {
           {/* Metrics Row */}
           <div className="grid grid-cols-6 gap-3.5">
             {[
-              { label: '执行天数', value: '28', unit: '天' },
+              { label: '执行天数', value: '31', unit: '天' },
               { label: '监测词条', value: '14', unit: '个' },
               { label: '覆盖平台', value: '4', unit: '个' },
               { label: '总查询次数', value: '300', unit: '次' },
@@ -71,7 +71,7 @@ export default function Page_CoreDataOverview_AI() {
           <div className="rounded-2xl border border-[#004CE5]/20 bg-slate-50/[0.5] py-4 px-6 flex items-center shadow-[0_4px_15px_rgba(0,76,229,0.005)]">
             <p className="text-lg sm:text-[1.32rem] font-black text-zinc-800 leading-relaxed">
               <span className="text-[#004CE5] font-black mr-2">【总述】</span>
-              目前数据情况来看，处于第一梯队，整体 KPI 完成，之后整体策略是保持稳定，减少波动。
+              本月古20各项指标表现稳定，提及率与首推率均回归到高位水平，整体 KPI 顺利达成。下阶段核心策略将聚焦于高价值场景的差异化渗透，持续巩固排位升势。
             </p>
           </div>
         </div>

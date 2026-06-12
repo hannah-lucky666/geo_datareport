@@ -47,6 +47,7 @@ export default function Page_ProposalChapterCover({
                         top: '350px',
                         left: '66px',
                         maxWidth: '1400px',
+                        whiteSpace: 'pre-line',
                     }}
                 >
                     {title}
@@ -87,7 +88,7 @@ export default function Page_ProposalChapterCover({
                                     marginLeft: '2px',
                                 }}
                             >
-                                {ch.title}
+                                {ch.title.replace('\n', '')}
                             </span>
                         </div>
                     );
