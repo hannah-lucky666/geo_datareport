@@ -14,13 +14,13 @@ export default function Page_CoreDataOverview() {
       {/* 1. Top Section: Decorative Data Remark */}
       <div className="rounded-xl border border-zinc-200 bg-slate-50/40 py-3.5 px-6 shrink-0 mb-4">
         <p className="text-[1.35rem] leading-relaxed text-zinc-500 font-bold">
-          本次监测周期覆盖 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">3</span> 个核心AI平台，针对重点监测词条进行累计查询，追踪引用相关问答数据共计 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">4,737</span> 篇次，整体项目平稳推进。
+          本周期共监测 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">48</span> 个关键词条，在 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">3</span> 个平台完成 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">7</span> 天连续查询，合计执行查询 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">1,008</span> 次，抓取并识别引用文章 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">9,738</span> 篇，同期识别竞品品牌 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">93</span> 家，截图覆盖率达 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">100%</span>。各项数据指标均在预期执行范围内，整体运行稳定。
         </p>
       </div>
 
       {/* 2. Middle Section: Consolidated Table (Embellished with Theme Blue) */}
-      <div className="rounded-2xl border border-zinc-300 bg-white shadow-[0_4px_30px_rgba(0,0,0,0.015)] overflow-hidden flex-1 min-h-0 flex flex-col mb-[36px]">
-        <table className="w-full text-left border-collapse table-fixed flex-1">
+      <div className="rounded-2xl border border-zinc-300 bg-white shadow-[0_4px_30px_rgba(0,0,0,0.015)] overflow-hidden shrink-0 mb-[36px]">
+        <table className="w-full text-left border-collapse table-fixed">
           <thead>
             <tr className="text-white">
               <th rowSpan={2} className="py-5 px-8 text-2xl font-black text-center w-[22%] bg-zinc-800 border-r border-white/10">产品</th>
@@ -40,19 +40,20 @@ export default function Page_CoreDataOverview() {
           <tbody>
             {/* Product 1: 菜鸟 */}
             <tr className="border-b border-zinc-200 bg-white hover:bg-slate-50/20 transition-colors">
-              <td className="py-4 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
+              <td className="py-5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
                 菜鸟
               </td>
-              <td className="py-4 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">92.6%</td>
-              <td className="py-4 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">84.7%</td>
-              <td className="py-4 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.3</td>
-              <td className="py-4 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.5</td>
-              <td className="py-4 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
-              <td className="py-4 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+              <td className="py-5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">92.6%</td>
+              <td className="py-5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">84.7%</td>
+              <td className="py-5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.3</td>
+              <td className="py-5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.5</td>
+              <td className="py-5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+              <td className="py-5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div className="flex-grow" />
 
       {/* 3. Bottom Section: Summary & Strategy Cards (Merged & Spacious) */}
       <div className="grid grid-cols-2 gap-6 shrink-0 h-[195px]">
