@@ -1,175 +1,186 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Page_CompetitorAnalysis() {
-  const [img1Error, setImg1Error] = useState(false);
-  const [img2Error, setImg2Error] = useState(false);
-  const [img3Error, setImg3Error] = useState(false);
+  const mentionRateData = [
+    { name: '古井贡酒', value: '96.3%' },
+    { name: '剑南春', value: '80.0%' },
+    { name: '洋河', value: '58.7%' },
+    { name: '今世缘', value: '57.7%' },
+    { name: '郎酒', value: '51.7%' },
+  ];
 
-  // Cache buster timestamps
-  const [img1Src] = useState(`/report/mention_rate_chart.png?t=${Date.now()}`);
-  const [img2Src] = useState(`/report/top1_rate_chart.png?t=${Date.now()}`);
-  const [img3Src] = useState(`/report/rank_order_chart.png?t=${Date.now()}`);
+  const top1RateData = [
+    { name: '古井贡酒', value: '78.3%' },
+    { name: '剑南春', value: '6.7%' },
+    { name: '五粮液', value: '6.0%' },
+    { name: '茅台', value: '4.7%' },
+    { name: '石荣霄', value: '1.3%' },
+  ];
+
+  const avgRankData = [
+    { name: '古井贡酒', value: 'NO. 2.1' },
+    { name: '剑南春', value: 'NO. 4.1' },
+    { name: '今世缘', value: 'NO. 6.0' },
+    { name: '郎酒', value: 'NO. 6.1' },
+    { name: '泸州老窖', value: 'NO. 6.2' },
+  ];
+
+  const renderTable = (title, headers, data) => {
+    return (
+      <div className="flex flex-col gap-3 h-full min-h-0">
+        <h3 className="text-2xl font-extrabold text-zinc-800 tracking-wide pl-1.5 flex items-center gap-2 shrink-0">
+          <span className="w-1.5 h-4.5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.25)]" />
+          {title}
+        </h3>
+        <div className="flex-grow rounded-2xl border border-zinc-200 bg-white shadow-[0_6px_25px_rgba(0,0,0,0.01)] overflow-hidden flex flex-col p-4">
+          <table className="w-full text-left border-collapse table-fixed flex-grow h-full">
+            <thead>
+              <tr className="border-b border-zinc-200 bg-slate-50/50">
+                <th className="py-3 px-3 w-[18%]"></th>
+                <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[52%]">{headers[0]}</th>
+                <th className="py-3 px-4 text-lg font-black text-zinc-500 w-[30%] text-right pr-6">{headers[1]}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((item, idx) => {
+                const isBrand = item.name === '古井贡酒';
+                const rank = idx + 1;
+
+                let rankElement;
+                if (rank === 1) {
+                  rankElement = (
+                    <div className="w-10 h-10 rounded-full bg-[#FFD100] text-zinc-900 flex items-center justify-center font-black text-xl shadow-sm">
+                      1
+                    </div>
+                  );
+                } else if (rank === 2) {
+                  rankElement = (
+                    <div className="w-10 h-10 rounded-full bg-zinc-200 text-zinc-600 flex items-center justify-center font-black text-xl">
+                      2
+                    </div>
+                  );
+                } else if (rank === 3) {
+                  rankElement = (
+                    <div className="w-10 h-10 rounded-full bg-[#FFC085] text-zinc-800 flex items-center justify-center font-black text-xl shadow-sm">
+                      3
+                    </div>
+                  );
+                } else {
+                  rankElement = (
+                    <div className="text-zinc-400 font-bold text-[22px] text-center w-10">
+                      {rank}
+                    </div>
+                  );
+                }
+
+                return (
+                  <tr
+                    key={idx}
+                    className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/50 transition-colors ${isBrand ? 'bg-[#004CE5]/[0.03]' : ''
+                      }`}
+                  >
+                    <td className="py-3 px-3 align-middle">
+                      <div className="flex justify-center">{rankElement}</div>
+                    </td>
+                    <td className="py-3 px-2 align-middle">
+                      <div className="flex items-center flex-wrap gap-2">
+                        <span className={`text-[1.4rem] ${isBrand ? 'font-black text-[#004CE5]' : 'font-bold text-zinc-800'}`}>
+                          {item.name}
+                        </span>
+                        {isBrand && (
+                          <span className="px-2 py-0.5 text-[0.8rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50">
+                            目标产品
+                          </span>
+                        )}
+                      </div>
+                    </td>
+                    <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'
+                      }`}>
+                      {item.value}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  };
 
   return (
-    <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-8 text-zinc-800 font-sans">
-      {/* Title */}
-      <div className="flex items-center gap-3 mb-10 shrink-0">
-        <div className="w-1.5 h-8 bg-[#004CE5] rounded-full shadow-[0_0_12px_rgba(0,76,229,0.2)]" />
-        <h1 className="text-3xl font-black text-zinc-900 tracking-wider">
-          竞品分析
+    <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-800 font-sans justify-between overflow-hidden">
+      {/* Title Area */}
+      <div className="flex items-center shrink-0 mb-3">
+        <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
+        <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
+          古16竞品分析
         </h1>
       </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col gap-6 min-h-0">
-
-        {/* Three Images Side-by-Side Area */}
-        <div className="grid grid-cols-3 gap-6 h-[510px] shrink-0">
-
-          {/* Card 1: Mention Rate */}
-          <div className="flex flex-col gap-3 h-full min-h-0">
-            <h3 className="text-2xl font-extrabold text-zinc-800 tracking-wide pl-1.5 flex items-center gap-2 shrink-0">
-              <span className="w-1.5 h-4.5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.25)]" />
-              提及率对比
-            </h3>
-            <div className="flex-1 min-h-0 rounded-2xl border border-[#004CE5]/25 bg-white shadow-[0_10px_30px_rgba(0,76,229,0.02)] overflow-hidden relative flex flex-col p-4 hover:border-[#004CE5]/40 transition-colors duration-300">
-              <div className="flex-1 min-h-0 bg-white flex items-center justify-center relative">
-                {!img1Error ? (
-                  <img
-                    src={img1Src}
-                    alt="提及率对比"
-                    className="w-full h-full object-contain"
-                    onError={() => setImg1Error(true)}
-                  />
-                ) : (
-                  <div className="absolute inset-0 bg-slate-50 flex items-center justify-center text-zinc-400 text-sm">提及率对比图表</div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2: Top1 Mention Rate */}
-          <div className="flex flex-col gap-3 h-full min-h-0">
-            <h3 className="text-2xl font-extrabold text-zinc-800 tracking-wide pl-1.5 flex items-center gap-2 shrink-0">
-              <span className="w-1.5 h-4.5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.25)]" />
-              Top1提及率对比
-            </h3>
-            <div className="flex-1 min-h-0 rounded-2xl border border-[#004CE5]/25 bg-white shadow-[0_10px_30px_rgba(0,76,229,0.02)] overflow-hidden relative flex flex-col p-4 hover:border-[#004CE5]/40 transition-colors duration-300">
-              <div className="flex-1 min-h-0 bg-white flex items-center justify-center relative">
-                {!img2Error ? (
-                  <img
-                    src={img2Src}
-                    alt="Top1提及率对比"
-                    className="w-full h-full object-contain"
-                    onError={() => setImg2Error(true)}
-                  />
-                ) : (
-                  <div className="absolute inset-0 bg-slate-50 flex items-center justify-center text-zinc-400 text-sm">Top1提及率对比图表</div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3: Rank Position */}
-          <div className="flex flex-col gap-3 h-full min-h-0">
-            <h3 className="text-2xl font-extrabold text-zinc-800 tracking-wide pl-1.5 flex items-center gap-2 shrink-0">
-              <span className="w-1.5 h-4.5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.25)]" />
-              提及位次对比
-            </h3>
-            <div className="flex-1 min-h-0 rounded-2xl border border-[#004CE5]/25 bg-white shadow-[0_10px_30px_rgba(0,76,229,0.02)] overflow-hidden relative flex flex-col p-4 hover:border-[#004CE5]/40 transition-colors duration-300">
-              <div className="flex-1 min-h-0 bg-white flex items-center justify-center relative">
-                {!img3Error ? (
-                  <img
-                    src={img3Src}
-                    alt="提及位次对比"
-                    className="w-full h-full object-contain"
-                    onError={() => setImg3Error(true)}
-                  />
-                ) : (
-                  <div className="absolute inset-0 bg-slate-50 flex items-center justify-center text-zinc-400 text-sm">提及位次对比图表</div>
-                )}
-              </div>
-            </div>
-          </div>
-
+      <div className="flex-grow flex flex-col min-h-0 justify-start">
+        {/* Three Tables Side-by-Side Area (Taller height - 490px, completely untouched) */}
+        <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
+          {renderTable('提及率排名', ['产品名称', '提及率'], mentionRateData)}
+          {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], top1RateData)}
+          {renderTable('提及位次排名', ['产品名称', '平均提及位次'], avgRankData)}
         </div>
 
-        {/* Bottom Spacious Dashboard Area (Balanced Side-by-Side to prevent overflow and scrollbars) */}
-        <div className="grid grid-cols-2 gap-8 flex-1 min-h-0">
-          
+        {/* Bottom Spacious Dashboard Area (Increased to 340px for taller containers, exactly 60px gap below tables) */}
+        <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
           {/* Left Column: 潜在竞争分析 */}
-          <div className="flex flex-col gap-4 min-h-0 h-full">
+          <div className="flex flex-col gap-3 h-full min-h-0">
             <h2 className="text-2xl font-black text-zinc-900 flex items-center gap-2 shrink-0">
               <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]" />
               潜在竞争分析：
             </h2>
-            <div className="flex-grow flex flex-col gap-4 min-h-0 justify-between">
-              {/* Card 1 */}
-              <div className="p-5 rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 shadow-[0_4px_15px_rgba(0,76,229,0.01)] flex flex-col justify-center flex-1 min-h-0">
-                <p className="text-[1.32rem] leading-relaxed text-zinc-800 font-semibold">
-                  1. 剑南春是唯一具有“高频伴随威胁”的竞品。其总体提及率达86.0%，AI常将其同台推荐，但其Top1提及率仅14.7%，平均位次3.5，尚未动摇古井贡酒的首推地位。
-                </p>
-              </div>
-
-              {/* Card 2 */}
-              <div className="p-5 rounded-2xl bg-slate-50/60 border border-slate-200/80 shadow-[0_4px_15px_rgba(15,23,42,0.005)] flex flex-col justify-center flex-1 min-h-0">
-                <p className="text-[1.32rem] leading-relaxed text-zinc-800 font-semibold">
-                  2. 第二梯队品牌表现分散（洋河57.3%、今世缘52.3%、水井坊52.0%），平均提及位次落后至第5、第6位以后，目前不构成实质性威胁。
-                </p>
-              </div>
+            <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
+              <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
+                1. 剑南春作为主要竞争对手，提及率达到80.0%，但其Top1提及率仅有6.7%，且平均提及位次在NO. 4.1，处于明显劣势地位。
+              </p>
+              <div className="h-px bg-[#004CE5]/10 my-1" />
+              <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
+                2. 其它竞品如洋河、今世缘、郎酒等，提及率处于51%-59%区间，平均提及位次均在NO. 6.0之后，对古16的威胁程度较低。
+              </p>
             </div>
           </div>
 
           {/* Right Column: 重点优化策略 */}
-          <div className="flex flex-col gap-4 min-h-0 h-full">
+          <div className="flex flex-col gap-3 h-full min-h-0">
             <h2 className="text-2xl font-black text-zinc-900 flex items-center gap-2 shrink-0">
               <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]" />
               重点优化策略：
             </h2>
-            <div className="flex-grow flex flex-col gap-3 min-h-0 justify-between">
+            <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
                 {
                   num: '01',
-                  desc: '优势词条与“首推位”重点巩固。提取高价值强势词条的生效语料进行复盘，持续强化权重，确保古16第一顺位不动摇。',
-                  badgeBg: 'bg-[#0038A8]',
-                  borderColor: 'border-[#0038A8]/15',
-                  bgColor: 'bg-[#0038A8]/[0.015]',
-                  glowColor: 'shadow-[0_0_12px_rgba(0,56,168,0.1)]'
+                  title: '首推位巩固',
+                  desc: '古16的首推率高达78.3%，优势巨大。需持续稳定核心长尾词，保持绝对的首推顺位领先。',
                 },
                 {
                   num: '02',
-                  desc: '核心竞品差异化拦截。针对剑南春86%的高同台展现率，在语料中加入对比并引导AI输出“古16更优”结论，压制竞品排位。',
-                  badgeBg: 'bg-[#004CE5]',
-                  borderColor: 'border-[#004CE5]/15',
-                  bgColor: 'bg-[#004CE5]/[0.015]',
-                  glowColor: 'shadow-[0_0_12px_rgba(0,76,229,0.1)]'
+                  desc: '针对高同台的剑南春（80.0%提及率）实施精细化对比拦截，优化AI语料库，拉大身位差距。',
+                  title: '拦截第二梯队',
                 },
                 {
                   num: '03',
-                  desc: '建立常态化防御。持续监控洋河、今世缘数据，增加在地域特色、特定婚宴等细分长尾场景布局，挤压竞品展现空间。',
-                  badgeBg: 'bg-[#2E75FF]',
-                  borderColor: 'border-[#2E75FF]/15',
-                  bgColor: 'bg-[#2E75FF]/[0.015]',
-                  glowColor: 'shadow-[0_0_12px_rgba(46,117,255,0.1)]'
-                }
+                  desc: '利用洋河、今世缘等竞品在提及率（约57%）和排位（NO. 6.0+）上的弱势，在婚宴等特色场景继续精细渗透。',
+                  title: '细分场景占位',
+                },
               ].map((strat, idx) => (
-                <div 
-                  key={idx} 
-                  className={`flex items-center gap-5 p-5 px-6 rounded-2xl border ${strat.borderColor} ${strat.bgColor} flex-1 min-h-0`}
-                >
-                  <div className={`w-12 h-12 rounded-xl ${strat.badgeBg} ${strat.glowColor} text-white flex items-center justify-center font-black text-lg shrink-0 font-['Montserrat',sans-serif]`}>
-                    {strat.num}
-                  </div>
-                  <p className="text-[1.2rem] leading-normal text-zinc-800 font-semibold flex-1 min-h-0">
+                <div key={idx} className="flex items-start gap-3">
+                  <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>
+                  <p className="text-[22px] leading-relaxed text-zinc-800 font-bold flex-grow min-h-0">
+                    <span className="text-zinc-900 font-black">{strat.title}：</span>
                     {strat.desc}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   );

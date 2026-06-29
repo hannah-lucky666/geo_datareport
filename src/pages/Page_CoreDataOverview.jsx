@@ -1,143 +1,98 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Page_CoreDataOverview() {
-  const [imgError, setImgError] = useState(false);
-  // Cache buster using a timestamp to force reload when the page renders
-  const [imgSrc] = useState(`/report/core_data_chart.png?t=${Date.now()}`);
-
-  const tableData = [
-    {
-      metric: '提及率',
-      before: '84.8%',
-      after: '96.0%',
-      diff: '11.2%',
-      desc: '提及率连续三个月稳步攀升，本月高达96.0%。这意味着在AI关于目标场景的问答中，古16已经基本实现了全面覆盖，成为AI知识库中的“必提”产品。',
-    },
-    {
-      metric: 'Top1提及率',
-      before: '54.00%',
-      after: '70.70%',
-      diff: '16.70%',
-      desc: '对比前期实现了大幅跨越，目前在超过七成的搜索场景下，AI都会将古16作为“第一顺位”首推，牢牢占据了用户的首选心智。',
-    },
-    {
-      metric: '平均提及位次',
-      before: 'NO. 3.3',
-      after: 'NO. 2.0',
-      diff: '1.3 位',
-      desc: '平均排名持续上浮，从前期的3名开外跃升至本月的第2位。说明在AI给出多个产品的推荐列表中，古16处于最前排的黄金位置。',
-    },
-  ];
-
   return (
-    <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-8 text-zinc-800 font-sans">
-      {/* Title */}
-      <div className="flex items-center gap-3 mb-2.5 shrink-0">
-        <div className="w-1.5 h-8 bg-[#004CE5] rounded-full shadow-[0_0_12px_rgba(0,76,229,0.2)]" />
-        <h1 className="text-3xl font-black text-zinc-900 tracking-wider">
-          核心数据总览 <span className="text-xl font-medium text-zinc-500 ml-3">（2026年5月）</span>
+    <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-800 font-sans justify-between overflow-hidden">
+      {/* Title Area */}
+      <div className="flex items-center shrink-0 mb-[27px]">
+        <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
+        <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4">
+          核心数据总览 <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年6月）</span>
         </h1>
       </div>
 
-      {/* Content Columns Wrapper */}
-      <div className="flex-1 min-h-0 flex flex-col justify-between">
+      {/* 1. Top Section: Decorative Data Remark (Replaced metrics cards with a decorative remark area) */}
+      <div className="rounded-xl border border-zinc-200 bg-slate-50/40 py-3.5 px-6 shrink-0 mb-4">
+        <p className="text-[1.35rem] leading-relaxed text-zinc-500 font-bold">
+          本次监测周期共计 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">31</span> 天，覆盖 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">4</span> 个核心AI平台，针对 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">29</span> 个重点监测词条进行累计查询 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">600</span> 次，追踪引用相关问答数据共计 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">5,610</span> 篇次，涉及识别竞品品牌 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">143</span> 家。
+        </p>
+      </div>
 
-        {/* Monitoring Metrics & Executive Summary */}
-        <div className="flex flex-col gap-3.5 shrink-0">
-          {/* Metrics Row */}
-          <div className="grid grid-cols-6 gap-3.5">
-            {[
-              { label: '执行天数', value: '31', unit: '天' },
-              { label: '监测词条', value: '15', unit: '个' },
-              { label: '覆盖平台', value: '4', unit: '个' },
-              { label: '总查询次数', value: '300', unit: '次' },
-              { label: '引用文章', value: '3,147', unit: '篇' },
-              { label: '识别竞品', value: '74', unit: '家' }
-            ].map((metric, idx) => (
-              <div
-                key={idx}
-                className="rounded-2xl border border-[#004CE5]/15 bg-[#004CE5]/[0.02] py-5 px-4 flex flex-col justify-center shadow-[0_4px_15px_rgba(0,76,229,0.005)] hover:border-[#004CE5]/30 transition-all duration-300"
-              >
-                <span className="text-[1rem] font-bold text-zinc-600 tracking-wider mb-1 block">{metric.label}</span>
-                <span className="text-2xl sm:text-[2.1rem] font-black text-zinc-950 font-['Montserrat',sans-serif] leading-tight">
-                  <span className="text-[#004CE5]">{metric.value}</span>
-                  {metric.unit && <span className="text-sm font-extrabold text-zinc-600 font-sans ml-1">{metric.unit}</span>}
-                </span>
-              </div>
-            ))}
+      {/* 2. Middle Section: Consolidated Table (Embellished with Theme Blue) */}
+      <div className="rounded-2xl border border-zinc-300 bg-white shadow-[0_4px_30px_rgba(0,0,0,0.015)] overflow-hidden flex-1 min-h-0 flex flex-col mb-[36px]">
+        <table className="w-full text-left border-collapse table-fixed flex-1">
+          <thead>
+            <tr className="text-white">
+              <th rowSpan={2} className="py-5 px-8 text-2xl font-black text-center w-[22%] bg-zinc-800 border-r border-white/10">产品</th>
+              <th colSpan={2} className="py-4 px-8 text-2xl font-black text-center border-l border-white/10 bg-[#004CE5]">提及率</th>
+              <th colSpan={2} className="py-4 px-8 text-2xl font-black text-center border-l border-white/10 bg-[#1A62E5]">平均提及位次</th>
+              <th colSpan={2} className="py-4 px-8 text-2xl font-black text-center border-l border-white/10 bg-[#2E75FF]">竞品排名</th>
+            </tr>
+            <tr className="bg-slate-50/80 border-b border-zinc-200 text-[#004CE5] font-black text-2xl">
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">5月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">6月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">5月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">6月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">5月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">6月</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* Product 1: 古井贡酒古16 */}
+            <tr className="border-b border-zinc-200 bg-white hover:bg-slate-50/20 transition-colors">
+              <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
+                古井贡酒古16
+              </td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">96.0%</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">96.7%</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">2.0</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.7</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+            </tr>
+
+            {/* Product 2: 古井贡酒古20 */}
+            <tr className="border-b border-zinc-200 bg-white hover:bg-slate-50/20 transition-colors">
+              <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
+                古井贡酒古20
+              </td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">88.3%</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">98.3%</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">4.7</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">4.8</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* 3. Bottom Section: Summary & Strategy Cards (Merged & Spacious) */}
+      <div className="grid grid-cols-2 gap-6 shrink-0 h-[195px]">
+        {/* Left Card: 现状总结 */}
+        <div className="rounded-2xl border border-[#004CE5]/15 bg-[#004CE5]/[0.01] px-6 py-4 flex flex-col shadow-[0_4px_25px_rgba(0,76,229,0.005)]">
+          <div className="flex items-center gap-2.5 mb-2 shrink-0">
+            <span className="w-3 h-3 rounded-full bg-[#004CE5] shadow-[0_0_8px_rgba(0,76,229,0.3)] animate-pulse" />
+            <h3 className="text-2xl font-black text-zinc-900 tracking-wider">现状总结</h3>
           </div>
-
-          {/* Executive Summary Banner */}
-          <div className="rounded-2xl border border-[#004CE5]/20 bg-slate-50/[0.5] py-4 px-6 flex items-center shadow-[0_4px_15px_rgba(0,76,229,0.005)]">
-            <p className="text-lg sm:text-[1.32rem] font-black text-zinc-800 leading-relaxed">
-              <span className="text-[#004CE5] font-black mr-2">【总述】</span>
-              目前数据情况来看，处于绝对第一梯队，整体 KPI 完成，之后整体策略是持续稳定稳定曝光，减少波动。
+          <div className="flex-1 flex items-center min-h-0">
+            <p className="text-[24px] leading-snug text-zinc-700 font-bold">
+              本月古16与古20表现优异，竞品排名均稳居第1。古16平均提及位次前移至1.7；古20提及率实现10%的大幅增长，达到98.3%，整体在AI生态中具有极强的领先优势与品牌曝光。
             </p>
           </div>
         </div>
 
-        {/* Image Box (Optimized to 310px to perfectly balance the layout and cover vertical space beautifully) */}
-        <div className="h-[310px] w-full rounded-2xl border border-[#004CE5]/25 bg-white shadow-[0_10px_30px_rgba(0,76,229,0.02)] overflow-hidden relative group hover:border-[#004CE5]/40 transition-colors duration-300">
-          <div className="absolute inset-0 bg-white flex items-center justify-center p-2">
-            {!imgError ? (
-              <img
-                src={imgSrc}
-                alt="核心数据图表"
-                className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.01]"
-                onError={() => {
-                  console.warn("Failed to load core data chart image, showing fallback.");
-                  setImgError(true);
-                }}
-              />
-            ) : (
-              /* Fallback graphic placeholder */
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-slate-50 to-zinc-100">
-                <div className="w-12 h-12 rounded-xl bg-[#004CE5]/10 text-[#004CE5] flex items-center justify-center mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg>
-                </div>
-                <h3 className="text-base font-bold text-zinc-800">数据可视化分析图</h3>
-                <p className="text-xs text-zinc-400 mt-0.5 max-w-md">各大AI平台核心数据对比分析图</p>
-              </div>
-            )}
+        {/* Right Card: 重点优化策略 */}
+        <div className="rounded-2xl border border-emerald-500/15 bg-emerald-500/[0.01] px-6 py-4 flex flex-col shadow-[0_4px_25px_rgba(16,185,129,0.005)]">
+          <div className="flex items-center gap-2.5 mb-2 shrink-0">
+            <span className="w-3 h-3 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.3)] animate-pulse" />
+            <h3 className="text-2xl font-black text-zinc-900 tracking-wider">重点优化策略</h3>
           </div>
-        </div>
-
-        {/* Table Area (Luxurious balanced layout) */}
-        <div className="rounded-2xl border border-[#004CE5]/25 bg-white shadow-[0_10px_30px_rgba(0,76,229,0.02)] overflow-hidden">
-          <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="bg-[#004CE5]/[0.02] border-b border-[#004CE5]/20">
-                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[18%]">核心数据指标</th>
-                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[10%]">4月</th>
-                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[22%]">5月 (本月)</th>
-                <th className="py-6 px-6 text-xl font-bold text-zinc-800 tracking-wider w-[50%]">数据说明</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tableData.map((row, idx) => (
-                <tr key={idx} className="border-b border-[#004CE5]/10 last:border-none hover:bg-[#004CE5]/[0.01] transition-colors">
-                  <td className="py-4 px-6">
-                    <span className="font-extrabold text-zinc-900 text-2xl">{row.metric}</span>
-                  </td>
-                  <td className="py-4 px-6">
-                    <span className="text-3xl font-bold text-zinc-500 font-['Montserrat',sans-serif]">{row.before}</span>
-                  </td>
-                  <td className="py-4 px-6">
-                    <div className="flex items-center gap-3">
-                      <span className="text-4xl font-black text-[#004CE5] tracking-tight font-['Montserrat',sans-serif]">{row.after}</span>
-                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-sm font-extrabold bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500"><polyline points="18 15 12 9 6 15" /></svg>
-                        提升 {row.diff}
-                      </span>
-                    </div>
-                  </td>
-                  <td className="py-4 px-6">
-                    <p className="text-lg sm:text-[1.12rem] leading-relaxed text-zinc-700 font-normal">{row.desc}</p>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="flex-1 flex items-center min-h-0">
+            <p className="text-[24px] leading-snug text-zinc-700 font-bold">
+              下阶段古16需继续巩固在核心场景的绝对领先，提升高顺位稳定性；古20需针对提及位次（4.8）进行专项优化，通过丰富消费场景和提升口碑内容质量，进一步提升在AI推荐中的排位。
+            </p>
+          </div>
         </div>
       </div>
     </div>

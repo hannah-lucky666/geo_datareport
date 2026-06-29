@@ -8,12 +8,12 @@ export default function Page_ContentDetails_AI() {
       platform: '新浪',
       domain: 'k.sina.com.cn',
       date: '2026-04-07',
-      total: 107,
+      total: 111,
       deepseek: 21,
       doubao: 53,
       yuanbao: 0,
       wenxin: 12,
-      kimi: 21,
+      kimi: 25,
       isCited: '是',
       link: 'https://k.sina.com.cn/article_8339089836_1f10c69ac00101dbg8.html?kdurlshow=1&wm=3049_0047&from=food'
     },
@@ -23,17 +23,32 @@ export default function Page_ContentDetails_AI() {
       platform: '知乎',
       domain: 'zhihu.com',
       date: '2026-01-13',
-      total: 58,
+      total: 85,
       deepseek: 0,
       doubao: 2,
       yuanbao: 1,
-      wenxin: 55,
+      wenxin: 82,
       kimi: 0,
       isCited: '是',
       link: 'https://zhuanlan.zhihu.com/p/1994422230290023376'
     },
     {
       rank: 3,
+      title: '2026年白酒消费指南：600元左右适合送礼与宴请的白酒推荐',
+      platform: '今日头条',
+      domain: 'toutiao.com',
+      date: '2026-01-15',
+      total: 73,
+      deepseek: 8,
+      doubao: 11,
+      yuanbao: 0,
+      wenxin: 2,
+      kimi: 52,
+      isCited: '是',
+      link: 'https://www.toutiao.com/article/7595839310115029555/'
+    },
+    {
+      rank: 4,
       title: '600元左右的高端礼品白酒推荐：江淮派高端浓香更懂中国胃',
       platform: '网易号',
       domain: '163.com',
@@ -48,44 +63,104 @@ export default function Page_ContentDetails_AI() {
       link: 'http://www.163.com/dy/article/KQFEIBOC05566MDJ.html'
     },
     {
-      rank: 4,
-      title: '2026年白酒消费指南：600元左右适合送礼与宴请的白酒推荐',
-      platform: '今日头条',
-      domain: 'toutiao.com',
-      date: '2026-01-15',
-      total: 52,
-      deepseek: 0,
-      doubao: 11,
-      yuanbao: 0,
-      wenxin: 2,
-      kimi: 39,
-      isCited: '是',
-      link: 'https://www.toutiao.com/article/7595839310115029555/'
-    },
-    {
       rank: 5,
       title: '古20：浓香型白酒 brand 排行榜：600元礼盒8款评分',
       platform: '网易',
       domain: '163.com',
       date: '2026-01-29',
-      total: 49,
+      total: 52,
       deepseek: 27,
-      doubao: 11,
-      yuanbao: 0,
-      wenxin: 11,
-      kimi: 0,
+      doubao: 1,
+      yuanbao: 10,
+      wenxin: 1,
+      kimi: 13,
       isCited: '是',
       link: 'https://www.163.com/dy/article/KKFGBJO50556JOO4.html'
+    },
+    {
+      rank: 6,
+      title: '古20：浓香型白酒品牌排行榜：600元礼盒8款评分',
+      platform: '今日头条',
+      domain: 'toutiao.com',
+      date: '2026-01-29',
+      total: 50,
+      deepseek: 14,
+      doubao: 24,
+      yuanbao: 0,
+      wenxin: 0,
+      kimi: 12,
+      isCited: '是',
+      link: 'https://www.toutiao.com/article/7600762362362200586/'
+    },
+    {
+      rank: 7,
+      title: '古20：600元左右不上头的浓香型白酒推荐：谁才是商务局的“舒适区”之王？',
+      platform: '知乎',
+      domain: 'zhihu.com',
+      date: '2026-01-24',
+      total: 49,
+      deepseek: 0,
+      doubao: 0,
+      yuanbao: 0,
+      wenxin: 7,
+      kimi: 42,
+      isCited: '是',
+      link: 'https://zhuanlan.zhihu.com/p/1998424691048722469'
+    },
+    {
+      rank: 8,
+      title: '2026年见客户送礼选什么酒？600元左右的高端礼品白酒推荐',
+      platform: '什么值得买',
+      domain: 'post.smzdm.com',
+      date: '2026-05-19',
+      total: 46,
+      deepseek: 9,
+      doubao: 23,
+      yuanbao: 0,
+      wenxin: 3,
+      kimi: 11,
+      isCited: '是',
+      link: 'https://post.smzdm.com/p/a95open0/'
+    },
+    {
+      rank: 9,
+      title: '600元左右高端礼盒白酒推荐：深度拆解古井贡酒古20',
+      platform: '网易',
+      domain: '163.com',
+      date: '2026-03-22',
+      total: 44,
+      deepseek: 3,
+      doubao: 8,
+      yuanbao: 0,
+      wenxin: 23,
+      kimi: 10,
+      isCited: '是',
+      link: 'https://www.163.com/dy/article/KONLQ8090556K6FL.html'
+    },
+    {
+      rank: 10,
+      title: '600元左右的高端礼品白酒推荐：江淮派高端浓香更懂中国胃',
+      platform: '百家号',
+      domain: 'baijiahao.baidu.com',
+      date: '2026-04-09',
+      total: 42,
+      deepseek: 0,
+      doubao: 0,
+      yuanbao: 0,
+      wenxin: 42,
+      kimi: 0,
+      isCited: '是',
+      link: 'https://baijiahao.baidu.com/s?id=1862140845289981909'
     }
   ];
 
   return (
-    <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-8 text-zinc-900 font-sans bg-white">
-      {/* Title */}
-      <div className="flex items-center gap-3 mb-4 shrink-0">
-        <div className="w-1.5 h-8 bg-[#004CE5] rounded-full shadow-[0_0_12px_rgba(0,76,229,0.2)]" />
-        <h1 className="text-3xl font-black text-zinc-900 tracking-wider">
-          投放内容与引用明细
+    <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-900 font-sans bg-white">
+      {/* Title Area */}
+      <div className="flex items-center shrink-0 mb-3">
+        <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
+        <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
+          古20投放明细
         </h1>
       </div>
 
@@ -93,64 +168,66 @@ export default function Page_ContentDetails_AI() {
       <div className="flex-1 min-h-0 flex flex-col gap-6 justify-between">
         
         {/* TOP ROW: 投放数据说明 (3 clean columns, no heavy card colors, stretched vertically) */}
-        <div className="grid grid-cols-3 gap-6 shrink-0 bg-slate-50/60 border border-zinc-200/80 rounded-[1.5rem] p-5 shadow-sm">
+        <div className="grid grid-cols-3 gap-6 shrink-0 bg-slate-50/60 border border-zinc-200/80 rounded-[1.5rem] p-6 shadow-sm">
           
           {/* Column 1: Total volume */}
-          <div className="flex flex-col gap-2 justify-center">
+          <div className="flex flex-col gap-2.5 justify-center">
             <div className="flex items-center gap-2">
               <span className="w-2 h-4 rounded-full bg-[#004CE5]" />
-              <span className="text-xs font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">TOTAL CAMPAIGN</span>
+              <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">TOTAL CAMPAIGN</span>
             </div>
-            <div className="flex items-baseline gap-2 mt-0.5">
-              <span className="text-5xl font-black text-zinc-900 font-['Montserrat',sans-serif]">255</span>
-              <span className="text-lg font-black text-zinc-500">篇 全网总投放</span>
+            <div className="flex items-baseline gap-1 mt-1">
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">288</span>
+              <span className="text-2xl font-black text-zinc-800 ml-1">篇</span>
             </div>
-            <p className="text-[0.98rem] font-bold text-zinc-400 leading-relaxed mt-1">
+            <div className="text-[1.12rem] font-bold text-zinc-500">全网总投放量</div>
+            <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
               覆盖渠道：今日头条、搜狐、新浪、网易、百家号、知乎等。
             </p>
           </div>
 
           {/* Column 2: Citation Status */}
-          <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
+          <div className="flex flex-col gap-2.5 justify-center border-l border-zinc-200/80 pl-8">
             <div className="flex items-center gap-2">
               <span className="w-2 h-4 rounded-full bg-emerald-500" />
-              <span className="text-xs font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">CITATION RATE</span>
+              <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">CITATION RATE</span>
             </div>
-            <div className="flex items-baseline gap-2 mt-0.5">
-              <span className="text-5xl font-black text-emerald-600 font-['Montserrat',sans-serif]">65</span>
-              <span className="text-lg font-black text-zinc-400 font-['Montserrat']">/ 255 篇</span>
-              <span className="text-base font-extrabold bg-emerald-50 text-emerald-600 border border-emerald-100 px-2 py-0.5 rounded-lg ml-2 font-['Montserrat']">
-                25.5% 被引率
-              </span>
+            <div className="flex items-baseline gap-1 mt-1">
+              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">32.6%</span>
+              <span className="text-2xl font-black text-emerald-600 ml-1">被引率</span>
             </div>
-            <p className="text-[0.98rem] font-bold text-zinc-400 leading-relaxed mt-1">
+            <div className="text-[1.12rem] font-bold text-emerald-600">
+              ( 94 / 288 篇投放已被引用 )
+            </div>
+            <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
               投放到新浪、知乎、网易、今日头条等渠道已顺利通过豆包等大模型的检索。
             </p>
           </div>
 
           {/* Column 3: Effective Cites */}
-          <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
+          <div className="flex flex-col gap-2.5 justify-center border-l border-zinc-200/80 pl-8">
             <div className="flex items-center gap-2">
               <span className="w-2 h-4 rounded-full bg-zinc-800" />
-              <span className="text-xs font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">EFFECTIVE CITATIONS</span>
+              <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">EFFECTIVE CITATIONS</span>
             </div>
-            <div className="flex items-baseline gap-2 mt-0.5">
-              <span className="text-5xl font-black text-zinc-900 font-['Montserrat',sans-serif]">1065</span>
-              <span className="text-lg font-black text-zinc-500">次 累计引用频次</span>
+            <div className="flex items-baseline gap-1 mt-1">
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">1492</span>
+              <span className="text-2xl font-black text-zinc-800 ml-1">次</span>
             </div>
+            <div className="text-[1.12rem] font-bold text-zinc-500">累计引用频次</div>
             {/* Breakdown */}
             <div className="grid grid-cols-3 gap-x-4 gap-y-1 mt-1.5">
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                豆包：<strong className="text-zinc-800 font-['Montserrat']">336</strong>
+                豆包：<strong className="text-zinc-800 font-['Montserrat']">426</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Kimi：<strong className="text-zinc-800 font-['Montserrat']">240</strong>
+                Kimi：<strong className="text-zinc-800 font-['Montserrat']">398</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                文心：<strong className="text-zinc-800 font-['Montserrat']">322</strong>
+                文心：<strong className="text-zinc-800 font-['Montserrat']">392</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
@@ -158,7 +235,7 @@ export default function Page_ContentDetails_AI() {
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">146</strong>
+                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">255</strong>
               </span>
             </div>
           </div>
@@ -171,74 +248,66 @@ export default function Page_ContentDetails_AI() {
             
             {/* Table Header Header */}
             <div className="bg-slate-50 border-b border-zinc-200 px-6 py-3.5 flex items-center justify-between shrink-0">
-              <h3 className="text-lg font-black text-zinc-800">📊 投放文章 TOP 5 引用效能数据</h3>
+              <h3 className="text-lg font-black text-zinc-800">📊 投放文章 TOP 10 引用效能数据</h3>
             </div>
 
             {/* Table Body Container */}
-            <div className="flex-1 min-h-0 w-full overflow-hidden">
+            <div className="flex-grow overflow-hidden w-full">
               <table className="w-full h-full text-left border-collapse table-fixed">
                 <thead>
-                  <tr className="bg-slate-50/50 border-b border-zinc-200 text-[1.02rem] font-extrabold text-zinc-700">
-                    <th className="py-3 px-4 w-[4%] text-center">排序</th>
-                    <th className="py-3 px-4 w-[24%]">文章标题</th>
-                    <th className="py-3 px-4 w-[8%]">发布平台</th>
-                    <th className="py-3 px-4 w-[8%]">链接域名</th>
-                    <th className="py-3 px-4 w-[8%] text-center">发布时间</th>
-                    <th className="py-3 px-4 w-[6%] text-center">总引用数</th>
-                    <th className="py-3 px-4 w-[6%] text-center">DeepSeek</th>
-                    <th className="py-3 px-4 w-[6%] text-center">豆包</th>
-                    <th className="py-3 px-4 w-[6%] text-center">元宝</th>
-                    <th className="py-3 px-4 w-[6%] text-center">文心一言</th>
-                    <th className="py-3 px-4 w-[6%] text-center">Kimi</th>
-                    <th className="py-3 px-4 w-[7%] text-center">是否被引</th>
-                    <th className="py-3 px-4 w-[5%] text-center">链接</th>
+                  <tr className="bg-slate-50/50 border-b border-zinc-200 text-[0.92rem] font-extrabold text-zinc-700">
+                    <th className="py-1.5 px-3 w-[4%] text-center">排序</th>
+                    <th className="py-1.5 px-3 w-[50%]">文章标题</th>
+                    <th className="py-1.5 px-3 w-[7%]">发布平台</th>
+                    <th className="py-1.5 px-3 w-[8%] text-center">发布时间</th>
+                    <th className="py-1.5 px-3 w-[6%] text-center">总引用数</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">DeepSeek</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">豆包</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">元宝</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">文心</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">Kimi</th>
+                    <th className="py-1.5 px-3 w-[5%] text-center">是否被引</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-zinc-100 text-[1.05rem] font-bold text-zinc-750">
+                <tbody className="divide-y divide-zinc-100 text-[0.95rem] font-bold text-zinc-750">
                   {/* Summary Row */}
                   <tr className="bg-slate-50/20 font-black text-zinc-900">
-                    <td className="py-3 px-4 text-center text-zinc-400 text-base">—</td>
-                    <td className="py-3 px-4 text-[1.12rem]">【总计汇总】</td>
-                    <td className="py-3 px-4 text-zinc-400">—</td>
-                    <td className="py-3 px-4 text-zinc-400">—</td>
-                    <td className="py-3 px-4 text-zinc-400">—</td>
-                    <td className="py-3 px-4 text-xl font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">1065</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">146</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">336</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">21</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">322</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">240</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">65/255</td>
-                    <td className="py-3 px-4 text-center text-zinc-400">—</td>
+                    <td className="py-1.5 px-3 text-center text-zinc-400 text-sm">—</td>
+                    <td className="py-1.5 px-3 text-[1rem]">【总计汇总】</td>
+                    <td className="py-1.5 px-3 text-zinc-400">—</td>
+                    <td className="py-1.5 px-3 text-zinc-400">—</td>
+                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">1492</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">255</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">426</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">21</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">392</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">398</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">94/288</td>
                   </tr>
 
                   {/* Body Rows */}
                   {topArticles.map((row, idx) => (
                     <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-3.5 px-4 text-center text-[1.08rem] font-black font-['Montserrat',sans-serif] text-zinc-900">{row.rank}</td>
-                      <td className="py-3.5 px-4 text-[1.08rem] font-bold text-zinc-900 break-words whitespace-normal leading-relaxed" title={row.title}>{row.title}</td>
-                      <td className="py-3.5 px-4 text-[1.05rem] font-black text-zinc-800">{row.platform}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-semibold text-zinc-500 font-['Montserrat',sans-serif]">{row.domain}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-zinc-400 font-['Montserrat',sans-serif] text-center">{row.date}</td>
-                      <td className="py-3.5 px-4 text-lg font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">{row.total}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.deepseek}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.doubao}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.yuanbao}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.wenxin}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.kimi}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-black text-center text-emerald-600">{row.isCited}</td>
-                      <td className="py-3.5 px-4 text-center">
-                        <a 
-                          href={row.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="text-[1.02rem] text-[#004CE5] hover:text-[#004CE5]/80 underline font-black"
-                        >
-                          链接
-                        </a>
-                      </td>
+                      <td className="py-2 px-3 text-center text-[0.95rem] font-black font-['Montserrat',sans-serif] text-zinc-900">{row.rank}</td>
+                      <td className="py-2 px-3 text-[0.95rem] font-bold text-zinc-900 truncate max-w-0" title={row.title}>{row.title}</td>
+                      <td className="py-2 px-3 text-[0.92rem] font-black text-zinc-800">{row.platform}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-zinc-400 font-['Montserrat',sans-serif] text-center">{row.date}</td>
+                      <td className="py-2 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">{row.total}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.deepseek}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.doubao}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.yuanbao}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.wenxin}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.kimi}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-black text-center text-emerald-600">{row.isCited}</td>
                     </tr>
                   ))}
+
+                  {/* Ellipsis Row */}
+                  <tr className="bg-white">
+                    <td colSpan={11} className="py-2.5 text-center text-zinc-400 font-black text-xl tracking-widest leading-none select-none border-t border-zinc-200 bg-slate-50/20">
+                      •••
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
