@@ -7,7 +7,7 @@ export default function Page_QueryDataSystemLink() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4">
-          慕思智能床 词条数据明细
+          菜鸟 词条数据明细
         </h1>
       </div>
 

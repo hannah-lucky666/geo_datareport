@@ -2,27 +2,27 @@ import React from 'react';
 
 export default function Page_CompetitorAnalysis() {
   const mentionRateData = [
-    { name: '慕思智能床', value: '87.8%' },
-    { name: '舒福德', value: '76.7%' },
-    { name: 'MPE', value: '52.8%' },
-    { name: '喜临门', value: '30.0%' },
-    { name: '舒达', value: '28.3%' },
+    { name: '菜鸟', value: '84.7%' },
+    { name: '快递100', value: '58.6%' },
+    { name: '支付宝-我的快递', value: '38.6%' },
+    { name: '快递鸟', value: '21.4%' },
+    { name: '17TRACK', value: '12.4%' },
   ];
 
   const top1RateData = [
-    { name: '慕思智能床', value: '41.1%' },
-    { name: '舒福德', value: '24.4%' },
-    { name: 'MPE', value: '12.8%' },
-    { name: '慕思AI床垫', value: '5.0%' },
-    { name: '8H', value: '2.2%' },
+    { name: '菜鸟', value: '68.8%' },
+    { name: '快递100', value: '12.0%' },
+    { name: '支付宝-我的快递', value: '8.4%' },
+    { name: '快递鸟', value: '2.8%' },
+    { name: '阿里巴巴1688', value: '1.4%' },
   ];
 
   const avgRankData = [
-    { name: '慕思智能床', value: 'NO. 2.7' },
-    { name: '舒福德', value: 'NO. 3.0' },
-    { name: 'MPE', value: 'NO. 4.3' },
-    { name: '舒达', value: 'NO. 5.4' },
-    { name: '喜临门', value: 'NO. 5.4' },
+    { name: '菜鸟', value: 'NO. 1.5' },
+    { name: '快递100', value: 'NO. 2.4' },
+    { name: '支付宝-我的快递', value: 'NO. 3.0' },
+    { name: '快递鸟', value: 'NO. 3.4' },
+    { name: '17TRACK', value: 'NO. 3.6' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -43,7 +43,7 @@ export default function Page_CompetitorAnalysis() {
             </thead>
             <tbody>
               {data.map((item, idx) => {
-                const isBrand = item.name === '慕思智能床';
+                const isBrand = item.name === '菜鸟';
                 const rank = idx + 1;
 
                 let rankElement;
@@ -76,26 +76,19 @@ export default function Page_CompetitorAnalysis() {
                 return (
                   <tr
                     key={idx}
-                    className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/50 transition-colors ${isBrand ? 'bg-[#004CE5]/[0.03]' : ''
-                      }`}
+                    className={`border-b border-zinc-100 last:border-none transition-colors duration-150 ${
+                      isBrand ? 'bg-[#004CE5]/[0.02] hover:bg-[#004CE5]/[0.04]' : 'hover:bg-slate-50/40'
+                    }`}
                   >
-                    <td className="py-3 px-3 align-middle">
-                      <div className="flex justify-center">{rankElement}</div>
+                    <td className="py-2.5 px-3 flex justify-center items-center">{rankElement}</td>
+                    <td className={`py-2.5 px-2 text-xl font-extrabold truncate ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
+                      {item.name}
                     </td>
-                    <td className="py-3 px-2 align-middle">
-                      <div className="flex items-center flex-wrap gap-2">
-                        <span className={`text-[1.4rem] ${isBrand ? 'font-black text-[#004CE5]' : 'font-bold text-zinc-800'}`}>
-                          {item.name}
-                        </span>
-                        {isBrand && (
-                          <span className="px-2 py-0.5 text-[0.8rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50">
-                            目标产品
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'
-                      }`}>
+                    <td
+                      className={`py-2.5 px-4 text-2xl font-bold text-right pr-6 font-['Montserrat',sans-serif] ${
+                        isBrand ? 'text-[#004CE5] font-black' : 'text-zinc-900'
+                      }`}
+                    >
                       {item.value}
                     </td>
                   </tr>
@@ -109,18 +102,18 @@ export default function Page_CompetitorAnalysis() {
   };
 
   return (
-    <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-800 font-sans justify-between overflow-hidden">
+    <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-900 font-sans justify-between overflow-hidden">
       {/* Title Area */}
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
-        <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          慕思智能床竞品分析
+        <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4">
+          菜鸟 竞品分析
         </h1>
       </div>
 
       {/* Main Content Area */}
       <div className="flex-grow flex flex-col min-h-0 justify-start">
-        {/* Three Tables Side-by-Side Area (Taller height - 490px, completely untouched) */}
+        {/* Three Tables Side-by-Side Area */}
         <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
           {renderTable('提及率排名', ['产品名称', '提及率'], mentionRateData)}
           {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], top1RateData)}
@@ -137,11 +130,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 舒福德为核心潜在竞争对手。其提及率达76.7%且平均提及位次NO. 3.0表现亮眼，首推率达24.4%，对本品构成直接拦截威胁。
+                1. 快递100是主要竞争对手，提及率达到58.6%，且平均位次在NO. 2.4，表现较为稳定。但在首推率（Top1提及率仅12.0%）上与菜鸟（68.8%）差距巨大，威胁尚在可控范围。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. MPE 智能床处于第二梯队，提及率达到52.8%，平均提及位次在4.3名，具备一定推荐覆盖力，需对其保持防御态势。
+                2. 支付宝-我的快递依托阿里生态，有一定伴随展现（提及率38.6%），位次居中（NO. 3.0），但由于并非独立物流件查询平台，首推转化能力较低。
               </p>
             </div>
           </div>
@@ -156,18 +149,18 @@ export default function Page_CompetitorAnalysis() {
               {[
                 {
                   num: '01',
-                  title: '黄金首推位巩固',
-                  desc: '强化重点强势词条内容深度，确保慕思智能床在核心睡眠场景的“第一顺位”推荐优势。',
+                  title: '首推顺位绝对占据',
+                  desc: '菜鸟的Top1提及率（68.8%）和平均位次（NO. 1.5）优势非常显著。需持续强化核心长尾物流词的语料覆盖，巩固护城河。',
                 },
                 {
                   num: '02',
-                  desc: '在语料中增加与舒福德等主推竞品的性能与体验差异化对比，引导大模型输出定性优势。',
-                  title: '强竞品精准拦截',
+                  desc: '针对DeepSeek和通义千问推荐中出现的竞品分流，增投精细化对比文章，突显菜鸟查件的全面性与免登录便捷性。',
+                  title: '特定大模型专项突破',
                 },
                 {
                   num: '03',
-                  desc: '在智能止鼾、零重力多模式等高价值长尾场景做精细化内容覆盖，扩大与竞品的排位差距。',
-                  title: '长尾场景防御',
+                  desc: '利用快递鸟等在位次上的劣势，在“亲情代取”、“全包裹管理”等特色长尾场景下继续深化占位，挤压竞争对手的AI生存空间。',
+                  title: '细分场景防御拦截',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

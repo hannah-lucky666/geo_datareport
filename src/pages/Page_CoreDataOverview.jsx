@@ -11,10 +11,10 @@ export default function Page_CoreDataOverview() {
         </h1>
       </div>
 
-      {/* 1. Top Section: Decorative Data Remark (Replaced metrics cards with a decorative remark area) */}
+      {/* 1. Top Section: Decorative Data Remark */}
       <div className="rounded-xl border border-zinc-200 bg-slate-50/40 py-3.5 px-6 shrink-0 mb-4">
         <p className="text-[1.35rem] leading-relaxed text-zinc-500 font-bold">
-          本次监测周期覆盖 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">6</span> 个核心AI平台，针对重点监测词条进行累计查询，追踪引用相关问答数据共计 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">5,412</span> 篇次，整体项目平稳推进。
+          本次监测周期覆盖 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">3</span> 个核心AI平台，针对重点监测词条进行累计查询，追踪引用相关问答数据共计 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">4,737</span> 篇次，整体项目平稳推进。
         </p>
       </div>
 
@@ -38,43 +38,17 @@ export default function Page_CoreDataOverview() {
             </tr>
           </thead>
           <tbody>
-            {/* Product 1: 慕思智能床 */}
+            {/* Product 1: 菜鸟 */}
             <tr className="border-b border-zinc-200 bg-white hover:bg-slate-50/20 transition-colors">
-              <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
-                慕思智能床
+              <td className="py-4 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
+                菜鸟
               </td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">73.6%</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">87.8%</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">2.9</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">2.7</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
-            </tr>
-
-            {/* Product 2: 慕思AI床垫 */}
-            <tr className="border-b border-zinc-200 bg-white hover:bg-slate-50/20 transition-colors">
-              <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
-                慕思AI床垫
-              </td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">82.4%</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">88.9%</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">2.5</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">2.1</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
-            </tr>
-
-            {/* Product 3: 慕思床垫 */}
-            <tr className="border-b border-zinc-200 bg-white hover:bg-slate-50/20 transition-colors">
-              <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
-                慕思床垫
-              </td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">41.7%</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">64.2%</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">6.04</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">4.9</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 4</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+              <td className="py-4 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">92.6%</td>
+              <td className="py-4 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">84.7%</td>
+              <td className="py-4 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.3</td>
+              <td className="py-4 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.5</td>
+              <td className="py-4 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+              <td className="py-4 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
             </tr>
           </tbody>
         </table>
@@ -90,7 +64,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              智能床与AI床垫在大模型推荐中展现出强大统治力，提及率持续上扬且稳居竞品第一。普通床垫在优化后提及率从41.7%快速跃升至64.2%，提及位次和竞品排名均实现显著提升，本月顺利跃居第一。
+              本月菜鸟整体表现依然处于绝对领先优势，竞品排名稳居第1。但受大模型回复机制调整影响，6月各项指标相比5月有一定回落（提及率由92.6%降至84.7%，TOP1率由78.9%降至68.8%），平均提及位次维持在 NO. 1.5 的领先位置。
             </p>
           </div>
         </div>
@@ -103,7 +77,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              针对慕思普通床垫，下阶段需重点优化价格相关词条，针对高端与大众款做差异化内容适配；智能床和AI床垫应聚焦防范潜在竞品渗透，加强高频对比词条的内容布局。
+              目前数据已趋于上限，后续策略重心在于“稳盘”。针对目前排名较低的 DeepSeek 和通义千问大模型，建议在官网发布高质量文章以做防御和拦截（目前两平台最大的引用来源为竞品“快递鸟”官网，占比达34.2%）。
             </p>
           </div>
         </div>

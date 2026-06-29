@@ -29,10 +29,10 @@ export default function Page_KpiAcceptance() {
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                提及率
+                提及率与位次
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                曝光稳定型：检查多少词条达到指定提及率标准
+                双维度验收：针对大模型中的品牌提及情况进行综合判定
               </p>
             </div>
           </div>
@@ -44,9 +44,14 @@ export default function Page_KpiAcceptance() {
               <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">具体达标条件</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
-              <p className="text-2xl font-black text-zinc-800">
-                至少有 <span className="text-[#004CE5] font-black text-3xl font-['Montserrat'] mx-0.5">10个</span> 词条达标
-              </p>
+              <div className="flex flex-wrap gap-2 mb-1">
+                {criteriaTags.map((tag, idx) => (
+                  <span key={idx} className="bg-emerald-500/10 text-emerald-600 font-extrabold text-sm px-2.5 py-1 rounded-md border border-emerald-500/20">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <p className="text-lg font-bold text-zinc-500">满足双重核心指标</p>
             </div>
           </div>
 
@@ -54,14 +59,14 @@ export default function Page_KpiAcceptance() {
           <div className="flex flex-col gap-2 justify-start border-l border-zinc-200/80 pl-6">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-zinc-800" />
-              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收频率</span>
+              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收状态</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                每周验收
+                考核期通过
               </p>
               <p className="text-lg font-bold text-zinc-500">
-                按周评估各大AI平台，检测多少词条达到指定提及率标准
+                5月及6月月度指标双月达标，整体推荐稳定性较强。
               </p>
             </div>
           </div>
@@ -74,10 +79,10 @@ export default function Page_KpiAcceptance() {
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-900 leading-snug">
-                5.01 - 5.31 日
+                5.01 - 6.30 日
               </p>
               <p className="text-lg sm:text-[1.28rem] font-bold text-zinc-700 leading-snug mt-0.5">
-                总共 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">四周</span> 全部达标
+                双月考核 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">100%</span> 顺利达标
               </p>
             </div>
           </div>

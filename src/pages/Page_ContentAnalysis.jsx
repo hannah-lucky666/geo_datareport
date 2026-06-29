@@ -4,36 +4,23 @@ export default function Page_ContentAnalysis() {
   const summaryData = [
     {
       type: '正面',
-      ratio: '97.8%',
-      trend: '保持平稳上升',
-      desc: '正面核心关键词：生态联动、功能全面、功能描述详细',
+      ratio: '100.0%',
+      trend: '处于绝对优势',
+      desc: '正面核心关键词：功能全面、功能推荐、使用便捷',
       isPositive: true,
       colorClass: 'border-l-4 border-emerald-500',
     },
     {
       type: '负面',
-      ratio: '2.2%',
-      trend: '波动范围极小',
-      desc: '负面核心关键词：产品质量问题、售后服务问题、售后服务',
+      ratio: '0.0%',
+      trend: '无负面信息',
+      desc: '负面核心关键词：暂无数据',
       isPositive: false,
       colorClass: 'border-l-4 border-rose-500',
     }
   ];
 
-  const distributionData = [
-    {
-      keyword: '用料扎实质量好的智能床推荐',
-      type: '负面回答',
-      summary: '部分反馈中提及慕思部分智能床型号被用户投诉存在床垫塌陷、噪音大、售后服务不到位等问题',
-      badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
-    },
-    {
-      keyword: '2万左右品质稳定售后有保障的智能床推荐',
-      type: '负面回答',
-      summary: '强调慕思高端智能系列在实际功能体验和售后问题上近期存在较多负面声量',
-      badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
-    }
-  ];
+  const distributionData = [];
 
   return (
     <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[40px] pb-[45px] text-zinc-900 font-sans bg-white overflow-hidden">
@@ -41,7 +28,7 @@ export default function Page_ContentAnalysis() {
       <div className="flex items-center shrink-0 mb-[20px]">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          慕思智能床内容分析总结
+          菜鸟内容分析总结
         </h1>
       </div>
 
@@ -109,21 +96,29 @@ export default function Page_ContentAnalysis() {
                 </tr>
               </thead>
               <tbody>
-                {distributionData.map((row, idx) => (
-                  <tr key={idx} className="border-b border-zinc-100 last:border-none hover:bg-slate-50/50 even:bg-slate-50/15 transition-colors">
-                    <td className="py-[20px] px-8 text-[1.45rem] font-bold text-zinc-800 align-middle">
-                      {row.keyword}
-                    </td>
-                    <td className="py-[20px] px-8 align-middle">
-                      <span className={`inline-block px-3.5 py-1.5 rounded-lg text-[1.15rem] font-extrabold tracking-wide ${row.badgeClass}`}>
-                        {row.type}
-                      </span>
-                    </td>
-                    <td className="py-[20px] px-8 text-[1.45rem] font-semibold text-zinc-600 align-middle leading-relaxed">
-                      {row.summary}
+                {distributionData.length === 0 ? (
+                  <tr>
+                    <td colSpan={3} className="py-[36px] px-8 text-center text-zinc-400 font-extrabold text-[1.45rem] bg-slate-50/10">
+                      本月大模型未监测到任何与菜鸟相关的负面舆情或负面回答数据。
                     </td>
                   </tr>
-                ))}
+                ) : (
+                  distributionData.map((row, idx) => (
+                    <tr key={idx} className="border-b border-zinc-100 last:border-none hover:bg-slate-50/50 even:bg-slate-50/15 transition-colors">
+                      <td className="py-[20px] px-8 text-[1.45rem] font-bold text-zinc-800 align-middle">
+                        {row.keyword}
+                      </td>
+                      <td className="py-[20px] px-8 align-middle">
+                        <span className={`inline-block px-3.5 py-1.5 rounded-lg text-[1.15rem] font-extrabold tracking-wide ${row.badgeClass}`}>
+                          {row.type}
+                        </span>
+                      </td>
+                      <td className="py-[20px] px-8 text-[1.45rem] font-semibold text-zinc-600 align-middle leading-relaxed">
+                        {row.summary}
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>
@@ -135,7 +130,7 @@ export default function Page_ContentAnalysis() {
           <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-6 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
             <h3 className="text-[1.65rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
             <p className="text-[1.45rem] leading-relaxed text-zinc-700 font-bold">
-              加强大模型语料铺设，针对用户反馈的噪音及塌陷问题进行防御性铺设。重点围绕智能床核心的<strong className="text-[#004CE5] font-black mx-0.5">智能止鼾、生态联动</strong>及<strong className="text-[#004CE5] font-black mx-0.5">高品质服务体验</strong>进行正面心智引导，逐步消除负面声音影响。
+              重点围绕菜鸟快递的<strong className="text-[#004CE5] font-black mx-0.5">多单号一键同步、亲情代取、免登录查件</strong>进行正面心智建设。针对目前在 DeepSeek 和通义千问大模型中提及偏低的现状，后续可在菜鸟官方发布高质量科普文章以做防御拦截，提升总体稳定性。
             </p>
           </div>
         </div>
