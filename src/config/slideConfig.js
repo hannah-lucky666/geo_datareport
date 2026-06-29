@@ -30,6 +30,7 @@ export const slideConfig = [
   { type: 'chapter', title: '核心数据与竞品分析', subtitle: 'DATA OVERVIEW & COMPETITOR ANALYSIS', backgroundImage: '/' },
   { type: 'section', title: '核心数据总览' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
+  { type: 'page', title: '数据指标纠正说明', component: Page_DataCorrection },
   { type: 'section', title: 'KPI 验收情况' },
   { type: 'page', title: 'KPI 验收情况', component: Page_KpiAcceptance },
   { type: 'section', title: '竞品分析' },
@@ -44,7 +45,6 @@ export const slideConfig = [
   { type: 'chapter', title: '内容分析与总结说明', subtitle: 'CONTENT ANALYSIS & SUMMARY', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '内容总结分析' },
   { type: 'page', title: '菜鸟 内容总结', component: Page_ContentAnalysis },
-  { type: 'page', title: '数据指标纠正说明', component: Page_DataCorrection },
 
   // ——— 篇章4: 词条数据明细 ———
   { type: 'chapter', title: '词条数据明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },

@@ -4,7 +4,7 @@ export default function Page_KpiAcceptance() {
   const [imgError, setImgError] = useState(false);
   const [imgSrc] = useState(`/report/kpi_acceptance_chart.png?t=${Date.now()}`);
 
-  const criteriaTags = ['提及率 ≥ 70%', '平均位次 ≤ 3'];
+  const criteriaTags = ['怎么查', '平台软件', '快递到哪', '取件码'];
 
   return (
     <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-2 text-zinc-900 font-sans">
@@ -21,68 +21,71 @@ export default function Page_KpiAcceptance() {
 
         {/* Top Compact Info Row (Unified and highly optimized for space, 4 columns) */}
         <div className="grid grid-cols-4 gap-6 shrink-0 bg-slate-50/60 border border-zinc-200/80 rounded-[1.5rem] p-6 shadow-[0_4px_20px_rgba(15,23,42,0.01)] overflow-hidden">
-          {/* Col 1: Basic Info */}
+          {/* Col 1: 验收机制 */}
           <div className="flex flex-col gap-2 justify-start">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-[#004CE5]" />
-              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收类型</span>
+              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收机制</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                提及率与位次
+                每日验收 <span className="text-lg font-bold text-zinc-400">/ 自然天</span>
               </p>
-              <p className="text-lg font-bold text-zinc-500">
-                双维度验收：针对大模型中的品牌提及情况进行综合判定
+              <p className="text-base font-bold text-zinc-500 mt-1">
+                核心词条需排名第一并覆盖特定语义
               </p>
             </div>
           </div>
 
-          {/* Col 2: Target Numbers & Tags */}
+          {/* Col 2: 具体达标条件 */}
           <div className="flex flex-col gap-2 justify-start border-l border-zinc-200/80 pl-6">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-emerald-500" />
               <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">具体达标条件</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
-              <div className="flex flex-wrap gap-2 mb-1">
+              <p className="text-2xl font-black text-zinc-800">
+                至少有 <span className="text-[#004CE5] font-black font-['Montserrat']">22个</span> 词条排名第一
+              </p>
+              <div className="flex flex-wrap gap-1.5 items-center mt-2">
+                <span className="text-base font-bold text-zinc-400">覆盖:</span>
                 {criteriaTags.map((tag, idx) => (
-                  <span key={idx} className="bg-emerald-500/10 text-emerald-600 font-extrabold text-sm px-2.5 py-1 rounded-md border border-emerald-500/20">
+                  <span key={idx} className="bg-white text-zinc-600 font-extrabold text-sm px-2 py-0.5 rounded border border-zinc-200 shadow-sm">
                     {tag}
                   </span>
                 ))}
               </div>
-              <p className="text-lg font-bold text-zinc-500">满足双重核心指标</p>
             </div>
           </div>
 
-          {/* Col 3: Rules */}
+          {/* Col 3: 多平台规则 */}
           <div className="flex flex-col gap-2 justify-start border-l border-zinc-200/80 pl-6">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-zinc-800" />
-              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">验收状态</span>
+              <span className="text-base font-extrabold text-zinc-600 uppercase tracking-widest">多平台规则</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
               <p className="text-2xl font-black text-zinc-800">
-                考核期通过
+                各平台独立计算达标
               </p>
-              <p className="text-lg font-bold text-zinc-500">
-                5月及6月月度指标双月达标，整体推荐稳定性较强。
+              <p className="text-base font-bold text-zinc-500 mt-1">
+                不同平台排第一的词条可独立达标
               </p>
             </div>
           </div>
 
-          {/* Col 4: Conclusion (Highlighted style, slightly bold but clean) */}
+          {/* Col 4: Conclusion */}
           <div className="flex flex-col gap-2 justify-start border-l border-zinc-200/80 pl-6 bg-[#004CE5]/[0.03] -my-6 -mr-6 p-6 rounded-r-[1.5rem]">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-5 rounded-full bg-[#004CE5] shadow-[0_0_8px_rgba(0,76,229,0.25)]" />
               <span className="text-base font-extrabold text-[#004CE5] tracking-widest">结论</span>
             </div>
             <div className="flex flex-col gap-1 mt-1">
-              <p className="text-2xl font-black text-zinc-900 leading-snug">
-                5.01 - 6.30 日
+              <p className="text-2xl font-black text-zinc-950 leading-snug font-['Montserrat']">
+                6.01 - 6.30 日
               </p>
-              <p className="text-lg sm:text-[1.28rem] font-bold text-zinc-700 leading-snug mt-0.5">
-                双月考核 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">100%</span> 顺利达标
+              <p className="text-lg sm:text-[1.28rem] font-bold text-zinc-700 leading-snug mt-1">
+                总共 <span className="text-[#004CE5] font-black text-2xl font-['Montserrat'] mx-0.5">30天</span> 全部达标
               </p>
             </div>
           </div>
