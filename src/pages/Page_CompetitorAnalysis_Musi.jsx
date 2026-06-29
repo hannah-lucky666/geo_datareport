@@ -127,8 +127,8 @@ export default function Page_CompetitorAnalysis_Musi() {
           {renderTable('提及位次排名', ['产品名称', '平均提及位次'], avgRankData)}
         </div>
 
-        {/* Bottom Spacious Dashboard Area (Increased to 265px for taller containers, exactly 60px gap below tables) */}
-        <div className="grid grid-cols-2 gap-8 h-[265px] shrink-0 mt-[60px]">
+        {/* Bottom Spacious Dashboard Area (Increased to 340px for taller containers, exactly 60px gap below tables) */}
+        <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
           {/* Left Column: 潜在竞争分析 */}
           <div className="flex flex-col gap-3 h-full min-h-0">
             <h2 className="text-2xl font-black text-zinc-900 flex items-center gap-2 shrink-0">
@@ -172,7 +172,7 @@ export default function Page_CompetitorAnalysis_Musi() {
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>
-                  <p className="text-[22px] leading-snug text-zinc-800 font-bold flex-grow min-h-0">
+                  <p className="text-[22px] leading-relaxed text-zinc-800 font-bold flex-grow min-h-0">
                     <span className="text-zinc-900 font-black">{strat.title}：</span>
                     {strat.desc}
                   </p>
