@@ -40,18 +40,21 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
       <div 
         className={`absolute z-10 flex flex-col gap-[16px] ${dbg}`} 
         style={{ 
-          top: '488px', 
+          bottom: '225px', 
           left: '132px',
           width: 'auto'
         }}
       >
         {chapters.map((chapter, i) => (
-          <div key={i} className="flex items-baseline" style={{ gap: '20px', lineHeight: '1.4' }}>
+          <div key={i} className="flex items-baseline" style={{ lineHeight: '1.4' }}>
             <span
               className="text-[#004CE5] shrink-0 font-light"
               style={{ 
-                fontSize: '36px', 
-                fontFamily: "'MiSans', sans-serif" 
+                fontSize: '42px', 
+                fontFamily: "'MiSans', sans-serif",
+                width: '85px',
+                minWidth: '85px',
+                display: 'inline-block'
               }}
             >
               {String(i + 1).padStart(2, '0')}.
@@ -59,7 +62,7 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
             <span
               className="text-zinc-900 font-semibold tracking-wide"
               style={{ 
-                fontSize: '30px', 
+                fontSize: '36px', 
                 fontFamily: "'MiSans', sans-serif" 
               }}
             >

@@ -4,88 +4,153 @@ export default function Page_ContentDetails() {
   const topArticles = [
     {
       rank: 1,
-      title: '300-500元左右结婚用什么白酒比较好？2026年婚宴酒TOP10揭晓',
-      platform: '网易',
-      domain: '163.com',
-      date: '2026-03-22',
-      total: 209,
-      deepseek: 0,
-      doubao: 61,
-      yuanbao: 3,
-      wenxin: 68,
-      kimi: 77,
-      isCited: '是',
-      link: 'https://www.163.com/dy/article/KO8A66J70556K6FL.html'
+      title: '智能止鼾的高端智能床推荐：深度测评5款能主动干预呼吸的旗舰',
+      platform: 'IT之家',
+      date: '2026-04-27',
+      total: 114,
+      deepseek: 5,
+      doubao: 15,
+      yuanbao: 2,
+      wenxin: 34,
+      tongyi: 33,
+      kimi: 25,
+      isCited: '是'
     },
     {
       rank: 2,
-      title: '2026婚宴白酒全景观察：300-500元婚宴用酒推荐金榜',
-      platform: '什么值得买',
-      domain: 'post.smzdm.com',
-      date: '2025-12-31',
-      total: 96,
-      deepseek: 1,
-      doubao: 57,
-      yuanbao: 2,
-      wenxin: 0,
-      kimi: 36,
-      isCited: '是',
-      link: 'https://post.smzdm.com/p/a70qo7vo/'
+      title: '当床开始“思考”：2026年2万左右高端智能床品牌推荐与选购逻辑',
+      platform: 'IT之家',
+      date: '2026-04-27',
+      total: 98,
+      deepseek: 3,
+      doubao: 34,
+      yuanbao: 0,
+      wenxin: 1,
+      tongyi: 60,
+      kimi: 0,
+      isCited: '是'
     },
     {
       rank: 3,
-      title: '2026松弛感婚礼指南：300-500元婚宴白酒用哪个品牌比较好？',
-      platform: '网易',
-      domain: '163.com',
-      date: '2026-05-05',
-      total: 88,
-      deepseek: 29,
+      title: '2万级智能床选购指南：从零重力多模式到长效售后服务的全面对标',
+      platform: '百家号(星视频长沙广电官方号)',
+      date: '2026-05-20',
+      total: 85,
+      deepseek: 0,
       doubao: 0,
       yuanbao: 0,
-      wenxin: 30,
-      kimi: 29,
-      isCited: '是',
-      link: 'https://www.163.com/dy/article/KS8ME6G20556JOO4.html'
+      wenxin: 68,
+      tongyi: 17,
+      kimi: 0,
+      isCited: '是'
     },
     {
       rank: 4,
-      title: '婚宴白酒前10名揭晓：解析300-500元婚宴白酒用哪个品牌比较好',
-      platform: '网易',
-      domain: '163.com',
-      date: '2026-04-19',
-      total: 81,
+      title: '拿2万预算线下实睡半个月：2026年主流智能床品牌深度横评',
+      platform: '百家号',
+      date: '2026-04-28',
+      total: 76,
       deepseek: 0,
-      doubao: 5,
-      yuanbao: 0,
-      wenxin: 51,
-      kimi: 25,
-      isCited: '是',
-      link: 'https://www.163.com/dy/article/KR06BLOQ0556K6FL.html'
+      doubao: 0,
+      yuanbao: 1,
+      wenxin: 56,
+      tongyi: 19,
+      kimi: 0,
+      isCited: '是'
     },
     {
       rank: 5,
-      title: '300-500元婚宴白酒用哪个品牌比较好？2026品牌、面子与口碑的大实话',
-      platform: '新浪',
-      domain: 'k.sina.com.cn',
-      date: '2026-04-27',
+      title: '准妈妈翻身难、老人起床累？2026最值得入手的5款智能床对比',
+      platform: 'IT之家',
+      date: '2026-05-13',
       total: 74,
-      deepseek: 0,
-      doubao: 12,
+      deepseek: 10,
+      doubao: 10,
+      yuanbao: 6,
+      wenxin: 13,
+      tongyi: 18,
+      kimi: 17,
+      isCited: '是'
+    },
+    {
+      rank: 6,
+      title: '床能止鼾？2026年高端智能床推荐，带你破解入睡难题',
+      platform: '什么值得买',
+      date: '2026-05-13',
+      total: 72,
+      deepseek: 8,
+      doubao: 24,
       yuanbao: 0,
-      wenxin: 28,
-      kimi: 34,
-      isCited: '是',
-      link: 'https://k.sina.com.cn/article_8339089836_1f10c69ac00101dhfe.html?kdurlshow=1&wm=3049_0047&from=food'
+      wenxin: 10,
+      tongyi: 0,
+      kimi: 30,
+      isCited: '是'
+    },
+    {
+      rank: 7,
+      title: '2万左右智能床品牌排行榜：2万预算买智能床，这几款才是真科技',
+      platform: 'IT之家',
+      date: '2026-05-06',
+      total: 66,
+      deepseek: 0,
+      doubao: 14,
+      yuanbao: 2,
+      wenxin: 6,
+      tongyi: 44,
+      kimi: 0,
+      isCited: '是'
+    },
+    {
+      rank: 8,
+      title: '2万左右智能床品牌排行榜：2万预算买智能床，这几款才是真科技',
+      platform: '荆门头条（腾讯新闻）',
+      date: '2026-05-06',
+      total: 63,
+      deepseek: 0,
+      doubao: 0,
+      yuanbao: 20,
+      wenxin: 12,
+      tongyi: 0,
+      kimi: 31,
+      isCited: '是'
+    },
+    {
+      rank: 9,
+      title: '2万级智能床选购指南：从零重力多模式到长效售后服务的全面对标',
+      platform: '什么值得买(生活新视觉one)',
+      date: '2026-05-20',
+      total: 62,
+      deepseek: 12,
+      doubao: 38,
+      yuanbao: 0,
+      wenxin: 10,
+      tongyi: 0,
+      kimi: 2,
+      isCited: '是'
+    },
+    {
+      rank: 10,
+      title: '告别晨起腰酸：两万预算，哪款智能床能真正做到护脊防腰疼',
+      platform: '什么值得买',
+      date: '2026-05-19',
+      total: 59,
+      deepseek: 9,
+      doubao: 17,
+      yuanbao: 0,
+      wenxin: 33,
+      tongyi: 0,
+      kimi: 0,
+      isCited: '是'
     }
   ];
 
   return (
-    <div className="w-full h-full flex flex-col px-12 sm:px-16 pb-8 text-zinc-900 font-sans bg-white">
-      {/* Title */}
-      <div className="flex items-center gap-3 mb-4 shrink-0">
-        <div className="w-1.5 h-8 bg-[#004CE5] rounded-full shadow-[0_0_12px_rgba(0,76,229,0.2)]" />
-        <h1 className="text-3xl font-black text-zinc-900 tracking-wider">
-          投放内容与引用明细
+    <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-900 font-sans bg-white">
+      {/* Title Area */}
+      <div className="flex items-center shrink-0 mb-3">
+        <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
+        <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
+          慕思智能床投放明细
         </h1>
       </div>
 
@@ -93,152 +158,154 @@ export default function Page_ContentDetails() {
       <div className="flex-1 min-h-0 flex flex-col gap-6 justify-between">
 
         {/* TOP ROW: 投放数据说明 (3 clean columns, no heavy card colors, stretched vertically) */}
-        <div className="grid grid-cols-3 gap-6 shrink-0 bg-slate-50/60 border border-zinc-200/80 rounded-[1.5rem] p-5 shadow-sm">
+        <div className="grid grid-cols-3 gap-6 shrink-0 bg-slate-50/60 border border-zinc-200/80 rounded-[1.5rem] p-6 shadow-sm">
 
           {/* Column 1: Total volume */}
-          <div className="flex flex-col gap-2 justify-center">
+          <div className="flex flex-col gap-2.5 justify-center">
             <div className="flex items-center gap-2">
               <span className="w-2 h-4 rounded-full bg-[#004CE5]" />
-              <span className="text-xs font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">TOTAL CAMPAIGN</span>
+              <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">TOTAL CAMPAIGN</span>
             </div>
-            <div className="flex items-baseline gap-2 mt-0.5">
-              <span className="text-5xl font-black text-zinc-900 font-['Montserrat',sans-serif]">149</span>
-              <span className="text-lg font-black text-zinc-500">篇 全网总投放</span>
+            <div className="flex items-baseline gap-1 mt-1">
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">140</span>
+              <span className="text-2xl font-black text-zinc-800 ml-1">篇</span>
             </div>
-            <p className="text-[0.98rem] font-bold text-zinc-400 leading-relaxed mt-1">
+            <div className="text-[1.12rem] font-bold text-zinc-500">全网总投放量</div>
+            <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
               覆盖渠道：今日头条、搜狐、新浪、网易、百家号、什么值得买等。
             </p>
           </div>
 
           {/* Column 2: Citation Status */}
-          <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
+          <div className="flex flex-col gap-2.5 justify-center border-l border-zinc-200/80 pl-8">
             <div className="flex items-center gap-2">
               <span className="w-2 h-4 rounded-full bg-emerald-500" />
-              <span className="text-xs font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">CITATION RATE</span>
+              <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">CITATION RATE</span>
             </div>
-            <div className="flex items-baseline gap-2 mt-0.5">
-              <span className="text-5xl font-black text-emerald-600 font-['Montserrat',sans-serif]">65</span>
-              <span className="text-lg font-black text-zinc-400 font-['Montserrat']">/ 149 篇</span>
-              <span className="text-base font-extrabold bg-emerald-50 text-emerald-600 border border-emerald-100 px-2 py-0.5 rounded-lg ml-2 font-['Montserrat']">
-                43.6% 被引率
-              </span>
+            <div className="flex items-baseline gap-1 mt-1">
+              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">64.3%</span>
+              <span className="text-2xl font-black text-emerald-600 ml-1">被引率</span>
             </div>
-            <p className="text-[0.98rem] font-bold text-zinc-400 leading-relaxed mt-1">
-              投放到网易、什么值得买、新浪等渠道已顺利通过豆包等大模型的检索。
+            <div className="text-[1.12rem] font-bold text-emerald-600">
+              ( 90 / 140 篇投放已被引用 )
+            </div>
+            <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
+              投放到网易、什么值得买、新浪等渠道已顺利通过大模型的检索。
             </p>
           </div>
 
           {/* Column 3: Effective Cites */}
-          <div className="flex flex-col gap-2 justify-center border-l border-zinc-200/80 pl-6">
+          <div className="flex flex-col gap-2.5 justify-center border-l border-zinc-200/80 pl-8">
             <div className="flex items-center gap-2">
               <span className="w-2 h-4 rounded-full bg-zinc-800" />
-              <span className="text-xs font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">EFFECTIVE CITATIONS</span>
+              <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">EFFECTIVE CITATIONS</span>
             </div>
-            <div className="flex items-baseline gap-2 mt-0.5">
-              <span className="text-5xl font-black text-zinc-900 font-['Montserrat',sans-serif]">1592</span>
-              <span className="text-lg font-black text-zinc-500">次 累计引用频次</span>
+            <div className="flex items-baseline gap-1 mt-1">
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">2,125</span>
+              <span className="text-2xl font-black text-zinc-800 ml-1">次</span>
             </div>
+            <div className="text-[1.12rem] font-bold text-zinc-500">累计引用频次</div>
+            
             {/* Breakdown */}
             <div className="grid grid-cols-3 gap-x-4 gap-y-1 mt-1.5">
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                豆包：<strong className="text-zinc-800 font-['Montserrat']">468</strong>
+                豆包：<strong className="text-zinc-800 font-['Montserrat']">345</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Kimi：<strong className="text-zinc-800 font-['Montserrat']">470</strong>
+                Kimi：<strong className="text-zinc-800 font-['Montserrat']">354</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                文心：<strong className="text-zinc-800 font-['Montserrat']">509</strong>
+                文心：<strong className="text-zinc-800 font-['Montserrat']">750</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                元宝：<strong className="text-zinc-800 font-['Montserrat']">23</strong>
+                元宝：<strong className="text-zinc-800 font-['Montserrat']">248</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">122</strong>
+                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">157</strong>
+              </span>
+              <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
+                通义：<strong className="text-zinc-800 font-['Montserrat']">271</strong>
               </span>
             </div>
           </div>
 
         </div>
 
-        {/* BOTTOM ROW: TOP5 Articles Table */}
+        {/* BOTTOM ROW: TOP10 Articles Table */}
         <div className="flex-1 min-h-0 flex flex-col">
           <div className="flex-1 min-h-0 rounded-2xl border border-zinc-200/80 bg-white overflow-hidden shadow-sm flex flex-col">
 
             {/* Table Header Header */}
             <div className="bg-slate-50 border-b border-zinc-200 px-6 py-3.5 flex items-center justify-between shrink-0">
-              <h3 className="text-lg font-black text-zinc-800">📊 投放文章 TOP 5 引用效能数据</h3>
+              <h3 className="text-lg font-black text-zinc-800">📊 投放文章 TOP 10 引用效能数据</h3>
             </div>
 
             {/* Table Body Container */}
-            <div className="flex-1 min-h-0 w-full overflow-hidden">
+            <div className="flex-grow overflow-hidden w-full">
               <table className="w-full h-full text-left border-collapse table-fixed">
                 <thead>
-                  <tr className="bg-slate-50/50 border-b border-zinc-200 text-[1.02rem] font-extrabold text-zinc-700">
-                    <th className="py-3 px-4 w-[4%] text-center">排序</th>
-                    <th className="py-3 px-4 w-[24%]">文章标题</th>
-                    <th className="py-3 px-4 w-[8%]">发布平台</th>
-                    <th className="py-3 px-4 w-[8%]">链接域名</th>
-                    <th className="py-3 px-4 w-[8%] text-center">发布时间</th>
-                    <th className="py-3 px-4 w-[6%] text-center">总引用数</th>
-                    <th className="py-3 px-4 w-[6%] text-center">DeepSeek</th>
-                    <th className="py-3 px-4 w-[6%] text-center">豆包</th>
-                    <th className="py-3 px-4 w-[6%] text-center">元宝</th>
-                    <th className="py-3 px-4 w-[6%] text-center">文心一言</th>
-                    <th className="py-3 px-4 w-[6%] text-center">Kimi</th>
-                    <th className="py-3 px-4 w-[7%] text-center">是否被引</th>
-                    <th className="py-3 px-4 w-[5%] text-center">链接</th>
+                  <tr className="bg-slate-50/50 border-b border-zinc-200 text-[0.92rem] font-extrabold text-zinc-700">
+                    <th className="py-1.5 px-3 w-[4%] text-center">排序</th>
+                    <th className="py-1.5 px-3 w-[44%]">文章标题</th>
+                    <th className="py-1.5 px-3 w-[8%]">发布平台</th>
+                    <th className="py-1.5 px-3 w-[9%] text-center">发布时间</th>
+                    <th className="py-1.5 px-3 w-[6%] text-center">总引用数</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">DeepSeek</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">豆包</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">元宝</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">文心</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">通义</th>
+                    <th className="py-1.5 px-3 w-[4%] text-center">Kimi</th>
+                    <th className="py-1.5 px-3 w-[5%] text-center">是否被引</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-zinc-100 text-[1.05rem] font-bold text-zinc-750">
+                <tbody className="divide-y divide-zinc-100 text-[0.95rem] font-bold text-zinc-750">
                   {/* Summary Row */}
                   <tr className="bg-slate-50/20 font-black text-zinc-900">
-                    <td className="py-3 px-4 text-center text-zinc-400 text-base">—</td>
-                    <td className="py-3 px-4 text-[1.12rem]">【总计汇总】</td>
-                    <td className="py-3 px-4 text-zinc-400">—</td>
-                    <td className="py-3 px-4 text-zinc-400">—</td>
-                    <td className="py-3 px-4 text-zinc-400">—</td>
-                    <td className="py-3 px-4 text-xl font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">1592</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">122</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">468</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">23</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">509</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">470</td>
-                    <td className="py-3 px-4 text-[1.08rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">65/149</td>
-                    <td className="py-3 px-4 text-center text-zinc-400">—</td>
+                    <td className="py-1.5 px-3 text-center text-zinc-400 text-sm">—</td>
+                    <td className="py-1.5 px-3 text-[1rem]">【总计汇总】</td>
+                    <td className="py-1.5 px-3 text-zinc-400">—</td>
+                    <td className="py-1.5 px-3 text-zinc-400">—</td>
+                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">2125</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">157</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">345</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">248</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">750</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">271</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">354</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">90/140</td>
                   </tr>
 
                   {/* Body Rows */}
                   {topArticles.map((row, idx) => (
                     <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-3.5 px-4 text-center text-[1.08rem] font-black font-['Montserrat',sans-serif] text-zinc-900">{row.rank}</td>
-                      <td className="py-3.5 px-4 text-[1.08rem] font-bold text-zinc-900 break-words whitespace-normal leading-relaxed" title={row.title}>{row.title}</td>
-                      <td className="py-3.5 px-4 text-[1.05rem] font-black text-zinc-800">{row.platform}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-semibold text-zinc-500 font-['Montserrat',sans-serif]">{row.domain}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-zinc-400 font-['Montserrat',sans-serif] text-center">{row.date}</td>
-                      <td className="py-3.5 px-4 text-lg font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">{row.total}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.deepseek}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.doubao}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.yuanbao}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.wenxin}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.kimi}</td>
-                      <td className="py-3.5 px-4 text-[1.02rem] font-black text-center text-emerald-600">{row.isCited}</td>
-                      <td className="py-3.5 px-4 text-center">
-                        <a
-                          href={row.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[1.02rem] text-[#004CE5] hover:text-[#004CE5]/80 underline font-black"
-                        >
-                          链接
-                        </a>
-                      </td>
+                      <td className="py-2 px-3 text-center text-[0.95rem] font-black font-['Montserrat',sans-serif] text-zinc-900">{row.rank}</td>
+                      <td className="py-2 px-3 text-[0.95rem] font-bold text-zinc-900 truncate max-w-0" title={row.title}>{row.title}</td>
+                      <td className="py-2 px-3 text-[0.92rem] font-black text-zinc-800">{row.platform}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-zinc-400 font-['Montserrat',sans-serif] text-center">{row.date}</td>
+                      <td className="py-2 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">{row.total}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.deepseek}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.doubao}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.yuanbao}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.wenxin}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.tongyi}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.kimi}</td>
+                      <td className="py-2 px-3 text-[0.9rem] font-black text-center text-emerald-600">{row.isCited}</td>
                     </tr>
                   ))}
+
+                  {/* Ellipsis Row */}
+                  <tr className="bg-white">
+                    <td colSpan={12} className="py-2.5 text-center text-zinc-400 font-black text-xl tracking-widest leading-none select-none border-t border-zinc-200 bg-slate-50/20">
+                      •••
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>

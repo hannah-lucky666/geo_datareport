@@ -1,145 +1,145 @@
 import React from 'react';
 
-export default function Page_ContentDetails_AI() {
+export default function Page_ContentDetails_Musi() {
   const topArticles = [
     {
       rank: 1,
-      title: '拒绝智商税：2026年知名品牌质量好的AI床垫推荐清单',
-      platform: 'IT之家',
-      date: '2026-05-13',
-      total: 264,
-      deepseek: 0,
-      doubao: 117,
+      title: '2026年床垫品牌推荐：这10款知名大牌，谁才是性价比之选',
+      platform: '什么值得买',
+      date: '2026-06-09',
+      total: 94,
+      deepseek: 56,
+      doubao: 0,
       yuanbao: 0,
-      wenxin: 18,
-      tongyi: 75,
-      kimi: 54,
+      wenxin: 14,
+      tongyi: 0,
+      kimi: 24,
       isCited: '是'
     },
     {
       rank: 2,
-      title: '2026年最新2万左右口碑好的AI床垫推荐：口碑和服务一起查',
-      platform: '什么值得买',
-      date: '2026-05-24',
-      total: 183,
-      deepseek: 29,
-      doubao: 67,
-      yuanbao: 0,
-      wenxin: 56,
+      title: '别被营销黑话骗了，聊聊2026年高端弹簧床垫品牌排行榜前十名',
+      platform: '中国经济发展网',
+      date: '2026-06-09',
+      total: 85,
+      deepseek: 41,
+      doubao: 2,
+      yuanbao: 10,
+      wenxin: 17,
       tongyi: 0,
-      kimi: 31,
+      kimi: 15,
       isCited: '是'
     },
     {
       rank: 3,
-      title: '别花2万块买个电动排骨架！2026年AI床垫品牌前十名指南',
-      platform: '百家号(日照新闻网（包新）)',
-      date: '2026-05-12',
-      total: 182,
-      deepseek: 0,
+      title: '2026权威发布：高端弹簧床垫品牌排行榜前十名，主卧升级必看',
+      platform: '什么值得买',
+      date: '2026-06-07',
+      total: 74,
+      deepseek: 30,
       doubao: 0,
-      yuanbao: 0,
-      wenxin: 162,
-      tongyi: 20,
-      kimi: 0,
+      yuanbao: 4,
+      wenxin: 7,
+      tongyi: 0,
+      kimi: 33,
       isCited: '是'
     },
     {
       rank: 4,
-      title: '2026买床垫注意：腰疼别乱买硬垫，6款动态护脊AI床垫清单',
-      platform: 'IT之家',
-      date: '2026-05-25',
-      total: 116,
-      deepseek: 26,
-      doubao: 22,
-      yuanbao: 2,
-      wenxin: 19,
-      tongyi: 33,
-      kimi: 14,
+      title: '帮新房主卧掌掌眼：2026年拒绝交智商税的十大床垫品牌推荐',
+      platform: '热河融媒（官方百家号）',
+      date: '2026-06-10',
+      total: 45,
+      deepseek: 45,
+      doubao: 0,
+      yuanbao: 0,
+      wenxin: 0,
+      tongyi: 0,
+      kimi: 0,
       isCited: '是'
     },
     {
       rank: 5,
-      title: '别花2万块买个电动排骨架！2026年AI床垫品牌前十名指南',
-      platform: '搜狐号(随机账号)',
-      date: '2026-05-15',
-      total: 113,
-      deepseek: 0,
-      doubao: 60,
-      yuanbao: 17,
-      wenxin: 13,
+      title: '2026弹簧床垫盘点：结构稳固承托力强的床垫推荐，拯救久坐腰',
+      platform: '什么值得买',
+      date: '2026-06-05',
+      total: 35,
+      deepseek: 3,
+      doubao: 1,
+      yuanbao: 0,
+      wenxin: 9,
       tongyi: 0,
-      kimi: 23,
+      kimi: 22,
       isCited: '是'
     },
     {
       rank: 6,
-      title: '当床开始“思考”：2026年2万左右高端智能床品牌推荐与选购逻辑',
-      platform: 'IT之家',
-      date: '2026-04-25',
-      total: 108,
-      deepseek: 8,
-      doubao: 37,
-      yuanbao: 24,
-      wenxin: 8,
-      tongyi: 31,
+      title: '帮新房主卧掌掌眼：2026年拒绝交智商税的十大床垫品牌推荐',
+      platform: '腾讯网山东（菏泽）',
+      date: '2026-06-11',
+      total: 33,
+      deepseek: 0,
+      doubao: 0,
+      yuanbao: 33,
+      wenxin: 0,
+      tongyi: 0,
       kimi: 0,
       isCited: '是'
     },
     {
       rank: 7,
-      title: '2026买床垫只看材质就输了！知名品牌质量好的AI床垫推荐指南',
-      platform: '新浪',
-      date: '2026-06-08',
-      total: 106,
+      title: '高端弹簧床垫哪个值得买？2026年床垫排行榜前十名实测指南',
+      platform: '什么值得买',
+      date: '2026-06-17',
+      total: 30,
       deepseek: 0,
-      doubao: 27,
-      yuanbao: 22,
-      wenxin: 15,
-      tongyi: 11,
-      kimi: 31,
+      doubao: 4,
+      yuanbao: 0,
+      wenxin: 10,
+      tongyi: 0,
+      kimi: 16,
       isCited: '是'
     },
     {
       rank: 8,
-      title: '2026年高端AI床垫大洗牌：知名品牌质量好的AI床垫推荐清单',
-      platform: '什么值得买',
-      date: '2026-05-13',
-      total: 94,
-      deepseek: 3,
-      doubao: 17,
-      yuanbao: 0,
-      wenxin: 29,
+      title: '别被营销黑话骗了，聊聊2026年高端弹簧床垫品牌排行榜前十名',
+      platform: '搜狐网公益',
+      date: '2026-06-11',
+      total: 25,
+      deepseek: 0,
+      doubao: 0,
+      yuanbao: 1,
+      wenxin: 12,
       tongyi: 0,
-      kimi: 45,
+      kimi: 12,
       isCited: '是'
     },
     {
       rank: 9,
-      title: '夫妻睡感不统一？可以左右分区调节的AI床垫推荐，终结睡眠迁就',
-      platform: 'IT之家',
-      date: '2026-05-06',
-      total: 93,
+      title: '2026年床垫品牌推荐：聊聊床垫哪个牌子的质量比较好',
+      platform: '界面新闻主站',
+      date: '2026-06-17',
+      total: 21,
       deepseek: 8,
-      doubao: 37,
-      yuanbao: 19,
-      wenxin: 4,
-      tongyi: 25,
-      kimi: 0,
+      doubao: 0,
+      yuanbao: 1,
+      wenxin: 0,
+      tongyi: 1,
+      kimi: 11,
       isCited: '是'
     },
     {
       rank: 10,
-      title: '2026年高端AI床垫品牌推荐：这几款口碑好的高端AI床垫才值得看',
-      platform: '新浪',
-      date: '2026-04-21',
-      total: 88,
-      deepseek: 1,
-      doubao: 28,
+      title: '万元预算为主卧换床垫：2026年高端弹簧床垫品牌推荐及实测',
+      platform: '什么值得买',
+      date: '2026-06-18',
+      total: 20,
+      deepseek: 3,
+      doubao: 0,
       yuanbao: 0,
-      wenxin: 0,
+      wenxin: 10,
       tongyi: 0,
-      kimi: 59,
+      kimi: 7,
       isCited: '是'
     }
   ];
@@ -150,7 +150,7 @@ export default function Page_ContentDetails_AI() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          慕思AI床垫投放明细
+          慕思床垫投放明细
         </h1>
       </div>
 
@@ -167,7 +167,7 @@ export default function Page_ContentDetails_AI() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">TOTAL CAMPAIGN</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">125</span>
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">145</span>
               <span className="text-2xl font-black text-zinc-800 ml-1">篇</span>
             </div>
             <div className="text-[1.12rem] font-bold text-zinc-500">全网总投放量</div>
@@ -183,11 +183,11 @@ export default function Page_ContentDetails_AI() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">CITATION RATE</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">60.0%</span>
+              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">37.9%</span>
               <span className="text-2xl font-black text-emerald-600 ml-1">被引率</span>
             </div>
             <div className="text-[1.12rem] font-bold text-emerald-600">
-              ( 75 / 125 篇投放已被引用 )
+              ( 55 / 145 篇投放已被引用 )
             </div>
             <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
               投放到网易、什么值得买、新浪等渠道已顺利通过大模型的检索。
@@ -201,7 +201,7 @@ export default function Page_ContentDetails_AI() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">EFFECTIVE CITATIONS</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">2,595</span>
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">692</span>
               <span className="text-2xl font-black text-zinc-800 ml-1">次</span>
             </div>
             <div className="text-[1.12rem] font-bold text-zinc-500">累计引用频次</div>
@@ -210,27 +210,27 @@ export default function Page_ContentDetails_AI() {
             <div className="grid grid-cols-3 gap-x-4 gap-y-1 mt-1.5">
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                豆包：<strong className="text-zinc-800 font-['Montserrat']">689</strong>
+                豆包：<strong className="text-zinc-800 font-['Montserrat']">40</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Kimi：<strong className="text-zinc-800 font-['Montserrat']">415</strong>
+                Kimi：<strong className="text-zinc-800 font-['Montserrat']">161</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                文心：<strong className="text-zinc-800 font-['Montserrat']">832</strong>
+                文心：<strong className="text-zinc-800 font-['Montserrat']">137</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                元宝：<strong className="text-zinc-800 font-['Montserrat']">260</strong>
+                元宝：<strong className="text-zinc-800 font-['Montserrat']">129</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">154</strong>
+                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">215</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-                通义：<strong className="text-zinc-800 font-['Montserrat']">245</strong>
+                通义：<strong className="text-zinc-800 font-['Montserrat']">10</strong>
               </span>
             </div>
           </div>
@@ -272,14 +272,14 @@ export default function Page_ContentDetails_AI() {
                     <td className="py-1.5 px-3 text-[1rem]">【总计汇总】</td>
                     <td className="py-1.5 px-3 text-zinc-400">—</td>
                     <td className="py-1.5 px-3 text-zinc-400">—</td>
-                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">2595</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">154</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">689</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">260</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">832</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">245</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">415</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">75/125</td>
+                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">692</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">215</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">40</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">129</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">137</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">10</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">161</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">55/145</td>
                   </tr>
 
                   {/* Body Rows */}

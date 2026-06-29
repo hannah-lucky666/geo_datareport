@@ -15,6 +15,14 @@ import Page_KeywordCategorization_AI from '../pages/Page_KeywordCategorization_A
 import Page_KpiAcceptance_AI from '../pages/Page_KpiAcceptance_AI';
 import Page_ContentAnalysis_AI from '../pages/Page_ContentAnalysis_AI';
 import Page_ContentDetails_AI from '../pages/Page_ContentDetails_AI';
+import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
+import Page_QueryDataSystemLink_AI from '../pages/Page_QueryDataSystemLink_AI';
+
+// Product 3 (Mattress) independent page imports
+import Page_CompetitorAnalysis_Musi from '../pages/Page_CompetitorAnalysis_Musi';
+import Page_ContentDetails_Musi from '../pages/Page_ContentDetails_Musi';
+import Page_ContentAnalysis_Musi from '../pages/Page_ContentAnalysis_Musi';
+import Page_QueryDataSystemLink_Musi from '../pages/Page_QueryDataSystemLink_Musi';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -23,8 +31,8 @@ export const slideConfig = [
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO 索引未来',
-    subtitle: '古井贡酒GEO \n 阶段性报告',
-    date: 'May 2026',
+    subtitle: '慕思GEO \n 阶段性报告',
+    date: 'June 2026',
   },
 
   {
@@ -36,52 +44,33 @@ export const slideConfig = [
     serviceGuide: 'GEO DATA REPORT',
   },
 
-  // ==================== 产品一：古井贡酒古16 ====================
-
-  // ——— 篇章1: 核心数据总览 ———
-  { type: 'chapter', title: '古井贡酒古16\n核心数据总览', subtitle: 'GU16 - CORE DATA OVERVIEW', backgroundImage: '/' },
-  { type: 'section', title: '核心数据与验收情况' },
+  // ——— 篇章1: 核心数据与竞品分析 ———
+  { type: 'chapter', title: '核心数据与竞品分析', subtitle: 'DATA OVERVIEW & COMPETITOR ANALYSIS', backgroundImage: '/' },
+  { type: 'section', title: '核心数据总览' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
-  { type: 'page', title: '竞品分析', component: Page_CompetitorAnalysis },
-  { type: 'page', title: '词条归类与优化策略', component: Page_KeywordCategorization },
-  { type: 'page', title: 'KPI验收情况', component: Page_KpiAcceptance },
-  { type: 'page', title: '内容分析总结', component: Page_ContentAnalysis },
+  { type: 'section', title: '竞品分析' },
+  { type: 'page', title: '慕思智能床 竞品分析', component: Page_CompetitorAnalysis },
+  { type: 'page', title: '慕思AI床垫 竞品分析', component: Page_CompetitorAnalysis_AI },
+  { type: 'page', title: '慕思床垫 竞品分析', component: Page_CompetitorAnalysis_Musi },
 
   // ——— 篇章2: 投放内容明细 ———
-  { type: 'chapter', title: '古井贡酒古16\n投放内容明细', subtitle: 'GU16 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: '投放内容与引用明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '投放渠道与数据明细' },
-  { type: 'page', title: '投放文章与数据解读', component: Page_ContentDetails },
+  { type: 'page', title: '慕思智能床 投放明细', component: Page_ContentDetails },
+  { type: 'page', title: '慕思AI床垫 投放明细', component: Page_ContentDetails_AI },
+  { type: 'page', title: '慕思床垫 投放明细', component: Page_ContentDetails_Musi },
 
-  // ——— 篇章3: 附录 ———
-  { type: 'chapter', title: '古井贡酒古16\n附录', subtitle: 'GU16 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-  { type: 'section', title: '附录数据明细' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: '通义千问' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: '元宝' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: '文心一言' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: 'Kimi' },
+  // ——— 篇章3: 内容分析与总结说明 ———
+  { type: 'chapter', title: '内容分析与总结说明', subtitle: 'CONTENT ANALYSIS & SUMMARY', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'section', title: '内容总结分析' },
+  { type: 'page', title: '慕思智能床 内容总结', component: Page_ContentAnalysis },
+  { type: 'page', title: '慕思AI床垫 内容总结', component: Page_ContentAnalysis_AI },
+  { type: 'page', title: '慕思床垫 内容总结', component: Page_ContentAnalysis_Musi },
 
-  // ==================== 产品二：古井贡酒古20 ====================
-
-  // ——— 篇章4: 核心数据总览 ———
-  { type: 'chapter', title: '古井贡酒古20\n核心数据总览', subtitle: 'GU20 - CORE DATA OVERVIEW', backgroundImage: '/' },
-  { type: 'section', title: '核心数据与验收情况' },
-  { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview_AI },
-  { type: 'page', title: '竞品分析', component: Page_CompetitorAnalysis_AI },
-  { type: 'page', title: '词条归类与优化策略', component: Page_KeywordCategorization_AI },
-  { type: 'page', title: 'KPI验收情况', component: Page_KpiAcceptance_AI },
-  // { type: 'page', title: '内容分析总结', component: Page_ContentAnalysis_AI },
-
-  // ——— 篇章5: 投放内容明细 ———
-  { type: 'chapter', title: '古井贡酒古20\n投放内容明细', subtitle: 'GU20 - CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
-  { type: 'section', title: '投放渠道与数据明细' },
-  { type: 'page', title: '投放文章与数据解读', component: Page_ContentDetails_AI },
-
-  // ——— 篇章6: 附录 ———
-  { type: 'chapter', title: '古井贡酒古20\n附录', subtitle: 'GU20 - APPENDIX', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-  { type: 'section', title: '附录数据明细' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: 'Deepseek' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: '豆包' },
-  { type: 'page', title: '附录1 词条数据明细', subtitle: '通义千问' },
+  // ——— 篇章4: 词条数据明细 ———
+  { type: 'chapter', title: '词条数据明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'section', title: '数据系统访问' },
+  { type: 'page', title: '慕思智能床 词条数据明细', component: Page_QueryDataSystemLink },
+  { type: 'page', title: '慕思AI床垫 词条数据明细', component: Page_QueryDataSystemLink_AI },
+  { type: 'page', title: '慕思床垫 词条数据明细', component: Page_QueryDataSystemLink_Musi },
 ];

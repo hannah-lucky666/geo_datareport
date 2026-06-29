@@ -1,28 +1,28 @@
 import React from 'react';
 
-export default function Page_CompetitorAnalysis() {
+export default function Page_CompetitorAnalysis_Musi() {
   const mentionRateData = [
-    { name: '慕思智能床', value: '87.8%' },
-    { name: '舒福德', value: '76.7%' },
-    { name: 'MPE', value: '52.8%' },
-    { name: '喜临门', value: '30.0%' },
-    { name: '舒达', value: '28.3%' },
+    { name: '慕思', value: '64.2%' },
+    { name: '喜临门', value: '55.8%' },
+    { name: '雅兰', value: '52.5%' },
+    { name: '舒达', value: '47.5%' },
+    { name: '丝涟', value: '46.7%' },
   ];
 
   const top1RateData = [
-    { name: '慕思智能床', value: '41.1%' },
-    { name: '舒福德', value: '24.4%' },
-    { name: 'MPE', value: '12.8%' },
-    { name: '慕思AI床垫', value: '5.0%' },
-    { name: '8H', value: '2.2%' },
+    { name: '慕思', value: '21.7%' },
+    { name: '喜临门', value: '11.7%' },
+    { name: 'TLK', value: '10.0%' },
+    { name: '丝涟', value: '7.5%' },
+    { name: '席梦思', value: '5.0%' },
   ];
 
   const avgRankData = [
-    { name: '慕思智能床', value: 'NO. 2.7' },
-    { name: '舒福德', value: 'NO. 3.0' },
-    { name: 'MPE', value: 'NO. 4.3' },
-    { name: '舒达', value: 'NO. 5.4' },
-    { name: '喜临门', value: 'NO. 5.4' },
+    { name: '慕思', value: 'NO. 5.0' },
+    { name: '喜临门', value: 'NO. 5.2' },
+    { name: '雅兰', value: 'NO. 6.0' },
+    { name: '舒达', value: 'NO. 6.1' },
+    { name: '丝涟', value: 'NO. 6.3' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -43,7 +43,7 @@ export default function Page_CompetitorAnalysis() {
             </thead>
             <tbody>
               {data.map((item, idx) => {
-                const isBrand = item.name === '慕思智能床';
+                const isBrand = item.name === '慕思' || item.name === '慕思床垫';
                 const rank = idx + 1;
 
                 let rankElement;
@@ -114,7 +114,7 @@ export default function Page_CompetitorAnalysis() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          慕思智能床竞品分析
+          慕思床垫竞品分析
         </h1>
       </div>
 
@@ -137,11 +137,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 舒福德为核心潜在竞争对手。其提及率达76.7%且平均提及位次NO. 3.0表现亮眼，首推率达24.4%，对本品构成直接拦截威胁。
+                1. 喜临门与雅兰是常态化竞争对手。喜临门以55.8%的提及伴随率以及11.7%的Top1提及率位居第二；雅兰提及率达52.5%同样构成长效威胁。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. MPE 智能床处于第二梯队，提及率达到52.8%，平均提及位次在4.3名，具备一定推荐覆盖力，需对其保持防御态势。
+                2. 丝涟和TLK在大模型端均有展示，其中TLK拿下10.0%的首推率，展示出在高端市场中的优质口碑，需要重点拦截。
               </p>
             </div>
           </div>
@@ -156,18 +156,18 @@ export default function Page_CompetitorAnalysis() {
               {[
                 {
                   num: '01',
-                  title: '黄金首推位巩固',
-                  desc: '强化重点强势词条内容深度，确保慕思智能床在核心睡眠场景的“第一顺位”推荐优势。',
+                  title: '价格区间精细修改',
+                  desc: '优化词条选择，考虑引入涵盖不同价格段的产品以匹配大模型高频检索价位。',
                 },
                 {
                   num: '02',
-                  desc: '在语料中增加与舒福德等主推竞品的性能与体验差异化对比，引导大模型输出定性优势。',
-                  title: '强竞品精准拦截',
+                  desc: '开展针对喜临门、雅兰等核心竞品的用料与性价比评测铺设，在大模型端强化推荐倾斜。',
+                  title: '多品牌同台拦截',
                 },
                 {
                   num: '03',
-                  desc: '在智能止鼾、零重力多模式等高价值长尾场景做精细化内容覆盖，扩大与竞品的排位差距。',
-                  title: '长尾场景防御',
+                  desc: '针对高端弹簧床垫场景，多铺设护脊释压、弹簧偏硬/偏软等痛点词，建立差异化防护。',
+                  title: '细分需求防御',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

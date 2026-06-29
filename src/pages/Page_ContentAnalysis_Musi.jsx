@@ -1,20 +1,20 @@
 import React from 'react';
 
-export default function Page_ContentAnalysis() {
+export default function Page_ContentAnalysis_Musi() {
   const summaryData = [
     {
       type: '正面',
-      ratio: '97.8%',
-      trend: '保持平稳上升',
-      desc: '正面核心关键词：生态联动、功能全面、功能描述详细',
+      ratio: '99.2%',
+      trend: '表现极优',
+      desc: '正面核心关键词：产品推荐、功能认可、高端定位',
       isPositive: true,
       colorClass: 'border-l-4 border-emerald-500',
     },
     {
       type: '负面',
-      ratio: '2.2%',
-      trend: '波动范围极小',
-      desc: '负面核心关键词：产品质量问题、售后服务问题、售后服务',
+      ratio: '0.8%',
+      trend: '近乎忽略',
+      desc: '负面核心关键词：售后服务、配置短板、溢价稍高',
       isPositive: false,
       colorClass: 'border-l-4 border-rose-500',
     }
@@ -22,15 +22,15 @@ export default function Page_ContentAnalysis() {
 
   const distributionData = [
     {
-      keyword: '用料扎实质量好的智能床推荐',
+      keyword: '真正好睡不踩雷的床垫推荐',
       type: '负面回答',
-      summary: '部分反馈中提及慕思部分智能床型号被用户投诉存在床垫塌陷、噪音大、售后服务不到位等问题',
+      summary: '部分AI问答中引用了慕思售价数万元的AI床垫出现“塌陷”、“半夜无故震动”及“售后服务差”的舆情负面',
       badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
     },
     {
-      keyword: '2万左右品质稳定售后有保障的智能床推荐',
+      keyword: '七千左右床垫品牌推荐',
       type: '负面回答',
-      summary: '强调慕思高端智能系列在实际功能体验和售后问题上近期存在较多负面声量',
+      summary: '在特定预算价位段推荐中，有大模型指出慕思某些基础款型号存在支撑力偏弱的配置短板',
       badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
     }
   ];
@@ -41,7 +41,7 @@ export default function Page_ContentAnalysis() {
       <div className="flex items-center shrink-0 mb-[20px]">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          慕思智能床内容分析总结
+          慕思床垫内容分析总结
         </h1>
       </div>
 
@@ -135,7 +135,7 @@ export default function Page_ContentAnalysis() {
           <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-6 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
             <h3 className="text-[1.65rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
             <p className="text-[1.45rem] leading-relaxed text-zinc-700 font-bold">
-              加强大模型语料铺设，针对用户反馈的噪音及塌陷问题进行防御性铺设。重点围绕智能床核心的<strong className="text-[#004CE5] font-black mx-0.5">智能止鼾、生态联动</strong>及<strong className="text-[#004CE5] font-black mx-0.5">高品质服务体验</strong>进行正面心智引导，逐步消除负面声音影响。
+              虽然整体负面率极低（0.8%），但需关注“高价AI床垫质量问题”舆情传导至普通床垫的风险。后续应增投<strong className="text-[#004CE5] font-black mx-0.5">高性价比、护脊释压、传统精细弹簧工艺</strong>评测内容，树立传统床垫超强耐用性与舒适度的优良心智。
             </p>
           </div>
         </div>
