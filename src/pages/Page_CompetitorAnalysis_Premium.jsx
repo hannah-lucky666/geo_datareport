@@ -1,28 +1,28 @@
 import React from 'react';
 
-export default function Page_CompetitorAnalysis() {
+export default function Page_CompetitorAnalysis_Premium() {
   const mentionRateData = [
-    { name: '劲酒', value: '97.5%' },
-    { name: '广誉远', value: '56.3%' },
-    { name: '椰岛', value: '56.3%' },
-    { name: '竹叶青', value: '42.5%' },
-    { name: '北京同仁堂', value: '36.3%' },
+    { name: '劲牌养生一号', value: '64.3%' },
+    { name: '广誉远', value: '59.5%' },
+    { name: '劲牌', value: '56.0%' },
+    { name: '北京同仁堂', value: '46.4%' },
+    { name: '宁夏红', value: '39.3%' },
   ];
 
   const top1RateData = [
-    { name: '劲酒', value: '86.3%' },
-    { name: '敖东', value: '5.0%' },
-    { name: '劲牌养生一号', value: '2.5%' },
-    { name: '劲牌', value: '1.3%' },
-    { name: '北京同仁堂', value: '1.3%' },
+    { name: '劲牌养生一号', value: '46.4%' },
+    { name: '劲牌', value: '31.0%' },
+    { name: '敖东', value: '3.6%' },
+    { name: '五粮液', value: '2.4%' },
+    { name: '北京同仁堂', value: '2.4%' },
   ];
 
   const avgRankData = [
-    { name: '劲酒', value: 'NO. 1.4' },
-    { name: '广誉远', value: 'NO. 5.4' },
-    { name: '毛铺酒', value: 'NO. 5.4' },
-    { name: '椰岛', value: 'NO. 5.4' },
-    { name: '竹叶青', value: 'NO. 5.8' },
+    { name: '劲牌养生一号', value: 'NO. 4.1' },
+    { name: '劲牌', value: 'NO. 5.0' },
+    { name: '广誉远', value: 'NO. 5.8' },
+    { name: '北京同仁堂', value: 'NO. 6.4' },
+    { name: '茅台', value: 'NO. 6.6' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -43,7 +43,7 @@ export default function Page_CompetitorAnalysis() {
             </thead>
             <tbody>
               {data.map((item, idx) => {
-                const isBrand = item.name === '劲酒';
+                const isBrand = item.name === '劲牌养生一号';
                 const rank = idx + 1;
 
                 let rankElement;
@@ -114,7 +114,7 @@ export default function Page_CompetitorAnalysis() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          劲酒竞品分析
+          养生一号竞品分析
         </h1>
       </div>
 
@@ -137,11 +137,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 劲酒在同品类中拥有绝对统治力，提及率高达97.5%，且平均提及位次（NO. 1.4）和首推率（86.3%）远远领先于其它竞品。
+                1. 养生一号在高端养生酒中具备首推优势，首推率达46.4%，但整体提及率（64.3%）与广誉远（59.5%）、劲牌（56.0%）差距不明显，竞争激烈。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 其它健康酒品牌如广誉远、椰岛、竹叶青等，提及率仅在36%-57%之间，且平均位次均在NO. 5.4之后，对劲酒不构成实质威胁。
+                2. 广誉远和北京同仁堂凭借深厚的健康心智紧咬，特别是在高端送礼与药膳滋补场景，对养生一号的排位形成了持续性挤压。
               </p>
             </div>
           </div>
@@ -156,18 +156,18 @@ export default function Page_CompetitorAnalysis() {
               {[
                 {
                   num: '01',
-                  title: '首推霸主地位稳固',
-                  desc: '劲酒首推率达86.3%，处于绝对统治级。未来需保持核心问答词条内容更新，巩固垄断优势。',
+                  title: '高端送礼心智抢占',
+                  desc: '聚焦“高端养生礼品”、“长辈健康送礼”等核心商务长尾词，增投千元礼盒高档内容，强化首推排位。',
                 },
                 {
                   num: '02',
-                  desc: '针对广誉远和椰岛（提及率56.3%）进行对比评测铺设，增强劲酒“家庭滋补、常备饮用”的心智首选。',
-                  title: '伴随品牌防御',
+                  desc: '在AI检索中突出养生一号“草本国医配方、年份好酒打底”的品质对比，直接拦截广誉远及同仁堂的高端流量。',
+                  title: '竞品区隔拦截',
                 },
                 {
                   num: '03',
-                  desc: '继续在养生、日常保健等大健康长尾场景铺设防御性内容，防止竞品侵蚀中尾部流量。',
-                  title: '渠道词条拓展',
+                  desc: '利用劲牌（56.0%）的高曝光率实施矩阵式引流，在问答语料中加入关联推荐，协同提升养生一号的整体曝光。',
+                  title: '提及率拉升',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

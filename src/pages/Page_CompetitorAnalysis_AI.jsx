@@ -2,27 +2,27 @@ import React from 'react';
 
 export default function Page_CompetitorAnalysis_AI() {
   const mentionRateData = [
-    { name: '古井贡酒·古20', value: '98.3%' },
-    { name: '梦之蓝', value: '86.7%' },
-    { name: '泸州老窖', value: '68.3%' },
-    { name: '剑南春', value: '66.7%' },
-    { name: '五粮液', value: '61.7%' },
+    { name: '毛铺酒', value: '84.5%' },
+    { name: '劲牌', value: '48.8%' },
+    { name: '汾酒', value: '35.7%' },
+    { name: '古越龙山', value: '28.6%' },
+    { name: '椰岛', value: '23.8%' },
   ];
 
   const top1RateData = [
-    { name: '古井贡酒·古20', value: '36.7%' },
-    { name: '五粮液', value: '35.0%' },
-    { name: '梦之蓝', value: '15.0%' },
-    { name: '茅台', value: '8.3%' },
-    { name: '泸州老窖', value: '3.3%' },
+    { name: '毛铺酒', value: '69.0%' },
+    { name: '劲牌', value: '6.0%' },
+    { name: '五粮液', value: '3.6%' },
+    { name: '敖东', value: '2.4%' },
+    { name: '东园', value: '1.2%' },
   ];
 
   const avgRankData = [
-    { name: '五粮液', value: 'NO. 3.6' },
-    { name: '泸州老窖', value: 'NO. 4.7' },
-    { name: '梦之蓝', value: 'NO. 4.7' },
-    { name: '古井贡酒·古20', value: 'NO. 4.8' },
-    { name: '剑南春', value: 'NO. 5.8' },
+    { name: '毛铺酒', value: 'NO. 2.7' },
+    { name: '劲牌', value: 'NO. 5.0' },
+    { name: '汾酒', value: 'NO. 5.8' },
+    { name: '洋河', value: 'NO. 5.9' },
+    { name: '五粮液', value: 'NO. 5.9' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -43,7 +43,7 @@ export default function Page_CompetitorAnalysis_AI() {
             </thead>
             <tbody>
               {data.map((item, idx) => {
-                const isBrand = item.name === '古井贡酒·古20';
+                const isBrand = item.name === '毛铺酒';
                 const rank = idx + 1;
 
                 let rankElement;
@@ -114,20 +114,20 @@ export default function Page_CompetitorAnalysis_AI() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          古20竞品分析
+          毛铺竞品分析
         </h1>
       </div>
 
       {/* Main Content Area */}
       <div className="flex-grow flex flex-col min-h-0 justify-start">
-        {/* Three Tables Side-by-Side Area (Taller height - 490px, completely untouched) */}
+        {/* Three Tables Side-by-Side Area (Taller height - 490px) */}
         <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
           {renderTable('提及率排名', ['产品名称', '提及率'], mentionRateData)}
           {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], top1RateData)}
           {renderTable('提及位次排名', ['产品名称', '平均提及位次'], avgRankData)}
         </div>
 
-        {/* Bottom Spacious Dashboard Area (Increased to 340px for taller containers, exactly 60px gap below tables) */}
+        {/* Bottom Spacious Dashboard Area (Spacious h-[340px] for larger readable layout) */}
         <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
           {/* Left Column: 潜在竞争分析 */}
           <div className="flex flex-col gap-3 h-full min-h-0">
@@ -137,11 +137,11 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 五粮液是最大核心威胁。其高端品牌力强，Top1提及率达35.0%紧咬古20（36.7%），且平均位次高达NO. 3.6，是绝对的排位竞争者。
+                1. 毛铺酒目前在AI推荐中处于主导地位，提及率达到84.5%，Top1首推率（69.0%）和平均位次（NO. 2.7）表现抢眼。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 梦之蓝、泸州老窖及剑南春等主要伴随竞品，虽然提及率普遍在66%-87%之间，但其Top1提及率均低于15%，在首推竞争力上对古20威胁有限。
+                2. 传统白酒品牌汾酒（35.7%提及率）和黄酒品牌古越龙山（28.6%）在细分消费场景中常作为对比项出现，是潜在的跨品类竞争对手。
               </p>
             </div>
           </div>
@@ -156,18 +156,18 @@ export default function Page_CompetitorAnalysis_AI() {
               {[
                 {
                   num: '01',
-                  title: '排位专项突破',
-                  desc: '针对平均提及位次（4.8）落后于五粮液（3.6）、泸州老窖/梦之蓝（4.7）的现状，需优化长效口碑权重，争取更靠前的AI推荐排位。',
+                  title: '跨品类拦截',
+                  desc: '针对汾酒等传统名酒在口粮及聚会场景的推荐偏好，主动铺设毛铺草本健康、荞麦健康成分的差异化优势。',
                 },
                 {
                   num: '02',
-                  title: '核心拦截',
-                  desc: '针对主要威胁五粮液（Top1提及率35.0%），主动铺设品质及品味对比评测，强调古20的高端商务性价比。',
+                  desc: '毛铺首推率为69.0%，需进一步补充“朋友聚会聚餐、不上头、健康口粮酒”等场景语料，拉大与竞品的领先距离。',
+                  title: '首推倾向巩固',
                 },
                 {
                   num: '03',
-                  title: '转化防御',
-                  desc: '利用提及率极高（98.3%）的优势，进一步铺设应用场景限定词，将高曝光转化为绝对的首推偏好。',
+                  desc: '针对劲牌（48.8%）与毛铺的同台展现，引导AI建立清晰的档次差异与产品线归类，防止品牌内部竞争消耗。',
+                  title: '品牌矩阵防守',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

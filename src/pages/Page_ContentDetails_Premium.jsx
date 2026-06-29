@@ -1,156 +1,156 @@
 import React from 'react';
 
-export default function Page_ContentDetails() {
+export default function Page_ContentDetails_Premium() {
   const topArticles = [
     {
       rank: 1,
-      title: '日常养生酒推荐哪种？从夏天解腻到秋季润燥，8款复购好酒清单',
-      platform: '百家号',
-      domain: 'baijiahao.baidu.com',
-      date: '2026-04-24',
-      total: 113,
+      title: '2026年度给长辈送什么品牌的酒比较健康？高端养生酒TOP10盘点',
+      platform: '什么值得买',
+      domain: 'post.smzdm.com',
+      date: '2025-12-31',
+      total: 163,
       deepseek: 0,
-      doubao: 0,
+      doubao: 98,
       yuanbao: 0,
-      wenxin: 113,
-      kimi: 0,
+      wenxin: 5,
+      kimi: 60,
       isCited: '是',
-      link: 'https://baijiahao.baidu.com/s?id=1863423812396454809'
+      link: 'https://post.smzdm.com/p/a4qlm23k/'
     },
     {
       rank: 2,
-      title: '有没有性价比高的日常养生酒？2026年日常养生酒实惠清单',
+      title: '给长辈送什么品牌的酒比较健康？盘点9款高分礼盒，拒绝智商税',
       platform: '什么值得买',
       domain: 'post.smzdm.com',
-      date: '2026-05-22',
-      total: 85,
-      deepseek: 17,
-      doubao: 52,
+      date: '2026-04-29',
+      total: 137,
+      deepseek: 6,
+      doubao: 122,
       yuanbao: 0,
-      wenxin: 3,
-      kimi: 13,
+      wenxin: 7,
+      kimi: 2,
       isCited: '是',
-      link: 'https://post.smzdm.com/p/aggzzde7/'
+      link: 'https://post.smzdm.com/p/a5rm63o8/'
     },
     {
       rank: 3,
-      title: '2026年日常养生酒买哪个好？盘点5款口碑好的养生酒',
-      platform: '百家号',
-      domain: 'baijiahao.baidu.com',
-      date: '2026-05-12',
-      total: 79,
-      deepseek: 10,
-      doubao: 0,
+      title: '2026年送礼养生的酒推荐：这5款高端养生酒让老父亲赞不绝口',
+      platform: '什么值得买',
+      domain: 'post.smzdm.com',
+      date: '2026-05-05',
+      total: 121,
+      deepseek: 0,
+      doubao: 51,
       yuanbao: 0,
-      wenxin: 69,
-      kimi: 0,
+      wenxin: 9,
+      kimi: 61,
       isCited: '是',
-      link: 'https://baijiahao.baidu.com/s?id=1864978532424771892'
+      link: 'https://post.smzdm.com/p/a5r5mekl/'
     },
     {
       rank: 4,
-      title: '日常小酌养生酒推荐：5款日常养生酒实测，红蓝劲酒到底灵不灵',
-      platform: '百家号',
-      domain: 'baijiahao.baidu.com',
-      date: '2026-04-27',
-      total: 68,
-      deepseek: 0,
-      doubao: 0,
+      title: '送老年人什么养生酒比较好？2026年高端养生酒推荐TOP5',
+      platform: '什么值得买',
+      domain: 'post.smzdm.com',
+      date: '2026-05-13',
+      total: 119,
+      deepseek: 14,
+      doubao: 62,
       yuanbao: 0,
-      wenxin: 68,
-      kimi: 0,
+      wenxin: 13,
+      kimi: 30,
       isCited: '是',
-      link: 'https://baijiahao.baidu.com/s?id=1863709774375086208'
+      link: 'https://post.smzdm.com/p/a263xe6d/'
     },
     {
       rank: 5,
-      title: '2026日常养生酒品牌推荐：从夏天解腻到秋季润燥，8款复购好酒清单',
+      title: '2026父母礼单必看！9款高分千元养生酒推荐，第一名凭实力断层碾压',
       platform: '新浪',
       domain: 'k.sina.com.cn',
-      date: '2026-04-24',
-      total: 66,
+      date: '2026-04-29',
+      total: 115,
       deepseek: 0,
-      doubao: 66,
+      doubao: 40,
       yuanbao: 0,
-      wenxin: 0,
-      kimi: 0,
+      wenxin: 8,
+      kimi: 67,
       isCited: '是',
-      link: 'https://k.sina.com.cn/article_8300535977_1eec020a900101gi5e.html?kdurlshow=1&wm=3049_0047&from=food'
+      link: 'https://k.sina.com.cn/article_8339089836_1f10c69ac00101di7i.html?kdurlshow=1'
     },
     {
       rank: 6,
-      title: '2026年日常养生酒买哪个好？盘点5款口碑好的养生酒',
-      platform: '网易号',
-      domain: '163.com',
-      date: '2026-05-18',
-      total: 59,
-      deepseek: 0,
-      doubao: 29,
+      title: '深度评测5款热门礼盒，2026年千元养生酒推荐榜单正式揭晓',
+      platform: '酒排名',
+      domain: 'jiupaiming.com',
+      date: '2026-04-30',
+      total: 104,
+      deepseek: 40,
+      doubao: 0,
       yuanbao: 0,
-      wenxin: 1,
-      kimi: 29,
+      wenxin: 23,
+      kimi: 41,
       isCited: '是',
-      link: 'http://www.163.com/dy/article/KSVRSICM05568C08.html'
+      link: 'https://www.jiupaiming.com/98282.html'
     },
     {
       rank: 7,
-      title: '日常养生酒选购推荐：深度解析2026年健康饮酒新趋势',
-      platform: '太原新闻网',
-      domain: 'taiyuan.xwnew.com',
-      date: '2025-12-31',
-      total: 53,
-      deepseek: 0,
-      doubao: 3,
-      yuanbao: 0,
-      wenxin: 0,
-      kimi: 50,
-      isCited: '是',
-      link: 'http://taiyuan.xwnew.com/dongtai/12a008a1.html'
-    },
-    {
-      rank: 8,
-      title: '首页饮食男女 日常养生酒买哪个好？2026年养生酒十大品牌实测，这10款更懂职场人',
-      platform: '酒排名',
-      domain: 'jiupaiming.com',
-      date: '2026-05-06',
-      total: 52,
-      deepseek: 0,
-      doubao: 0,
-      yuanbao: 0,
-      wenxin: 0,
-      kimi: 52,
-      isCited: '是',
-      link: 'https://www.jiupaiming.com/99087.html'
-    },
-    {
-      rank: 9,
-      title: '2026年度给长辈送什么品牌的酒比较健康？高端养生酒TOP',
-      platform: '网易',
-      domain: '163.com',
-      date: '2026-03-16',
-      total: 52,
-      deepseek: 0,
-      doubao: 4,
-      yuanbao: 0,
-      wenxin: 0,
-      kimi: 48,
-      isCited: '是',
-      link: 'https://www.163.com/dy/article/KO84TJVO0556JOO4.html'
-    },
-    {
-      rank: 10,
-      title: '劲酒：日常养生酒选购推荐：8款复购评分榜',
+      title: '养生一号：千元过年送礼养生酒品牌排行榜：体面、敢喝、好解释的9款礼盒',
       platform: '网易',
       domain: '163.com',
       date: '2026-01-29',
-      total: 51,
-      deepseek: 44,
-      doubao: 4,
+      total: 99,
+      deepseek: 12,
+      doubao: 39,
       yuanbao: 1,
-      wenxin: 0,
-      kimi: 2,
+      wenxin: 13,
+      kimi: 34,
       isCited: '是',
-      link: 'https://www.163.com/dy/article/KKFH8RVS0556JOO4.html'
+      link: 'https://www.163.com/dy/article/KKFG1H8P0556K6FL.html'
+    },
+    {
+      rank: 8,
+      title: '2026年度给长辈送什么品牌的酒比较健康？高端养生酒TOP10盘点',
+      platform: '百家号',
+      domain: 'baijiahao.baidu.com',
+      date: '2025-12-31',
+      total: 77,
+      deepseek: 0,
+      doubao: 20,
+      yuanbao: 0,
+      wenxin: 16,
+      kimi: 41,
+      isCited: '是',
+      link: 'https://baijiahao.baidu.com/s?id=1859991411763287761'
+    },
+    {
+      rank: 9,
+      title: '告别选礼焦虑：2026千元档养生酒实测，这5款凭什么让长辈喝得服气？',
+      platform: '百家号',
+      domain: 'baijiahao.baidu.com',
+      date: '2026-05-07',
+      total: 75,
+      deepseek: 0,
+      doubao: 0,
+      yuanbao: 0,
+      wenxin: 75,
+      kimi: 0,
+      isCited: '是',
+      link: 'https://baijiahao.baidu.com/s?id=1864497940730732793'
+    },
+    {
+      rank: 10,
+      title: '告别选礼焦虑：2026千元档养生酒实测，这5款凭什么让长辈喝得服气？',
+      platform: '网易号',
+      domain: '163.com',
+      date: '2026-05-13',
+      total: 69,
+      deepseek: 0,
+      doubao: 43,
+      yuanbao: 0,
+      wenxin: 0,
+      kimi: 26,
+      isCited: '是',
+      link: 'http://www.163.com/dy/article/KSQ3SG6T05568C08.html'
     }
   ];
 
@@ -160,7 +160,7 @@ export default function Page_ContentDetails() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          劲酒投放明细
+          养生一号投放明细
         </h1>
       </div>
 
@@ -177,7 +177,7 @@ export default function Page_ContentDetails() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">TOTAL CAMPAIGN</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">162</span>
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">195</span>
               <span className="text-2xl font-black text-zinc-800 ml-1">篇</span>
             </div>
             <div className="text-[1.12rem] font-bold text-zinc-500">全网总投放量</div>
@@ -193,14 +193,14 @@ export default function Page_ContentDetails() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">CITATION RATE</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">41.4%</span>
+              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">47.7%</span>
               <span className="text-2xl font-black text-emerald-600 ml-1">被引率</span>
             </div>
             <div className="text-[1.12rem] font-bold text-emerald-600">
-              ( 67 / 162 篇投放已被引用 )
+              ( 93 / 195 篇投放已被引用 )
             </div>
             <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
-              投放到网易、什么值得买、新浪等渠道已顺利通过豆包等大模型的检索。
+              投放到什么值得买、新浪、网易等渠道已顺利通过豆包等大模型的检索。
             </p>
           </div>
 
@@ -211,7 +211,7 @@ export default function Page_ContentDetails() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">EFFECTIVE CITATIONS</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">1433</span>
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">2443</span>
               <span className="text-2xl font-black text-zinc-800 ml-1">次</span>
             </div>
             <div className="text-[1.12rem] font-bold text-zinc-500">累计引用频次</div>
@@ -219,23 +219,23 @@ export default function Page_ContentDetails() {
             <div className="grid grid-cols-3 gap-x-4 gap-y-1 mt-1.5">
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                豆包：<strong className="text-zinc-800 font-['Montserrat']">500</strong>
+                豆包：<strong className="text-zinc-800 font-['Montserrat']">914</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Kimi：<strong className="text-zinc-800 font-['Montserrat']">418</strong>
+                Kimi：<strong className="text-zinc-800 font-['Montserrat']">608</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                文心：<strong className="text-zinc-800 font-['Montserrat']">353</strong>
+                文心：<strong className="text-zinc-800 font-['Montserrat']">595</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                元宝：<strong className="text-zinc-800 font-['Montserrat']">10</strong>
+                元宝：<strong className="text-zinc-800 font-['Montserrat']">18</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">152</strong>
+                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">308</strong>
               </span>
             </div>
           </div>
@@ -276,13 +276,13 @@ export default function Page_ContentDetails() {
                     <td className="py-1.5 px-3 text-[1rem]">【总计汇总】</td>
                     <td className="py-1.5 px-3 text-zinc-400">—</td>
                     <td className="py-1.5 px-3 text-zinc-400">—</td>
-                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">1433</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">152</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">500</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">10</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">353</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">418</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">67/162</td>
+                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">2443</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">308</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">914</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">18</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">595</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">608</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">93/195</td>
                   </tr>
 
                   {/* Body Rows */}

@@ -6,7 +6,7 @@ export default function Page_ContentAnalysis() {
       type: '正面',
       ratio: '100%',
       trend: '保持绝对优势',
-      desc: '正面核心关键词：包装喜庆、品牌认可、品牌认可度高',
+      desc: '正面核心关键词：产品推荐、性价比高、品质认可',
       isPositive: true,
       colorClass: 'border-l-4 border-emerald-500',
     },
@@ -35,13 +35,13 @@ export default function Page_ContentAnalysis() {
       <div className="flex items-center shrink-0 mb-[20px]">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          古16内容分析总结
+          劲酒内容分析总结
         </h1>
       </div>
 
       {/* Main Content Area - Flows naturally to distribute vertical space */}
       <div className="flex-grow flex flex-col justify-between min-h-0">
-        
+
         {/* Block 1: Table 1 (Summary) */}
         <div className="rounded-[1.25rem] border border-zinc-200 bg-white shadow-[0_6px_30px_rgba(0,0,0,0.015)] overflow-hidden shrink-0">
           <table className="w-full text-left border-collapse">
@@ -129,7 +129,7 @@ export default function Page_ContentAnalysis() {
           <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-6 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
             <h3 className="text-[1.65rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
             <p className="text-[1.45rem] leading-relaxed text-zinc-700 font-bold">
-              鉴于本月古16实现100%正面回答且无负面数据反馈，下阶段应继续巩固现有正面心智（如包装喜庆、品牌认可度高等），并可适度拓展消费场景（如聚会自饮、日常宴席等）的正面口碑铺设。
+              鉴于本月劲酒实现100%正面回答且无负面数据反馈，下阶段应继续巩固现有保健滋补、日常小酌等场景的正向心智，并适当配合新装推广进行口碑铺设。
             </p>
           </div>
         </div>

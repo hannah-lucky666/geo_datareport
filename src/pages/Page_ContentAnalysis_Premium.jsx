@@ -1,20 +1,20 @@
 import React from 'react';
 
-export default function Page_ContentAnalysis_AI() {
+export default function Page_ContentAnalysis_Premium() {
   const summaryData = [
     {
       type: '正面',
-      ratio: '100%',
-      trend: '保持绝对优势',
-      desc: '正面核心关键词：产品推荐、场景适配、口感正面',
+      ratio: '99.8%',
+      trend: '绝对主导',
+      desc: '正面核心关键词：品质认可、适合送礼、产品推荐',
       isPositive: true,
       colorClass: 'border-l-4 border-emerald-500',
     },
     {
       type: '负面',
-      ratio: '0%',
-      trend: '降至最低点',
-      desc: '负面核心关键词：暂无数据',
+      ratio: '0.2%',
+      trend: '极低比例',
+      desc: '负面核心关键词：品牌认知',
       isPositive: false,
       colorClass: 'border-l-4 border-rose-500',
     }
@@ -22,10 +22,10 @@ export default function Page_ContentAnalysis_AI() {
 
   const distributionData = [
     {
-      keyword: '-',
+      keyword: '高端养生酒推荐',
       type: '负面回答',
-      summary: '暂无数据',
-      badgeClass: 'bg-zinc-50 text-zinc-400 border border-zinc-150',
+      summary: '养生一号的品牌知名度在圈外不如茅台',
+      badgeClass: 'bg-rose-50 text-rose-500 border border-rose-150',
     }
   ];
 
@@ -35,7 +35,7 @@ export default function Page_ContentAnalysis_AI() {
       <div className="flex items-center shrink-0 mb-[20px]">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          毛铺内容分析总结
+          养生一号内容分析总结
         </h1>
       </div>
 
@@ -129,7 +129,7 @@ export default function Page_ContentAnalysis_AI() {
           <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-6 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
             <h3 className="text-[1.65rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
             <p className="text-[1.45rem] leading-relaxed text-zinc-700 font-bold">
-              鉴于本月毛铺酒实现100%正面回答且无负面反馈，下一步需继续突出草本健康成分及不上头的健康白酒心智，多在朋友聚会、亲友聚餐等高频日常饮用场景进行口碑巩固。
+              针对AI偶尔提到养生一号在大众及非养生特定圈层内的品牌知名度不如传统超高端一线白酒的情况，下阶段应增加“国医配方、高档大健康送礼首选”心智铺设，拉大与传统商务白酒的送礼属性差异，确立独特的高端健康定位。
             </p>
           </div>
         </div>
