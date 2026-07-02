@@ -17,7 +17,7 @@ export default function Page_DataCorrection() {
       {/* Content Box */}
       <div className="rounded-2xl border border-zinc-200 bg-slate-50/50 p-6 shrink-0 mb-6 shadow-sm">
         <p className="text-[22px] leading-relaxed text-zinc-700 font-bold">
-          上个月的提及率实际数据应为 <span className="text-[#004CE5] font-black">85.6%</span>（此前因统计误区虚高至 <span className="text-zinc-500 font-black">92.8%</span>）。数据偏差的主因是，在处理“帮我查物流”、“教我如何查快递”等词条时，AI并未推荐具体平台，而是反问单号（图1）或回复不相关（图2），但上一版计算时却直接将这些词条从分母中扣除了。目前我们已纠正该统计逻辑并还原真实数据，建议后续对此类词条进行针对性调整。
+          上个月的提及率实际数据应为 <span className="text-[#004CE5] font-black">85.5%</span>（此前因统计误区虚高至 <span className="text-zinc-500 font-black">92.8%</span>）。数据偏差的主因是，在处理“帮我查物流”、“教我如何查快递”等词条时，AI并未推荐具体平台，而是反问单号（图1）或回复不相关（图2），但上一版计算时却直接将这些词条从分母中扣除了。目前我们已纠正该统计逻辑并还原真实数据，建议后续对此类词条进行针对性调整。
         </p>
       </div>
 

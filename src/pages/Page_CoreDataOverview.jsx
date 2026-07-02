@@ -14,7 +14,7 @@ export default function Page_CoreDataOverview() {
       {/* 1. Top Section: Decorative Data Remark */}
       <div className="rounded-xl border border-zinc-200 bg-slate-50/40 py-6 px-8 shrink-0">
         <p className="text-[1.35rem] leading-relaxed text-zinc-500 font-bold">
-          本周期共监测 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">48</span> 个关键词条，在 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">3</span> 个平台完成 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">7</span> 天连续查询，合计执行查询 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">1,008</span> 次，抓取并识别引用文章 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">9,738</span> 篇，同期识别竞品品牌 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">93</span> 家，截图覆盖率达 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">100%</span>。各项数据指标均在预期执行范围内，整体运行稳定。
+          本周期共监测 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">48</span> 个关键词条，在 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">3</span> 个平台完成 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">30</span> 天连续查询，合计执行查询 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">3,906</span> 次，抓取并识别引用文章 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">35,207</span> 篇，同期识别竞品品牌 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">191</span> 家，截图覆盖率达 <span className="font-['Montserrat',sans-serif] text-[#004CE5] font-black">100%</span>。各项数据指标均在预期执行范围内，整体运行稳定。
         </p>
       </div>
 
@@ -43,7 +43,7 @@ export default function Page_CoreDataOverview() {
               <td className="py-5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
                 菜鸟
               </td>
-              <td className="py-5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">92.6%</td>
+              <td className="py-5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">85.5%</td>
               <td className="py-5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">84.7%</td>
               <td className="py-5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.3</td>
               <td className="py-5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.5</td>
@@ -64,7 +64,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[26px] leading-relaxed text-zinc-700 font-bold">
-              本月菜鸟整体表现依然处于绝对领先优势，竞品排名稳居第1。但受大模型回复机制调整影响，6月各项指标相比5月有一定回落（提及率由92.6%降至84.7%，TOP1率由78.9%降至68.8%），平均提及位次维持在 NO. 1.5 的领先位置。
+              本月菜鸟整体表现依然处于绝对领先优势，竞品排名稳居第1。但受大模型回复机制调整影响，6月各项指标相比5月有一定回落（提及率由85.5%降至84.7%，TOP1率由72.8%降至68.8%），平均提及位次维持在 NO. 1.5 的领先位置。
             </p>
           </div>
         </div>
