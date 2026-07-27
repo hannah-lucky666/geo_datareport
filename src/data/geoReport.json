@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "fetched_at": "2026-07-15T09:39:16.470Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 123,
+    "project_name": "古井贡酒古16",
+    "target_product": "古井贡酒古16",
+    "target_brand_name": null,
+    "start_date": "2026-07-16",
+    "end_date": "2026-04-01"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 20,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 20,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 4,
+      "name": "文心",
+      "url": "https://app.geoindexfuture.com/logo/wenxin.webp",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 6,
+      "name": "kimi",
+      "url": "https://app.geoindexfuture.com/logo/kimi.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 0,
+    "top1_mention_rate": null,
+    "top3_mention_rate": null,
+    "avg_position": 0,
+    "daily_stats": [],
+    "platform_stats": []
+  },
+  "influence": {
+    "total_conversations": 0,
+    "list": []
+  },
+  "entries": {
+    "total": 15,
+    "list": [
+      {
+        "entry_id": 1256,
+        "entry_name": "300-500元婚宴用酒推荐",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1257,
+        "entry_name": "500元左右婚礼用什么酒推荐",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1258,
+        "entry_name": "500元左右包装喜庆的婚宴酒有哪些",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1259,
+        "entry_name": "500元左右结婚买什么浓香型白酒好",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1260,
+        "entry_name": "500元左右酒瓶显高档的婚宴用酒有哪些",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1261,
+        "entry_name": "500元左右性价比高婚宴用酒推荐",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1262,
+        "entry_name": "300-500元高端婚宴白酒怎么选",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1263,
+        "entry_name": "300-500元左右结婚⽤什么⽩酒⽐较好",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1264,
+        "entry_name": "婚宴用酒推荐的白酒有哪些",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1265,
+        "entry_name": "婚宴白酒前10名推荐",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1266,
+        "entry_name": "婚宴用酒哪些品牌显高端",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1267,
+        "entry_name": "300-500元婚宴白酒用哪个品牌比较好",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1268,
+        "entry_name": "500元左右婚宴白酒推荐",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1269,
+        "entry_name": "300-500元左右不易醉的婚宴用酒",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 1270,
+        "entry_name": "300-500元婚宴白酒排名",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "古井贡酒古16",
+    "mention_rate_ranking": [],
+    "position_ranking": [],
+    "rate_daily": [],
+    "position_daily": [],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "古井贡酒",
+        "top1_mention_rate": 0,
+        "is_target": true
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 0,
+    "citation_rate": 0,
+    "total_citations": 0,
+    "platform_stats": [],
+    "articles": []
+  }
+}
