@@ -7,7 +7,7 @@ export default function Page_CoreDataOverview() {
       <div className="flex items-center shrink-0 mb-[27px]">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4">
-          核心数据总览 <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年6月）</span>
+          核心数据总览 <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
         </h1>
       </div>
 
@@ -29,12 +29,12 @@ export default function Page_CoreDataOverview() {
               <th colSpan={2} className="py-4 px-8 text-2xl font-black text-center border-l border-white/10 bg-[#2E75FF]">竞品排名</th>
             </tr>
             <tr className="bg-slate-50/80 border-b border-zinc-200 text-[#004CE5] font-black text-2xl">
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">5月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">6月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">5月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">6月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">5月</th>
               <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">6月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">7月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">6月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">7月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">6月</th>
+              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">7月</th>
             </tr>
           </thead>
           <tbody>
@@ -43,12 +43,12 @@ export default function Page_CoreDataOverview() {
               <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
                 古井贡酒古16
               </td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">96.0%</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">96.7%</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">2.0</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">1.7</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">91.7%</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">85.0%</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">2.4</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">3.3</td>
               <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 2</td>
             </tr>
 
             {/* Product 2: 古井贡酒古20 */}
@@ -56,10 +56,10 @@ export default function Page_CoreDataOverview() {
               <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
                 古井贡酒古20
               </td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">88.3%</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">98.3%</td>
-              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">4.7</td>
-              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">4.8</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">95.0%</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">91.7%</td>
+              <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">4.9</td>
+              <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">5.0</td>
               <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
               <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
             </tr>
@@ -77,7 +77,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[24px] leading-snug text-zinc-700 font-bold">
-              本月古16与古20表现优异，竞品排名均稳居第1。古16平均提及位次前移至1.7；古20提及率实现10%的大幅增长，达到98.3%，整体在AI生态中具有极强的领先优势与品牌曝光。
+              7月古16提及率环比回落至85.0%，行业影响力排名由第1退至第2，平均位次后移至3.3；古20仍稳居行业影响力第1（91.7%），平均位次微降至5.0。两款产品整体在AI生态中仍保持领先曝光与首推优势。
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[24px] leading-snug text-zinc-700 font-bold">
-              下阶段古16需继续巩固在核心场景的绝对领先，提升高顺位稳定性；古20需针对提及位次（4.8）进行专项优化，通过丰富消费场景和提升口碑内容质量，进一步提升在AI推荐中的排位。
+              下阶段古16需加码核心婚宴/宴席场景内容，尽快夺回提及率与行业影响力第1，并稳住60%的Top1首推优势；古20继续针对平均位次（5.0）做专项优化，强化高端商务场景口碑，拉开与第八代普五的排位差距。
             </p>
           </div>
         </div>

@@ -1,28 +1,31 @@
 import React from 'react';
 
 export default function Page_CompetitorAnalysis() {
+  const TARGET = '古井贡酒·古16';
+
+  // 数据口径：2026-07-22（数据系统项目 351）
   const mentionRateData = [
-    { name: '古井贡酒', value: '96.3%' },
-    { name: '剑南春', value: '80.0%' },
-    { name: '洋河', value: '58.7%' },
-    { name: '今世缘', value: '57.7%' },
-    { name: '郎酒', value: '51.7%' },
+    { name: '水晶剑', value: '88.3%' },
+    { name: TARGET, value: '85.0%' },
+    { name: '红花郎15', value: '48.3%' },
+    { name: '青花20', value: '46.7%' },
+    { name: '红花郎10', value: '41.7%' },
   ];
 
   const top1RateData = [
-    { name: '古井贡酒', value: '78.3%' },
-    { name: '剑南春', value: '6.7%' },
-    { name: '五粮液', value: '6.0%' },
-    { name: '茅台', value: '4.7%' },
-    { name: '石荣霄', value: '1.3%' },
+    { name: TARGET, value: '60.0%' },
+    { name: '水晶剑', value: '15.0%' },
+    { name: '普五八代', value: '10.0%' },
+    { name: '红花郎15', value: '3.3%' },
+    { name: '飞天茅台', value: '3.3%' },
   ];
 
   const avgRankData = [
-    { name: '古井贡酒', value: 'NO. 2.1' },
-    { name: '剑南春', value: 'NO. 4.1' },
-    { name: '今世缘', value: 'NO. 6.0' },
-    { name: '郎酒', value: 'NO. 6.1' },
-    { name: '泸州老窖', value: 'NO. 6.2' },
+    { name: TARGET, value: 'NO. 3.3' },
+    { name: '水晶剑', value: 'NO. 3.6' },
+    { name: '红花郎15', value: 'NO. 6.9' },
+    { name: '红花郎10', value: 'NO. 7.3' },
+    { name: '普五八代', value: 'NO. 7.6' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -43,7 +46,7 @@ export default function Page_CompetitorAnalysis() {
             </thead>
             <tbody>
               {data.map((item, idx) => {
-                const isBrand = item.name === '古井贡酒';
+                const isBrand = item.name === TARGET;
                 const rank = idx + 1;
 
                 let rankElement;
@@ -137,11 +140,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 剑南春作为主要竞争对手，提及率达到80.0%，但其Top1提及率仅有6.7%，且平均提及位次在NO. 4.1，处于明显劣势地位。
+                1. 水晶剑已反超为本月最大威胁：提及率88.3%高于古16的85.0%，平均位次NO. 3.6紧追古16（NO. 3.3），同台竞争明显升温。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 其它竞品如洋河、今世缘、郎酒等，提及率处于51%-59%区间，平均提及位次均在NO. 6.0之后，对古16的威胁程度较低。
+                2. 尽管提及率短暂落后，古16 Top1提及率仍达60.0%，远高于水晶剑（15.0%）与普五八代（10.0%），首推优势依然稳固。
               </p>
             </div>
           </div>
@@ -156,18 +159,18 @@ export default function Page_CompetitorAnalysis() {
               {[
                 {
                   num: '01',
-                  title: '首推位巩固',
-                  desc: '古16的首推率高达78.3%，优势巨大。需持续稳定核心长尾词，保持绝对的首推顺位领先。',
+                  title: '提及率夺回',
+                  desc: '针对水晶剑反超（88.3% vs 85.0%），加码核心婚宴/宴席词条曝光，尽快夺回提及率第一。',
                 },
                 {
                   num: '02',
-                  desc: '针对高同台的剑南春（80.0%提及率）实施精细化对比拦截，优化AI语料库，拉大身位差距。',
-                  title: '拦截第二梯队',
+                  title: '首推位巩固',
+                  desc: '古16 Top1仍高达60.0%，需继续稳住高转化长尾词，拉大与水晶剑（15.0%）的首推差距。',
                 },
                 {
                   num: '03',
-                  desc: '利用洋河、今世缘等竞品在提及率（约57%）和排位（NO. 6.0+）上的弱势，在婚宴等特色场景继续精细渗透。',
-                  title: '细分场景占位',
+                  title: '第二梯队拦截',
+                  desc: '红花郎15、青花20提及率已升至46%-48%，位次却仍在NO. 6.9之后，应在同价位场景做精细化对比拦截。',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

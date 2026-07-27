@@ -1,0 +1,1232 @@
+{
+  "meta": {
+    "fetched_at": "2026-07-27T13:28:24.622Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 352,
+    "project_name": "古井贡酒古20",
+    "target_product": "古井贡酒古20",
+    "target_brand_name": null,
+    "start_date": "2026-04-02",
+    "end_date": "2026-07-22"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 20,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 20,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 4,
+      "name": "文心",
+      "url": "https://app.geoindexfuture.com/logo/wenxin.webp",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 6,
+      "name": "kimi",
+      "url": "https://app.geoindexfuture.com/logo/kimi.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 86.8,
+    "top1_mention_rate": null,
+    "top3_mention_rate": null,
+    "avg_position": 4.9,
+    "daily_stats": [
+      {
+        "date": "2026-04-02",
+        "mention_rate": 71.7,
+        "avg_position": 5
+      },
+      {
+        "date": "2026-04-16",
+        "mention_rate": 82.7,
+        "avg_position": 5.6
+      },
+      {
+        "date": "2026-04-24",
+        "mention_rate": 89.3,
+        "avg_position": 5
+      },
+      {
+        "date": "2026-04-30",
+        "mention_rate": 81.7,
+        "avg_position": 4.7
+      },
+      {
+        "date": "2026-05-01",
+        "mention_rate": 86.7,
+        "avg_position": 4.7
+      },
+      {
+        "date": "2026-05-08",
+        "mention_rate": 85,
+        "avg_position": 4.6
+      },
+      {
+        "date": "2026-05-15",
+        "mention_rate": 81.7,
+        "avg_position": 4.8
+      },
+      {
+        "date": "2026-05-22",
+        "mention_rate": 93.3,
+        "avg_position": 4.5
+      },
+      {
+        "date": "2026-05-28",
+        "mention_rate": 86.7,
+        "avg_position": 4.9
+      },
+      {
+        "date": "2026-06-04",
+        "mention_rate": 81.7,
+        "avg_position": 4.8
+      },
+      {
+        "date": "2026-06-11",
+        "mention_rate": 91.7,
+        "avg_position": 4.7
+      },
+      {
+        "date": "2026-06-18",
+        "mention_rate": 86.7,
+        "avg_position": 4.8
+      },
+      {
+        "date": "2026-06-25",
+        "mention_rate": 95,
+        "avg_position": 4.9
+      },
+      {
+        "date": "2026-07-02",
+        "mention_rate": 84.2,
+        "avg_position": 5.3
+      },
+      {
+        "date": "2026-07-09",
+        "mention_rate": 91.7,
+        "avg_position": 5
+      },
+      {
+        "date": "2026-07-16",
+        "mention_rate": 95,
+        "avg_position": 4.2
+      },
+      {
+        "date": "2026-07-22",
+        "mention_rate": 91.7,
+        "avg_position": 5
+      }
+    ],
+    "platform_stats": [
+      {
+        "platform_id": 1,
+        "platform_name": "DeepSeek",
+        "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+        "brand_mention_rate": 83.9,
+        "avg_position": 5.2
+      },
+      {
+        "platform_id": 2,
+        "platform_name": "豆包",
+        "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+        "brand_mention_rate": 95.7,
+        "avg_position": 5.6
+      },
+      {
+        "platform_id": 3,
+        "platform_name": "平台3",
+        "platform_logo": null,
+        "brand_mention_rate": 68.9,
+        "avg_position": 5.8
+      },
+      {
+        "platform_id": 4,
+        "platform_name": "文心",
+        "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+        "brand_mention_rate": 77.3,
+        "avg_position": 4
+      },
+      {
+        "platform_id": 6,
+        "platform_name": "kimi",
+        "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+        "brand_mention_rate": 94.1,
+        "avg_position": 4.5
+      }
+    ]
+  },
+  "influence": {
+    "total_conversations": 1047,
+    "list": [
+      {
+        "rank": 1,
+        "brand_name": "古井贡酒",
+        "favicon_url": null,
+        "influence_score": 76.5,
+        "mention_rate": 86.8,
+        "avg_position": 4.9,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "brand_name": "洋河",
+        "favicon_url": null,
+        "influence_score": 58,
+        "mention_rate": 66.6,
+        "avg_position": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "剑南春",
+        "favicon_url": null,
+        "influence_score": 49.1,
+        "mention_rate": 53.2,
+        "avg_position": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "五粮液",
+        "favicon_url": null,
+        "influence_score": 45.6,
+        "mention_rate": 41.3,
+        "avg_position": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "泸州老窖",
+        "favicon_url": null,
+        "influence_score": 40.9,
+        "mention_rate": 39.5,
+        "avg_position": 6.7,
+        "is_target": false
+      }
+    ]
+  },
+  "entries": {
+    "total": 15,
+    "list": [
+      {
+        "entry_id": 7739,
+        "entry_name": "600元左右浓香型白酒品牌排行榜",
+        "mention_rate": 98.6,
+        "position": 1.5,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/fe3643eb4db04fa183886fd4a9a9a476.png"
+      },
+      {
+        "entry_id": 7751,
+        "entry_name": "江淮派高端浓香型白酒推荐",
+        "mention_rate": 95.7,
+        "position": 2.5,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/f7b8a528c1684ce59f5a72dde9b65095.png"
+      },
+      {
+        "entry_id": 7742,
+        "entry_name": "浓香型白酒品牌排行榜",
+        "mention_rate": 94.3,
+        "position": 5.6,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/eb0848da99f54595830350bdbf4b96ea.png"
+      },
+      {
+        "entry_id": 7745,
+        "entry_name": "600 元左右的高端礼品白酒推荐",
+        "mention_rate": 94.3,
+        "position": 1.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/99db3d4ddcec4247aaa4d9dcc76c8bff.png"
+      },
+      {
+        "entry_id": 7746,
+        "entry_name": "600 元左右不上头的浓香型白酒推荐",
+        "mention_rate": 94.3,
+        "position": 1.5,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/4eb2631913884269a17b3fe058e78297.png"
+      },
+      {
+        "entry_id": 7741,
+        "entry_name": "600元左右适合长辈日常小酌的浓香型白酒推荐",
+        "mention_rate": 92.9,
+        "position": 1.6,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/4d0ab528a382470ea3282e8d73c50580.png"
+      },
+      {
+        "entry_id": 7737,
+        "entry_name": "目前浓香型白酒代表品牌有哪些",
+        "mention_rate": 91.3,
+        "position": 9.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/1a8ef53711de4dcf90ffc830c5f0282c.png"
+      },
+      {
+        "entry_id": 7743,
+        "entry_name": "600 元左右适合送礼与宴请的白酒推荐",
+        "mention_rate": 90,
+        "position": 1.9,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/fa3530095f1c4b42a9e8a93563e934c3.png"
+      },
+      {
+        "entry_id": 7748,
+        "entry_name": "什么品牌的浓香型白酒更受欢迎",
+        "mention_rate": 90,
+        "position": 7.2,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/0c9cbb2974b741539216fdb3dd2b58cb.png"
+      },
+      {
+        "entry_id": 7738,
+        "entry_name": "600 元左右高端礼盒白酒推荐",
+        "mention_rate": 88.6,
+        "position": 1.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/69beb0dea67d4227bc9b010a85c31161.png"
+      },
+      {
+        "entry_id": 7744,
+        "entry_name": "600元左右高端礼盒白酒推荐",
+        "mention_rate": 88.6,
+        "position": 1.9,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/894529c659d844a39a34d7f3a7f1c362.png"
+      },
+      {
+        "entry_id": 7747,
+        "entry_name": "高端浓香型白酒代表品牌有哪些",
+        "mention_rate": 88.6,
+        "position": 8.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/14b389238caf45a181986aa4538b6066.png"
+      },
+      {
+        "entry_id": 7749,
+        "entry_name": "销量高的浓香型白酒排行榜",
+        "mention_rate": 83.8,
+        "position": 6.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/e3ef5d754fe04418ad72b660cfc9f7c4.png"
+      },
+      {
+        "entry_id": 7750,
+        "entry_name": "浓香型白酒常见品牌跟价格",
+        "mention_rate": 68.6,
+        "position": 9.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/1767b42e235048e7b58830432ed8b87e.png"
+      },
+      {
+        "entry_id": 7740,
+        "entry_name": "商务场合适合的白酒品牌推荐",
+        "mention_rate": 42.9,
+        "position": 8.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-07-21T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260722/c3552cc7574247cdb98f7b5d986ccfff.png"
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "古井贡酒古20",
+    "mention_rate_ranking": [
+      {
+        "brand_id": 66706,
+        "brand_name": "古井贡酒",
+        "product_id": 72550,
+        "product_name": "年份原浆古20",
+        "display_name": "年份原浆古20",
+        "mention_count": 909,
+        "mention_rate": 86.8,
+        "is_target": true
+      },
+      {
+        "brand_id": 66705,
+        "brand_name": "洋河",
+        "product_id": 72531,
+        "product_name": "梦之蓝M6+",
+        "display_name": "梦之蓝M6+",
+        "mention_count": 697,
+        "mention_rate": 66.6,
+        "is_target": false
+      },
+      {
+        "brand_id": 66709,
+        "brand_name": "剑南春",
+        "product_id": 72468,
+        "product_name": "水晶剑",
+        "display_name": "水晶剑",
+        "mention_count": 557,
+        "mention_rate": 53.2,
+        "is_target": false
+      },
+      {
+        "brand_id": 66707,
+        "brand_name": "五粮液",
+        "product_id": 72491,
+        "product_name": "第八代普五",
+        "display_name": "第八代普五",
+        "mention_count": 432,
+        "mention_rate": 41.3,
+        "is_target": false
+      },
+      {
+        "brand_id": 66708,
+        "brand_name": "泸州老窖",
+        "product_id": 72510,
+        "product_name": "国窖1573",
+        "display_name": "国窖1573",
+        "mention_count": 414,
+        "mention_rate": 39.5,
+        "is_target": false
+      }
+    ],
+    "position_ranking": [
+      {
+        "brand_id": 66706,
+        "brand_name": "古井贡酒",
+        "product_id": 72550,
+        "product_name": "年份原浆古20",
+        "display_name": "年份原浆古20",
+        "avg_position": 4.9,
+        "mention_count": 909,
+        "is_target": true
+      },
+      {
+        "brand_id": 66707,
+        "brand_name": "五粮液",
+        "product_id": 72491,
+        "product_name": "第八代普五",
+        "display_name": "第八代普五",
+        "avg_position": 5.8,
+        "mention_count": 432,
+        "is_target": false
+      },
+      {
+        "brand_id": 66705,
+        "brand_name": "洋河",
+        "product_id": 72531,
+        "product_name": "梦之蓝M6+",
+        "display_name": "梦之蓝M6+",
+        "avg_position": 6.5,
+        "mention_count": 697,
+        "is_target": false
+      },
+      {
+        "brand_id": 66709,
+        "brand_name": "剑南春",
+        "product_id": 72468,
+        "product_name": "水晶剑",
+        "display_name": "水晶剑",
+        "avg_position": 6.7,
+        "mention_count": 557,
+        "is_target": false
+      },
+      {
+        "brand_id": 66708,
+        "brand_name": "泸州老窖",
+        "product_id": 72510,
+        "product_name": "国窖1573",
+        "display_name": "国窖1573",
+        "avg_position": 6.7,
+        "mention_count": 414,
+        "is_target": false
+      }
+    ],
+    "rate_daily": [
+      {
+        "date": "2026-04-02",
+        "年份原浆古20": 71.7,
+        "梦之蓝M6+": 55,
+        "水晶剑": 56.7,
+        "第八代普五": 38.3,
+        "国窖1573": 28.3
+      },
+      {
+        "date": "2026-04-16",
+        "年份原浆古20": 82.7,
+        "梦之蓝M6+": 64,
+        "水晶剑": 57.3,
+        "第八代普五": 34.7,
+        "国窖1573": 33.3
+      },
+      {
+        "date": "2026-04-24",
+        "年份原浆古20": 89.3,
+        "梦之蓝M6+": 60,
+        "水晶剑": 56,
+        "第八代普五": 36,
+        "国窖1573": 40
+      },
+      {
+        "date": "2026-04-30",
+        "年份原浆古20": 81.7,
+        "梦之蓝M6+": 68.3,
+        "水晶剑": 56.7,
+        "第八代普五": 35,
+        "国窖1573": 41.7
+      },
+      {
+        "date": "2026-05-01",
+        "年份原浆古20": 86.7,
+        "梦之蓝M6+": 66.7,
+        "水晶剑": 56.7,
+        "第八代普五": 40,
+        "国窖1573": 45
+      },
+      {
+        "date": "2026-05-08",
+        "年份原浆古20": 85,
+        "梦之蓝M6+": 65,
+        "水晶剑": 56.7,
+        "第八代普五": 38.3,
+        "国窖1573": 40
+      },
+      {
+        "date": "2026-05-15",
+        "年份原浆古20": 81.7,
+        "梦之蓝M6+": 68.3,
+        "水晶剑": 53.3,
+        "第八代普五": 38.3,
+        "国窖1573": 40
+      },
+      {
+        "date": "2026-05-22",
+        "年份原浆古20": 93.3,
+        "梦之蓝M6+": 78.3,
+        "水晶剑": 56.7,
+        "第八代普五": 45,
+        "国窖1573": 35
+      },
+      {
+        "date": "2026-05-28",
+        "年份原浆古20": 86.7,
+        "梦之蓝M6+": 68.3,
+        "水晶剑": 53.3,
+        "第八代普五": 48.3,
+        "国窖1573": 45
+      },
+      {
+        "date": "2026-06-04",
+        "年份原浆古20": 81.7,
+        "梦之蓝M6+": 66.7,
+        "水晶剑": 43.3,
+        "第八代普五": 38.3,
+        "国窖1573": 33.3
+      },
+      {
+        "date": "2026-06-11",
+        "年份原浆古20": 91.7,
+        "梦之蓝M6+": 71.7,
+        "水晶剑": 55,
+        "第八代普五": 43.3,
+        "国窖1573": 46.7
+      },
+      {
+        "date": "2026-06-18",
+        "年份原浆古20": 86.7,
+        "梦之蓝M6+": 63.3,
+        "水晶剑": 50,
+        "第八代普五": 45,
+        "国窖1573": 45
+      },
+      {
+        "date": "2026-06-25",
+        "年份原浆古20": 95,
+        "梦之蓝M6+": 63.3,
+        "水晶剑": 45,
+        "第八代普五": 46.7,
+        "国窖1573": 40
+      },
+      {
+        "date": "2026-07-02",
+        "年份原浆古20": 84.2,
+        "梦之蓝M6+": 68.4,
+        "水晶剑": 50.9,
+        "第八代普五": 40.4,
+        "国窖1573": 40.4
+      },
+      {
+        "date": "2026-07-09",
+        "年份原浆古20": 91.7,
+        "梦之蓝M6+": 70,
+        "水晶剑": 53.3,
+        "第八代普五": 45,
+        "国窖1573": 41.7
+      },
+      {
+        "date": "2026-07-16",
+        "年份原浆古20": 95,
+        "梦之蓝M6+": 66.7,
+        "水晶剑": 55,
+        "第八代普五": 45,
+        "国窖1573": 38.3
+      },
+      {
+        "date": "2026-07-22",
+        "年份原浆古20": 91.7,
+        "梦之蓝M6+": 70,
+        "水晶剑": 46.7,
+        "第八代普五": 46.7,
+        "国窖1573": 40
+      }
+    ],
+    "position_daily": [
+      {
+        "date": "2026-04-02",
+        "年份原浆古20": 5.1,
+        "第八代普五": 5.3,
+        "梦之蓝M6+": 5.5,
+        "水晶剑": 5.3,
+        "国窖1573": 6.3
+      },
+      {
+        "date": "2026-04-16",
+        "年份原浆古20": 5.7,
+        "第八代普五": 6.9,
+        "梦之蓝M6+": 6.8,
+        "水晶剑": 7.4,
+        "国窖1573": 7.7
+      },
+      {
+        "date": "2026-04-24",
+        "年份原浆古20": 5,
+        "第八代普五": 6.1,
+        "梦之蓝M6+": 6.6,
+        "水晶剑": 6.2,
+        "国窖1573": 6.6
+      },
+      {
+        "date": "2026-04-30",
+        "年份原浆古20": 4.9,
+        "第八代普五": 5.3,
+        "梦之蓝M6+": 5.5,
+        "水晶剑": 5.7,
+        "国窖1573": 5.8
+      },
+      {
+        "date": "2026-05-01",
+        "年份原浆古20": 4.8,
+        "第八代普五": 6.1,
+        "梦之蓝M6+": 7.3,
+        "水晶剑": 6.7,
+        "国窖1573": 6.5
+      },
+      {
+        "date": "2026-05-08",
+        "年份原浆古20": 4.7,
+        "第八代普五": 5.2,
+        "梦之蓝M6+": 5.9,
+        "水晶剑": 6,
+        "国窖1573": 6.4
+      },
+      {
+        "date": "2026-05-15",
+        "年份原浆古20": 4.9,
+        "第八代普五": 5.1,
+        "梦之蓝M6+": 5.9,
+        "水晶剑": 6.1,
+        "国窖1573": 5.8
+      },
+      {
+        "date": "2026-05-22",
+        "年份原浆古20": 4.7,
+        "第八代普五": 5.6,
+        "梦之蓝M6+": 6,
+        "水晶剑": 6.3,
+        "国窖1573": 6.9
+      },
+      {
+        "date": "2026-05-28",
+        "年份原浆古20": 4.9,
+        "第八代普五": 5.2,
+        "梦之蓝M6+": 6.4,
+        "水晶剑": 6.4,
+        "国窖1573": 6.1
+      },
+      {
+        "date": "2026-06-04",
+        "年份原浆古20": 4.9,
+        "第八代普五": 5.9,
+        "梦之蓝M6+": 6.1,
+        "水晶剑": 6.7,
+        "国窖1573": 7.1
+      },
+      {
+        "date": "2026-06-11",
+        "年份原浆古20": 4.8,
+        "第八代普五": 5.7,
+        "梦之蓝M6+": 6,
+        "水晶剑": 6.8,
+        "国窖1573": 6.5
+      },
+      {
+        "date": "2026-06-18",
+        "年份原浆古20": 4.8,
+        "第八代普五": 6.6,
+        "梦之蓝M6+": 7.3,
+        "水晶剑": 7.8,
+        "国窖1573": 7.5
+      },
+      {
+        "date": "2026-06-25",
+        "年份原浆古20": 4.9,
+        "第八代普五": 5.9,
+        "梦之蓝M6+": 7.7,
+        "水晶剑": 7.7,
+        "国窖1573": 7.1
+      },
+      {
+        "date": "2026-07-02",
+        "年份原浆古20": 5.4,
+        "第八代普五": 5.9,
+        "梦之蓝M6+": 6.1,
+        "水晶剑": 7,
+        "国窖1573": 6.6
+      },
+      {
+        "date": "2026-07-09",
+        "年份原浆古20": 5.1,
+        "第八代普五": 6.5,
+        "梦之蓝M6+": 6.7,
+        "水晶剑": 7.4,
+        "国窖1573": 7.4
+      },
+      {
+        "date": "2026-07-16",
+        "年份原浆古20": 4.2,
+        "第八代普五": 6.1,
+        "梦之蓝M6+": 6.7,
+        "水晶剑": 6.9,
+        "国窖1573": 7.4
+      },
+      {
+        "date": "2026-07-22",
+        "年份原浆古20": 5.1,
+        "第八代普五": 5.7,
+        "梦之蓝M6+": 7.1,
+        "水晶剑": 8,
+        "国窖1573": 6.9
+      }
+    ],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "年份原浆古20",
+        "top1_mention_rate": 36.7,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "brand_name": "第八代普五",
+        "top1_mention_rate": 22.1,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "梦之蓝M6+",
+        "top1_mention_rate": 9.1,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "飞天茅台",
+        "top1_mention_rate": 4.7,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "水晶剑",
+        "top1_mention_rate": 1.3,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "尖庄高光",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "梦之蓝M9",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "梦之蓝M3",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "窖藏1988",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "1935",
+        "top1_mention_rate": 0.4,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "沱牌 T68",
+        "top1_mention_rate": 0.4,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "青花20",
+        "top1_mention_rate": 0.4,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "乳玻贡",
+        "top1_mention_rate": 0.3,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "手工班",
+        "top1_mention_rate": 0.3,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "海之蓝",
+        "top1_mention_rate": 0.3,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "特曲",
+        "top1_mention_rate": 0.3,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "15酱黑标鎏金",
+        "top1_mention_rate": 0.2,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "国窖1573",
+        "top1_mention_rate": 0.2,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "天之蓝",
+        "top1_mention_rate": 0.2,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "头排・苏酒",
+        "top1_mention_rate": 0.2,
+        "is_target": false
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 1047,
+    "citation_rate": 91.3,
+    "total_citations": 11028,
+    "platform_stats": [
+      {
+        "platform_name": "百度知道",
+        "domain": "baidu.com",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "citation_count": 2354,
+        "share": 21.3
+      },
+      {
+        "platform_name": "什么值得买社区频道",
+        "domain": "smzdm.com",
+        "logo_url": "https://p3-spider-image-sign.byteimg.com/isp-i18n-media/image/1a44b9ef64d4f823f24d9493b4fe660a~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816928&x-signature=%2BwPsdoPoNDfa241xjO4mOLPKH4o%3D",
+        "citation_count": 1568,
+        "share": 14.2
+      },
+      {
+        "platform_name": "抖音",
+        "domain": "iesdouyin.com",
+        "logo_url": "https://p3-spider-image-sign.byteimg.com/isp-i18n-media/img/27422dd3ce8d2f41b45309e5aeca806b~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816928&x-signature=W8ZL8IDW1iYKUjhoHgBVhf82%2BBM%3D",
+        "citation_count": 1144,
+        "share": 10.4
+      },
+      {
+        "platform_name": "今日头条",
+        "domain": "toutiao.com",
+        "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/118f7a3625ad8ebbbc11d04f118d2e10~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=0BCf7I6pCkxfK9gutZJAh6L1BLA%3D",
+        "citation_count": 972,
+        "share": 8.8
+      },
+      {
+        "platform_name": "新浪新闻",
+        "domain": "sina.cn",
+        "logo_url": "https://cdn.deepseek.com/site-icons/sina.cn",
+        "citation_count": 750,
+        "share": 6.8
+      }
+    ],
+    "articles": [
+      {
+        "title": "浓香型白酒十大品牌",
+        "link_url": "https://www.chinapp.com/paihang/nxxbj",
+        "domain": "chinapp.com",
+        "platform_name": "品牌加盟网",
+        "logo_url": "https://s2.zimgs.cn/ims?at=smstruct&kt=url&key=aHR0cHM6Ly9tLmptLmNoaW5hcHAuY29tL2Zhdmljb24uaWNv&sign=yx:gDBfBJmxaBUHIfQ8Aa9tbjJUtak=&tv=0_0&p=",
+        "total_citations": 86,
+        "avg_citations": 5.7,
+        "has_target_product": false
+      },
+      {
+        "title": "2025年中国最受消费者喜爱的白酒品牌排行榜（附榜单）-中商情报网",
+        "link_url": "https://m.askci.com/news/20250526/100929274822536802717607.shtml",
+        "domain": "askci.com",
+        "platform_name": "中商情报网",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_askci_com.ico",
+        "total_citations": 72,
+        "avg_citations": 4.8,
+        "has_target_product": false
+      },
+      {
+        "title": "浓香型白酒推荐",
+        "link_url": "https://k.sina.cn/article_7517400647_1c0126e47059089bva.html?from=food",
+        "domain": "sina.cn",
+        "platform_name": "新浪新闻",
+        "logo_url": "https://cdn.deepseek.com/site-icons/sina.cn",
+        "total_citations": 63,
+        "avg_citations": 3.7,
+        "has_target_product": false
+      },
+      {
+        "title": "最近更新:2026年3月2日",
+        "link_url": "https://www.chinapp.com/brand/10387",
+        "domain": "chinapp.com",
+        "platform_name": "品牌加盟网",
+        "logo_url": "https://s2.zimgs.cn/ims?at=smstruct&kt=url&key=aHR0cHM6Ly9tLmptLmNoaW5hcHAuY29tL2Zhdmljb24uaWNv&sign=yx:gDBfBJmxaBUHIfQ8Aa9tbjJUtak=&tv=0_0&p=",
+        "total_citations": 62,
+        "avg_citations": 3.6,
+        "has_target_product": false
+      },
+      {
+        "title": "2026浓香型白酒10大名牌 浓香型白酒品牌TOP10→买购APP",
+        "link_url": "https://www.maigoo.com/best/22928.html",
+        "domain": "maigoo.com",
+        "platform_name": "买购网",
+        "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/e4ad3444212aa4d54383a884a27c416f~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=zltYVSd367WIhZd5lgINnAcUc9E%3D",
+        "total_citations": 60,
+        "avg_citations": 4.3,
+        "has_target_product": false
+      },
+      {
+        "title": "浓香型白酒品牌排行榜",
+        "link_url": "https://m.jd.com/phb/122597e2091d597f3bdb6.html",
+        "domain": "jd.com",
+        "platform_name": "京东",
+        "logo_url": "https://img03.sogoucdn.com/app/a/200797/e236406b-726c-4949-a5d3-02727aa1fdcf",
+        "total_citations": 58,
+        "avg_citations": 4.1,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年见客户送礼选什么酒？600元左右的高端礼品白酒推荐_白酒_什么值得买",
+        "link_url": "https://post.smzdm.com/p/a95open0",
+        "domain": "smzdm.com",
+        "platform_name": "什么值得买社区频道",
+        "logo_url": "https://p3-spider-image-sign.byteimg.com/isp-i18n-media/image/1a44b9ef64d4f823f24d9493b4fe660a~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816928&x-signature=%2BwPsdoPoNDfa241xjO4mOLPKH4o%3D",
+        "total_citations": 48,
+        "avg_citations": 4.8,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年第一季度浓香型白酒单品销额排行榜_白酒_什么值得买",
+        "link_url": "https://post.smzdm.com/p/ad757ngn",
+        "domain": "smzdm.com",
+        "platform_name": "什么值得买社区频道",
+        "logo_url": "https://p3-spider-image-sign.byteimg.com/isp-i18n-media/image/1a44b9ef64d4f823f24d9493b4fe660a~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816928&x-signature=%2BwPsdoPoNDfa241xjO4mOLPKH4o%3D",
+        "total_citations": 46,
+        "avg_citations": 3.1,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年白酒消费指南:600元左右适合送礼与宴请的白酒推荐",
+        "link_url": "https://k.sina.com.cn/article_7857141524_1d452771401901nqp0.html?from=food",
+        "domain": "sina.com.cn",
+        "platform_name": "手机新浪网",
+        "logo_url": "https://p3-spider-image-sign.byteimg.com/isp-i18n-media/image/17c8e4a8284b45c732ee53c74d1248a4~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1777219535&x-signature=6nkIpR%2FVJVA6rep22dvYirEwVKA%3D",
+        "total_citations": 46,
+        "avg_citations": 3.3,
+        "has_target_product": false
+      },
+      {
+        "title": "500元以上六款浓香型白酒推荐_小酒老乐",
+        "link_url": "http://m.toutiao.com/group/7638411761925816868",
+        "domain": "toutiao.com",
+        "platform_name": "今日头条",
+        "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/118f7a3625ad8ebbbc11d04f118d2e10~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=0BCf7I6pCkxfK9gutZJAh6L1BLA%3D",
+        "total_citations": 46,
+        "avg_citations": 5.1,
+        "has_target_product": true
+      }
+    ]
+  },
+  "overview_daily": [
+    {
+      "date": "2026-04-02",
+      "mention_rate": 71.7,
+      "avg_position": 5,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-04-16",
+      "mention_rate": 82.7,
+      "avg_position": 5.6,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-04-24",
+      "mention_rate": 89.3,
+      "avg_position": 5,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-04-30",
+      "mention_rate": 81.7,
+      "avg_position": 4.7,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-05-01",
+      "mention_rate": 86.7,
+      "avg_position": 4.7,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-05-08",
+      "mention_rate": 85,
+      "avg_position": 4.6,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-05-15",
+      "mention_rate": 81.7,
+      "avg_position": 4.8,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-05-22",
+      "mention_rate": 93.3,
+      "avg_position": 4.5,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-05-28",
+      "mention_rate": 86.7,
+      "avg_position": 4.9,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-06-04",
+      "mention_rate": 81.7,
+      "avg_position": 4.8,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-06-11",
+      "mention_rate": 91.7,
+      "avg_position": 4.7,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-06-18",
+      "mention_rate": 86.7,
+      "avg_position": 4.8,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-06-25",
+      "mention_rate": 95,
+      "avg_position": 4.9,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-07-02",
+      "mention_rate": 84.2,
+      "avg_position": 5.3,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-07-09",
+      "mention_rate": 91.7,
+      "avg_position": 5,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-07-16",
+      "mention_rate": 95,
+      "avg_position": 4.2,
+      "influence_rank": 1
+    },
+    {
+      "date": "2026-07-22",
+      "mention_rate": 91.7,
+      "avg_position": 5,
+      "influence_rank": 1
+    }
+  ]
+}

@@ -1,19 +1,20 @@
 import React from 'react';
 
 export default function Page_ContentAnalysis() {
+  // 数据口径：2026-07-22（对照 2026-06-25）；项目 351
   const summaryData = [
     {
       type: '正面',
       ratio: '100%',
       trend: '保持绝对优势',
-      desc: '正面核心关键词：包装喜庆、品牌认可、品牌认可度高',
+      desc: '正面核心关键词：包装喜庆、品牌认知度高、口感普适',
       isPositive: true,
       colorClass: 'border-l-4 border-emerald-500',
     },
     {
       type: '负面',
       ratio: '0%',
-      trend: '降至最低点',
+      trend: '持续零负面',
       desc: '负面核心关键词：暂无数据',
       isPositive: false,
       colorClass: 'border-l-4 border-rose-500',
@@ -129,7 +130,7 @@ export default function Page_ContentAnalysis() {
           <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-6 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
             <h3 className="text-[1.65rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
             <p className="text-[1.45rem] leading-relaxed text-zinc-700 font-bold">
-              鉴于本月古16实现100%正面回答且无负面数据反馈，下阶段应继续巩固现有正面心智（如包装喜庆、品牌认可度高等），并可适度拓展消费场景（如聚会自饮、日常宴席等）的正面口碑铺设。
+              7月与6月（6/25）均保持100%正面、零负面。下阶段应继续巩固「包装喜庆、品牌认知度高、口感普适」等正面心智，并拓展婚宴、聚会等场景口碑，支撑提及率对水晶剑的夺回。
             </p>
           </div>
         </div>

@@ -1,20 +1,21 @@
 import React from 'react';
 
 export default function Page_ContentAnalysis_AI() {
+  // 数据口径：2026-07-22（对照 2026-06-25）；项目 352
   const summaryData = [
     {
       type: '正面',
-      ratio: '99.3%',
-      trend: '微幅上升',
-      desc: '正面核心关键词：品牌认可、品质认可、口感认可',
+      ratio: '100%',
+      trend: '保持绝对优势',
+      desc: '正面核心关键词：品牌认可、包装认可、口感认可',
       isPositive: true,
       colorClass: 'border-l-4 border-emerald-500',
     },
     {
       type: '负面',
-      ratio: '0.7%',
-      trend: '降至极低水平',
-      desc: '负面核心关键词：价格错误',
+      ratio: '0%',
+      trend: '持续零负面',
+      desc: '负面核心关键词：暂无数据',
       isPositive: false,
       colorClass: 'border-l-4 border-rose-500',
     }
@@ -22,16 +23,10 @@ export default function Page_ContentAnalysis_AI() {
 
   const distributionData = [
     {
-      keyword: '高端浓香型白酒代表品牌有哪些',
-      type: '价格错误',
-      summary: '古20的价格写750-850元，与实际情况不符',
-      badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
-    },
-    {
-      keyword: '浓香型白酒常见品牌跟价格',
-      type: '价格错误',
-      summary: '古20的价格写850元，与实际情况不符',
-      badgeClass: 'bg-rose-50 text-rose-600 border border-rose-100',
+      keyword: '-',
+      type: '负面回答',
+      summary: '暂无数据',
+      badgeClass: 'bg-zinc-50 text-zinc-400 border border-zinc-150',
     }
   ];
 
@@ -135,7 +130,7 @@ export default function Page_ContentAnalysis_AI() {
           <div className="rounded-[1.25rem] border-l-[6px] border-[#004CE5] bg-gradient-to-r from-blue-50/40 via-white to-white py-6 px-8 shadow-[0_6px_20px_rgba(0,76,229,0.015)]">
             <h3 className="text-[1.65rem] font-black text-zinc-900 tracking-wider mb-2">内容优化提升</h3>
             <p className="text-[1.45rem] leading-relaxed text-zinc-700 font-bold">
-              针对大模型将古20价格混淆为750-850元或850元的情况（与实际建议零售价/市场价不符），应在下阶段投放中重点增加包含古20真实定位和准确零售价/性价比段位的内容，强化价格心智的纠正与认知统一。
+              7月与6月（6/25）均保持100%正面、零负面，此前价格误读类负面已消退。下阶段应继续强化「品牌认可、包装认可、口感认可」心智，并补充高端商务场景与性价比对比内容，助力排位与首推对第八代普五的拉开。
             </p>
           </div>
         </div>

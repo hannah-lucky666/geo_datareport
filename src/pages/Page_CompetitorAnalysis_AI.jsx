@@ -1,28 +1,31 @@
 import React from 'react';
 
 export default function Page_CompetitorAnalysis_AI() {
+  const TARGET = '古井贡酒·古20';
+
+  // 数据口径：2026-07-22（数据系统项目 352）
   const mentionRateData = [
-    { name: '古井贡酒·古20', value: '98.3%' },
-    { name: '梦之蓝', value: '86.7%' },
-    { name: '泸州老窖', value: '68.3%' },
-    { name: '剑南春', value: '66.7%' },
-    { name: '五粮液', value: '61.7%' },
+    { name: TARGET, value: '91.7%' },
+    { name: '梦之蓝M6+', value: '70.0%' },
+    { name: '水晶剑', value: '46.7%' },
+    { name: '第八代普五', value: '46.7%' },
+    { name: '国窖1573', value: '40.0%' },
   ];
 
   const top1RateData = [
-    { name: '古井贡酒·古20', value: '36.7%' },
-    { name: '五粮液', value: '35.0%' },
-    { name: '梦之蓝', value: '15.0%' },
-    { name: '茅台', value: '8.3%' },
-    { name: '泸州老窖', value: '3.3%' },
+    { name: TARGET, value: '35.0%' },
+    { name: '第八代普五', value: '20.0%' },
+    { name: '梦之蓝M6+', value: '11.7%' },
+    { name: '飞天茅台', value: '6.7%' },
+    { name: '梦之蓝M9', value: '3.3%' },
   ];
 
   const avgRankData = [
-    { name: '五粮液', value: 'NO. 3.6' },
-    { name: '泸州老窖', value: 'NO. 4.7' },
-    { name: '梦之蓝', value: 'NO. 4.7' },
-    { name: '古井贡酒·古20', value: 'NO. 4.8' },
-    { name: '剑南春', value: 'NO. 5.8' },
+    { name: TARGET, value: 'NO. 5.1' },
+    { name: '第八代普五', value: 'NO. 5.7' },
+    { name: '国窖1573', value: 'NO. 6.9' },
+    { name: '梦之蓝M6+', value: 'NO. 7.1' },
+    { name: '水晶剑', value: 'NO. 8.0' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -43,7 +46,7 @@ export default function Page_CompetitorAnalysis_AI() {
             </thead>
             <tbody>
               {data.map((item, idx) => {
-                const isBrand = item.name === '古井贡酒·古20';
+                const isBrand = item.name === TARGET;
                 const rank = idx + 1;
 
                 let rankElement;
@@ -137,11 +140,11 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 五粮液是最大核心威胁。其高端品牌力强，Top1提及率达35.0%紧咬古20（36.7%），且平均位次高达NO. 3.6，是绝对的排位竞争者。
+                1. 第八代普五仍是核心威胁：Top1提及率20.0%紧随古20（35.0%），平均位次NO. 5.7逼近古20（NO. 5.1），是高端段最直接的排位竞争者。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 梦之蓝、泸州老窖及剑南春等主要伴随竞品，虽然提及率普遍在66%-87%之间，但其Top1提及率均低于15%，在首推竞争力上对古20威胁有限。
+                2. 梦之蓝M6+提及率高达70.0%，但Top1仅11.7%、位次NO. 7.1；水晶剑、国窖1573等伴随竞品首推与排位均偏弱，对古20威胁有限。
               </p>
             </div>
           </div>
@@ -157,17 +160,17 @@ export default function Page_CompetitorAnalysis_AI() {
                 {
                   num: '01',
                   title: '排位专项突破',
-                  desc: '针对平均提及位次（4.8）落后于五粮液（3.6）、泸州老窖/梦之蓝（4.7）的现状，需优化长效口碑权重，争取更靠前的AI推荐排位。',
+                  desc: '针对平均位次NO. 5.1仍偏后的现状，强化口碑与场景语料权重，力争继续拉开与第八代普五（NO. 5.7）的身位。',
                 },
                 {
                   num: '02',
                   title: '核心拦截',
-                  desc: '针对主要威胁五粮液（Top1提及率35.0%），主动铺设品质及品味对比评测，强调古20的高端商务性价比。',
+                  desc: '针对第八代普五（Top1 20.0%），主动铺设品质与性价比对比内容，巩固古20在高端商务场景的首推优势。',
                 },
                 {
                   num: '03',
-                  title: '转化防御',
-                  desc: '利用提及率极高（98.3%）的优势，进一步铺设应用场景限定词，将高曝光转化为绝对的首推偏好。',
+                  title: '高曝光转化',
+                  desc: '利用91.7%的高提及率优势，对梦之蓝M6+等高伴随竞品做场景限定词拦截，将曝光更多转化为首推偏好。',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

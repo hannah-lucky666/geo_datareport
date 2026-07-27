@@ -1,3 +1,4 @@
+import React from 'react';
 import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
 import Page_KeywordCategorization from '../pages/Page_KeywordCategorization';
@@ -16,7 +17,17 @@ import Page_KpiAcceptance_AI from '../pages/Page_KpiAcceptance_AI';
 import Page_ContentAnalysis_AI from '../pages/Page_ContentAnalysis_AI';
 import Page_ContentDetails_AI from '../pages/Page_ContentDetails_AI';
 import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
-import Page_QueryDataSystemLink_AI from '../pages/Page_QueryDataSystemLink_AI';
+
+// 古16 / 古20 × DeepSeek / 豆包 / 文心 / Kimi
+const Page_Entries_123_1 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 123, platformId: 1 });
+const Page_Entries_123_2 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 123, platformId: 2 });
+const Page_Entries_123_4 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 123, platformId: 4 });
+const Page_Entries_123_6 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 123, platformId: 6 });
+
+const Page_Entries_124_1 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 124, platformId: 1 });
+const Page_Entries_124_2 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 124, platformId: 2 });
+const Page_Entries_124_4 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 124, platformId: 4 });
+const Page_Entries_124_6 = () => React.createElement(Page_QueryDataSystemLink, { projectId: 124, platformId: 6 });
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -60,8 +71,15 @@ export const slideConfig = [
 
   // ——— 篇章4: 词条数据明细 ———
   { type: 'chapter', title: '词条数据明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
-  { type: 'section', title: '数据系统访问' },
-  { type: 'page', title: '古井贡酒古16 词条数据明细', component: Page_QueryDataSystemLink },
-  { type: 'page', title: '古井贡酒古20 词条数据明细', component: Page_QueryDataSystemLink_AI },
+  { type: 'section', title: '古井贡酒古16 平台明细' },
+  { type: 'page', title: '古16 DeepSeek 词条明细', component: Page_Entries_123_1 },
+  { type: 'page', title: '古16 豆包 词条明细', component: Page_Entries_123_2 },
+  { type: 'page', title: '古16 文心一言 词条明细', component: Page_Entries_123_4 },
+  { type: 'page', title: '古16 Kimi 词条明细', component: Page_Entries_123_6 },
+  { type: 'section', title: '古井贡酒古20 平台明细' },
+  { type: 'page', title: '古20 DeepSeek 词条明细', component: Page_Entries_124_1 },
+  { type: 'page', title: '古20 豆包 词条明细', component: Page_Entries_124_2 },
+  { type: 'page', title: '古20 文心一言 词条明细', component: Page_Entries_124_4 },
+  { type: 'page', title: '古20 Kimi 词条明细', component: Page_Entries_124_6 },
 
 ];
