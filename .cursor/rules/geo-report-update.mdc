@@ -1,0 +1,48 @@
+# GEO ONE 报告数据更新流程
+
+用户要求更新 GEO 监测数据时，按以下流程执行：
+
+1. **先向用户确认**（不要用任何默认值或猜测）：
+   - 项目名称或项目 ID（古井当前账号：351=古16，352=古20）
+   - 日期区间（可选；不给则用项目实际有数据的日期范围）
+   - 凭据已在根目录 `.env` 配置时可直接使用，否则向用户要账号密码
+
+2. 不确定项目 ID 时，先列出账号下项目：
+
+   ```bash
+   npm run fetch:geo-list
+   ```
+
+   用项目名称精确匹配到项目 ID，对不上时把项目列表给用户确认，**绝不**擅自选一个相近的。
+
+3. 运行采集脚本（凭据通过 `.env` 或环境变量传入，不写进代码）：
+
+   ```bash
+   node scripts/fetch-geo-report.mjs <project_id> [--start YYYY-MM-DD] [--end YYYY-MM-DD]
+   ```
+
+   输出：`src/data/geoReport_<project_id>.json`
+
+4. 若账号为创维式「品类/产品优化词+监测词」结构，可用汇总脚本：
+
+   ```bash
+   npm run fetch:geo-overview
+   ```
+
+   输出：`src/data/geoOverview.json`
+
+5. 更新数据后，按最新数值同步改写相关页面的分析文案，数字须与 JSON 一致。
+
+## 指标口径对照（重要，历史踩坑，务必按此取数）
+
+数据系统「总览」的三个指标各有固定来源，页面**必须**按下表取数，**切勿**用「竞品对比」表的字段代替：
+
+| 页面/指标 | 正确来源（数据系统「总览」口径） | ❌ 易错的错误来源 |
+|---|---|---|
+| 提及率 | `conversations/stats.brand_mention_rate`（逐日见 `daily_stats.mention_rate` / `overview_daily.mention_rate`） | — |
+| 平均提及位次 | `conversations/stats.avg_position`（逐日见 `daily_stats.avg_position` / `overview_daily.avg_position`） | `compare.position_ranking` 里本品的 `avg_position`（这是「竞品对比」页口径，与总览可能差 0.1） |
+| 竞品排名 / 行业影响力排名 | `competitors/influence` 中本品(`is_target`)的 `rank`（逐日见 `overview_daily.influence_rank`） | `compare.mention_rate_ranking` 的名次（提及率排名 ≠ 影响力排名，可能不同） |
+
+- `fetch-geo-report.mjs` 已产出 `report.overview_daily`（逐日 `{date, mention_rate, avg_position, influence_rank}`），**核心数据总览页 / 竞品排名请直接按对应日期取这里的值**。
+- 「竞品分析」页里的三张榜单（提及率排名 / Top1 提及率排名 / 提及位次排名）对应数据系统「竞品对比」界面，用 `compare.*_ranking` / `top1_ranking` 是对的——它与「总览」的位次可能有 0.1 级差异，属正常（两个界面算法不同），不要为对齐而改错。
+- 单个数据日期（如 6/25、7/22）与其所在周窗口（如 06-22~06-28、07-20~07-26）的总览指标一致，可用单日区间取数。
