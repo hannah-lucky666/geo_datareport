@@ -1,31 +1,15 @@
 import React from 'react';
+import report from '../data/musiJulyReport.json';
+
+const brandName = '慕思';
+const data = report.products.mattress;
 
 export default function Page_CompetitorAnalysis_Musi() {
-  const mentionRateData = [
-    { name: '慕思', value: '64.2%' },
-    { name: '喜临门', value: '55.8%' },
-    { name: '雅兰', value: '52.5%' },
-    { name: '舒达', value: '47.5%' },
-    { name: '丝涟', value: '46.7%' },
-  ];
+  const mentionRateData = data.compare.mention_rate;
+  const top1RateData = data.compare.top1;
+  const avgRankData = data.compare.position;
 
-  const top1RateData = [
-    { name: '慕思', value: '21.7%' },
-    { name: '喜临门', value: '11.7%' },
-    { name: 'TLK', value: '10.0%' },
-    { name: '丝涟', value: '7.5%' },
-    { name: '席梦思', value: '5.0%' },
-  ];
-
-  const avgRankData = [
-    { name: '慕思', value: 'NO. 5.0' },
-    { name: '喜临门', value: 'NO. 5.2' },
-    { name: '雅兰', value: 'NO. 6.0' },
-    { name: '舒达', value: 'NO. 6.1' },
-    { name: '丝涟', value: 'NO. 6.3' },
-  ];
-
-  const renderTable = (title, headers, data) => {
+  const renderTable = (title, headers, rows) => {
     return (
       <div className="flex flex-col gap-3 h-full min-h-0">
         <h3 className="text-2xl font-extrabold text-zinc-800 tracking-wide pl-1.5 flex items-center gap-2 shrink-0">
@@ -42,42 +26,30 @@ export default function Page_CompetitorAnalysis_Musi() {
               </tr>
             </thead>
             <tbody>
-              {data.map((item, idx) => {
-                const isBrand = item.name === '慕思' || item.name === '慕思床垫';
+              {rows.map((item, idx) => {
+                const isBrand = item.name === brandName;
                 const rank = idx + 1;
-
                 let rankElement;
                 if (rank === 1) {
                   rankElement = (
-                    <div className="w-10 h-10 rounded-full bg-[#FFD100] text-zinc-900 flex items-center justify-center font-black text-xl shadow-sm">
-                      1
-                    </div>
+                    <div className="w-10 h-10 rounded-full bg-[#FFD100] text-zinc-900 flex items-center justify-center font-black text-xl shadow-sm">1</div>
                   );
                 } else if (rank === 2) {
                   rankElement = (
-                    <div className="w-10 h-10 rounded-full bg-zinc-200 text-zinc-600 flex items-center justify-center font-black text-xl">
-                      2
-                    </div>
+                    <div className="w-10 h-10 rounded-full bg-zinc-200 text-zinc-600 flex items-center justify-center font-black text-xl">2</div>
                   );
                 } else if (rank === 3) {
                   rankElement = (
-                    <div className="w-10 h-10 rounded-full bg-[#FFC085] text-zinc-800 flex items-center justify-center font-black text-xl shadow-sm">
-                      3
-                    </div>
+                    <div className="w-10 h-10 rounded-full bg-[#FFC085] text-zinc-800 flex items-center justify-center font-black text-xl shadow-sm">3</div>
                   );
                 } else {
-                  rankElement = (
-                    <div className="text-zinc-400 font-bold text-[22px] text-center w-10">
-                      {rank}
-                    </div>
-                  );
+                  rankElement = <div className="text-zinc-400 font-bold text-[22px] text-center w-10">{rank}</div>;
                 }
 
                 return (
                   <tr
                     key={idx}
-                    className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/50 transition-colors ${isBrand ? 'bg-[#004CE5]/[0.03]' : ''
-                      }`}
+                    className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/50 transition-colors ${isBrand ? 'bg-[#004CE5]/[0.03]' : ''}`}
                   >
                     <td className="py-3 px-3 align-middle">
                       <div className="flex justify-center">{rankElement}</div>
@@ -94,8 +66,7 @@ export default function Page_CompetitorAnalysis_Musi() {
                         )}
                       </div>
                     </td>
-                    <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'
-                      }`}>
+                    <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
                       {item.value}
                     </td>
                   </tr>
@@ -110,26 +81,22 @@ export default function Page_CompetitorAnalysis_Musi() {
 
   return (
     <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-800 font-sans justify-between overflow-hidden">
-      {/* Title Area */}
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
           慕思床垫竞品分析
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
         </h1>
       </div>
 
-      {/* Main Content Area */}
       <div className="flex-grow flex flex-col min-h-0 justify-start">
-        {/* Three Tables Side-by-Side Area (Taller height - 490px, completely untouched) */}
         <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
           {renderTable('提及率排名', ['产品名称', '提及率'], mentionRateData)}
           {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], top1RateData)}
           {renderTable('提及位次排名', ['产品名称', '平均提及位次'], avgRankData)}
         </div>
 
-        {/* Bottom Spacious Dashboard Area (Increased to 340px for taller containers, exactly 60px gap below tables) */}
         <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
-          {/* Left Column: 潜在竞争分析 */}
           <div className="flex flex-col gap-3 h-full min-h-0">
             <h2 className="text-2xl font-black text-zinc-900 flex items-center gap-2 shrink-0">
               <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]" />
@@ -137,16 +104,15 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 喜临门与雅兰是常态化竞争对手。喜临门以55.8%的提及伴随率以及11.7%的Top1提及率位居第二；雅兰提及率达52.5%同样构成长效威胁。
+                1. 本品本月延续领跑：提及率由6月66.7%升至71.7%，Top1仍居第一（18.3%），平均位次由NO.5.2前移至NO.4.9。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 丝涟和TLK在大模型端均有展示，其中TLK拿下10.0%的首推率，展示出在高端市场中的优质口碑，需要重点拦截。
+                2. 喜临门以60%提及率、位次并列NO.4.9紧贴；丝涟Top1达16.7%仅差1.6个百分点，金可儿、雅兰仍构成第二梯队压力。
               </p>
             </div>
           </div>
 
-          {/* Right Column: 重点优化策略 */}
           <div className="flex flex-col gap-3 h-full min-h-0">
             <h2 className="text-2xl font-black text-zinc-900 flex items-center gap-2 shrink-0">
               <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]" />
@@ -154,21 +120,9 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                {
-                  num: '01',
-                  title: '价格区间精细修改',
-                  desc: '优化词条选择，考虑引入涵盖不同价格段的产品以匹配大模型高频检索价位。',
-                },
-                {
-                  num: '02',
-                  desc: '开展针对喜临门、雅兰等核心竞品的用料与性价比评测铺设，在大模型端强化推荐倾斜。',
-                  title: '多品牌同台拦截',
-                },
-                {
-                  num: '03',
-                  desc: '针对高端弹簧床垫场景，多铺设护脊释压、弹簧偏硬/偏软等痛点词，建立差异化防护。',
-                  title: '细分需求防御',
-                },
+                { num: '01', title: '巩固第一名位势', desc: '延续护脊释压、弹簧承托等高相关内容投放，拉开与喜临门在位次上的胶着态势。' },
+                { num: '02', title: '多价位段覆盖', desc: '针对七千价位与万元主卧升级词条分别铺设差异化产品表达，降低溢价质疑带来的转化损耗。' },
+                { num: '03', title: '同台竞品拦截', desc: '加强对丝涟、喜临门的用料与耐用性对比语料，守住18.3%的Top1微弱领先优势。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>
