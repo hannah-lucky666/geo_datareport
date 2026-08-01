@@ -4,10 +4,11 @@ import { readFileSync, writeFileSync } from 'fs';
 const july = JSON.parse(readFileSync('src/data/july23_entries_sentiments.json', 'utf8'));
 const delivery = JSON.parse(readFileSync('src/data/delivery_excel_0721.json', 'utf8'));
 
+// 账号 musi：P392=智能床 / P391=AI床垫 / P393=床垫（按项目名对齐，非口语序号）
 const products = [
-  { id: 182, key: 'smart', name: '慕思智能床', brandMatch: '慕思智能床', juneDate: '2026-06-25', julyDate: '2026-07-23' },
-  { id: 181, key: 'ai', name: '慕思AI床垫', brandMatch: '慕思AI床垫', juneDate: '2026-06-25', julyDate: '2026-07-23' },
-  { id: 239, key: 'mattress', name: '慕思床垫', brandMatch: '慕思', juneDate: '2026-06-26', julyDate: '2026-07-21' },
+  { id: 392, key: 'smart', name: '慕思智能床', brandMatch: '慕思智能床', juneDate: '2026-06-25', julyDate: '2026-07-30' },
+  { id: 391, key: 'ai', name: '慕思AI床垫', brandMatch: '慕思AI床垫', juneDate: '2026-06-25', julyDate: '2026-07-30' },
+  { id: 393, key: 'mattress', name: '慕思床垫', brandMatch: '慕思', juneDate: '2026-06-25', julyDate: '2026-07-30' },
 ];
 
 function load(id, date) {
@@ -21,11 +22,18 @@ const pos = (v) => {
   return Number.isFinite(n) ? `NO. ${n.toFixed(1)}` : '-';
 };
 
+function selfTop1(report) {
+  const fromStats = report.stats?.top1_mention_rate;
+  if (fromStats != null) return fromStats;
+  const self = (report.compare?.top1_ranking || []).find((b) => b.is_target);
+  return self?.top1_mention_rate ?? null;
+}
+
 const report = {
   meta: {
     label: '2026年7月',
-    june: { smart: '2026-06-25', ai: '2026-06-25', mattress: '2026-06-26' },
-    july: { smart: '2026-07-23', ai: '2026-07-23', mattress: '2026-07-21' },
+    june: { smart: '2026-06-25', ai: '2026-06-25', mattress: '2026-06-25' },
+    july: { smart: '2026-07-30', ai: '2026-07-30', mattress: '2026-07-30' },
   },
   products: {},
 };
@@ -42,16 +50,18 @@ for (const p of products) {
   report.products[p.key] = {
     name: p.name,
     brandMatch: p.brandMatch,
+    project_id: p.id,
     june: {
       mention_rate: jn.stats.brand_mention_rate,
+      top1_mention_rate: selfTop1(jn),
       avg_position: jn.stats.avg_position,
       influence_rank: selfJn?.rank ?? null,
     },
     july: {
       mention_rate: jl.stats.brand_mention_rate,
+      top1_mention_rate: selfTop1(jl),
       avg_position: jl.stats.avg_position,
       influence_rank: selfJl?.rank ?? null,
-      top1_mention_rate: jl.stats.top1_mention_rate,
       conversations: jl.influence.total_conversations,
     },
     compare: {
@@ -87,7 +97,7 @@ console.log(JSON.stringify({
   products: Object.fromEntries(
     Object.entries(report.products).map(([k, v]) => [
       k,
-      { june: v.june, july: v.july, sentiments: v.sentiments, compare: v.compare },
+      { project_id: v.project_id, june: v.june, july: v.july, sentiments: v.sentiments, compare: v.compare },
     ])
   ),
 }, null, 2));

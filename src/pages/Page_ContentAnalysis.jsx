@@ -141,43 +141,43 @@ export default createContentAnalysisPage({
   negativeTrend: '仍处低位',
   distributionData: [
     {
-      keyword: '用料扎实质量好的智能床推荐',
+      keyword: '品质稳定售后有保障的智能床推荐',
       type: '负面回答',
-      summary: '部分回答在推荐慕思的同时提及售后服务与产品短板，削弱品质心智说服力',
+      summary: '售后保障类词条下，模型偶发输出售后体验差、宣传不符等负面评价，削弱服务心智',
       badgeClass: badge,
     },
     {
-      keyword: '2万左右品质稳定售后有保障的智能床推荐',
+      keyword: '2万用料扎实质量好的智能床推荐',
       type: '负面回答',
-      summary: '在售后保障类词条下，大模型偶发输出价格偏高、算法封闭等负面评价',
+      summary: '质量评价场景中偶发提及质量故障、品控问题，影响品质说服力',
       badgeClass: badge,
     },
   ],
   optimizationText:
-    '围绕售后与价格敏感词条补充正面案例与服务承诺语料，强化<strong class="text-[#004CE5] font-black mx-0.5">智能止鼾、生态联动</strong>及<strong class="text-[#004CE5] font-black mx-0.5">高品质服务体验</strong>表达，压降3.3%负面声量对转化的干扰。',
+    '围绕售后与质量敏感词条补充正面案例与服务承诺语料，强化<strong class="text-[#004CE5] font-black mx-0.5">生态联动、功能全面、技术先进</strong>表达，压降2.8%负面声量对转化的干扰。',
 });
 
 export const Page_ContentAnalysis_AI = createContentAnalysisPage({
   productKey: 'ai',
   title: '慕思AI床垫内容分析总结',
   positiveTrend: '保持高位',
-  negativeTrend: '波动极小',
+  negativeTrend: '需重点压降',
   distributionData: [
     {
       keyword: '经久耐用不塌陷的AI床垫推荐',
       type: '负面回答',
-      summary: '耐用性词条下仍有少量关于品类售后与耗材质保偏短的负面反馈被模型引用',
+      summary: '耐用性词条下仍有质量故障、品控问题等负面反馈被模型引用',
       badgeClass: badge,
     },
     {
-      keyword: '知名品牌质量好的AI床垫推荐',
+      keyword: '全国联保售后的AI床垫推荐',
       type: '负面回答',
-      summary: '质量评价场景中偶发提及产品缺点与历史负面反馈，影响首推信任度',
+      summary: '售后类词条偶发售后推诿、退换货困难、价格偏高等负面表述，削弱首推信任',
       badgeClass: badge,
     },
   ],
   optimizationText:
-    '针对售后与质保类负面关键词加强防御性内容铺设，突出<strong class="text-[#004CE5] font-black mx-0.5">自适应调节、护脊防腰疼</strong>等技术优势，巩固98.3%正面占比下的推荐稳定性。',
+    '针对售后推诿、质量故障与价格偏高等负面关键词加强防御性内容铺设，突出<strong class="text-[#004CE5] font-black mx-0.5">功能全面、技术先进、功能丰富</strong>等优势，巩固94.4%正面占比下的推荐稳定性。',
 });
 
 export const Page_ContentAnalysis_Musi = createContentAnalysisPage({
@@ -189,16 +189,16 @@ export const Page_ContentAnalysis_Musi = createContentAnalysisPage({
     {
       keyword: '七千左右床垫哪个牌子的质量比较好',
       type: '负面回答',
-      summary: '中端价位词条下，部分回答指出品牌溢价较高，影响性价比认知',
+      summary: '中端价位质量词条下偶发质量故障相关负面被引用，影响性价比认知',
       badgeClass: badge,
     },
     {
       keyword: '知名品牌质量好的床垫推荐',
       type: '负面回答',
-      summary: '质量推荐场景中偶发出现价格溢价类表述，削弱高端定位说服力',
+      summary: '质量推荐场景中偶发售后推诿类表述，削弱高端定位说服力',
       badgeClass: badge,
     },
   ],
   optimizationText:
-    '在价格与溢价相关词条补充多价位段产品说明，强化<strong class="text-[#004CE5] font-black mx-0.5">护脊释压、弹簧承托</strong>等正向卖点，继续维持98.3%的高正面占比。',
+    '在质量与售后相关词条补充服务承诺与多价位段产品说明，强化<strong class="text-[#004CE5] font-black mx-0.5">支撑性好、透气性好、技术先进</strong>等正向卖点，继续维持99.2%的高正面占比。',
 });

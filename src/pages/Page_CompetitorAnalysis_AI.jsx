@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品仍稳居三项榜单第一，但提及率由88.9%回落至77.2%，喜临门（60%）与HEKA（42.8%）持续贴身伴随。
+                1. 本品稳居三项榜单第一：提及率由88.9%升至90.6%，Top1维持60%高位，平均位次稳在NO.2.1；喜临门（57.2%）与舒达（34.4%）构成第二梯队。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 慕思智能床以16.1%的Top1率升至第二，同品牌产品分流加剧；顾家家居新进提及率前五，需纳入监测。
+                2. 慕思智能床以10.6%的Top1率位列第二，同品牌产品仍有分流；顾家家居进入提及率前五，需持续监测。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '止住提及率回落', desc: '围绕自适应调节、护脊防腰疼等高频场景补强语料，把77.2%的曝光优势重新拉升。' },
+                { num: '01', title: '巩固高位曝光', desc: '围绕自适应调节、护脊防腰疼等高频场景补强语料，把90.6%的提及率优势继续做实。' },
                 { num: '02', title: '同品牌分流管理', desc: '在AI床垫专属词条中强化品类边界表达，降低慕思智能床对首推份额的分流。' },
-                { num: '03', title: '竞品技术对比', desc: '针对HEKA的高转化，补充专利气囊、耗材质保等硬核对比内容，巩固53.3%的Top1领先。' },
+                { num: '03', title: '竞品技术对比', desc: '针对喜临门与HEKA的追赶，补充专利气囊、耗材质保等硬核对比内容，巩固60%的Top1领先。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 舒福德构成本月最大威胁：Top1提及率38.3%反超本品（32.8%），平均位次NO.2.6亦领先于本品NO.2.9，已形成首推拦截。
+                1. 本品本月三项指标全面领先：提及率89.4%、Top1 42.8%、平均位次NO.2.4均居第一；舒福德以70.6%提及率、32.2% Top1紧随其后，仍是首要对手。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 本品仍以86.7%提及率稳居第一，但MPE提及率回落至33.9%，梦百合跻身前五，竞争梯队正重新洗牌。
+                2. 喜临门、8H、MPE分列提及率第三至第五，梯队拉开；舒福德位次NO.2.9仍最接近本品，需持续防守其反超窗口。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '夺回首推顺位', desc: '针对舒福德领先的Top1场景，加码止鼾、零重力等高转化词条的定性对比内容。' },
-                { num: '02', title: '位次优势回稳', desc: '在2万价位与品质售后类词条强化“第一顺位”表达，缩短与舒福德0.3位的位次差距。' },
-                { num: '03', title: '新晋竞品防御', desc: '关注梦百合进入前五的渗透路径，补充家庭场景与口碑类长尾语料，防止份额继续被稀释。' },
+                { num: '01', title: '扩大首推优势', desc: '针对舒福德仍具威胁的Top1场景，加码止鼾、零重力等高转化词条的定性对比内容。' },
+                { num: '02', title: '巩固位次领先', desc: '在2万价位与品质售后类词条强化“第一顺位”表达，继续拉开与舒福德0.5位的位次差距。' },
+                { num: '03', title: '第二梯队压制', desc: '关注喜临门、8H进入前五的渗透路径，补充家庭场景与口碑类长尾语料，防止份额被稀释。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

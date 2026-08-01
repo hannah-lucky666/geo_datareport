@@ -38,18 +38,21 @@ export default function Page_CoreDataOverview() {
         <table className="w-full text-left border-collapse table-fixed flex-1">
           <thead>
             <tr className="text-white">
-              <th rowSpan={2} className="py-5 px-8 text-2xl font-black text-center w-[22%] bg-zinc-800 border-r border-white/10">产品</th>
-              <th colSpan={2} className="py-4 px-8 text-2xl font-black text-center border-l border-white/10 bg-[#004CE5]">提及率</th>
-              <th colSpan={2} className="py-4 px-8 text-2xl font-black text-center border-l border-white/10 bg-[#1A62E5]">平均提及位次</th>
-              <th colSpan={2} className="py-4 px-8 text-2xl font-black text-center border-l border-white/10 bg-[#2E75FF]">竞品排名</th>
+              <th rowSpan={2} className="py-5 px-4 text-2xl font-black text-center w-[14%] bg-zinc-800 border-r border-white/10">产品</th>
+              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#004CE5]">提及率</th>
+              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#1A62E5]">平均提及位次</th>
+              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#2A6CF0]">Top1 提及率</th>
+              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#2E75FF]">竞品排名</th>
             </tr>
-            <tr className="bg-slate-50/80 border-b border-zinc-200 text-[#004CE5] font-black text-2xl">
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">6月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">7月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">6月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">7月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 w-[13%]">6月</th>
-              <th className="py-2.5 px-4 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[13%]">7月</th>
+            <tr className="bg-slate-50/80 border-b border-zinc-200 text-[#004CE5] font-black text-xl">
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">6月</th>
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">7月</th>
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">6月</th>
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">7月</th>
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">6月</th>
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">7月</th>
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">6月</th>
+              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">7月</th>
             </tr>
           </thead>
           <tbody>
@@ -57,15 +60,17 @@ export default function Page_CoreDataOverview() {
               const p = products[row.key];
               return (
                 <tr key={row.key} className="border-b border-zinc-200 bg-white hover:bg-slate-50/20 transition-colors">
-                  <td className="py-1.5 px-8 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
+                  <td className="py-1.5 px-4 border-r border-zinc-200 bg-slate-50/10 text-center font-black text-2xl text-zinc-800">
                     {row.name}
                   </td>
-                  <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(p.june.mention_rate)}</td>
-                  <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(p.july.mention_rate)}</td>
-                  <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPos(p.june.avg_position)}</td>
-                  <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPos(p.july.avg_position)}</td>
-                  <td className="py-1.5 px-4 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. {p.june.influence_rank}</td>
-                  <td className="py-1.5 px-4 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. {p.july.influence_rank}</td>
+                  <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(p.june.mention_rate)}</td>
+                  <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(p.july.mention_rate)}</td>
+                  <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPos(p.june.avg_position)}</td>
+                  <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPos(p.july.avg_position)}</td>
+                  <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(p.june.top1_mention_rate)}</td>
+                  <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(p.july.top1_mention_rate)}</td>
+                  <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. {p.june.influence_rank}</td>
+                  <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-3xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. {p.july.influence_rank}</td>
                 </tr>
               );
             })}
@@ -81,7 +86,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              智能床与AI床垫仍稳居竞品第一，但提及率较6月略有回落；普通床垫本月继续上行，提及率由66.7%提升至71.7%，稳居竞品NO.1，平均位次由5.2前移至4.9。
+              智能床与AI床垫本月继续领跑，提及率分别升至89.4%、90.6%；普通床垫增幅最明显，提及率由58.3%升至75.8%，竞品排名由NO.2升至NO.1，平均位次同步前移至4.0。
             </p>
           </div>
         </div>
@@ -93,7 +98,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              智能床需重点防守舒福德在Top1与位次上的反超；AI床垫应补强高频对比与售后相关语料，遏制提及率回落；普通床垫继续放大护脊释压与多价位段内容，巩固已取得的第一名优势。
+              智能床需持续压制舒福德在提及率与Top1上的追赶；AI床垫应补强售后与质量类语料，压降5.6%负面并稳住Top1；普通床垫继续放大支撑透气与多价位段内容，巩固第一名与位次优势。
             </p>
           </div>
         </div>

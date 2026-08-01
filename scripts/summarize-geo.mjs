@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFileSync } from 'fs';
 
-const ids = [182, 181, 239];
+const ids = [392, 391, 393];
 const dates = ['2026-06-25', '2026-07-23'];
 
 for (const id of ids) {

@@ -4,1322 +4,1144 @@
     "june": {
       "smart": "2026-06-25",
       "ai": "2026-06-25",
-      "mattress": "2026-06-26"
+      "mattress": "2026-06-25"
     },
     "july": {
-      "smart": "2026-07-23",
-      "ai": "2026-07-23",
-      "mattress": "2026-07-21"
+      "smart": "2026-07-30",
+      "ai": "2026-07-30",
+      "mattress": "2026-07-30"
     }
   },
   "products": {
     "smart": {
       "name": "慕思智能床",
       "brandMatch": "慕思智能床",
+      "project_id": 392,
       "june": {
         "mention_rate": 87.8,
+        "top1_mention_rate": 41.1,
         "avg_position": 2.7,
         "influence_rank": 1
       },
       "july": {
-        "mention_rate": 86.7,
-        "avg_position": 2.9,
+        "mention_rate": 89.4,
+        "top1_mention_rate": 42.8,
+        "avg_position": 2.4,
         "influence_rank": 1,
-        "top1_mention_rate": null,
         "conversations": 180
       },
       "compare": {
         "mention_rate": [
           {
             "name": "慕思智能床",
-            "value": "86.7%"
+            "value": "89.4%"
           },
           {
             "name": "舒福德",
-            "value": "76.7%"
-          },
-          {
-            "name": "MPE",
-            "value": "33.9%"
-          },
-          {
-            "name": "梦百合",
-            "value": "32.2%"
+            "value": "70.6%"
           },
           {
             "name": "喜临门",
-            "value": "31.1%"
+            "value": "34.4%"
+          },
+          {
+            "name": "8H",
+            "value": "32.2%"
+          },
+          {
+            "name": "MPE",
+            "value": "28.3%"
           }
         ],
         "top1": [
           {
-            "name": "舒福德",
-            "value": "38.3%"
+            "name": "慕思智能床",
+            "value": "42.8%"
           },
           {
-            "name": "慕思智能床",
-            "value": "32.8%"
+            "name": "舒福德",
+            "value": "32.2%"
           },
           {
             "name": "MPE",
-            "value": "6.1%"
+            "value": "3.9%"
           },
           {
-            "name": "8H",
-            "value": "5.6%"
+            "name": "舒达",
+            "value": "3.3%"
           },
           {
-            "name": "梦百合",
+            "name": "淘布斯利普",
             "value": "2.2%"
           }
         ],
         "position": [
           {
-            "name": "舒福德",
-            "value": "NO. 2.6"
+            "name": "慕思智能床",
+            "value": "NO. 2.4"
           },
           {
-            "name": "慕思智能床",
+            "name": "舒福德",
             "value": "NO. 2.9"
           },
           {
             "name": "MPE",
-            "value": "NO. 5.2"
-          },
-          {
-            "name": "梦百合",
-            "value": "NO. 5.2"
-          },
-          {
-            "name": "8H",
             "value": "NO. 5.3"
+          },
+          {
+            "name": "喜临门",
+            "value": "NO. 5.4"
+          },
+          {
+            "name": "舒达",
+            "value": "NO. 5.5"
           }
         ]
       },
       "sentiments": {
-        "positive": 96.7,
-        "negative": 3.3,
+        "positive": 97.2,
+        "negative": 2.8,
         "positive_keywords": [
-          "产品推荐",
+          "生态联动",
           "功能全面",
-          "功能认可"
+          "技术先进"
         ],
         "negative_keywords": [
-          "售后服务",
-          "价格偏高",
-          "指出算法封闭",
-          "提及短板"
+          "售后体验差",
+          "质量故障",
+          "品控问题",
+          "宣传不符"
         ]
       },
       "entries_by_platform": {
         "DeepSeek": [
           {
-            "entry_id": 2638,
+            "name": "智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 10
+          },
+          {
             "name": "智能床品牌推荐",
             "mention_rate": 100,
-            "position": 3.8
+            "position": 3
           },
           {
-            "entry_id": 2641,
+            "name": "口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "防螨抑菌面料的智能床推荐",
             "mention_rate": 100,
-            "position": 2.7
+            "position": 2
           },
           {
-            "entry_id": 2652,
-            "name": "实用性强不吃灰的智能床推荐",
-            "mention_rate": 100,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2653,
-            "name": "高端智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2655,
-            "name": "口碑好的高端智能床推荐",
-            "mention_rate": 100,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2659,
-            "name": "2万左右智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2660,
-            "name": "2万左右智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2661,
-            "name": "2万左右口碑好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2662,
-            "name": "2万左右智能止鼾的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2663,
-            "name": "2万左右能缓解入睡困难的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2665,
-            "name": "2万用料扎实质量好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2637,
-            "name": "智能床品牌排行榜",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2639,
-            "name": "口碑好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 4.5
-          },
-          {
-            "entry_id": 2640,
-            "name": "智能止鼾的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2642,
             "name": "自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2643,
-            "name": "助力起卧、适合孕妇与老人的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2645,
-            "name": "可以左右分区调节软硬的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2646,
-            "name": "能完美贴合脊柱的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2649,
-            "name": "用料扎实质量好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2651,
-            "name": "品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2656,
-            "name": "智能止鼾的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2657,
-            "name": "能缓解入睡困难的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2658,
-            "name": "可以免费维修换货的智能床推荐",
-            "mention_rate": 83.3,
+            "mention_rate": 100,
             "position": 4
           },
           {
-            "entry_id": 2664,
-            "name": "2万左右自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
+            "name": "可以左右分区调节软硬的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2666,
-            "name": "2万左右品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
+            "name": "用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 5
           },
           {
-            "entry_id": 2644,
-            "name": "吸湿排汗面料的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2647,
-            "name": "护脊效果好防腰疼的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2648,
-            "name": "零重力多模式智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2650,
             "name": "支持上门维护的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2654,
+            "name": "品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "实用性强不吃灰的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "高端智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "口碑好的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "智能止鼾的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "能缓解入睡困难的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "可以免费维修换货的智能床推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "2万左右智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "2万左右口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "2万左右智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右能缓解入睡困难的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "2万用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "助力起卧、适合孕妇与老人的智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "吸湿排汗面料的智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "能完美贴合脊柱的智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "护脊效果好防腰疼的智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "零重力多模式智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
             "name": "高端智能床品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "2万左右品质稳定售后有保障的智能床推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "豆包": [
           {
-            "entry_id": 2638,
-            "name": "智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 3.8
-          },
-          {
-            "entry_id": 2641,
-            "name": "防螨抑菌面料的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2652,
-            "name": "实用性强不吃灰的智能床推荐",
-            "mention_rate": 100,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2653,
-            "name": "高端智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2655,
-            "name": "口碑好的高端智能床推荐",
-            "mention_rate": 100,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2659,
-            "name": "2万左右智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2660,
-            "name": "2万左右智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2661,
-            "name": "2万左右口碑好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2662,
-            "name": "2万左右智能止鼾的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2663,
-            "name": "2万左右能缓解入睡困难的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2665,
-            "name": "2万用料扎实质量好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2637,
             "name": "智能床品牌排行榜",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2639,
-            "name": "口碑好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 4.5
-          },
-          {
-            "entry_id": 2640,
-            "name": "智能止鼾的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2642,
-            "name": "自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2643,
-            "name": "助力起卧、适合孕妇与老人的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2645,
-            "name": "可以左右分区调节软硬的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2646,
-            "name": "能完美贴合脊柱的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2649,
-            "name": "用料扎实质量好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2651,
-            "name": "品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2656,
-            "name": "智能止鼾的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2657,
-            "name": "能缓解入睡困难的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2658,
-            "name": "可以免费维修换货的智能床推荐",
-            "mention_rate": 83.3,
+            "mention_rate": 100,
             "position": 4
           },
           {
-            "entry_id": 2664,
-            "name": "2万左右自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
+            "name": "智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2666,
-            "name": "2万左右品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
+            "name": "口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2644,
+            "name": "智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "防螨抑菌面料的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "助力起卧、适合孕妇与老人的智能床推荐",
+            "mention_rate": 100,
+            "position": 8
+          },
+          {
             "name": "吸湿排汗面料的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2647,
+            "name": "可以左右分区调节软硬的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能完美贴合脊柱的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "护脊效果好防腰疼的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2648,
             "name": "零重力多模式智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.3
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2650,
-            "name": "支持上门维护的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "name": "品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2654,
+            "name": "实用性强不吃灰的智能床推荐",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
+            "name": "高端智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "高端智能床品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "口碑好的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "智能止鼾的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "能缓解入睡困难的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "可以免费维修换货的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右能缓解入睡困难的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "用料扎实质量好的智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "支持上门维护的智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "2万左右智能床品牌排行榜",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "元宝": [
           {
-            "entry_id": 2638,
+            "name": "智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "智能床品牌推荐",
             "mention_rate": 100,
-            "position": 3.8
-          },
-          {
-            "entry_id": 2641,
-            "name": "防螨抑菌面料的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2652,
-            "name": "实用性强不吃灰的智能床推荐",
-            "mention_rate": 100,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2653,
-            "name": "高端智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2655,
-            "name": "口碑好的高端智能床推荐",
-            "mention_rate": 100,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2659,
-            "name": "2万左右智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2660,
-            "name": "2万左右智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2661,
-            "name": "2万左右口碑好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2662,
-            "name": "2万左右智能止鼾的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2663,
-            "name": "2万左右能缓解入睡困难的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2665,
-            "name": "2万用料扎实质量好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2637,
-            "name": "智能床品牌排行榜",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2639,
-            "name": "口碑好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 4.5
-          },
-          {
-            "entry_id": 2640,
-            "name": "智能止鼾的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2642,
-            "name": "自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2643,
-            "name": "助力起卧、适合孕妇与老人的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2645,
-            "name": "可以左右分区调节软硬的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2646,
-            "name": "能完美贴合脊柱的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2649,
-            "name": "用料扎实质量好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2651,
-            "name": "品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2656,
-            "name": "智能止鼾的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2657,
-            "name": "能缓解入睡困难的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2658,
-            "name": "可以免费维修换货的智能床推荐",
-            "mention_rate": 83.3,
             "position": 4
           },
           {
-            "entry_id": 2664,
-            "name": "2万左右自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
+            "name": "口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2666,
-            "name": "2万左右品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
+            "name": "智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2644,
+            "name": "防螨抑菌面料的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "助力起卧、适合孕妇与老人的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "吸湿排汗面料的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2647,
+            "name": "可以左右分区调节软硬的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能完美贴合脊柱的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "护脊效果好防腰疼的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2648,
             "name": "零重力多模式智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.3
+            "mention_rate": 100,
+            "position": 5
           },
           {
-            "entry_id": 2650,
+            "name": "用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
             "name": "支持上门维护的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 100,
+            "position": 3
           },
           {
-            "entry_id": 2654,
+            "name": "品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "实用性强不吃灰的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "高端智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "高端智能床品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "口碑好的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "智能止鼾的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能缓解入睡困难的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "可以免费维修换货的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右能缓解入睡困难的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
           }
         ],
         "文心": [
           {
-            "entry_id": 2638,
-            "name": "智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 3.8
-          },
-          {
-            "entry_id": 2641,
-            "name": "防螨抑菌面料的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2652,
-            "name": "实用性强不吃灰的智能床推荐",
-            "mention_rate": 100,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2653,
-            "name": "高端智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2655,
-            "name": "口碑好的高端智能床推荐",
-            "mention_rate": 100,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2659,
-            "name": "2万左右智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2660,
-            "name": "2万左右智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2661,
-            "name": "2万左右口碑好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2662,
-            "name": "2万左右智能止鼾的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2663,
-            "name": "2万左右能缓解入睡困难的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2665,
-            "name": "2万用料扎实质量好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2637,
             "name": "智能床品牌排行榜",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2639,
-            "name": "口碑好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 4.5
-          },
-          {
-            "entry_id": 2640,
-            "name": "智能止鼾的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2642,
-            "name": "自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2643,
-            "name": "助力起卧、适合孕妇与老人的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2645,
-            "name": "可以左右分区调节软硬的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2646,
-            "name": "能完美贴合脊柱的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2649,
-            "name": "用料扎实质量好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2651,
-            "name": "品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2656,
-            "name": "智能止鼾的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2657,
-            "name": "能缓解入睡困难的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2658,
-            "name": "可以免费维修换货的智能床推荐",
-            "mention_rate": 83.3,
+            "mention_rate": 100,
             "position": 4
           },
           {
-            "entry_id": 2664,
-            "name": "2万左右自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
+            "name": "智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 4
           },
           {
-            "entry_id": 2666,
-            "name": "2万左右品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
+            "name": "口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 6
           },
           {
-            "entry_id": 2644,
+            "name": "智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "防螨抑菌面料的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "吸湿排汗面料的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2647,
+            "name": "可以左右分区调节软硬的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能完美贴合脊柱的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "护脊效果好防腰疼的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2648,
             "name": "零重力多模式智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.3
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2650,
+            "name": "用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "支持上门维护的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2654,
+            "name": "品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "实用性强不吃灰的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
             "name": "高端智能床品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "口碑好的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "智能止鼾的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能缓解入睡困难的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "可以免费维修换货的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右能缓解入睡困难的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "2万左右品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "助力起卧、适合孕妇与老人的智能床推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "通义千问": [
           {
-            "entry_id": 2638,
-            "name": "智能床品牌推荐",
+            "name": "智能床品牌排行榜",
             "mention_rate": 100,
-            "position": 3.8
+            "position": 3
           },
           {
-            "entry_id": 2641,
+            "name": "口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
             "name": "防螨抑菌面料的智能床推荐",
             "mention_rate": 100,
-            "position": 2.7
+            "position": 1
           },
           {
-            "entry_id": 2652,
+            "name": "自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "助力起卧、适合孕妇与老人的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "可以左右分区调节软硬的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能完美贴合脊柱的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "护脊效果好防腰疼的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "零重力多模式智能床推荐",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
+            "name": "品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
             "name": "实用性强不吃灰的智能床推荐",
             "mention_rate": 100,
-            "position": 3.2
+            "position": 1
           },
           {
-            "entry_id": 2653,
             "name": "高端智能床品牌排行榜",
             "mention_rate": 100,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2655,
-            "name": "口碑好的高端智能床推荐",
-            "mention_rate": 100,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2659,
-            "name": "2万左右智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2660,
-            "name": "2万左右智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2661,
-            "name": "2万左右口碑好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2662,
-            "name": "2万左右智能止鼾的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2663,
-            "name": "2万左右能缓解入睡困难的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2665,
-            "name": "2万用料扎实质量好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2637,
-            "name": "智能床品牌排行榜",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2639,
-            "name": "口碑好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 4.5
-          },
-          {
-            "entry_id": 2640,
-            "name": "智能止鼾的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2642,
-            "name": "自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2643,
-            "name": "助力起卧、适合孕妇与老人的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2645,
-            "name": "可以左右分区调节软硬的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2646,
-            "name": "能完美贴合脊柱的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2649,
-            "name": "用料扎实质量好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2651,
-            "name": "品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2656,
-            "name": "智能止鼾的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2657,
-            "name": "能缓解入睡困难的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2658,
-            "name": "可以免费维修换货的智能床推荐",
-            "mention_rate": 83.3,
             "position": 4
           },
           {
-            "entry_id": 2664,
-            "name": "2万左右自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
+            "name": "口碑好的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2666,
+            "name": "智能止鼾的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "可以免费维修换货的智能床推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "2万左右智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右能缓解入睡困难的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "2万左右品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2644,
+            "name": "智能床品牌推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "智能止鼾的智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
             "name": "吸湿排汗面料的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 2647,
-            "name": "护脊效果好防腰疼的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "name": "用料扎实质量好的智能床推荐",
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 2648,
-            "name": "零重力多模式智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2650,
             "name": "支持上门维护的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 2654,
             "name": "高端智能床品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "能缓解入睡困难的高端智能床推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "2万左右自动监测健康数据的智能床推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "kimi": [
           {
-            "entry_id": 2638,
+            "name": "智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
             "name": "智能床品牌推荐",
             "mention_rate": 100,
-            "position": 3.8
-          },
-          {
-            "entry_id": 2641,
-            "name": "防螨抑菌面料的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2652,
-            "name": "实用性强不吃灰的智能床推荐",
-            "mention_rate": 100,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2653,
-            "name": "高端智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2655,
-            "name": "口碑好的高端智能床推荐",
-            "mention_rate": 100,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2659,
-            "name": "2万左右智能床品牌排行榜",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2660,
-            "name": "2万左右智能床品牌推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2661,
-            "name": "2万左右口碑好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2662,
-            "name": "2万左右智能止鼾的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2663,
-            "name": "2万左右能缓解入睡困难的智能床推荐",
-            "mention_rate": 100,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2665,
-            "name": "2万用料扎实质量好的智能床推荐",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2637,
-            "name": "智能床品牌排行榜",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 2639,
-            "name": "口碑好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 4.5
-          },
-          {
-            "entry_id": 2640,
-            "name": "智能止鼾的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.2
-          },
-          {
-            "entry_id": 2642,
-            "name": "自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2643,
-            "name": "助力起卧、适合孕妇与老人的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2645,
-            "name": "可以左右分区调节软硬的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2646,
-            "name": "能完美贴合脊柱的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2649,
-            "name": "用料扎实质量好的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2651,
-            "name": "品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2656,
-            "name": "智能止鼾的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2657,
-            "name": "能缓解入睡困难的高端智能床推荐",
-            "mention_rate": 83.3,
-            "position": 3.3
-          },
-          {
-            "entry_id": 2658,
-            "name": "可以免费维修换货的智能床推荐",
-            "mention_rate": 83.3,
             "position": 4
           },
           {
-            "entry_id": 2664,
-            "name": "2万左右自动监测健康数据的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
+            "name": "口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2666,
-            "name": "2万左右品质稳定售后有保障的智能床推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
+            "name": "智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2644,
+            "name": "防螨抑菌面料的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "助力起卧、适合孕妇与老人的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "吸湿排汗面料的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2647,
+            "name": "可以左右分区调节软硬的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能完美贴合脊柱的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "护脊效果好防腰疼的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2648,
             "name": "零重力多模式智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.3
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2650,
+            "name": "用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "支持上门维护的智能床推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 100,
+            "position": 3
           },
           {
-            "entry_id": 2654,
+            "name": "品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "实用性强不吃灰的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "高端智能床品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "口碑好的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "智能止鼾的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能缓解入睡困难的高端智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "可以免费维修换货的智能床推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "2万左右智能床品牌排行榜",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右智能床品牌推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "2万左右口碑好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右智能止鼾的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右能缓解入睡困难的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右自动监测健康数据的智能床推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "2万用料扎实质量好的智能床推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右品质稳定售后有保障的智能床推荐",
+            "mention_rate": 100,
+            "position": 1
           }
         ]
       },
       "entries_all": [
         {
-          "name": "智能床品牌推荐",
+          "name": "智能床品牌排行榜",
           "mention_rate": 100,
-          "position": 3.8
+          "position": 5
+        },
+        {
+          "name": "口碑好的智能床推荐",
+          "mention_rate": 100,
+          "position": 3.2
         },
         {
           "name": "防螨抑菌面料的智能床推荐",
           "mention_rate": 100,
-          "position": 2.7
+          "position": 1.3
+        },
+        {
+          "name": "自动监测健康数据的智能床推荐",
+          "mention_rate": 100,
+          "position": 2.2
+        },
+        {
+          "name": "可以左右分区调节软硬的智能床推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "品质稳定售后有保障的智能床推荐",
+          "mention_rate": 100,
+          "position": 2.5
         },
         {
           "name": "实用性强不吃灰的智能床推荐",
           "mention_rate": 100,
-          "position": 3.2
+          "position": 2.2
         },
         {
           "name": "高端智能床品牌排行榜",
           "mention_rate": 100,
-          "position": 3.7
+          "position": 2.5
         },
         {
           "name": "口碑好的高端智能床推荐",
           "mention_rate": 100,
-          "position": 4.2
+          "position": 1.8
         },
         {
-          "name": "2万左右智能床品牌排行榜",
+          "name": "智能止鼾的高端智能床推荐",
           "mention_rate": 100,
-          "position": 1.5
+          "position": 1.3
+        },
+        {
+          "name": "可以免费维修换货的智能床推荐",
+          "mention_rate": 100,
+          "position": 2.5
         },
         {
           "name": "2万左右智能床品牌推荐",
           "mention_rate": 100,
-          "position": 1.8
+          "position": 2
         },
         {
           "name": "2万左右口碑好的智能床推荐",
           "mention_rate": 100,
-          "position": 1.7
+          "position": 2
         },
         {
           "name": "2万左右智能止鼾的智能床推荐",
           "mention_rate": 100,
-          "position": 1.5
+          "position": 1.3
         },
         {
           "name": "2万左右能缓解入睡困难的智能床推荐",
           "mention_rate": 100,
-          "position": 2.3
+          "position": 1.5
         },
         {
           "name": "2万用料扎实质量好的智能床推荐",
           "mention_rate": 100,
-          "position": 1.2
+          "position": 1.8
         },
         {
-          "name": "智能床品牌排行榜",
+          "name": "智能床品牌推荐",
           "mention_rate": 83.3,
-          "position": 4.2
-        },
-        {
-          "name": "口碑好的智能床推荐",
-          "mention_rate": 83.3,
-          "position": 4.5
+          "position": 4.7
         },
         {
           "name": "智能止鼾的智能床推荐",
           "mention_rate": 83.3,
-          "position": 3.2
-        },
-        {
-          "name": "自动监测健康数据的智能床推荐",
-          "mention_rate": 83.3,
-          "position": 2.8
-        },
-        {
-          "name": "助力起卧、适合孕妇与老人的智能床推荐",
-          "mention_rate": 83.3,
-          "position": 2.5
-        },
-        {
-          "name": "可以左右分区调节软硬的智能床推荐",
-          "mention_rate": 83.3,
-          "position": 1.5
+          "position": 1.8
         },
         {
           "name": "能完美贴合脊柱的智能床推荐",
           "mention_rate": 83.3,
-          "position": 2.2
+          "position": 1.7
         },
         {
-          "name": "用料扎实质量好的智能床推荐",
+          "name": "护脊效果好防腰疼的智能床推荐",
           "mention_rate": 83.3,
-          "position": 3.3
+          "position": 2
         },
         {
-          "name": "品质稳定售后有保障的智能床推荐",
+          "name": "零重力多模式智能床推荐",
           "mention_rate": 83.3,
-          "position": 3.3
-        },
-        {
-          "name": "智能止鼾的高端智能床推荐",
-          "mention_rate": 83.3,
-          "position": 2.8
+          "position": 3
         },
         {
           "name": "能缓解入睡困难的高端智能床推荐",
           "mention_rate": 83.3,
-          "position": 3.3
+          "position": 2.3
         },
         {
-          "name": "可以免费维修换货的智能床推荐",
+          "name": "2万左右智能床品牌排行榜",
           "mention_rate": 83.3,
-          "position": 4
+          "position": 1.5
         },
         {
           "name": "2万左右自动监测健康数据的智能床推荐",
@@ -1329,22 +1151,22 @@
         {
           "name": "2万左右品质稳定售后有保障的智能床推荐",
           "mention_rate": 83.3,
-          "position": 2.8
+          "position": 2
+        },
+        {
+          "name": "助力起卧、适合孕妇与老人的智能床推荐",
+          "mention_rate": 66.7,
+          "position": 3.8
         },
         {
           "name": "吸湿排汗面料的智能床推荐",
           "mention_rate": 66.7,
-          "position": 2.3
+          "position": 2
         },
         {
-          "name": "护脊效果好防腰疼的智能床推荐",
+          "name": "用料扎实质量好的智能床推荐",
           "mention_rate": 66.7,
-          "position": 3.2
-        },
-        {
-          "name": "零重力多模式智能床推荐",
-          "mention_rate": 66.7,
-          "position": 3.3
+          "position": 2.8
         },
         {
           "name": "支持上门维护的智能床推荐",
@@ -1354,7 +1176,7 @@
         {
           "name": "高端智能床品牌推荐",
           "mention_rate": 66.7,
-          "position": 3.2
+          "position": 3.5
         }
       ],
       "delivery": {
@@ -1520,1196 +1342,1031 @@
     "ai": {
       "name": "慕思AI床垫",
       "brandMatch": "慕思AI床垫",
+      "project_id": 391,
       "june": {
         "mention_rate": 88.9,
+        "top1_mention_rate": 61.7,
         "avg_position": 2.1,
         "influence_rank": 1
       },
       "july": {
-        "mention_rate": 77.2,
-        "avg_position": 2.5,
+        "mention_rate": 90.6,
+        "top1_mention_rate": 60,
+        "avg_position": 2.1,
         "influence_rank": 1,
-        "top1_mention_rate": null,
         "conversations": 180
       },
       "compare": {
         "mention_rate": [
           {
             "name": "慕思AI床垫",
-            "value": "77.2%"
+            "value": "90.6%"
           },
           {
             "name": "喜临门",
-            "value": "60%"
+            "value": "57.2%"
           },
           {
-            "name": "HEKA",
-            "value": "42.8%"
-          },
-          {
-            "name": "慕思智能床",
-            "value": "35%"
+            "name": "舒达",
+            "value": "34.4%"
           },
           {
             "name": "顾家家居",
-            "value": "32.2%"
+            "value": "30%"
+          },
+          {
+            "name": "慕思智能床",
+            "value": "28.9%"
           }
         ],
         "top1": [
           {
             "name": "慕思AI床垫",
-            "value": "53.3%"
+            "value": "60%"
           },
           {
             "name": "慕思智能床",
-            "value": "16.1%"
+            "value": "10.6%"
           },
           {
             "name": "HEKA",
-            "value": "11.7%"
+            "value": "4.4%"
           },
           {
             "name": "喜临门",
-            "value": "3.9%"
+            "value": "4.4%"
           },
           {
-            "name": "MPE",
-            "value": "3.3%"
+            "name": "顾家家居",
+            "value": "4.4%"
           }
         ],
         "position": [
           {
             "name": "慕思AI床垫",
-            "value": "NO. 2.5"
+            "value": "NO. 2.1"
           },
           {
             "name": "喜临门",
-            "value": "NO. 4.1"
+            "value": "NO. 4.3"
           },
           {
-            "name": "HEKA",
-            "value": "NO. 4.4"
+            "name": "舒达",
+            "value": "NO. 4.7"
           },
           {
             "name": "慕思智能床",
-            "value": "NO. 4.6"
+            "value": "NO. 5.0"
           },
           {
             "name": "顾家家居",
-            "value": "NO. 5.1"
+            "value": "NO. 5.2"
           }
         ]
       },
       "sentiments": {
-        "positive": 98.3,
-        "negative": 1.7,
+        "positive": 94.4,
+        "negative": 5.6,
         "positive_keywords": [
-          "产品推荐",
           "功能全面",
-          "产品功能详细"
+          "技术先进",
+          "功能丰富"
         ],
         "negative_keywords": [
-          "品类售后重灾区",
-          "耗材质保短",
-          "提及产品缺点",
-          "提及负面反馈"
+          "质量故障",
+          "售后推诿",
+          "售后体验差",
+          "宣传不符",
+          "品控问题",
+          "价格偏高",
+          "退换货困难"
         ]
       },
       "entries_by_platform": {
         "DeepSeek": [
           {
-            "entry_id": 2611,
+            "name": "AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.7
+            "position": 2
           },
           {
-            "entry_id": 2612,
             "name": "可以左右分区调节的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.3
+            "position": 2
           },
           {
-            "entry_id": 2621,
+            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
+            "name": "静音、翻身互相不打扰的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "护脊效果好防腰疼的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
+            "name": "全国联保售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "知名品牌质量好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "经久耐用不塌陷的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
+            "name": "售后服务好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "母婴级面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "防螨抗菌的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.8
+            "position": 2
           },
           {
-            "entry_id": 2632,
+            "name": "透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "有实体店保障售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "高端AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "口碑好的高端AI床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "面料透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "2万左右AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "2万左右AI床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 1.2
+            "position": 1
           },
           {
-            "entry_id": 2636,
+            "name": "2万左右口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "2万左右售后服务好的AI床垫推荐",
             "mention_rate": 100,
             "position": 1
           },
           {
-            "entry_id": 2607,
-            "name": "AI床垫品牌前十名",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2609,
-            "name": "AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2616,
-            "name": "全国联保售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2617,
-            "name": "知名品牌质量好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2618,
-            "name": "经久耐用不塌陷的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2619,
-            "name": "售后服务好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2
-          },
-          {
-            "entry_id": 2624,
-            "name": "有实体店保障售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2625,
-            "name": "高端AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2627,
-            "name": "面料透气不闷热的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2628,
-            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2629,
-            "name": "2万左右防螨抑菌面料的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2633,
-            "name": "2万左右口碑好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2608,
-            "name": "AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2610,
-            "name": "口碑好的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2614,
-            "name": "静音、翻身互相不打扰的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2615,
-            "name": "护脊效果好防腰疼的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2620,
-            "name": "母婴级面料的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2622,
-            "name": "透气不闷热的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2630,
-            "name": "2万左右AI床垫品牌前十名",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2631,
-            "name": "2万左右AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2634,
-            "name": "2万防螨抗菌的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2
-          },
-          {
-            "entry_id": 2635,
-            "name": "2万左右可以左右分区调节的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2613,
-            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
-            "mention_rate": 50,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2623,
             "name": "高端AI床垫品牌前十名",
-            "mention_rate": 50,
-            "position": 5.3
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 2626,
-            "name": "口碑好的高端AI床垫推荐",
-            "mention_rate": 50,
-            "position": 4
+            "name": "2万左右防螨抑菌面料的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "2万防螨抗菌的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "豆包": [
           {
-            "entry_id": 2611,
+            "name": "AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
             "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.7
+            "position": 1
           },
           {
-            "entry_id": 2612,
             "name": "可以左右分区调节的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.3
+            "position": 1
           },
           {
-            "entry_id": 2621,
-            "name": "防螨抗菌的AI床垫推荐",
+            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.8
+            "position": 3
           },
           {
-            "entry_id": 2632,
+            "name": "静音、翻身互相不打扰的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "全国联保售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "知名品牌质量好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "经久耐用不塌陷的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "售后服务好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "母婴级面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
+            "name": "有实体店保障售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
+            "name": "口碑好的高端AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "面料透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右防螨抑菌面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
             "name": "2万左右AI床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 1.2
+            "position": 3
           },
           {
-            "entry_id": 2636,
+            "name": "2万左右口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万防螨抗菌的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "2万左右可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "2万左右售后服务好的AI床垫推荐",
             "mention_rate": 100,
             "position": 1
           },
           {
-            "entry_id": 2607,
-            "name": "AI床垫品牌前十名",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2609,
-            "name": "AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2616,
-            "name": "全国联保售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2617,
-            "name": "知名品牌质量好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2618,
-            "name": "经久耐用不塌陷的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2619,
-            "name": "售后服务好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2
-          },
-          {
-            "entry_id": 2624,
-            "name": "有实体店保障售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2625,
-            "name": "高端AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2627,
-            "name": "面料透气不闷热的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2628,
-            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2629,
-            "name": "2万左右防螨抑菌面料的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2633,
-            "name": "2万左右口碑好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2608,
-            "name": "AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2610,
-            "name": "口碑好的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2614,
-            "name": "静音、翻身互相不打扰的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2615,
             "name": "护脊效果好防腰疼的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 2620,
-            "name": "母婴级面料的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2622,
-            "name": "透气不闷热的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2630,
-            "name": "2万左右AI床垫品牌前十名",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2631,
-            "name": "2万左右AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2634,
-            "name": "2万防螨抗菌的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2
-          },
-          {
-            "entry_id": 2635,
-            "name": "2万左右可以左右分区调节的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2613,
-            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
-            "mention_rate": 50,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2623,
-            "name": "高端AI床垫品牌前十名",
-            "mention_rate": 50,
-            "position": 5.3
-          },
-          {
-            "entry_id": 2626,
-            "name": "口碑好的高端AI床垫推荐",
-            "mention_rate": 50,
-            "position": 4
+            "name": "防螨抗菌的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "元宝": [
           {
-            "entry_id": 2611,
-            "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
+            "name": "AI床垫品牌前十名",
             "mention_rate": 100,
-            "position": 1.7
+            "position": 5
           },
           {
-            "entry_id": 2612,
-            "name": "可以左右分区调节的AI床垫推荐",
-            "mention_rate": 100,
-            "position": 1.3
-          },
-          {
-            "entry_id": 2621,
-            "name": "防螨抗菌的AI床垫推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2632,
-            "name": "2万左右AI床垫哪个牌子的质量比较好",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2636,
-            "name": "2万左右售后服务好的AI床垫推荐",
+            "name": "AI床垫哪个牌子的质量比较好",
             "mention_rate": 100,
             "position": 1
           },
           {
-            "entry_id": 2607,
-            "name": "AI床垫品牌前十名",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2609,
-            "name": "AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2616,
-            "name": "全国联保售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2617,
-            "name": "知名品牌质量好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2618,
-            "name": "经久耐用不塌陷的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2619,
-            "name": "售后服务好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2
-          },
-          {
-            "entry_id": 2624,
-            "name": "有实体店保障售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2625,
-            "name": "高端AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2627,
-            "name": "面料透气不闷热的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2628,
-            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2629,
-            "name": "2万左右防螨抑菌面料的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2633,
-            "name": "2万左右口碑好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2608,
-            "name": "AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2610,
             "name": "口碑好的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2614,
+            "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "静音、翻身互相不打扰的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2615,
-            "name": "护脊效果好防腰疼的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2620,
-            "name": "母婴级面料的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2622,
-            "name": "透气不闷热的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2630,
-            "name": "2万左右AI床垫品牌前十名",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2631,
-            "name": "2万左右AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2634,
-            "name": "2万防螨抗菌的AI床垫推荐",
-            "mention_rate": 66.7,
+            "mention_rate": 100,
             "position": 2
           },
           {
-            "entry_id": 2635,
-            "name": "2万左右可以左右分区调节的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "name": "护脊效果好防腰疼的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2613,
-            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
-            "mention_rate": 50,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2623,
-            "name": "高端AI床垫品牌前十名",
-            "mention_rate": 50,
-            "position": 5.3
-          },
-          {
-            "entry_id": 2626,
-            "name": "口碑好的高端AI床垫推荐",
-            "mention_rate": 50,
+            "name": "全国联保售后的AI床垫推荐",
+            "mention_rate": 100,
             "position": 4
+          },
+          {
+            "name": "经久耐用不塌陷的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "售后服务好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "母婴级面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "防螨抗菌的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "高端AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
+            "name": "有实体店保障售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "面料透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右防螨抑菌面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万防螨抗菌的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "AI床垫品牌推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "知名品牌质量好的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "高端AI床垫哪个牌子的质量比较好",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "口碑好的高端AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "2万左右售后服务好的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "文心": [
           {
-            "entry_id": 2611,
-            "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
-            "mention_rate": 100,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2612,
-            "name": "可以左右分区调节的AI床垫推荐",
-            "mention_rate": 100,
-            "position": 1.3
-          },
-          {
-            "entry_id": 2621,
-            "name": "防螨抗菌的AI床垫推荐",
-            "mention_rate": 100,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2632,
-            "name": "2万左右AI床垫哪个牌子的质量比较好",
-            "mention_rate": 100,
-            "position": 1.2
-          },
-          {
-            "entry_id": 2636,
-            "name": "2万左右售后服务好的AI床垫推荐",
+            "name": "AI床垫品牌前十名",
             "mention_rate": 100,
             "position": 1
           },
           {
-            "entry_id": 2607,
-            "name": "AI床垫品牌前十名",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2609,
-            "name": "AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2616,
-            "name": "全国联保售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2617,
-            "name": "知名品牌质量好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2618,
-            "name": "经久耐用不塌陷的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2619,
-            "name": "售后服务好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2
-          },
-          {
-            "entry_id": 2624,
-            "name": "有实体店保障售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2625,
-            "name": "高端AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2627,
-            "name": "面料透气不闷热的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2628,
-            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2629,
-            "name": "2万左右防螨抑菌面料的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2633,
-            "name": "2万左右口碑好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2608,
             "name": "AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.7
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2610,
+            "name": "AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "口碑好的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2614,
+            "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
             "name": "静音、翻身互相不打扰的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.8
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2615,
             "name": "护脊效果好防腰疼的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2620,
-            "name": "母婴级面料的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "name": "全国联保售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2622,
-            "name": "透气不闷热的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.2
+            "name": "知名品牌质量好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 3
           },
           {
-            "entry_id": 2630,
-            "name": "2万左右AI床垫品牌前十名",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2631,
-            "name": "2万左右AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2634,
-            "name": "2万防螨抗菌的AI床垫推荐",
-            "mention_rate": 66.7,
+            "name": "经久耐用不塌陷的AI床垫推荐",
+            "mention_rate": 100,
             "position": 2
           },
           {
-            "entry_id": 2635,
-            "name": "2万左右可以左右分区调节的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
+            "name": "售后服务好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 2613,
-            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
-            "mention_rate": 50,
-            "position": 3.7
+            "name": "母婴级面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2623,
+            "name": "防螨抗菌的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "高端AI床垫品牌前十名",
-            "mention_rate": 50,
-            "position": 5.3
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 2626,
+            "name": "有实体店保障售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "口碑好的高端AI床垫推荐",
-            "mention_rate": 50,
-            "position": 4
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "面料透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
+            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右防螨抑菌面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万防螨抗菌的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "2万左右售后服务好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
           }
         ],
         "通义千问": [
           {
-            "entry_id": 2611,
+            "name": "AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.7
+            "position": 1
           },
           {
-            "entry_id": 2612,
             "name": "可以左右分区调节的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.3
+            "position": 3
           },
           {
-            "entry_id": 2621,
+            "name": "静音、翻身互相不打扰的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "护脊效果好防腰疼的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "知名品牌质量好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "经久耐用不塌陷的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "母婴级面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
             "name": "防螨抗菌的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.8
+            "position": 1
           },
           {
-            "entry_id": 2632,
+            "name": "高端AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "口碑好的高端AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右防螨抑菌面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "2万左右AI床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 1.2
+            "position": 1
           },
           {
-            "entry_id": 2636,
+            "name": "2万左右口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万防螨抗菌的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "2万左右售后服务好的AI床垫推荐",
             "mention_rate": 100,
             "position": 1
           },
           {
-            "entry_id": 2607,
-            "name": "AI床垫品牌前十名",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2609,
-            "name": "AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2616,
-            "name": "全国联保售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2617,
-            "name": "知名品牌质量好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2618,
-            "name": "经久耐用不塌陷的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2619,
-            "name": "售后服务好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2
-          },
-          {
-            "entry_id": 2624,
-            "name": "有实体店保障售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2625,
-            "name": "高端AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2627,
-            "name": "面料透气不闷热的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2628,
-            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2629,
-            "name": "2万左右防螨抑菌面料的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2633,
-            "name": "2万左右口碑好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2608,
-            "name": "AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2610,
-            "name": "口碑好的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2614,
-            "name": "静音、翻身互相不打扰的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2615,
-            "name": "护脊效果好防腰疼的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2620,
-            "name": "母婴级面料的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2622,
-            "name": "透气不闷热的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2630,
-            "name": "2万左右AI床垫品牌前十名",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2631,
-            "name": "2万左右AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2634,
-            "name": "2万防螨抗菌的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2
-          },
-          {
-            "entry_id": 2635,
-            "name": "2万左右可以左右分区调节的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2613,
             "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
-            "mention_rate": 50,
-            "position": 3.7
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 2623,
-            "name": "高端AI床垫品牌前十名",
-            "mention_rate": 50,
-            "position": 5.3
+            "name": "全国联保售后的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 2626,
-            "name": "口碑好的高端AI床垫推荐",
-            "mention_rate": 50,
-            "position": 4
+            "name": "售后服务好的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "透气不闷热的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "有实体店保障售后的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "面料透气不闷热的AI床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "kimi": [
           {
-            "entry_id": 2611,
+            "name": "AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.7
+            "position": 4
           },
           {
-            "entry_id": 2612,
             "name": "可以左右分区调节的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.3
+            "position": 1
           },
           {
-            "entry_id": 2621,
+            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "静音、翻身互相不打扰的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "护脊效果好防腰疼的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "全国联保售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "知名品牌质量好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "经久耐用不塌陷的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "售后服务好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
+            "name": "母婴级面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "防螨抗菌的AI床垫推荐",
             "mention_rate": 100,
-            "position": 1.8
+            "position": 1
           },
           {
-            "entry_id": 2632,
+            "name": "透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "有实体店保障售后的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "高端AI床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "口碑好的高端AI床垫推荐",
+            "mention_rate": 100,
+            "position": 9
+          },
+          {
+            "name": "面料透气不闷热的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右防螨抑菌面料的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右AI床垫品牌前十名",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "2万左右AI床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "2万左右AI床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 1.2
+            "position": 1
           },
           {
-            "entry_id": 2636,
+            "name": "2万左右口碑好的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万防螨抗菌的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "2万左右可以左右分区调节的AI床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "2万左右售后服务好的AI床垫推荐",
             "mention_rate": 100,
             "position": 1
           },
           {
-            "entry_id": 2607,
-            "name": "AI床垫品牌前十名",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2609,
-            "name": "AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2616,
-            "name": "全国联保售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.5
-          },
-          {
-            "entry_id": 2617,
-            "name": "知名品牌质量好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2618,
-            "name": "经久耐用不塌陷的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.8
-          },
-          {
-            "entry_id": 2619,
-            "name": "售后服务好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2
-          },
-          {
-            "entry_id": 2624,
-            "name": "有实体店保障售后的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2625,
-            "name": "高端AI床垫哪个牌子的质量比较好",
-            "mention_rate": 83.3,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2627,
-            "name": "面料透气不闷热的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.7
-          },
-          {
-            "entry_id": 2628,
-            "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2629,
-            "name": "2万左右防螨抑菌面料的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 2633,
-            "name": "2万左右口碑好的AI床垫推荐",
-            "mention_rate": 83.3,
-            "position": 1.7
-          },
-          {
-            "entry_id": 2608,
-            "name": "AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2610,
             "name": "口碑好的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2614,
-            "name": "静音、翻身互相不打扰的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.8
-          },
-          {
-            "entry_id": 2615,
-            "name": "护脊效果好防腰疼的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.5
-          },
-          {
-            "entry_id": 2620,
-            "name": "母婴级面料的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2622,
-            "name": "透气不闷热的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.2
-          },
-          {
-            "entry_id": 2630,
-            "name": "2万左右AI床垫品牌前十名",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2631,
-            "name": "2万左右AI床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2634,
-            "name": "2万防螨抗菌的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2
-          },
-          {
-            "entry_id": 2635,
-            "name": "2万左右可以左右分区调节的AI床垫推荐",
-            "mention_rate": 66.7,
-            "position": 2.3
-          },
-          {
-            "entry_id": 2613,
-            "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
-            "mention_rate": 50,
-            "position": 3.7
-          },
-          {
-            "entry_id": 2623,
-            "name": "高端AI床垫品牌前十名",
-            "mention_rate": 50,
-            "position": 5.3
-          },
-          {
-            "entry_id": 2626,
-            "name": "口碑好的高端AI床垫推荐",
-            "mention_rate": 50,
-            "position": 4
+            "mention_rate": 0,
+            "position": null
           }
         ]
       },
       "entries_all": [
+        {
+          "name": "AI床垫品牌前十名",
+          "mention_rate": 100,
+          "position": 1.8
+        },
+        {
+          "name": "AI床垫哪个牌子的质量比较好",
+          "mention_rate": 100,
+          "position": 1
+        },
         {
           "name": "根据体型睡姿自动调整软硬的AI床垫推荐",
           "mention_rate": 100,
@@ -2718,52 +2375,102 @@
         {
           "name": "可以左右分区调节的AI床垫推荐",
           "mention_rate": 100,
-          "position": 1.3
+          "position": 1.5
         },
         {
-          "name": "防螨抗菌的AI床垫推荐",
+          "name": "静音、翻身互相不打扰的AI床垫推荐",
           "mention_rate": 100,
-          "position": 1.8
+          "position": 1.5
         },
         {
-          "name": "2万左右AI床垫哪个牌子的质量比较好",
+          "name": "经久耐用不塌陷的AI床垫推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "母婴级面料的AI床垫推荐",
+          "mention_rate": 100,
+          "position": 1.5
+        },
+        {
+          "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
           "mention_rate": 100,
           "position": 1.2
         },
         {
-          "name": "2万左右售后服务好的AI床垫推荐",
+          "name": "2万左右AI床垫品牌前十名",
           "mention_rate": 100,
-          "position": 1
+          "position": 1.5
         },
         {
-          "name": "AI床垫品牌前十名",
-          "mention_rate": 83.3,
-          "position": 1.8
+          "name": "2万左右AI床垫品牌推荐",
+          "mention_rate": 100,
+          "position": 2.2
         },
         {
-          "name": "AI床垫哪个牌子的质量比较好",
+          "name": "2万左右AI床垫哪个牌子的质量比较好",
+          "mention_rate": 100,
+          "position": 1.5
+        },
+        {
+          "name": "2万左右口碑好的AI床垫推荐",
+          "mention_rate": 100,
+          "position": 1.2
+        },
+        {
+          "name": "2万左右可以左右分区调节的AI床垫推荐",
+          "mention_rate": 100,
+          "position": 1.3
+        },
+        {
+          "name": "AI床垫品牌推荐",
           "mention_rate": 83.3,
-          "position": 2.7
+          "position": 1.7
+        },
+        {
+          "name": "口碑好的AI床垫推荐",
+          "mention_rate": 83.3,
+          "position": 2.8
+        },
+        {
+          "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
+          "mention_rate": 83.3,
+          "position": 3.2
+        },
+        {
+          "name": "护脊效果好防腰疼的AI床垫推荐",
+          "mention_rate": 83.3,
+          "position": 2
         },
         {
           "name": "全国联保售后的AI床垫推荐",
           "mention_rate": 83.3,
-          "position": 1.5
+          "position": 2.5
         },
         {
           "name": "知名品牌质量好的AI床垫推荐",
           "mention_rate": 83.3,
-          "position": 2.5
-        },
-        {
-          "name": "经久耐用不塌陷的AI床垫推荐",
-          "mention_rate": 83.3,
-          "position": 1.8
+          "position": 2.8
         },
         {
           "name": "售后服务好的AI床垫推荐",
           "mention_rate": 83.3,
-          "position": 2
+          "position": 3
+        },
+        {
+          "name": "防螨抗菌的AI床垫推荐",
+          "mention_rate": 83.3,
+          "position": 1.2
+        },
+        {
+          "name": "透气不闷热的AI床垫推荐",
+          "mention_rate": 83.3,
+          "position": 1.8
+        },
+        {
+          "name": "高端AI床垫品牌前十名",
+          "mention_rate": 83.3,
+          "position": 4.5
         },
         {
           "name": "有实体店保障售后的AI床垫推荐",
@@ -2773,92 +2480,32 @@
         {
           "name": "高端AI床垫哪个牌子的质量比较好",
           "mention_rate": 83.3,
-          "position": 2.3
+          "position": 2.5
+        },
+        {
+          "name": "口碑好的高端AI床垫推荐",
+          "mention_rate": 83.3,
+          "position": 3.2
         },
         {
           "name": "面料透气不闷热的AI床垫推荐",
           "mention_rate": 83.3,
-          "position": 2.7
-        },
-        {
-          "name": "能自动调节缓解打鼾的高端 AI床垫推荐",
-          "mention_rate": 83.3,
-          "position": 2.8
+          "position": 2.5
         },
         {
           "name": "2万左右防螨抑菌面料的AI床垫推荐",
           "mention_rate": 83.3,
-          "position": 2.5
-        },
-        {
-          "name": "2万左右口碑好的AI床垫推荐",
-          "mention_rate": 83.3,
-          "position": 1.7
-        },
-        {
-          "name": "AI床垫品牌推荐",
-          "mention_rate": 66.7,
-          "position": 3.7
-        },
-        {
-          "name": "口碑好的AI床垫推荐",
-          "mention_rate": 66.7,
-          "position": 3.5
-        },
-        {
-          "name": "静音、翻身互相不打扰的AI床垫推荐",
-          "mention_rate": 66.7,
-          "position": 2.8
-        },
-        {
-          "name": "护脊效果好防腰疼的AI床垫推荐",
-          "mention_rate": 66.7,
-          "position": 3.5
-        },
-        {
-          "name": "母婴级面料的AI床垫推荐",
-          "mention_rate": 66.7,
-          "position": 2.3
-        },
-        {
-          "name": "透气不闷热的AI床垫推荐",
-          "mention_rate": 66.7,
-          "position": 2.2
-        },
-        {
-          "name": "2万左右AI床垫品牌前十名",
-          "mention_rate": 66.7,
-          "position": 2.3
-        },
-        {
-          "name": "2万左右AI床垫品牌推荐",
-          "mention_rate": 66.7,
-          "position": 2.3
+          "position": 1.8
         },
         {
           "name": "2万防螨抗菌的AI床垫推荐",
-          "mention_rate": 66.7,
-          "position": 2
+          "mention_rate": 83.3,
+          "position": 2.2
         },
         {
-          "name": "2万左右可以左右分区调节的AI床垫推荐",
-          "mention_rate": 66.7,
-          "position": 2.3
-        },
-        {
-          "name": "针对腰椎亚健康、精准护脊的AI床垫推荐",
-          "mention_rate": 50,
-          "position": 3.7
-        },
-        {
-          "name": "高端AI床垫品牌前十名",
-          "mention_rate": 50,
-          "position": 5.3
-        },
-        {
-          "name": "口碑好的高端AI床垫推荐",
-          "mention_rate": 50,
-          "position": 4
+          "name": "2万左右售后服务好的AI床垫推荐",
+          "mention_rate": 83.3,
+          "position": 1.3
         }
       ],
       "delivery": {
@@ -3024,79 +2671,81 @@
     "mattress": {
       "name": "慕思床垫",
       "brandMatch": "慕思",
+      "project_id": 393,
       "june": {
-        "mention_rate": 66.7,
-        "avg_position": 5.2,
-        "influence_rank": 1
+        "mention_rate": 58.3,
+        "top1_mention_rate": 18.3,
+        "avg_position": 5.5,
+        "influence_rank": 2
       },
       "july": {
-        "mention_rate": 71.7,
-        "avg_position": 4.9,
+        "mention_rate": 75.8,
+        "top1_mention_rate": 24.2,
+        "avg_position": 4,
         "influence_rank": 1,
-        "top1_mention_rate": null,
         "conversations": 120
       },
       "compare": {
         "mention_rate": [
           {
             "name": "慕思",
-            "value": "71.7%"
+            "value": "75.8%"
           },
           {
             "name": "喜临门",
-            "value": "60%"
-          },
-          {
-            "name": "丝涟",
-            "value": "56.7%"
+            "value": "52.5%"
           },
           {
             "name": "金可儿",
+            "value": "50.8%"
+          },
+          {
+            "name": "丝涟",
             "value": "50%"
           },
           {
-            "name": "雅兰",
-            "value": "47.5%"
+            "name": "舒达",
+            "value": "48.3%"
           }
         ],
         "top1": [
           {
             "name": "慕思",
-            "value": "18.3%"
+            "value": "24.2%"
           },
           {
             "name": "丝涟",
-            "value": "16.7%"
+            "value": "13.3%"
           },
           {
             "name": "喜临门",
-            "value": "12.5%"
+            "value": "10%"
           },
           {
             "name": "TLK特蕾卡",
             "value": "5.8%"
           },
           {
-            "name": "舒达",
-            "value": "4.2%"
+            "name": "萌小叁",
+            "value": "5.8%"
           }
         ],
         "position": [
           {
             "name": "慕思",
-            "value": "NO. 4.9"
-          },
-          {
-            "name": "喜临门",
-            "value": "NO. 4.9"
+            "value": "NO. 4.0"
           },
           {
             "name": "丝涟",
-            "value": "NO. 5.0"
+            "value": "NO. 5.1"
+          },
+          {
+            "name": "喜临门",
+            "value": "NO. 5.5"
           },
           {
             "name": "金可儿",
-            "value": "NO. 5.7"
+            "value": "NO. 5.6"
           },
           {
             "name": "舒达",
@@ -3105,749 +2754,629 @@
         ]
       },
       "sentiments": {
-        "positive": 98.3,
-        "negative": 1.7,
+        "positive": 99.2,
+        "negative": 0.8,
         "positive_keywords": [
-          "产品推荐",
-          "功能认可",
-          "高端定位"
+          "支撑性好",
+          "透气性好",
+          "技术先进"
         ],
         "negative_keywords": [
-          "价格溢价",
-          "提及溢价"
+          "售后推诿",
+          "质量故障"
         ]
       },
       "entries_by_platform": {
         "DeepSeek": [
           {
-            "entry_id": 3622,
             "name": "床垫品牌排行榜前十名",
             "mention_rate": 100,
-            "position": 4.5
+            "position": 6
           },
           {
-            "entry_id": 3628,
+            "name": "床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
             "name": "知名品牌质量好的床垫推荐",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 2
           },
           {
-            "entry_id": 3635,
+            "name": "噪音小的床垫推荐",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
+            "name": "干爽透气不闷热的床垫推荐",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
             "name": "高端弹簧床垫品牌排行榜前十名",
             "mention_rate": 100,
-            "position": 6
+            "position": 7
           },
           {
-            "entry_id": 3640,
+            "name": "高端弹簧床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
+            "name": "干爽透气不闷热的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "七千左右床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "七千左右床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 1
           },
           {
-            "entry_id": 3641,
             "name": "七千左右床垫品牌推荐",
             "mention_rate": 100,
-            "position": 3.3
+            "position": 1
           },
           {
-            "entry_id": 3625,
             "name": "适中偏硬、支撑性好的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 3632,
-            "name": "结构稳固承托力强的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 3633,
-            "name": "真正好睡不踩雷的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3636,
-            "name": "高端弹簧床垫品牌推荐",
-            "mention_rate": 83.3,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3638,
-            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 3639,
-            "name": "七千左右床垫品牌排行榜前十名",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 3623,
-            "name": "床垫哪个牌子的质量比较好",
-            "mention_rate": 66.7,
-            "position": 4.3
-          },
-          {
-            "entry_id": 3624,
-            "name": "床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 6
-          },
-          {
-            "entry_id": 3630,
-            "name": "噪音小的床垫推荐",
-            "mention_rate": 66.7,
-            "position": 6.8
-          },
-          {
-            "entry_id": 3637,
-            "name": "干爽透气不闷热的高端弹簧床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3626,
-            "name": "弹簧床垫推荐",
-            "mention_rate": 50,
-            "position": 5.3
-          },
-          {
-            "entry_id": 3627,
             "name": "护脊效果好防腰疼的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.5
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 3631,
-            "name": "干爽透气不闷热的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3634,
-            "name": "结实耐用不塌陷的床垫推荐",
-            "mention_rate": 50,
-            "position": 3.2
-          },
-          {
-            "entry_id": 3629,
             "name": "环保无甲醛床垫推荐",
-            "mention_rate": 33.3,
-            "position": 5.7
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "结构稳固承托力强的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "真正好睡不踩雷的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "结实耐用不塌陷的床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "豆包": [
           {
-            "entry_id": 3622,
             "name": "床垫品牌排行榜前十名",
-            "mention_rate": 100,
-            "position": 4.5
-          },
-          {
-            "entry_id": 3628,
-            "name": "知名品牌质量好的床垫推荐",
-            "mention_rate": 100,
-            "position": 3.5
-          },
-          {
-            "entry_id": 3635,
-            "name": "高端弹簧床垫品牌排行榜前十名",
             "mention_rate": 100,
             "position": 6
           },
           {
-            "entry_id": 3640,
-            "name": "七千左右床垫哪个牌子的质量比较好",
+            "name": "床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 2
           },
           {
-            "entry_id": 3641,
-            "name": "七千左右床垫品牌推荐",
+            "name": "床垫品牌推荐",
             "mention_rate": 100,
-            "position": 3.3
-          },
-          {
-            "entry_id": 3625,
-            "name": "适中偏硬、支撑性好的床垫推荐",
-            "mention_rate": 83.3,
             "position": 3
           },
           {
-            "entry_id": 3632,
-            "name": "结构稳固承托力强的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 3633,
-            "name": "真正好睡不踩雷的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3636,
-            "name": "高端弹簧床垫品牌推荐",
-            "mention_rate": 83.3,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3638,
-            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 3639,
-            "name": "七千左右床垫品牌排行榜前十名",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 3623,
-            "name": "床垫哪个牌子的质量比较好",
-            "mention_rate": 66.7,
-            "position": 4.3
-          },
-          {
-            "entry_id": 3624,
-            "name": "床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 6
-          },
-          {
-            "entry_id": 3630,
-            "name": "噪音小的床垫推荐",
-            "mention_rate": 66.7,
-            "position": 6.8
-          },
-          {
-            "entry_id": 3637,
-            "name": "干爽透气不闷热的高端弹簧床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3626,
             "name": "弹簧床垫推荐",
-            "mention_rate": 50,
-            "position": 5.3
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 3627,
             "name": "护脊效果好防腰疼的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.5
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 3631,
-            "name": "干爽透气不闷热的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.2
+            "name": "知名品牌质量好的床垫推荐",
+            "mention_rate": 100,
+            "position": 4
           },
           {
-            "entry_id": 3634,
-            "name": "结实耐用不塌陷的床垫推荐",
-            "mention_rate": 50,
-            "position": 3.2
-          },
-          {
-            "entry_id": 3629,
             "name": "环保无甲醛床垫推荐",
-            "mention_rate": 33.3,
-            "position": 5.7
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "噪音小的床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "高端弹簧床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
+            "name": "高端弹簧床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
+            "name": "干爽透气不闷热的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "七千左右床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "七千左右床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "适中偏硬、支撑性好的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "干爽透气不闷热的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "结构稳固承托力强的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "真正好睡不踩雷的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "结实耐用不塌陷的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "七千左右床垫品牌排行榜前十名",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "元宝": [
           {
-            "entry_id": 3622,
             "name": "床垫品牌排行榜前十名",
             "mention_rate": 100,
-            "position": 4.5
-          },
-          {
-            "entry_id": 3628,
-            "name": "知名品牌质量好的床垫推荐",
-            "mention_rate": 100,
-            "position": 3.5
-          },
-          {
-            "entry_id": 3635,
-            "name": "高端弹簧床垫品牌排行榜前十名",
-            "mention_rate": 100,
-            "position": 6
-          },
-          {
-            "entry_id": 3640,
-            "name": "七千左右床垫哪个牌子的质量比较好",
-            "mention_rate": 100,
-            "position": 3.5
-          },
-          {
-            "entry_id": 3641,
-            "name": "七千左右床垫品牌推荐",
-            "mention_rate": 100,
-            "position": 3.3
-          },
-          {
-            "entry_id": 3625,
-            "name": "适中偏硬、支撑性好的床垫推荐",
-            "mention_rate": 83.3,
             "position": 3
           },
           {
-            "entry_id": 3632,
-            "name": "结构稳固承托力强的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 3633,
-            "name": "真正好睡不踩雷的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3636,
-            "name": "高端弹簧床垫品牌推荐",
-            "mention_rate": 83.3,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3638,
-            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 3639,
-            "name": "七千左右床垫品牌排行榜前十名",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 3623,
-            "name": "床垫哪个牌子的质量比较好",
-            "mention_rate": 66.7,
-            "position": 4.3
-          },
-          {
-            "entry_id": 3624,
-            "name": "床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 6
-          },
-          {
-            "entry_id": 3630,
-            "name": "噪音小的床垫推荐",
-            "mention_rate": 66.7,
-            "position": 6.8
-          },
-          {
-            "entry_id": 3637,
-            "name": "干爽透气不闷热的高端弹簧床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3626,
             "name": "弹簧床垫推荐",
-            "mention_rate": 50,
-            "position": 5.3
+            "mention_rate": 100,
+            "position": 4
           },
           {
-            "entry_id": 3627,
-            "name": "护脊效果好防腰疼的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.5
+            "name": "知名品牌质量好的床垫推荐",
+            "mention_rate": 100,
+            "position": 3
           },
           {
-            "entry_id": 3631,
             "name": "干爽透气不闷热的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.2
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 3634,
+            "name": "结构稳固承托力强的床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "真正好睡不踩雷的床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "结实耐用不塌陷的床垫推荐",
-            "mention_rate": 50,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 3629,
+            "name": "高端弹簧床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 11
+          },
+          {
+            "name": "高端弹簧床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "干爽透气不闷热的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "七千左右床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "七千左右床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "七千左右床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "床垫哪个牌子的质量比较好",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "床垫品牌推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "适中偏硬、支撑性好的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "护脊效果好防腰疼的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
             "name": "环保无甲醛床垫推荐",
-            "mention_rate": 33.3,
-            "position": 5.7
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "噪音小的床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "文心": [
           {
-            "entry_id": 3622,
             "name": "床垫品牌排行榜前十名",
             "mention_rate": 100,
-            "position": 4.5
+            "position": 1
           },
           {
-            "entry_id": 3628,
-            "name": "知名品牌质量好的床垫推荐",
+            "name": "床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 1
           },
           {
-            "entry_id": 3635,
-            "name": "高端弹簧床垫品牌排行榜前十名",
+            "name": "床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "适中偏硬、支撑性好的床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "弹簧床垫推荐",
             "mention_rate": 100,
             "position": 6
           },
           {
-            "entry_id": 3640,
-            "name": "七千左右床垫哪个牌子的质量比较好",
+            "name": "知名品牌质量好的床垫推荐",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 2
           },
           {
-            "entry_id": 3641,
-            "name": "七千左右床垫品牌推荐",
+            "name": "环保无甲醛床垫推荐",
             "mention_rate": 100,
-            "position": 3.3
+            "position": 5
           },
           {
-            "entry_id": 3625,
-            "name": "适中偏硬、支撑性好的床垫推荐",
-            "mention_rate": 83.3,
+            "name": "噪音小的床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "干爽透气不闷热的床垫推荐",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
+            "name": "结构稳固承托力强的床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "真正好睡不踩雷的床垫推荐",
+            "mention_rate": 100,
+            "position": 5
+          },
+          {
+            "name": "高端弹簧床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "高端弹簧床垫品牌推荐",
+            "mention_rate": 100,
             "position": 3
           },
           {
-            "entry_id": 3632,
-            "name": "结构稳固承托力强的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 3633,
-            "name": "真正好睡不踩雷的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3636,
-            "name": "高端弹簧床垫品牌推荐",
-            "mention_rate": 83.3,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3638,
-            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 3639,
-            "name": "七千左右床垫品牌排行榜前十名",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 3623,
-            "name": "床垫哪个牌子的质量比较好",
-            "mention_rate": 66.7,
-            "position": 4.3
-          },
-          {
-            "entry_id": 3624,
-            "name": "床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 6
-          },
-          {
-            "entry_id": 3630,
-            "name": "噪音小的床垫推荐",
-            "mention_rate": 66.7,
-            "position": 6.8
-          },
-          {
-            "entry_id": 3637,
             "name": "干爽透气不闷热的高端弹簧床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.8
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 3626,
-            "name": "弹簧床垫推荐",
-            "mention_rate": 50,
-            "position": 5.3
+            "name": "七千左右床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 1
           },
           {
-            "entry_id": 3627,
+            "name": "七千左右床垫哪个牌子的质量比较好",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "七千左右床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "护脊效果好防腰疼的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.5
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 3631,
-            "name": "干爽透气不闷热的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3634,
             "name": "结实耐用不塌陷的床垫推荐",
-            "mention_rate": 50,
-            "position": 3.2
+            "mention_rate": 0,
+            "position": null
           },
           {
-            "entry_id": 3629,
-            "name": "环保无甲醛床垫推荐",
-            "mention_rate": 33.3,
-            "position": 5.7
+            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "通义千问": [
           {
-            "entry_id": 3622,
             "name": "床垫品牌排行榜前十名",
             "mention_rate": 100,
-            "position": 4.5
+            "position": 2
           },
           {
-            "entry_id": 3628,
-            "name": "知名品牌质量好的床垫推荐",
+            "name": "床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 4
           },
           {
-            "entry_id": 3635,
-            "name": "高端弹簧床垫品牌排行榜前十名",
+            "name": "床垫品牌推荐",
             "mention_rate": 100,
             "position": 6
           },
           {
-            "entry_id": 3640,
-            "name": "七千左右床垫哪个牌子的质量比较好",
-            "mention_rate": 100,
-            "position": 3.5
-          },
-          {
-            "entry_id": 3641,
-            "name": "七千左右床垫品牌推荐",
-            "mention_rate": 100,
-            "position": 3.3
-          },
-          {
-            "entry_id": 3625,
             "name": "适中偏硬、支撑性好的床垫推荐",
-            "mention_rate": 83.3,
+            "mention_rate": 100,
             "position": 3
           },
           {
-            "entry_id": 3632,
-            "name": "结构稳固承托力强的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 3633,
-            "name": "真正好睡不踩雷的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3636,
-            "name": "高端弹簧床垫品牌推荐",
-            "mention_rate": 83.3,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3638,
-            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 3639,
-            "name": "七千左右床垫品牌排行榜前十名",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 3623,
-            "name": "床垫哪个牌子的质量比较好",
-            "mention_rate": 66.7,
-            "position": 4.3
-          },
-          {
-            "entry_id": 3624,
-            "name": "床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 6
-          },
-          {
-            "entry_id": 3630,
-            "name": "噪音小的床垫推荐",
-            "mention_rate": 66.7,
-            "position": 6.8
-          },
-          {
-            "entry_id": 3637,
-            "name": "干爽透气不闷热的高端弹簧床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3626,
-            "name": "弹簧床垫推荐",
-            "mention_rate": 50,
-            "position": 5.3
-          },
-          {
-            "entry_id": 3627,
             "name": "护脊效果好防腰疼的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.5
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 3631,
-            "name": "干爽透气不闷热的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.2
+            "name": "知名品牌质量好的床垫推荐",
+            "mention_rate": 100,
+            "position": 4
           },
           {
-            "entry_id": 3634,
+            "name": "噪音小的床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "结构稳固承托力强的床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "真正好睡不踩雷的床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
             "name": "结实耐用不塌陷的床垫推荐",
-            "mention_rate": 50,
-            "position": 3.2
+            "mention_rate": 100,
+            "position": 2
           },
           {
-            "entry_id": 3629,
+            "name": "干爽透气不闷热的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 2
+          },
+          {
+            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "七千左右床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 3
+          },
+          {
+            "name": "弹簧床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
             "name": "环保无甲醛床垫推荐",
-            "mention_rate": 33.3,
-            "position": 5.7
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "干爽透气不闷热的床垫推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "高端弹簧床垫品牌排行榜前十名",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "高端弹簧床垫品牌推荐",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "七千左右床垫哪个牌子的质量比较好",
+            "mention_rate": 0,
+            "position": null
+          },
+          {
+            "name": "七千左右床垫品牌推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ],
         "kimi": [
           {
-            "entry_id": 3622,
             "name": "床垫品牌排行榜前十名",
             "mention_rate": 100,
-            "position": 4.5
+            "position": 2
           },
           {
-            "entry_id": 3628,
-            "name": "知名品牌质量好的床垫推荐",
+            "name": "床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 1
           },
           {
-            "entry_id": 3635,
+            "name": "床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
+            "name": "适中偏硬、支撑性好的床垫推荐",
+            "mention_rate": 100,
+            "position": 12
+          },
+          {
+            "name": "弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 11
+          },
+          {
+            "name": "护脊效果好防腰疼的床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "环保无甲醛床垫推荐",
+            "mention_rate": 100,
+            "position": 9
+          },
+          {
+            "name": "噪音小的床垫推荐",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
+            "name": "干爽透气不闷热的床垫推荐",
+            "mention_rate": 100,
+            "position": 8
+          },
+          {
+            "name": "结构稳固承托力强的床垫推荐",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
+            "name": "真正好睡不踩雷的床垫推荐",
+            "mention_rate": 100,
+            "position": 8
+          },
+          {
+            "name": "结实耐用不塌陷的床垫推荐",
+            "mention_rate": 100,
+            "position": 6
+          },
+          {
             "name": "高端弹簧床垫品牌排行榜前十名",
             "mention_rate": 100,
             "position": 6
           },
           {
-            "entry_id": 3640,
+            "name": "高端弹簧床垫品牌推荐",
+            "mention_rate": 100,
+            "position": 10
+          },
+          {
+            "name": "干爽透气不闷热的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 4
+          },
+          {
+            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
+            "mention_rate": 100,
+            "position": 7
+          },
+          {
+            "name": "七千左右床垫品牌排行榜前十名",
+            "mention_rate": 100,
+            "position": 1
+          },
+          {
             "name": "七千左右床垫哪个牌子的质量比较好",
             "mention_rate": 100,
-            "position": 3.5
+            "position": 1
           },
           {
-            "entry_id": 3641,
             "name": "七千左右床垫品牌推荐",
             "mention_rate": 100,
-            "position": 3.3
+            "position": 1
           },
           {
-            "entry_id": 3625,
-            "name": "适中偏硬、支撑性好的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3
-          },
-          {
-            "entry_id": 3632,
-            "name": "结构稳固承托力强的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.8
-          },
-          {
-            "entry_id": 3633,
-            "name": "真正好睡不踩雷的床垫推荐",
-            "mention_rate": 83.3,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3636,
-            "name": "高端弹簧床垫品牌推荐",
-            "mention_rate": 83.3,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3638,
-            "name": "结实耐用不塌陷的高端弹簧床垫推荐",
-            "mention_rate": 83.3,
-            "position": 2.5
-          },
-          {
-            "entry_id": 3639,
-            "name": "七千左右床垫品牌排行榜前十名",
-            "mention_rate": 83.3,
-            "position": 4.2
-          },
-          {
-            "entry_id": 3623,
-            "name": "床垫哪个牌子的质量比较好",
-            "mention_rate": 66.7,
-            "position": 4.3
-          },
-          {
-            "entry_id": 3624,
-            "name": "床垫品牌推荐",
-            "mention_rate": 66.7,
-            "position": 6
-          },
-          {
-            "entry_id": 3630,
-            "name": "噪音小的床垫推荐",
-            "mention_rate": 66.7,
-            "position": 6.8
-          },
-          {
-            "entry_id": 3637,
-            "name": "干爽透气不闷热的高端弹簧床垫推荐",
-            "mention_rate": 66.7,
-            "position": 3.8
-          },
-          {
-            "entry_id": 3626,
-            "name": "弹簧床垫推荐",
-            "mention_rate": 50,
-            "position": 5.3
-          },
-          {
-            "entry_id": 3627,
-            "name": "护脊效果好防腰疼的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.5
-          },
-          {
-            "entry_id": 3631,
-            "name": "干爽透气不闷热的床垫推荐",
-            "mention_rate": 50,
-            "position": 5.2
-          },
-          {
-            "entry_id": 3634,
-            "name": "结实耐用不塌陷的床垫推荐",
-            "mention_rate": 50,
-            "position": 3.2
-          },
-          {
-            "entry_id": 3629,
-            "name": "环保无甲醛床垫推荐",
-            "mention_rate": 33.3,
-            "position": 5.7
+            "name": "知名品牌质量好的床垫推荐",
+            "mention_rate": 0,
+            "position": null
           }
         ]
       },
@@ -3855,102 +3384,102 @@
         {
           "name": "床垫品牌排行榜前十名",
           "mention_rate": 100,
-          "position": 4.5
-        },
-        {
-          "name": "知名品牌质量好的床垫推荐",
-          "mention_rate": 100,
-          "position": 3.5
-        },
-        {
-          "name": "高端弹簧床垫品牌排行榜前十名",
-          "mention_rate": 100,
-          "position": 6
-        },
-        {
-          "name": "七千左右床垫哪个牌子的质量比较好",
-          "mention_rate": 100,
-          "position": 3.5
-        },
-        {
-          "name": "七千左右床垫品牌推荐",
-          "mention_rate": 100,
           "position": 3.3
         },
         {
-          "name": "适中偏硬、支撑性好的床垫推荐",
-          "mention_rate": 83.3,
-          "position": 3
-        },
-        {
-          "name": "结构稳固承托力强的床垫推荐",
-          "mention_rate": 83.3,
-          "position": 2.8
-        },
-        {
-          "name": "真正好睡不踩雷的床垫推荐",
-          "mention_rate": 83.3,
-          "position": 3.8
-        },
-        {
-          "name": "高端弹簧床垫品牌推荐",
-          "mention_rate": 83.3,
-          "position": 5.2
-        },
-        {
-          "name": "结实耐用不塌陷的高端弹簧床垫推荐",
-          "mention_rate": 83.3,
-          "position": 2.5
-        },
-        {
-          "name": "七千左右床垫品牌排行榜前十名",
-          "mention_rate": 83.3,
-          "position": 4.2
+          "name": "干爽透气不闷热的高端弹簧床垫推荐",
+          "mention_rate": 100,
+          "position": 2.2
         },
         {
           "name": "床垫哪个牌子的质量比较好",
-          "mention_rate": 66.7,
-          "position": 4.3
+          "mention_rate": 83.3,
+          "position": 2.2
         },
         {
           "name": "床垫品牌推荐",
-          "mention_rate": 66.7,
-          "position": 6
-        },
-        {
-          "name": "噪音小的床垫推荐",
-          "mention_rate": 66.7,
-          "position": 6.8
-        },
-        {
-          "name": "干爽透气不闷热的高端弹簧床垫推荐",
-          "mention_rate": 66.7,
+          "mention_rate": 83.3,
           "position": 3.8
         },
         {
           "name": "弹簧床垫推荐",
-          "mention_rate": 50,
+          "mention_rate": 83.3,
+          "position": 5.5
+        },
+        {
+          "name": "知名品牌质量好的床垫推荐",
+          "mention_rate": 83.3,
+          "position": 4.7
+        },
+        {
+          "name": "噪音小的床垫推荐",
+          "mention_rate": 83.3,
+          "position": 3.2
+        },
+        {
+          "name": "高端弹簧床垫品牌排行榜前十名",
+          "mention_rate": 83.3,
+          "position": 7.7
+        },
+        {
+          "name": "高端弹簧床垫品牌推荐",
+          "mention_rate": 83.3,
           "position": 5.3
+        },
+        {
+          "name": "结实耐用不塌陷的高端弹簧床垫推荐",
+          "mention_rate": 83.3,
+          "position": 3.3
+        },
+        {
+          "name": "七千左右床垫品牌排行榜前十名",
+          "mention_rate": 83.3,
+          "position": 1.5
+        },
+        {
+          "name": "七千左右床垫哪个牌子的质量比较好",
+          "mention_rate": 83.3,
+          "position": 2
+        },
+        {
+          "name": "七千左右床垫品牌推荐",
+          "mention_rate": 83.3,
+          "position": 2.2
+        },
+        {
+          "name": "干爽透气不闷热的床垫推荐",
+          "mention_rate": 66.7,
+          "position": 4.5
+        },
+        {
+          "name": "结构稳固承托力强的床垫推荐",
+          "mention_rate": 66.7,
+          "position": 2.8
+        },
+        {
+          "name": "真正好睡不踩雷的床垫推荐",
+          "mention_rate": 66.7,
+          "position": 4
+        },
+        {
+          "name": "适中偏硬、支撑性好的床垫推荐",
+          "mention_rate": 50,
+          "position": 5.8
         },
         {
           "name": "护脊效果好防腰疼的床垫推荐",
           "mention_rate": 50,
-          "position": 5.5
+          "position": 3.8
         },
         {
-          "name": "干爽透气不闷热的床垫推荐",
+          "name": "环保无甲醛床垫推荐",
           "mention_rate": 50,
-          "position": 5.2
+          "position": 5.8
         },
         {
           "name": "结实耐用不塌陷的床垫推荐",
           "mention_rate": 50,
-          "position": 3.2
-        },
-        {
-          "name": "环保无甲醛床垫推荐",
-          "mention_rate": 33.3,
-          "position": 5.7
+          "position": 4.5
         }
       ],
       "delivery": {

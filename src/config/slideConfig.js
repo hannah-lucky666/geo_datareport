@@ -33,9 +33,9 @@ function makeEntryPages(projectId, pageCount, pageSize) {
   return pages;
 }
 
-const KeywordPages_Smart = makeEntryPages(182, 2, 15);
-const KeywordPages_AI = makeEntryPages(181, 2, 15);
-const KeywordPages_Musi = makeEntryPages(239, 2, 10);
+const KeywordPages_Smart = makeEntryPages(392, 2, 15);
+const KeywordPages_AI = makeEntryPages(391, 2, 15);
+const KeywordPages_Musi = makeEntryPages(393, 2, 10);
 
 export const slideConfig = [
   {

@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品本月延续领跑：提及率由6月66.7%升至71.7%，Top1仍居第一（18.3%），平均位次由NO.5.2前移至NO.4.9。
+                1. 本品本月全面领跑：提及率由6月58.3%大幅升至75.8%，Top1升至24.2%稳居第一，平均位次由NO.5.5前移至NO.4.0，竞品排名升至NO.1。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 喜临门以60%提及率、位次并列NO.4.9紧贴；丝涟Top1达16.7%仅差1.6个百分点，金可儿、雅兰仍构成第二梯队压力。
+                2. 喜临门（52.5%）、金可儿（50.8%）、丝涟（50%）构成第二梯队；丝涟Top1 13.3%仍最接近本品，差距已扩大至10.9个百分点。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '巩固第一名位势', desc: '延续护脊释压、弹簧承托等高相关内容投放，拉开与喜临门在位次上的胶着态势。' },
+                { num: '01', title: '巩固第一名位势', desc: '延续支撑性好、透气性好等高相关内容投放，继续拉开与喜临门在提及率与位次上的差距。' },
                 { num: '02', title: '多价位段覆盖', desc: '针对七千价位与万元主卧升级词条分别铺设差异化产品表达，降低溢价质疑带来的转化损耗。' },
-                { num: '03', title: '同台竞品拦截', desc: '加强对丝涟、喜临门的用料与耐用性对比语料，守住18.3%的Top1微弱领先优势。' },
+                { num: '03', title: '同台竞品拦截', desc: '加强对丝涟、喜临门的用料与耐用性对比语料，守住24.2%的Top1领先优势。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>
