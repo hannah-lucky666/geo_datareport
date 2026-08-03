@@ -7,6 +7,9 @@ import Page_ContentAnalysis_AI from '../pages/Page_ContentAnalysis_AI';
 import Page_ContentDetails_AI from '../pages/Page_ContentDetails_AI';
 import Page_CompetitorAnalysis_AI from '../pages/Page_CompetitorAnalysis_AI';
 import Page_CompetitorAnalysis_Musi from '../pages/Page_CompetitorAnalysis_Musi';
+import Page_PlatformPerformance from '../pages/Page_PlatformPerformance';
+import Page_PlatformPerformance_AI from '../pages/Page_PlatformPerformance_AI';
+import Page_PlatformPerformance_Musi from '../pages/Page_PlatformPerformance_Musi';
 import Page_ContentDetails_Musi from '../pages/Page_ContentDetails_Musi';
 import Page_ContentAnalysis_Musi from '../pages/Page_ContentAnalysis_Musi';
 import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
@@ -63,6 +66,10 @@ export const slideConfig = [
   { type: 'page', title: '慕思智能床 竞品分析', component: Page_CompetitorAnalysis },
   { type: 'page', title: '慕思AI床垫 竞品分析', component: Page_CompetitorAnalysis_AI },
   { type: 'page', title: '慕思床垫 竞品分析', component: Page_CompetitorAnalysis_Musi },
+  { type: 'section', title: '各AI平台表现' },
+  { type: 'page', title: '慕思智能床 各AI平台表现', component: Page_PlatformPerformance },
+  { type: 'page', title: '慕思AI床垫 各AI平台表现', component: Page_PlatformPerformance_AI },
+  { type: 'page', title: '慕思床垫 各AI平台表现', component: Page_PlatformPerformance_Musi },
 
   { type: 'chapter', title: '投放内容与引用明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '投放渠道与数据明细' },

@@ -104,7 +104,7 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品本月全面领跑：提及率由6月58.3%大幅升至75.8%，Top1升至24.2%稳居第一，平均位次由NO.5.5前移至NO.4.0，竞品排名升至NO.1。
+                1. 本品本月全面领跑：提及率由优化前41.7%大幅升至75.8%，Top1升至24.2%稳居第一，平均位次由NO.6.04前移至NO.4.0，竞品排名由NO.4升至NO.1。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">

@@ -1,10 +1,17 @@
 {
   "meta": {
     "label": "2026年7月",
-    "june": {
-      "smart": "2026-06-25",
-      "ai": "2026-06-25",
-      "mattress": "2026-06-25"
+    "baseline": {
+      "source": "ppt",
+      "smart": "V3优化前",
+      "ai": "V3优化前",
+      "mattress": "6月汇报-5月(=优化前)"
+    },
+    "may": {
+      "source": "ppt",
+      "smart": "V3优化后/5月",
+      "ai": "V3优化后/5月",
+      "mattress": "6月汇报-5月"
     },
     "july": {
       "smart": "2026-07-30",
@@ -17,10 +24,16 @@
       "name": "慕思智能床",
       "brandMatch": "慕思智能床",
       "project_id": 392,
-      "june": {
-        "mention_rate": 87.8,
-        "top1_mention_rate": 41.1,
-        "avg_position": 2.7,
+      "baseline": {
+        "mention_rate": 43.9,
+        "top1_mention_rate": 17.3,
+        "avg_position": 4.24,
+        "influence_rank": 3
+      },
+      "may": {
+        "mention_rate": 73.6,
+        "top1_mention_rate": 40.1,
+        "avg_position": 2.9,
         "influence_rank": 1
       },
       "july": {
@@ -98,6 +111,50 @@
           }
         ]
       },
+      "platform_stats": [
+        {
+          "platform_id": 1,
+          "platform_name": "DeepSeek",
+          "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+          "brand_mention_rate": 76.7,
+          "avg_position": 3.6
+        },
+        {
+          "platform_id": 2,
+          "platform_name": "豆包",
+          "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+          "brand_mention_rate": 90,
+          "avg_position": 2.1
+        },
+        {
+          "platform_id": 3,
+          "platform_name": "元宝",
+          "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+          "brand_mention_rate": 100,
+          "avg_position": 1.5
+        },
+        {
+          "platform_id": 4,
+          "platform_name": "文心",
+          "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+          "brand_mention_rate": 96.7,
+          "avg_position": 2.1
+        },
+        {
+          "platform_id": 5,
+          "platform_name": "通义千问",
+          "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+          "brand_mention_rate": 73.3,
+          "avg_position": 3
+        },
+        {
+          "platform_id": 6,
+          "platform_name": "Kimi",
+          "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+          "brand_mention_rate": 100,
+          "avg_position": 1.9
+        }
+      ],
       "sentiments": {
         "positive": 97.2,
         "negative": 2.8,
@@ -1343,10 +1400,16 @@
       "name": "慕思AI床垫",
       "brandMatch": "慕思AI床垫",
       "project_id": 391,
-      "june": {
-        "mention_rate": 88.9,
-        "top1_mention_rate": 61.7,
-        "avg_position": 2.1,
+      "baseline": {
+        "mention_rate": 40.5,
+        "top1_mention_rate": 21.8,
+        "avg_position": 5.26,
+        "influence_rank": 5
+      },
+      "may": {
+        "mention_rate": 82.4,
+        "top1_mention_rate": 51,
+        "avg_position": 2.5,
         "influence_rank": 1
       },
       "july": {
@@ -1424,6 +1487,50 @@
           }
         ]
       },
+      "platform_stats": [
+        {
+          "platform_id": 1,
+          "platform_name": "DeepSeek",
+          "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+          "brand_mention_rate": 90,
+          "avg_position": 2.6
+        },
+        {
+          "platform_id": 2,
+          "platform_name": "豆包",
+          "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+          "brand_mention_rate": 93.3,
+          "avg_position": 2.1
+        },
+        {
+          "platform_id": 3,
+          "platform_name": "元宝",
+          "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+          "brand_mention_rate": 83.3,
+          "avg_position": 2.2
+        },
+        {
+          "platform_id": 4,
+          "platform_name": "文心",
+          "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+          "brand_mention_rate": 100,
+          "avg_position": 1.4
+        },
+        {
+          "platform_id": 5,
+          "platform_name": "通义千问",
+          "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+          "brand_mention_rate": 80,
+          "avg_position": 2.1
+        },
+        {
+          "platform_id": 6,
+          "platform_name": "Kimi",
+          "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+          "brand_mention_rate": 96.7,
+          "avg_position": 1.9
+        }
+      ],
       "sentiments": {
         "positive": 94.4,
         "negative": 5.6,
@@ -2672,11 +2779,17 @@
       "name": "慕思床垫",
       "brandMatch": "慕思",
       "project_id": 393,
-      "june": {
-        "mention_rate": 58.3,
-        "top1_mention_rate": 18.3,
-        "avg_position": 5.5,
-        "influence_rank": 2
+      "baseline": {
+        "mention_rate": 41.7,
+        "top1_mention_rate": 10.7,
+        "avg_position": 6.04,
+        "influence_rank": 4
+      },
+      "may": {
+        "mention_rate": null,
+        "top1_mention_rate": null,
+        "avg_position": null,
+        "influence_rank": null
       },
       "july": {
         "mention_rate": 75.8,
@@ -2753,6 +2866,50 @@
           }
         ]
       },
+      "platform_stats": [
+        {
+          "platform_id": 1,
+          "platform_name": "DeepSeek",
+          "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+          "brand_mention_rate": 70,
+          "avg_position": 4.2
+        },
+        {
+          "platform_id": 2,
+          "platform_name": "豆包",
+          "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+          "brand_mention_rate": 70,
+          "avg_position": 3.7
+        },
+        {
+          "platform_id": 3,
+          "platform_name": "元宝",
+          "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+          "brand_mention_rate": 70,
+          "avg_position": 3.4
+        },
+        {
+          "platform_id": 4,
+          "platform_name": "文心",
+          "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+          "brand_mention_rate": 85,
+          "avg_position": 2.9
+        },
+        {
+          "platform_id": 5,
+          "platform_name": "通义千问",
+          "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+          "brand_mention_rate": 65,
+          "avg_position": 4.2
+        },
+        {
+          "platform_id": 6,
+          "platform_name": "Kimi",
+          "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+          "brand_mention_rate": 95,
+          "avg_position": 5.8
+        }
+      ],
       "sentiments": {
         "positive": 99.2,
         "negative": 0.8,

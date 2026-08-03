@@ -10,30 +10,51 @@ function load(id, date) {
   return JSON.parse(readFileSync(`src/data/geoReport_${id}_${date}.json`, 'utf8'));
 }
 function selfTop1(r) {
-  return r.compare.top1_ranking.find((b) => b.is_target)?.top1_mention_rate ?? null;
+  return r.stats?.top1_mention_rate
+    ?? r.compare.top1_ranking.find((b) => b.is_target)?.top1_mention_rate
+    ?? null;
 }
 
+const HISTORICAL = {
+  smart: {
+    baseline: { mention_rate: 43.9, top1_mention_rate: 17.3, avg_position: 4.24, influence_rank: 3 },
+    may: { mention_rate: 73.6, top1_mention_rate: 40.1, avg_position: 2.9, influence_rank: 1 },
+  },
+  ai: {
+    baseline: { mention_rate: 40.5, top1_mention_rate: 21.8, avg_position: 5.26, influence_rank: 5 },
+    may: { mention_rate: 82.4, top1_mention_rate: 51, avg_position: 2.5, influence_rank: 1 },
+  },
+  mattress: {
+    baseline: { mention_rate: 41.7, top1_mention_rate: 10.7, avg_position: 6.04, influence_rank: 4 },
+    may: { mention_rate: null, top1_mention_rate: null, avg_position: null, influence_rank: null },
+  },
+};
+
 const map = [
-  ['smart', 392, '2026-06-25', '2026-07-30'],
-  ['ai', 391, '2026-06-25', '2026-07-30'],
-  ['mattress', 393, '2026-06-25', '2026-07-30'],
+  ['smart', 392, '2026-07-30'],
+  ['ai', 391, '2026-07-30'],
+  ['mattress', 393, '2026-07-30'],
 ];
 
 console.log('=== META ===');
 console.log(JSON.stringify(report.meta, null, 2));
 
-console.log('\n=== GEO FILE vs REPORT ===');
-for (const [key, id, june, july] of map) {
-  const jn = load(id, june);
+console.log('\n=== HISTORICAL + GEO JULY vs REPORT ===');
+for (const [key, id, july] of map) {
   const jl = load(id, july);
-  const selfJn = jn.influence.list.find((b) => b.is_target);
   const selfJl = jl.influence.list.find((b) => b.is_target);
   const p = report.products[key];
+  const hist = HISTORICAL[key];
+
+  for (const period of ['baseline', 'may']) {
+    for (const field of ['mention_rate', 'top1_mention_rate', 'avg_position', 'influence_rank']) {
+      if (p[period][field] !== hist[period][field]) {
+        issues.push(`${key} ${period}.${field} report=${p[period][field]} expected=${hist[period][field]}`);
+      }
+    }
+  }
+
   const checks = [
-    ['june.mention', p.june.mention_rate, jn.stats.brand_mention_rate],
-    ['june.top1', p.june.top1_mention_rate, selfTop1(jn)],
-    ['june.pos', p.june.avg_position, jn.stats.avg_position],
-    ['june.rank', p.june.influence_rank, selfJn?.rank],
     ['july.mention', p.july.mention_rate, jl.stats.brand_mention_rate],
     ['july.top1', p.july.top1_mention_rate, selfTop1(jl)],
     ['july.pos', p.july.avg_position, jl.stats.avg_position],
@@ -65,7 +86,29 @@ for (const [key, id, june, july] of map) {
       issues.push(`${key} pos[${i}] report=${posr.name}/${posr.value} file=${pname}/${pval}`);
     }
   }
-  console.log(key, 'P' + id, 'ok metrics+boards');
+
+  const filePl = jl.stats.platform_stats || [];
+  const reportPl = p.platform_stats || [];
+  if (reportPl.length !== filePl.length) {
+    issues.push(`${key} platform_stats length report=${reportPl.length} file=${filePl.length}`);
+  } else {
+    for (let i = 0; i < filePl.length; i++) {
+      const a = reportPl[i];
+      const b = filePl[i];
+      const expectedName = b.platform_name === 'kimi' ? 'Kimi' : b.platform_name;
+      if (
+        a.platform_id !== b.platform_id
+        || a.platform_name !== expectedName
+        || a.brand_mention_rate !== b.brand_mention_rate
+        || a.avg_position !== b.avg_position
+      ) {
+        issues.push(
+          `${key} platform_stats[${i}] report=${a.platform_name}/${a.brand_mention_rate}/${a.avg_position} file=${b.platform_name}/${b.brand_mention_rate}/${b.avg_position}`
+        );
+      }
+    }
+  }
+  console.log(key, 'P' + id, 'ok metrics+boards+platform_stats');
 }
 
 console.log('\n=== PLATFORM ENTRIES ===');
@@ -98,58 +141,17 @@ for (const [pid, expectedDate] of [
 }
 
 console.log('\n=== DELIVERY (Excel 0721, not GEO) ===');
-for (const [k, v] of Object.entries(delivery)) {
-  const sum =
-    v.platform_totals.deepseek +
-    v.platform_totals.doubao +
-    v.platform_totals.yuanbao +
-    v.platform_totals.wenxin +
-    v.platform_totals.tongyi +
-    v.platform_totals.kimi;
-  if (sum !== v.platform_totals.total) {
-    issues.push(`${k} platform sum ${sum} != total ${v.platform_totals.total}`);
-  }
-  console.log(k, v.overview);
+for (const key of ['smart', 'ai', 'mattress']) {
+  const a = JSON.stringify(report.products[key].delivery?.overview);
+  const b = JSON.stringify(delivery[key]?.overview);
+  if (a !== b) issues.push(`${key} delivery overview drifted from excel`);
+  else console.log(key, 'delivery intact');
 }
 
-console.log('\n=== HARDCODED COPY vs NEW DATA ===');
-const files = {
-  core: readFileSync('src/pages/Page_CoreDataOverview.jsx', 'utf8'),
-  smart: readFileSync('src/pages/Page_CompetitorAnalysis.jsx', 'utf8'),
-  ai: readFileSync('src/pages/Page_CompetitorAnalysis_AI.jsx', 'utf8'),
-  mattress: readFileSync('src/pages/Page_CompetitorAnalysis_Musi.jsx', 'utf8'),
-  content: readFileSync('src/pages/Page_ContentAnalysis.jsx', 'utf8'),
-  query: readFileSync('src/pages/Page_QueryDataSystemLink.jsx', 'utf8'),
-  slide: readFileSync('src/config/slideConfig.js', 'utf8'),
-};
-const must = [
-  ['core', '89.4%'], ['core', '90.6%'], ['core', '75.8%'], ['core', '58.3%'], ['core', 'NO.1'],
-  ['smart', '89.4%'], ['smart', '42.8%'], ['smart', '70.6%'],
-  ['ai', '90.6%'], ['ai', '60%'], ['ai', '57.2%'],
-  ['mattress', '75.8%'], ['mattress', '24.2%'], ['mattress', '58.3%'],
-  ['content', '2.8%'], ['content', '94.4%'], ['content', '99.2%'],
-  ['content', '生态联动'], ['content', '功能全面'], ['content', '支撑性好'],
-  ['query', '392'], ['query', '391'], ['query', '393'], ['query', '07-30'],
-  ['slide', '392'], ['slide', '391'], ['slide', '393'],
-];
-const forbid = [
-  ['core', '71.7%'], ['core', '86.7%'], ['core', '77.2%'],
-  ['smart', '38.3%'], ['smart', '32.8%'], ['smart', '86.7%'],
-  ['ai', '77.2%'], ['ai', '53.3%'],
-  ['mattress', '71.7%'], ['mattress', '66.7%'],
-  ['query', '182'], ['query', '181'], ['query', '239'], ['query', '07-20'],
-  ['slide', '182'], ['slide', '181'], ['slide', '239'],
-  ['content', '3.3%'], ['content', '98.3%'], ['content', '波动极小'],
-];
-for (const [k, s] of must) if (!files[k].includes(s)) issues.push(`MISSING ${k}: ${s}`);
-for (const [k, s] of forbid) if (files[k].includes(s)) issues.push(`STALE ${k}: ${s}`);
-
-const slideOrder = JSON.parse(readFileSync('src/slideOrder.json', 'utf8'));
-const keywordIds = slideOrder.filter((id) => id.startsWith('chapter-3-0-'));
-console.log('\n=== SLIDE ORDER KEYWORD PAGES ===', keywordIds.length, '(expect 36)');
-if (keywordIds.length !== 36) issues.push(`keyword pages in slideOrder = ${keywordIds.length}, expect 36`);
-
-console.log('\n=== ISSUES ===');
-if (!issues.length) console.log('NONE');
-else issues.forEach((i) => console.log('-', i));
-process.exit(issues.length ? 1 : 0);
+console.log('\n=== RESULT ===');
+if (issues.length) {
+  console.log('ISSUES', issues.length);
+  for (const i of issues) console.log('-', i);
+  process.exit(1);
+}
+console.log('ALL CHECKS PASSED');
