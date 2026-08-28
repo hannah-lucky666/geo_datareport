@@ -1,5 +1,8 @@
 import React from 'react';
-import platformData from '../data/platform_entries.json';
+import report from '../data/yuanyueAugustReport.json';
+
+const platformData = report.platform_entries;
+const AUGUST_DATE = report.meta.august_date;
 
 const PLATFORM_NAMES = {
   1: 'DeepSeek',
@@ -20,25 +23,23 @@ const LOGOS = {
 };
 
 const PRODUCT_META = {
-  392: { short: '慕思智能床', full: '慕思智能床' },
-  391: { short: '慕思AI床垫', full: '慕思AI床垫' },
-  393: { short: '慕思床垫', full: '慕思床垫' },
+  535: { short: '美素佳儿源悦', full: '美素佳儿源悦' },
 };
 
 export default function Page_QueryDataSystemLink({
-  projectId = 392,
+  projectId = 535,
   platformId = 1,
   pageIndex = 0,
-  pageSize = 20,
+  pageSize = 16,
 }) {
-  const allData = platformData[String(projectId)]?.[String(platformId)] || [];
+  const allData = platformData[String(platformId)] || [];
   const total = allData.length;
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
   const safePage = Math.min(pageIndex, totalPages - 1);
   const data = allData.slice(safePage * pageSize, safePage * pageSize + pageSize);
   const startRank = safePage * pageSize;
 
-  const product = PRODUCT_META[projectId] || { short: '慕思', full: '慕思' };
+  const product = PRODUCT_META[projectId] || { short: '美素佳儿源悦', full: '美素佳儿源悦' };
   const platformName = PLATFORM_NAMES[platformId] || '';
   const slideTitle = `${product.short}词条数据明细（${platformName}）`;
 
@@ -62,7 +63,7 @@ export default function Page_QueryDataSystemLink({
           <div className="flex items-center gap-1.5 bg-white border border-zinc-200/80 rounded-md px-3 py-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
             <span className="text-zinc-400 text-xs">📅</span>
             <span>日期</span>
-            <span className="text-zinc-400 text-[10px] ml-1">07-30</span>
+            <span className="text-zinc-400 text-[10px] ml-1">{AUGUST_DATE.slice(5)}</span>
             <span className="text-zinc-300 text-[9px] ml-1">▼</span>
           </div>
 

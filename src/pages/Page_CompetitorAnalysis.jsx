@@ -1,13 +1,13 @@
 import React from 'react';
-import report from '../data/musiJulyReport.json';
+import report from '../data/yuanyueAugustReport.json';
 
-const brandName = '慕思智能床';
-const data = report.products.smart;
+const brandName = '源悦';
+const { compare, before, august } = report;
 
 export default function Page_CompetitorAnalysis() {
-  const mentionRateData = data.compare.mention_rate;
-  const top1RateData = data.compare.top1;
-  const avgRankData = data.compare.position;
+  const mentionRateData = compare.mention_rate;
+  const top1RateData = compare.top1;
+  const avgRankData = compare.position;
 
   const renderTable = (title, headers, rows) => {
     return (
@@ -84,8 +84,8 @@ export default function Page_CompetitorAnalysis() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          慕思智能床竞品分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
+          美素佳儿源悦竞品分析
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
         </h1>
       </div>
 
@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品本月三项指标全面领先：提及率89.4%、Top1 42.8%、平均位次NO.2.4均居第一；舒福德以70.6%提及率、32.2% Top1紧随其后，仍是首要对手。
+                1. 合生元派星三项指标全面领先：提及率44.3%、Top1 13.9%、平均位次NO.5.8均居第一；金领冠珍护铂萃、卓傲、超启能恩形成26%—29%的第二梯队，是首要追赶对象。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 喜临门、8H、MPE分列提及率第三至第五，梯队拉开；舒福德位次NO.2.9仍最接近本品，需持续防守其反超窗口。
+                2. 源悦本月提及率10.7%、位次NO.7.8，品牌影响力指数由{before.influence_score}升至{august.influence_score}、排名NO.41→NO.17，是本月进位最快的品牌；但Top1提及率仍为0，尚未进入首推顺位。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '扩大首推优势', desc: '针对舒福德仍具威胁的Top1场景，加码止鼾、零重力等高转化词条的定性对比内容。' },
-                { num: '02', title: '巩固位次领先', desc: '在2万价位与品质售后类词条强化“第一顺位”表达，继续拉开与舒福德0.5位的位次差距。' },
-                { num: '03', title: '第二梯队压制', desc: '关注喜临门、8H进入前五的渗透路径，补充家庭场景与口碑类长尾语料，防止份额被稀释。' },
+                { num: '01', title: '突破首推顺位', desc: '针对派星、珍护垄断的Top1场景，加码奶源、蛋白结构等高转化词条的定性对比内容。' },
+                { num: '02', title: '扩大提及广度', desc: '把“婴儿奶粉排行榜”“口碑好的奶粉”等泛选购词从单点提及扩展到稳定进榜，缩小与第二梯队的差距。' },
+                { num: '03', title: '压缩位次差距', desc: '位次NO.7.8落后头部约2位，需在成分与配方对比类内容中强化第一顺位表达，向6.5以内靠拢。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

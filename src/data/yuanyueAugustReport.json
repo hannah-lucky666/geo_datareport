@@ -1,0 +1,1733 @@
+{
+  "meta": {
+    "project_id": 535,
+    "project_name": "美素佳儿源悦(中位数)",
+    "product": "美素佳儿源悦",
+    "brand": "美素佳儿",
+    "label": "2026年8月",
+    "before_date": "2026-08-12",
+    "august_date": "2026-08-28",
+    "before_label": "优化前（8/12）",
+    "august_label": "8月（8/28）"
+  },
+  "scope": {
+    "platforms": 2,
+    "platform_names": [
+      "DeepSeek",
+      "豆包"
+    ],
+    "entries": 61,
+    "conversations": 122
+  },
+  "before": {
+    "mention_rate": 4.1,
+    "top1_mention_rate": 0,
+    "avg_position": 8.4,
+    "influence_score": 12.9,
+    "influence_rank": 41,
+    "conversations": 122,
+    "covered_entries": 5,
+    "platforms": [
+      {
+        "name": "DeepSeek",
+        "mention_rate": 1.6,
+        "avg_position": 6.3
+      },
+      {
+        "name": "豆包",
+        "mention_rate": 6.6,
+        "avg_position": 10.3
+      }
+    ]
+  },
+  "august": {
+    "mention_rate": 10.7,
+    "top1_mention_rate": 0,
+    "avg_position": 7.8,
+    "influence_score": 19.2,
+    "influence_rank": 17,
+    "conversations": 122,
+    "covered_entries": 12,
+    "platforms": [
+      {
+        "name": "DeepSeek",
+        "mention_rate": 11.5,
+        "avg_position": 5.9
+      },
+      {
+        "name": "豆包",
+        "mention_rate": 9.8,
+        "avg_position": 9.4
+      }
+    ]
+  },
+  "compare": {
+    "mention_rate": [
+      {
+        "name": "派星",
+        "value": "44.3%",
+        "isTarget": false
+      },
+      {
+        "name": "金领冠珍护铂萃",
+        "value": "28.7%",
+        "isTarget": false
+      },
+      {
+        "name": "卓傲",
+        "value": "26.2%",
+        "isTarget": false
+      },
+      {
+        "name": "超启能恩",
+        "value": "26.2%",
+        "isTarget": false
+      },
+      {
+        "name": "源悦",
+        "value": "10.7%",
+        "isTarget": true
+      }
+    ],
+    "position": [
+      {
+        "name": "派星",
+        "value": "NO. 5.8",
+        "isTarget": false
+      },
+      {
+        "name": "金领冠珍护铂萃",
+        "value": "NO. 6.4",
+        "isTarget": false
+      },
+      {
+        "name": "珍护",
+        "value": "NO. 6.4",
+        "isTarget": false
+      },
+      {
+        "name": "星飞帆卓睿",
+        "value": "NO. 6.6",
+        "isTarget": false
+      },
+      {
+        "name": "源悦",
+        "value": "NO. 7.8",
+        "isTarget": true
+      }
+    ],
+    "top1": [
+      {
+        "name": "派星",
+        "value": "13.9%",
+        "isTarget": false
+      },
+      {
+        "name": "珍护",
+        "value": "9%",
+        "isTarget": false
+      },
+      {
+        "name": "星飞帆卓睿",
+        "value": "6.6%",
+        "isTarget": false
+      },
+      {
+        "name": "能恩全护A2",
+        "value": "6.6%",
+        "isTarget": false
+      },
+      {
+        "name": "优博瑞霂",
+        "value": "4.1%",
+        "isTarget": false
+      }
+    ],
+    "influence": [
+      {
+        "name": "合生元",
+        "value": "47.4",
+        "rank": 1,
+        "isTarget": false
+      },
+      {
+        "name": "伊利",
+        "value": "35.6",
+        "rank": 2,
+        "isTarget": false
+      },
+      {
+        "name": "金领冠",
+        "value": "33.6",
+        "rank": 3,
+        "isTarget": false
+      },
+      {
+        "name": "爱他美",
+        "value": "31.7",
+        "rank": 4,
+        "isTarget": false
+      },
+      {
+        "name": "美素佳儿",
+        "value": "19.2",
+        "rank": 17,
+        "isTarget": true
+      }
+    ]
+  },
+  "sentiments": {
+    "positive": 100,
+    "negative": 0,
+    "positive_keywords": [
+      "消化友好",
+      "配方优势",
+      "奶源纯净"
+    ],
+    "negative_keywords": [],
+    "before_positive_keywords": [
+      "配方温和",
+      "购买方便",
+      "售后稳妥"
+    ]
+  },
+  "entries": [
+    {
+      "name": "好消化易吸收奶粉排行榜推荐",
+      "mention_rate": 100,
+      "position": 7,
+      "before_mention_rate": 50
+    },
+    {
+      "name": "可以提升宝宝消化吸收能力的奶粉品牌推荐",
+      "mention_rate": 50,
+      "position": 7,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "消化吸收比较友好的奶粉推荐",
+      "mention_rate": 50,
+      "position": 6.5,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "婴儿奶粉口碑排行榜",
+      "mention_rate": 50,
+      "position": 8,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "市场上哪个婴儿奶粉比较推荐",
+      "mention_rate": 50,
+      "position": 7.5,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "口碑佳的婴儿奶粉有哪些",
+      "mention_rate": 50,
+      "position": 5.5,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "婴儿奶粉排行榜推荐",
+      "mention_rate": 50,
+      "position": 8,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "哪些婴儿奶粉口碑比较好",
+      "mention_rate": 50,
+      "position": 6,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "婴儿奶粉口碑好的有哪些",
+      "mention_rate": 50,
+      "position": 5.5,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "便秘宝宝推荐哪个奶粉品牌",
+      "mention_rate": 50,
+      "position": 5,
+      "before_mention_rate": 50
+    },
+    {
+      "name": "哪个品牌的奶粉适合容易便秘的宝宝",
+      "mention_rate": 50,
+      "position": 5.5,
+      "before_mention_rate": 50
+    },
+    {
+      "name": "哪个牌子的奶粉不容易便秘",
+      "mention_rate": 50,
+      "position": 5.5,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "推荐一款比较好消化吸收能长肉的奶粉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "易消化吸收好长肉的奶粉品牌推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "对宝宝消化吸收有帮助的奶粉品牌推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "哪款奶粉比较好消化吸收收不容易便秘",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "长肉好吸收奶粉品牌推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "什么奶粉好消化好吸收长肉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "哪个牌子的奶粉易消化吸收",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "给我推荐一款比较靠谱的婴儿奶粉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "有哪些靠谱的婴儿奶粉值得入手",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "靠谱的婴儿奶粉推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "婴儿奶粉排名前十的靠谱选择",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "有哪些靠谱的三段奶粉值得入手",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "给我推荐一款比较靠谱的三段奶粉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "靠谱的三段奶粉推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "三段奶粉口碑好的有哪些",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "三段奶粉排行榜推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "市场上哪个三段奶粉比较推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "口碑佳的三段奶粉有哪些",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "三段奶粉口碑排行榜",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "哪些三段奶粉口碑比较好",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "三段奶粉排名前十的靠谱选择",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "适度水解转普通奶粉哪款品牌好",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "哪款普通奶粉比较适合宝宝从水解奶粉转",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "要给宝宝从水解奶粉转到普通奶粉求推荐靠谱的品牌",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "水解转普通奶粉，想选宝宝不过敏的，有哪些值得买的",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "水解奶粉换普通奶粉，转奶后不易便秘的奶粉口碑榜有吗",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 50
+    },
+    {
+      "name": "求推荐适合水解转奶的普通奶粉，转奶后宝宝不容易便秘的",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "转奶选普通奶粉，宝宝不过敏的靠谱品牌前十有哪些",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 50
+    },
+    {
+      "name": "转奶选普通奶粉，要避免宝宝便秘的，靠谱品牌前十有哪些",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "适度水解转哪个牌子的普通奶粉好",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝水解奶粉转普通奶粉，哪些奶粉能缓解便秘、值得入手",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "水解奶粉换普通奶粉，哪些品牌宝宝喝了不易过敏",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "求推荐适合水解转奶的普通奶粉，要求宝宝不过敏",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "水解转普通奶粉，不易过敏的口碑奶粉排行有哪些",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "适度水解奶粉转普通奶粉，有哪些品牌可以推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "水解转普通奶粉，选什么奶粉能改善宝宝便秘",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝便秘喝什么牌子奶粉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝便秘推荐哪个奶粉品牌",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝排便困难推荐换成什么品牌奶粉？",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "不便秘奶粉推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "口碑好的宝宝通便奶粉有哪些",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝长肉喝什么牌子的奶粉好",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝长肉奶粉推荐",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "什么奶粉长肉又长高",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "喝了能长肉的三段奶粉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝不长肉喝哪个奶粉品牌",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "哪个牌子的奶粉营养好宝宝喝了长肉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝喝什么牌子的奶粉长肉效果好",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    },
+    {
+      "name": "宝宝瘦小喝什么品牌的奶粉能长肉",
+      "mention_rate": 0,
+      "position": null,
+      "before_mention_rate": 0
+    }
+  ],
+  "citations": {
+    "before": {
+      "citation_rate": 100,
+      "total_citations": 1804,
+      "platform_stats": [
+        {
+          "platform_name": "抖音",
+          "domain": "iesdouyin.com",
+          "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com.png",
+          "citation_count": 995,
+          "share": 55.2
+        },
+        {
+          "platform_name": "小荷健康",
+          "domain": "xiaohe.cn",
+          "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/m_xiaohe_cn.ico",
+          "citation_count": 116,
+          "share": 6.4
+        },
+        {
+          "platform_name": "妙手医生",
+          "domain": "miaoshou.com",
+          "logo_url": "https://cdn.deepseek.com/site-icons/miaoshou.com",
+          "citation_count": 60,
+          "share": 3.3
+        },
+        {
+          "platform_name": "SMZDM",
+          "domain": "smzdm.com",
+          "logo_url": "https://app.geoindexfuture.com/site-icons/smzdm.com.jpg",
+          "citation_count": 44,
+          "share": 2.4
+        },
+        {
+          "platform_name": "宝宝树",
+          "domain": "babytree.com",
+          "logo_url": "",
+          "citation_count": 41,
+          "share": 2.3
+        }
+      ]
+    },
+    "august": {
+      "citation_rate": 83.6,
+      "total_citations": 1552,
+      "platform_stats": [
+        {
+          "platform_name": "抖音",
+          "domain": "iesdouyin.com",
+          "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com.png",
+          "citation_count": 713,
+          "share": 45.9
+        },
+        {
+          "platform_name": "妙手医生",
+          "domain": "miaoshou.com",
+          "logo_url": "https://cdn.deepseek.com/site-icons/miaoshou.com",
+          "citation_count": 122,
+          "share": 7.9
+        },
+        {
+          "platform_name": "SMZDM",
+          "domain": "smzdm.com",
+          "logo_url": "https://app.geoindexfuture.com/site-icons/smzdm.com.jpg",
+          "citation_count": 75,
+          "share": 4.8
+        },
+        {
+          "platform_name": "新京报",
+          "domain": "bjnews.com.cn",
+          "logo_url": "https://cdn.deepseek.com/site-icons/bjnews.com.cn",
+          "citation_count": 38,
+          "share": 2.4
+        },
+        {
+          "platform_name": "就医160挂号网",
+          "domain": "91160.com",
+          "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/weixin_91160_com.ico",
+          "citation_count": 35,
+          "share": 2.3
+        }
+      ]
+    }
+  },
+  "delivery": {
+    "source": "美素佳儿源悦(中位数)_投放文章统计_0828.xlsx",
+    "generated_at": "2026-08-28",
+    "overview": {
+      "delivery_articles": 57,
+      "cited_articles": 5,
+      "cited_rate": 8.8,
+      "delivery_citations": 117,
+      "total_conversations": 1830,
+      "total_citation_records": 25735
+    },
+    "platform_totals": {
+      "total": 117,
+      "deepseek": 115,
+      "doubao": 2
+    },
+    "top10": [
+      {
+        "rank": 1,
+        "title": "2026适度水解转普通奶粉哪款品牌好，排行榜五款揭晓",
+        "platform": "生物在线",
+        "domain": "bioon.com.cn",
+        "date": "2026-08-19",
+        "total": 76,
+        "deepseek": 76,
+        "doubao": 0,
+        "isCited": "是"
+      },
+      {
+        "rank": 2,
+        "title": "预算卡在两百元出头，搜三段奶粉排行榜推荐时该盯哪几件事",
+        "platform": "综合速递（什么值得买）",
+        "domain": "post.smzdm.com",
+        "date": "2026-08-21",
+        "total": 34,
+        "deepseek": 34,
+        "doubao": 0,
+        "isCited": "是"
+      },
+      {
+        "rank": 3,
+        "title": "从挂壁到攒肚这五个疑问，好消化吸收的奶粉用哪个品牌比较好",
+        "platform": "生物在线",
+        "domain": "bioon.com.cn",
+        "date": "2026-08-19",
+        "total": 4,
+        "deepseek": 4,
+        "doubao": 0,
+        "isCited": "是"
+      },
+      {
+        "rank": 4,
+        "title": "一张榜单搞定水解转普通奶粉：起点不同，转法也不该照搬",
+        "platform": "杂物社（什么值得买）",
+        "domain": "post.smzdm.com",
+        "date": "2026-08-20",
+        "total": 2,
+        "deepseek": 0,
+        "doubao": 2,
+        "isCited": "是"
+      },
+      {
+        "rank": 5,
+        "title": "好消化易吸收奶粉排行榜推荐：先看蛋白结构和成粉工艺",
+        "platform": "分享好物来说（什么值得买）",
+        "domain": "post.smzdm.com",
+        "date": "2026-08-20",
+        "total": 1,
+        "deepseek": 1,
+        "doubao": 0,
+        "isCited": "是"
+      },
+      {
+        "rank": 6,
+        "title": "适度水解转普通奶粉哪款品牌好：顺序不能错",
+        "platform": "迷人的娱乐科技",
+        "domain": "v.douyin.com",
+        "date": "2026-08-23",
+        "total": 0,
+        "deepseek": 0,
+        "doubao": 0,
+        "isCited": "否"
+      },
+      {
+        "rank": 7,
+        "title": "哪款普通奶粉比较适合宝宝从水解奶粉转：转法比牌子重要",
+        "platform": "爱在美好科技",
+        "domain": "v.douyin.com",
+        "date": "2026-08-23",
+        "total": 0,
+        "deepseek": 0,
+        "doubao": 0,
+        "isCited": "否"
+      },
+      {
+        "rank": 8,
+        "title": "婴儿奶粉排行榜推荐：只盯配料表、奶源和工艺三处",
+        "platform": "每日科技解析",
+        "domain": "v.douyin.com",
+        "date": "2026-08-21",
+        "total": 0,
+        "deepseek": 0,
+        "doubao": 0,
+        "isCited": "否"
+      },
+      {
+        "rank": 9,
+        "title": "三段奶粉排行榜推荐：一岁多的孩子这样挑",
+        "platform": "妈妈知识宝典",
+        "domain": "v.douyin.com",
+        "date": "2026-08-21",
+        "total": 0,
+        "deepseek": 0,
+        "doubao": 0,
+        "isCited": "否"
+      },
+      {
+        "rank": 10,
+        "title": "换段那阵子三段奶粉怎么选，先把规格和段位定下来再挑配方",
+        "platform": "分享好物来说（什么值得买）",
+        "domain": "post.smzdm.com",
+        "date": "2026-08-20",
+        "total": 0,
+        "deepseek": 0,
+        "doubao": 0,
+        "isCited": "否"
+      }
+    ],
+    "top_channels": [
+      {
+        "channel": "生物在线",
+        "articles": 2,
+        "cited": 2,
+        "citedRate": 1,
+        "citations": 80
+      },
+      {
+        "channel": "综合速递（什么值得买）",
+        "articles": 1,
+        "cited": 1,
+        "citedRate": 1,
+        "citations": 34
+      },
+      {
+        "channel": "杂物社（什么值得买）",
+        "articles": 14,
+        "cited": 1,
+        "citedRate": 0.07142857142857142,
+        "citations": 2
+      },
+      {
+        "channel": "分享好物来说（什么值得买）",
+        "articles": 16,
+        "cited": 1,
+        "citedRate": 0.0625,
+        "citations": 1
+      }
+    ],
+    "domain_stats": [
+      {
+        "channel": "生物在线",
+        "articles": 2,
+        "cited": 2,
+        "citations": 80
+      },
+      {
+        "channel": "什么值得买",
+        "articles": 31,
+        "cited": 3,
+        "citations": 37
+      },
+      {
+        "channel": "今日头条",
+        "articles": 5,
+        "cited": 0,
+        "citations": 0
+      },
+      {
+        "channel": "抖音",
+        "articles": 4,
+        "cited": 0,
+        "citations": 0
+      },
+      {
+        "channel": "宝宝树",
+        "articles": 4,
+        "cited": 0,
+        "citations": 0
+      },
+      {
+        "channel": "妙手医生",
+        "articles": 4,
+        "cited": 0,
+        "citations": 0
+      },
+      {
+        "channel": "飞华健康",
+        "articles": 3,
+        "cited": 0,
+        "citations": 0
+      },
+      {
+        "channel": "薄荷健康",
+        "articles": 2,
+        "cited": 0,
+        "citations": 0
+      },
+      {
+        "channel": "妈妈网",
+        "articles": 2,
+        "cited": 0,
+        "citations": 0
+      }
+    ]
+  },
+  "platform_entries": {
+    "1": [
+      {
+        "entry_name": "好消化易吸收奶粉排行榜推荐",
+        "mention_rate": "100.0%",
+        "position": "NO. 6.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/c6b0f0dc6fe74245bc741fb6c9bc381c.png"
+      },
+      {
+        "entry_name": "婴儿奶粉口碑排行榜",
+        "mention_rate": "100.0%",
+        "position": "NO. 4.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d89cc4ee63664e9c9ec8a64fcf0f9f74.png"
+      },
+      {
+        "entry_name": "市场上哪个婴儿奶粉比较推荐",
+        "mention_rate": "100.0%",
+        "position": "NO. 5.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b9413b46364c4e3fa9b5a63e95d50587.png"
+      },
+      {
+        "entry_name": "口碑佳的婴儿奶粉有哪些",
+        "mention_rate": "100.0%",
+        "position": "NO. 2.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/049ae961bcb54edd9d1570d00a61080a.png"
+      },
+      {
+        "entry_name": "婴儿奶粉排行榜推荐",
+        "mention_rate": "100.0%",
+        "position": "NO. 4.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d4a569d322c84a56b944c4173b4f18e2.png"
+      },
+      {
+        "entry_name": "哪些婴儿奶粉口碑比较好",
+        "mention_rate": "100.0%",
+        "position": "NO. 2.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/004775a5c45641f3b50d7db95e1baf36.png"
+      },
+      {
+        "entry_name": "婴儿奶粉口碑好的有哪些",
+        "mention_rate": "100.0%",
+        "position": "NO. 2.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/433536b84bcc48a0877bb24112509314.png"
+      },
+      {
+        "entry_name": "推荐一款比较好消化吸收能长肉的奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/c5405a7f186c43baad5a2cdd8fb04f9c.png"
+      },
+      {
+        "entry_name": "易消化吸收好长肉的奶粉品牌推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/06712fe33aa14ea99d1dad844b432292.png"
+      },
+      {
+        "entry_name": "对宝宝消化吸收有帮助的奶粉品牌推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/564e8a99f4ac4e72ba1302cb7543ad14.png"
+      },
+      {
+        "entry_name": "哪款奶粉比较好消化吸收收不容易便秘",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/3cc3e4f0ce294cf9a8e647f8dd4a9a7e.png"
+      },
+      {
+        "entry_name": "长肉好吸收奶粉品牌推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8e11ebadc49a445a939e9190cb426acf.png"
+      },
+      {
+        "entry_name": "什么奶粉好消化好吸收长肉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8167bc03444c4550a0192b6c648184d8.png"
+      },
+      {
+        "entry_name": "哪个牌子的奶粉易消化吸收",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/dd09352bb99c4757bfc15a9637574eed.png"
+      },
+      {
+        "entry_name": "可以提升宝宝消化吸收能力的奶粉品牌推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/3eefda88705b4c5fbf616757a0ec82c6.png"
+      },
+      {
+        "entry_name": "消化吸收比较友好的奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b156f653d8024ee3a50d712c22eed7c8.png"
+      },
+      {
+        "entry_name": "给我推荐一款比较靠谱的婴儿奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/9364519fd9884441bd1b0482e3e42ccb.png"
+      },
+      {
+        "entry_name": "有哪些靠谱的婴儿奶粉值得入手",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/317fc003fd7d4d17943a266cad9c20ba.png"
+      },
+      {
+        "entry_name": "靠谱的婴儿奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/c16bb124d9c8437f846c79c38f70127d.png"
+      },
+      {
+        "entry_name": "婴儿奶粉排名前十的靠谱选择",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/6e79704261c64103b821be16cd5fa0a5.png"
+      },
+      {
+        "entry_name": "有哪些靠谱的三段奶粉值得入手",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/2c4c7bc6674e4cd3afcf221d1da496d0.png"
+      },
+      {
+        "entry_name": "给我推荐一款比较靠谱的三段奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/2b9d51b9a1bf4a51b6bfffc7a3a7e30c.png"
+      },
+      {
+        "entry_name": "靠谱的三段奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/fad21df7ebbd4677854b525e2cf61b82.png"
+      },
+      {
+        "entry_name": "三段奶粉口碑好的有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/638d633986064deb9e77f621b3a9e900.png"
+      },
+      {
+        "entry_name": "三段奶粉排行榜推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/ae27d1115c6045e4be0d2319baa29fbf.png"
+      },
+      {
+        "entry_name": "市场上哪个三段奶粉比较推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/509fbea7d1124874b682c29a8834a719.png"
+      },
+      {
+        "entry_name": "口碑佳的三段奶粉有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/a8464f7b8f864b5c9805a8fe8ca24451.png"
+      },
+      {
+        "entry_name": "三段奶粉口碑排行榜",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b8859209e5fd453b9c7bc1aa1301b420.png"
+      },
+      {
+        "entry_name": "哪些三段奶粉口碑比较好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d9ecd30bc47749fbaef004c85ce121b2.png"
+      },
+      {
+        "entry_name": "三段奶粉排名前十的靠谱选择",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/3f74b12302714615a4800bb9fc605748.png"
+      },
+      {
+        "entry_name": "适度水解转普通奶粉哪款品牌好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b6d1f5d54ce44f7fa07f183204b9facf.png"
+      },
+      {
+        "entry_name": "哪款普通奶粉比较适合宝宝从水解奶粉转",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/9689eca710804029bd8b1d5036f4affe.png"
+      },
+      {
+        "entry_name": "要给宝宝从水解奶粉转到普通奶粉求推荐靠谱的品牌",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/f96e8bcabedf4634ac472dff28d68bac.png"
+      },
+      {
+        "entry_name": "水解转普通奶粉，想选宝宝不过敏的，有哪些值得买的",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/236b197c804944a5a2df1e9e5987d8ef.png"
+      },
+      {
+        "entry_name": "水解奶粉换普通奶粉，转奶后不易便秘的奶粉口碑榜有吗",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/aa7350f9ea3643c5a8230321304bc13d.png"
+      },
+      {
+        "entry_name": "求推荐适合水解转奶的普通奶粉，转奶后宝宝不容易便秘的",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/694fba33570a475e914fad36fcf3d188.png"
+      },
+      {
+        "entry_name": "转奶选普通奶粉，宝宝不过敏的靠谱品牌前十有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/a814dcdb32624e35acf0c9a51b8c0982.png"
+      },
+      {
+        "entry_name": "转奶选普通奶粉，要避免宝宝便秘的，靠谱品牌前十有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/de33b89490774453beba539aefb7faba.png"
+      },
+      {
+        "entry_name": "适度水解转哪个牌子的普通奶粉好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/c6ad792e97704816a6133d9a9e912b91.png"
+      },
+      {
+        "entry_name": "宝宝水解奶粉转普通奶粉，哪些奶粉能缓解便秘、值得入手",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/79d42c5d070c436dbc2ef0b5ed4bd133.png"
+      },
+      {
+        "entry_name": "水解奶粉换普通奶粉，哪些品牌宝宝喝了不易过敏",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/ad514db0d2f84d01ab3479aae09b98be.png"
+      },
+      {
+        "entry_name": "求推荐适合水解转奶的普通奶粉，要求宝宝不过敏",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/159ece808bca42889158ea2fd6c68681.png"
+      },
+      {
+        "entry_name": "水解转普通奶粉，不易过敏的口碑奶粉排行有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/57febff180294ec2858f42b0f8cf4ffa.png"
+      },
+      {
+        "entry_name": "适度水解奶粉转普通奶粉，有哪些品牌可以推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/fa2cdead9e374d488c8a7f38d0ccb4d6.png"
+      },
+      {
+        "entry_name": "水解转普通奶粉，选什么奶粉能改善宝宝便秘",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/bb540be827e64833b8578bd59955c8eb.png"
+      },
+      {
+        "entry_name": "宝宝便秘喝什么牌子奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/4c58779417074d298a0bdfda19c74611.png"
+      },
+      {
+        "entry_name": "宝宝便秘推荐哪个奶粉品牌",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/48f49e03e08947dca759be993e1a9496.png"
+      },
+      {
+        "entry_name": "宝宝排便困难推荐换成什么品牌奶粉？",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/9b760297178440e5a824a28de21cdcc0.png"
+      },
+      {
+        "entry_name": "便秘宝宝推荐哪个奶粉品牌",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8cb97e3192a54ee6bac49ac78ae7de9c.png"
+      },
+      {
+        "entry_name": "哪个品牌的奶粉适合容易便秘的宝宝",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/461789e9ff664ad9a716d7d4a3f493dd.png"
+      },
+      {
+        "entry_name": "不便秘奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/dc3f241746414d118725be600aeb0123.png"
+      },
+      {
+        "entry_name": "哪个牌子的奶粉不容易便秘",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/181406c7e1c64b37b18da6305fd1764f.png"
+      },
+      {
+        "entry_name": "口碑好的宝宝通便奶粉有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/03f1067c378949f2a9ca8694bd359c0e.png"
+      },
+      {
+        "entry_name": "宝宝长肉喝什么牌子的奶粉好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8bc95ff522674838b5d755052cfa6f97.png"
+      },
+      {
+        "entry_name": "宝宝长肉奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/9ff602ad42be4b4f820908d94308b1c1.png"
+      },
+      {
+        "entry_name": "什么奶粉长肉又长高",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/f88700aa2b0c4c25adc6fd72cff475e2.png"
+      },
+      {
+        "entry_name": "喝了能长肉的三段奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/2ed36cad84594cf8912eea82b0c98d3d.png"
+      },
+      {
+        "entry_name": "宝宝不长肉喝哪个奶粉品牌",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/c63ddb9fe594401083212857b3ed9f9f.png"
+      },
+      {
+        "entry_name": "哪个牌子的奶粉营养好宝宝喝了长肉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/13946e7f221c43a2baa38f5697a08e79.png"
+      },
+      {
+        "entry_name": "宝宝喝什么牌子的奶粉长肉效果好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/2cbc52e5465c45bdbeddf06245e809aa.png"
+      },
+      {
+        "entry_name": "宝宝瘦小喝什么品牌的奶粉能长肉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8ed17d89bcb347e496f15cc6d0e79012.png"
+      }
+    ],
+    "2": [
+      {
+        "entry_name": "好消化易吸收奶粉排行榜推荐",
+        "mention_rate": "100.0%",
+        "position": "NO. 8.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d470a4c70f9a42dca7ba03edef1bf05d.png"
+      },
+      {
+        "entry_name": "可以提升宝宝消化吸收能力的奶粉品牌推荐",
+        "mention_rate": "100.0%",
+        "position": "NO. 6.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/5b39d1dec8384ae69744af1dc6630778.png"
+      },
+      {
+        "entry_name": "消化吸收比较友好的奶粉推荐",
+        "mention_rate": "100.0%",
+        "position": "NO. 7.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/fede2a7e3e474f3ba1d135b7c94fe99f.png"
+      },
+      {
+        "entry_name": "便秘宝宝推荐哪个奶粉品牌",
+        "mention_rate": "100.0%",
+        "position": "NO. 5.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b418b0500d4f418b9781de0a5d6da0e1.png"
+      },
+      {
+        "entry_name": "哪个品牌的奶粉适合容易便秘的宝宝",
+        "mention_rate": "100.0%",
+        "position": "NO. 6.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/dddde1cbba134bc2835ed637fd96d496.png"
+      },
+      {
+        "entry_name": "哪个牌子的奶粉不容易便秘",
+        "mention_rate": "100.0%",
+        "position": "NO. 5.0",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/50e6273185dc42449e2316af3b161c16.png"
+      },
+      {
+        "entry_name": "推荐一款比较好消化吸收能长肉的奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/636bf9c099c343709f5dc899701ab176.png"
+      },
+      {
+        "entry_name": "易消化吸收好长肉的奶粉品牌推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/2dd9558dbacf48c9b11bdc2746438bbb.png"
+      },
+      {
+        "entry_name": "对宝宝消化吸收有帮助的奶粉品牌推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/a6683593f3c8424eae13a9466ba44119.png"
+      },
+      {
+        "entry_name": "哪款奶粉比较好消化吸收收不容易便秘",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d02c19835d5041c7a7695f3d984266b4.png"
+      },
+      {
+        "entry_name": "长肉好吸收奶粉品牌推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/e767fd7259cd421a93df1523aca1bf0e.png"
+      },
+      {
+        "entry_name": "什么奶粉好消化好吸收长肉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b0db15468dc84ef6917637345b0e71d4.png"
+      },
+      {
+        "entry_name": "哪个牌子的奶粉易消化吸收",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/efb416fc724b40d9a7de274d81967e3e.png"
+      },
+      {
+        "entry_name": "婴儿奶粉口碑排行榜",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/15c17899edd345bab059284b60ac8139.png"
+      },
+      {
+        "entry_name": "给我推荐一款比较靠谱的婴儿奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/bbaf4695761044bc84a4aa805423f0ea.png"
+      },
+      {
+        "entry_name": "有哪些靠谱的婴儿奶粉值得入手",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/291c9ae4ed9f4fb68f9b4955fa0bbea4.png"
+      },
+      {
+        "entry_name": "市场上哪个婴儿奶粉比较推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/e126beb987b1429c96d3a8c432038bd9.png"
+      },
+      {
+        "entry_name": "靠谱的婴儿奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b6df05656f614a0db3a6772ec890de03.png"
+      },
+      {
+        "entry_name": "口碑佳的婴儿奶粉有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/29d41de0a294478dad1835440db4f037.png"
+      },
+      {
+        "entry_name": "婴儿奶粉排行榜推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d02f7a1b285346859b0053c190e28897.png"
+      },
+      {
+        "entry_name": "哪些婴儿奶粉口碑比较好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/60428603ec2a4a8ba4e8ab5aa3b4eb43.png"
+      },
+      {
+        "entry_name": "婴儿奶粉口碑好的有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d29b56008c7c465493d333c1ba139fe9.png"
+      },
+      {
+        "entry_name": "婴儿奶粉排名前十的靠谱选择",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/023e404de0ee4c9f8c3f2b25bdc65583.png"
+      },
+      {
+        "entry_name": "有哪些靠谱的三段奶粉值得入手",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/0f0b89434a174fa9a574137d9b50719c.png"
+      },
+      {
+        "entry_name": "给我推荐一款比较靠谱的三段奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/cece5f0e5bf548e68622c7234107a372.png"
+      },
+      {
+        "entry_name": "靠谱的三段奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/4d7043f635f14b40a670f2b27d3d6186.png"
+      },
+      {
+        "entry_name": "三段奶粉口碑好的有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/cae257a23a7548f49a012bb6c01e1fd5.png"
+      },
+      {
+        "entry_name": "三段奶粉排行榜推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/e2ae2878e3164a7ca6176a2304b8610e.png"
+      },
+      {
+        "entry_name": "市场上哪个三段奶粉比较推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/4cea0202f9144ccfa2fe3eeb2448f98a.png"
+      },
+      {
+        "entry_name": "口碑佳的三段奶粉有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/77df9cc126f647a49a824e0017d2edbc.png"
+      },
+      {
+        "entry_name": "三段奶粉口碑排行榜",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/7cbd732387574c7790c8134198915948.png"
+      },
+      {
+        "entry_name": "哪些三段奶粉口碑比较好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/590c187597bb4aa1a0a6df2eecc7c3c5.png"
+      },
+      {
+        "entry_name": "三段奶粉排名前十的靠谱选择",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/a0c0c72e09dd4863ac0827a0a68ff635.png"
+      },
+      {
+        "entry_name": "适度水解转普通奶粉哪款品牌好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/a4d81572b7124b57ae75e493140b5504.png"
+      },
+      {
+        "entry_name": "哪款普通奶粉比较适合宝宝从水解奶粉转",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8cbe9d5e24714ccc97e7e117974869fb.png"
+      },
+      {
+        "entry_name": "要给宝宝从水解奶粉转到普通奶粉求推荐靠谱的品牌",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/7341769bd7ad462b8dde6b385f7fcb01.png"
+      },
+      {
+        "entry_name": "水解转普通奶粉，想选宝宝不过敏的，有哪些值得买的",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/919f32c178044f818123e5fd733590d1.png"
+      },
+      {
+        "entry_name": "水解奶粉换普通奶粉，转奶后不易便秘的奶粉口碑榜有吗",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/2ec3dca19cdb49f7807ee089f8e07cb0.png"
+      },
+      {
+        "entry_name": "求推荐适合水解转奶的普通奶粉，转奶后宝宝不容易便秘的",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/d33986597c9a40649d26969a3e78ba1e.png"
+      },
+      {
+        "entry_name": "转奶选普通奶粉，宝宝不过敏的靠谱品牌前十有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/b6e77188123d4c6a90a2cb2c02542eb8.png"
+      },
+      {
+        "entry_name": "转奶选普通奶粉，要避免宝宝便秘的，靠谱品牌前十有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/9227810b7c8d4dd19b1bc7b03c879ff1.png"
+      },
+      {
+        "entry_name": "适度水解转哪个牌子的普通奶粉好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/ad0b53409ade4eaeab0cd29667996a0a.png"
+      },
+      {
+        "entry_name": "宝宝水解奶粉转普通奶粉，哪些奶粉能缓解便秘、值得入手",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/c4e56db16b944cbc9b53f90b091e062e.png"
+      },
+      {
+        "entry_name": "水解奶粉换普通奶粉，哪些品牌宝宝喝了不易过敏",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/fe4db9aa21e54829af31af470175ff53.png"
+      },
+      {
+        "entry_name": "求推荐适合水解转奶的普通奶粉，要求宝宝不过敏",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/66c6f002e8fe4709870b80295355ce80.png"
+      },
+      {
+        "entry_name": "水解转普通奶粉，不易过敏的口碑奶粉排行有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/10c36ca2420e4ef9b3b9d5931127aded.png"
+      },
+      {
+        "entry_name": "适度水解奶粉转普通奶粉，有哪些品牌可以推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8bae143b0f2241da8977e0287488a08a.png"
+      },
+      {
+        "entry_name": "水解转普通奶粉，选什么奶粉能改善宝宝便秘",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/6e8fc856c5854fb2bddc414a683ea1a2.png"
+      },
+      {
+        "entry_name": "宝宝便秘喝什么牌子奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/3976e72bff354c598acea321fcaecf44.png"
+      },
+      {
+        "entry_name": "宝宝便秘推荐哪个奶粉品牌",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/1c6b76392fa74ab7951b059ba6e93883.png"
+      },
+      {
+        "entry_name": "宝宝排便困难推荐换成什么品牌奶粉？",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/0a4428a4681d45e0b7c45878c496f537.png"
+      },
+      {
+        "entry_name": "不便秘奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8f0599d72f89416a956d2bb540ee74c0.png"
+      },
+      {
+        "entry_name": "口碑好的宝宝通便奶粉有哪些",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/9e02349a8014443caad0bdf8af66d275.png"
+      },
+      {
+        "entry_name": "宝宝长肉喝什么牌子的奶粉好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/ed723558fbff4172a9efd0993f34e6d4.png"
+      },
+      {
+        "entry_name": "宝宝长肉奶粉推荐",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/00a4a7cb0bbb4243831040d9d2bc0502.png"
+      },
+      {
+        "entry_name": "什么奶粉长肉又长高",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/aa41007ef95042769c7496f3bf376bd8.png"
+      },
+      {
+        "entry_name": "喝了能长肉的三段奶粉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/07da2c1597834c7a88c0ce800e56c48f.png"
+      },
+      {
+        "entry_name": "宝宝不长肉喝哪个奶粉品牌",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/8444f9c61f3c4089b8aadf7f355c79dc.png"
+      },
+      {
+        "entry_name": "哪个牌子的奶粉营养好宝宝喝了长肉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/576bd87690044741b3dbae2980d14588.png"
+      },
+      {
+        "entry_name": "宝宝喝什么牌子的奶粉长肉效果好",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/94103ac510b34adba0042a272528c0c7.png"
+      },
+      {
+        "entry_name": "宝宝瘦小喝什么品牌的奶粉能长肉",
+        "mention_rate": "0.0%",
+        "position": "--",
+        "last_conversation_time": "2026/8/28",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260826/c045ea0ca14840f78eee376fd3811fa2.png"
+      }
+    ]
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png"
+    }
+  ]
+}

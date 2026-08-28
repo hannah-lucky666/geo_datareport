@@ -5,7 +5,13 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SCREENSHOTS_DIR = path.join(__dirname, '../screenshots');
-const OUTPUT_PPT = path.join(__dirname, '../output_slides.pptx');
+
+// 命名规范：<产品>GEO阶段性报告（<月份>）.pptx，月份取自报告数据的统计口径
+const meta = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../src/data/yuanyueAugustReport.json'), 'utf8')
+).meta;
+const month = Number(meta.august_date.slice(5, 7));
+const OUTPUT_PPT = path.join(__dirname, `../${meta.product}GEO阶段性报告（${month}月）.pptx`);
 
 async function main() {
   console.log('Reading screenshots from:', SCREENSHOTS_DIR);
@@ -50,7 +56,7 @@ async function main() {
     console.log(`\n✅ PPTX compilation complete! Saved to ${OUTPUT_PPT}`);
   } catch (err) {
     if (err.code === 'EBUSY') {
-      const FALLBACK_PPT = path.join(__dirname, '../output_slides_updated.pptx');
+      const FALLBACK_PPT = OUTPUT_PPT.replace(/\.pptx$/, '_updated.pptx');
       console.warn(`\n⚠️  Warning: ${OUTPUT_PPT} is locked or busy (probably open in PowerPoint).`);
       console.log(`Saving instead to fallback: ${FALLBACK_PPT}`);
       await pptx.writeFile({ fileName: FALLBACK_PPT });
