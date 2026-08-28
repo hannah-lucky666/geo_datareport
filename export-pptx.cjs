@@ -11,7 +11,7 @@ const slideOrder = JSON.parse(
 const args = process.argv.slice(2);
 const getArg = (name) => args.find((a) => a.startsWith(`--${name}=`))?.split('=')[1];
 
-const APP_URL = getArg('url') || 'http://localhost:7646';
+const APP_URL = getArg('url') || 'http://localhost:7647';
 const OUTPUT = getArg('output') || path.join(__dirname, 'Presentation_2026.pptx');
 const SLIDE_W = 1920;
 const SLIDE_H = 1080;

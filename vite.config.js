@@ -37,7 +37,7 @@ export default defineConfig({
   plugins: [react(), slideOrderSavePlugin()],
   server: {
     host: true,
-    port: 7646,
+    port: 7647,
     strictPort: true,
     allowedHosts: true,
   },

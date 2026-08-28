@@ -14,11 +14,11 @@ async function run() {
     });
     const page = await browser.newPage();
 
-    console.log('Navigating to http://localhost:7646...');
+    console.log('Navigating to http://localhost:7647...');
     try {
-        await page.goto('http://localhost:7646', { waitUntil: 'networkidle0', timeout: 60000 });
+        await page.goto('http://localhost:7647', { waitUntil: 'networkidle0', timeout: 60000 });
     } catch (e) {
-        console.error('Failed to load page. Make sure Vite server is running on port 7646.', e);
+        console.error('Failed to load page. Make sure Vite server is running on port 7647.', e);
         await browser.close();
         return;
     }
