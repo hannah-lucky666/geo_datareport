@@ -83,8 +83,8 @@
   ],
   "stats": {
     "brand_mention_rate": 58.3,
-    "top1_mention_rate": null,
-    "top3_mention_rate": null,
+    "top1_mention_rate": 48.8,
+    "top3_mention_rate": 56,
     "avg_position": 3.5,
     "daily_stats": [
       {
@@ -873,5 +873,575 @@
       "avg_position": 3.5,
       "influence_rank": 1
     }
-  ]
+  ],
+  "product_rankings": {
+    "top1": [
+      {
+        "rank": 1,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 48.8,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 17.9,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "绍兴花雕",
+        "brand_name": "绍兴花雕",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "五粮液",
+        "brand_name": "五粮液",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "剑南春",
+        "brand_name": "剑南春",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "无比",
+        "brand_name": "无比",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "Aperol",
+        "brand_name": "Aperol",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "多宝神酒",
+        "brand_name": "多宝神酒",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "小糊涂仙",
+        "brand_name": "小糊涂仙",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "敖东",
+        "brand_name": "敖东",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "桂花酒",
+        "brand_name": "桂花酒",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "椰岛",
+        "brand_name": "椰岛",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "9i",
+        "brand_name": "9i",
+        "value": 0,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "9i东方本草",
+        "brand_name": "9i东方本草",
+        "value": 0,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "Bénédictine",
+        "brand_name": "Bénédictine",
+        "value": 0,
+        "is_target": false
+      }
+    ],
+    "top3": [
+      {
+        "rank": 1,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 56,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 31,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "椰岛",
+        "brand_name": "椰岛",
+        "value": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "张裕",
+        "brand_name": "张裕",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "无比",
+        "brand_name": "无比",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "五粮液",
+        "brand_name": "五粮液",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "古岭",
+        "brand_name": "古岭",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "剑南春",
+        "brand_name": "剑南春",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "古井贡酒",
+        "brand_name": "古井贡酒",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "敖东",
+        "brand_name": "敖东",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "绍兴花雕",
+        "brand_name": "绍兴花雕",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "口子窖",
+        "brand_name": "口子窖",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "君道",
+        "brand_name": "君道",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "广誉远",
+        "brand_name": "广誉远",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "舍得",
+        "brand_name": "舍得",
+        "value": 2.4,
+        "is_target": false
+      }
+    ],
+    "mention_rate": [
+      {
+        "rank": 1,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 58.3,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 50,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 36.9,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 27.4,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "椰岛",
+        "brand_name": "椰岛",
+        "value": 26.2,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 26.2,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 20.2,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "五粮液",
+        "brand_name": "五粮液",
+        "value": 19,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 14.3,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "古井贡酒",
+        "brand_name": "古井贡酒",
+        "value": 11.9,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "广誉远",
+        "brand_name": "广誉远",
+        "value": 11.9,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "口子窖",
+        "brand_name": "口子窖",
+        "value": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "宁夏红",
+        "brand_name": "宁夏红",
+        "value": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "古岭",
+        "brand_name": "古岭",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "无比",
+        "brand_name": "无比",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "梅见",
+        "brand_name": "梅见",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "水井坊",
+        "brand_name": "水井坊",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "董酒",
+        "brand_name": "董酒",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "习酒",
+        "brand_name": "习酒",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "剑南春",
+        "brand_name": "剑南春",
+        "value": 6,
+        "is_target": false
+      }
+    ],
+    "position": [
+      {
+        "rank": 1,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 3.5,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 5.1,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 5.5,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "五粮液",
+        "brand_name": "五粮液",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "椰岛",
+        "brand_name": "椰岛",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "绍兴花雕",
+        "brand_name": "绍兴花雕",
+        "value": 6.1,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "古岭",
+        "brand_name": "古岭",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "董酒",
+        "brand_name": "董酒",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "口子窖",
+        "brand_name": "口子窖",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "古井贡酒",
+        "brand_name": "古井贡酒",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "无比",
+        "brand_name": "无比",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "剑南春",
+        "brand_name": "剑南春",
+        "value": 6.3,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "张裕",
+        "brand_name": "张裕",
+        "value": 6.3,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "桑葚酒",
+        "brand_name": "桑葚酒",
+        "value": 6.3,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "敖东",
+        "brand_name": "敖东",
+        "value": 6.3,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "女儿红",
+        "brand_name": "女儿红",
+        "value": 6.3,
+        "is_target": false
+      }
+    ]
+  }
 }

@@ -72,7 +72,8 @@ function fmtDate(v) {
 }
 
 const PROJECTS = [125, 126, 127]; // 劲酒 / 毛铺 / 养生一号
-const DATE = '2026-07-23';
+const dateFlagIndex = process.argv.indexOf('--date');
+const DATE = dateFlagIndex !== -1 ? process.argv[dateFlagIndex + 1] : '2026-08-27';
 
 await login();
 const out = {};

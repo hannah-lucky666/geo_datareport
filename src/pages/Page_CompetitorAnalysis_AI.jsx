@@ -1,15 +1,8 @@
 import React from 'react';
-import report from '../data/jinjiuJulyReport.json';
-
-function isTargetBrand(name, brandMatch) {
-  const a = String(name || '').replace(/\s+/g, '');
-  const b = String(brandMatch || '').replace(/\s+/g, '');
-  return a === b || a.includes(b) || b.includes(a);
-}
+import report from '../data/jinjiuAugustReport.json';
 
 function createPage({ productKey, title, analysis, strategies }) {
   const data = report.products[productKey];
-  const brandMatch = data.brandMatch;
 
   const renderTable = (tableTitle, headers, rows) => (
     <div className="flex flex-col gap-3 h-full min-h-0">
@@ -28,7 +21,7 @@ function createPage({ productKey, title, analysis, strategies }) {
           </thead>
           <tbody>
             {rows.map((item, idx) => {
-              const isBrand = isTargetBrand(item.name, brandMatch);
+              const isBrand = item.isTarget;
               const rank = idx + 1;
               let rankElement;
               if (rank === 1) {
@@ -66,7 +59,7 @@ function createPage({ productKey, title, analysis, strategies }) {
           <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
           <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
             {title}
-            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
+            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
           </h1>
         </div>
         <div className="flex-grow flex flex-col min-h-0 justify-start">
@@ -115,12 +108,12 @@ export default createPage({
   productKey: 'maopu',
   title: '毛铺竞品分析',
   analysis: [
-    '1. 毛铺酒仍居第一，但7月提及率降至58.3%，位次退至NO. 3.5；Top1首推率48.8%，优势较6月明显收窄。',
-    '2. 「劲牌」母品牌提及率已达50%、Top1达17.9%，存在品牌混淆与流量分流风险；汾酒、泸州老窖等白酒品牌也在聚会场景抢占心智。',
+    '1. 毛铺酒8月提及率降至44%，被「劲牌」母品牌（51.2%）反超退居第二；Top1首推率29.8%虽仍居首，但较7月的48.8%明显收窄。',
+    '2. 平均位次NO. 4.5与劲牌NO. 4.6几乎持平，泸州老窖、五粮液等浓香白酒在聚会家宴场景加速渗透，品牌混淆与流量分流风险同步放大。',
   ],
   strategies: [
-    { num: '01', title: '场景心智独占', desc: '强化“聚会不伤身、家宴低度草本”内容矩阵，把毛铺与劲酒/劲牌做清晰区隔。' },
-    { num: '02', title: '母品牌防混淆', desc: '在推荐问答中明确“毛铺系列”产品名与适用场景，降低被归入泛“劲牌”的概率。' },
-    { num: '03', title: '白酒竞品对抗', desc: '针对汾酒、泸州老窖等在聚会词条的渗透，补充草本舒适度与次日体感对比内容。' },
+    { num: '01', title: '母品牌切割', desc: '在推荐问答中明确“毛铺”独立产品名与草本白酒定位，把被归入泛“劲牌”的会话抢回来。' },
+    { num: '02', title: '场景心智独占', desc: '加密“聚会不伤身、家宴低度草本、次日体感舒适”内容矩阵，守住29.8%的Top1首推位。' },
+    { num: '03', title: '白酒竞品对抗', desc: '针对泸州老窖、五粮液在家宴词条的渗透，补充草本舒适度与饮后体感的对比内容。' },
   ],
 });

@@ -1,11 +1,5 @@
 import React from 'react';
-import report from '../data/jinjiuJulyReport.json';
-
-function isTargetBrand(name, brandMatch) {
-  const a = String(name || '').replace(/\s+/g, '');
-  const b = String(brandMatch || '').replace(/\s+/g, '');
-  return a === b || a.includes(b) || b.includes(a);
-}
+import report from '../data/jinjiuAugustReport.json';
 
 function createCompetitorPage({
   productKey,
@@ -14,7 +8,6 @@ function createCompetitorPage({
   strategies,
 }) {
   const data = report.products[productKey];
-  const brandMatch = data.brandMatch;
 
   const renderTable = (tableTitle, headers, rows) => (
     <div className="flex flex-col gap-3 h-full min-h-0">
@@ -33,7 +26,7 @@ function createCompetitorPage({
           </thead>
           <tbody>
             {rows.map((item, idx) => {
-              const isBrand = isTargetBrand(item.name, brandMatch);
+              const isBrand = item.isTarget;
               const rank = idx + 1;
               let rankElement;
               if (rank === 1) {
@@ -91,7 +84,7 @@ function createCompetitorPage({
           <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
           <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
             {title}
-            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
+            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
           </h1>
         </div>
 
@@ -146,12 +139,12 @@ export default createCompetitorPage({
   productKey: 'jinjiu',
   title: '劲酒竞品分析',
   analysis: [
-    '1. 劲酒仍稳居第一，但7月提及率回落至86.3%，Top1首推率66.3%，平均位次退至NO. 2.4，统治力较6月有所稀释。',
-    '2. 椰岛提及率升至57.5%并逼近第二档头部，毛铺酒、广誉远亦在中腰部形成伴随竞争，需防止“日常养生酒”心智被分流。',
+    '1. 劲酒8月提及率升至90%，Top1首推率达80%，平均位次前移至NO. 1.5，三项指标较7月全面回升，行业第一的统治力进一步夯实。',
+    '2. 椰岛提及率抬升至67.5%、位次NO. 4.1紧随其后，广誉远48.8%、竹叶青37.5%在中腰部形成新的伴随竞争，需防止“日常养生酒”推荐位被分流。',
   ],
   strategies: [
-    { num: '01', title: '首推优势回稳', desc: '围绕高频“日常养生酒推荐”类词条持续更新内容，守住66.3%的Top1优势，避免位次继续后移。' },
-    { num: '02', title: '椰岛贴身防御', desc: '针对椰岛（57.5%）加强对比评测与性价比叙事，强化劲酒“常备小酌、蓝帽子认证”差异点。' },
-    { num: '03', title: '长尾场景补强', desc: '补齐夏季清润、解腻等场景语料，减少“不推荐/溢价”类负面语义对提及率的侵蚀。' },
+    { num: '01', title: '首推优势扩大', desc: '围绕“日常养生酒推荐/品牌排行”高频词条持续加密内容，把80%的Top1首推率沉淀为长期护城河。' },
+    { num: '02', title: '椰岛贴身防御', desc: '针对椰岛（67.5%）补充性价比与蓝帽子认证对比评测，压制其在滋补酒场景的上升势头。' },
+    { num: '03', title: '清润场景补位', desc: '竹叶青借夏季清润话题升至37.5%，需补齐控糖、清润型语料，避免季节性词条被截流。' },
   ],
 });

@@ -83,8 +83,8 @@
   ],
   "stats": {
     "brand_mention_rate": 40.5,
-    "top1_mention_rate": null,
-    "top3_mention_rate": null,
+    "top1_mention_rate": 27.4,
+    "top3_mention_rate": 35.7,
     "avg_position": 4.4,
     "daily_stats": [
       {
@@ -873,5 +873,575 @@
       "avg_position": 4.4,
       "influence_rank": 1
     }
-  ]
+  ],
+  "product_rankings": {
+    "top1": [
+      {
+        "rank": 1,
+        "name": "劲牌 养生一号",
+        "brand_name": "劲牌养生一号",
+        "value": 27.4,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "中国劲酒",
+        "brand_name": "劲牌",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "红标劲酒（小瓶）",
+        "brand_name": "劲牌",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "毛铺苦荞酒",
+        "brand_name": "劲牌",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "广誉远 龟龄集酒",
+        "brand_name": "广誉远",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "五粮液 普五(第八代)",
+        "brand_name": "五粮液",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "十全酒",
+        "brand_name": "劲牌",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "参茸劲酒",
+        "brand_name": "劲牌",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "毛铺 草本年份酒12年",
+        "brand_name": "毛铺酒",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "毛铺草本年份酒·12年",
+        "brand_name": "劲牌",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "茅台 王子酒",
+        "brand_name": "茅台",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "连泉老窖 有机本草酒系列",
+        "brand_name": "连泉老窖",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "不老酒（铂金版）",
+        "brand_name": "茅台",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "中国劲酒红标",
+        "brand_name": "劲牌",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "人参枸杞松茸酒",
+        "brand_name": "修年堂",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "养生保健",
+        "brand_name": "劲牌",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "御品滋补养生酒",
+        "brand_name": "北京同仁堂",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "无比 巴戟天养生酒",
+        "brand_name": "无比",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "椰岛 鹿龟酒",
+        "brand_name": "椰岛",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "毛铺紫荞酒",
+        "brand_name": "劲牌",
+        "value": 1.2,
+        "is_target": false
+      }
+    ],
+    "top3": [
+      {
+        "rank": 1,
+        "name": "劲牌 养生一号",
+        "brand_name": "劲牌养生一号",
+        "value": 35.7,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "广誉远 龟龄集酒",
+        "brand_name": "广誉远",
+        "value": 19,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "椰岛 鹿龟酒",
+        "brand_name": "椰岛",
+        "value": 14.3,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "贵州董酒 佰草香",
+        "brand_name": "董酒",
+        "value": 13.1,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "不老酒（铂金版）",
+        "brand_name": "茅台",
+        "value": 10.7,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "中国劲酒",
+        "brand_name": "劲牌",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "毛铺紫荞酒",
+        "brand_name": "劲牌",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "红标劲酒（小瓶）",
+        "brand_name": "劲牌",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "参茸劲酒",
+        "brand_name": "劲牌",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "毛铺 草本年份酒12年",
+        "brand_name": "毛铺酒",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "古岭神 古岭神酒",
+        "brand_name": "古岭神",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "毛铺 紫荞酒",
+        "brand_name": "毛铺酒",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "毛铺苦荞酒",
+        "brand_name": "劲牌",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "毛铺草本年份酒·12年",
+        "brand_name": "劲牌",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "竹叶青（30年青享版）",
+        "brand_name": "汾酒",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "竹叶青酒",
+        "brand_name": "汾酒",
+        "value": 4.8,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "五粮液 普五(第八代)",
+        "brand_name": "五粮液",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "五粮液 黄金酒",
+        "brand_name": "五粮液",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "滋补养生酒",
+        "brand_name": "北京同仁堂",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "十全酒",
+        "brand_name": "劲牌",
+        "value": 2.4,
+        "is_target": false
+      }
+    ],
+    "mention_rate": [
+      {
+        "rank": 1,
+        "name": "劲牌 养生一号",
+        "brand_name": "劲牌养生一号",
+        "value": 40.5,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "广誉远 龟龄集酒",
+        "brand_name": "广誉远",
+        "value": 38.1,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "椰岛 鹿龟酒",
+        "brand_name": "椰岛",
+        "value": 28.6,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "贵州董酒 佰草香",
+        "brand_name": "董酒",
+        "value": 20.2,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "竹叶青酒",
+        "brand_name": "汾酒",
+        "value": 13.1,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "不老酒（铂金版）",
+        "brand_name": "茅台",
+        "value": 11.9,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 11.9,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "中国劲酒",
+        "brand_name": "劲牌",
+        "value": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "毛铺 草本年份酒12年",
+        "brand_name": "毛铺酒",
+        "value": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "竹叶青（30年青享版）",
+        "brand_name": "汾酒",
+        "value": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "北京同仁堂 国公酒",
+        "brand_name": "北京同仁堂",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "古岭神 古岭神酒",
+        "brand_name": "古岭神",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "毛铺 紫荞酒",
+        "brand_name": "毛铺酒",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "红标劲酒（小瓶）",
+        "brand_name": "劲牌",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "致中和 五加皮酒五年陈",
+        "brand_name": "致中和",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "五粮液 黄金酒",
+        "brand_name": "五粮液",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "北京同仁堂",
+        "brand_name": "北京同仁堂",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "参茸劲酒",
+        "brand_name": "劲牌",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 7.1,
+        "is_target": false
+      }
+    ],
+    "position": [
+      {
+        "rank": 1,
+        "name": "劲牌 养生一号",
+        "brand_name": "劲牌养生一号",
+        "value": 4.4,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "广誉远 龟龄集酒",
+        "brand_name": "广誉远",
+        "value": 5.7,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "贵州董酒 佰草香",
+        "brand_name": "董酒",
+        "value": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "椰岛 鹿龟酒",
+        "brand_name": "椰岛",
+        "value": 5.9,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "不老酒（铂金版）",
+        "brand_name": "茅台",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "竹叶青酒",
+        "brand_name": "汾酒",
+        "value": 6.3,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "红标劲酒（小瓶）",
+        "brand_name": "劲牌",
+        "value": 6.3,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "中国劲酒",
+        "brand_name": "劲牌",
+        "value": 6.4,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "竹叶青（30年青享版）",
+        "brand_name": "汾酒",
+        "value": 6.4,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "参茸劲酒",
+        "brand_name": "劲牌",
+        "value": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "毛铺紫荞酒",
+        "brand_name": "劲牌",
+        "value": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "毛铺 草本年份酒12年",
+        "brand_name": "毛铺酒",
+        "value": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "毛铺草本年份酒·12年",
+        "brand_name": "劲牌",
+        "value": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "古岭神 古岭神酒",
+        "brand_name": "古岭神",
+        "value": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "毛铺 紫荞酒",
+        "brand_name": "毛铺酒",
+        "value": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "五粮液 普五(第八代)",
+        "brand_name": "五粮液",
+        "value": 6.6,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "北京同仁堂 养生酒系列",
+        "brand_name": "北京同仁堂",
+        "value": 6.6,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "北京同仁堂 国公酒",
+        "brand_name": "北京同仁堂",
+        "value": 6.6,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "北京同仁堂 同仁御酒",
+        "brand_name": "北京同仁堂",
+        "value": 6.6,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "茅台 王子酒",
+        "brand_name": "茅台",
+        "value": 6.6,
+        "is_target": false
+      }
+    ]
+  }
 }

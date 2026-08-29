@@ -18,6 +18,11 @@
  *     · 平均提及位次  → conversations/stats.avg_position       （不是 compare.position_ranking！两者可能差 0.1）
  *     · 竞品排名      → 行业影响力排名 = competitors/influence 中本品(is_target)的 rank（不是提及率排名的名次）
  *   本脚本已把逐日的这三个指标算好放进 report.overview_daily，按日期直接取用即可。
+ *
+ * ⚠ 竞品分析页的三张排名表请一律取 report.product_rankings（产品口径，来自 competitors/
+ *   mention-rate、top-mention-rate、position 三个专用接口），不要用 report.compare 里的
+ *   mention_rate_ranking / position_ranking——那两个是品牌口径，目标品牌下挂多个产品时
+ *   （如劲牌养生一号）位次会和数据系统页面对不上（4.8 vs 5.4），品牌名也和页面显示的产品名不一致。
  */
 
 import { writeFileSync, existsSync, mkdirSync, readFileSync } from 'node:fs';
@@ -136,13 +141,37 @@ async function main() {
     api('/api/citations/articles', { ...range, page: 1, page_size: 10, sort_by: 'total_citations', sort_order: 'desc' }),
   ]);
 
-  // Top1 提及率排名（测试服暂无此接口，失败时置空）
-  let top1 = null;
-  try {
-    top1 = await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1' });
-  } catch (e) {
-    console.warn(`top-mention-rate 接口不可用（${e.message}），Top1 排名置空`);
-  }
+  // ——— 竞品三张排名表：必须用下面这三个专用接口（match_mode=product）———
+  // /api/competitors/compare 的 mention_rate_ranking / position_ranking 是「品牌」口径，
+  // 当目标品牌下挂多个产品时（如劲牌养生一号），位次会和数据系统页面对不上（4.8 vs 5.4）。
+  const rankingPages = { page: 1, page_size: 20 };
+  const [mentionRank, top1, top3, positionRank] = await Promise.all([
+    api('/api/competitors/mention-rate', { ...range, ...rankingPages }).catch((e) => {
+      console.warn(`mention-rate 接口不可用（${e.message}）`);
+      return null;
+    }),
+    api('/api/competitors/top-mention-rate', { ...range, ...rankingPages, top_type: 'top1' }).catch((e) => {
+      console.warn(`top-mention-rate(top1) 接口不可用（${e.message}）`);
+      return null;
+    }),
+    api('/api/competitors/top-mention-rate', { ...range, ...rankingPages, top_type: 'top3' }).catch((e) => {
+      console.warn(`top-mention-rate(top3) 接口不可用（${e.message}）`);
+      return null;
+    }),
+    api('/api/competitors/position', { ...range, ...rankingPages }).catch((e) => {
+      console.warn(`position 接口不可用（${e.message}）`);
+      return null;
+    }),
+  ]);
+
+  const mapRanking = (res, valueKey) =>
+    (res?.data?.list || []).map((b) => ({
+      rank: b.rank,
+      name: b.display_name || b.product_name || b.brand_name,
+      brand_name: b.brand_name,
+      value: num(b[valueKey]),
+      is_target: !!(b.is_target ?? b.is_self),
+    }));
 
   const platformMap = Object.fromEntries(platforms.data.map((p) => [p.id, p]));
 
@@ -213,6 +242,13 @@ async function main() {
         is_target: !!(b.is_self ?? b.is_target),
       })),
     },
+    // 竞品分析页三张表的取数来源（产品口径，与数据系统页面一致）
+    product_rankings: {
+      mention_rate: mapRanking(mentionRank, 'mention_rate'),
+      top1: mapRanking(top1, 'selected_top_mention_rate'),
+      top3: mapRanking(top3, 'selected_top_mention_rate'),
+      position: mapRanking(positionRank, 'avg_position'),
+    },
     citations: {
       total_conversations: citationStats.data.total_conversations,
       citation_rate: num(citationStats.data.citation_rate),
@@ -236,6 +272,13 @@ async function main() {
       })),
     },
   };
+
+  // conversations/stats 不返回 TOP1/TOP3 提及率，用竞品排名里本品那一行补齐
+  for (const key of ['top1', 'top3']) {
+    if (report.stats[`${key}_mention_rate`] == null) {
+      report.stats[`${key}_mention_rate`] = report.product_rankings[key].find((b) => b.is_target)?.value ?? null;
+    }
+  }
 
   // ——— 总览口径的每日指标（供「核心数据总览 / 竞品排名」页直接取数，避免取错字段）———
   // 提及率=stats.brand_mention_rate；平均提及位次=stats.avg_position（非 position_ranking）；

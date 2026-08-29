@@ -1,0 +1,1447 @@
+{
+  "meta": {
+    "fetched_at": "2026-08-28T14:45:21.144Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 126,
+    "project_name": "毛铺系列",
+    "target_product": "毛铺等草本酒",
+    "target_brand_name": "毛铺酒",
+    "start_date": "2026-08-27",
+    "end_date": "2026-08-27"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 4,
+      "name": "文心",
+      "url": "https://app.geoindexfuture.com/logo/wenxin.webp",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 6,
+      "name": "kimi",
+      "url": "https://app.geoindexfuture.com/logo/kimi.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 44,
+    "top1_mention_rate": 29.8,
+    "top3_mention_rate": 35.7,
+    "avg_position": 4.5,
+    "daily_stats": [
+      {
+        "date": "2026-08-27",
+        "mention_rate": 44,
+        "avg_position": 4.5
+      }
+    ],
+    "platform_stats": [
+      {
+        "platform_id": 1,
+        "platform_name": "DeepSeek",
+        "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+        "brand_mention_rate": 85.7,
+        "avg_position": 2.6
+      },
+      {
+        "platform_id": 2,
+        "platform_name": "豆包",
+        "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+        "brand_mention_rate": 19,
+        "avg_position": 5.6
+      },
+      {
+        "platform_id": 4,
+        "platform_name": "文心",
+        "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+        "brand_mention_rate": 33.3,
+        "avg_position": 5
+      },
+      {
+        "platform_id": 6,
+        "platform_name": "kimi",
+        "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+        "brand_mention_rate": 38.1,
+        "avg_position": 5.2
+      }
+    ]
+  },
+  "influence": {
+    "total_conversations": 84,
+    "list": [
+      {
+        "rank": 1,
+        "brand_name": "劲牌",
+        "favicon_url": "https://image.qcc.com/logo/b9bacc58df7fa9ddb5b8e9de03ab08d6.jpg?x-oss-process=style/logo_200",
+        "influence_score": 56.3,
+        "mention_rate": 51.2,
+        "avg_position": 4.6,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "毛铺酒",
+        "favicon_url": null,
+        "influence_score": 52.4,
+        "mention_rate": 44,
+        "avg_position": 4.5,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "brand_name": "椰岛",
+        "favicon_url": null,
+        "influence_score": 39.5,
+        "mention_rate": 29.8,
+        "avg_position": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "泸州老窖",
+        "favicon_url": "https://image.qcc.com/logo/fc5c7312b6ef1d1a0daa83a4122801ec.jpg?x-oss-process=style/logo_200",
+        "influence_score": 36.7,
+        "mention_rate": 23.8,
+        "avg_position": 5.4,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "五粮液",
+        "favicon_url": "https://image.qcc.com/logo/668fe187309ebdf5bf162fddda404c79.jpg?x-oss-process=style/logo_200",
+        "influence_score": 35.6,
+        "mention_rate": 22.6,
+        "avg_position": 5.5,
+        "is_target": false
+      }
+    ]
+  },
+  "entries": {
+    "total": 21,
+    "list": [
+      {
+        "entry_id": 1309,
+        "entry_name": "聚会喝草本酒推荐",
+        "mention_rate": 100,
+        "position": 1,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/2e82e4cd0d08404b9a3a1fa8bb8cb879.png"
+      },
+      {
+        "entry_id": 1310,
+        "entry_name": "团圆家宴适合喝的养生酒",
+        "mention_rate": 100,
+        "position": 1.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/d770bde99e9e477c9cbeaff0beef9d9e.png"
+      },
+      {
+        "entry_id": 1324,
+        "entry_name": "聚餐健康微醺的草本酒推荐",
+        "mention_rate": 100,
+        "position": 1.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/e7d247cb85f648dc8325def8710607bd.png"
+      },
+      {
+        "entry_id": 1308,
+        "entry_name": "草本酒适合聚会推荐",
+        "mention_rate": 75,
+        "position": 2.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/89d1d13e1720434989a1e22c7c39ef9b.png"
+      },
+      {
+        "entry_id": 1322,
+        "entry_name": "适合家庭团圆喝的养生酒",
+        "mention_rate": 75,
+        "position": 1.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/3d4c73af969346ea8675fd8c18ef8bd9.png"
+      },
+      {
+        "entry_id": 1325,
+        "entry_name": "哪些低度白酒比较养生适合聚会",
+        "mention_rate": 75,
+        "position": 3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/d55b3bc1be3140319469290fc58de68e.png"
+      },
+      {
+        "entry_id": 1307,
+        "entry_name": "周末家宴喝什么养生酒推荐",
+        "mention_rate": 50,
+        "position": 1.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/1cfb8de491874ff987ef8f4bc0d32b66.png"
+      },
+      {
+        "entry_id": 1314,
+        "entry_name": "中秋家宴养生酒推荐",
+        "mention_rate": 50,
+        "position": 3.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/53ab1d33902649e8b6250cd81791b33e.png"
+      },
+      {
+        "entry_id": 1315,
+        "entry_name": "适合聚会的健康白酒",
+        "mention_rate": 50,
+        "position": 3.3,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/0bc4646c7cd14682ac6a2b8bb92ccee5.png"
+      },
+      {
+        "entry_id": 1320,
+        "entry_name": "推荐几款适合长辈喝的低度白酒",
+        "mention_rate": 50,
+        "position": 6,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/3270c3940a4745b5b1b763243f65be9f.png"
+      },
+      {
+        "entry_id": 1306,
+        "entry_name": "年夜饭喝什么养生酒推荐",
+        "mention_rate": 25,
+        "position": 3.5,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/53c5e0989c5643fdb0d1ff05041bd0fb.png"
+      },
+      {
+        "entry_id": 1311,
+        "entry_name": "春节适合全家人一起喝的养生酒有哪些",
+        "mention_rate": 25,
+        "position": 4.5,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/7cd00a75816e45379f567bcf0f2035d2.png"
+      },
+      {
+        "entry_id": 1313,
+        "entry_name": "聚会推荐哪些低度白酒",
+        "mention_rate": 25,
+        "position": 8.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/ec30a9d375e447248baf8a10970a7728.png"
+      },
+      {
+        "entry_id": 1316,
+        "entry_name": "聚会不伤身的养生酒推荐",
+        "mention_rate": 25,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/0a4b810cf5ab446c8847e2c0a206bed6.png"
+      },
+      {
+        "entry_id": 1317,
+        "entry_name": "团圆饭喝什么低度养生酒推荐",
+        "mention_rate": 25,
+        "position": 6.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/d14035a646d94ff4999b0c2b9ebef794.png"
+      },
+      {
+        "entry_id": 1318,
+        "entry_name": "家庭聚会喝什么养生酒比较实惠",
+        "mention_rate": 25,
+        "position": 5.5,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/0dfd823537e6476b8df9990ae8fa684d.png"
+      },
+      {
+        "entry_id": 1319,
+        "entry_name": "聚会喝什么养生酒推荐",
+        "mention_rate": 25,
+        "position": 5.8,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/4ab6fd22c59e40c5b7ba25371db87569.png"
+      },
+      {
+        "entry_id": 1323,
+        "entry_name": "朋友小聚推荐什么养生酒",
+        "mention_rate": 25,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/a0af8a98894a41028130658bc6e4386f.png"
+      },
+      {
+        "entry_id": 1312,
+        "entry_name": "朋友聚会养生酒推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/13c9568c786e4b4a82e78b749bd2a46f.png"
+      },
+      {
+        "entry_id": 1321,
+        "entry_name": "适合聚会喝的养生酒",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/00d7560277f449dbaddf7923d2f6d5ec.png"
+      },
+      {
+        "entry_id": 1326,
+        "entry_name": "聚会不伤身的低度白酒推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "last_conversation_time": "2026-08-26T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260825/7f003f6f3fc0499da576bef00dfb24d7.png"
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "毛铺等草本酒",
+    "mention_rate_ranking": [
+      {
+        "brand_id": 339,
+        "brand_name": "劲牌",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "劲牌",
+        "mention_count": 43,
+        "mention_rate": 51.2,
+        "is_target": false
+      },
+      {
+        "brand_id": 5623,
+        "brand_name": "毛铺酒",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "毛铺酒",
+        "mention_count": 37,
+        "mention_rate": 44,
+        "is_target": true
+      },
+      {
+        "brand_id": 5888,
+        "brand_name": "椰岛",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "椰岛",
+        "mention_count": 25,
+        "mention_rate": 29.8,
+        "is_target": false
+      },
+      {
+        "brand_id": 337,
+        "brand_name": "泸州老窖",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "泸州老窖",
+        "mention_count": 20,
+        "mention_rate": 23.8,
+        "is_target": false
+      },
+      {
+        "brand_id": 329,
+        "brand_name": "五粮液",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "五粮液",
+        "mention_count": 19,
+        "mention_rate": 22.6,
+        "is_target": false
+      }
+    ],
+    "position_ranking": [
+      {
+        "brand_id": 5623,
+        "brand_name": "毛铺酒",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "毛铺酒",
+        "avg_position": 4.5,
+        "mention_count": 37,
+        "is_target": true
+      },
+      {
+        "brand_id": 339,
+        "brand_name": "劲牌",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "劲牌",
+        "avg_position": 4.6,
+        "mention_count": 43,
+        "is_target": false
+      },
+      {
+        "brand_id": 331,
+        "brand_name": "汾酒",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "汾酒",
+        "avg_position": 5.4,
+        "mention_count": 16,
+        "is_target": false
+      },
+      {
+        "brand_id": 337,
+        "brand_name": "泸州老窖",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "泸州老窖",
+        "avg_position": 5.4,
+        "mention_count": 20,
+        "is_target": false
+      },
+      {
+        "brand_id": 329,
+        "brand_name": "五粮液",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "五粮液",
+        "avg_position": 5.5,
+        "mention_count": 19,
+        "is_target": false
+      }
+    ],
+    "rate_daily": [
+      {
+        "date": "2026-08-27",
+        "劲牌": 51.2,
+        "毛铺酒": 44,
+        "椰岛": 29.8,
+        "泸州老窖": 23.8,
+        "五粮液": 22.6
+      }
+    ],
+    "position_daily": [
+      {
+        "date": "2026-08-27",
+        "毛铺酒": 4.5,
+        "劲牌": 4.6,
+        "汾酒": 5.4,
+        "泸州老窖": 5.4,
+        "五粮液": 5.5
+      }
+    ],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "毛铺酒",
+        "top1_mention_rate": 29.8,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "brand_name": "劲牌",
+        "top1_mention_rate": 25,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "泸州老窖",
+        "top1_mention_rate": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "古越龙山",
+        "top1_mention_rate": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "柔和双沟",
+        "top1_mention_rate": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "汾酒",
+        "top1_mention_rate": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "竹叶青",
+        "top1_mention_rate": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "绍兴花雕",
+        "top1_mention_rate": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "口子窖",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "广誉远",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "桂林三花酒",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "桂林牌",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "欢度酒",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "洋河",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "绍兴黄酒",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "茅台",
+        "top1_mention_rate": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "一担粮",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "丛台",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "中原食品实验室",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "习酒",
+        "top1_mention_rate": 0,
+        "is_target": false
+      }
+    ]
+  },
+  "product_rankings": {
+    "mention_rate": [
+      {
+        "rank": 1,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 51.2,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 44,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "name": "椰岛",
+        "brand_name": "椰岛",
+        "value": 29.8,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 23.8,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "五粮液",
+        "brand_name": "五粮液",
+        "value": 22.6,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "广誉远",
+        "brand_name": "广誉远",
+        "value": 20.2,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 20.2,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 19,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 13.1,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "古井贡酒",
+        "brand_name": "古井贡酒",
+        "value": 10.7,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 10.7,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "梅见",
+        "brand_name": "梅见",
+        "value": 10.7,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "致中和",
+        "brand_name": "致中和",
+        "value": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "剑南春",
+        "brand_name": "剑南春",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "古岭",
+        "brand_name": "古岭",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "塔牌",
+        "brand_name": "塔牌",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "宁夏红",
+        "brand_name": "宁夏红",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "牛栏山",
+        "brand_name": "牛栏山",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "董酒",
+        "brand_name": "董酒",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "口子窖",
+        "brand_name": "口子窖",
+        "value": 6,
+        "is_target": false
+      }
+    ],
+    "top1": [
+      {
+        "rank": 1,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 29.8,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 25,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "柔和双沟",
+        "brand_name": "柔和双沟",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "绍兴花雕",
+        "brand_name": "绍兴花雕",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "口子窖",
+        "brand_name": "口子窖",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "广誉远",
+        "brand_name": "广誉远",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "桂林三花酒",
+        "brand_name": "桂林三花酒",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "桂林牌",
+        "brand_name": "桂林牌",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "欢度酒",
+        "brand_name": "欢度酒",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "绍兴黄酒",
+        "brand_name": "绍兴黄酒",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "茅台",
+        "brand_name": "茅台",
+        "value": 1.2,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "一担粮",
+        "brand_name": "一担粮",
+        "value": 0,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "丛台",
+        "brand_name": "丛台",
+        "value": 0,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "中原食品实验室",
+        "brand_name": "中原食品实验室",
+        "value": 0,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "习酒",
+        "brand_name": "习酒",
+        "value": 0,
+        "is_target": false
+      }
+    ],
+    "position": [
+      {
+        "rank": 1,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 4.5,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 4.6,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 5.4,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 5.4,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "五粮液",
+        "brand_name": "五粮液",
+        "value": 5.5,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "椰岛",
+        "brand_name": "椰岛",
+        "value": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "广誉远",
+        "brand_name": "广誉远",
+        "value": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 5.9,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "塔牌",
+        "brand_name": "塔牌",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "古井贡酒",
+        "brand_name": "古井贡酒",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "剑南春",
+        "brand_name": "剑南春",
+        "value": 6.1,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "牛栏山",
+        "brand_name": "牛栏山",
+        "value": 6.1,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "柔和双沟",
+        "brand_name": "柔和双沟",
+        "value": 6.1,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "客家",
+        "brand_name": "客家",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "苏州桥",
+        "brand_name": "苏州桥",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "迎驾贡酒",
+        "brand_name": "迎驾贡酒",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "梅见",
+        "brand_name": "梅见",
+        "value": 6.2,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "舍得",
+        "brand_name": "舍得",
+        "value": 6.2,
+        "is_target": false
+      }
+    ],
+    "top3": [
+      {
+        "rank": 1,
+        "name": "劲牌",
+        "brand_name": "劲牌",
+        "value": 39.3,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "name": "毛铺酒",
+        "brand_name": "毛铺酒",
+        "value": 35.7,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "name": "椰岛",
+        "brand_name": "椰岛",
+        "value": 19,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "name": "广誉远",
+        "brand_name": "广誉远",
+        "value": 13.1,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "name": "泸州老窖",
+        "brand_name": "泸州老窖",
+        "value": 11.9,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "name": "竹叶青",
+        "brand_name": "竹叶青",
+        "value": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "name": "五粮液",
+        "brand_name": "五粮液",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "name": "汾酒",
+        "brand_name": "汾酒",
+        "value": 7.1,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "name": "古越龙山",
+        "brand_name": "古越龙山",
+        "value": 6,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "name": "舍得",
+        "brand_name": "舍得",
+        "value": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "name": "口子窖",
+        "brand_name": "口子窖",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "name": "塔牌",
+        "brand_name": "塔牌",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "name": "女儿红",
+        "brand_name": "女儿红",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "name": "柔和双沟",
+        "brand_name": "柔和双沟",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "name": "洋河",
+        "brand_name": "洋河",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "name": "牛栏山",
+        "brand_name": "牛栏山",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "name": "绍兴花雕",
+        "brand_name": "绍兴花雕",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "name": "致中和",
+        "brand_name": "致中和",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "name": "茅台",
+        "brand_name": "茅台",
+        "value": 2.4,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "name": "一担粮",
+        "brand_name": "一担粮",
+        "value": 1.2,
+        "is_target": false
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 84,
+    "citation_rate": 70.2,
+    "total_citations": 1055,
+    "platform_stats": [
+      {
+        "platform_name": "百度知道",
+        "domain": "baidu.com",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "citation_count": 403,
+        "share": 38.2
+      },
+      {
+        "platform_name": "抖音",
+        "domain": "iesdouyin.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com.png",
+        "citation_count": 108,
+        "share": 10.2
+      },
+      {
+        "platform_name": "SMZDM",
+        "domain": "smzdm.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/smzdm.com.jpg",
+        "citation_count": 61,
+        "share": 5.8
+      },
+      {
+        "platform_name": "哔哩哔哩",
+        "domain": "bilibili.com",
+        "logo_url": "https://b.bdstatic.com/searchbox/mappconsole/image/20181030/1540889038159862.png",
+        "citation_count": 60,
+        "share": 5.7
+      },
+      {
+        "platform_name": "淘宝网",
+        "domain": "taobao.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/taobao.com.jpg",
+        "citation_count": 54,
+        "share": 5.1
+      }
+    ],
+    "articles": [
+      {
+        "title": "养生酒",
+        "link_url": "https://baike.baidu.com/item/%E5%85%BB%E7%94%9F%E9%85%92/9796493",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 27,
+        "avg_citations": 27,
+        "has_target_product": false
+      },
+      {
+        "title": "适合家庭团圆喝的养生酒：百元到四百元三档怎么取舍 - 适合家庭团圆喝的养生酒：百元到四百元三档怎么取舍",
+        "link_url": "https://view.inews.qq.com/k/20260813A05B0U00?scene=wap&id=20260813A05B0U00&path=a&app=news&redirect_pc=1&no-redirect=1#1",
+        "domain": "qq.com",
+        "platform_name": "QQ News",
+        "logo_url": "https://cdn.deepseek.com/site-icons/qq.com",
+        "total_citations": 10,
+        "avg_citations": 10,
+        "has_target_product": false
+      },
+      {
+        "title": "喝酒养生的门道:从酒品到饮法,你选对了几步?",
+        "link_url": "https://baijiahao.baidu.com/s?id=1829089601443021626&wfr=spider&for=pc",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 9,
+        "avg_citations": 9,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年适合家庭团圆喝的养生酒怎么选？8款低度白酒亲测 - 今日头条",
+        "link_url": "https://www.toutiao.com/article/7643000090168246836/?upstream_biz=VolcEngine&source=m_redirect&wid=1786738238822",
+        "domain": "toutiao.com",
+        "platform_name": "今日头条",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/toutiao.com.ico",
+        "total_citations": 7,
+        "avg_citations": 7,
+        "has_target_product": false
+      },
+      {
+        "title": "欢度酒 - 由劲牌有限公司推出的针对年轻消费市场的草本轻型小酒",
+        "link_url": "https://baike.baidu.com/item/%E6%AC%A2%E5%BA%A6%E9%85%92#1",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 7,
+        "avg_citations": 7,
+        "has_target_product": false
+      },
+      {
+        "title": "草本白酒",
+        "link_url": "https://baike.baidu.com/item/%E8%8D%89%E6%9C%AC%E7%99%BD%E9%85%92/63266642",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 7,
+        "avg_citations": 7,
+        "has_target_product": true
+      },
+      {
+        "title": "养生酒哪个牌子好?怎么选,告别困扰",
+        "link_url": "http://quanmin.baidu.com/sv?source=share-h5&pd=qm_share_search&vid=5111877608422360337",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": false
+      },
+      {
+        "title": "黄酒哪个品牌适合日常养生小酌?2026养生黄酒优选指南,养身滋补更温和",
+        "link_url": "https://baijiahao.baidu.com/s?id=1861256227331338946&wfr=spider&for=pc",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": false
+      },
+      {
+        "title": "【劲牌黄酒/养生酒怎么样】劲牌 十全酒【好不好 点评 好吗】 -什么值得买 - 百科",
+        "link_url": "https://wiki.smzdm.com/p/951786y/dianping/#1",
+        "domain": "smzdm.com",
+        "platform_name": "SMZDM",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/smzdm.com.jpg",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": false
+      },
+      {
+        "title": "毛铺草本酒",
+        "link_url": "https://baike.baidu.com/item/%E6%AF%9B%E9%93%BA%E8%8D%89%E6%9C%AC%E9%85%92/63139903",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": true
+      }
+    ]
+  },
+  "overview_daily": [
+    {
+      "date": "2026-08-27",
+      "mention_rate": 44,
+      "avg_position": 4.5,
+      "influence_rank": 2
+    }
+  ]
+}

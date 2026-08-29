@@ -1,12 +1,14 @@
 import React from 'react';
-import report from '../data/jinjiuJulyReport.json';
+import report from '../data/jinjiuAugustReport.json';
 
 function createContentDetailsPage({ productKey, title }) {
   const data = report.products[productKey];
   const ov = data.delivery.overview;
   const plat = data.delivery.platform_totals;
   const topArticles = data.delivery.top10;
-  const channels = (data.delivery.top_channels || []).slice(0, 6).join('、') || '今日头条、搜狐、新浪、网易、百家号、什么值得买';
+  const topChannels = data.delivery.top_channels || [];
+  const channels = topChannels.slice(0, 6).join('、') || '今日头条、搜狐、新浪、网易、百家号、什么值得买';
+  const leadChannels = topChannels.slice(0, 3).join('、') || '什么值得买、新浪、网易';
 
   return function ContentDetailsPage() {
     return (
@@ -15,7 +17,7 @@ function createContentDetailsPage({ productKey, title }) {
           <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
           <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
             {title}
-            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
+            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
           </h1>
         </div>
 
@@ -49,7 +51,7 @@ function createContentDetailsPage({ productKey, title }) {
                 ( {ov.cited_articles} / {ov.delivery_articles} 篇投放已被引用 )
               </div>
               <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
-                投放到什么值得买、新浪、网易等渠道已顺利通过大模型检索。
+                投放到{leadChannels}等渠道已顺利通过大模型检索。
               </p>
             </div>
 

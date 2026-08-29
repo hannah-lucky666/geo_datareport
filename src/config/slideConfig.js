@@ -6,9 +6,6 @@ import Page_CompetitorAnalysis_Premium from '../pages/Page_CompetitorAnalysis_Pr
 import Page_ContentDetails from '../pages/Page_ContentDetails';
 import Page_ContentDetails_AI from '../pages/Page_ContentDetails_AI';
 import Page_ContentDetails_Premium from '../pages/Page_ContentDetails_Premium';
-import Page_ContentAnalysis from '../pages/Page_ContentAnalysis';
-import Page_ContentAnalysis_AI from '../pages/Page_ContentAnalysis_AI';
-import Page_ContentAnalysis_Premium from '../pages/Page_ContentAnalysis_Premium';
 import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
 
 // 词条明细：与 Report_gujinggong 同款数据系统 UI
@@ -43,7 +40,7 @@ export const slideConfig = [
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO 索引未来',
     subtitle: '劲牌GEO \n 阶段性报告',
-    date: 'July 2026',
+    date: 'August 2026',
   },
 
   {
@@ -68,12 +65,6 @@ export const slideConfig = [
   { type: 'page', title: '劲酒 投放明细', component: Page_ContentDetails },
   { type: 'page', title: '毛铺 投放明细', component: Page_ContentDetails_AI },
   { type: 'page', title: '养生一号 投放明细', component: Page_ContentDetails_Premium },
-
-  { type: 'chapter', title: '内容分析与总结说明', subtitle: 'CONTENT ANALYSIS & SUMMARY', backgroundImage: '' },
-  { type: 'section', title: '内容总结分析' },
-  { type: 'page', title: '劲酒 内容总结', component: Page_ContentAnalysis },
-  { type: 'page', title: '毛铺 内容总结', component: Page_ContentAnalysis_AI },
-  { type: 'page', title: '养生一号 内容总结', component: Page_ContentAnalysis_Premium },
 
   { type: 'chapter', title: '词条数据明细', subtitle: 'KEYWORD DETAILS', backgroundImage: '' },
   { type: 'section', title: '词条监测明细' },
