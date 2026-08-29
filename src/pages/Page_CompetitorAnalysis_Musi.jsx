@@ -1,5 +1,5 @@
 import React from 'react';
-import report from '../data/musiJulyReport.json';
+import report from '../data/musiAugReport.json';
 
 const brandName = '慕思';
 const data = report.products.mattress;
@@ -85,7 +85,7 @@ export default function Page_CompetitorAnalysis_Musi() {
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
           慕思床垫竞品分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
         </h1>
       </div>
 
@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品本月全面领跑：提及率由6月58.3%大幅升至75.8%，Top1升至24.2%稳居第一，平均位次由NO.5.5前移至NO.4.0，竞品排名升至NO.1。
+                1. 本品本月三项指标继续居首：提及率83.3%、Top1 33.3%、平均位次NO.4.2；喜临门以15.6%的Top1紧随其后，是首推位上的最主要对手。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 喜临门（52.5%）、金可儿（50.8%）、丝涟（50%）构成第二梯队；丝涟Top1 13.3%仍最接近本品，差距已扩大至10.9个百分点。
+                2. 金可儿、雅兰同为62.2%，丝涟、喜临门同为56.7%，四家贴身跟随、头部集中度偏低；位次上本品NO.4.2与喜临门NO.5.3相差1.1位，领先幅度有限。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '巩固第一名位势', desc: '延续支撑性好、透气性好等高相关内容投放，继续拉开与喜临门在提及率与位次上的差距。' },
-                { num: '02', title: '多价位段覆盖', desc: '针对七千价位与万元主卧升级词条分别铺设差异化产品表达，降低溢价质疑带来的转化损耗。' },
-                { num: '03', title: '同台竞品拦截', desc: '加强对丝涟、喜临门的用料与耐用性对比语料，守住24.2%的Top1领先优势。' },
+                { num: '01', title: '拉开提及差距', desc: '与金可儿、雅兰的62.2%相差21.1个百分点，需在品牌榜单与质量口碑类泛词持续补量，把83.3%的提及率继续推高。' },
+                { num: '02', title: '前移平均位次', desc: 'NO.4.2仍偏后，围绕支撑性好、透气不闷热等强卖点词条争取更靠前的推荐顺位。' },
+                { num: '03', title: '扩大首推份额', desc: '33.3%的Top1已达喜临门（15.6%）的两倍，重点在七千价位段与高端弹簧床垫词条强化“首选”表达，把43.3%的Top3同步拉高。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

@@ -1,14 +1,11 @@
 import React from 'react';
 import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
-import Page_ContentAnalysis from '../pages/Page_ContentAnalysis';
 import Page_ContentDetails from '../pages/Page_ContentDetails';
-import Page_ContentAnalysis_AI from '../pages/Page_ContentAnalysis_AI';
 import Page_ContentDetails_AI from '../pages/Page_ContentDetails_AI';
 import Page_CompetitorAnalysis_AI from '../pages/Page_CompetitorAnalysis_AI';
 import Page_CompetitorAnalysis_Musi from '../pages/Page_CompetitorAnalysis_Musi';
 import Page_ContentDetails_Musi from '../pages/Page_ContentDetails_Musi';
-import Page_ContentAnalysis_Musi from '../pages/Page_ContentAnalysis_Musi';
 import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
 
 // 词条明细：与 Report_gujinggong 同款数据系统 UI
@@ -33,9 +30,9 @@ function makeEntryPages(projectId, pageCount, pageSize) {
   return pages;
 }
 
-const KeywordPages_Smart = makeEntryPages(392, 2, 15);
-const KeywordPages_AI = makeEntryPages(391, 2, 15);
-const KeywordPages_Musi = makeEntryPages(393, 2, 10);
+const KeywordPages_Smart = makeEntryPages(182, 2, 15);
+const KeywordPages_AI = makeEntryPages(181, 2, 15);
+const KeywordPages_Musi = makeEntryPages(239, 2, 10);
 
 export const slideConfig = [
   {
@@ -44,7 +41,7 @@ export const slideConfig = [
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO 索引未来',
     subtitle: '慕思GEO \n 阶段性报告',
-    date: 'July 2026',
+    date: 'August 2026',
   },
 
   {
@@ -69,12 +66,6 @@ export const slideConfig = [
   { type: 'page', title: '慕思智能床 投放明细', component: Page_ContentDetails },
   { type: 'page', title: '慕思AI床垫 投放明细', component: Page_ContentDetails_AI },
   { type: 'page', title: '慕思床垫 投放明细', component: Page_ContentDetails_Musi },
-
-  { type: 'chapter', title: '内容分析与总结说明', subtitle: 'CONTENT ANALYSIS & SUMMARY', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-  { type: 'section', title: '内容总结分析' },
-  { type: 'page', title: '慕思智能床 内容总结', component: Page_ContentAnalysis },
-  { type: 'page', title: '慕思AI床垫 内容总结', component: Page_ContentAnalysis_AI },
-  { type: 'page', title: '慕思床垫 内容总结', component: Page_ContentAnalysis_Musi },
 
   { type: 'chapter', title: '词条数据明细', subtitle: 'KEYWORD DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '词条监测明细' },

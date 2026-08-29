@@ -1,11 +1,12 @@
 import React from 'react';
-import report from '../data/musiJulyReport.json';
+import report from '../data/musiAugReport.json';
 
 function createContentDetailsPage({ productKey, title }) {
   const data = report.products[productKey];
   const ov = data.delivery.overview;
   const plat = data.delivery.platform_totals;
   const topArticles = data.delivery.top10;
+  const channels = data.delivery.channels;
 
   return function ContentDetailsPage() {
     return (
@@ -14,7 +15,7 @@ function createContentDetailsPage({ productKey, title }) {
           <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
           <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
             {title}
-            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
+            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
           </h1>
         </div>
 
@@ -31,7 +32,7 @@ function createContentDetailsPage({ productKey, title }) {
               </div>
               <div className="text-[1.12rem] font-bold text-zinc-500">全网总投放量</div>
               <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
-                覆盖渠道：今日头条、搜狐、新浪、网易、百家号、什么值得买等。
+                覆盖渠道：{channels.by_articles.join('、')}等。
               </p>
             </div>
 
@@ -48,7 +49,7 @@ function createContentDetailsPage({ productKey, title }) {
                 ( {ov.cited_articles} / {ov.delivery_articles} 篇投放已被引用 )
               </div>
               <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
-                投放到网易、什么值得买、新浪等渠道已顺利通过大模型的检索。
+                投放到{channels.by_citations.join('、')}等渠道已顺利通过大模型的检索。
               </p>
             </div>
 
@@ -102,8 +103,8 @@ function createContentDetailsPage({ productKey, title }) {
                   <thead>
                     <tr className="bg-slate-50/50 border-b border-zinc-200 text-[0.92rem] font-extrabold text-zinc-700">
                       <th className="py-1.5 px-3 w-[4%] text-center">排序</th>
-                      <th className="py-1.5 px-3 w-[44%]">文章标题</th>
-                      <th className="py-1.5 px-3 w-[8%]">发布平台</th>
+                      <th className="py-1.5 px-3 w-[39%]">文章标题</th>
+                      <th className="py-1.5 px-3 w-[13%]">发布平台</th>
                       <th className="py-1.5 px-3 w-[9%] text-center">发布时间</th>
                       <th className="py-1.5 px-3 w-[6%] text-center">总引用数</th>
                       <th className="py-1.5 px-3 w-[4%] text-center">DeepSeek</th>
@@ -135,7 +136,7 @@ function createContentDetailsPage({ productKey, title }) {
                       <tr key={row.rank} className="hover:bg-slate-50/50 transition-colors">
                         <td className="py-2 px-3 text-center text-[0.95rem] font-black font-['Montserrat',sans-serif] text-zinc-900">{row.rank}</td>
                         <td className="py-2 px-3 text-[0.95rem] font-bold text-zinc-900 truncate max-w-0" title={row.title}>{row.title}</td>
-                        <td className="py-2 px-3 text-[0.92rem] font-black text-zinc-800">{row.platform}</td>
+                        <td className="py-2 px-3 text-[0.92rem] font-black text-zinc-800 truncate" title={row.platform}>{row.platform}</td>
                         <td className="py-2 px-3 text-[0.9rem] font-extrabold text-zinc-400 font-['Montserrat',sans-serif] text-center">{row.date}</td>
                         <td className="py-2 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">{row.total}</td>
                         <td className="py-2 px-3 text-[0.9rem] font-extrabold text-center text-zinc-700 font-['Montserrat',sans-serif]">{row.deepseek}</td>

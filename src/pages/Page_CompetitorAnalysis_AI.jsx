@@ -1,5 +1,5 @@
 import React from 'react';
-import report from '../data/musiJulyReport.json';
+import report from '../data/musiAugReport.json';
 
 const brandName = '慕思AI床垫';
 const data = report.products.ai;
@@ -85,7 +85,7 @@ export default function Page_CompetitorAnalysis_AI() {
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
           慕思AI床垫竞品分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年7月）</span>
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
         </h1>
       </div>
 
@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品稳居三项榜单第一：提及率由88.9%升至90.6%，Top1维持60%高位，平均位次稳在NO.2.1；喜临门（57.2%）与舒达（34.4%）构成第二梯队。
+                1. 本品稳居三项榜单第一：提及率85.6%、Top1维持60%高位、平均位次NO.2.1；Top1领先外部最强竞品喜临门（7.2%）超50个百分点，首推心智壁垒稳固。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 慕思智能床以10.6%的Top1率位列第二，同品牌产品仍有分流；顾家家居进入提及率前五，需持续监测。
+                2. 喜临门提及率追至73.3%、位次NO.4.0，是提及广度上的最大威胁；HEKA以42.8%快速切入第三，同品牌慕思智能床仍分流9.4%的Top1。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '巩固高位曝光', desc: '围绕自适应调节、护脊防腰疼等高频场景补强语料，把90.6%的提及率优势继续做实。' },
-                { num: '02', title: '同品牌分流管理', desc: '在AI床垫专属词条中强化品类边界表达，降低慕思智能床对首推份额的分流。' },
-                { num: '03', title: '竞品技术对比', desc: '针对喜临门与HEKA的追赶，补充专利气囊、耗材质保等硬核对比内容，巩固60%的Top1领先。' },
+                { num: '01', title: '补回提及广度', desc: '喜临门提及率已达73.3%，需在品牌榜单、口碑推荐类泛词补量，重新拉开与85.6%的差距。' },
+                { num: '02', title: '守住首推壁垒', desc: '围绕分区调节、精准护脊等强功能词条固化首推位，把60%的Top1优势继续做实。' },
+                { num: '03', title: '防守新兴对手', desc: 'HEKA以42.8%提及率、NO.4.8位次快速切入，重点在售后联保与质量类词条补充硬核对比内容。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

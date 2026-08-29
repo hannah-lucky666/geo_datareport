@@ -118,7 +118,6 @@ const files = {
   smart: readFileSync('src/pages/Page_CompetitorAnalysis.jsx', 'utf8'),
   ai: readFileSync('src/pages/Page_CompetitorAnalysis_AI.jsx', 'utf8'),
   mattress: readFileSync('src/pages/Page_CompetitorAnalysis_Musi.jsx', 'utf8'),
-  content: readFileSync('src/pages/Page_ContentAnalysis.jsx', 'utf8'),
   query: readFileSync('src/pages/Page_QueryDataSystemLink.jsx', 'utf8'),
   slide: readFileSync('src/config/slideConfig.js', 'utf8'),
 };
@@ -127,8 +126,6 @@ const must = [
   ['smart', '89.4%'], ['smart', '42.8%'], ['smart', '70.6%'],
   ['ai', '90.6%'], ['ai', '60%'], ['ai', '57.2%'],
   ['mattress', '75.8%'], ['mattress', '24.2%'], ['mattress', '58.3%'],
-  ['content', '2.8%'], ['content', '94.4%'], ['content', '99.2%'],
-  ['content', '生态联动'], ['content', '功能全面'], ['content', '支撑性好'],
   ['query', '392'], ['query', '391'], ['query', '393'], ['query', '07-30'],
   ['slide', '392'], ['slide', '391'], ['slide', '393'],
 ];
@@ -139,13 +136,12 @@ const forbid = [
   ['mattress', '71.7%'], ['mattress', '66.7%'],
   ['query', '182'], ['query', '181'], ['query', '239'], ['query', '07-20'],
   ['slide', '182'], ['slide', '181'], ['slide', '239'],
-  ['content', '3.3%'], ['content', '98.3%'], ['content', '波动极小'],
 ];
 for (const [k, s] of must) if (!files[k].includes(s)) issues.push(`MISSING ${k}: ${s}`);
 for (const [k, s] of forbid) if (files[k].includes(s)) issues.push(`STALE ${k}: ${s}`);
 
 const slideOrder = JSON.parse(readFileSync('src/slideOrder.json', 'utf8'));
-const keywordIds = slideOrder.filter((id) => id.startsWith('chapter-3-0-'));
+const keywordIds = slideOrder.filter((id) => id.startsWith('chapter-2-0-'));
 console.log('\n=== SLIDE ORDER KEYWORD PAGES ===', keywordIds.length, '(expect 36)');
 if (keywordIds.length !== 36) issues.push(`keyword pages in slideOrder = ${keywordIds.length}, expect 36`);
 

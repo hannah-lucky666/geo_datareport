@@ -5,6 +5,7 @@
  *
  * 用法:
  *   node scripts/fetch-geo-report.mjs <project_id> [--start YYYY-MM-DD] [--end YYYY-MM-DD]
+ *                                     [--group <分组名>] [--entry-ids 1,2,3] [--out <文件名>]
  *   node scripts/fetch-geo-report.mjs --list
  *
  * 必需环境变量（可写在项目根目录 .env）:
@@ -18,6 +19,12 @@
  *     · 平均提及位次  → conversations/stats.avg_position       （不是 compare.position_ranking！两者可能差 0.1）
  *     · 竞品排名      → 行业影响力排名 = competitors/influence 中本品(is_target)的 rank（不是提及率排名的名次）
  *   本脚本已把逐日的这三个指标算好放进 report.overview_daily，按日期直接取用即可。
+ *
+ * ⚠ Top1/Top3 提及率：conversations/stats 的 top1/top3 字段恒为 null，只能从
+ *   competitors/top-mention-rate?top_type=top1|top3 的 self_selected_top_mention_rate 取。
+ *
+ * ⚠ 词条分组过滤：聚合接口不认 group_id，只认 entry_ids（英文逗号分隔的词条 ID）。
+ *   用 --group <分组名> 时脚本会先查 entry-groups 拿到成员词条，再转成 entry_ids 下发。
  */
 
 import { writeFileSync, existsSync, mkdirSync, readFileSync } from 'node:fs';
@@ -56,6 +63,7 @@ const listOnly = args.includes('--list');
 const projectId = Number(args.find((a) => !a.startsWith('--')));
 if (!listOnly && !projectId) {
   console.error('用法: node scripts/fetch-geo-report.mjs <project_id> [--start YYYY-MM-DD] [--end YYYY-MM-DD]');
+  console.error('                                        [--group <分组名>] [--entry-ids 1,2,3] [--out <文件名>]');
   console.error('      node scripts/fetch-geo-report.mjs --list');
   process.exit(1);
 }
@@ -126,6 +134,26 @@ async function main() {
   console.log(`项目: ${project.project_name} / 目标产品: ${project.target_product}`);
   console.log(`数据区间: ${startDate} ~ ${endDate}`);
 
+  // 词条范围：--entry-ids 直接给 ID，--group 先按分组名解析出成员词条
+  let entryIds = getFlag('entry-ids');
+  const groupName = getFlag('group');
+  if (groupName) {
+    const groups = (await api('/api/entry-groups', { project_id: projectId })).data.groups || [];
+    const group = groups.find((g) => g.name === groupName || g.name_zh === groupName);
+    if (!group) {
+      console.error(`未找到分组「${groupName}」，本项目分组: ${groups.map((g) => g.name).join('、') || '（无）'}`);
+      process.exit(1);
+    }
+    const all = (await api('/api/entries', { ...range, page: 1, page_size: 500 })).data.list || [];
+    const members = all.filter((e) => e.group_id === group.id);
+    entryIds = members.map((e) => e.entry_id).join(',');
+    console.log(`词条分组: ${group.name}（${members.length} 条）`);
+  }
+  if (entryIds) {
+    range.entry_ids = entryIds;
+    console.log(`仅统计词条: ${entryIds}`);
+  }
+
   const [platforms, stats, influence, entries, compare, citationStats, citationArticles] = await Promise.all([
     api('/api/platforms', { project_id: projectId }),
     api('/api/conversations/stats', range),
@@ -136,12 +164,16 @@ async function main() {
     api('/api/citations/articles', { ...range, page: 1, page_size: 10, sort_by: 'total_citations', sort_order: 'desc' }),
   ]);
 
-  // Top1 提及率排名（测试服暂无此接口，失败时置空）
+  // Top1 / Top3 提及率排名（测试服暂无此接口，失败时置空）
   let top1 = null;
+  let top3 = null;
   try {
-    top1 = await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1' });
+    [top1, top3] = await Promise.all([
+      api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1' }),
+      api('/api/competitors/top-mention-rate', { ...range, top_type: 'top3' }),
+    ]);
   } catch (e) {
-    console.warn(`top-mention-rate 接口不可用（${e.message}），Top1 排名置空`);
+    console.warn(`top-mention-rate 接口不可用（${e.message}），Top1/Top3 排名置空`);
   }
 
   const platformMap = Object.fromEntries(platforms.data.map((p) => [p.id, p]));
@@ -160,8 +192,9 @@ async function main() {
     platforms: platforms.data,
     stats: {
       brand_mention_rate: num(stats.data.brand_mention_rate),
-      top1_mention_rate: num(stats.data.top1_mention_rate),
-      top3_mention_rate: num(stats.data.top3_mention_rate),
+      // conversations/stats 不返回 top1/top3，回退到 top-mention-rate 的本品自身值
+      top1_mention_rate: num(stats.data.top1_mention_rate ?? top1?.data?.self_selected_top_mention_rate),
+      top3_mention_rate: num(stats.data.top3_mention_rate ?? top3?.data?.self_selected_top_mention_rate),
       avg_position: num(stats.data.avg_position),
       daily_stats: (stats.data.daily_stats || []).map((d) => ({
         date: d.date,
@@ -212,6 +245,12 @@ async function main() {
         top1_mention_rate: num(b.selected_top_mention_rate),
         is_target: !!(b.is_self ?? b.is_target),
       })),
+      top3_ranking: (top3?.data?.list || []).map((b) => ({
+        rank: b.rank,
+        brand_name: b.display_name || b.brand_name,
+        top3_mention_rate: num(b.selected_top_mention_rate),
+        is_target: !!(b.is_self ?? b.is_target),
+      })),
     },
     citations: {
       total_conversations: citationStats.data.total_conversations,
@@ -245,7 +284,7 @@ async function main() {
     await Promise.all(
       overviewDates.map(async (date) => {
         try {
-          const inf = await api('/api/competitors/influence', { project_id: projectId, start_date: date, end_date: date });
+          const inf = await api('/api/competitors/influence', { ...range, start_date: date, end_date: date });
           const self = (inf.data.list || []).find((b) => b.is_target);
           return [date, self ? self.rank : null];
         } catch {
@@ -261,7 +300,11 @@ async function main() {
     influence_rank: dailyRank[d.date] ?? null, // 竞品排名 = 行业影响力排名
   }));
 
-  const outPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), `../src/data/geoReport_${projectId}.json`);
+  report.meta.entry_ids = entryIds || null;
+  report.meta.entry_group = groupName || null;
+
+  const outName = getFlag('out') || `geoReport_${projectId}.json`;
+  const outPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), `../src/data/${outName}`);
   
   // 确保目录存在
   const outDir = path.dirname(outPath);

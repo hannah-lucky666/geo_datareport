@@ -20,13 +20,13 @@ const LOGOS = {
 };
 
 const PRODUCT_META = {
-  392: { short: '慕思智能床', full: '慕思智能床' },
-  391: { short: '慕思AI床垫', full: '慕思AI床垫' },
-  393: { short: '慕思床垫', full: '慕思床垫' },
+  182: { short: '慕思智能床', full: '慕思智能床' },
+  181: { short: '慕思AI床垫', full: '慕思AI床垫' },
+  239: { short: '慕思床垫', full: '慕思床垫' },
 };
 
 export default function Page_QueryDataSystemLink({
-  projectId = 392,
+  projectId = 182,
   platformId = 1,
   pageIndex = 0,
   pageSize = 20,
@@ -62,7 +62,7 @@ export default function Page_QueryDataSystemLink({
           <div className="flex items-center gap-1.5 bg-white border border-zinc-200/80 rounded-md px-3 py-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
             <span className="text-zinc-400 text-xs">📅</span>
             <span>日期</span>
-            <span className="text-zinc-400 text-[10px] ml-1">07-30</span>
+            <span className="text-zinc-400 text-[10px] ml-1">08-28</span>
             <span className="text-zinc-300 text-[9px] ml-1">▼</span>
           </div>
 
