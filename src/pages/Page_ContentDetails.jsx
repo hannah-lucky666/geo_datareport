@@ -1,158 +1,13 @@
 import React from 'react';
+import contentDetails from '../data/content_details.json';
+
+// 数据源：古井贡酒古16_投放文章统计（由 scripts/build_content_details.py 从 Excel 生成）
+const detail = contentDetails['123'];
 
 export default function Page_ContentDetails() {
-  const topArticles = [
-    {
-      rank: 1,
-      title: '300-500元左右结婚用什么白酒比较好？2026年婚宴酒TOP10揭晓',
-      platform: '网易',
-      domain: '163.com',
-      date: '2026-03-22',
-      total: 323,
-      deepseek: 19,
-      doubao: 67,
-      yuanbao: 3,
-      wenxin: 96,
-      kimi: 138,
-      isCited: '是',
-      link: 'https://www.163.com/dy/article/KO8A66J70556K6FL.html'
-    },
-    {
-      rank: 2,
-      title: '2026婚宴白酒全景观察：300-500元婚宴用酒推荐金榜',
-      platform: '什么值得买',
-      domain: 'post.smzdm.com',
-      date: '2025-12-31',
-      total: 143,
-      deepseek: 1,
-      doubao: 61,
-      yuanbao: 2,
-      wenxin: 14,
-      kimi: 65,
-      isCited: '是',
-      link: 'https://post.smzdm.com/p/a70qo7vo/'
-    },
-    {
-      rank: 3,
-      title: '从品牌到口感深度测评：300-500元婚宴白酒排名，第一名实至名归',
-      platform: '什么值得买',
-      domain: 'post.smzdm.com',
-      date: '2026-05-22',
-      total: 138,
-      deepseek: 57,
-      doubao: 58,
-      yuanbao: 0,
-      wenxin: 12,
-      kimi: 11,
-      isCited: '是',
-      link: 'https://post.smzdm.com/p/a26eezk7/'
-    },
-    {
-      rank: 4,
-      title: '2026年婚宴白酒前10名推荐，300-500元左右结婚用什么白酒比较好',
-      platform: '什么值得买',
-      domain: 'post.smzdm.com',
-      date: '2026-05-11',
-      total: 131,
-      deepseek: 11,
-      doubao: 42,
-      yuanbao: 0,
-      wenxin: 23,
-      kimi: 55,
-      isCited: '是',
-      link: 'https://post.smzdm.com/p/a4qndwxk/'
-    },
-    {
-      rank: 5,
-      title: '婚宴白酒前10名推荐：2026高端婚宴白酒排名揭晓，准新人必看',
-      platform: '什么值得买',
-      domain: 'post.smzdm.com',
-      date: '2026-04-29',
-      total: 130,
-      deepseek: 12,
-      doubao: 56,
-      yuanbao: 0,
-      wenxin: 25,
-      kimi: 37,
-      isCited: '是',
-      link: 'https://post.smzdm.com/p/apq7k2qw/'
-    },
-    {
-      rank: 6,
-      title: '婚宴白酒前10名揭晓：解析300-500元婚宴白酒用哪个品牌比较好',
-      platform: '网易',
-      domain: '163.com',
-      date: '2026-04-19',
-      total: 118,
-      deepseek: 0,
-      doubao: 5,
-      yuanbao: 0,
-      wenxin: 54,
-      kimi: 59,
-      isCited: '是',
-      link: 'https://www.163.com/dy/article/KR06BLOQ0556K6FL.html'
-    },
-    {
-      rank: 7,
-      title: '2026松弛感婚礼指南：300-500元婚宴白酒用哪个品牌比较好？',
-      platform: '网易',
-      domain: '163.com',
-      date: '2026-05-05',
-      total: 116,
-      deepseek: 29,
-      doubao: 0,
-      yuanbao: 0,
-      wenxin: 35,
-      kimi: 52,
-      isCited: '是',
-      link: 'https://www.163.com/dy/article/KS8ME6G20556JOO4.html'
-    },
-    {
-      rank: 8,
-      title: '300-500元婚宴白酒用哪个品牌比较好？7款实测喜酒横评',
-      platform: '什么值得买',
-      domain: 'post.smzdm.com',
-      date: '2026-06-10',
-      total: 114,
-      deepseek: 8,
-      doubao: 0,
-      yuanbao: 13,
-      wenxin: 1,
-      kimi: 92,
-      isCited: '是',
-      link: ''
-    },
-    {
-      rank: 9,
-      title: '300-500元婚宴白酒用哪个品牌比较好？2026品牌、面子与口碑的大实话',
-      platform: '新浪',
-      domain: 'k.sina.com.cn',
-      date: '2026-04-27',
-      total: 111,
-      deepseek: 0,
-      doubao: 17,
-      yuanbao: 0,
-      wenxin: 29,
-      kimi: 65,
-      isCited: '是',
-      link: 'https://k.sina.com.cn/article_8339089836_1f10c69ac00101dhfe.html?kdurlshow=1&wm=3049_0047&from=food'
-    },
-    {
-      rank: 10,
-      title: '500元左右结婚买什么浓香型白酒好？这份2026高分喜酒清单请查收',
-      platform: '百家号',
-      domain: 'baijiahao.baidu.com',
-      date: '2026-04-20',
-      total: 106,
-      deepseek: 0,
-      doubao: 0,
-      yuanbao: 0,
-      wenxin: 106,
-      kimi: 0,
-      isCited: '是',
-      link: 'https://baijiahao.baidu.com/s?id=1863046169292378241'
-    }
-  ];
+  const topArticles = detail.top10;
+  const { total_articles: totalArticles, cited_articles: citedArticles, citation_rate: citationRate,
+    total_citations: totalCitations, by_platform: byPlatform, channels } = detail;
 
   return (
     <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-900 font-sans bg-white">
@@ -177,12 +32,12 @@ export default function Page_ContentDetails() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">TOTAL CAMPAIGN</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">191</span>
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">{totalArticles}</span>
               <span className="text-2xl font-black text-zinc-800 ml-1">篇</span>
             </div>
             <div className="text-[1.12rem] font-bold text-zinc-500">全网总投放量</div>
             <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
-              覆盖渠道：今日头条、搜狐、新浪、网易、百家号、什么值得买等。
+              覆盖渠道：{channels.join('、')}等。
             </p>
           </div>
 
@@ -193,14 +48,14 @@ export default function Page_ContentDetails() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">CITATION RATE</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">52.9%</span>
+              <span className="text-6xl font-black text-emerald-600 font-['Montserrat',sans-serif]">{citationRate}%</span>
               <span className="text-2xl font-black text-emerald-600 ml-1">被引率</span>
             </div>
             <div className="text-[1.12rem] font-bold text-emerald-600">
-              ( 101 / 191 篇投放已被引用 )
+              ( {citedArticles} / {totalArticles} 篇投放已被引用 )
             </div>
             <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
-              投放到网易、什么值得买、新浪等渠道已顺利通过豆包等大模型的检索。
+              投放到什么值得买、网易、新浪等渠道已顺利通过 Kimi、文心等大模型的检索。
             </p>
           </div>
 
@@ -211,7 +66,7 @@ export default function Page_ContentDetails() {
               <span className="text-sm font-extrabold text-zinc-400 uppercase tracking-widest font-['Montserrat']">EFFECTIVE CITATIONS</span>
             </div>
             <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">3194</span>
+              <span className="text-6xl font-black text-zinc-900 font-['Montserrat',sans-serif]">{totalCitations}</span>
               <span className="text-2xl font-black text-zinc-800 ml-1">次</span>
             </div>
             <div className="text-[1.12rem] font-bold text-zinc-500">累计引用频次</div>
@@ -219,23 +74,23 @@ export default function Page_ContentDetails() {
             <div className="grid grid-cols-3 gap-x-4 gap-y-1 mt-1.5">
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                豆包：<strong className="text-zinc-800 font-['Montserrat']">780</strong>
+                豆包：<strong className="text-zinc-800 font-['Montserrat']">{byPlatform.doubao}</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Kimi：<strong className="text-zinc-800 font-['Montserrat']">981</strong>
+                Kimi：<strong className="text-zinc-800 font-['Montserrat']">{byPlatform.kimi}</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                文心：<strong className="text-zinc-800 font-['Montserrat']">907</strong>
+                文心：<strong className="text-zinc-800 font-['Montserrat']">{byPlatform.wenxin}</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                元宝：<strong className="text-zinc-800 font-['Montserrat']">23</strong>
+                元宝：<strong className="text-zinc-800 font-['Montserrat']">{byPlatform.yuanbao}</strong>
               </span>
               <span className="text-sm font-bold text-zinc-500 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">503</strong>
+                DeepSeek：<strong className="text-zinc-800 font-['Montserrat']">{byPlatform.deepseek}</strong>
               </span>
             </div>
           </div>
@@ -276,13 +131,13 @@ export default function Page_ContentDetails() {
                     <td className="py-1.5 px-3 text-[1rem]">【总计汇总】</td>
                     <td className="py-1.5 px-3 text-zinc-400">—</td>
                     <td className="py-1.5 px-3 text-zinc-400">—</td>
-                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">3194</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">503</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">780</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">23</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">907</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">981</td>
-                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">101/191</td>
+                    <td className="py-1.5 px-3 text-base font-black text-center text-[#004CE5] font-['Montserrat',sans-serif]">{totalCitations}</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">{byPlatform.deepseek}</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">{byPlatform.doubao}</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">{byPlatform.yuanbao}</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">{byPlatform.wenxin}</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-zinc-800 font-['Montserrat',sans-serif]">{byPlatform.kimi}</td>
+                    <td className="py-1.5 px-3 text-[0.95rem] font-black text-center text-emerald-600 font-['Montserrat',sans-serif]">{citedArticles}/{totalArticles}</td>
                   </tr>
 
                   {/* Body Rows */}

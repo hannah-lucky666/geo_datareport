@@ -33,11 +33,15 @@ function slideOrderSavePlugin() {
   }
 }
 
+const { port: DEV_PORT } = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, 'port.json'), 'utf-8')
+)
+
 export default defineConfig({
   plugins: [react(), slideOrderSavePlugin()],
   server: {
     host: true,
-    port: 5176,
+    port: DEV_PORT,
     strictPort: true,
     allowedHosts: true,
   },

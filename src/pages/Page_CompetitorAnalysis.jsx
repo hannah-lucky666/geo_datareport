@@ -3,29 +3,30 @@ import React from 'react';
 export default function Page_CompetitorAnalysis() {
   const TARGET = '古井贡酒·古16';
 
-  // 数据口径：2026-07-22（数据系统项目 351）
+  // 数据口径：2026-08-26（数据系统项目 351）
   const mentionRateData = [
-    { name: '水晶剑', value: '88.3%' },
-    { name: TARGET, value: '85.0%' },
-    { name: '红花郎15', value: '48.3%' },
-    { name: '青花20', value: '46.7%' },
-    { name: '红花郎10', value: '41.7%' },
+    { name: '水晶剑', value: '85.0%' },
+    { name: TARGET, value: '65.0%' },
+    { name: '梦之蓝M3水晶版', value: '36.7%' },
+    { name: '红花郎15', value: '35.0%' },
+    { name: '红花郎10', value: '28.3%' },
   ];
 
   const top1RateData = [
-    { name: TARGET, value: '60.0%' },
-    { name: '水晶剑', value: '15.0%' },
+    { name: TARGET, value: '36.7%' },
+    { name: '水晶剑', value: '16.7%' },
+    { name: '四开', value: '11.7%' },
     { name: '普五八代', value: '10.0%' },
-    { name: '红花郎15', value: '3.3%' },
-    { name: '飞天茅台', value: '3.3%' },
+    { name: '飞天茅台', value: '5.0%' },
   ];
 
+  // 位次取数据系统「竞品对比」界面显示值：接口按四舍五入返回（本品 4.8），界面按截断显示（4.7），以界面为准
   const avgRankData = [
-    { name: TARGET, value: 'NO. 3.3' },
-    { name: '水晶剑', value: 'NO. 3.6' },
-    { name: '红花郎15', value: 'NO. 6.9' },
-    { name: '红花郎10', value: 'NO. 7.3' },
-    { name: '普五八代', value: 'NO. 7.6' },
+    { name: '水晶剑', value: 'NO. 3.7' },
+    { name: TARGET, value: 'NO. 4.7' },
+    { name: '梦之蓝M3水晶版', value: 'NO. 6.6' },
+    { name: '红花郎15', value: 'NO. 7.2' },
+    { name: '普五八代', value: 'NO. 7.3' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -140,11 +141,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 水晶剑已反超为本月最大威胁：提及率88.3%高于古16的85.0%，平均位次NO. 3.6紧追古16（NO. 3.3），同台竞争明显升温。
+                1. 水晶剑优势扩大为核心威胁：提及率85.0%对古16的65.0%，差距由上月3.3个百分点拉大到20个百分点，且平均位次NO. 3.7已反超古16（NO. 4.7）。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 尽管提及率短暂落后，古16 Top1提及率仍达60.0%，远高于水晶剑（15.0%）与普五八代（10.0%），首推优势依然稳固。
+                2. 古16 Top1提及率36.7%仍居首位，是水晶剑（16.7%）的两倍以上，首推位尚未失守；但较上月60.0%明显回落，需警惕四开（11.7%）等新进者分流。
               </p>
             </div>
           </div>
@@ -159,18 +160,18 @@ export default function Page_CompetitorAnalysis() {
               {[
                 {
                   num: '01',
-                  title: '提及率夺回',
-                  desc: '针对水晶剑反超（88.3% vs 85.0%），加码核心婚宴/宴席词条曝光，尽快夺回提及率第一。',
+                  title: '提及率止跌',
+                  desc: '针对水晶剑20个百分点的领先（85.0% vs 65.0%），优先在低提及率词条补量，先把曝光基本盘拉回八成以上。',
                 },
                 {
                   num: '02',
-                  title: '首推位巩固',
-                  desc: '古16 Top1仍高达60.0%，需继续稳住高转化长尾词，拉大与水晶剑（15.0%）的首推差距。',
+                  title: '位次回追',
+                  desc: '平均位次已被水晶剑反超（NO. 3.7 vs NO. 4.7），需在婚宴推荐清单类语料中强化古16的首位表述与对比结论。',
                 },
                 {
                   num: '03',
-                  title: '第二梯队拦截',
-                  desc: '红花郎15、青花20提及率已升至46%-48%，位次却仍在NO. 6.9之后，应在同价位场景做精细化对比拦截。',
+                  title: '首推位守卫',
+                  desc: 'Top1提及率36.7%仍领先但已折半，需守住高转化词条，并拦截四开（11.7%）、普五八代（10.0%）的首推渗透。',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

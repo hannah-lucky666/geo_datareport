@@ -2,6 +2,9 @@ import puppeteer from 'puppeteer';
 import pptxgen from 'pptxgenjs';
 import fs from 'fs';
 
+const DEV_PORT = JSON.parse(fs.readFileSync(new URL('./port.json', import.meta.url), 'utf-8')).port;
+const DEV_URL = `http://localhost:${DEV_PORT}`;
+
 // dynamically fetch totalSlides later
 
 async function run() {
@@ -14,11 +17,11 @@ async function run() {
     });
     const page = await browser.newPage();
 
-    console.log('Navigating to http://localhost:5176...');
+    console.log(`Navigating to ${DEV_URL}...`);
     try {
-        await page.goto('http://localhost:5176', { waitUntil: 'networkidle0', timeout: 60000 });
+        await page.goto(DEV_URL, { waitUntil: 'networkidle0', timeout: 60000 });
     } catch (e) {
-        console.error('Failed to load page. Make sure Vite server is running on port 5176.', e);
+        console.error(`Failed to load page. Make sure Vite server is running on port ${DEV_PORT}.`, e);
         await browser.close();
         return;
     }

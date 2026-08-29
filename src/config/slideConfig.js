@@ -3,7 +3,7 @@ import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
 import Page_KeywordCategorization from '../pages/Page_KeywordCategorization';
 import Page_KpiAcceptance from '../pages/Page_KpiAcceptance';
-import Page_ContentAnalysis from '../pages/Page_ContentAnalysis';
+import Page_DataFluctuation from '../pages/Page_DataFluctuation';
 import Page_DataTroubleshooting from '../pages/Page_DataTroubleshooting';
 import Page_DataTroubleshootingSummary from '../pages/Page_DataTroubleshootingSummary';
 import Page_ContentDetails from '../pages/Page_ContentDetails';
@@ -14,7 +14,6 @@ import Page_CoreDataOverview_AI from '../pages/Page_CoreDataOverview_AI';
 import Page_CompetitorAnalysis_AI from '../pages/Page_CompetitorAnalysis_AI';
 import Page_KeywordCategorization_AI from '../pages/Page_KeywordCategorization_AI';
 import Page_KpiAcceptance_AI from '../pages/Page_KpiAcceptance_AI';
-import Page_ContentAnalysis_AI from '../pages/Page_ContentAnalysis_AI';
 import Page_ContentDetails_AI from '../pages/Page_ContentDetails_AI';
 import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
 
@@ -37,7 +36,7 @@ export const slideConfig = [
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO 索引未来',
     subtitle: '古井贡酒GEO \n 阶段性报告',
-    date: 'June 2026',
+    date: 'August 2026',
   },
 
   {
@@ -53,6 +52,7 @@ export const slideConfig = [
   { type: 'chapter', title: '核心数据与竞品分析', subtitle: 'DATA OVERVIEW & COMPETITOR ANALYSIS', backgroundImage: '/' },
   { type: 'section', title: '核心数据总览' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
+  { type: 'page', title: '数据波动说明', component: Page_DataFluctuation },
   { type: 'section', title: '竞品分析' },
   { type: 'page', title: '古井贡酒古16 竞品分析', component: Page_CompetitorAnalysis },
   { type: 'page', title: '古井贡酒古20 竞品分析', component: Page_CompetitorAnalysis_AI },
@@ -63,23 +63,17 @@ export const slideConfig = [
   { type: 'page', title: '古井贡酒古16 投放明细', component: Page_ContentDetails },
   { type: 'page', title: '古井贡酒古20 投放明细', component: Page_ContentDetails_AI },
 
-  // ——— 篇章3: 内容分析与总结说明 ———
-  { type: 'chapter', title: '内容分析与总结说明', subtitle: 'CONTENT ANALYSIS & SUMMARY', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-  { type: 'section', title: '内容总结分析' },
-  { type: 'page', title: '古井贡酒古16 内容总结', component: Page_ContentAnalysis },
-  { type: 'page', title: '古井贡酒古20 内容总结', component: Page_ContentAnalysis_AI },
-
-  // ——— 篇章4: 词条数据明细 ———
+  // ——— 篇章3: 词条数据明细 ———
   { type: 'chapter', title: '词条数据明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '古井贡酒古16 平台明细' },
   { type: 'page', title: '古16 DeepSeek 词条明细', component: Page_Entries_123_1 },
   { type: 'page', title: '古16 豆包 词条明细', component: Page_Entries_123_2 },
-  { type: 'page', title: '古16 文心一言 词条明细', component: Page_Entries_123_4 },
+  { type: 'page', title: '古16 文心 词条明细', component: Page_Entries_123_4 },
   { type: 'page', title: '古16 Kimi 词条明细', component: Page_Entries_123_6 },
   { type: 'section', title: '古井贡酒古20 平台明细' },
   { type: 'page', title: '古20 DeepSeek 词条明细', component: Page_Entries_124_1 },
   { type: 'page', title: '古20 豆包 词条明细', component: Page_Entries_124_2 },
-  { type: 'page', title: '古20 文心一言 词条明细', component: Page_Entries_124_4 },
+  { type: 'page', title: '古20 文心 词条明细', component: Page_Entries_124_4 },
   { type: 'page', title: '古20 Kimi 词条明细', component: Page_Entries_124_6 },
 
 ];

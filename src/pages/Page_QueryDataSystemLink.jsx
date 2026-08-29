@@ -1,5 +1,6 @@
 import React from 'react';
 import platformData from '../data/platform_entries.json';
+import snapshot from '../data/monthlySnapshot.json';
 
 const PLATFORM_NAMES = {
   1: 'DeepSeek',
@@ -14,6 +15,14 @@ const LOGOS = {
   4: 'https://app.geoindexfuture.com/logo/wenxin.webp',
   6: 'https://app.geoindexfuture.com/logo/kimi.png'
 };
+
+/** 数据系统日期筛选器的展示格式：MM-DD ~ MM-DD */
+const DATE_RANGE_LABEL = (() => {
+  const d = snapshot?.meta?.date;
+  if (!d) return '';
+  const md = d.slice(5);
+  return `${md} ~ ${md}`;
+})();
 
 export default function Page_QueryDataSystemLink({ projectId = 123, platformId = 1 }) {
   const data = platformData[String(projectId)]?.[String(platformId)] || [];
@@ -46,7 +55,7 @@ export default function Page_QueryDataSystemLink({ projectId = 123, platformId =
           <div className="flex items-center gap-1.5 bg-white border border-zinc-200/80 rounded-md px-3 py-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.02)] cursor-pointer hover:border-zinc-300 transition-colors">
             <span className="text-zinc-400 text-xs">📅</span>
             <span className="text-zinc-550">日期</span>
-            <span className="text-zinc-400 text-[10px] ml-1">07-20 ~ 07-26</span>
+            <span className="text-zinc-400 text-[10px] ml-1">{DATE_RANGE_LABEL}</span>
             <span className="text-zinc-300 text-[9px] ml-1">▼</span>
           </div>
 

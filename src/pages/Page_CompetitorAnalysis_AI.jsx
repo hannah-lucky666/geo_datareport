@@ -3,29 +3,29 @@ import React from 'react';
 export default function Page_CompetitorAnalysis_AI() {
   const TARGET = '古井贡酒·古20';
 
-  // 数据口径：2026-07-22（数据系统项目 352）
+  // 数据口径：2026-08-26（数据系统项目 352）
   const mentionRateData = [
-    { name: TARGET, value: '91.7%' },
+    { name: TARGET, value: '85.0%' },
     { name: '梦之蓝M6+', value: '70.0%' },
-    { name: '水晶剑', value: '46.7%' },
-    { name: '第八代普五', value: '46.7%' },
-    { name: '国窖1573', value: '40.0%' },
+    { name: '水晶剑', value: '63.3%' },
+    { name: '第八代普五', value: '48.3%' },
+    { name: '国窖1573', value: '46.7%' },
   ];
 
   const top1RateData = [
-    { name: TARGET, value: '35.0%' },
-    { name: '第八代普五', value: '20.0%' },
-    { name: '梦之蓝M6+', value: '11.7%' },
-    { name: '飞天茅台', value: '6.7%' },
-    { name: '梦之蓝M9', value: '3.3%' },
+    { name: '第八代普五', value: '28.3%' },
+    { name: TARGET, value: '25.0%' },
+    { name: '梦之蓝M6+', value: '13.3%' },
+    { name: '水晶剑', value: '6.7%' },
+    { name: '飞天茅台', value: '5.0%' },
   ];
 
   const avgRankData = [
-    { name: TARGET, value: 'NO. 5.1' },
-    { name: '第八代普五', value: 'NO. 5.7' },
-    { name: '国窖1573', value: 'NO. 6.9' },
-    { name: '梦之蓝M6+', value: 'NO. 7.1' },
-    { name: '水晶剑', value: 'NO. 8.0' },
+    { name: '第八代普五', value: 'NO. 5.6' },
+    { name: '水晶剑', value: 'NO. 6.1' },
+    { name: TARGET, value: 'NO. 6.2' },
+    { name: '国窖1573', value: 'NO. 6.5' },
+    { name: '梦之蓝M6+', value: 'NO. 6.9' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -140,11 +140,11 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 第八代普五仍是核心威胁：Top1提及率20.0%紧随古20（35.0%），平均位次NO. 5.7逼近古20（NO. 5.1），是高端段最直接的排位竞争者。
+                1. 第八代普五已完成反超：Top1提及率28.3%超过古20（25.0%），平均位次NO. 5.6同样领先古20（NO. 6.2），首推位与排位双双被夺走。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 梦之蓝M6+提及率高达70.0%，但Top1仅11.7%、位次NO. 7.1；水晶剑、国窖1573等伴随竞品首推与排位均偏弱，对古20威胁有限。
+                2. 古20提及率85.0%仍居第1，曝光广度优势保持；但水晶剑提及率跃升至63.3%、位次NO. 6.1已插到古20之前，伴随竞品开始威胁排位。
               </p>
             </div>
           </div>
@@ -159,18 +159,18 @@ export default function Page_CompetitorAnalysis_AI() {
               {[
                 {
                   num: '01',
-                  title: '排位专项突破',
-                  desc: '针对平均位次NO. 5.1仍偏后的现状，强化口碑与场景语料权重，力争继续拉开与第八代普五（NO. 5.7）的身位。',
+                  title: '首推位夺回',
+                  desc: '针对第八代普五Top1反超（28.3% vs 25.0%），主动铺设品质与性价比对比语料，重夺高端商务场景的首推结论。',
                 },
                 {
                   num: '02',
-                  title: '核心拦截',
-                  desc: '针对第八代普五（Top1 20.0%），主动铺设品质与性价比对比内容，巩固古20在高端商务场景的首推优势。',
+                  title: '排位专项突破',
+                  desc: '平均位次已落到第3（NO. 6.2），需在推荐清单类语料中前置古20，力争回追第八代普五（NO. 5.6）与水晶剑（NO. 6.1）。',
                 },
                 {
                   num: '03',
                   title: '高曝光转化',
-                  desc: '利用91.7%的高提及率优势，对梦之蓝M6+等高伴随竞品做场景限定词拦截，将曝光更多转化为首推偏好。',
+                  desc: '利用85.0%的提及率第一优势，对梦之蓝M6+（70.0%）、水晶剑（63.3%）做场景限定词拦截，把曝光转化为首推偏好。',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

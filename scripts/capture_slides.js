@@ -5,7 +5,8 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = path.join(__dirname, '../screenshots');
-const SLIDE_URL = 'http://localhost:5176';
+const { port: DEV_PORT } = JSON.parse(fs.readFileSync(path.join(__dirname, '../port.json'), 'utf-8'));
+const SLIDE_URL = `http://localhost:${DEV_PORT}`;
 
 async function main() {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
