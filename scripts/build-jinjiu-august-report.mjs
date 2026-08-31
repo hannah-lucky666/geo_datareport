@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 /**
- * 生成 8 月报告数据（口径：7 月取 7/23 单日，8 月取 8/27 单日）
+ * 生成 8 月报告数据。
+ * 7 月统一取 7/23；8 月劲酒/养生一号取 8/29，毛铺取 8/27。
+ * 报告页面只写「2026年8月」，不要露出三个产品取数日不同。
  * 输出: src/data/jinjiuAugustReport.json
  */
 import { readFileSync, writeFileSync } from 'fs';
@@ -19,7 +21,6 @@ function load(id, tag) {
 }
 
 const pct = (v) => (v == null ? '-' : `${Number(v)}%`);
-const pos = (v) => (v == null ? '-' : `NO. ${Number(v)}`);
 const kw = (list) => (list || []).map((k) => (typeof k === 'string' ? k : k.tag_name_zh || k.tag_name)).filter(Boolean);
 
 // 数据系统页面显示的是「品牌 产品」，产品名里已含品牌时不重复拼（如「中国劲酒」→「劲牌 中国劲酒」）
@@ -54,7 +55,7 @@ function mapDelivery(d) {
 }
 
 const report = {
-  meta: { label: '2026年8月', july: '2026-07-23', august: '2026-08-27', delivery_excel: '0828' },
+  meta: { label: '2026年8月', july: '2026-07-23', delivery_excel: '0828' },
   products: {},
 };
 
@@ -85,11 +86,15 @@ for (const p of products) {
       top3_mention_rate: ag.stats.top3_mention_rate,
       conversations: ag.influence.total_conversations,
     },
-    // 三张排名表统一取产品口径，与数据系统「竞品对比」页面显示完全一致
+    // 提及率 / Top1 取产品口径；竞品排名 = 行业影响力排名（competitors/influence），不是提及位次
     compare: {
       mention_rate: ag.product_rankings.mention_rate.slice(0, 5).map((b) => rankRow(b, pct)),
       top1: ag.product_rankings.top1.slice(0, 5).map((b) => rankRow(b, pct)),
-      position: ag.product_rankings.position.slice(0, 5).map((b) => rankRow(b, pos)),
+      influence: ag.influence.list.slice(0, 5).map((b) => ({
+        name: b.brand_name || b.name,
+        value: `NO. ${b.rank}`,
+        isTarget: !!b.is_target,
+      })),
     },
     sentiments: {
       positive: sent.positive_percentage,

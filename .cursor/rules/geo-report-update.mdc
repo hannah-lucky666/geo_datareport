@@ -44,5 +44,6 @@
 | 竞品排名 / 行业影响力排名 | `competitors/influence` 中本品(`is_target`)的 `rank`（逐日见 `overview_daily.influence_rank`） | `compare.mention_rate_ranking` 的名次（提及率排名 ≠ 影响力排名，可能不同） |
 
 - `fetch-geo-report.mjs` 已产出 `report.overview_daily`（逐日 `{date, mention_rate, avg_position, influence_rank}`），**核心数据总览页 / 竞品排名请直接按对应日期取这里的值**。
-- 「竞品分析」页里的三张榜单（提及率排名 / Top1 提及率排名 / 提及位次排名）对应数据系统「竞品对比」界面，用 `compare.*_ranking` / `top1_ranking` 是对的——它与「总览」的位次可能有 0.1 级差异，属正常（两个界面算法不同），不要为对齐而改错。
+- 「竞品分析」页里的三张榜单：提及率排名 / Top1 提及率排名 对应数据系统「竞品对比」界面（`compare.*_ranking` / `top1_ranking`）；**竞品排名一律用行业影响力排名**（`competitors/influence` 的 `rank`，展示为 `NO. n`），**禁止再写「提及位次排名」，也不要展示影响力指数，更不要用 `compare.position_ranking`。**
+- 词条明细里的「平均提及位次」仍是单条词条的 `position`，与榜单标题「竞品排名」不是一回事。
 - 单个数据日期（如 6/25、7/22）与其所在周窗口（如 06-22~06-28、07-20~07-26）的总览指标一致，可用单日区间取数。

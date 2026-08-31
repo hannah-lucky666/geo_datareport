@@ -16,7 +16,7 @@ function createPage({ productKey, title, analysis, strategies }) {
             <tr className="border-b border-zinc-200 bg-slate-50/50">
               <th className="py-3 px-3 w-[18%]"></th>
               <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[52%]">{headers[0]}</th>
-              <th className="py-3 px-4 text-lg font-black text-zinc-500 w-[30%] text-right pr-6">{headers[1]}</th>
+              <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[30%] text-right pr-5 whitespace-nowrap">{headers[1]}</th>
             </tr>
           </thead>
           <tbody>
@@ -42,7 +42,7 @@ function createPage({ productKey, title, analysis, strategies }) {
                       {isBrand && <span className="px-2 py-0.5 text-[0.8rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50">目标产品</span>}
                     </div>
                   </td>
-                  <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>{item.value}</td>
+                  <td className={`py-3 px-2 text-right pr-5 align-middle text-[32px] font-black font-['Montserrat',sans-serif] whitespace-nowrap ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>{item.value}</td>
                 </tr>
               );
             })}
@@ -66,7 +66,7 @@ function createPage({ productKey, title, analysis, strategies }) {
           <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
             {renderTable('提及率排名', ['产品名称', '提及率'], data.compare.mention_rate)}
             {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], data.compare.top1)}
-            {renderTable('提及位次排名', ['产品名称', '平均提及位次'], data.compare.position)}
+            {renderTable('竞品排名', ['产品名称', '行业影响力排名'], data.compare.influence)}
           </div>
           <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
             <div className="flex flex-col gap-3 h-full min-h-0">
@@ -108,12 +108,12 @@ export default createPage({
   productKey: 'yangsheng',
   title: '养生一号竞品分析',
   analysis: [
-    '1. 养生一号8月提及率回升至46.4%、Top1首推率提升至33.3%，但广誉远以59.5%登顶提及率排名，养生一号退居第二。',
-    '2. 平均位次NO. 4.8仅微弱领先广誉远龟龄集酒的NO. 5.1，中国劲酒（15.5%）又在送礼词条中分走首推流量，高端送礼心智仍不稳固。',
+    '1. 养生一号8月提及率回升至58.3%、Top1首推率提升至44%，竞品排名稳居NO.1；广誉远以59.5%仍略高居提及率榜首。',
+    '2. 广誉远龟龄集酒提及率仍压一头，中国劲酒（14.3%）又在送礼词条中分走首推流量，高端送礼心智仍需继续加厚。',
   ],
   strategies: [
-    { num: '01', title: '广誉远正面对抗', desc: '针对龟龄集酒做配方功效、非遗背书与礼盒体验对比，收窄59.5%对46.4%的提及率差距。' },
-    { num: '02', title: '送礼心智加厚', desc: '加大“给长辈送礼/千元养生酒礼盒”语料密度，把33.3%的Top1优势扩展到更多送礼词条。' },
+    { num: '01', title: '广誉远正面对抗', desc: '针对龟龄集酒做配方功效、非遗背书与礼盒体验对比，收窄59.5%对58.3%的提及率差距。' },
+    { num: '02', title: '送礼心智加厚', desc: '加大“给长辈送礼/千元养生酒礼盒”语料密度，把44%的Top1优势扩展到更多送礼词条。' },
     { num: '03', title: '品牌辨识补强', desc: '减少与中国劲酒的心智混用，突出养生一号高端独立定位与“品质认可、送礼体面”卖点。' },
   ],
 });

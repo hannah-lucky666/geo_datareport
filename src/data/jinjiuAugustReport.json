@@ -2,7 +2,6 @@
   "meta": {
     "label": "2026年8月",
     "july": "2026-07-23",
-    "august": "2026-08-27",
     "delivery_excel": "0828"
   },
   "products": {
@@ -17,51 +16,46 @@
         "top3_mention_rate": 73.8
       },
       "august": {
-        "mention_rate": 90,
-        "avg_position": 1.5,
+        "mention_rate": 91.3,
+        "avg_position": 1.2,
         "influence_rank": 1,
-        "top1_mention_rate": 80,
-        "top3_mention_rate": 82.5,
+        "top1_mention_rate": 85,
+        "top3_mention_rate": 88.8,
         "conversations": 80
       },
       "compare": {
         "mention_rate": [
           {
             "name": "劲酒",
-            "value": "90%",
+            "value": "91.3%",
             "isTarget": true
           },
           {
             "name": "椰岛",
-            "value": "67.5%",
+            "value": "61.3%",
             "isTarget": false
           },
           {
             "name": "广誉远",
-            "value": "48.8%",
+            "value": "47.5%",
             "isTarget": false
           },
           {
             "name": "竹叶青",
-            "value": "37.5%",
+            "value": "38.8%",
             "isTarget": false
           },
           {
-            "name": "北京同仁堂",
-            "value": "32.5%",
+            "name": "致中和",
+            "value": "36.3%",
             "isTarget": false
           }
         ],
         "top1": [
           {
             "name": "劲酒",
-            "value": "80%",
+            "value": "85%",
             "isTarget": true
-          },
-          {
-            "name": "毛铺酒",
-            "value": "3.8%",
-            "isTarget": false
           },
           {
             "name": "竹叶青",
@@ -69,40 +63,45 @@
             "isTarget": false
           },
           {
-            "name": "无比",
+            "name": "劲牌养生一号",
             "value": "1.3%",
             "isTarget": false
           },
           {
-            "name": "泸州老窖",
+            "name": "扶元回春",
+            "value": "1.3%",
+            "isTarget": false
+          },
+          {
+            "name": "春生堂",
             "value": "1.3%",
             "isTarget": false
           }
         ],
-        "position": [
+        "influence": [
           {
             "name": "劲酒",
-            "value": "NO. 1.5",
+            "value": "NO. 1",
             "isTarget": true
           },
           {
             "name": "椰岛",
-            "value": "NO. 4.1",
-            "isTarget": false
-          },
-          {
-            "name": "竹叶青",
-            "value": "NO. 5.3",
+            "value": "NO. 2",
             "isTarget": false
           },
           {
             "name": "广誉远",
-            "value": "NO. 5.5",
+            "value": "NO. 3",
             "isTarget": false
           },
           {
-            "name": "毛铺酒",
-            "value": "NO. 5.8",
+            "name": "竹叶青",
+            "value": "NO. 4",
+            "isTarget": false
+          },
+          {
+            "name": "致中和",
+            "value": "NO. 5",
             "isTarget": false
           }
         ]
@@ -890,30 +889,30 @@
             "isTarget": false
           }
         ],
-        "position": [
-          {
-            "name": "毛铺酒",
-            "value": "NO. 4.5",
-            "isTarget": true
-          },
+        "influence": [
           {
             "name": "劲牌",
-            "value": "NO. 4.6",
+            "value": "NO. 1",
             "isTarget": false
           },
           {
-            "name": "汾酒",
-            "value": "NO. 5.4",
+            "name": "毛铺酒",
+            "value": "NO. 2",
+            "isTarget": true
+          },
+          {
+            "name": "椰岛",
+            "value": "NO. 3",
             "isTarget": false
           },
           {
             "name": "泸州老窖",
-            "value": "NO. 5.4",
+            "value": "NO. 4",
             "isTarget": false
           },
           {
             "name": "五粮液",
-            "value": "NO. 5.5",
+            "value": "NO. 5",
             "isTarget": false
           }
         ]
@@ -1662,11 +1661,11 @@
         "top3_mention_rate": 35.7
       },
       "august": {
-        "mention_rate": 46.4,
-        "avg_position": 4.8,
-        "influence_rank": 2,
-        "top1_mention_rate": 33.3,
-        "top3_mention_rate": 39.3,
+        "mention_rate": 58.3,
+        "avg_position": 4.2,
+        "influence_rank": 1,
+        "top1_mention_rate": 44,
+        "top3_mention_rate": 47.6,
         "conversations": 84
       },
       "compare": {
@@ -1678,21 +1677,21 @@
           },
           {
             "name": "劲牌 养生一号",
-            "value": "46.4%",
+            "value": "58.3%",
             "isTarget": true
           },
           {
             "name": "椰岛 鹿龟酒",
-            "value": "40.5%",
-            "isTarget": false
-          },
-          {
-            "name": "劲牌 中国劲酒",
-            "value": "28.6%",
+            "value": "45.2%",
             "isTarget": false
           },
           {
             "name": "五粮液 黄金酒",
+            "value": "25%",
+            "isTarget": false
+          },
+          {
+            "name": "劲牌 中国劲酒",
             "value": "23.8%",
             "isTarget": false
           }
@@ -1700,12 +1699,12 @@
         "top1": [
           {
             "name": "劲牌 养生一号",
-            "value": "33.3%",
+            "value": "44%",
             "isTarget": true
           },
           {
             "name": "劲牌 中国劲酒",
-            "value": "15.5%",
+            "value": "14.3%",
             "isTarget": false
           },
           {
@@ -1714,7 +1713,7 @@
             "isTarget": false
           },
           {
-            "name": "椰岛 鹿龟酒",
+            "name": "劲牌 参茸劲酒",
             "value": "4.8%",
             "isTarget": false
           },
@@ -1724,30 +1723,30 @@
             "isTarget": false
           }
         ],
-        "position": [
+        "influence": [
           {
-            "name": "劲牌 养生一号",
-            "value": "NO. 4.8",
+            "name": "劲牌养生一号",
+            "value": "NO. 1",
             "isTarget": true
           },
           {
-            "name": "广誉远 龟龄集酒",
-            "value": "NO. 5.1",
+            "name": "广誉远",
+            "value": "NO. 2",
             "isTarget": false
           },
           {
-            "name": "椰岛 鹿龟酒",
-            "value": "NO. 5.9",
+            "name": "椰岛",
+            "value": "NO. 3",
             "isTarget": false
           },
           {
-            "name": "劲牌 中国劲酒",
-            "value": "NO. 6.5",
+            "name": "劲牌",
+            "value": "NO. 4",
             "isTarget": false
           },
           {
-            "name": "贵州董酒 佰草香",
-            "value": "NO. 6.7",
+            "name": "五粮液",
+            "value": "NO. 5",
             "isTarget": false
           }
         ]

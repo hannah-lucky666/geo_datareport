@@ -29,7 +29,7 @@ export default function Page_CoreDataOverview() {
         </p>
       </div>
 
-      <div className="rounded-2xl border border-zinc-300 bg-white shadow-[0_4px_30px_rgba(0,0,0,0.015)] overflow-hidden flex-1 min-h-0 flex flex-col mb-[36px]">
+      <div className="rounded-2xl border border-zinc-300 bg-white shadow-[0_4px_30px_rgba(0,0,0,0.015)] overflow-hidden flex-1 min-h-0 flex flex-col mb-3">
         <table className="w-full text-left border-collapse table-fixed flex-1">
           <thead>
             <tr className="text-white">
@@ -73,27 +73,44 @@ export default function Page_CoreDataOverview() {
         </table>
       </div>
 
-      <div className="grid grid-cols-2 gap-6 shrink-0 h-[195px]">
-        <div className="rounded-2xl border border-[#004CE5]/15 bg-[#004CE5]/[0.01] px-6 py-4 flex flex-col shadow-[0_4px_25px_rgba(0,76,229,0.005)]">
-          <div className="flex items-center gap-2.5 mb-2 shrink-0">
+      <div className="rounded-2xl border border-[#004CE5]/15 bg-[#004CE5]/[0.01] px-6 py-3.5 shrink-0 mb-3 flex flex-col shadow-[0_4px_25px_rgba(0,76,229,0.005)]">
+        <div className="flex items-center gap-2.5 mb-1.5 shrink-0">
+          <span className="w-3 h-3 rounded-full bg-[#004CE5] shadow-[0_0_8px_rgba(0,76,229,0.3)] animate-pulse" />
+          <h3 className="text-2xl font-black text-zinc-900 tracking-wider">数据说明</h3>
+        </div>
+        <div className="flex flex-col gap-1 min-h-0">
+          <p className="text-[22px] leading-snug text-zinc-700 font-bold">
+            <span className="text-zinc-900 font-black">高位波动属正常现象：</span>
+            当前各项指标已接近优化上限，在高位区间内出现约 10% 以内的月度上下波动属于正常现象，并不代表 GEO 优化效果下降，整体优化成效仍保持稳定。
+          </p>
+          <p className="text-[22px] leading-snug text-zinc-700 font-bold">
+            <span className="text-zinc-900 font-black">毛铺提及率仍偏低：</span>
+            主因是豆包端仅19%——豆包8月起大量引用抖音视频，而抖音投放刚刚启动，引用量尚未积累。
+          </p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-6 shrink-0 h-[168px]">
+        <div className="rounded-2xl border border-[#004CE5]/15 bg-[#004CE5]/[0.01] px-6 py-3.5 flex flex-col shadow-[0_4px_25px_rgba(0,76,229,0.005)]">
+          <div className="flex items-center gap-2.5 mb-1.5 shrink-0">
             <span className="w-3 h-3 rounded-full bg-[#004CE5] shadow-[0_0_8px_rgba(0,76,229,0.3)] animate-pulse" />
             <h3 className="text-2xl font-black text-zinc-900 tracking-wider">现状总结</h3>
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              劲酒、养生一号环比走强：劲酒提及率升至90%、TOP1提及率由66.3%升至80%；养生一号提及率回升至46.4%、TOP1升至33.3%。毛铺与养生一号整体提及率仍偏低，主因是豆包端仅19%——豆包8月起大量引用抖音视频，而抖音投放刚刚启动，引用量尚未积累。
+              劲酒提及率升至91.3%、TOP1由66.3%升至85%，竞品排名稳居NO.1；养生一号提及率回升至58.3%、TOP1升至44%，竞品排名稳居NO.1。
             </p>
           </div>
         </div>
 
-        <div className="rounded-2xl border border-emerald-500/15 bg-emerald-500/[0.01] px-6 py-4 flex flex-col shadow-[0_4px_25px_rgba(16,185,129,0.005)]">
-          <div className="flex items-center gap-2.5 mb-2 shrink-0">
+        <div className="rounded-2xl border border-emerald-500/15 bg-emerald-500/[0.01] px-6 py-3.5 flex flex-col shadow-[0_4px_25px_rgba(16,185,129,0.005)]">
+          <div className="flex items-center gap-2.5 mb-1.5 shrink-0">
             <span className="w-3 h-3 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.3)] animate-pulse" />
             <h3 className="text-2xl font-black text-zinc-900 tracking-wider">重点优化策略</h3>
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              劲酒延续日常养生与性价比首推优势；毛铺以「聚会/家宴不伤身」独占场景，切断与「劲牌」母品牌的心智混淆；养生一号加厚高端送礼与长辈礼盒内容，正面对抗广誉远59.5%的提及率压制。
+              劲酒延续日常养生与性价比首推优势；毛铺以「聚会/家宴不伤身」独占场景，切断与「劲牌」母品牌的心智混淆；养生一号加厚高端送礼与长辈礼盒内容，巩固竞品排名NO.1，收窄与广誉远59.5%的提及率差距。
             </p>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
+import Page_MaopuFluctuation from '../pages/Page_MaopuFluctuation';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
 import Page_CompetitorAnalysis_AI from '../pages/Page_CompetitorAnalysis_AI';
 import Page_CompetitorAnalysis_Premium from '../pages/Page_CompetitorAnalysis_Premium';
@@ -55,6 +56,7 @@ export const slideConfig = [
   { type: 'chapter', title: '核心数据与竞品分析', subtitle: 'DATA OVERVIEW & COMPETITOR ANALYSIS', backgroundImage: '' },
   { type: 'section', title: '核心数据总览' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
+  { type: 'page', title: '毛铺 数据波动说明', component: Page_MaopuFluctuation },
   { type: 'section', title: '竞品分析' },
   { type: 'page', title: '劲酒 竞品分析', component: Page_CompetitorAnalysis },
   { type: 'page', title: '毛铺 竞品分析', component: Page_CompetitorAnalysis_AI },

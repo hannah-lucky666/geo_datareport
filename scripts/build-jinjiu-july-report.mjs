@@ -15,7 +15,6 @@ function load(id, tag) {
 }
 
 const pct = (v) => (v == null ? '-' : `${Number(v)}%`);
-const pos = (v) => (v == null ? '-' : `NO. ${Number(v)}`);
 
 function mapDelivery(d) {
   return {
@@ -77,9 +76,10 @@ for (const p of products) {
         name: b.brand_name,
         value: pct(b.top1_mention_rate),
       })),
-      position: jl.compare.position_ranking.slice(0, 5).map((b) => ({
+      influence: jl.influence.list.slice(0, 5).map((b) => ({
         name: b.brand_name,
-        value: pos(b.avg_position),
+        value: `NO. ${b.rank}`,
+        isTarget: !!b.is_target,
       })),
     },
     sentiments: {

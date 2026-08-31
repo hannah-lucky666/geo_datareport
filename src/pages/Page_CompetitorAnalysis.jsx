@@ -21,7 +21,7 @@ function createCompetitorPage({
             <tr className="border-b border-zinc-200 bg-slate-50/50">
               <th className="py-3 px-3 w-[18%]"></th>
               <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[52%]">{headers[0]}</th>
-              <th className="py-3 px-4 text-lg font-black text-zinc-500 w-[30%] text-right pr-6">{headers[1]}</th>
+              <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[30%] text-right pr-5 whitespace-nowrap">{headers[1]}</th>
             </tr>
           </thead>
           <tbody>
@@ -65,7 +65,7 @@ function createCompetitorPage({
                       )}
                     </div>
                   </td>
-                  <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
+                  <td className={`py-3 px-2 text-right pr-5 align-middle text-[32px] font-black font-['Montserrat',sans-serif] whitespace-nowrap ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
                     {item.value}
                   </td>
                 </tr>
@@ -92,7 +92,7 @@ function createCompetitorPage({
           <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
             {renderTable('提及率排名', ['产品名称', '提及率'], data.compare.mention_rate)}
             {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], data.compare.top1)}
-            {renderTable('提及位次排名', ['产品名称', '平均提及位次'], data.compare.position)}
+            {renderTable('竞品排名', ['产品名称', '行业影响力排名'], data.compare.influence)}
           </div>
 
           <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
@@ -139,12 +139,12 @@ export default createCompetitorPage({
   productKey: 'jinjiu',
   title: '劲酒竞品分析',
   analysis: [
-    '1. 劲酒8月提及率升至90%，Top1首推率达80%，平均位次前移至NO. 1.5，三项指标较7月全面回升，行业第一的统治力进一步夯实。',
-    '2. 椰岛提及率抬升至67.5%、位次NO. 4.1紧随其后，广誉远48.8%、竹叶青37.5%在中腰部形成新的伴随竞争，需防止“日常养生酒”推荐位被分流。',
+    '1. 劲酒8月提及率升至91.3%，Top1首推率达85%，竞品排名稳居NO.1，三项指标较7月全面回升，行业第一的统治力进一步夯实。',
+    '2. 椰岛提及率61.3%、竞品排名NO.2紧随其后，广誉远47.5%、竹叶青38.8%在中腰部形成新的伴随竞争，需防止“日常养生酒”推荐位被分流。',
   ],
   strategies: [
-    { num: '01', title: '首推优势扩大', desc: '围绕“日常养生酒推荐/品牌排行”高频词条持续加密内容，把80%的Top1首推率沉淀为长期护城河。' },
-    { num: '02', title: '椰岛贴身防御', desc: '针对椰岛（67.5%）补充性价比与蓝帽子认证对比评测，压制其在滋补酒场景的上升势头。' },
-    { num: '03', title: '清润场景补位', desc: '竹叶青借夏季清润话题升至37.5%，需补齐控糖、清润型语料，避免季节性词条被截流。' },
+    { num: '01', title: '首推优势扩大', desc: '围绕“日常养生酒推荐/品牌排行”高频词条持续加密内容，把85%的Top1首推率沉淀为长期护城河。' },
+    { num: '02', title: '椰岛贴身防御', desc: '针对椰岛（61.3%）补充性价比与蓝帽子认证对比评测，压制其在滋补酒场景的上升势头。' },
+    { num: '03', title: '清润场景补位', desc: '竹叶青借夏季清润话题升至38.8%，需补齐控糖、清润型语料，避免季节性词条被截流。' },
   ],
 });

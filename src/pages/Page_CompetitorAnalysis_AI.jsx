@@ -16,7 +16,7 @@ function createPage({ productKey, title, analysis, strategies }) {
             <tr className="border-b border-zinc-200 bg-slate-50/50">
               <th className="py-3 px-3 w-[18%]"></th>
               <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[52%]">{headers[0]}</th>
-              <th className="py-3 px-4 text-lg font-black text-zinc-500 w-[30%] text-right pr-6">{headers[1]}</th>
+              <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[30%] text-right pr-5 whitespace-nowrap">{headers[1]}</th>
             </tr>
           </thead>
           <tbody>
@@ -42,7 +42,7 @@ function createPage({ productKey, title, analysis, strategies }) {
                       {isBrand && <span className="px-2 py-0.5 text-[0.8rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50">目标产品</span>}
                     </div>
                   </td>
-                  <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>{item.value}</td>
+                  <td className={`py-3 px-2 text-right pr-5 align-middle text-[32px] font-black font-['Montserrat',sans-serif] whitespace-nowrap ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>{item.value}</td>
                 </tr>
               );
             })}
@@ -66,7 +66,7 @@ function createPage({ productKey, title, analysis, strategies }) {
           <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
             {renderTable('提及率排名', ['产品名称', '提及率'], data.compare.mention_rate)}
             {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], data.compare.top1)}
-            {renderTable('提及位次排名', ['产品名称', '平均提及位次'], data.compare.position)}
+            {renderTable('竞品排名', ['产品名称', '行业影响力排名'], data.compare.influence)}
           </div>
           <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
             <div className="flex flex-col gap-3 h-full min-h-0">
@@ -109,7 +109,7 @@ export default createPage({
   title: '毛铺竞品分析',
   analysis: [
     '1. 毛铺酒8月提及率降至44%，被「劲牌」母品牌（51.2%）反超退居第二；Top1首推率29.8%虽仍居首，但较7月的48.8%明显收窄。',
-    '2. 平均位次NO. 4.5与劲牌NO. 4.6几乎持平，泸州老窖、五粮液等浓香白酒在聚会家宴场景加速渗透，品牌混淆与流量分流风险同步放大。',
+    '2. 竞品排名由7月NO.1滑至NO.2，被劲牌反超；泸州老窖、五粮液等浓香白酒在聚会家宴场景加速渗透，品牌混淆与流量分流风险同步放大。',
   ],
   strategies: [
     { num: '01', title: '母品牌切割', desc: '在推荐问答中明确“毛铺”独立产品名与草本白酒定位，把被归入泛“劲牌”的会话抢回来。' },
