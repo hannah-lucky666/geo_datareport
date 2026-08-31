@@ -3,32 +3,47 @@ import React from 'react';
 export default function Page_CompetitorAnalysis_AI() {
   const TARGET = '古井贡酒·古20';
 
-  // 数据口径：2026-08-26（数据系统项目 352）
+  // 数据口径：2026-08-29（数据系统项目 352）
   const mentionRateData = [
     { name: TARGET, value: '85.0%' },
-    { name: '梦之蓝M6+', value: '70.0%' },
-    { name: '水晶剑', value: '63.3%' },
-    { name: '第八代普五', value: '48.3%' },
-    { name: '国窖1573', value: '46.7%' },
+    { name: '梦之蓝M6+', value: '61.7%' },
+    { name: '水晶剑', value: '56.7%' },
+    { name: '国窖1573', value: '41.7%' },
+    { name: '第八代普五', value: '40.0%' },
   ];
 
   const top1RateData = [
-    { name: '第八代普五', value: '28.3%' },
-    { name: TARGET, value: '25.0%' },
-    { name: '梦之蓝M6+', value: '13.3%' },
-    { name: '水晶剑', value: '6.7%' },
+    { name: TARGET, value: '28.3%' },
+    { name: '第八代普五', value: '21.7%' },
+    { name: '梦之蓝M6+', value: '15.0%' },
     { name: '飞天茅台', value: '5.0%' },
+    { name: '水晶剑', value: '3.3%' },
   ];
 
-  const avgRankData = [
-    { name: '第八代普五', value: 'NO. 5.6' },
-    { name: '水晶剑', value: 'NO. 6.1' },
-    { name: TARGET, value: 'NO. 6.2' },
-    { name: '国窖1573', value: 'NO. 6.5' },
-    { name: '梦之蓝M6+', value: 'NO. 6.9' },
+  // 竞品排名 = 行业影响力排名；名次只体现在左侧圆标，不再重复写 NO. / 影响力指数
+  const influenceData = [
+    { name: TARGET },
+    { name: '水晶剑' },
+    { name: '梦之蓝M6+' },
+    { name: '第八代普五' },
+    { name: '国窖1573' },
   ];
+
+  const renderRank = (rank) => {
+    if (rank === 1) {
+      return <div className="w-10 h-10 rounded-full bg-[#FFD100] text-zinc-900 flex items-center justify-center font-black text-xl shadow-sm">1</div>;
+    }
+    if (rank === 2) {
+      return <div className="w-10 h-10 rounded-full bg-zinc-200 text-zinc-600 flex items-center justify-center font-black text-xl">2</div>;
+    }
+    if (rank === 3) {
+      return <div className="w-10 h-10 rounded-full bg-[#FFC085] text-zinc-800 flex items-center justify-center font-black text-xl shadow-sm">3</div>;
+    }
+    return <div className="text-zinc-400 font-bold text-[22px] text-center w-10">{rank}</div>;
+  };
 
   const renderTable = (title, headers, data) => {
+    const hasValue = Boolean(headers[1]);
     return (
       <div className="flex flex-col gap-3 h-full min-h-0">
         <h3 className="text-2xl font-extrabold text-zinc-800 tracking-wide pl-1.5 flex items-center gap-2 shrink-0">
@@ -36,71 +51,45 @@ export default function Page_CompetitorAnalysis_AI() {
           {title}
         </h3>
         <div className="flex-grow rounded-2xl border border-zinc-200 bg-white shadow-[0_6px_25px_rgba(0,0,0,0.01)] overflow-hidden flex flex-col p-4">
-          <table className="w-full text-left border-collapse table-fixed flex-grow h-full">
+          <table className="w-full text-left border-collapse table-fixed">
             <thead>
               <tr className="border-b border-zinc-200 bg-slate-50/50">
-                <th className="py-3 px-3 w-[18%]"></th>
-                <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[52%]">{headers[0]}</th>
-                <th className="py-3 px-4 text-lg font-black text-zinc-500 w-[30%] text-right pr-6">{headers[1]}</th>
+                <th className="py-3 px-3 w-[16%]"></th>
+                <th className={`py-3 px-2 text-lg font-black text-zinc-500 ${hasValue ? 'w-[54%]' : 'w-[84%]'}`}>{headers[0]}</th>
+                {hasValue && (
+                  <th className="py-3 px-4 text-lg font-black text-zinc-500 w-[30%] text-right pr-6 whitespace-nowrap">{headers[1]}</th>
+                )}
               </tr>
             </thead>
             <tbody>
               {data.map((item, idx) => {
                 const isBrand = item.name === TARGET;
                 const rank = idx + 1;
-
-                let rankElement;
-                if (rank === 1) {
-                  rankElement = (
-                    <div className="w-10 h-10 rounded-full bg-[#FFD100] text-zinc-900 flex items-center justify-center font-black text-xl shadow-sm">
-                      1
-                    </div>
-                  );
-                } else if (rank === 2) {
-                  rankElement = (
-                    <div className="w-10 h-10 rounded-full bg-zinc-200 text-zinc-600 flex items-center justify-center font-black text-xl">
-                      2
-                    </div>
-                  );
-                } else if (rank === 3) {
-                  rankElement = (
-                    <div className="w-10 h-10 rounded-full bg-[#FFC085] text-zinc-800 flex items-center justify-center font-black text-xl shadow-sm">
-                      3
-                    </div>
-                  );
-                } else {
-                  rankElement = (
-                    <div className="text-zinc-400 font-bold text-[22px] text-center w-10">
-                      {rank}
-                    </div>
-                  );
-                }
-
                 return (
                   <tr
                     key={idx}
-                    className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/50 transition-colors ${isBrand ? 'bg-[#004CE5]/[0.03]' : ''
-                      }`}
+                    className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/50 transition-colors ${isBrand ? 'bg-[#004CE5]/[0.03]' : ''}`}
                   >
-                    <td className="py-3 px-3 align-middle">
-                      <div className="flex justify-center">{rankElement}</div>
+                    <td className="h-[68px] py-0 px-3 align-middle">
+                      <div className="flex justify-center">{renderRank(rank)}</div>
                     </td>
-                    <td className="py-3 px-2 align-middle">
-                      <div className="flex items-center flex-wrap gap-2">
-                        <span className={`text-[1.4rem] ${isBrand ? 'font-black text-[#004CE5]' : 'font-bold text-zinc-800'}`}>
+                    <td className="h-[68px] py-0 px-2 align-middle">
+                      <div className="flex items-center gap-2 min-w-0">
+                        <span className={`text-[1.25rem] truncate ${isBrand ? 'font-black text-[#004CE5]' : 'font-bold text-zinc-800'}`}>
                           {item.name}
                         </span>
                         {isBrand && (
-                          <span className="px-2 py-0.5 text-[0.8rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50">
+                          <span className="px-2 py-0.5 text-[0.75rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50 shrink-0">
                             目标产品
                           </span>
                         )}
                       </div>
                     </td>
-                    <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'
-                      }`}>
-                      {item.value}
-                    </td>
+                    {hasValue && (
+                      <td className={`h-[68px] py-0 px-4 text-right pr-6 align-middle text-[30px] font-black font-['Montserrat',sans-serif] whitespace-nowrap ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
+                        {item.value}
+                      </td>
+                    )}
                   </tr>
                 );
               })}
@@ -127,7 +116,7 @@ export default function Page_CompetitorAnalysis_AI() {
         <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
           {renderTable('提及率排名', ['产品名称', '提及率'], mentionRateData)}
           {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], top1RateData)}
-          {renderTable('提及位次排名', ['产品名称', '平均提及位次'], avgRankData)}
+          {renderTable('竞品排名', ['产品名称'], influenceData)}
         </div>
 
         {/* Bottom Spacious Dashboard Area (Increased to 340px for taller containers, exactly 60px gap below tables) */}
@@ -140,11 +129,11 @@ export default function Page_CompetitorAnalysis_AI() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 第八代普五已完成反超：Top1提及率28.3%超过古20（25.0%），平均位次NO. 5.6同样领先古20（NO. 6.2），首推位与排位双双被夺走。
+                1. 古20已夺回首推：Top1提及率28.3%超过第八代普五（21.7%），竞品排名仍居 NO.1，行业影响力尚未失守。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 古20提及率85.0%仍居第1，曝光广度优势保持；但水晶剑提及率跃升至63.3%、位次NO. 6.1已插到古20之前，伴随竞品开始威胁排位。
+                2. 古20提及率85.0%仍居第1，曝光广度优势保持；水晶剑、梦之蓝M6+分列竞品排名 NO.2、NO.3，伴随竞品继续贴近。
               </p>
             </div>
           </div>
@@ -159,18 +148,18 @@ export default function Page_CompetitorAnalysis_AI() {
               {[
                 {
                   num: '01',
-                  title: '首推位夺回',
-                  desc: '针对第八代普五Top1反超（28.3% vs 25.0%），主动铺设品质与性价比对比语料，重夺高端商务场景的首推结论。',
+                  title: '首推位巩固',
+                  desc: 'Top1已反超第八代普五（28.3% vs 21.7%），继续铺设品质对比语料，防止高端商务场景的首推回落。',
                 },
                 {
                   num: '02',
-                  title: '排位专项突破',
-                  desc: '平均位次已落到第3（NO. 6.2），需在推荐清单类语料中前置古20，力争回追第八代普五（NO. 5.6）与水晶剑（NO. 6.1）。',
+                  title: '守住竞品排名',
+                  desc: '行业影响力现居 NO.1，需在推荐清单类语料中继续前置古20，防止水晶剑（NO.2）与梦之蓝M6+（NO.3）继续贴近。',
                 },
                 {
                   num: '03',
                   title: '高曝光转化',
-                  desc: '利用85.0%的提及率第一优势，对梦之蓝M6+（70.0%）、水晶剑（63.3%）做场景限定词拦截，把曝光转化为首推偏好。',
+                  desc: '利用85.0%的提及率第一优势，对梦之蓝M6+（61.7%）、水晶剑（56.7%）做场景限定词拦截，把曝光转化为首推偏好。',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

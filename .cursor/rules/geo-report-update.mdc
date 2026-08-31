@@ -44,5 +44,14 @@
 | 竞品排名 / 行业影响力排名 | `competitors/influence` 中本品(`is_target`)的 `rank`（逐日见 `overview_daily.influence_rank`） | `compare.mention_rate_ranking` 的名次（提及率排名 ≠ 影响力排名，可能不同） |
 
 - `fetch-geo-report.mjs` 已产出 `report.overview_daily`（逐日 `{date, mention_rate, avg_position, influence_rank}`），**核心数据总览页 / 竞品排名请直接按对应日期取这里的值**。
-- 「竞品分析」页里的三张榜单（提及率排名 / Top1 提及率排名 / 提及位次排名）对应数据系统「竞品对比」界面，用 `compare.*_ranking` / `top1_ranking` 是对的——它与「总览」的位次可能有 0.1 级差异，属正常（两个界面算法不同），不要为对齐而改错。
+- 「竞品分析」页三张榜单口径：提及率排名 / Top1 提及率排名用 `compare.mention_rate_ranking` / `top1_ranking`；**竞品排名 = 行业影响力排名**（`competitors/influence` 中本品及竞品的 `rank`，展示为 NO. 1 / NO. 2）。**不要写「影响力指数」，不要再写「提及位次排名」，也不要用 `compare.position_ranking` 顶替第三张表。**
 - 单个数据日期（如 6/25、7/22）与其所在周窗口（如 06-22~06-28、07-20~07-26）的总览指标一致，可用单日区间取数。
+
+## 核心数据总览：高位波动说明（固定文案）
+
+换月 / 换单日数据后，**核心数据总览表格下方、底部「现状总结 / 重点优化策略」两栏上方**必须保留这一段：
+
+**标题：** 高位波动属正常现象
+
+**正文：**
+当前各项指标已接近优化上限，在高位区间内出现约 10% 以内的月度上下波动属于正常现象，并不代表 GEO 优化效果下降，整体优化成效仍保持稳定。

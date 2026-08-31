@@ -11,7 +11,8 @@
     "fetch:geo-list": "node scripts/fetch-geo-report.mjs --list",
     "fetch:geo-report": "node scripts/fetch-geo-report.mjs",
     "fetch:geo-overview": "node scripts/fetch-geo-overview.mjs",
-    "build:content-details": "python scripts/build_content_details.py"
+    "build:content-details": "python scripts/build_content_details.py",
+    "export:pptx": "node scripts/export-pptx.mjs"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^18.0.1",

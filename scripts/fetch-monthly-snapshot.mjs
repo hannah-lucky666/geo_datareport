@@ -4,13 +4,13 @@
  * 并同步重建 src/data/platform_entries.json（词条数据明细页的数据源）。
  *
  * 用法:
- *   node scripts/fetch-monthly-snapshot.mjs --date 2026-08-26
- *   node scripts/fetch-monthly-snapshot.mjs --date 2026-08-26 --month 2026-08
+ *   node scripts/fetch-monthly-snapshot.mjs --date 2026-08-29
+ *   node scripts/fetch-monthly-snapshot.mjs --date 2026-08-29 --month 2026-08
  *
  * 口径约定（历史踩坑，务必遵守）：
  *   · 核心数据总览的「提及率 / 平均提及位次」→ conversations/stats 的 brand_mention_rate / avg_position
- *   · 核心数据总览的「竞品排名」→ competitors/influence 中本品(is_target)的 rank（行业影响力排名）
- *   · 竞品分析页的「提及位次排名」→ competitors/compare 的 position_ranking，与总览口径可能差 0.1，属正常
+ *   · 核心数据总览 / 竞品分析页的「竞品排名」→ competitors/influence 的行业影响力排名（rank，展示 NO. 1 / NO. 2）
+ *   · 竞品分析页不要再写「提及位次排名」，也不要写「影响力指数」；第三张表固定用行业影响力名次
  *   · 分平台词条必须传 platform_ids（复数）；传单数 platform_id 会退化成全平台汇总
  *   · competitors/top-mention-rate 是唯一返回全量识别品牌的接口，page_size 服务端封顶 100，需翻页
  */
@@ -40,7 +40,7 @@ const getFlag = (name, fallback) => {
 const API_BASE = process.env.GEO_API_BASE;
 const USERNAME = process.env.GEO_USER;
 const PASSWORD = process.env.GEO_PASS;
-const DATE = getFlag('date', '2026-08-26');
+const DATE = getFlag('date', '2026-08-29');
 const MONTH = getFlag('month', DATE.slice(0, 7));
 
 if (!API_BASE || !USERNAME || !PASSWORD) {
@@ -181,11 +181,13 @@ async function main() {
     const dayInfluence = await api('/api/competitors/influence', day);
     const dayCompare = await api('/api/competitors/compare', day);
     const dayTop1 = await api('/api/competitors/top-mention-rate', { ...day, top_type: 'top1', page_size: 100 }, { optional: true });
+    const dayTop3 = await api('/api/competitors/top-mention-rate', { ...day, top_type: 'top3', page_size: 100 }, { optional: true });
     const daySentiment = await api('/api/sentiments/stats', day, { optional: true });
     const dayNegative = await api('/api/sentiments/negative-answers', { ...day, page: 1, page_size: 20 }, { optional: true });
 
     const self = (dayInfluence.data.list || []).find((b) => b.is_target);
     const selfTop1 = (dayTop1?.data?.list || []).find((b) => b.is_self ?? b.is_target);
+    const selfTop3 = (dayTop3?.data?.list || []).find((b) => b.is_self ?? b.is_target);
 
     out.products[p.slideKey] = {
       project_id: p.projectId,
@@ -196,11 +198,14 @@ async function main() {
         avg_position: num(dayStats.data.avg_position),
         influence_rank: self ? self.rank : null,
         top1_mention_rate: num(selfTop1?.selected_top_mention_rate),
+        top3_mention_rate: num(selfTop3?.selected_top_mention_rate),
       },
       rankings: {
         mention_rate: rankTop5(dayCompare.data.mention_rate_ranking, 'mention_rate'),
         position: rankTop5(dayCompare.data.position_ranking, 'avg_position'),
         top1: rankTop5(dayTop1?.data?.list, 'selected_top_mention_rate'),
+        // 竞品排名 = 行业影响力，不是提及位次
+        influence: rankTop5(dayInfluence.data.list, 'influence_score'),
       },
       sentiment: {
         positive: num(daySentiment?.data?.positive_percentage ?? daySentiment?.data?.positive_rate),
@@ -217,7 +222,7 @@ async function main() {
     };
 
     const o = out.products[p.slideKey].overview;
-    console.log(`  提及率=${o.mention_rate}%  平均位次=${o.avg_position}  影响力排名=NO.${o.influence_rank}  Top1提及率=${o.top1_mention_rate}%`);
+    console.log(`  提及率=${o.mention_rate}%  Top1=${o.top1_mention_rate}%  Top3=${o.top3_mention_rate}%  影响力排名=NO.${o.influence_rank}`);
     console.log(`  情感: 正面=${out.products[p.slideKey].sentiment.positive}% 负面=${out.products[p.slideKey].sentiment.negative}% 负面回答=${out.products[p.slideKey].negative_answers.length}条`);
     console.log(`  情感接口字段: ${out.products[p.slideKey].sentiment.raw_keys.join(',')}`);
 

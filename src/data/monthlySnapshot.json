@@ -1,7 +1,7 @@
 {
   "meta": {
-    "fetched_at": "2026-08-28T13:20:58.773Z",
-    "date": "2026-08-26",
+    "fetched_at": "2026-08-31T06:02:45.975Z",
+    "date": "2026-08-29",
     "month": "2026-08",
     "month_start": "2026-08-01",
     "month_end": "2026-08-31"
@@ -12,112 +12,145 @@
       "name": "古井贡酒古16",
       "short": "古16",
       "overview": {
-        "mention_rate": 65,
-        "avg_position": 4.7,
+        "mention_rate": 83.3,
+        "avg_position": 3.6,
         "influence_rank": 2,
-        "top1_mention_rate": 36.7
+        "top1_mention_rate": 48.3,
+        "top3_mention_rate": 60
       },
       "rankings": {
         "mention_rate": [
           {
             "name": "水晶剑",
-            "value": 85,
+            "value": 86.7,
             "is_target": false
           },
           {
             "name": "古井贡酒 古16",
-            "value": 65,
+            "value": 83.3,
             "is_target": true
           },
           {
-            "name": "梦之蓝M3水晶版",
-            "value": 36.7,
+            "name": "国缘四开",
+            "value": 38.3,
             "is_target": false
           },
           {
             "name": "红花郎15",
-            "value": 35,
+            "value": 38.3,
             "is_target": false
           },
           {
             "name": "红花郎10",
-            "value": 28.3,
+            "value": 33.3,
             "is_target": false
           }
         ],
         "position": [
           {
             "name": "水晶剑",
-            "value": 3.7,
+            "value": 3.2,
             "is_target": false
           },
           {
             "name": "古井贡酒 古16",
-            "value": 4.8,
+            "value": 3.6,
             "is_target": true
           },
           {
-            "name": "梦之蓝M3水晶版",
-            "value": 6.7,
+            "name": "国缘四开",
+            "value": 6.8,
             "is_target": false
           },
           {
             "name": "红花郎15",
-            "value": 7.3,
+            "value": 7,
             "is_target": false
           },
           {
-            "name": "普五八代",
-            "value": 7.4,
+            "name": "红花郎10",
+            "value": 7.1,
             "is_target": false
           }
         ],
         "top1": [
           {
             "name": "古井贡酒 古16",
-            "value": 36.7,
+            "value": 48.3,
             "is_target": true
           },
           {
             "name": "水晶剑",
-            "value": 16.7,
+            "value": 20,
             "is_target": false
           },
           {
-            "name": "四开",
-            "value": 11.7,
+            "name": "国缘四开",
+            "value": 8.3,
             "is_target": false
           },
           {
             "name": "普五八代",
-            "value": 10,
+            "value": 8.3,
             "is_target": false
           },
           {
-            "name": "飞天茅台",
-            "value": 5,
+            "name": "华山论剑20年",
+            "value": 1.7,
+            "is_target": false
+          }
+        ],
+        "influence": [
+          {
+            "name": "水晶剑",
+            "value": 83.2,
+            "is_target": false
+          },
+          {
+            "name": "古井贡酒 古16",
+            "value": 79.6,
+            "is_target": true
+          },
+          {
+            "name": "国缘四开",
+            "value": 39.8,
+            "is_target": false
+          },
+          {
+            "name": "红花郎15",
+            "value": 39,
+            "is_target": false
+          },
+          {
+            "name": "红花郎10",
+            "value": 35.6,
             "is_target": false
           }
         ]
       },
       "sentiment": {
-        "positive": 100,
-        "negative": 0,
+        "positive": 98.3,
+        "negative": 1.7,
         "positive_keywords": [
           {
             "tag_name": "包装喜庆",
             "tag_name_zh": "包装喜庆"
           },
           {
-            "tag_name": "性价比高",
-            "tag_name_zh": "性价比高"
-          },
-          {
             "tag_name": "口感好",
             "tag_name_zh": "口感好"
+          },
+          {
+            "tag_name": "性价比高",
+            "tag_name_zh": "性价比高"
           }
         ],
-        "negative_keywords": [],
+        "negative_keywords": [
+          {
+            "tag_name": "品牌认知",
+            "tag_name_zh": "品牌认知"
+          }
+        ],
         "raw_keys": [
           "positive_rate",
           "positive_percentage",
@@ -128,6 +161,11 @@
         ]
       },
       "negative_answers": [
+        {
+          "entry": "300-500元高端婚宴白酒怎么选",
+          "type": "negative_answer",
+          "summary": "300-500元这个价位，是婚宴白酒的“兵家必争之地”。选好了，既有面子又能照顾到多数宾客的口味。综合看下来，有“稳、红、硬、柔”四种风格的酒都很出色，你可以根据自家情况来定。\n\n🏆 首选稳妥牌：古井贡酒年份原浆 古16\n如果只推荐一款，我会选它。这款酒可以说是为婚宴量身定做的，几乎挑不出毛病[5][7]。\n• 喜庆外观：瓶身是纯正的正红色，造型像玉玺，喜庆、庄重，和婚宴氛围完美契合[2][5][7]。\n• 口感普适：是典型的江淮浓香，入口绵柔顺滑，不冲不辣。对一桌上男女老少口味不同的人来说，接受度非常高[1][5][6]。\n• 品牌认知：古井贡酒是老八大名酒之一，长辈们基本都认识，摆上桌很有面子[6][12]。\n• 价格参考：单瓶价大多落在350-450元区间，正好在你的预算内[1][2]。\n\n🍷 其他王牌选手对比\n当然，其他几款名酒也各有侧重，我把它们的核心特点整理成了表格，方便你比较：\n\n酒款 核心亮点 参考价格（约） 一句话点评\n--- --- --- ---\n剑南春水晶剑 川派浓香，品牌“硬通货”，口感凛冽，爆发力强[1][2][8]480元[2]硬派之选：适合宾客男性居多、追求口感醇厚的场合。包装相对低调[2]。\n红花郎15 红色瓶身寓意“红红火火”，酱香突出，有品质感[1][2][8]350-430元[1][8]喜庆酱香：适合有酱香酒爱好者的宾客，或想追求些与众不同的婚宴[2]。\n五粮春·和美 五粮液嫡系，红金包装喜庆，口感甘甜顺口，老少皆宜[1][11]400-500元[1]大牌平替：既有大厂背景，又专为宴席设计，品牌和喜庆度兼备[1][11]。\n洋河梦之蓝M6+ 品牌强势，水晶瓶身显档次，口感绵柔，对新手友好[2]560-620元[2]门面担当：品牌够响，颜值出众，但价格略超预算，适合做主桌用酒[2]。\n\n💡 几个实用小贴士\n• 主桌和宾客桌可以不同：可以用一瓶稍好的酒（比如500元档位的梦之蓝M6+或红花郎15）作为主桌的门面，宾客桌用古16或水晶剑，这样预算更灵活，重点也突出[3][11]。\n• 别只认茅台五粮液：在这个预算下，买茅台和五粮液只能买到它们的低端系列酒，酒质一般，不如选上面这些名酒的核心单品来得实在和有面子[3][11]。\n• 渠道和数量要留心：婚宴用酒量大，记得提前从官方旗舰店、大型商超等正规渠道询价采购，批量购买通常有折扣[11]。开瓶前最好验一下防伪[3]。\n\n希望这份对比能帮你选到心仪的婚宴用酒。如果方便的话，可以再告诉我你的举办城市和大概的宾客构成（比如长辈多不多，本地人为主还是外地宾客多），我可以帮你参考更具体的搭配方案～"
+        },
         {
           "entry": "500元左右酒瓶显高档的婚宴用酒有哪些",
           "type": "negative_answer",
@@ -151,9 +189,10 @@
       "short": "古20",
       "overview": {
         "mention_rate": 85,
-        "avg_position": 6.2,
+        "avg_position": 5.9,
         "influence_rank": 1,
-        "top1_mention_rate": 25
+        "top1_mention_rate": 28.3,
+        "top3_mention_rate": 48.3
       },
       "rankings": {
         "mention_rate": [
@@ -164,76 +203,103 @@
           },
           {
             "name": "梦之蓝M6+",
-            "value": 70,
+            "value": 61.7,
             "is_target": false
           },
           {
             "name": "水晶剑",
-            "value": 63.3,
-            "is_target": false
-          },
-          {
-            "name": "第八代普五",
-            "value": 48.3,
+            "value": 56.7,
             "is_target": false
           },
           {
             "name": "国窖1573",
-            "value": 46.7,
+            "value": 41.7,
+            "is_target": false
+          },
+          {
+            "name": "第八代普五",
+            "value": 40,
             "is_target": false
           }
         ],
         "position": [
           {
-            "name": "第八代普五",
-            "value": 5.6,
-            "is_target": false
+            "name": "年份原浆古20",
+            "value": 6,
+            "is_target": true
           },
           {
-            "name": "水晶剑",
+            "name": "第八代普五",
             "value": 6.1,
             "is_target": false
           },
           {
-            "name": "年份原浆古20",
-            "value": 6.2,
-            "is_target": true
-          },
-          {
-            "name": "国窖1573",
+            "name": "水晶剑",
             "value": 6.5,
             "is_target": false
           },
           {
+            "name": "国窖1573",
+            "value": 6.8,
+            "is_target": false
+          },
+          {
             "name": "梦之蓝M6+",
-            "value": 6.9,
+            "value": 7.8,
             "is_target": false
           }
         ],
         "top1": [
           {
-            "name": "第八代普五",
-            "value": 28.3,
-            "is_target": false
-          },
-          {
             "name": "年份原浆古20",
-            "value": 25,
+            "value": 28.3,
             "is_target": true
           },
           {
-            "name": "梦之蓝M6+",
-            "value": 13.3,
+            "name": "第八代普五",
+            "value": 21.7,
             "is_target": false
           },
           {
-            "name": "水晶剑",
-            "value": 6.7,
+            "name": "梦之蓝M6+",
+            "value": 15,
             "is_target": false
           },
           {
             "name": "飞天茅台",
             "value": 5,
+            "is_target": false
+          },
+          {
+            "name": "水晶剑",
+            "value": 3.3,
+            "is_target": false
+          }
+        ],
+        "influence": [
+          {
+            "name": "年份原浆古20",
+            "value": 71,
+            "is_target": true
+          },
+          {
+            "name": "水晶剑",
+            "value": 52,
+            "is_target": false
+          },
+          {
+            "name": "梦之蓝M6+",
+            "value": 49.8,
+            "is_target": false
+          },
+          {
+            "name": "第八代普五",
+            "value": 43.6,
+            "is_target": false
+          },
+          {
+            "name": "国窖1573",
+            "value": 41.8,
             "is_target": false
           }
         ]
@@ -247,12 +313,12 @@
             "tag_name_zh": "口感好"
           },
           {
-            "tag_name": "适合送礼",
-            "tag_name_zh": "适合送礼"
-          },
-          {
             "tag_name": "包装精美",
             "tag_name_zh": "包装精美"
+          },
+          {
+            "tag_name": "包装大气",
+            "tag_name_zh": "包装大气"
           }
         ],
         "negative_keywords": [],
@@ -281,7 +347,7 @@
   },
   "scope": {
     "calendar_days": 31,
-    "collect_days": 4,
+    "collect_days": 5,
     "platforms": 4,
     "platform_names": [
       "DeepSeek",
@@ -290,9 +356,9 @@
       "kimi"
     ],
     "entries": 30,
-    "conversations": 480,
-    "articles": 2549,
-    "citations": 6113,
-    "competitor_brands": 101
+    "conversations": 600,
+    "articles": 3144,
+    "citations": 7816,
+    "competitor_brands": 113
   }
 }

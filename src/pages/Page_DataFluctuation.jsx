@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * 数据波动说明页（只讲古16）。
  *
- * 分模型提及率：conversations/stats + platform_ids，7/22 与 8/26 单日。
+ * 分模型提及率：conversations/stats + platform_ids，7/22 与 8/29 单日。
  * 引用来源 Top10：citations/articles + platform_ids=4，系统来源名。
  *   之前 = 8/1–8/8 真实榜（百家号 5 席，好看视频 1 席）
  *   现在 = 8月全月累计真实榜（好看视频 5 席，百家号 3 席）
@@ -19,9 +19,9 @@ const LOGOS = {
 
 const PLATFORM_ROWS = [
   { name: 'DeepSeek', jul: 93.3, aug: 86.7 },
-  { name: '豆包', jul: 73.3, aug: 66.7 },
-  { name: '文心', jul: 80.0, aug: 13.3, alert: true },
-  { name: 'Kimi', jul: 93.3, aug: 93.3 },
+  { name: '豆包', jul: 73.3, aug: 80.0 },
+  { name: '文心', jul: 80.0, aug: 66.7, alert: true },
+  { name: 'Kimi', jul: 93.3, aug: 100.0 },
 ];
 
 const BEFORE_TOP10 = [
@@ -108,7 +108,7 @@ export default function Page_DataFluctuation() {
 
       <div className="rounded-xl border border-zinc-200 bg-slate-50/40 py-3 px-6 shrink-0 mb-3">
         <p className="text-[1.25rem] leading-relaxed text-zinc-500 font-bold">
-          古16 曝光基本盘稳固，波动集中在文心单一模型。此前文心 Top10 以百家号图文为主（5 席），
+          古16 曝光基本盘回稳，分模型中文心仍是降幅最大的（80.0→66.7）。此前文心 Top10 以百家号图文为主（5 席），
           <span className="text-[#004CE5] font-black">现在好看视频从 1 席增至 5 席、占满半数</span>
           ，短视频内容几乎不做品牌盘点，摊薄了古16被提及的概率。
         </p>
@@ -117,7 +117,7 @@ export default function Page_DataFluctuation() {
       <div className="shrink-0 mb-3">
         <h2 className="text-[18px] font-black text-zinc-500 flex items-center gap-2 mb-2">
           <span className="w-2 h-2 rounded-full bg-zinc-300" />
-          古16 分模型提及率（7/22 → 8/26）
+          古16 分模型提及率（7/22 → 8/29）
         </h2>
         <div className="grid grid-cols-4 gap-3">
           {PLATFORM_ROWS.map((r) => (
