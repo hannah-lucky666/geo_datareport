@@ -30,73 +30,104 @@
         "top3_mention_rate": 76.7,
         "avg_position": 2.3,
         "influence_rank": 1,
+        "influence_score": 89.5,
         "conversations": 180
       },
       "compare": {
         "mention_rate": [
           {
             "name": "慕思智能床",
-            "value": "91.1%"
+            "value": "91.1%",
+            "isTarget": true,
+            "rank": null
           },
           {
             "name": "舒福德",
-            "value": "70%"
+            "value": "70%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "梦百合",
-            "value": "41.1%"
+            "value": "41.1%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "喜临门",
-            "value": "40%"
+            "value": "40%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "8H",
-            "value": "35%"
+            "value": "35%",
+            "isTarget": false,
+            "rank": null
           }
         ],
         "top1": [
           {
             "name": "慕思智能床",
-            "value": "45.6%"
+            "value": "45.6%",
+            "isTarget": true,
+            "rank": 1
           },
           {
             "name": "舒福德",
-            "value": "27.8%"
+            "value": "27.8%",
+            "isTarget": false,
+            "rank": 2
           },
           {
             "name": "慕思AI床垫",
-            "value": "5%"
+            "value": "5%",
+            "isTarget": false,
+            "rank": 3
           },
           {
             "name": "梦百合",
-            "value": "3.3%"
+            "value": "3.3%",
+            "isTarget": false,
+            "rank": 4
           },
           {
             "name": "MPE",
-            "value": "2.8%"
+            "value": "2.8%",
+            "isTarget": false,
+            "rank": 5
           }
         ],
-        "position": [
+        "influence": [
           {
             "name": "慕思智能床",
-            "value": "NO. 2.3"
+            "value": "NO.1",
+            "isTarget": true,
+            "rank": 1
           },
           {
             "name": "舒福德",
-            "value": "NO. 3.5"
+            "value": "NO.2",
+            "isTarget": false,
+            "rank": 2
           },
           {
             "name": "喜临门",
-            "value": "NO. 5.1"
+            "value": "NO.3",
+            "isTarget": false,
+            "rank": 3
           },
           {
             "name": "梦百合",
-            "value": "NO. 5.5"
+            "value": "NO.4",
+            "isTarget": false,
+            "rank": 4
           },
           {
-            "name": "MPE",
-            "value": "NO. 5.5"
+            "name": "8H",
+            "value": "NO.5",
+            "isTarget": false,
+            "rank": 5
           }
         ]
       },
@@ -461,73 +492,104 @@
         "top3_mention_rate": 80.6,
         "avg_position": 2.1,
         "influence_rank": 1,
+        "influence_score": 87,
         "conversations": 180
       },
       "compare": {
         "mention_rate": [
           {
             "name": "慕思AI床垫",
-            "value": "85.6%"
+            "value": "85.6%",
+            "isTarget": true,
+            "rank": null
           },
           {
             "name": "喜临门",
-            "value": "73.3%"
+            "value": "73.3%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "HEKA",
-            "value": "42.8%"
+            "value": "42.8%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "8H",
-            "value": "33.3%"
+            "value": "33.3%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "梦百合",
-            "value": "31.7%"
+            "value": "31.7%",
+            "isTarget": false,
+            "rank": null
           }
         ],
         "top1": [
           {
             "name": "慕思AI床垫",
-            "value": "60%"
+            "value": "60%",
+            "isTarget": true,
+            "rank": 1
           },
           {
             "name": "慕思智能床",
-            "value": "9.4%"
+            "value": "9.4%",
+            "isTarget": false,
+            "rank": 2
           },
           {
             "name": "喜临门",
-            "value": "7.2%"
+            "value": "7.2%",
+            "isTarget": false,
+            "rank": 3
           },
           {
             "name": "HEKA",
-            "value": "5%"
+            "value": "5%",
+            "isTarget": false,
+            "rank": 4
           },
           {
             "name": "8H",
-            "value": "2.2%"
+            "value": "2.2%",
+            "isTarget": false,
+            "rank": 5
           }
         ],
-        "position": [
+        "influence": [
           {
             "name": "慕思AI床垫",
-            "value": "NO. 2.1"
+            "value": "NO.1",
+            "isTarget": true,
+            "rank": 1
           },
           {
             "name": "喜临门",
-            "value": "NO. 4.0"
+            "value": "NO.2",
+            "isTarget": false,
+            "rank": 2
           },
           {
             "name": "HEKA",
-            "value": "NO. 4.8"
+            "value": "NO.3",
+            "isTarget": false,
+            "rank": 3
           },
           {
             "name": "慕思智能床",
-            "value": "NO. 5.0"
+            "value": "NO.4",
+            "isTarget": false,
+            "rank": 4
           },
           {
             "name": "梦百合",
-            "value": "NO. 5.4"
+            "value": "NO.5",
+            "isTarget": false,
+            "rank": 5
           }
         ]
       },
@@ -894,73 +956,104 @@
         "top3_mention_rate": 43.3,
         "avg_position": 4.2,
         "influence_rank": 1,
+        "influence_score": 77.2,
         "conversations": 90
       },
       "compare": {
         "mention_rate": [
           {
             "name": "慕思",
-            "value": "83.3%"
+            "value": "83.3%",
+            "isTarget": true,
+            "rank": null
           },
           {
             "name": "金可儿",
-            "value": "62.2%"
+            "value": "62.2%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "雅兰",
-            "value": "62.2%"
+            "value": "62.2%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "丝涟",
-            "value": "56.7%"
+            "value": "56.7%",
+            "isTarget": false,
+            "rank": null
           },
           {
             "name": "喜临门",
-            "value": "56.7%"
+            "value": "56.7%",
+            "isTarget": false,
+            "rank": null
           }
         ],
         "top1": [
           {
             "name": "慕思",
-            "value": "33.3%"
+            "value": "33.3%",
+            "isTarget": true,
+            "rank": 1
           },
           {
             "name": "喜临门",
-            "value": "15.6%"
+            "value": "15.6%",
+            "isTarget": false,
+            "rank": 2
           },
           {
             "name": "TLK特蕾卡",
-            "value": "6.7%"
+            "value": "6.7%",
+            "isTarget": false,
+            "rank": 3
           },
           {
             "name": "席梦思",
-            "value": "5.6%"
+            "value": "5.6%",
+            "isTarget": false,
+            "rank": 4
           },
           {
             "name": "海丝腾",
-            "value": "5.6%"
+            "value": "5.6%",
+            "isTarget": false,
+            "rank": 5
           }
         ],
-        "position": [
+        "influence": [
           {
             "name": "慕思",
-            "value": "NO. 4.2"
-          },
-          {
-            "name": "喜临门",
-            "value": "NO. 5.3"
+            "value": "NO.1",
+            "isTarget": true,
+            "rank": 1
           },
           {
             "name": "雅兰",
-            "value": "NO. 5.5"
+            "value": "NO.2",
+            "isTarget": false,
+            "rank": 2
           },
           {
             "name": "金可儿",
-            "value": "NO. 5.6"
+            "value": "NO.3",
+            "isTarget": false,
+            "rank": 3
+          },
+          {
+            "name": "喜临门",
+            "value": "NO.4",
+            "isTarget": false,
+            "rank": 4
           },
           {
             "name": "丝涟",
-            "value": "NO. 5.7"
+            "value": "NO.5",
+            "isTarget": false,
+            "rank": 5
           }
         ]
       },

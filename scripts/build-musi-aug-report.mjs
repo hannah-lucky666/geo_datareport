@@ -16,7 +16,7 @@
  *
  * 指标来源（勿混用 compare 表字段）：
  *   提及率 → stats.brand_mention_rate；平均提及位次 → stats.avg_position；
- *   竞品排名 → influence 中 is_target 的 rank；
+ *   竞品排名 → influence 中 is_target 的 rank（行业影响力排名，禁止再用「提及位次排名」）；
  *   Top1/Top3 → compare.top1_ranking / top3_ranking 中 is_target。
  */
 import { readFileSync, writeFileSync } from 'fs';
@@ -41,11 +41,6 @@ const delivery = JSON.parse(readFileSync('src/data/delivery_excel_0828.json', 'u
 const loadAug = (id) => JSON.parse(readFileSync(`src/data/geoReport_${id}_${AUG_DATE}.json`, 'utf8'));
 
 const pct = (v) => (v == null ? '-' : `${Number(v)}%`);
-const pos = (v) => {
-  if (v == null) return '-';
-  const n = Number(v);
-  return Number.isFinite(n) ? `NO. ${n.toFixed(1)}` : '-';
-};
 
 const report = {
   meta: {
@@ -77,6 +72,7 @@ for (const p of products) {
       top3_mention_rate: selfTop3?.top3_mention_rate ?? null,
       avg_position: aug.stats.avg_position,
       influence_rank: selfInf?.rank ?? null,
+      influence_score: selfInf?.influence_score ?? null,
       conversations: aug.influence.total_conversations,
     },
 
@@ -84,14 +80,21 @@ for (const p of products) {
       mention_rate: aug.compare.mention_rate_ranking.slice(0, 5).map((b) => ({
         name: b.display_name || b.brand_name,
         value: pct(b.mention_rate),
+        isTarget: !!b.is_target,
+        rank: b.rank ?? null,
       })),
       top1: aug.compare.top1_ranking.slice(0, 5).map((b) => ({
         name: b.brand_name,
         value: pct(b.top1_mention_rate),
+        isTarget: !!b.is_target,
+        rank: b.rank ?? null,
       })),
-      position: aug.compare.position_ranking.slice(0, 5).map((b) => ({
+      // 竞品排名 = 行业影响力排名，列值是名次（NO.1），不是影响力指数。
+      influence: aug.influence.list.slice(0, 5).map((b) => ({
         name: b.display_name || b.brand_name,
-        value: pos(b.avg_position),
+        value: b.rank == null ? '-' : `NO.${b.rank}`,
+        isTarget: !!b.is_target,
+        rank: b.rank ?? null,
       })),
     },
 
@@ -131,7 +134,7 @@ for (const p of products) {
       `\n  情感    正面 ${r.sentiments.positive}% / 负面 ${r.sentiments.negative}%` +
       `\n  竞品提及率 ${r.compare.mention_rate.map((x) => `${x.name} ${x.value}`).join(' | ')}` +
       `\n  竞品Top1   ${r.compare.top1.map((x) => `${x.name} ${x.value}`).join(' | ')}` +
-      `\n  竞品位次   ${r.compare.position.map((x) => `${x.name} ${x.value}`).join(' | ')}` +
+      `\n  竞品排名   ${r.compare.influence.map((x) => `${x.name} ${x.value}`).join(' | ')}` +
       `\n  投放      ${r.delivery.overview.delivery_articles} 篇 / 被引 ${r.delivery.overview.cited_articles} 篇` +
       ` (${r.delivery.overview.citation_rate}%) / 引用 ${r.delivery.overview.delivery_citations} 次`
   );

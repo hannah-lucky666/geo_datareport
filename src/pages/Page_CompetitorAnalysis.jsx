@@ -7,9 +7,9 @@ const data = report.products.smart;
 export default function Page_CompetitorAnalysis() {
   const mentionRateData = data.compare.mention_rate;
   const top1RateData = data.compare.top1;
-  const avgRankData = data.compare.position;
+  const influenceData = data.compare.influence;
 
-  const renderTable = (title, headers, rows) => {
+  const renderTable = (title, headers, rows, { nameWidth = '52%', valueWidth = '30%', valueSize = '32px', headerSize = '18px' } = {}) => {
     return (
       <div className="flex flex-col gap-3 h-full min-h-0">
         <h3 className="text-2xl font-extrabold text-zinc-800 tracking-wide pl-1.5 flex items-center gap-2 shrink-0">
@@ -20,15 +20,15 @@ export default function Page_CompetitorAnalysis() {
           <table className="w-full text-left border-collapse table-fixed flex-grow h-full">
             <thead>
               <tr className="border-b border-zinc-200 bg-slate-50/50">
-                <th className="py-3 px-3 w-[18%]"></th>
-                <th className="py-3 px-2 text-lg font-black text-zinc-500 w-[52%]">{headers[0]}</th>
-                <th className="py-3 px-4 text-lg font-black text-zinc-500 w-[30%] text-right pr-6">{headers[1]}</th>
+                <th className="py-3 px-2 w-[16%]"></th>
+                <th className="py-3 px-2 text-lg font-black text-zinc-500" style={{ width: nameWidth }}>{headers[0]}</th>
+                <th className="py-3 px-2 font-black text-zinc-500 text-right whitespace-nowrap" style={{ width: valueWidth, fontSize: headerSize }}>{headers[1]}</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((item, idx) => {
-                const isBrand = item.name === brandName;
-                const rank = idx + 1;
+                const isBrand = item.isTarget || item.name === brandName;
+                const rank = item.rank || idx + 1;
                 let rankElement;
                 if (rank === 1) {
                   rankElement = (
@@ -51,22 +51,22 @@ export default function Page_CompetitorAnalysis() {
                     key={idx}
                     className={`border-b border-zinc-100 last:border-none hover:bg-slate-50/50 transition-colors ${isBrand ? 'bg-[#004CE5]/[0.03]' : ''}`}
                   >
-                    <td className="py-3 px-3 align-middle">
+                    <td className="py-3 px-2 align-middle">
                       <div className="flex justify-center">{rankElement}</div>
                     </td>
                     <td className="py-3 px-2 align-middle">
-                      <div className="flex items-center flex-wrap gap-2">
-                        <span className={`text-[1.4rem] ${isBrand ? 'font-black text-[#004CE5]' : 'font-bold text-zinc-800'}`}>
+                      <div className="flex items-center gap-2 min-w-0">
+                        <span className={`text-[1.4rem] truncate ${isBrand ? 'font-black text-[#004CE5]' : 'font-bold text-zinc-800'}`}>
                           {item.name}
                         </span>
                         {isBrand && (
-                          <span className="px-2 py-0.5 text-[0.8rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50">
+                          <span className="px-2 py-0.5 text-[0.8rem] font-bold rounded bg-zinc-100 text-zinc-500 border border-zinc-200/50 shrink-0">
                             目标产品
                           </span>
                         )}
                       </div>
                     </td>
-                    <td className={`py-3 px-4 text-right pr-6 align-middle text-[32px] font-black font-['Montserrat',sans-serif] ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
+                    <td className={`py-3 px-2 text-right align-middle font-black font-['Montserrat',sans-serif] tracking-tight ${isBrand ? 'text-[#004CE5]' : 'text-zinc-700'}`} style={{ fontSize: valueSize }}>
                       {item.value}
                     </td>
                   </tr>
@@ -93,7 +93,7 @@ export default function Page_CompetitorAnalysis() {
         <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
           {renderTable('提及率排名', ['产品名称', '提及率'], mentionRateData)}
           {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], top1RateData)}
-          {renderTable('提及位次排名', ['产品名称', '平均提及位次'], avgRankData)}
+          {renderTable('竞品排名', ['产品名称', '行业影响力排名'], influenceData, { valueSize: '28px', headerSize: '16px' })}
         </div>
 
         <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品本月三项指标全面领先：提及率91.1%、Top1 45.6%、平均位次NO.2.3均居第一；舒福德以70%提及率、27.8% Top1紧随其后，仍是唯一贴身对手。
+                1. 本品本月三项指标全面领先：提及率91.1%、Top1 45.6%、竞品排名NO.1均居第一；舒福德以70%提及率、27.8% Top1紧随其后，仍是唯一贴身对手。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 梦百合、喜临门、8H以41.1%、40%、35%分列提及率第三至第五，第二梯队密集；位次上舒福德NO.3.5最接近本品，与第三名喜临门NO.5.1形成明显断层。
+                2. 梦百合、喜临门、8H以41.1%、40%、35%分列提及率第三至第五，第二梯队密集；竞品排名上舒福德居NO.2最接近本品，喜临门、梦百合、8H分列NO.3至NO.5。
               </p>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function Page_CompetitorAnalysis() {
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
                 { num: '01', title: '扩大首推优势', desc: '舒福德Top1仍达27.8%，需在止鼾、零重力等高转化词条加码定性对比内容，把45.6%的首推率继续推高。' },
-                { num: '02', title: '巩固位次领先', desc: '在2万价位与品质售后类词条强化“第一顺位”表达，守住与舒福德1.2位的位次差距。' },
+                { num: '02', title: '巩固竞品排名', desc: '在2万价位与品质售后类词条强化“第一顺位”表达，守住对舒福德的NO.1领先。' },
                 { num: '03', title: '第二梯队压制', desc: '梦百合、喜临门提及率已逼近四成，补充家庭场景与口碑类长尾语料，防止份额被稀释。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

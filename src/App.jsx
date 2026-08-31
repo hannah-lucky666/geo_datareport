@@ -104,6 +104,20 @@ export default function App() {
     .map((id) => slideDictionary[id])
     .filter(Boolean);
 
+  // 导出脚本用 #slide=N 直达某一页，避免每个浏览器进程连按方向键
+  useEffect(() => {
+    const applyHash = () => {
+      const match = window.location.hash.match(/^#slide=(\d+)/);
+      if (!match) return;
+      const index = Number(match[1]);
+      if (!Number.isFinite(index) || slideData.length === 0) return;
+      setCurrentSlide(Math.max(0, Math.min(index, slideData.length - 1)));
+    };
+    applyHash();
+    window.addEventListener('hashchange', applyHash);
+    return () => window.removeEventListener('hashchange', applyHash);
+  }, [slideData.length]);
+
   const handleNextSlide = () => {
     if (isMenuOpen) return;
     setCurrentSlide((prev) => Math.min(prev + 1, slideData.length - 1));
