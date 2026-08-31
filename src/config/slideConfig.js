@@ -1,7 +1,8 @@
 import React from 'react';
 import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
+import Page_NextStepSuggestions from '../pages/Page_NextStepSuggestions';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
-import Page_ContentAnalysis from '../pages/Page_ContentAnalysis';
+import Page_EntryBreakthrough from '../pages/Page_EntryBreakthrough';
 import Page_ContentDetails from '../pages/Page_ContentDetails';
 import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
 
@@ -49,16 +50,16 @@ export const slideConfig = [
   { type: 'chapter', title: '核心数据与竞品分析', subtitle: 'DATA OVERVIEW & COMPETITOR ANALYSIS', backgroundImage: '/' },
   { type: 'section', title: '核心数据总览' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
+  { type: 'section', title: '下一步优化建议' },
+  { type: 'page', title: '下一步优化建议', component: Page_NextStepSuggestions },
   { type: 'section', title: '竞品分析' },
   { type: 'page', title: '美素佳儿源悦 竞品分析', component: Page_CompetitorAnalysis },
+  { type: 'section', title: '词条突破分布' },
+  { type: 'page', title: '词条突破分布分析', component: Page_EntryBreakthrough },
 
   { type: 'chapter', title: '投放内容与引用明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '投放渠道与数据明细' },
   { type: 'page', title: '美素佳儿源悦 投放明细', component: Page_ContentDetails },
-
-  { type: 'chapter', title: '内容分析与总结说明', subtitle: 'CONTENT ANALYSIS & SUMMARY', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-  { type: 'section', title: '内容总结分析' },
-  { type: 'page', title: '美素佳儿源悦 内容总结', component: Page_ContentAnalysis },
 
   { type: 'chapter', title: '词条数据明细', subtitle: 'KEYWORD DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '词条监测明细' },

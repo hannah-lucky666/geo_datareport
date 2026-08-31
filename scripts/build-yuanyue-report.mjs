@@ -3,9 +3,9 @@
  * 组装美素佳儿源悦(项目 535) 8 月报告数据 -> src/data/yuanyueAugustReport.json
  *
  * 数据来源：
- *   · 优化前 = GEO ONE 2026-08-12 单日
- *   · 8 月   = GEO ONE 2026-08-28 单日
- *   · 投放明细 = 《美素佳儿源悦(中位数)_投放文章统计_0828.xlsx》（scripts/_excel_dump.json）
+ *   · 优化前 = GEO ONE 2026-08-12 单日（数据系统最早一天，再往前无数据）
+ *   · 8 月   = GEO ONE 2026-08-31 单日
+ *   · 投放明细 = 《美素佳儿源悦(中位数)_投放文章统计_0829.xlsx》（scripts/_excel_dump_0829.json）
  */
 import { readFileSync, writeFileSync } from 'fs';
 import path from 'path';
@@ -15,28 +15,25 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(path.join(root, p), 'utf8'));
 
 const BEFORE_DATE = '2026-08-12';
-const AUGUST_DATE = '2026-08-28';
+const AUGUST_DATE = '2026-08-31';
+const DELIVERY_FILE = '美素佳儿源悦(中位数)_投放文章统计_0829.xlsx';
+const DELIVERY_DATE = '2026-08-29';
 
 const before = read(`src/data/geoReport_535_${BEFORE_DATE}.json`);
 const august = read(`src/data/geoReport_535_${AUGUST_DATE}.json`);
 const extra = read('src/data/yuanyue_extra.json');
-const excel = read('scripts/_excel_dump.json');
+const excel = read('scripts/_excel_dump_0829.json');
 
 const pct = (v) => (v == null ? '-' : `${Number(v)}%`);
 const pos = (v) => (v == null ? '-' : `NO. ${Number(v).toFixed(1)}`);
 const self = (r) => r.influence.list.find((b) => b.is_target) || {};
 
-// Top1 提及率：接口的 top1 榜单里没有本品即为 0
-function selfTop1(r) {
-  const hit = (r.compare?.top1_ranking || []).find((b) => b.is_target);
-  return hit ? hit.top1_mention_rate : 0;
-}
-
 function snapshot(r) {
   const s = self(r);
   return {
     mention_rate: r.stats.brand_mention_rate,
-    top1_mention_rate: selfTop1(r),
+    top1_mention_rate: r.stats.top1_mention_rate,
+    top3_mention_rate: r.stats.top3_mention_rate,
     avg_position: r.stats.avg_position,
     influence_score: s.influence_score ?? null,
     influence_rank: s.rank ?? null,
@@ -94,8 +91,8 @@ const DOMAIN_NAMES = {
   'douyin.com': '抖音',
   'h5-fe-article.babytree.com': '宝宝树',
   'miaoshou.com': '妙手医生',
-  'news.fh21.com.cn': '飞华健康',
-  'bohe.cn': '薄荷健康',
+  'news.fh21.com.cn': '复禾健康',
+  'bohe.cn': '博禾医生',
   'mama.cn': '妈妈网',
 };
 
@@ -130,8 +127,8 @@ const report = {
     label: '2026年8月',
     before_date: BEFORE_DATE,
     august_date: AUGUST_DATE,
-    before_label: '优化前（8/12）',
-    august_label: '8月（8/28）',
+    before_label: '优化前（8月12日）',
+    august_label: '8月31日',
   },
   scope: {
     platforms: extra.platforms.length,
@@ -185,8 +182,8 @@ const report = {
     },
   },
   delivery: {
-    source: '美素佳儿源悦(中位数)_投放文章统计_0828.xlsx',
-    generated_at: '2026-08-28',
+    source: DELIVERY_FILE,
+    generated_at: DELIVERY_DATE,
     overview: {
       delivery_articles: deliveryArticles,
       cited_articles: citedArticles,

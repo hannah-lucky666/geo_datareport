@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-28T13:35:19.588Z",
+    "fetched_at": "2026-08-29T08:11:30.006Z",
     "api_base": "https://api.geotopone.com",
     "project_id": 535,
     "project_name": "美素佳儿源悦(中位数)",
@@ -51,8 +51,8 @@
   ],
   "stats": {
     "brand_mention_rate": 4.1,
-    "top1_mention_rate": null,
-    "top3_mention_rate": null,
+    "top1_mention_rate": 0,
+    "top3_mention_rate": 0,
     "avg_position": 8.4,
     "daily_stats": [
       {
@@ -1111,6 +1111,1088 @@
         "brand_name": "启赋",
         "top1_mention_rate": 0.8,
         "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "启赋未来",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "小佳膳",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "纽荃星壹加",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "纽荃星壹加",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "紫白金",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "育护",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "臻爱倍护",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 28,
+        "brand_name": "蓝胖子全脂",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "超启能恩",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "金领冠育护",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "高培一百",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "1897 荷致",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "3 段（国行）",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "A选",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "Infatrini",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "Platinum 3段",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 37,
+        "brand_name": "一百系列",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "三元爱力优（3段）",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "乐纯",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "乐铂",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "乐铂博越 3 段",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "亲护3段",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "亲熠",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "亲蓓稚萃",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "伊利金领冠倍冠 3 段",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "优博剖蓓舒",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "优博圣特拉慕",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "优博安能",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "优博瑞可嘉",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "优博瑞慕",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "优博瑞霖",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "优启",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "优生3",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "优萃宝爱",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "优萃有机",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "低体重儿配方",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "佳膳悠选",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "佳贝艾特羊奶粉",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "優生3",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "優生3",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "儿童成长奶粉",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "元乳",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "元乳臻益",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "全脂成人奶粉",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "初爱牛牛",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "剖蓓舒",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "剖蓓舒白金",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "力多精金装",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "卓傲",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "可睿欣",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 71,
+        "brand_name": "启赋敏适",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "启赋蓝钻",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 73,
+        "brand_name": "启铂",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "国行",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "塞纳牧",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "安婴儿A+早产",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "宝利贝",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "宝贝与我有机",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "小佰太能",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "小佳膳",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "小安素",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "小安素",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "小百肽能",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "德国版贝巴至尊",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 85,
+        "brand_name": "德国白金版 1 + 段",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 86,
+        "brand_name": "德爱白金",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 87,
+        "brand_name": "恩敏舒",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 88,
+        "brand_name": "恩至",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 89,
+        "brand_name": "悠滋小羊",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 90,
+        "brand_name": "悠滋小羊",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 91,
+        "brand_name": "悦白",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 92,
+        "brand_name": "悦白白金版",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 93,
+        "brand_name": "惠氏启赋蕴淳 A2 3 段",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 94,
+        "brand_name": "成长奶粉",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 95,
+        "brand_name": "旗帜帜亲",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 96,
+        "brand_name": "旗帜红罐",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 97,
+        "brand_name": "无乳糖能恩",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 98,
+        "brand_name": "早启能恩",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 99,
+        "brand_name": "有机 3 段",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 100,
+        "brand_name": "未来",
+        "top1_mention_rate": 0,
+        "is_target": false
+      }
+    ],
+    "top3_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "派星",
+        "top3_mention_rate": 32.8,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "星飞帆卓睿",
+        "top3_mention_rate": 23,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "珍护",
+        "top3_mention_rate": 22.1,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "金领冠珍护铂萃",
+        "top3_mention_rate": 19.7,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "星飞帆",
+        "top3_mention_rate": 14.8,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "恬适",
+        "top3_mention_rate": 10.7,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "能恩全护A2",
+        "top3_mention_rate": 9.8,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "至初",
+        "top3_mention_rate": 9.8,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "珍护铂萃",
+        "top3_mention_rate": 9,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "领熠",
+        "top3_mention_rate": 7.4,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "优萃宝爱",
+        "top3_mention_rate": 5.7,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "小佰太能",
+        "top3_mention_rate": 4.9,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "特爱敏佳",
+        "top3_mention_rate": 4.9,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "超启能恩",
+        "top3_mention_rate": 4.9,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "可睿欣",
+        "top3_mention_rate": 4.1,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "皇家美素佳儿",
+        "top3_mention_rate": 4.1,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "紫白金",
+        "top3_mention_rate": 4.1,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "1897 荷致",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "亲舒",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "优萃有机",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "臻爱倍护",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "乐铂",
+        "top3_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "卓萃",
+        "top3_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "启赋未来",
+        "top3_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "小佳膳",
+        "top3_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "瑞霂玥爱",
+        "top3_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "纽荃星壹加",
+        "top3_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 28,
+        "brand_name": "育护",
+        "top3_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "BEBA至尊",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "乐铂博越 3 段",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "卓傲",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "启赋",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "小安素",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "纽荃星壹加",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "紫曜 HMO",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "能恩EXPERTpro COMFORT+",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 37,
+        "brand_name": "贝巴至尊",
+        "top3_mention_rate": 1.6,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "一百系列",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "乐纯",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "亲蓓稚萃",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "优博瑞可嘉",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "优生3",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "優生3",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "全脂成人奶粉",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "启赋敏适",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "塞纳牧",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "小佰太能",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "小佳膳",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "小安素",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "小百肽能",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "德国白金版 1 + 段",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "悦白",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "悦白白金版",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "旗帜红罐",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "淳护",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "澳洲爱他美白金版",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "爱加",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "爱恩思",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "猴头菇羊奶粉",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "珍护三代",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "珍护源初 3 段",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "白金系列",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "红旗帜",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "红罐",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "纽荃星壹加",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "肽敏舒",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "至尊",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "至臻启护",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "臻爱飞帆 3 段",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "蓝胖子全脂",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 71,
+        "brand_name": "蓝臻",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "蓝钻",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 73,
+        "brand_name": "親舒3",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "诠臻爱",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "诠适爱",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "金领冠育护",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "铂金",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "高培一百",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "高培迪唯恩",
+        "top3_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "3 段（国行）",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "A选",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "Infatrini",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "Platinum 3段",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "三元爱力优（3段）",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 85,
+        "brand_name": "亲护3段",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 86,
+        "brand_name": "亲熠",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 87,
+        "brand_name": "伊利金领冠倍冠 3 段",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 88,
+        "brand_name": "优博剖蓓舒",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 89,
+        "brand_name": "优博圣特拉慕",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 90,
+        "brand_name": "优博安能",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 91,
+        "brand_name": "优博瑞慕",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 92,
+        "brand_name": "优博瑞霖",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 93,
+        "brand_name": "优启",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 94,
+        "brand_name": "低体重儿配方",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 95,
+        "brand_name": "佳膳悠选",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 96,
+        "brand_name": "佳贝艾特羊奶粉",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 97,
+        "brand_name": "優生3",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 98,
+        "brand_name": "儿童成长奶粉",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 99,
+        "brand_name": "元乳",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 100,
+        "brand_name": "元乳臻益",
+        "top3_mention_rate": 0,
+        "is_target": false
       }
     ]
   },
@@ -1141,7 +2223,7 @@
         "share": 3.3
       },
       {
-        "platform_name": "SMZDM",
+        "platform_name": "什么值得买",
         "domain": "smzdm.com",
         "logo_url": "https://app.geoindexfuture.com/site-icons/smzdm.com.jpg",
         "citation_count": 44,
@@ -1200,7 +2282,7 @@
         "title": "君乐宝优萃宝爱三段奶粉",
         "link_url": "https://post.smzdm.com/talk/p/a82zgv0n/#comments",
         "domain": "smzdm.com",
-        "platform_name": "SMZDM",
+        "platform_name": "什么值得买",
         "logo_url": "https://app.geoindexfuture.com/site-icons/smzdm.com.jpg",
         "total_citations": 13,
         "avg_citations": 13,

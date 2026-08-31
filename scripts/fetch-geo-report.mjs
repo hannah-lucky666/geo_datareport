@@ -4,7 +4,7 @@
  * 自 Slide_Skyworth 迁移，并适配古井双产品（如 123=古16 / 124=古20）。
  *
  * 用法:
- *   node scripts/fetch-geo-report.mjs <project_id> [--start YYYY-MM-DD] [--end YYYY-MM-DD]
+ *   node scripts/fetch-geo-report.mjs <project_id> [--start YYYY-MM-DD] [--end YYYY-MM-DD] [--out 相对路径]
  *   node scripts/fetch-geo-report.mjs --list
  *
  * 必需环境变量（可写在项目根目录 .env）:
@@ -136,13 +136,27 @@ async function main() {
     api('/api/citations/articles', { ...range, page: 1, page_size: 10, sort_by: 'total_citations', sort_order: 'desc' }),
   ]);
 
-  // Top1 提及率排名（测试服暂无此接口，失败时置空）
-  let top1 = null;
-  try {
-    top1 = await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1' });
-  } catch (e) {
-    console.warn(`top-mention-rate 接口不可用（${e.message}），Top1 排名置空`);
+  // Top1 / Top3 提及率排名（测试服暂无此接口，失败时置空）
+  const topRankings = {};
+  for (const topType of ['top1', 'top3']) {
+    try {
+      const r = await api('/api/competitors/top-mention-rate', { ...range, top_type: topType, page_size: 100 });
+      topRankings[topType] = (r.data.list || []).map((b) => ({
+        rank: b.rank,
+        brand_name: b.display_name || b.brand_name,
+        [`${topType}_mention_rate`]: num(b.selected_top_mention_rate),
+        is_target: !!(b.is_self ?? b.is_target),
+      }));
+    } catch (e) {
+      console.warn(`top-mention-rate(${topType}) 接口不可用（${e.message}），排名置空`);
+      topRankings[topType] = [];
+    }
   }
+  // 本品不在榜单里即为 0
+  const selfTopRate = (topType) => {
+    const hit = topRankings[topType].find((b) => b.is_target);
+    return hit ? hit[`${topType}_mention_rate`] : 0;
+  };
 
   const platformMap = Object.fromEntries(platforms.data.map((p) => [p.id, p]));
 
@@ -160,8 +174,9 @@ async function main() {
     platforms: platforms.data,
     stats: {
       brand_mention_rate: num(stats.data.brand_mention_rate),
-      top1_mention_rate: num(stats.data.top1_mention_rate),
-      top3_mention_rate: num(stats.data.top3_mention_rate),
+      // conversations/stats 不返回 Top1/Top3，统一以 top-mention-rate 榜单里的本品为准
+      top1_mention_rate: num(stats.data.top1_mention_rate) ?? selfTopRate('top1'),
+      top3_mention_rate: num(stats.data.top3_mention_rate) ?? selfTopRate('top3'),
       avg_position: num(stats.data.avg_position),
       daily_stats: (stats.data.daily_stats || []).map((d) => ({
         date: d.date,
@@ -206,12 +221,8 @@ async function main() {
       position_ranking: compare.data.position_ranking || [],
       rate_daily: compare.data.rate_daily || compare.data.mention_rate_daily || [],
       position_daily: compare.data.position_daily || [],
-      top1_ranking: (top1?.data?.list || []).map((b) => ({
-        rank: b.rank,
-        brand_name: b.display_name || b.brand_name,
-        top1_mention_rate: num(b.selected_top_mention_rate),
-        is_target: !!(b.is_self ?? b.is_target),
-      })),
+      top1_ranking: topRankings.top1,
+      top3_ranking: topRankings.top3,
     },
     citations: {
       total_conversations: citationStats.data.total_conversations,
@@ -261,7 +272,10 @@ async function main() {
     influence_rank: dailyRank[d.date] ?? null, // 竞品排名 = 行业影响力排名
   }));
 
-  const outPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), `../src/data/geoReport_${projectId}.json`);
+  const outPath = path.resolve(
+    path.dirname(fileURLToPath(import.meta.url)),
+    getFlag('out') ? `../${getFlag('out')}` : `../src/data/geoReport_${projectId}.json`
+  );
   
   // 确保目录存在
   const outDir = path.dirname(outPath);

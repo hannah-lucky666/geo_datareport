@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 合生元派星三项指标全面领先：提及率44.3%、Top1 13.9%、平均位次NO.5.8均居第一；金领冠珍护铂萃、卓傲、超启能恩形成26%—29%的第二梯队，是首要追赶对象。
+                1. 领先的四款产品分属合生元、爱他美、飞鹤、伊利四大集团，均为沉淀多年的主力单品：派星三项指标全面领先（51.6%、Top1 14.8%、NO.4.8），并在61个词条中拿下11次首推；卓傲、星飞帆、金领冠珍护铂萃以31%—34%构成第二梯队。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 源悦本月提及率10.7%、位次NO.7.8，品牌影响力指数由{before.influence_score}升至{august.influence_score}、排名NO.41→NO.17，是本月进位最快的品牌；但Top1提及率仍为0，尚未进入首推顺位。
+                2. 品牌层存量差距同样明显：AI回答共出现36个品牌、102款产品，君乐宝、金领冠、雀巢各10款、爱他美8款同时在榜，美素佳儿仅4款。源悦本月提及率15.6%、位次NO.7.2，影响力指数由{before.influence_score}升至{august.influence_score}、排名NO.41→NO.15，进位最快且Top1提及率已破零至1.6%。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '突破首推顺位', desc: '针对派星、珍护垄断的Top1场景，加码奶源、蛋白结构等高转化词条的定性对比内容。' },
+                { num: '01', title: '放大首推成果', desc: 'Top1已破零至1.6%，针对派星、星飞帆垄断的Top1场景，继续加码奶源、蛋白结构等高转化词条的定性对比内容。' },
                 { num: '02', title: '扩大提及广度', desc: '把“婴儿奶粉排行榜”“口碑好的奶粉”等泛选购词从单点提及扩展到稳定进榜，缩小与第二梯队的差距。' },
-                { num: '03', title: '压缩位次差距', desc: '位次NO.7.8落后头部约2位，需在成分与配方对比类内容中强化第一顺位表达，向6.5以内靠拢。' },
+                { num: '03', title: '压缩位次差距', desc: '位次NO.7.2落后头部约2.4位，需在成分与配方对比类内容中强化第一顺位表达，向6以内靠拢。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

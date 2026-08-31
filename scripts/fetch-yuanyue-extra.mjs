@@ -26,7 +26,7 @@ if (existsSync(envPath)) {
 const API_BASE = process.env.GEO_API_BASE;
 const PROJECT_ID = 535;
 const BEFORE_DATE = '2026-08-12';
-const AUGUST_DATE = '2026-08-28';
+const AUGUST_DATE = '2026-08-31';
 
 let cookie = '';
 
@@ -98,7 +98,7 @@ for (const [key, date] of [['before', BEFORE_DATE], ['august', AUGUST_DATE]]) {
   console.log(`${key} (${date}) 情感=${sentiments ? 'ok' : '-'} top1条数=${out[key].top1_list.length}`);
 }
 
-// 分平台词条明细（取 8/28 单日）
+// 分平台词条明细（取 8/31 单日）
 const platforms = (await api('/api/platforms', { project_id: PROJECT_ID })).data;
 out.platforms = platforms.map((p) => ({ id: p.id, name: p.name, url: p.url || null }));
 out.platform_entries = {};

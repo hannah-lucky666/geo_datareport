@@ -7,10 +7,8 @@ function fmtPct(v) {
   return `${Number(v)}%`;
 }
 
-function fmtPos(v) {
-  const n = Number(v);
-  return Number.isInteger(n) ? String(n) : n.toFixed(1).replace(/\.0$/, '');
-}
+const BEFORE_LABEL = report.meta.before_label;
+const AUGUST_LABEL = report.meta.august_label;
 
 export default function Page_CoreDataOverview() {
   const rows = [{ key: 'all', name: '美素佳儿源悦', before, august }];
@@ -36,19 +34,17 @@ export default function Page_CoreDataOverview() {
             <tr className="text-white">
               <th rowSpan={2} className="py-5 px-4 text-2xl font-black text-center w-[14%] bg-zinc-800 border-r border-white/10">产品</th>
               <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#004CE5]">提及率</th>
-              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#1A62E5]">平均提及位次</th>
-              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#2A6CF0]">Top1 提及率</th>
+              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#1A62E5]">Top1 提及率</th>
+              <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#2A6CF0]">Top3 提及率</th>
               <th colSpan={2} className="py-4 px-2 text-2xl font-black text-center border-l border-white/10 bg-[#2E75FF]">竞品排名</th>
             </tr>
-            <tr className="bg-slate-50/80 border-b border-zinc-200 text-[#004CE5] font-black text-xl">
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">优化前</th>
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">8月</th>
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">优化前</th>
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">8月</th>
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">优化前</th>
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">8月</th>
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 w-[10.75%]">优化前</th>
-              <th className="py-2.5 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%]">8月</th>
+            <tr className="bg-slate-50/80 border-b border-zinc-200 text-[#004CE5] font-black text-lg">
+              {[0, 1, 2, 3].map((i) => (
+                <React.Fragment key={i}>
+                  <th className="py-2.5 px-1 text-center border-l border-zinc-200 w-[10.75%] whitespace-nowrap">{BEFORE_LABEL}</th>
+                  <th className="py-2.5 px-1 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.75%] whitespace-nowrap">{AUGUST_LABEL}</th>
+                </React.Fragment>
+              ))}
             </tr>
           </thead>
           <tbody>
@@ -59,10 +55,10 @@ export default function Page_CoreDataOverview() {
                 </td>
                 <td className="py-[60px] px-2 text-center border-r border-zinc-200 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(row.before.mention_rate)}</td>
                 <td className="py-[60px] px-2 text-center border-r-2 border-[#004CE5]/15 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(row.august.mention_rate)}</td>
-                <td className="py-[60px] px-2 text-center border-r border-zinc-200 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPos(row.before.avg_position)}</td>
-                <td className="py-[60px] px-2 text-center border-r-2 border-[#004CE5]/15 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPos(row.august.avg_position)}</td>
                 <td className="py-[60px] px-2 text-center border-r border-zinc-200 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(row.before.top1_mention_rate)}</td>
                 <td className="py-[60px] px-2 text-center border-r-2 border-[#004CE5]/15 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(row.august.top1_mention_rate)}</td>
+                <td className="py-[60px] px-2 text-center border-r border-zinc-200 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(row.before.top3_mention_rate)}</td>
+                <td className="py-[60px] px-2 text-center border-r-2 border-[#004CE5]/15 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">{fmtPct(row.august.top3_mention_rate)}</td>
                 <td className="py-[60px] px-2 text-center border-r border-zinc-200 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. {row.before.influence_rank}</td>
                 <td className="py-[60px] px-2 text-center border-r-2 border-[#004CE5]/15 text-5xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. {row.august.influence_rank}</td>
               </tr>
@@ -79,15 +75,15 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex flex-col justify-evenly min-h-0">
             <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-              1. 提及率由优化前的4.1%升至10.7%，竞品排名由NO.41跃升至NO.17，是本月进位幅度最大的品牌。
+              1. 提及率由优化前的4.1%升至15.6%，竞品排名由NO.41跃升至NO.15，是本月进位幅度最大的品牌。
             </p>
             <div className="h-px bg-[#004CE5]/10" />
             <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-              2. DeepSeek增幅最明显，提及率由1.6%升至11.5%；豆包由6.6%升至9.8%，两端表现趋于均衡。
+              2. DeepSeek增幅最明显，提及率由1.6%升至19.7%；豆包由6.6%升至11.5%，两端差距仍在，DeepSeek侧已验证的路径需同步到豆包。
             </p>
             <div className="h-px bg-[#004CE5]/10" />
             <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-              3. 61个监测词条的有效覆盖数由5个增至12个，但Top1提及率仍为0，尚未进入首推顺位。
+              3. 61个监测词条的有效覆盖数由5个增至18个，Top3提及率由0升至2.5%，Top1提及率由0升至1.6%，已进入首推顺位。
             </p>
           </div>
         </div>
@@ -100,8 +96,8 @@ export default function Page_CoreDataOverview() {
           <div className="flex-1 flex flex-col justify-evenly min-h-0">
             {[
               { num: '01', title: '复制成功路径', desc: '把DeepSeek侧已验证的高引用内容模板同步到豆包侧，拉平两个平台的提及率差距。' },
-              { num: '02', title: '补齐词条覆盖', desc: '针对61个词条中尚未破零的49个补充语料，优先攻口碑榜单类等泛选购场景。' },
-              { num: '03', title: '突破首推顺位', desc: '在奶源、蛋白结构等成分对比场景强化第一顺位表达，推动Top1提及率破零。' },
+              { num: '02', title: '补齐词条覆盖', desc: '针对61个词条中尚未破零的43个补充语料，优先攻口碑榜单类等泛选购场景。' },
+              { num: '03', title: '放大首推成果', desc: 'Top1已破零至1.6%，在奶源、蛋白结构等成分对比场景继续强化第一顺位表达，把首推占比做上去。' },
             ].map((strat) => (
               <div key={strat.num} className="flex items-start gap-3">
                 <span className="text-emerald-600 font-black text-2xl shrink-0 mt-0.5 font-['Montserrat',sans-serif]">{strat.num}</span>

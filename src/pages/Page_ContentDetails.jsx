@@ -1,7 +1,9 @@
 import React from 'react';
 import report from '../data/yuanyueAugustReport.json';
 
-const { overview: ov, platform_totals: plat, top10 } = report.delivery;
+const { overview: ov, platform_totals: plat, top10, generated_at } = report.delivery;
+const [year, month, day] = generated_at.split('-');
+const sourceDate = `${year}/${Number(month)}/${Number(day)}`;
 
 export default function Page_ContentDetails() {
   return (
@@ -27,7 +29,7 @@ export default function Page_ContentDetails() {
             </div>
             <div className="text-[1.12rem] font-bold text-zinc-500">全网总投放量</div>
             <p className="text-[1rem] font-bold text-zinc-400 leading-relaxed mt-1">
-              覆盖渠道：什么值得买、今日头条、抖音、宝宝树、妙手医生、生物在线等。
+              覆盖渠道：什么值得买 54 篇、今日头条 36 篇、抖音 16 篇，其余分布于宝宝树、妙手医生、生物在线等。
             </p>
           </div>
 
@@ -75,7 +77,7 @@ export default function Page_ContentDetails() {
           <div className="flex-1 min-h-0 rounded-2xl border border-zinc-200/80 bg-white overflow-hidden shadow-sm flex flex-col">
             <div className="bg-slate-50 border-b border-zinc-200 px-6 py-3.5 flex items-center justify-between shrink-0">
               <h3 className="text-lg font-black text-zinc-800">投放文章 TOP 10 引用效能数据</h3>
-              <span className="text-sm font-bold text-zinc-400">数据来源：投放文章统计（截至 2026/8/28）</span>
+              <span className="text-sm font-bold text-zinc-400">数据来源：投放文章统计（截至 {sourceDate}）</span>
             </div>
 
             <div className="flex-grow overflow-hidden w-full">
