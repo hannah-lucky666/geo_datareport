@@ -143,7 +143,9 @@ async function main() {
       const r = await api('/api/competitors/top-mention-rate', { ...range, top_type: topType, page_size: 100 });
       topRankings[topType] = (r.data.list || []).map((b) => ({
         rank: b.rank,
-        brand_name: b.display_name || b.brand_name,
+        brand_name: b.brand_name,
+        product_name: b.product_name,
+        display_name: b.display_name || b.product_name,
         [`${topType}_mention_rate`]: num(b.selected_top_mention_rate),
         is_target: !!(b.is_self ?? b.is_target),
       }));
@@ -157,6 +159,22 @@ async function main() {
     const hit = topRankings[topType].find((b) => b.is_target);
     return hit ? hit[`${topType}_mention_rate`] : 0;
   };
+
+  // 提及率完整名次：compare 只回 TOP4+本品且不带 rank，需用 mention-rate 榜补真实名次
+  let mentionRankByName = {};
+  let targetMentionRank = null;
+  try {
+    const full = await api('/api/competitors/mention-rate', { ...range, page: 1, page_size: 200 });
+    for (const [i, b] of (full.data?.list || []).entries()) {
+      const name = b.display_name || b.product_name || b.brand_name;
+      const r = num(b.rank) ?? i + 1;
+      if (name) mentionRankByName[name] = r;
+      if (b.is_target || b.is_self) targetMentionRank = r;
+    }
+    console.log(`提及率完整榜 ${Object.keys(mentionRankByName).length} 个，本品名次 ${targetMentionRank ?? '-'}`);
+  } catch (e) {
+    console.warn(`mention-rate 完整榜不可用（${e.message}），提及率名次仅按返回顺序`);
+  }
 
   const platformMap = Object.fromEntries(platforms.data.map((p) => [p.id, p]));
 
@@ -196,6 +214,8 @@ async function main() {
       list: (influence.data.list || []).map((b) => ({
         rank: b.rank,
         brand_name: b.brand_name,
+        product_name: b.product_name,
+        display_name: b.display_name || b.product_name,
         favicon_url: b.favicon_url,
         influence_score: num(b.influence_score),
         mention_rate: num(b.mention_rate),
@@ -217,7 +237,10 @@ async function main() {
     },
     compare: {
       target_product: compare.data.target_product,
-      mention_rate_ranking: compare.data.mention_rate_ranking || [],
+      mention_rate_ranking: (compare.data.mention_rate_ranking || []).map((b, i) => ({
+        ...b,
+        rank: mentionRankByName[b.display_name || b.product_name || b.brand_name] ?? (b.is_target ? targetMentionRank : i + 1),
+      })),
       position_ranking: compare.data.position_ranking || [],
       rate_daily: compare.data.rate_daily || compare.data.mention_rate_daily || [],
       position_daily: compare.data.position_daily || [],

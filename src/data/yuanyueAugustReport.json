@@ -66,115 +66,98 @@
   "compare": {
     "mention_rate": [
       {
-        "name": "派星",
+        "name": "合生元派星",
         "value": "51.6%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 1
       },
       {
-        "name": "卓傲",
+        "name": "爱他美卓傲",
         "value": "34.4%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 2
       },
       {
-        "name": "星飞帆",
+        "name": "飞鹤星飞帆",
         "value": "31.1%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 3
       },
       {
-        "name": "金领冠珍护铂萃",
+        "name": "伊利金领冠珍护铂萃",
         "value": "31.1%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 4
       },
       {
-        "name": "源悦",
+        "name": "美素佳儿源悦",
         "value": "15.6%",
-        "isTarget": true
-      }
-    ],
-    "position": [
-      {
-        "name": "派星",
-        "value": "NO. 4.8",
-        "isTarget": false
-      },
-      {
-        "name": "星飞帆",
-        "value": "NO. 5.5",
-        "isTarget": false
-      },
-      {
-        "name": "金领冠珍护铂萃",
-        "value": "NO. 5.8",
-        "isTarget": false
-      },
-      {
-        "name": "珍护",
-        "value": "NO. 6.0",
-        "isTarget": false
-      },
-      {
-        "name": "源悦",
-        "value": "NO. 7.2",
-        "isTarget": true
+        "isTarget": true,
+        "rank": 12
       }
     ],
     "top1": [
       {
-        "name": "星飞帆",
+        "name": "飞鹤星飞帆",
         "value": "15.6%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 1
       },
       {
-        "name": "派星",
+        "name": "合生元派星",
         "value": "14.8%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 2
       },
       {
-        "name": "珍护",
+        "name": "金领冠珍护",
         "value": "9%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 3
       },
       {
-        "name": "卓傲",
+        "name": "爱他美卓傲",
         "value": "6.6%",
-        "isTarget": false
+        "isTarget": false,
+        "rank": 4
       },
       {
-        "name": "星飞帆卓睿",
-        "value": "5.7%",
-        "isTarget": false
+        "name": "美素佳儿源悦",
+        "value": "1.6%",
+        "isTarget": true,
+        "rank": 12
       }
     ],
     "influence": [
       {
-        "name": "合生元",
+        "name": "合生元派星",
         "value": "55.8",
-        "rank": 1,
-        "isTarget": false
+        "isTarget": false,
+        "rank": 1
       },
       {
-        "name": "飞鹤",
+        "name": "飞鹤星飞帆",
         "value": "40.7",
-        "rank": 2,
-        "isTarget": false
+        "isTarget": false,
+        "rank": 2
       },
       {
-        "name": "爱他美",
+        "name": "爱他美卓傲",
         "value": "40.2",
-        "rank": 3,
-        "isTarget": false
+        "isTarget": false,
+        "rank": 3
       },
       {
-        "name": "伊利",
+        "name": "伊利金领冠珍护铂萃",
         "value": "39.5",
-        "rank": 4,
-        "isTarget": false
+        "isTarget": false,
+        "rank": 4
       },
       {
-        "name": "美素佳儿",
+        "name": "美素佳儿源悦",
         "value": "24.6",
-        "rank": 15,
-        "isTarget": true
+        "isTarget": true,
+        "rank": 15
       }
     ]
   },

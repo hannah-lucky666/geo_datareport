@@ -1,7 +1,7 @@
 import React from 'react';
 import report from '../data/yuanyueAugustReport.json';
 
-const { entries, before, august } = report;
+const { entries, august } = report;
 
 const covered = entries.filter((e) => Number(e.mention_rate) > 0);
 
@@ -66,7 +66,7 @@ export default function Page_EntryBreakthrough() {
       <div className="grid grid-cols-3 gap-5 shrink-0 mb-5">
         {[
           { label: '监测词条总数', value: report.scope.entries, unit: '个', tone: 'text-zinc-900' },
-          { label: '有效覆盖词条', value: `${before.covered_entries} → ${august.covered_entries}`, unit: '个', tone: 'text-[#004CE5]' },
+          { label: '有效覆盖词条', value: august.covered_entries, unit: '个', tone: 'text-[#004CE5]' },
           { label: '本月新破零词条', value: totalBreakthrough, unit: '个', tone: 'text-emerald-600' },
         ].map((m) => (
           <div key={m.label} className="rounded-2xl border border-[#004CE5]/15 bg-[#004CE5]/[0.02] py-4 px-6 flex flex-col justify-center">

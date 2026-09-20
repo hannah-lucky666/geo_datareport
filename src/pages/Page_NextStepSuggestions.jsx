@@ -13,11 +13,15 @@ const RIVAL_PROFILE = {
   源悦: { group: '美素佳儿', top1: 1, listed: 9 },
 };
 
+function rivalProfile(name) {
+  return Object.entries(RIVAL_PROFILE).find(([key]) => name.includes(key))?.[1] || {};
+}
+
 const rivals = compare.mention_rate.map((b) => ({
   name: b.name,
   rate: Number(String(b.value).replace('%', '')),
   isTarget: b.isTarget,
-  ...RIVAL_PROFILE[b.name],
+  ...rivalProfile(b.name),
 }));
 const rateMax = Math.max(...rivals.map((b) => b.rate));
 
@@ -137,7 +141,7 @@ export default function Page_NextStepSuggestions() {
       </div>
 
       {/* 核心问题 */}
-      <div className="rounded-[1.25rem] border-y border-r border-zinc-200 border-l-[6px] border-l-[#004CE5] bg-gradient-to-r from-blue-50/50 via-white to-white px-7 py-4 shrink-0 mb-4 h-[228px] flex gap-9 items-center">
+      <div className="rounded-[1.25rem] border-y border-r border-zinc-200 border-l-[6px] border-l-[#004CE5] bg-gradient-to-r from-blue-50/50 via-white to-white px-7 py-4 shrink-0 mb-4 h-[258px] flex gap-9 items-center">
         <div className="w-[33%] shrink-0 flex flex-col gap-2.5">
           <h2 className="text-[1.7rem] font-black text-zinc-900 tracking-wider flex items-center gap-2.5">
             <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]" />
@@ -166,11 +170,11 @@ export default function Page_NextStepSuggestions() {
             <tbody>
               {rivals.map((b) => (
                 <tr key={b.name} className={`border-b border-zinc-100 last:border-none ${b.isTarget ? 'bg-[#004CE5]/[0.04]' : ''}`}>
-                  <td className={`py-[7px] px-3 text-[1.08rem] truncate ${b.isTarget ? 'text-[#004CE5] font-black' : 'text-zinc-700 font-bold'}`}>
+                  <td className={`py-[5px] px-3 text-[1.02rem] truncate ${b.isTarget ? 'text-[#004CE5] font-black' : 'text-zinc-700 font-bold'}`}>
                     {b.name}
                   </td>
-                  <td className={`py-[7px] px-2 text-[1.02rem] font-bold ${b.isTarget ? 'text-[#004CE5]' : 'text-zinc-500'}`}>{b.group}</td>
-                  <td className="py-[7px] px-2">
+                  <td className={`py-[5px] px-2 text-[1.02rem] font-bold ${b.isTarget ? 'text-[#004CE5]' : 'text-zinc-500'}`}>{b.group}</td>
+                  <td className="py-[5px] px-2">
                     <div className="flex items-center gap-2.5">
                       <div className="flex-1 h-[18px] bg-zinc-100 rounded-md overflow-hidden">
                         <div
@@ -183,10 +187,10 @@ export default function Page_NextStepSuggestions() {
                       </span>
                     </div>
                   </td>
-                  <td className={`py-[7px] px-2 text-center text-[1.15rem] font-black font-['Montserrat',sans-serif] ${b.isTarget ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
+                  <td className={`py-[5px] px-2 text-center text-[1.15rem] font-black font-['Montserrat',sans-serif] ${b.isTarget ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
                     {b.top1}
                   </td>
-                  <td className={`py-[7px] px-2 text-center text-[1.15rem] font-black font-['Montserrat',sans-serif] ${b.isTarget ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
+                  <td className={`py-[5px] px-2 text-center text-[1.15rem] font-black font-['Montserrat',sans-serif] ${b.isTarget ? 'text-[#004CE5]' : 'text-zinc-700'}`}>
                     {b.listed}
                     <span className="text-[0.92rem] font-bold text-zinc-400">/{scope.entries}</span>
                   </td>
@@ -194,7 +198,7 @@ export default function Page_NextStepSuggestions() {
               ))}
             </tbody>
           </table>
-          <p className="text-[0.92rem] font-bold text-zinc-400 leading-snug mt-1.5">
+          <p className="text-[0.92rem] font-bold text-zinc-400 leading-snug mt-2.5 shrink-0">
             首推词条 = 在该词条 AI 回答中排第 1 的次数；进榜词条 = 进入 AI 推荐榜单前 9 位的词条数。
           </p>
         </div>

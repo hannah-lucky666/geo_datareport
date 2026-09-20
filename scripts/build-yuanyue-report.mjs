@@ -25,7 +25,6 @@ const extra = read('src/data/yuanyue_extra.json');
 const excel = read('scripts/_excel_dump_0829.json');
 
 const pct = (v) => (v == null ? '-' : `${Number(v)}%`);
-const pos = (v) => (v == null ? '-' : `NO. ${Number(v).toFixed(1)}`);
 const self = (r) => r.influence.list.find((b) => b.is_target) || {};
 
 function snapshot(r) {
@@ -47,13 +46,31 @@ function snapshot(r) {
   };
 }
 
-// —— 竞品排名：接口返回「TOP4 竞品 + 本品」，本品单独标记，不按行序编名次 ——
+// 名称按数据系统字段拼接全称（品牌 + 产品），不要自行改名。
+function productFullName(b) {
+  const product = b.display_name || b.product_name || '';
+  const brand = b.brand_name || '';
+  if (product && brand && product !== brand && !product.includes(brand) && !brand.includes(product)) {
+    return `${brand}${product}`;
+  }
+  return product || brand || '-';
+}
+
+// 接口只回「TOP4 竞品 + 本品」。本品真实名次单独带上，页面按 rank 显示，禁止用行序把本品写成第 5。
+// 竞品排名固定用行业影响力（influence.rank），不要改回提及位次。
 function ranking(list, valueFn) {
-  return list.map((b) => ({
-    name: b.display_name || b.brand_name,
+  return list.map((b, i) => ({
+    name: productFullName(b),
     value: valueFn(b),
     isTarget: !!b.is_target,
+    rank: b.rank ?? (b.is_target ? null : i + 1),
   }));
+}
+
+function topFourPlusSelf(list) {
+  const leaders = list.filter((b) => !b.is_target).slice(0, 4);
+  const self = list.find((b) => b.is_target);
+  return self ? [...leaders, self] : leaders;
 }
 
 // —— 投放明细（Excel）——
@@ -139,19 +156,10 @@ const report = {
   before: snapshot(before),
   august: snapshot(august),
   compare: {
-    mention_rate: ranking(august.compare.mention_rate_ranking, (b) => pct(b.mention_rate)),
-    position: ranking(august.compare.position_ranking, (b) => pos(b.avg_position)),
-    top1: (august.compare.top1_ranking || []).slice(0, 5).map((b) => ({
-      name: b.brand_name,
-      value: pct(b.top1_mention_rate),
-      isTarget: !!b.is_target,
-    })),
-    influence: august.influence.list.map((b) => ({
-      name: b.brand_name,
-      value: String(b.influence_score),
-      rank: b.rank,
-      isTarget: !!b.is_target,
-    })),
+    mention_rate: ranking(topFourPlusSelf(august.compare.mention_rate_ranking), (b) => pct(b.mention_rate)),
+    top1: ranking(topFourPlusSelf(august.compare.top1_ranking || []), (b) => pct(b.top1_mention_rate)),
+    // 竞品排名 = 行业影响力排名，不是提及位次
+    influence: ranking(topFourPlusSelf(august.influence.list), (b) => String(b.influence_score)),
   },
   sentiments: {
     positive: extra.august.sentiments?.positive_percentage ?? null,
