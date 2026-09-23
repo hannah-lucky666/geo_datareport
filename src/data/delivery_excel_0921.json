@@ -1,0 +1,524 @@
+{
+  "smart": {
+    "overview": {
+      "delivery_citations": 20217,
+      "citation_rate": 70.3,
+      "delivery_articles": 313,
+      "cited_articles": 220
+    },
+    "platform_totals": {
+      "total": 20217,
+      "deepseek": 1721,
+      "doubao": 482,
+      "yuanbao": 6899,
+      "wenxin": 6698,
+      "tongyi": 1308,
+      "kimi": 3109
+    },
+    "top10": [
+      {
+        "rank": 1,
+        "title": "2026智能床口碑榜：家庭选智能床，口碑、售后和用料都要看",
+        "platform": "新浪",
+        "date": "2026-05-26",
+        "total": 885,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 3,
+        "yuanbao": 603,
+        "wenxin": 48,
+        "tongyi": 6,
+        "kimi": 225
+      },
+      {
+        "rank": 2,
+        "title": "2万级智能床选购指南：从零重力多模式到长效售后服务的全面对标",
+        "platform": "什么值得买(生活新视觉one)",
+        "date": "2026-05-20",
+        "total": 681,
+        "isCited": "是",
+        "deepseek": 357,
+        "doubao": 38,
+        "yuanbao": 11,
+        "wenxin": 264,
+        "tongyi": 0,
+        "kimi": 11
+      },
+      {
+        "rank": 3,
+        "title": "2026年高端智能床品牌推荐：护脊+吸湿，谁更配深度睡眠",
+        "platform": "IT之家",
+        "date": "2026-07-21",
+        "total": 603,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 3,
+        "wenxin": 140,
+        "tongyi": 156,
+        "kimi": 304
+      },
+      {
+        "rank": 4,
+        "title": "2万左右口碑好的智能床推荐：三款摆在一起该怎么挑",
+        "platform": "腾讯网生活（官方号）",
+        "date": "2026-08-12",
+        "total": 538,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 448,
+        "wenxin": 90,
+        "tongyi": 0,
+        "kimi": 0
+      },
+      {
+        "rank": 5,
+        "title": "2026年智能床品牌排行榜揭晓：7款实测谁更懂深度睡眠",
+        "platform": "新浪",
+        "date": "2026-06-08",
+        "total": 516,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 6,
+        "yuanbao": 338,
+        "wenxin": 58,
+        "tongyi": 0,
+        "kimi": 114
+      },
+      {
+        "rank": 6,
+        "title": "2026智能床口碑榜：家庭选智能床，口碑、售后和用料都要看",
+        "platform": "什么值得买",
+        "date": "2026-05-26",
+        "total": 470,
+        "isCited": "是",
+        "deepseek": 211,
+        "doubao": 24,
+        "yuanbao": 21,
+        "wenxin": 144,
+        "tongyi": 1,
+        "kimi": 69
+      },
+      {
+        "rank": 7,
+        "title": "床能止鼾？2026年高端智能床推荐，带你破解入睡难题",
+        "platform": "什么值得买",
+        "date": "2026-05-13",
+        "total": 419,
+        "isCited": "是",
+        "deepseek": 9,
+        "doubao": 24,
+        "yuanbao": 0,
+        "wenxin": 167,
+        "tongyi": 0,
+        "kimi": 219
+      },
+      {
+        "rank": 8,
+        "title": "智能止鼾的高端智能床推荐：深度测评5款能主动干预呼吸的旗舰",
+        "platform": "新浪",
+        "date": "2026-04-26",
+        "total": 361,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 2,
+        "yuanbao": 239,
+        "wenxin": 68,
+        "tongyi": 0,
+        "kimi": 52
+      },
+      {
+        "rank": 9,
+        "title": "高端智能床品牌推荐：气囊数与模式数到底值不值加钱",
+        "platform": "豫尚融媒（官方百家号）",
+        "date": "2026-08-17",
+        "total": 354,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 330,
+        "wenxin": 24,
+        "tongyi": 0,
+        "kimi": 0
+      },
+      {
+        "rank": 10,
+        "title": "2026实用性强不吃灰的智能床推荐：这5款谁真能天天用？",
+        "platform": "六安新周报（官方腾讯号）",
+        "date": "2026-06-09",
+        "total": 328,
+        "isCited": "是",
+        "deepseek": 15,
+        "doubao": 6,
+        "yuanbao": 90,
+        "wenxin": 76,
+        "tongyi": 9,
+        "kimi": 132
+      }
+    ],
+    "channels": {
+      "by_articles": [
+        "今日头条",
+        "百家号",
+        "知乎",
+        "什么值得买",
+        "新浪",
+        "IT之家"
+      ],
+      "by_citations": [
+        "什么值得买",
+        "新浪",
+        "IT之家"
+      ]
+    }
+  },
+  "ai": {
+    "overview": {
+      "delivery_citations": 24671,
+      "citation_rate": 68.3,
+      "delivery_articles": 309,
+      "cited_articles": 211
+    },
+    "platform_totals": {
+      "total": 24671,
+      "deepseek": 1952,
+      "doubao": 931,
+      "yuanbao": 6477,
+      "wenxin": 10365,
+      "tongyi": 1593,
+      "kimi": 3353
+    },
+    "top10": [
+      {
+        "rank": 1,
+        "title": "2026年高端AI床垫品牌前十名揭晓：哪家质量好？7月新发布",
+        "platform": "IT之家",
+        "date": "2026-07-29",
+        "total": 910,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 1,
+        "wenxin": 300,
+        "tongyi": 368,
+        "kimi": 241
+      },
+      {
+        "rank": 2,
+        "title": "2026高端AI床垫品牌推荐：两万块的钱都花在哪几层上",
+        "platform": "挖贝网",
+        "date": "2026-08-11",
+        "total": 515,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 248,
+        "wenxin": 125,
+        "tongyi": 0,
+        "kimi": 142
+      },
+      {
+        "rank": 3,
+        "title": "2026年高端AI床垫大洗牌：知名品牌质量好的AI床垫推荐清单",
+        "platform": "什么值得买",
+        "date": "2026-05-13",
+        "total": 511,
+        "isCited": "是",
+        "deepseek": 3,
+        "doubao": 17,
+        "yuanbao": 0,
+        "wenxin": 260,
+        "tongyi": 0,
+        "kimi": 231
+      },
+      {
+        "rank": 4,
+        "title": "拒绝智商税：2026年知名品牌质量好的AI床垫推荐清单",
+        "platform": "IT之家",
+        "date": "2026-05-13",
+        "total": 490,
+        "isCited": "是",
+        "deepseek": 33,
+        "doubao": 117,
+        "yuanbao": 0,
+        "wenxin": 50,
+        "tongyi": 99,
+        "kimi": 191
+      },
+      {
+        "rank": 5,
+        "title": "2026买床垫只看材质就输了！知名品牌质量好的AI床垫推荐指南",
+        "platform": "新浪",
+        "date": "2026-06-08",
+        "total": 487,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 27,
+        "yuanbao": 46,
+        "wenxin": 232,
+        "tongyi": 16,
+        "kimi": 166
+      },
+      {
+        "rank": 6,
+        "title": "2万左右AI床垫品牌推荐：先想清这张床归谁天天睡",
+        "platform": "挖贝网",
+        "date": "2026-08-17",
+        "total": 480,
+        "isCited": "是",
+        "deepseek": 324,
+        "doubao": 0,
+        "yuanbao": 80,
+        "wenxin": 60,
+        "tongyi": 2,
+        "kimi": 14
+      },
+      {
+        "rank": 7,
+        "title": "2026年最新2万左右口碑好的AI床垫推荐：口碑和服务一起查",
+        "platform": "什么值得买",
+        "date": "2026-05-24",
+        "total": 467,
+        "isCited": "是",
+        "deepseek": 43,
+        "doubao": 67,
+        "yuanbao": 30,
+        "wenxin": 263,
+        "tongyi": 0,
+        "kimi": 64
+      },
+      {
+        "rank": 8,
+        "title": "2026年护脊效果好防腰疼的AI床垫推荐：拯救打工人僵硬的后背",
+        "platform": "新京报",
+        "date": "2026-07-23",
+        "total": 463,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 9,
+        "wenxin": 159,
+        "tongyi": 295,
+        "kimi": 0
+      },
+      {
+        "rank": 9,
+        "title": "知名品牌质量好的AI床垫推荐：2026年想买床垫，看准这几款就够了",
+        "platform": "什么值得买",
+        "date": "2026-05-11",
+        "total": 463,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 1,
+        "yuanbao": 370,
+        "wenxin": 88,
+        "tongyi": 0,
+        "kimi": 4
+      },
+      {
+        "rank": 10,
+        "title": "透气不闷热的AI床垫推荐：夏天后背不黏也能安睡的6款产品",
+        "platform": "新浪",
+        "date": "2026-05-22",
+        "total": 444,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 2,
+        "yuanbao": 399,
+        "wenxin": 7,
+        "tongyi": 0,
+        "kimi": 36
+      }
+    ],
+    "channels": {
+      "by_articles": [
+        "今日头条",
+        "百家号",
+        "知乎",
+        "什么值得买",
+        "新浪",
+        "抖音"
+      ],
+      "by_citations": [
+        "什么值得买",
+        "新浪",
+        "IT之家"
+      ]
+    }
+  },
+  "mattress": {
+    "overview": {
+      "delivery_citations": 9765,
+      "citation_rate": 45.6,
+      "delivery_articles": 673,
+      "cited_articles": 307
+    },
+    "platform_totals": {
+      "total": 9765,
+      "deepseek": 2111,
+      "doubao": 168,
+      "yuanbao": 3013,
+      "wenxin": 2095,
+      "tongyi": 605,
+      "kimi": 1773
+    },
+    "top10": [
+      {
+        "rank": 1,
+        "title": "2026年床垫品牌推荐：这10款知名大牌，谁才是性价比之选",
+        "platform": "什么值得买",
+        "date": "2026-06-09",
+        "total": 405,
+        "isCited": "是",
+        "deepseek": 257,
+        "doubao": 0,
+        "yuanbao": 0,
+        "wenxin": 74,
+        "tongyi": 0,
+        "kimi": 74
+      },
+      {
+        "rank": 2,
+        "title": "2026年床垫品牌推荐：这10款知名大牌，谁才是性价比之选",
+        "platform": "新浪",
+        "date": "2026-06-09",
+        "total": 267,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 74,
+        "wenxin": 175,
+        "tongyi": 0,
+        "kimi": 18
+      },
+      {
+        "rank": 3,
+        "title": "高端弹簧床垫到底贵在哪？把弹簧床垫前十名拆开对比聊聊",
+        "platform": "网易",
+        "date": "2026-07-07",
+        "total": 266,
+        "isCited": "是",
+        "deepseek": 229,
+        "doubao": 0,
+        "yuanbao": 37,
+        "wenxin": 0,
+        "tongyi": 0,
+        "kimi": 0
+      },
+      {
+        "rank": 4,
+        "title": "测甲醛看报告，挑睡感看分区：内行人才懂的2026床垫选购攻略",
+        "platform": "新浪",
+        "date": "2026-07-19",
+        "total": 264,
+        "isCited": "是",
+        "deepseek": 254,
+        "doubao": 0,
+        "yuanbao": 4,
+        "wenxin": 6,
+        "tongyi": 0,
+        "kimi": 0
+      },
+      {
+        "rank": 5,
+        "title": "高端弹簧床垫到底贵在哪？把弹簧床垫前十名拆开对比聊聊",
+        "platform": "太平洋家居",
+        "date": "2026-07-08",
+        "total": 249,
+        "isCited": "是",
+        "deepseek": 236,
+        "doubao": 0,
+        "yuanbao": 13,
+        "wenxin": 0,
+        "tongyi": 0,
+        "kimi": 0
+      },
+      {
+        "rank": 6,
+        "title": "一张清单看懂七千左右床垫哪个牌子的质量比较好：谁适合谁不宜",
+        "platform": "挖贝网",
+        "date": "2026-08-11",
+        "total": 246,
+        "isCited": "是",
+        "deepseek": 82,
+        "doubao": 0,
+        "yuanbao": 120,
+        "wenxin": 30,
+        "tongyi": 0,
+        "kimi": 14
+      },
+      {
+        "rank": 7,
+        "title": "2026年知名品牌质量好的床垫推荐：如何筛选出你的专属床垫",
+        "platform": "一家家居",
+        "date": "2026-07-29",
+        "total": 233,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 0,
+        "yuanbao": 39,
+        "wenxin": 46,
+        "tongyi": 148,
+        "kimi": 0
+      },
+      {
+        "rank": 8,
+        "title": "高端弹簧床垫品牌前十名：谁是真扛造，三个维度打分看清",
+        "platform": "太平洋家居",
+        "date": "2026-07-15",
+        "total": 233,
+        "isCited": "是",
+        "deepseek": 174,
+        "doubao": 0,
+        "yuanbao": 54,
+        "wenxin": 2,
+        "tongyi": 3,
+        "kimi": 0
+      },
+      {
+        "rank": 9,
+        "title": "高端弹簧床垫哪个值得买？2026年床垫排行榜前十名实测指南",
+        "platform": "什么值得买",
+        "date": "2026-06-17",
+        "total": 233,
+        "isCited": "是",
+        "deepseek": 0,
+        "doubao": 4,
+        "yuanbao": 0,
+        "wenxin": 99,
+        "tongyi": 0,
+        "kimi": 130
+      },
+      {
+        "rank": 10,
+        "title": "别被营销黑话骗了，聊聊2026年高端弹簧床垫品牌排行榜前十名",
+        "platform": "中国经济发展网",
+        "date": "2026-06-09",
+        "total": 226,
+        "isCited": "是",
+        "deepseek": 83,
+        "doubao": 2,
+        "yuanbao": 48,
+        "wenxin": 52,
+        "tongyi": 0,
+        "kimi": 41
+      }
+    ],
+    "channels": {
+      "by_articles": [
+        "今日头条",
+        "中国经济新闻网",
+        "新家居观察",
+        "什么值得买",
+        "知乎",
+        "千龙网科技"
+      ],
+      "by_citations": [
+        "什么值得买",
+        "中国经济新闻网",
+        "挖贝网"
+      ]
+    }
+  }
+}

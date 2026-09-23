@@ -28,6 +28,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 import PptxGenJS from 'pptxgenjs';
+import { tempBranding } from '../src/config/tempBranding.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -48,7 +49,8 @@ const SLIDE_W = 1920;
 const SLIDE_H = 1080;
 const SLIDE_SELECTOR = 'div[style*="width: 1920px"]';
 
-const slideOrder = JSON.parse(readFileSync(path.join(root, 'src/slideOrder.json'), 'utf-8'));
+const slideOrder = JSON.parse(readFileSync(path.join(root, 'src/slideOrder.json'), 'utf-8'))
+  .filter((id) => tempBranding.enabled || (id !== 'brand-cover' && id !== 'brand-back'));
 const TOTAL = slideOrder.length;
 const CONCURRENCY = Math.max(
   1,

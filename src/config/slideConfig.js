@@ -41,7 +41,7 @@ export const slideConfig = [
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO 索引未来',
     subtitle: '慕思GEO \n 阶段性报告',
-    date: 'August 2026',
+    date: 'September 2026',
   },
 
   {

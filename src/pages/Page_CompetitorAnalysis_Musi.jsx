@@ -1,5 +1,5 @@
 import React from 'react';
-import report from '../data/musiAugReport.json';
+import report from '../data/musiSepReport.json';
 
 const brandName = '慕思';
 const data = report.products.mattress;
@@ -85,7 +85,7 @@ export default function Page_CompetitorAnalysis_Musi() {
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
           慕思床垫竞品分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月）</span>
         </h1>
       </div>
 
@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品本月三项指标继续居首：提及率83.3%、Top1 33.3%、竞品排名NO.1；喜临门以15.6%的Top1紧随其后，是首推位上的最主要对手。
+                1. 本品本月提及率81.1%，竞品排名保持NO.1，品牌曝光与行业影响力继续居前。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 金可儿、雅兰同为62.2%，丝涟、喜临门同为56.7%，四家贴身跟随、头部集中度偏低；竞品排名上本品居NO.1，雅兰、金可儿、喜临门、丝涟分列NO.2至NO.5，追随者密集。
+                2. 喜临门、金可儿、丝涟、雅兰的提及率分别为68.9%、64.4%、56.7%、55.6%。竞品排名上喜临门NO.2，金可儿、丝涟、雅兰分列NO.3至NO.5，本品提及率仍领先这一梯队。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis_Musi() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '拉开提及差距', desc: '与金可儿、雅兰的62.2%相差21.1个百分点，需在品牌榜单与质量口碑类泛词持续补量，把83.3%的提及率继续推高。' },
-                { num: '02', title: '巩固竞品排名', desc: '本品虽居NO.1，但雅兰至丝涟四人紧随其后，需在支撑性好、透气不闷热等强卖点词条强化第一顺位表达，防止排名被追平。' },
-                { num: '03', title: '扩大首推份额', desc: '33.3%的Top1已达喜临门（15.6%）的两倍，重点在七千价位段与高端弹簧床垫词条强化“首选”表达，把43.3%的Top3同步拉高。' },
+                { num: '01', title: '巩固提及优势', desc: '提及率81.1%，高于喜临门的68.9%和金可儿的64.4%。继续在品牌榜单与质量口碑类泛词补量，把领先优势做稳。' },
+                { num: '02', title: '巩固竞品排名', desc: '保持NO.1，在支撑性好、透气不闷热等强卖点词条强化第一顺位表达。' },
+                { num: '03', title: '强化首选心智', desc: '在七千价位段与高端弹簧床垫词条持续输出“首选”内容，让首推份额随提及优势一起提升。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

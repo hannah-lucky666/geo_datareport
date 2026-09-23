@@ -1,5 +1,5 @@
 import React from 'react';
-import report from '../data/musiAugReport.json';
+import report from '../data/musiSepReport.json';
 
 const brandName = '慕思智能床';
 const data = report.products.smart;
@@ -85,7 +85,7 @@ export default function Page_CompetitorAnalysis() {
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
           慕思智能床竞品分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月）</span>
         </h1>
       </div>
 
@@ -104,11 +104,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 本品本月三项指标全面领先：提及率91.1%、Top1 45.6%、竞品排名NO.1均居第一；舒福德以70%提及率、27.8% Top1紧随其后，仍是唯一贴身对手。
+                1. 本品本月三项指标均居第一：提及率86.6%、Top1 37.3%、竞品排名NO.1。舒福德提及率73.1%、Top1 28.4%，是当前最接近的竞品。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 梦百合、喜临门、8H以41.1%、40%、35%分列提及率第三至第五，第二梯队密集；竞品排名上舒福德居NO.2最接近本品，喜临门、梦百合、8H分列NO.3至NO.5。
+                2. 喜临门、MPE、梦百合的提及率分别为56.7%、37.3%、33.3%。竞品排名上舒福德NO.2，喜临门NO.3，MPE、梦百合分列NO.4、NO.5，本品领先位置稳定。
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '扩大首推优势', desc: '舒福德Top1仍达27.8%，需在止鼾、零重力等高转化词条加码定性对比内容，把45.6%的首推率继续推高。' },
-                { num: '02', title: '巩固竞品排名', desc: '在2万价位与品质售后类词条强化“第一顺位”表达，守住对舒福德的NO.1领先。' },
-                { num: '03', title: '第二梯队压制', desc: '梦百合、喜临门提及率已逼近四成，补充家庭场景与口碑类长尾语料，防止份额被稀释。' },
+                { num: '01', title: '巩固首推优势', desc: 'Top1为37.3%，领先舒福德的28.4%。继续在止鼾、零重力等高转化词条加强定性对比，把首推优势做稳。' },
+                { num: '02', title: '巩固竞品排名', desc: '在2万价位与品质售后类词条强化“第一顺位”表达，保持对舒福德的NO.1领先。' },
+                { num: '03', title: '丰富场景覆盖', desc: '围绕家庭场景与口碑类长尾补充语料，让86.6%的提及优势覆盖得更完整。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

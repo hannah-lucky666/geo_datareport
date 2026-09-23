@@ -1,5 +1,6 @@
 import React from 'react';
 import { parsedConfig } from '../config/parseConfig';
+import { tempBranding } from '../config/tempBranding';
 
 export default function TOCSlide({ bgImage, title, menuText, brandLabel, serviceGuide }) {
   const { chapters } = parsedConfig;
@@ -15,16 +16,18 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
         />
       )}
 
-      {/* Top-right brand line */}
-      <div className={`absolute z-10 flex items-center gap-[16px] ${dbg}`} style={{ top: '38px', right: '93px' }}>
-        <div className="h-[1px] bg-zinc-800/40" style={{ width: '200px' }} />
-        <span
-          className="text-zinc-900 font-semibold"
-          style={{ fontSize: '26px', letterSpacing: '0.3em', fontFamily: "'Montserrat', sans-serif" }}
-        >
-          {brandLabel}
-        </span>
-      </div>
+      {/* 临时包装开启时，右上角留给思美 logo，这条品牌线先拿掉 */}
+      {!tempBranding.enabled && (
+        <div className={`absolute z-10 flex items-center gap-[16px] ${dbg}`} style={{ top: '38px', right: '93px' }}>
+          <div className="h-[1px] bg-zinc-800/40" style={{ width: '200px' }} />
+          <span
+            className="text-zinc-900 font-semibold"
+            style={{ fontSize: '26px', letterSpacing: '0.3em', fontFamily: "'Montserrat', sans-serif" }}
+          >
+            {brandLabel}
+          </span>
+        </div>
+      )}
 
       {/* Left: title */}
       <div className={`absolute z-10 ${dbg}`} style={{ top: '233px', left: '130px' }}>

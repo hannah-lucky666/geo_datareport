@@ -1,0 +1,993 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-20T10:57:05.919Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 239,
+    "project_name": "慕思床垫",
+    "target_product": "慕思床垫",
+    "target_brand_name": "慕思",
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-19",
+    "entry_ids": "3622,3623,3624,3628,3630,3631,3633,3634,3635,3636,3637,3638,3639,3640,3641",
+    "entry_group": "前十五"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 3,
+      "name": "元宝",
+      "url": "https://app.geoindexfuture.com/logo/yuanbao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 4,
+      "name": "文心",
+      "url": "https://app.geoindexfuture.com/logo/wenxin.webp",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 5,
+      "name": "通义千问",
+      "url": "https://app.geoindexfuture.com/logo/qwen.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 40,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 6,
+      "name": "kimi",
+      "url": "https://app.geoindexfuture.com/logo/kimi.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 72.2,
+    "top1_mention_rate": 17.8,
+    "top3_mention_rate": 33.3,
+    "avg_position": 5.2,
+    "daily_stats": [
+      {
+        "date": "2026-09-19",
+        "mention_rate": 72.2,
+        "avg_position": 5.2
+      }
+    ],
+    "platform_stats": [
+      {
+        "platform_id": 1,
+        "platform_name": "DeepSeek",
+        "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+        "brand_mention_rate": 60,
+        "avg_position": 4.7
+      },
+      {
+        "platform_id": 2,
+        "platform_name": "豆包",
+        "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+        "brand_mention_rate": 86.7,
+        "avg_position": 5.4
+      },
+      {
+        "platform_id": 3,
+        "platform_name": "元宝",
+        "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+        "brand_mention_rate": 46.7,
+        "avg_position": 4.5
+      },
+      {
+        "platform_id": 4,
+        "platform_name": "文心",
+        "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+        "brand_mention_rate": 93.3,
+        "avg_position": 2.7
+      },
+      {
+        "platform_id": 5,
+        "platform_name": "通义千问",
+        "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+        "brand_mention_rate": 66.7,
+        "avg_position": 7.1
+      },
+      {
+        "platform_id": 6,
+        "platform_name": "kimi",
+        "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+        "brand_mention_rate": 80,
+        "avg_position": 6.9
+      }
+    ]
+  },
+  "influence": {
+    "total_conversations": 90,
+    "list": [
+      {
+        "rank": 1,
+        "brand_name": "慕思",
+        "favicon_url": null,
+        "influence_score": 50.4,
+        "mention_rate": 72.2,
+        "avg_position": 5.2,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "brand_name": "喜临门",
+        "favicon_url": null,
+        "influence_score": 46,
+        "mention_rate": 63.3,
+        "avg_position": 4.9,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "金可儿",
+        "favicon_url": null,
+        "influence_score": 38.4,
+        "mention_rate": 63.3,
+        "avg_position": 5.3,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "丝涟",
+        "favicon_url": null,
+        "influence_score": 36.5,
+        "mention_rate": 55.6,
+        "avg_position": 5.3,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "雅兰",
+        "favicon_url": null,
+        "influence_score": 36,
+        "mention_rate": 57.8,
+        "avg_position": 6.1,
+        "is_target": false
+      }
+    ]
+  },
+  "entries": {
+    "total": 15,
+    "list": [
+      {
+        "entry_id": 3622,
+        "entry_name": "床垫品牌排行榜前十名",
+        "mention_rate": 100,
+        "position": 2.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/565432e8f07549d1a73be97829256637.png"
+      },
+      {
+        "entry_id": 3624,
+        "entry_name": "床垫品牌推荐",
+        "mention_rate": 100,
+        "position": 6.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/6f8342681b3a4e74ad025bd5abfbad3b.png"
+      },
+      {
+        "entry_id": 3635,
+        "entry_name": "高端弹簧床垫品牌排行榜前十名",
+        "mention_rate": 83.3,
+        "position": 7.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/4aba0f28c768433299cdf360579613b5.png"
+      },
+      {
+        "entry_id": 3636,
+        "entry_name": "高端弹簧床垫品牌推荐",
+        "mention_rate": 83.3,
+        "position": 7.3,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/d39f0492ac664dc0bdb23928f5a36207.png"
+      },
+      {
+        "entry_id": 3638,
+        "entry_name": "结实耐用不塌陷的高端弹簧床垫推荐",
+        "mention_rate": 83.3,
+        "position": 4.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/48e92813a6ba4ab6bf63c6acaebe5145.png"
+      },
+      {
+        "entry_id": 3639,
+        "entry_name": "七千左右床垫品牌排行榜前十名",
+        "mention_rate": 83.3,
+        "position": 2.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/417b710cad3d420d90fd99390809785e.png"
+      },
+      {
+        "entry_id": 3640,
+        "entry_name": "七千左右床垫哪个牌子的质量比较好",
+        "mention_rate": 83.3,
+        "position": 3.3,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/2c5e33ea6d6c4ee3a8d688510ecb0ca4.png"
+      },
+      {
+        "entry_id": 3641,
+        "entry_name": "七千左右床垫品牌推荐",
+        "mention_rate": 83.3,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/92ee8828a9554755b496b3507910ed29.png"
+      },
+      {
+        "entry_id": 3631,
+        "entry_name": "干爽透气不闷热的床垫推荐",
+        "mention_rate": 66.7,
+        "position": 4.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/3013fb43aa664e178fed6195d03e59e2.png"
+      },
+      {
+        "entry_id": 3633,
+        "entry_name": "真正好睡不踩雷的床垫推荐",
+        "mention_rate": 66.7,
+        "position": 7.3,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/ac34e4ff89b043999e166c0671a1d5ce.png"
+      },
+      {
+        "entry_id": 3623,
+        "entry_name": "床垫哪个牌子的质量比较好",
+        "mention_rate": 50,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/12974080e26a41dab561db09433c4b2c.png"
+      },
+      {
+        "entry_id": 3628,
+        "entry_name": "知名品牌质量好的床垫推荐",
+        "mention_rate": 50,
+        "position": 7.3,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/fbd1084225e0423e8f3611171a27359a.png"
+      },
+      {
+        "entry_id": 3630,
+        "entry_name": "噪音小的床垫推荐",
+        "mention_rate": 50,
+        "position": 7.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/6d403442ebea455c978a056e03ed8222.png"
+      },
+      {
+        "entry_id": 3634,
+        "entry_name": "结实耐用不塌陷的床垫推荐",
+        "mention_rate": 50,
+        "position": 4.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/4b799c3709ae47c493ac5d14bfaa9644.png"
+      },
+      {
+        "entry_id": 3637,
+        "entry_name": "干爽透气不闷热的高端弹簧床垫推荐",
+        "mention_rate": 50,
+        "position": 3.8,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/de3f744e97e4437998c90c18c2280206.png"
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "慕思床垫",
+    "mention_rate_ranking": [
+      {
+        "brand_id": 51662,
+        "brand_name": "慕思",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "慕思",
+        "mention_count": 65,
+        "mention_rate": 72.2,
+        "is_target": true
+      },
+      {
+        "brand_id": 7710,
+        "brand_name": "喜临门",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "喜临门",
+        "mention_count": 57,
+        "mention_rate": 63.3,
+        "is_target": false
+      },
+      {
+        "brand_id": 28781,
+        "brand_name": "金可儿",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "金可儿",
+        "mention_count": 57,
+        "mention_rate": 63.3,
+        "is_target": false
+      },
+      {
+        "brand_id": 13106,
+        "brand_name": "雅兰",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "雅兰",
+        "mention_count": 52,
+        "mention_rate": 57.8,
+        "is_target": false
+      },
+      {
+        "brand_id": 41879,
+        "brand_name": "丝涟",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "丝涟",
+        "mention_count": 50,
+        "mention_rate": 55.6,
+        "is_target": false
+      }
+    ],
+    "position_ranking": [
+      {
+        "brand_id": 7710,
+        "brand_name": "喜临门",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "喜临门",
+        "avg_position": 4.9,
+        "mention_count": 57,
+        "is_target": false
+      },
+      {
+        "brand_id": 51662,
+        "brand_name": "慕思",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "慕思",
+        "avg_position": 5.2,
+        "mention_count": 65,
+        "is_target": true
+      },
+      {
+        "brand_id": 28781,
+        "brand_name": "金可儿",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "金可儿",
+        "avg_position": 5.3,
+        "mention_count": 57,
+        "is_target": false
+      },
+      {
+        "brand_id": 41879,
+        "brand_name": "丝涟",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "丝涟",
+        "avg_position": 5.3,
+        "mention_count": 50,
+        "is_target": false
+      },
+      {
+        "brand_id": 41878,
+        "brand_name": "舒达",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "舒达",
+        "avg_position": 5.9,
+        "mention_count": 43,
+        "is_target": false
+      }
+    ],
+    "rate_daily": [
+      {
+        "date": "2026-09-19",
+        "慕思": 72.2,
+        "喜临门": 63.3,
+        "金可儿": 63.3,
+        "雅兰": 57.8,
+        "丝涟": 55.6
+      }
+    ],
+    "position_daily": [
+      {
+        "date": "2026-09-19",
+        "喜临门": 4.9,
+        "慕思": 5.2,
+        "金可儿": 5.3,
+        "丝涟": 5.3,
+        "舒达": 5.9
+      }
+    ],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "喜临门",
+        "top1_mention_rate": 20,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "慕思",
+        "top1_mention_rate": 17.8,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "brand_name": "席梦思",
+        "top1_mention_rate": 14.4,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "丝涟",
+        "top1_mention_rate": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "TLK特蕾卡",
+        "top1_mention_rate": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "海丝腾",
+        "top1_mention_rate": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "萌小叁",
+        "top1_mention_rate": 4.4,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "舒达",
+        "top1_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "雅兰",
+        "top1_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "蓝盒子",
+        "top1_mention_rate": 2.2,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "顾家家居",
+        "top1_mention_rate": 2.2,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "TRECA崔佧",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "半日闲",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "大陆马 Dalvmo",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "希尔顿",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "帕迪亚",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "斯丽比迪",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "梦百合",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "源氏木语",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "穗宝",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      }
+    ],
+    "top3_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "喜临门",
+        "top3_mention_rate": 36.7,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "慕思",
+        "top3_mention_rate": 33.3,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "brand_name": "丝涟",
+        "top3_mention_rate": 26.7,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "席梦思",
+        "top3_mention_rate": 22.2,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "雅兰",
+        "top3_mention_rate": 18.9,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "舒达",
+        "top3_mention_rate": 17.8,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "金可儿",
+        "top3_mention_rate": 15.6,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "TLK特蕾卡",
+        "top3_mention_rate": 10,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "TRECA崔佧",
+        "top3_mention_rate": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "蓝盒子",
+        "top3_mention_rate": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "VISPRING",
+        "top3_mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "海丝腾",
+        "top3_mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "穗宝",
+        "top3_mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "顾家家居",
+        "top3_mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "半日闲",
+        "top3_mention_rate": 4.4,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "栖作",
+        "top3_mention_rate": 4.4,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "萌小叁",
+        "top3_mention_rate": 4.4,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "大陆马 Dalvmo",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "帕迪亚",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "亚朵星球",
+        "top3_mention_rate": 2.2,
+        "is_target": false
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 90,
+    "citation_rate": 77.8,
+    "total_citations": 1514,
+    "platform_stats": [
+      {
+        "platform_name": "抖音精选",
+        "domain": "iesdouyin.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com-jingxuan.png",
+        "citation_count": 178,
+        "share": 11.8
+      },
+      {
+        "platform_name": "百家号",
+        "domain": "baijiahao.baidu.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/baijiahao.baidu.com.png",
+        "citation_count": 150,
+        "share": 9.9
+      },
+      {
+        "platform_name": "中国经济新闻网",
+        "domain": "cet.com.cn",
+        "logo_url": "https://cdn.deepseek.com/site-icons/cet.com.cn",
+        "citation_count": 121,
+        "share": 8
+      },
+      {
+        "platform_name": "知乎",
+        "domain": "zhihu.com",
+        "logo_url": "https://static.zhihu.com/heifetz/favicon.ico",
+        "citation_count": 116,
+        "share": 7.7
+      },
+      {
+        "platform_name": "搜狐网",
+        "domain": "sohu.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/sohu.com.ico",
+        "citation_count": 100,
+        "share": 6.6
+      }
+    ],
+    "articles": [
+      {
+        "title": "2026年家装季床垫选购指南：十大品牌型号深度横评与睡眠场景解析",
+        "link_url": "https://baijiahao.baidu.com/s?id=1876527038233600992&wfr=spider&for=pc",
+        "domain": "baijiahao.baidu.com",
+        "platform_name": "百家号",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/baijiahao.baidu.com.png",
+        "total_citations": 9,
+        "avg_citations": 9,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年5月销售统计数据：全国十大口碑最好的床垫品牌推荐！ - 2026年5月销售统计数据：全国十大口碑最好的床垫品牌推荐！",
+        "link_url": "http://www.xtrb.cn/syunf/2026-05/13/content_1113959.htm#1",
+        "domain": "xtrb.cn",
+        "platform_name": "邢台日报",
+        "logo_url": "https://cdn.deepseek.com/site-icons/xtrb.cn",
+        "total_citations": 7,
+        "avg_citations": 7,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年口碑最好的十大床垫品牌,最建议买的10款,提升健康睡眠舒适体验",
+        "link_url": "https://baijiahao.baidu.com/s?id=1873384821752696845&wfr=spider&for=pc",
+        "domain": "baijiahao.baidu.com",
+        "platform_name": "百家号",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/baijiahao.baidu.com.png",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": true
+      },
+      {
+        "title": "第三方测评机构实测20款硬支撑床垫产品试验结果：腰部支撑与耐久性是核心分水岭-北京科技报 - 聚焦科学传播 弘扬科学精神",
+        "link_url": "http://www.bkmedia.cn/Index/detail?id=923919407662120960#1",
+        "domain": "bkmedia.cn",
+        "platform_name": "北京科技报",
+        "logo_url": "https://kimi-web-img.moonshot.cn/prod-data/icon-cache-img/www.bkmedia.cn",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": true
+      },
+      {
+        "title": "30天盲睡床垫实测：支撑•透气•抗干扰•耐用五大维度真人体验汇总_品牌资讯_太平洋家居 - 您的装修居住指南",
+        "link_url": "https://m.pchouse.com.cn/x/430/4309234.html#1",
+        "domain": "pchouse.com.cn",
+        "platform_name": "太平洋家居",
+        "logo_url": "https://cdn.deepseek.com/site-icons/pchouse.com.cn",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": false
+      },
+      {
+        "title": "健康的床垫品牌推荐，五大品牌谁更值得买？ - 健康的床垫品牌推荐，五大品牌谁更值得买？",
+        "link_url": "https://www.163.com/dy/article/KV03EEKF0530JPVV.html?spss=dy_author&referFrom=#1",
+        "domain": "163.com",
+        "platform_name": "网易",
+        "logo_url": "https://cdn.deepseek.com/site-icons/163.com",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年床垫品牌推荐全攻略，同价位里该怎么挑才不踩雷_弹簧_评分_指数",
+        "link_url": "https://www.sohu.com/a/1077324647_122891927",
+        "domain": "sohu.com",
+        "platform_name": "搜狐网",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/sohu.com.ico",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": true
+      },
+      {
+        "title": "2026年七千左右床垫品牌推荐:主卧深睡的质价比之选",
+        "link_url": "https://www.cet.com.cn/xwsd/10464715.shtml",
+        "domain": "cet.com.cn",
+        "platform_name": "中国经济新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/cet.com.cn",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": true
+      },
+      {
+        "title": "2026睡眠协会CMA八款床垫横评•甲醛护脊透气完整检测数据_品牌资讯_太平洋家居 - 您的装修居住指南",
+        "link_url": "https://m.pchouse.com.cn/x/427/4277714.html#1#1#1#1",
+        "domain": "pchouse.com.cn",
+        "platform_name": "太平洋家居",
+        "logo_url": "https://cdn.deepseek.com/site-icons/pchouse.com.cn",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      },
+      {
+        "title": "四款3千热门床垫🔍真实测评才给结论 集结了四款3千价位的热门床垫款式 软硬皆有 有卷包、有全拆 还有上班族需要的护脊床垫 走着～一起看看 总能找到一款你需要的 #床垫测评 #蓝盒子床垫 #梦百合床垫",
+        "link_url": "https://www.iesdouyin.com/share/video/7620320135794738683",
+        "domain": "iesdouyin.com",
+        "platform_name": "抖音精选",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com-jingxuan.png",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      }
+    ]
+  },
+  "overview_daily": [
+    {
+      "date": "2026-09-19",
+      "mention_rate": 72.2,
+      "avg_position": 5.2,
+      "influence_rank": 1
+    }
+  ]
+}

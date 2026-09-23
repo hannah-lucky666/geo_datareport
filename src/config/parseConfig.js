@@ -1,4 +1,5 @@
 import { slideConfig } from './slideConfig';
+import { tempBranding } from './tempBranding';
 
 export function parseConfig(flatConfig) {
   const result = { cover: null, toc: null, chapters: [] };
@@ -62,6 +63,16 @@ export function parseConfig(flatConfig) {
 
 export function generateSlides(parsed) {
   const slides = [];
+
+  if (tempBranding.enabled) {
+    slides.push({
+      id: 'brand-cover',
+      type: 'brand-image',
+      name: '思美封面',
+      imageSrc: tempBranding.coverSrc,
+      showCornerLogo: false,
+    });
+  }
 
   if (parsed.cover) {
     slides.push({
@@ -145,6 +156,16 @@ export function generateSlides(parsed) {
       }
     });
   });
+
+  if (tempBranding.enabled) {
+    slides.push({
+      id: 'brand-back',
+      type: 'brand-image',
+      name: '思美封底',
+      imageSrc: tempBranding.backSrc,
+      showCornerLogo: false,
+    });
+  }
 
   return slides;
 }

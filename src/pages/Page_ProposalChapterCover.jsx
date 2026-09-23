@@ -1,4 +1,5 @@
 import React from 'react';
+import { tempBranding } from '../config/tempBranding';
 
 export default function Page_ProposalChapterCover({
     bgImage,
@@ -21,19 +22,21 @@ export default function Page_ProposalChapterCover({
                 />
             )}
 
-            {/* ── 右上角：横线 + 品牌标签（与目录页保持一致） ── */}
-            <div
-                className="absolute flex items-center gap-[16px]"
-                style={{ top: '38px', right: '93px' }}
-            >
-                <div className="h-[1px] bg-zinc-800/40" style={{ width: '200px' }} />
-                <span
-                    className="text-zinc-900 font-semibold"
-                    style={{ fontSize: '26px', letterSpacing: '0.3em', fontFamily: "'Montserrat', sans-serif" }}
+            {/* 临时包装开启时，右上角留给思美 logo，这条品牌线先拿掉 */}
+            {!tempBranding.enabled && (
+                <div
+                    className="absolute flex items-center gap-[16px]"
+                    style={{ top: '38px', right: '93px' }}
                 >
-                    {brandLabel}
-                </span>
-            </div>
+                    <div className="h-[1px] bg-zinc-800/40" style={{ width: '200px' }} />
+                    <span
+                        className="text-zinc-900 font-semibold"
+                        style={{ fontSize: '26px', letterSpacing: '0.3em', fontFamily: "'Montserrat', sans-serif" }}
+                    >
+                        {brandLabel}
+                    </span>
+                </div>
+            )}
 
             {/* ── 左侧中偏上：章节大标题 ── */}
             {title && (

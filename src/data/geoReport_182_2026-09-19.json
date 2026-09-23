@@ -1,0 +1,1233 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-20T10:57:05.012Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 182,
+    "project_name": "慕思智能床",
+    "target_product": "慕思智能床",
+    "target_brand_name": "慕思智能床",
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-19",
+    "entry_ids": null,
+    "entry_group": null
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 3,
+      "name": "元宝",
+      "url": "https://app.geoindexfuture.com/logo/yuanbao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 4,
+      "name": "文心",
+      "url": "https://app.geoindexfuture.com/logo/wenxin.webp",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 5,
+      "name": "通义千问",
+      "url": "https://app.geoindexfuture.com/logo/qwen.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 40,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 6,
+      "name": "kimi",
+      "url": "https://app.geoindexfuture.com/logo/kimi.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 85,
+    "top1_mention_rate": 33.3,
+    "top3_mention_rate": 61.1,
+    "avg_position": 3.4,
+    "daily_stats": [
+      {
+        "date": "2026-09-19",
+        "mention_rate": 85,
+        "avg_position": 3.4
+      }
+    ],
+    "platform_stats": [
+      {
+        "platform_id": 1,
+        "platform_name": "DeepSeek",
+        "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+        "brand_mention_rate": 90,
+        "avg_position": 2.1
+      },
+      {
+        "platform_id": 2,
+        "platform_name": "豆包",
+        "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+        "brand_mention_rate": 93.3,
+        "avg_position": 4
+      },
+      {
+        "platform_id": 3,
+        "platform_name": "元宝",
+        "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+        "brand_mention_rate": 83.3,
+        "avg_position": 2.4
+      },
+      {
+        "platform_id": 4,
+        "platform_name": "文心",
+        "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+        "brand_mention_rate": 96.7,
+        "avg_position": 2.7
+      },
+      {
+        "platform_id": 5,
+        "platform_name": "通义千问",
+        "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+        "brand_mention_rate": 76.7,
+        "avg_position": 4.3
+      },
+      {
+        "platform_id": 6,
+        "platform_name": "kimi",
+        "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+        "brand_mention_rate": 70,
+        "avg_position": 4.7
+      }
+    ]
+  },
+  "influence": {
+    "total_conversations": 180,
+    "list": [
+      {
+        "rank": 1,
+        "brand_name": "慕思智能床",
+        "favicon_url": null,
+        "influence_score": 64.3,
+        "mention_rate": 85,
+        "avg_position": 3.4,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "brand_name": "舒福德",
+        "favicon_url": null,
+        "influence_score": 52.1,
+        "mention_rate": 68.3,
+        "avg_position": 3.6,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "MPE",
+        "favicon_url": null,
+        "influence_score": 27.8,
+        "mention_rate": 41.1,
+        "avg_position": 5,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "喜临门",
+        "favicon_url": null,
+        "influence_score": 27.6,
+        "mention_rate": 45.6,
+        "avg_position": 5.2,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "梦百合",
+        "favicon_url": null,
+        "influence_score": 26,
+        "mention_rate": 40,
+        "avg_position": 5.2,
+        "is_target": false
+      }
+    ]
+  },
+  "entries": {
+    "total": 30,
+    "list": [
+      {
+        "entry_id": 2638,
+        "entry_name": "智能床品牌推荐",
+        "mention_rate": 100,
+        "position": 5.3,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/985ac962a9fc4415bcb507606ed1b884.png"
+      },
+      {
+        "entry_id": 2639,
+        "entry_name": "口碑好的智能床推荐",
+        "mention_rate": 100,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/d5e8a2f7687144569873412a2829bff9.png"
+      },
+      {
+        "entry_id": 2641,
+        "entry_name": "防螨抑菌面料的智能床推荐",
+        "mention_rate": 100,
+        "position": 1,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/6bcb344080e84cae93dfa73b13febdab.png"
+      },
+      {
+        "entry_id": 2645,
+        "entry_name": "可以左右分区调节软硬的智能床推荐",
+        "mention_rate": 100,
+        "position": 1.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/bcc7ae962db64fe692ad0f52acb53491.png"
+      },
+      {
+        "entry_id": 2646,
+        "entry_name": "能完美贴合脊柱的智能床推荐",
+        "mention_rate": 100,
+        "position": 1.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/b44e25efb60d401c9f38bdd12e607654.png"
+      },
+      {
+        "entry_id": 2648,
+        "entry_name": "零重力多模式智能床推荐",
+        "mention_rate": 100,
+        "position": 3.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/61fb656e6dcf418f99cccd74f55b906e.png"
+      },
+      {
+        "entry_id": 2653,
+        "entry_name": "高端智能床品牌排行榜",
+        "mention_rate": 100,
+        "position": 3.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/0bd22e4c693f4bd0b15a3d246688b951.png"
+      },
+      {
+        "entry_id": 2660,
+        "entry_name": "2万左右智能床品牌推荐",
+        "mention_rate": 100,
+        "position": 2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/9fa8764d2b87443d8f52415ff441273b.png"
+      },
+      {
+        "entry_id": 2661,
+        "entry_name": "2万左右口碑好的智能床推荐",
+        "mention_rate": 100,
+        "position": 3.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/201d673c5a7a4c7ea64e310c8fdfa81d.png"
+      },
+      {
+        "entry_id": 2663,
+        "entry_name": "2万左右能缓解入睡困难的智能床推荐",
+        "mention_rate": 100,
+        "position": 2.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/1df0d10e0fc44babb1a01fb2c41f4569.png"
+      },
+      {
+        "entry_id": 2637,
+        "entry_name": "智能床品牌排行榜",
+        "mention_rate": 83.3,
+        "position": 6,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/8774730de6b249e2a775f9907d67e06a.png"
+      },
+      {
+        "entry_id": 2642,
+        "entry_name": "自动监测健康数据的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 3.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/6434f88375f547ad85f6d96047dd829a.png"
+      },
+      {
+        "entry_id": 2647,
+        "entry_name": "护脊效果好防腰疼的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 3.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/31e1c1730307405896afc21edff09b2c.png"
+      },
+      {
+        "entry_id": 2650,
+        "entry_name": "支持上门维护的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 2.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/5447ed24df364403b79eb3f4f0909267.png"
+      },
+      {
+        "entry_id": 2654,
+        "entry_name": "高端智能床品牌推荐",
+        "mention_rate": 83.3,
+        "position": 4.3,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/ad4750fc2e174db7aee5011e2991fcc2.png"
+      },
+      {
+        "entry_id": 2655,
+        "entry_name": "口碑好的高端智能床推荐",
+        "mention_rate": 83.3,
+        "position": 3.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/fd66e1d14bf04066aed65f787a163ad2.png"
+      },
+      {
+        "entry_id": 2656,
+        "entry_name": "智能止鼾的高端智能床推荐",
+        "mention_rate": 83.3,
+        "position": 2.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/14c14ec72e014b76b65a91f2b4f3d879.png"
+      },
+      {
+        "entry_id": 2657,
+        "entry_name": "能缓解入睡困难的高端智能床推荐",
+        "mention_rate": 83.3,
+        "position": 2.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/9f5c3182e95c433a9fd5f369a746fb53.png"
+      },
+      {
+        "entry_id": 2658,
+        "entry_name": "可以免费维修换货的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 2.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/ed66f101001d4d46aae2bc638a1e665b.png"
+      },
+      {
+        "entry_id": 2659,
+        "entry_name": "2万左右智能床品牌排行榜",
+        "mention_rate": 83.3,
+        "position": 3.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/3447035e4dc3456fba4325b069a340d0.png"
+      },
+      {
+        "entry_id": 2662,
+        "entry_name": "2万左右智能止鼾的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 1.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/374007a40e294e2a8401b7040e1d9988.png"
+      },
+      {
+        "entry_id": 2664,
+        "entry_name": "2万左右自动监测健康数据的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 2.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/759fc0efee4e4f2098afc8b817ee5be5.png"
+      },
+      {
+        "entry_id": 2665,
+        "entry_name": "2万用料扎实质量好的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 3.5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/577f9728cc3142338ccb08827bb3ccb7.png"
+      },
+      {
+        "entry_id": 2666,
+        "entry_name": "2万左右品质稳定售后有保障的智能床推荐",
+        "mention_rate": 83.3,
+        "position": 2.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/7532cb6c733743df82e0be225ee82785.png"
+      },
+      {
+        "entry_id": 2643,
+        "entry_name": "助力起卧、适合孕妇与老人的智能床推荐",
+        "mention_rate": 66.7,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/e58e3efe55b9432495df34146607acb3.png"
+      },
+      {
+        "entry_id": 2644,
+        "entry_name": "吸湿排汗面料的智能床推荐",
+        "mention_rate": 66.7,
+        "position": 3.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/e0faa62929b24249925212de2b2dd79c.png"
+      },
+      {
+        "entry_id": 2649,
+        "entry_name": "用料扎实质量好的智能床推荐",
+        "mention_rate": 66.7,
+        "position": 5.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/af8ab22704004c0fa11d310e16eaf83f.png"
+      },
+      {
+        "entry_id": 2651,
+        "entry_name": "品质稳定售后有保障的智能床推荐",
+        "mention_rate": 66.7,
+        "position": 3.8,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/0cd3a3071cf14229875c51513b55e8dd.png"
+      },
+      {
+        "entry_id": 2652,
+        "entry_name": "实用性强不吃灰的智能床推荐",
+        "mention_rate": 66.7,
+        "position": 5.7,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/f14f96f7a44d4246a03e8079e2531a72.png"
+      },
+      {
+        "entry_id": 2640,
+        "entry_name": "智能止鼾的智能床推荐",
+        "mention_rate": 50,
+        "position": 4.2,
+        "platform_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "last_conversation_time": "2026-09-18T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260917/38711feb99194244842bf5116d8c3183.png"
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "慕思智能床",
+    "mention_rate_ranking": [
+      {
+        "brand_id": 45342,
+        "brand_name": "慕思智能床",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "慕思智能床",
+        "mention_count": 153,
+        "mention_rate": 85,
+        "is_target": true
+      },
+      {
+        "brand_id": 28885,
+        "brand_name": "舒福德",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "舒福德",
+        "mention_count": 123,
+        "mention_rate": 68.3,
+        "is_target": false
+      },
+      {
+        "brand_id": 7710,
+        "brand_name": "喜临门",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "喜临门",
+        "mention_count": 82,
+        "mention_rate": 45.6,
+        "is_target": false
+      },
+      {
+        "brand_id": 28886,
+        "brand_name": "MPE",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "MPE",
+        "mention_count": 74,
+        "mention_rate": 41.1,
+        "is_target": false
+      },
+      {
+        "brand_id": 16736,
+        "brand_name": "梦百合",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "梦百合",
+        "mention_count": 72,
+        "mention_rate": 40,
+        "is_target": false
+      }
+    ],
+    "position_ranking": [
+      {
+        "brand_id": 45342,
+        "brand_name": "慕思智能床",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "慕思智能床",
+        "avg_position": 3.4,
+        "mention_count": 153,
+        "is_target": true
+      },
+      {
+        "brand_id": 28885,
+        "brand_name": "舒福德",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "舒福德",
+        "avg_position": 3.6,
+        "mention_count": 123,
+        "is_target": false
+      },
+      {
+        "brand_id": 28886,
+        "brand_name": "MPE",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "MPE",
+        "avg_position": 5,
+        "mention_count": 74,
+        "is_target": false
+      },
+      {
+        "brand_id": 7710,
+        "brand_name": "喜临门",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "喜临门",
+        "avg_position": 5.2,
+        "mention_count": 82,
+        "is_target": false
+      },
+      {
+        "brand_id": 16736,
+        "brand_name": "梦百合",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "梦百合",
+        "avg_position": 5.2,
+        "mention_count": 72,
+        "is_target": false
+      }
+    ],
+    "rate_daily": [
+      {
+        "date": "2026-09-19",
+        "慕思智能床": 85,
+        "舒福德": 68.3,
+        "喜临门": 45.6,
+        "MPE": 41.1,
+        "梦百合": 40
+      }
+    ],
+    "position_daily": [
+      {
+        "date": "2026-09-19",
+        "慕思智能床": 3.4,
+        "舒福德": 3.6,
+        "MPE": 5,
+        "喜临门": 5.2,
+        "梦百合": 5.2
+      }
+    ],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "慕思智能床",
+        "top1_mention_rate": 33.3,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "brand_name": "舒福德",
+        "top1_mention_rate": 27.8,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "MPE",
+        "top1_mention_rate": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "舒达",
+        "top1_mention_rate": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "梦百合",
+        "top1_mention_rate": 5,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "慕思AI床垫",
+        "top1_mention_rate": 4.4,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "8H",
+        "top1_mention_rate": 3.9,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "京东京造",
+        "top1_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "TOPSLEEP",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "席梦思",
+        "top1_mention_rate": 1.1,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "HEKA",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "Sleep Number",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "丝涟",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "乐歌",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "喜临门",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "楠诗家居",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "海尔",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "爱依瑞斯",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "菠萝斑马",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "蓝盒子",
+        "top1_mention_rate": 0.6,
+        "is_target": false
+      }
+    ],
+    "top3_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "慕思智能床",
+        "top3_mention_rate": 61.1,
+        "is_target": true
+      },
+      {
+        "rank": 2,
+        "brand_name": "舒福德",
+        "top3_mention_rate": 55.6,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "MPE",
+        "top3_mention_rate": 27.2,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "梦百合",
+        "top3_mention_rate": 17.2,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "舒达",
+        "top3_mention_rate": 15.6,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "喜临门",
+        "top3_mention_rate": 13.9,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "慕思AI床垫",
+        "top3_mention_rate": 11.1,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "8H",
+        "top3_mention_rate": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "京东京造",
+        "top3_mention_rate": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "丝涟",
+        "top3_mention_rate": 6.1,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "顾家家居",
+        "top3_mention_rate": 5.6,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "TOPSLEEP",
+        "top3_mention_rate": 5,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "泰普尔",
+        "top3_mention_rate": 3.9,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "菠萝斑马",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "路福",
+        "top3_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "HEKA",
+        "top3_mention_rate": 2.8,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "蓝盒子",
+        "top3_mention_rate": 2.8,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "金可儿",
+        "top3_mention_rate": 2.8,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "席梦思",
+        "top3_mention_rate": 2.2,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "穗宝",
+        "top3_mention_rate": 2.2,
+        "is_target": false
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 180,
+    "citation_rate": 85.6,
+    "total_citations": 2986,
+    "platform_stats": [
+      {
+        "platform_name": "抖音精选",
+        "domain": "iesdouyin.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com-jingxuan.png",
+        "citation_count": 301,
+        "share": 10.1
+      },
+      {
+        "platform_name": "知乎",
+        "domain": "zhihu.com",
+        "logo_url": "https://static.zhihu.com/heifetz/favicon.ico",
+        "citation_count": 289,
+        "share": 9.7
+      },
+      {
+        "platform_name": "搜狐网",
+        "domain": "sohu.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/sohu.com.ico",
+        "citation_count": 222,
+        "share": 7.4
+      },
+      {
+        "platform_name": "百家号",
+        "domain": "baijiahao.baidu.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/baijiahao.baidu.com.png",
+        "citation_count": 213,
+        "share": 7.1
+      },
+      {
+        "platform_name": "新浪",
+        "domain": "sina.com.cn",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/sina.com.cn.ico",
+        "citation_count": 179,
+        "share": 6
+      }
+    ],
+    "articles": [
+      {
+        "title": "2026高端智能床深度盘点：六大旗舰品牌对比，科技睡眠优选指南 - IT之家",
+        "link_url": "https://www.ithome.com/0/999/717.htm",
+        "domain": "ithome.com",
+        "platform_name": "IT之家",
+        "logo_url": "https://cdn.deepseek.com/site-icons/ithome.com",
+        "total_citations": 31,
+        "avg_citations": 31,
+        "has_target_product": false
+      },
+      {
+        "title": "2026 AI智能床横评:从AI算法到大模型,谁是真智能",
+        "link_url": "https://www.cet.com.cn/wzsy/kjzx/10428088.shtml",
+        "domain": "cet.com.cn",
+        "platform_name": "中国经济新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/cet.com.cn",
+        "total_citations": 23,
+        "avg_citations": 23,
+        "has_target_product": false
+      },
+      {
+        "title": "资讯速递",
+        "link_url": "https://www.cet.com.cn/xwsd/10525213.shtml",
+        "domain": "cet.com.cn",
+        "platform_name": "中国经济新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/cet.com.cn",
+        "total_citations": 21,
+        "avg_citations": 21,
+        "has_target_product": false
+      },
+      {
+        "title": "2026 年智能床品牌推荐指南（不同预算+不同群体需求）|界面新闻",
+        "link_url": "https://www.jiemian.com/article/14740053.html",
+        "domain": "jiemian.com",
+        "platform_name": "界面新闻",
+        "logo_url": "https://www.doubao.com/",
+        "total_citations": 19,
+        "avg_citations": 19,
+        "has_target_product": false
+      },
+      {
+        "title": "2026智能床口碑榜：家庭选智能床，口碑、售后和用料都要看",
+        "link_url": "https://t.cj.sina.cn/articles/view/8339089836/1f10c69ac00101dqae",
+        "domain": "sina.com.cn",
+        "platform_name": "新浪",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/sina.com.cn.ico",
+        "total_citations": 18,
+        "avg_citations": 18,
+        "has_target_product": true
+      },
+      {
+        "title": "航天级AI睡眠黑科技!2026智能床精选榜单,MPE领衔五大品牌重塑深度睡眠",
+        "link_url": "https://www.bjnews.com.cn/detail/1777001138129886.html",
+        "domain": "bjnews.com.cn",
+        "platform_name": "新京报",
+        "logo_url": "https://cdn.deepseek.com/site-icons/bjnews.com.cn",
+        "total_citations": 18,
+        "avg_citations": 18,
+        "has_target_product": true
+      },
+      {
+        "title": "航天级智能睡眠时代已来:2026智能床口碑榜,5大品牌用实力诠释价值",
+        "link_url": "https://baijiahao.baidu.com/s?id=1862529540607946890&wfr=spider&for=pc",
+        "domain": "baijiahao.baidu.com",
+        "platform_name": "百家号",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/baijiahao.baidu.com.png",
+        "total_citations": 17,
+        "avg_citations": 17,
+        "has_target_product": false
+      },
+      {
+        "title": "2026 年 618 智能 床 选购 指南 几千 到 几万 智能 床 到底 有 什么 区别 ， 应该 怎么 选 ， 怎么 买 # 618 选购 # 智能 床 # top sleep 智能 床 # 智能 床垫 # 智能 床 测评",
+        "link_url": "https://www.iesdouyin.com/share/video/7651222539955391784",
+        "domain": "iesdouyin.com",
+        "platform_name": "抖音精选",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com-jingxuan.png",
+        "total_citations": 16,
+        "avg_citations": 16,
+        "has_target_product": false
+      },
+      {
+        "title": "2026智能床品牌推荐:线上榜与门店里卖的往往对不上",
+        "link_url": "https://www.cet.com.cn/xwsd/10521865.shtml",
+        "domain": "cet.com.cn",
+        "platform_name": "中国经济新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/cet.com.cn",
+        "total_citations": 16,
+        "avg_citations": 16,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年智能床到底买哪个?是智商税吗?梦百合/舒福德/顾家/西屋/舒达/慕思/喜临门智能床等10大品牌实测对比:这份攻略指南助您享受高品质睡眠体验!",
+        "link_url": "https://zhuanlan.zhihu.com/p/2014998060749583497",
+        "domain": "zhihu.com",
+        "platform_name": "知乎",
+        "logo_url": "https://static.zhihu.com/heifetz/favicon.ico",
+        "total_citations": 16,
+        "avg_citations": 16,
+        "has_target_product": false
+      }
+    ]
+  },
+  "overview_daily": [
+    {
+      "date": "2026-09-19",
+      "mention_rate": 85,
+      "avg_position": 3.4,
+      "influence_rank": 1
+    }
+  ]
+}

@@ -3,15 +3,20 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import SlideContainer from './components/SlideContainer';
 import CoverSlide from './templates/CoverSlide';
 import TOCSlide from './templates/TOCSlide';
+import BrandImageSlide from './templates/BrandImageSlide';
 import Page_ProposalChapterCover from './pages/Page_ProposalChapterCover';
 import ChapterPage from './components/ChapterPage';
 import { flatSlides, parsedConfig } from './config/parseConfig';
+import { tempBranding } from './config/tempBranding';
 import initialOrder from './slideOrder.json';
 
 const slideDictionary = {};
 flatSlides.forEach((slide) => {
   let component;
   switch (slide.type) {
+    case 'brand-image':
+      component = <BrandImageSlide key={slide.id} src={slide.imageSrc} />;
+      break;
     case 'cover':
       component = (
         <CoverSlide
@@ -53,7 +58,11 @@ flatSlides.forEach((slide) => {
       );
       break;
   }
-  slideDictionary[slide.id] = { name: slide.name, component };
+  slideDictionary[slide.id] = {
+    name: slide.name,
+    component,
+    showCornerLogo: tempBranding.enabled && slide.showCornerLogo !== false,
+  };
 });
 
 const defaultOrder = flatSlides.map((s) => s.id);
@@ -200,8 +209,17 @@ export default function App() {
       className="relative w-screen h-screen overflow-hidden cursor-pointer select-none"
     >
       <SlideContainer>
-        <div key={currentSlide} className="w-full h-full">
+        <div key={currentSlide} className="w-full h-full relative">
           {slideData[currentSlide]?.component}
+          {slideData[currentSlide]?.showCornerLogo && (
+            <img
+              src={tempBranding.logoSrc}
+              alt=""
+              draggable={false}
+              className="absolute z-30 pointer-events-none select-none"
+              style={{ top: '28px', right: '46px', width: '128px', height: '80px' }}
+            />
+          )}
         </div>
       </SlideContainer>
 

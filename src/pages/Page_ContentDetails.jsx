@@ -1,5 +1,5 @@
 import React from 'react';
-import report from '../data/musiAugReport.json';
+import report from '../data/musiSepReport.json';
 
 function createContentDetailsPage({ productKey, title }) {
   const data = report.products[productKey];
@@ -13,9 +13,9 @@ function createContentDetailsPage({ productKey, title }) {
       <div className="w-full h-full flex flex-col px-12 sm:px-16 pt-[22px] pb-8 text-zinc-900 font-sans bg-white">
         <div className="flex items-center shrink-0 mb-3">
           <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
-          <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
+          <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center flex-wrap gap-x-4 gap-y-2">
             {title}
-            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
+            <span className="text-2xl font-bold text-zinc-400">（2026年9月）</span>
           </h1>
         </div>
 
