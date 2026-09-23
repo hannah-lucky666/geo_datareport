@@ -7,6 +7,20 @@ function fmtPct(v) {
   return `${Number(v).toFixed(1)}%`;
 }
 
+function fmtCnDate(iso) {
+  const [, month, day] = String(iso).split('-');
+  return `${Number(month)}月${Number(day)}日`;
+}
+
+function BeforeHeading() {
+  return (
+    <span className="block leading-tight">
+      {meta.before_label}
+      <span className="block">（{fmtCnDate(meta.before_date)}）</span>
+    </span>
+  );
+}
+
 const ROWS = [
   { key: 'toc', name: '桃李面包 ToC' },
   { key: 'tob', name: '桃李面包 ToB' },
@@ -39,13 +53,13 @@ export default function Page_CoreDataOverview() {
               <th colSpan={2} className="py-3 px-4 text-2xl font-black text-center border-l border-white/10 bg-[#2E75FF]">综合竞品排名</th>
             </tr>
             <tr className="bg-slate-50/80 border-b border-zinc-200 text-[#004CE5] font-black text-2xl">
-              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]">{meta.before_label}</th>
+              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]"><BeforeHeading /></th>
               <th className="py-2 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.25%]">{meta.september_label}</th>
-              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]">{meta.before_label}</th>
+              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]"><BeforeHeading /></th>
               <th className="py-2 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.25%]">{meta.september_label}</th>
-              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]">{meta.before_label}</th>
+              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]"><BeforeHeading /></th>
               <th className="py-2 px-2 text-center border-l border-zinc-200 border-r-2 border-[#004CE5]/15 w-[10.25%]">{meta.september_label}</th>
-              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]">{meta.before_label}</th>
+              <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]"><BeforeHeading /></th>
               <th className="py-2 px-2 text-center border-l border-zinc-200 w-[10.25%]">{meta.september_label}</th>
             </tr>
           </thead>
