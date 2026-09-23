@@ -3,7 +3,6 @@ import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
 import Page_KeywordCategorization from '../pages/Page_KeywordCategorization';
 import Page_KpiAcceptance from '../pages/Page_KpiAcceptance';
-import Page_DataFluctuation from '../pages/Page_DataFluctuation';
 import Page_DataTroubleshooting from '../pages/Page_DataTroubleshooting';
 import Page_DataTroubleshootingSummary from '../pages/Page_DataTroubleshootingSummary';
 import Page_ContentDetails from '../pages/Page_ContentDetails';
@@ -36,7 +35,7 @@ export const slideConfig = [
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO 索引未来',
     subtitle: '古井贡酒GEO \n 阶段性报告',
-    date: 'August 2026',
+    date: 'September 2026',
   },
 
   {
@@ -52,7 +51,6 @@ export const slideConfig = [
   { type: 'chapter', title: '核心数据与竞品分析', subtitle: 'DATA OVERVIEW & COMPETITOR ANALYSIS', backgroundImage: '/' },
   { type: 'section', title: '核心数据总览' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
-  { type: 'page', title: '数据波动说明', component: Page_DataFluctuation },
   { type: 'section', title: '竞品分析' },
   { type: 'page', title: '古井贡酒古16 竞品分析', component: Page_CompetitorAnalysis },
   { type: 'page', title: '古井贡酒古20 竞品分析', component: Page_CompetitorAnalysis_AI },
@@ -64,7 +62,7 @@ export const slideConfig = [
   { type: 'page', title: '古井贡酒古20 投放明细', component: Page_ContentDetails_AI },
 
   // ——— 篇章3: 词条数据明细 ———
-  { type: 'chapter', title: '词条数据明细', subtitle: 'CONTENT DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: '词条数据明细', subtitle: 'KEYWORD DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '古井贡酒古16 平台明细' },
   { type: 'page', title: '古16 DeepSeek 词条明细', component: Page_Entries_123_1 },
   { type: 'page', title: '古16 豆包 词条明细', component: Page_Entries_123_2 },

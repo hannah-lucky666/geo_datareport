@@ -1,6 +1,5 @@
 import React from 'react';
 import platformData from '../data/platform_entries.json';
-import snapshot from '../data/monthlySnapshot.json';
 
 const PLATFORM_NAMES = {
   1: 'DeepSeek',
@@ -16,19 +15,16 @@ const LOGOS = {
   6: 'https://app.geoindexfuture.com/logo/kimi.png'
 };
 
-/** 数据系统日期筛选器的展示格式：MM-DD ~ MM-DD */
-const DATE_RANGE_LABEL = (() => {
-  const d = snapshot?.meta?.date;
-  if (!d) return '';
-  const md = d.slice(5);
-  return `${md} ~ ${md}`;
-})();
+/** 词条明细按当月单日口径展示。古20取 9月23日，古16仍为 9月16日。 */
 
 export default function Page_QueryDataSystemLink({ projectId = 123, platformId = 1 }) {
   const data = platformData[String(projectId)]?.[String(platformId)] || [];
   const productName = projectId === 123 ? '古井贡酒古16' : '古井贡酒古20';
   const platformName = PLATFORM_NAMES[platformId] || '';
 
+  const isGu20 = projectId === 124;
+  const dateLabel = isGu20 ? '2026年9月23日' : '2026年9月';
+  const dateRangeLabel = isGu20 ? '9月23日' : '9月';
   const slideTitle = `${projectId === 123 ? '古16' : '古20'}词条数据明细（${platformName}）`;
 
   return (
@@ -38,6 +34,7 @@ export default function Page_QueryDataSystemLink({ projectId = 123, platformId =
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4">
           {slideTitle}
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（{dateLabel}）</span>
         </h1>
       </div>
 
@@ -55,7 +52,7 @@ export default function Page_QueryDataSystemLink({ projectId = 123, platformId =
           <div className="flex items-center gap-1.5 bg-white border border-zinc-200/80 rounded-md px-3 py-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.02)] cursor-pointer hover:border-zinc-300 transition-colors">
             <span className="text-zinc-400 text-xs">📅</span>
             <span className="text-zinc-550">日期</span>
-            <span className="text-zinc-400 text-[10px] ml-1">{DATE_RANGE_LABEL}</span>
+            <span className="text-zinc-400 text-[10px] ml-1">{dateRangeLabel}</span>
             <span className="text-zinc-300 text-[9px] ml-1">▼</span>
           </div>
 
@@ -108,7 +105,7 @@ export default function Page_QueryDataSystemLink({ projectId = 123, platformId =
                 <th className="py-3 px-2 w-[6%] text-center">序号</th>
                 <th className="py-3 px-4 w-[38%] text-left font-black text-zinc-500">词条</th>
                 <th className="py-3 px-3 w-[12%] text-center font-black text-zinc-500">提及率 ↓</th>
-                <th className="py-3 px-3 w-[14%] text-center font-black text-zinc-500">平均提及位次</th>
+                <th className="py-3 px-3 w-[14%] text-center font-black text-zinc-500">top1提及率</th>
                 <th className="py-3 px-3 w-[12%] text-center font-black text-zinc-500">监测平台</th>
                 <th className="py-3 px-3 w-[11%] text-center font-black text-zinc-500">会话截图</th>
                 <th className="py-3 px-4 w-[12%] text-center font-black text-zinc-500">最近更新时间</th>
@@ -128,7 +125,7 @@ export default function Page_QueryDataSystemLink({ projectId = 123, platformId =
                     {row.mention_rate}
                   </td>
                   <td className="py-1 px-3 text-center text-zinc-500 font-sans">
-                    {row.position}
+                    {row.top1_mention_rate}
                   </td>
                   <td className="py-1 px-3 text-center">
                     <div className="inline-flex items-center -space-x-1.5 justify-center">

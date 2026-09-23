@@ -238,7 +238,7 @@ async function main() {
       platformEntries[p.slideKey][String(pl.id)] = (entries.data.list || []).map((e) => ({
         entry_name: e.entry_name,
         mention_rate: fmtRate(e.mention_rate),
-        position: fmtPos(e.position),
+        top1_mention_rate: fmtRate(e.top1_mention_rate),
         last_conversation_time: fmtDate(e.last_conversation_time),
         last_screenshot_url: e.last_screenshot_url || null,
       }));
