@@ -31,7 +31,7 @@
 
    输出：`src/data/geoOverview.json`
 
-5. 更新数据后，按最新数值同步改写相关页面的分析文案，数字须与 JSON 一致。
+5. 更新数据后，按最新数值同步改写相关页面的分析文案，数字须与 JSON 一致。**只改数字和结论，不改页面版式**（投放明细必须保持 TOTAL CAMPAIGN 总投放篇数，见 `keep-page-templates.mdc`）。
 
 ## 指标口径对照（重要，历史踩坑，务必按此取数）
 
@@ -40,11 +40,12 @@
 | 页面/指标 | 正确来源（数据系统「总览」口径） | ❌ 易错的错误来源 |
 |---|---|---|
 | 提及率 | `conversations/stats.brand_mention_rate`（逐日见 `daily_stats.mention_rate` / `overview_daily.mention_rate`） | — |
-| 平均提及位次 | `conversations/stats.avg_position`（逐日见 `daily_stats.avg_position` / `overview_daily.avg_position`） | `compare.position_ranking` 里本品的 `avg_position`（这是「竞品对比」页口径，与总览可能差 0.1） |
+| top1提及率（词条明细列） | `entries.top1_mention_rate`（页面展示百分数，列名固定「top1提及率」） | `entries.position` / `avg_position`（页面禁止出现「位次」） |
 | 竞品排名 / 行业影响力排名 | `competitors/influence` 中本品(`is_target`)的 `rank`（逐日见 `overview_daily.influence_rank`） | `compare.mention_rate_ranking` 的名次（提及率排名 ≠ 影响力排名，可能不同） |
 
 - `fetch-geo-report.mjs` 已产出 `report.overview_daily`（逐日 `{date, mention_rate, avg_position, influence_rank}`），**核心数据总览页 / 竞品排名请直接按对应日期取这里的值**。
-- 「竞品分析」页三张榜单口径：提及率排名 / Top1 提及率排名用 `compare.mention_rate_ranking` / `top1_ranking`；**竞品排名 = 行业影响力排名**（`competitors/influence` 中本品及竞品的 `rank`，展示为 NO. 1 / NO. 2）。**不要写「影响力指数」，不要再写「提及位次排名」，也不要用 `compare.position_ranking` 顶替第三张表。**
+- 「竞品分析」页三张榜单口径：提及率排名 / Top1 提及率排名用 `compare.mention_rate_ranking` / `top1_ranking`；**竞品排名 = 行业影响力排名**（`competitors/influence` 中本品及竞品的 `rank`，展示为 NO. 1 / NO. 2）。**不要写「影响力指数」，不要写「位次」，也不要用 `compare.position_ranking` 顶替第三张表。**
+- 词条明细不要展示 `position`。列名用「top1提及率」，数值用 `entries.top1_mention_rate`。
 - 单个数据日期（如 6/25、7/22）与其所在周窗口（如 06-22~06-28、07-20~07-26）的总览指标一致，可用单日区间取数。
 
 ## 核心数据总览：高位波动说明（固定文案）

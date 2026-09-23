@@ -1,0 +1,33 @@
+---
+description: 换数只改数字和文案，禁止改投放明细等页面版式
+alwaysApply: true
+---
+
+# 换数不许改版式
+
+用户给新数据 / Excel / JSON 时，**只替换数据和对应文字**，禁止重做页面结构。
+
+## 投放明细（2026-09-21 踩坑）
+
+`Page_ContentDetails.jsx` / `Page_ContentDetails_AI.jsx` 固定为此模板，换投放表时只跑 `scripts/build_content_details.py` 更新 `content_details.json`：
+
+1. **TOTAL CAMPAIGN**：`total_articles` +「篇」+「全网总投放量」+ 覆盖渠道。禁止改成「N 个来源」。
+2. **CITATION RATE**：被引率 + `( cited / total 篇投放已被引用 )`。
+3. **EFFECTIVE CITATIONS**：累计引用频次 + DeepSeek / 豆包 / 通义千问 分平台点。
+4. 表头固定：排序、文章标题、发布平台、发布时间、总引用数、DeepSeek、豆包、通义、是否被引。首行【总计汇总】。
+
+桃李只这三台，不要加元宝 / 文心 / Kimi，也不要删这三列。
+
+```jsx
+// ❌ 换 Excel 时重写第一块
+<span>{channels.length}</span><span>个</span>
+<div>主要投放来源</div>
+
+// ✅ 第一块永远是总投放量
+<span>{totalArticles}</span><span>篇</span>
+<div>全网总投放量</div>
+```
+
+## 其他页同样适用
+
+核心数据总览、竞品分析等同理：换日期只改 JSON 和结论数字，不改卡片数量、表头、栏位含义。用户没要求改版，就不要改版。

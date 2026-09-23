@@ -8,9 +8,10 @@
  *   node scripts/fetch-monthly-snapshot.mjs --date 2026-08-29 --month 2026-08
  *
  * 口径约定（历史踩坑，务必遵守）：
- *   · 核心数据总览的「提及率 / 平均提及位次」→ conversations/stats 的 brand_mention_rate / avg_position
+ *   · 核心数据总览的「提及率」→ conversations/stats 的 brand_mention_rate
+ *   · 词条明细的「top1提及率」→ entries.top1_mention_rate（页面不要写「位次」）
  *   · 核心数据总览 / 竞品分析页的「竞品排名」→ competitors/influence 的行业影响力排名（rank，展示 NO. 1 / NO. 2）
- *   · 竞品分析页不要再写「提及位次排名」，也不要写「影响力指数」；第三张表固定用行业影响力名次
+ *   · 竞品分析页不要写「位次」，也不要写「影响力指数」；第三张表固定用行业影响力名次
  *   · 分平台词条必须传 platform_ids（复数）；传单数 platform_id 会退化成全平台汇总
  *   · competitors/top-mention-rate 是唯一返回全量识别品牌的接口，page_size 服务端封顶 100，需翻页
  */
@@ -128,22 +129,12 @@ async function allBrandNames(projectId, start, end) {
   return names;
 }
 
-/**
- * 空值判定：接口对未被提及的词条返回 position: null，而提及率返回字符串 "0.0"。
- * 注意 Number(null) === 0 且 Number.isFinite(0) 为真，只判 isFinite 会把「无位次」渲染成 NO. 0.0，
- * 必须先显式拦 null/undefined/''，位次再排掉 0（位次从 1 起，0 不是有效值）。
- */
 const isBlank = (v) => v === null || v === undefined || v === '';
 
 function fmtRate(v) {
   if (isBlank(v)) return NO_DATA;
   const n = Number(v);
   return Number.isFinite(n) ? `${n.toFixed(1)}%` : NO_DATA;
-}
-function fmtPos(v) {
-  if (isBlank(v)) return NO_DATA;
-  const n = Number(v);
-  return Number.isFinite(n) && n > 0 ? `NO. ${n.toFixed(1)}` : NO_DATA;
 }
 function fmtDate(v) {
   if (!v) return '--';
@@ -204,7 +195,7 @@ async function main() {
         mention_rate: rankTop5(dayCompare.data.mention_rate_ranking, 'mention_rate'),
         position: rankTop5(dayCompare.data.position_ranking, 'avg_position'),
         top1: rankTop5(dayTop1?.data?.list, 'selected_top_mention_rate'),
-        // 竞品排名 = 行业影响力，不是提及位次
+        // 竞品排名 = 行业影响力
         influence: rankTop5(dayInfluence.data.list, 'influence_score'),
       },
       sentiment: {
@@ -238,7 +229,7 @@ async function main() {
       platformEntries[p.slideKey][String(pl.id)] = (entries.data.list || []).map((e) => ({
         entry_name: e.entry_name,
         mention_rate: fmtRate(e.mention_rate),
-        position: fmtPos(e.position),
+        top1_mention_rate: fmtRate(e.top1_mention_rate),
         last_conversation_time: fmtDate(e.last_conversation_time),
         last_screenshot_url: e.last_screenshot_url || null,
       }));

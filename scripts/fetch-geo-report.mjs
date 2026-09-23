@@ -15,7 +15,7 @@
  * ⚠ 指标口径（务必遵守，历史踩坑）：数据系统「总览」的三个指标各有固定来源，
  *   页面（核心数据总览 / 竞品排名）必须按此取数，切勿混用「竞品对比」表的字段：
  *     · 提及率       → conversations/stats.brand_mention_rate
- *     · 平均提及位次  → conversations/stats.avg_position       （不是 compare.position_ranking！两者可能差 0.1）
+ *     · 词条明细 top1提及率 → entries.top1_mention_rate（页面不要展示 position / 位次）
  *     · 竞品排名      → 行业影响力排名 = competitors/influence 中本品(is_target)的 rank（不是提及率排名的名次）
  *   本脚本已把逐日的这三个指标算好放进 report.overview_daily，按日期直接取用即可。
  */
@@ -238,7 +238,7 @@ async function main() {
   };
 
   // ——— 总览口径的每日指标（供「核心数据总览 / 竞品排名」页直接取数，避免取错字段）———
-  // 提及率=stats.brand_mention_rate；平均提及位次=stats.avg_position（非 position_ranking）；
+  // 提及率=stats.brand_mention_rate；词条明细 top1提及率=entries.top1_mention_rate（页面不展示 position）；
   // 竞品排名=行业影响力排名=influence 中本品(is_target)的 rank（非 mention_rate_ranking 名次）。
   const overviewDates = report.stats.daily_stats.map((d) => d.date);
   const dailyRank = Object.fromEntries(

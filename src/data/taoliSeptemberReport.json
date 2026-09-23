@@ -1,0 +1,3806 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-22T02:42:10.036Z",
+    "label": "2026年9月",
+    "before_date": "2026-08-11",
+    "september_date": "2026-09-22",
+    "before_label": "优化前",
+    "september_label": "9月"
+  },
+  "scope": {
+    "calendar_days": 22,
+    "platforms": 3,
+    "platform_names": [
+      "DeepSeek",
+      "豆包",
+      "通义千问"
+    ],
+    "entries": 120,
+    "conversations": 6288,
+    "articles": 18103,
+    "citations": 66435,
+    "competitor_brands": 2001
+  },
+  "products": {
+    "toc": {
+      "project_id": 465,
+      "name": "桃李面包 ToC",
+      "short": "ToC",
+      "before": {
+        "mention_rate": 59.1,
+        "top1_mention_rate": 40.9,
+        "top3_mention_rate": 47,
+        "avg_position": 4,
+        "influence_score": 51.8,
+        "influence_rank": 1,
+        "conversations": 66,
+        "platforms": [
+          {
+            "platform_id": 1,
+            "mention_rate": 50,
+            "avg_position": 4.3,
+            "platform_name": "DeepSeek"
+          },
+          {
+            "platform_id": 2,
+            "mention_rate": 63.6,
+            "avg_position": 4.8,
+            "platform_name": "豆包"
+          },
+          {
+            "platform_id": 5,
+            "mention_rate": 63.6,
+            "avg_position": 3.1,
+            "platform_name": "通义千问"
+          }
+        ],
+        "covered_entries": 19
+      },
+      "september": {
+        "mention_rate": 72.2,
+        "top1_mention_rate": 42.2,
+        "top3_mention_rate": 47.8,
+        "avg_position": 4.1,
+        "influence_score": 60.2,
+        "influence_rank": 1,
+        "conversations": 180,
+        "platforms": [
+          {
+            "platform_id": 1,
+            "mention_rate": 61.7,
+            "avg_position": 3.3,
+            "platform_name": "DeepSeek"
+          },
+          {
+            "platform_id": 2,
+            "mention_rate": 75,
+            "avg_position": 4.2,
+            "platform_name": "豆包"
+          },
+          {
+            "platform_id": 5,
+            "mention_rate": 80,
+            "avg_position": 4.7,
+            "platform_name": "通义千问"
+          }
+        ],
+        "covered_entries": 54
+      },
+      "compare": {
+        "mention_rate": [
+          {
+            "name": "豪士",
+            "value": "51.1%",
+            "isTarget": false,
+            "rank": 1
+          },
+          {
+            "name": "曼可顿",
+            "value": "40.6%",
+            "isTarget": false,
+            "rank": 2
+          },
+          {
+            "name": "达利园",
+            "value": "37.8%",
+            "isTarget": false,
+            "rank": 3
+          },
+          {
+            "name": "宾堡",
+            "value": "27.2%",
+            "isTarget": false,
+            "rank": 4
+          },
+          {
+            "name": "桃李",
+            "value": "72.2%",
+            "isTarget": true,
+            "rank": null
+          }
+        ],
+        "top1": [
+          {
+            "name": "豪士",
+            "value": "13.3%",
+            "isTarget": false,
+            "rank": 2
+          },
+          {
+            "name": "曼可顿",
+            "value": "3.9%",
+            "isTarget": false,
+            "rank": 3
+          },
+          {
+            "name": "义利",
+            "value": "3.3%",
+            "isTarget": false,
+            "rank": 4
+          },
+          {
+            "name": "爸爸糖",
+            "value": "3.3%",
+            "isTarget": false,
+            "rank": 5
+          },
+          {
+            "name": "桃李",
+            "value": "42.2%",
+            "isTarget": true,
+            "rank": 1
+          }
+        ],
+        "influence": [
+          {
+            "name": "豪士",
+            "value": "2",
+            "isTarget": false,
+            "rank": 2
+          },
+          {
+            "name": "曼可顿",
+            "value": "3",
+            "isTarget": false,
+            "rank": 3
+          },
+          {
+            "name": "达利园",
+            "value": "4",
+            "isTarget": false,
+            "rank": 4
+          },
+          {
+            "name": "嘉顿",
+            "value": "5",
+            "isTarget": false,
+            "rank": 5
+          },
+          {
+            "name": "桃李",
+            "value": "1",
+            "isTarget": true,
+            "rank": 1
+          }
+        ]
+      },
+      "citations": {
+        "before": [
+          {
+            "rank": 1,
+            "src": "抖音精选",
+            "title": "无广！！一口气分享6个平价美味早八面包！！ #学生党#早八面包#面包脑袋#早八党#无广",
+            "cites": 17,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 2,
+            "src": "抖音精选",
+            "title": "pdd平价短保面包分享。#拼多多宝藏美食 #抖音创作者激励计划",
+            "cites": 8,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 3,
+            "src": "抖音精选",
+            "title": "7款热门面包测评结果揭晓",
+            "cites": 7,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 4,
+            "src": "抖音精选",
+            "title": "面包分享测评第一期，早八党面包分享[庆祝][庆祝]，宝子们喜欢看的话可以给我点点红心❤️#每日面包分享 #各种口味的吐司面包 #面包种类图鉴🍞  #早八面包 #vlog十亿流量扶持计划",
+            "cites": 7,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 5,
+            "src": "正观新闻",
+            "title": "2026早餐面包观察：五个品牌，五种关于“吃好”的回答 正观新闻",
+            "cites": 7,
+            "domain": "zhengguannews.cn"
+          },
+          {
+            "rank": 6,
+            "src": "ITBear科技资讯",
+            "title": "2026早餐面包红榜：5款真正值得放进购物车的选择-热点资讯-ITBear科技资讯",
+            "cites": 6,
+            "domain": "itbear.com.cn"
+          },
+          {
+            "rank": 7,
+            "src": "抖音精选",
+            "title": "减脂期低卡平价面包推荐：饱腹美味助力瘦身",
+            "cites": 6,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 8,
+            "src": "抖音精选",
+            "title": "便宜 还 好吃 的 早餐 面包 合集 ， 很 适合 上班 宿舍 学生 # 面包 测评 # 减脂 期 可以 吃 的 零食 推荐 # 零食 评测 # 低 卡 零食 测评 # 早餐 面包",
+            "cites": 6,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 9,
+            "src": "Foodaily每日食品",
+            "title": "清洁标签、全麦、低 GI 混战：千亿市场的常温包装面包的未来在哪？ | Foodaily每日食品",
+            "cites": 6,
+            "domain": "foodaily.com"
+          },
+          {
+            "rank": 10,
+            "src": "廊坊新闻网",
+            "title": "2026早餐面包推荐：从“将就一口”到“认真吃好” - 消费 - 廊坊新闻网 - 权威媒体 廊坊门户",
+            "cites": 6,
+            "domain": "lfnews.cn"
+          }
+        ],
+        "september": [
+          {
+            "rank": 1,
+            "src": "抖音精选",
+            "title": "无广！！一口气分享6个平价美味早八面包！！ #学生党#早八面包#面包脑袋#早八党#无广",
+            "cites": 22,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 2,
+            "src": "十大品牌网CNPP",
+            "title": "最新面包品牌排行,2026年面包排行前十-十大品牌网CNPP",
+            "cites": 12,
+            "domain": "cnpp.cn"
+          },
+          {
+            "rank": 3,
+            "src": "抖音精选",
+            "title": "听说谁马上开学了？！请选择你的面包伴侣 千人千味 有争议是正常的！尽量跟大家选择符合大众口味的产品喔！#年中总结 #面包推荐#平价面包#满级吃商通关赛#青年创作者成长计划",
+            "cites": 11,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 4,
+            "src": "知乎",
+            "title": "2026年短保手撕面包推荐全攻略,四条做法路线各有用处 - 知乎",
+            "cites": 10,
+            "domain": "zhihu.com"
+          },
+          {
+            "rank": 5,
+            "src": "正观新闻",
+            "title": "2026早餐面包观察：五个品牌，五种关于“吃好”的回答 正观新闻",
+            "cites": 10,
+            "domain": "zhengguannews.cn"
+          },
+          {
+            "rank": 6,
+            "src": "百度百科",
+            "title": "美焙辰_百度百科",
+            "cites": 9,
+            "domain": "baike.baidu.com"
+          },
+          {
+            "rank": 7,
+            "src": "抖音精选",
+            "title": "pdd平价短保面包分享。#拼多多宝藏美食 #抖音创作者激励计划",
+            "cites": 9,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 8,
+            "src": "博客园",
+            "title": "2026年好吃面包牌子选购指南：健康美味兼顾的主流品牌深度分析 - 产业观察网 - 企业博客",
+            "cites": 8,
+            "domain": "cnblogs.com"
+          },
+          {
+            "rank": 9,
+            "src": "品牌网",
+            "title": "2026面包十大品牌排行榜_面包品牌前十名-中国品牌网",
+            "cites": 8,
+            "domain": "chinapp.com"
+          },
+          {
+            "rank": 10,
+            "src": "中国商报网",
+            "title": "家庭早餐货架2026年该摆哪个面包品牌，先看走空的时段 - 中国商报网",
+            "cites": 8,
+            "domain": "zgswcn.com"
+          }
+        ],
+        "before_total": 735,
+        "september_total": 1753,
+        "before_rate": 98.5,
+        "september_rate": 86.1
+      },
+      "entries_all": [
+        {
+          "name": "面包品牌排行榜",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "面包品牌推荐",
+          "mention_rate": 100,
+          "position": 5.3
+        },
+        {
+          "name": "实惠好吃的面包推荐",
+          "mention_rate": 100,
+          "position": 5.3
+        },
+        {
+          "name": "独立包装便携的面包推荐",
+          "mention_rate": 100,
+          "position": 6
+        },
+        {
+          "name": "短保面包有哪些品牌",
+          "mention_rate": 100,
+          "position": 3
+        },
+        {
+          "name": "短保面包推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "品质好的短保面包推荐",
+          "mention_rate": 100,
+          "position": 2.3
+        },
+        {
+          "name": "性价比高的短保面包推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "口碑好的短保面包推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合当上班族早餐的短保面包推荐",
+          "mention_rate": 100,
+          "position": 2.7
+        },
+        {
+          "name": "实惠好吃的短保面包推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "短保面包品牌排行榜",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "吐司品牌排行榜",
+          "mention_rate": 100,
+          "position": 3
+        },
+        {
+          "name": "吐司品牌推荐",
+          "mention_rate": 100,
+          "position": 2.3
+        },
+        {
+          "name": "周末超市买的早餐面包推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "学校小卖部常见面包推荐",
+          "mention_rate": 100,
+          "position": 2.3
+        },
+        {
+          "name": "好吃不发硬的面包推荐",
+          "mention_rate": 100,
+          "position": 4.3
+        },
+        {
+          "name": "东北超市常买的面包推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "全国都能买到的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 3
+        },
+        {
+          "name": "便利店能买到的面包推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "短保切片面包推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "短保手撕面包品牌排行榜",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "夹心面包品牌推荐",
+          "mention_rate": 100,
+          "position": 4.3
+        },
+        {
+          "name": "口感软的切片面包推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "家庭装切片面包推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "家庭常备面包品牌推荐",
+          "mention_rate": 100,
+          "position": 4.7
+        },
+        {
+          "name": "全家都适合吃的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "晚上买第二天吃的短保面包推荐",
+          "mention_rate": 100,
+          "position": 1.7
+        },
+        {
+          "name": "早上买当天吃的短保面包推荐",
+          "mention_rate": 100,
+          "position": 2.7
+        },
+        {
+          "name": "品质好的面包推荐",
+          "mention_rate": 66.7,
+          "position": 15.7
+        },
+        {
+          "name": "性价比高的面包推荐",
+          "mention_rate": 66.7,
+          "position": 7.3
+        },
+        {
+          "name": "口碑好的面包推荐",
+          "mention_rate": 66.7,
+          "position": 7.7
+        },
+        {
+          "name": "家庭早餐囤货面包推荐",
+          "mention_rate": 66.7,
+          "position": 4.7
+        },
+        {
+          "name": "超市能买到的面包推荐",
+          "mention_rate": 66.7,
+          "position": 4
+        },
+        {
+          "name": "小包装面包推荐",
+          "mention_rate": 66.7,
+          "position": 8.7
+        },
+        {
+          "name": "华北家庭常买的面包推荐",
+          "mention_rate": 66.7,
+          "position": 3
+        },
+        {
+          "name": "经典面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 2.3
+        },
+        {
+          "name": "老牌面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 8.7
+        },
+        {
+          "name": "品质好的吐司推荐",
+          "mention_rate": 66.7,
+          "position": 6.3
+        },
+        {
+          "name": "不用现烤的家庭早餐面包推荐",
+          "mention_rate": 66.7,
+          "position": 1.7
+        },
+        {
+          "name": "比面包房实惠的早餐面包推荐",
+          "mention_rate": 66.7,
+          "position": 4
+        },
+        {
+          "name": "孩子上学带的面包推荐",
+          "mention_rate": 66.7,
+          "position": 2.3
+        },
+        {
+          "name": "郊游携带的短保面包推荐",
+          "mention_rate": 66.7,
+          "position": 2.3
+        },
+        {
+          "name": "多口味可选的面包推荐",
+          "mention_rate": 66.7,
+          "position": 3.3
+        },
+        {
+          "name": "口感软糯的面包推荐",
+          "mention_rate": 66.7,
+          "position": 3.3
+        },
+        {
+          "name": "商超烘焙区常买的面包推荐",
+          "mention_rate": 66.7,
+          "position": 3.7
+        },
+        {
+          "name": "短保手撕面包推荐",
+          "mention_rate": 66.7,
+          "position": 3.7
+        },
+        {
+          "name": "学生课间加餐面包推荐",
+          "mention_rate": 33.3,
+          "position": 4.3
+        },
+        {
+          "name": "办公室便携面包推荐",
+          "mention_rate": 33.3,
+          "position": 3.7
+        },
+        {
+          "name": "日式软面包品牌推荐",
+          "mention_rate": 33.3,
+          "position": 7.3
+        },
+        {
+          "name": "品质好的日式软面包推荐",
+          "mention_rate": 33.3,
+          "position": 3.7
+        },
+        {
+          "name": "无防腐剂的面包推荐",
+          "mention_rate": 33.3,
+          "position": 7.3
+        },
+        {
+          "name": "常温保存方便的面包推荐",
+          "mention_rate": 33.3,
+          "position": 7
+        },
+        {
+          "name": "适合天天吃的切片面包推荐",
+          "mention_rate": 33.3,
+          "position": 4
+        },
+        {
+          "name": "适合当上班族早餐的面包推荐",
+          "mention_rate": 0,
+          "position": null
+        },
+        {
+          "name": "适合当上班族早餐的吐司推荐",
+          "mention_rate": 0,
+          "position": null
+        },
+        {
+          "name": "口感软糯的吐司推荐",
+          "mention_rate": 0,
+          "position": null
+        },
+        {
+          "name": "孩子上学带的吐司推荐",
+          "mention_rate": 0,
+          "position": null
+        },
+        {
+          "name": "代餐面包推荐",
+          "mention_rate": 0,
+          "position": null
+        },
+        {
+          "name": "口感软的手撕面包推荐",
+          "mention_rate": 0,
+          "position": null
+        }
+      ]
+    },
+    "tob": {
+      "project_id": 464,
+      "name": "桃李面包 ToB",
+      "short": "ToB",
+      "before": {
+        "mention_rate": 83.3,
+        "top1_mention_rate": 67.8,
+        "top3_mention_rate": 77.8,
+        "avg_position": 2.7,
+        "influence_score": 77.1,
+        "influence_rank": 1,
+        "conversations": 90,
+        "platforms": [
+          {
+            "platform_id": 1,
+            "mention_rate": 70,
+            "avg_position": 2.5,
+            "platform_name": "DeepSeek"
+          },
+          {
+            "platform_id": 2,
+            "mention_rate": 90,
+            "avg_position": 3.3,
+            "platform_name": "豆包"
+          },
+          {
+            "platform_id": 5,
+            "mention_rate": 90,
+            "avg_position": 2.3,
+            "platform_name": "通义千问"
+          }
+        ],
+        "covered_entries": 28
+      },
+      "september": {
+        "mention_rate": 88.3,
+        "top1_mention_rate": 73.9,
+        "top3_mention_rate": 78.9,
+        "avg_position": 2.5,
+        "influence_score": 82.5,
+        "influence_rank": 1,
+        "conversations": 180,
+        "platforms": [
+          {
+            "platform_id": 1,
+            "mention_rate": 75,
+            "avg_position": 2.5,
+            "platform_name": "DeepSeek"
+          },
+          {
+            "platform_id": 2,
+            "mention_rate": 95,
+            "avg_position": 2.5,
+            "platform_name": "豆包"
+          },
+          {
+            "platform_id": 5,
+            "mention_rate": 95,
+            "avg_position": 2.6,
+            "platform_name": "通义千问"
+          }
+        ],
+        "covered_entries": 60
+      },
+      "compare": {
+        "mention_rate": [
+          {
+            "name": "达利园",
+            "value": "59.4%",
+            "isTarget": false,
+            "rank": 1
+          },
+          {
+            "name": "曼可顿",
+            "value": "57.8%",
+            "isTarget": false,
+            "rank": 2
+          },
+          {
+            "name": "宾堡",
+            "value": "52.2%",
+            "isTarget": false,
+            "rank": 3
+          },
+          {
+            "name": "豪士",
+            "value": "48.9%",
+            "isTarget": false,
+            "rank": 4
+          },
+          {
+            "name": "桃李",
+            "value": "88.3%",
+            "isTarget": true,
+            "rank": null
+          }
+        ],
+        "top1": [
+          {
+            "name": "达利园",
+            "value": "3.9%",
+            "isTarget": false,
+            "rank": 2
+          },
+          {
+            "name": "盼盼",
+            "value": "3.3%",
+            "isTarget": false,
+            "rank": 3
+          },
+          {
+            "name": "豪士",
+            "value": "2.2%",
+            "isTarget": false,
+            "rank": 4
+          },
+          {
+            "name": "好利来",
+            "value": "1.7%",
+            "isTarget": false,
+            "rank": 5
+          },
+          {
+            "name": "桃李",
+            "value": "73.9%",
+            "isTarget": true,
+            "rank": 1
+          }
+        ],
+        "influence": [
+          {
+            "name": "达利园",
+            "value": "2",
+            "isTarget": false,
+            "rank": 2
+          },
+          {
+            "name": "曼可顿",
+            "value": "3",
+            "isTarget": false,
+            "rank": 3
+          },
+          {
+            "name": "宾堡",
+            "value": "4",
+            "isTarget": false,
+            "rank": 4
+          },
+          {
+            "name": "豪士",
+            "value": "5",
+            "isTarget": false,
+            "rank": 5
+          },
+          {
+            "name": "桃李",
+            "value": "1",
+            "isTarget": true,
+            "rank": 1
+          }
+        ]
+      },
+      "citations": {
+        "before": [
+          {
+            "rank": 1,
+            "src": "抖音精选",
+            "title": "有想要的，量大的可以联系我，短保，中保日期都有，短保日期只有8天，也会不定期处理！",
+            "cites": 14,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 2,
+            "src": "新浪",
+            "title": "桃李面包持续创新，满足每一口新鲜美味",
+            "cites": 12,
+            "domain": "sina.com.cn"
+          },
+          {
+            "rank": 3,
+            "src": "Foodaily每日食品",
+            "title": "清洁标签、全麦、低 GI 混战：千亿市场的常温包装面包的未来在哪？ | Foodaily每日食品",
+            "cites": 12,
+            "domain": "foodaily.com"
+          },
+          {
+            "rank": 4,
+            "src": "商业新知",
+            "title": "2026年河北热门糕点企业排名，保定永兴食品有限公司值得选吗_品牌企业-商业新知",
+            "cites": 9,
+            "domain": "shangyexinzhi.com"
+          },
+          {
+            "rank": 5,
+            "src": "抖音精选",
+            "title": "无广！！一口气分享6个平价美味早八面包！！ #学生党#早八面包#面包脑袋#早八党#无广",
+            "cites": 9,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 6,
+            "src": "BOSS直聘",
+            "title": "滨城区本久食品经营部",
+            "cites": 9,
+            "domain": "bzzhipin.com"
+          },
+          {
+            "rank": 7,
+            "src": "抖音精选",
+            "title": "超市吐司热量大公开！🍞。最近在减肥，想找低卡又好吃的吐司，就自己做了个超市常见款的热量测评，整理了一份清单，给姐妹们参考～  美焙辰红豆抹茶吐司面包，每片155大卡，抹茶控可以冲，甜度适中不腻人。 达",
+            "cites": 9,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 8,
+            "src": "抖音精选",
+            "title": "面包 品类 规划 与 品牌 选择 推荐 ， 建议 收藏 保存 ！ # 便利店 # 超市 # 烟 酒店 # 小卖部 # 杂货店 # 面包 # 干货 分享",
+            "cites": 9,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 9,
+            "src": "博客园",
+            "title": "如何选购靠谱的西式面包来样定制？永兴食品支招 - mypinpai - 企业博客",
+            "cites": 8,
+            "domain": "cnblogs.com"
+          },
+          {
+            "rank": 10,
+            "src": "谈职AI",
+            "title": "滨城区本久食品经营部",
+            "cites": 8,
+            "domain": "tanzhi.cn"
+          }
+        ],
+        "september": [
+          {
+            "rank": 1,
+            "src": "中国商报网",
+            "title": "家庭早餐货架2026年该摆哪个面包品牌，先看走空的时段 - 中国商报网",
+            "cites": 29,
+            "domain": "zgswcn.com"
+          },
+          {
+            "rank": 2,
+            "src": "百度百科",
+            "title": "美焙辰_百度百科",
+            "cites": 23,
+            "domain": "baike.baidu.com"
+          },
+          {
+            "rank": 3,
+            "src": "Foodaily每日食品",
+            "title": "清洁标签、全麦、低 GI 混战：千亿市场的常温包装面包的未来在哪？ | Foodaily每日食品",
+            "cites": 18,
+            "domain": "foodaily.com"
+          },
+          {
+            "rank": 4,
+            "src": "抖音精选",
+            "title": "有想要的，量大的可以联系我，短保，中保日期都有，短保日期只有8天，也会不定期处理！",
+            "cites": 15,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 5,
+            "src": "正观新闻",
+            "title": "2026早餐面包观察：五个品牌，五种关于“吃好”的回答 正观新闻",
+            "cites": 15,
+            "domain": "zhengguannews.cn"
+          },
+          {
+            "rank": 6,
+            "src": "博客园",
+            "title": "2026年好吃面包牌子选购指南：健康美味兼顾的主流品牌深度分析 - 产业观察网 - 企业博客",
+            "cites": 15,
+            "domain": "cnblogs.com"
+          },
+          {
+            "rank": 7,
+            "src": "十大品牌网CNPP",
+            "title": "最新面包品牌排行,2026年面包排行前十-十大品牌网CNPP",
+            "cites": 13,
+            "domain": "cnpp.cn"
+          },
+          {
+            "rank": 8,
+            "src": "抖音精选",
+            "title": "今天给大家介绍快乐点短保系列产品，都是畅销各大商超、便利店的人气烘焙产品。#湖南美美食品工厂#烘焙食品#短保产品#快乐点#长沙烘焙食品源头工厂",
+            "cites": 12,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 9,
+            "src": "抖音精选",
+            "title": "专业面包批发配送服务覆盖超市、便利店及工厂店",
+            "cites": 12,
+            "domain": "iesdouyin.com"
+          },
+          {
+            "rank": 10,
+            "src": "百度加盟",
+            "title": "小白心里软加盟_小白心里软怎么加盟_小白心里软加盟费10-15万",
+            "cites": 11,
+            "domain": "jiameng.baidu.com"
+          }
+        ],
+        "before_total": 1186,
+        "september_total": 1975,
+        "before_rate": 98.9,
+        "september_rate": 82.2
+      },
+      "entries_all": [
+        {
+          "name": "适合便利店长期铺货、口味多上新快的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合连锁超市供货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 3
+        },
+        {
+          "name": "适合便利店进货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合小超市进货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1.7
+        },
+        {
+          "name": "独立包装适合批发渠道销售的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 2.3
+        },
+        {
+          "name": "好卖、不容易滞销的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "小包装适合便利店销售的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1.7
+        },
+        {
+          "name": "华北区域好卖的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "铺货广、终端常见的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1.7
+        },
+        {
+          "name": "适合超市和便利店合作的正规大品牌面包供应商推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "供货稳定、配送及时的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合商超便利店供货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合便利店进货的高性价比面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合便利店长期铺货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "独立包装适合便利店销售的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 4
+        },
+        {
+          "name": "保质期短、好控库存的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合商超便利店供货的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合商超便利店采购的高品质短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合商超便利店采购的高性价比短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合商超便利店采购的短保面包品牌排行榜",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合连锁超市供货的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合便利店进货的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合小超市进货的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1.3
+        },
+        {
+          "name": "适合小超市和便利店铺货的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "毛利高的短保面包批发品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合批发渠道销售的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "好卖、不容易滞销的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合街边小卖部铺货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 5
+        },
+        {
+          "name": "适合便利店早餐柜销售的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合社区超市进货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合多门店统配的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 6
+        },
+        {
+          "name": "适合家庭早餐货架的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "适合便利店进货的短保吐司品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合连锁超市供货的短保吐司品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "经典款好卖的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "品控稳定的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1.7
+        },
+        {
+          "name": "全国覆盖正规大厂的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 5
+        },
+        {
+          "name": "适合学校小卖部供货的面包品牌推荐",
+          "mention_rate": 100,
+          "position": 3.3
+        },
+        {
+          "name": "适合商超供货的短保切片面包推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合商超铺货的短保手撕面包推荐",
+          "mention_rate": 100,
+          "position": 1.7
+        },
+        {
+          "name": "适合便利店销售的短保夹心面包推荐",
+          "mention_rate": 100,
+          "position": 2
+        },
+        {
+          "name": "适合批发的短保切片面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "日配短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合高频补货的短保面包品牌推荐",
+          "mention_rate": 100,
+          "position": 1
+        },
+        {
+          "name": "适合小超市进货的便宜实惠型面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 8
+        },
+        {
+          "name": "适合经销商代理合作的短保面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 2
+        },
+        {
+          "name": "适合商超烘焙区上架的面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 4
+        },
+        {
+          "name": "有食品安全认证的面包供应商推荐",
+          "mention_rate": 66.7,
+          "position": 5.7
+        },
+        {
+          "name": "适合学校供货的短保吐司品牌推荐",
+          "mention_rate": 66.7,
+          "position": 2.7
+        },
+        {
+          "name": "适合外卖早餐供应的面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 7.3
+        },
+        {
+          "name": "适合学校食堂采购的面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 3.7
+        },
+        {
+          "name": "适合东北市场铺货的面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 2.3
+        },
+        {
+          "name": "适合县乡小店进货的面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 5.3
+        },
+        {
+          "name": "规模化生产的面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 4
+        },
+        {
+          "name": "新鲜配送的面包品牌推荐",
+          "mention_rate": 66.7,
+          "position": 7
+        },
+        {
+          "name": "毛利高的面包批发品牌推荐",
+          "mention_rate": 33.3,
+          "position": 5.7
+        },
+        {
+          "name": "适合新开社区店首批进货的面包品牌推荐",
+          "mention_rate": 33.3,
+          "position": 4.7
+        },
+        {
+          "name": "进货门槛低的面包品牌推荐",
+          "mention_rate": 33.3,
+          "position": 6.3
+        },
+        {
+          "name": "适合酒店早餐采购的面包品牌推荐",
+          "mention_rate": 33.3,
+          "position": 4
+        },
+        {
+          "name": "适合中心城市直营供货的面包品牌推荐",
+          "mention_rate": 33.3,
+          "position": 7.3
+        }
+      ]
+    }
+  },
+  "monitor": {
+    "positive": 96.8,
+    "negative": 3.2,
+    "positive_keywords": [
+      "口感松软",
+      "性价比高",
+      "价格亲民"
+    ],
+    "negative_keywords": [
+      "品控问题"
+    ]
+  },
+  "platform_entries": {
+    "toc": {
+      "1": [
+        {
+          "entry_name": "面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e125a5c49fa14a7081766a0a2f98f94c.png"
+        },
+        {
+          "entry_name": "面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/240dbdc3023a4cbc963773aee07d8d39.png"
+        },
+        {
+          "entry_name": "实惠好吃的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/85e4a8ee131f4c769d16da62906244cc.png"
+        },
+        {
+          "entry_name": "办公室便携面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1e79ef4a22794d5898cb1c7d60bf6069.png"
+        },
+        {
+          "entry_name": "独立包装便携的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 7.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8b26b83c19d340f38afa53f913669b87.png"
+        },
+        {
+          "entry_name": "短保面包有哪些品牌",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/94c71871c67c40c5b761becb9f4c5db1.png"
+        },
+        {
+          "entry_name": "短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5f22ac941c9a490ba6731ba9ece6ab98.png"
+        },
+        {
+          "entry_name": "品质好的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7f97969f1cbc4e629cdd585db160ad6c.png"
+        },
+        {
+          "entry_name": "性价比高的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a95f98267fb74e479b97979ec70b56e7.png"
+        },
+        {
+          "entry_name": "口碑好的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ea9b73113d074d4990ac1fdea5857be0.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ce178cd51e22484abd7c178c108adeb2.png"
+        },
+        {
+          "entry_name": "实惠好吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c97f390ede4f4c1dbe01bc2cd1f97e94.png"
+        },
+        {
+          "entry_name": "短保面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a4492a4e70a54654a94d436511ed6ace.png"
+        },
+        {
+          "entry_name": "吐司品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e76ef1da1d3043f680ac03546cd759a6.png"
+        },
+        {
+          "entry_name": "吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d0af927fcf204c9790b550b3811cec2f.png"
+        },
+        {
+          "entry_name": "品质好的吐司推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/96a343fa4cad4cd98b6c68b57382e95a.png"
+        },
+        {
+          "entry_name": "日式软面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a1cc973ae7974124bebcb8fae39cd8fd.png"
+        },
+        {
+          "entry_name": "品质好的日式软面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/948e8c9dcf65420b9657501053be911b.png"
+        },
+        {
+          "entry_name": "周末超市买的早餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7cea8bff6310495a9bb521815bf09cc5.png"
+        },
+        {
+          "entry_name": "比面包房实惠的早餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3539d58c7db14bb7bd214e16e53762b0.png"
+        },
+        {
+          "entry_name": "学校小卖部常见面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ae5a68faf24948f18df2acedd5949580.png"
+        },
+        {
+          "entry_name": "郊游携带的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/978ba971e826454c9e1dc3c4c37ebe04.png"
+        },
+        {
+          "entry_name": "好吃不发硬的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f096ce0aa6354dda82a96aa4212bbd46.png"
+        },
+        {
+          "entry_name": "东北超市常买的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ece0db76cf644ccba796c62c7e906cba.png"
+        },
+        {
+          "entry_name": "全国都能买到的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5188d0a1edb74be8b43112c2a73ccdcf.png"
+        },
+        {
+          "entry_name": "便利店能买到的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/e60b8c8ec31d4fc69dfeb07c87755336.png"
+        },
+        {
+          "entry_name": "商超烘焙区常买的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 9.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/e10aa235fb084ba9802faedebf281e28.png"
+        },
+        {
+          "entry_name": "短保切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/fd18733e2f284a119f762491779dad12.png"
+        },
+        {
+          "entry_name": "短保手撕面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/41b98831b4c145059881a1666db481c0.png"
+        },
+        {
+          "entry_name": "短保手撕面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/34bdb5c3cb50410980eed1b2eb2d2e0e.png"
+        },
+        {
+          "entry_name": "夹心面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f52c83d6cb3b4945ac78f246bdcacfb5.png"
+        },
+        {
+          "entry_name": "口感软的切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/9c65c9be17a34141adbeb5be6526c0ba.png"
+        },
+        {
+          "entry_name": "家庭装切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/dd061355a12c4b0981bc9da2e47023d7.png"
+        },
+        {
+          "entry_name": "家庭常备面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/313fe2837f5b42439505a1264d5da5ed.png"
+        },
+        {
+          "entry_name": "全家都适合吃的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/361ed1af216c4f34bb2fbb1de5ffbdf4.png"
+        },
+        {
+          "entry_name": "晚上买第二天吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/693789851f434b15a7275a5ad044d0a9.png"
+        },
+        {
+          "entry_name": "早上买当天吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/721fa64556684a9fa960f1edd9d3210c.png"
+        },
+        {
+          "entry_name": "品质好的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/2a29b0ef33f44b14bf8b96bd08c3d4dd.png"
+        },
+        {
+          "entry_name": "性价比高的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f35684117a0a42138e746ea4aa1eae85.png"
+        },
+        {
+          "entry_name": "口碑好的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c340c7a8943d4bf3955c115c00227403.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ed4483b46e0a44f5a90a50606f691d72.png"
+        },
+        {
+          "entry_name": "学生课间加餐面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/79975e274dbb469188f6c2ca14ea483b.png"
+        },
+        {
+          "entry_name": "家庭早餐囤货面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c8dca4ee754b406dab20e221a7daeb9f.png"
+        },
+        {
+          "entry_name": "超市能买到的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3e5e0096d86646a99ac6038cef313642.png"
+        },
+        {
+          "entry_name": "小包装面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7ac606e1729340cf98f048ae8bf7f438.png"
+        },
+        {
+          "entry_name": "华北家庭常买的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d3340dca951840498567099f1b73f730.png"
+        },
+        {
+          "entry_name": "经典面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8e84de0ef9d444be88fd3f687bfbf86b.png"
+        },
+        {
+          "entry_name": "老牌面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/704ffd51935e48fa84a6df1edf53a292.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e9de329f49cb49538ba60270ec1e6eda.png"
+        },
+        {
+          "entry_name": "口感软糯的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/92fb804099f44c549c2a31ffa04e6d94.png"
+        },
+        {
+          "entry_name": "不用现烤的家庭早餐面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/35ce2e5f9c154fc0921a6048a064cd08.png"
+        },
+        {
+          "entry_name": "孩子上学带的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c9192d4b41a345959c327a6d02e61c6a.png"
+        },
+        {
+          "entry_name": "孩子上学带的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b018e0bc8d2746bba95051838989a161.png"
+        },
+        {
+          "entry_name": "代餐面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e3c4a98d01004d7093c3083e1077bff3.png"
+        },
+        {
+          "entry_name": "多口味可选的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5b6faad9d2894508816a50bed8ee929a.png"
+        },
+        {
+          "entry_name": "口感软糯的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c9550491a08a44b38c41967eab14bfeb.png"
+        },
+        {
+          "entry_name": "无防腐剂的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9db50ab2d61645188ecf62c05672bebb.png"
+        },
+        {
+          "entry_name": "常温保存方便的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0d0a69ade2604985be6ef52c151e3b8b.png"
+        },
+        {
+          "entry_name": "口感软的手撕面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f16c3720dac848f8bf161d10998c33c5.png"
+        },
+        {
+          "entry_name": "适合天天吃的切片面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ca16eaaeb26446ffb9d955984c0d14cf.png"
+        }
+      ],
+      "2": [
+        {
+          "entry_name": "面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e0cb8cae3209491694731af495d7ca8a.png"
+        },
+        {
+          "entry_name": "面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 8.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/247e79e2d1be43adafbea63ba2f79eb3.png"
+        },
+        {
+          "entry_name": "品质好的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 21.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/fcd09a6795a847048635f95ad411fc06.png"
+        },
+        {
+          "entry_name": "性价比高的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/75492aae1be4466fb53639262c3b2e5a.png"
+        },
+        {
+          "entry_name": "口碑好的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d0bfbb78c2ad4308b23c244b9e345bac.png"
+        },
+        {
+          "entry_name": "实惠好吃的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/1b3c2fee5f4940308733b9af3dc257ae.png"
+        },
+        {
+          "entry_name": "学生课间加餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e37f9e4fa7f44270bfba2c3135dc1716.png"
+        },
+        {
+          "entry_name": "家庭早餐囤货面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/07493314502c4e2582ce7b17d45709c4.png"
+        },
+        {
+          "entry_name": "超市能买到的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/41a1a6b139c645c68ee7447f25716455.png"
+        },
+        {
+          "entry_name": "独立包装便携的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/94ce2e6266284a97aabd03773ab0b592.png"
+        },
+        {
+          "entry_name": "小包装面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 9.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/9585532b0c8d489395a215696ac0abd1.png"
+        },
+        {
+          "entry_name": "华北家庭常买的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9082070683ff4083ad9c75e600e9819d.png"
+        },
+        {
+          "entry_name": "短保面包有哪些品牌",
+          "mention_rate": "100.0%",
+          "position": "NO. 7.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a5ffb90843ed40e8a6f6718de464a0b7.png"
+        },
+        {
+          "entry_name": "短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/fa4cf25972d24647a35c11e8baf3b756.png"
+        },
+        {
+          "entry_name": "品质好的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/94a5cac6565640e5bb3fc56464aa470c.png"
+        },
+        {
+          "entry_name": "性价比高的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/83a12d82ecc64ab69c6a1cff68c77ea4.png"
+        },
+        {
+          "entry_name": "口碑好的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/425a948e32b54888b68c269427366b8f.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/063efba9b9fc4dacaac7d378b90db1df.png"
+        },
+        {
+          "entry_name": "实惠好吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/bcac4b6751774fd4acc1e913ce7b0b57.png"
+        },
+        {
+          "entry_name": "短保面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b1ab6183766448f394c48f1fb37acd48.png"
+        },
+        {
+          "entry_name": "经典面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/115fe484a1434ddb9525d7867b33a421.png"
+        },
+        {
+          "entry_name": "老牌面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9bb7a2edb9f941d59f611abad4343af9.png"
+        },
+        {
+          "entry_name": "吐司品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 7.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/b8c15f8a2dc742629eb0be1ec37c8ce3.png"
+        },
+        {
+          "entry_name": "吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9236ce419c0c409d9a40e13397b80749.png"
+        },
+        {
+          "entry_name": "周末超市买的早餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b192e023745546f882f1a093172255b1.png"
+        },
+        {
+          "entry_name": "不用现烤的家庭早餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8d403409d7784b0fafb6ae09c64492d6.png"
+        },
+        {
+          "entry_name": "比面包房实惠的早餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 10.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6857fc08db9d47bb80fc9fc654410d42.png"
+        },
+        {
+          "entry_name": "学校小卖部常见面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8a17222f521c47098e8b55d5ddc1ff28.png"
+        },
+        {
+          "entry_name": "孩子上学带的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/99cf8059f932423c811b68fc1a262a98.png"
+        },
+        {
+          "entry_name": "多口味可选的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/bcb55c6dfa6d46f385ac571424ef0f61.png"
+        },
+        {
+          "entry_name": "口感软糯的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 8.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c2b20093189d4bc5bbb14218b22aa98e.png"
+        },
+        {
+          "entry_name": "好吃不发硬的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/efa0889feb954a98ab6040b58853e588.png"
+        },
+        {
+          "entry_name": "常温保存方便的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 11.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/2bf8debcfaca46aa95377c9f752a452d.png"
+        },
+        {
+          "entry_name": "东北超市常买的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f0830a12b3c743a6b2ad88529d5a7b76.png"
+        },
+        {
+          "entry_name": "全国都能买到的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0b67689d104d43058f985bb65780382a.png"
+        },
+        {
+          "entry_name": "便利店能买到的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ce86865dd3524ee199b97967af133586.png"
+        },
+        {
+          "entry_name": "短保切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5cce3a4e583a44789582899ebad503e7.png"
+        },
+        {
+          "entry_name": "短保手撕面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0652fd92f36b4904ad4e1a8af31242c3.png"
+        },
+        {
+          "entry_name": "夹心面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6f830a72578e4507a0305c10a41e1522.png"
+        },
+        {
+          "entry_name": "口感软的切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/73a3259653d34a71a8044d43a9f5420b.png"
+        },
+        {
+          "entry_name": "家庭装切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8a39f46d419a4468b90d9ab05f4e9d71.png"
+        },
+        {
+          "entry_name": "家庭常备面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/eb5bc1e818d947f399225cc5125b369a.png"
+        },
+        {
+          "entry_name": "全家都适合吃的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0907004165ab45d8ba826b89f86fe4e5.png"
+        },
+        {
+          "entry_name": "晚上买第二天吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/2b99c76aa9c541d4b0b008b452deb7cf.png"
+        },
+        {
+          "entry_name": "早上买当天吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9756d999611a4c2b9b850b4ba496a3bf.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e94eb81357d246f99850fe28f87503e3.png"
+        },
+        {
+          "entry_name": "办公室便携面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/19e717546bf645e4aed84125832048e9.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/fc747dc6e8b7465b8e7c9259bd474f55.png"
+        },
+        {
+          "entry_name": "口感软糯的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/cb868f2ef8d84691ab60bba697b318b8.png"
+        },
+        {
+          "entry_name": "品质好的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e8059edb728a4de09a8e9be7c052b9b3.png"
+        },
+        {
+          "entry_name": "日式软面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/fdd5ada358da4fada566d8eaf9f7c0fd.png"
+        },
+        {
+          "entry_name": "品质好的日式软面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d3d88aa38df041c4aa411bce12dfae04.png"
+        },
+        {
+          "entry_name": "孩子上学带的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6666788f525e49369959b029ed3ff6ac.png"
+        },
+        {
+          "entry_name": "郊游携带的短保面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a5446be5a4684e9ca87a4a8dff538627.png"
+        },
+        {
+          "entry_name": "代餐面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5931fff5e9724e4688f9bc5a3c740da8.png"
+        },
+        {
+          "entry_name": "无防腐剂的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/40183d35856549109c069db58edf41dc.png"
+        },
+        {
+          "entry_name": "商超烘焙区常买的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/24299cab65b74ff3a0716239d8cb88e9.png"
+        },
+        {
+          "entry_name": "短保手撕面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/66e1a3f20f9d4e63b1ff0fc5464b0b4f.png"
+        },
+        {
+          "entry_name": "口感软的手撕面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1cb18c93eda14d928d7328c29a488866.png"
+        },
+        {
+          "entry_name": "适合天天吃的切片面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e501623330b24157bba75c0b455c413d.png"
+        }
+      ],
+      "5": [
+        {
+          "entry_name": "面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/68b4c20e96844ccebffd7ff1707ef7ff.png"
+        },
+        {
+          "entry_name": "面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 6.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6f4ca6a31d7443089aa597b995d4e4e4.png"
+        },
+        {
+          "entry_name": "品质好的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 17.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a17fc96e63764ee28cf0388661eca5c4.png"
+        },
+        {
+          "entry_name": "性价比高的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 13.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5e31b2eadb52442ca07d0eb54db22ed4.png"
+        },
+        {
+          "entry_name": "口碑好的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 16.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/bb68f47f2d274c599f3c3240bc10ea6b.png"
+        },
+        {
+          "entry_name": "实惠好吃的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 13.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/2ba9f78723c84b11a649ef05421cb3fd.png"
+        },
+        {
+          "entry_name": "家庭早餐囤货面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 6.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/518bc92b102b430db0370c5119e90f96.png"
+        },
+        {
+          "entry_name": "超市能买到的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 6.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6702f23c0afc494ea47aa55a631f75bd.png"
+        },
+        {
+          "entry_name": "独立包装便携的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 10.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9a351c3f05f94904adab2da7b3a86bf1.png"
+        },
+        {
+          "entry_name": "小包装面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 12.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e975101a13194ee7914598bee8e24ba4.png"
+        },
+        {
+          "entry_name": "华北家庭常买的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b38da52b68c14bc19e13abf415637f1b.png"
+        },
+        {
+          "entry_name": "短保面包有哪些品牌",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6d0620e2341e4bdb9dbbde595d98e6aa.png"
+        },
+        {
+          "entry_name": "短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/86201818030c43e2bd9fce48d48edcb5.png"
+        },
+        {
+          "entry_name": "品质好的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1e84fc5ae53642fbbbf431de9e943b06.png"
+        },
+        {
+          "entry_name": "性价比高的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7804d1e412ae4dd2910dcdb3d6fd43bc.png"
+        },
+        {
+          "entry_name": "口碑好的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c55e8d975d5949e28729204588b323e0.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 6.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a153c8619adc4e2897ee62ac1f4faa16.png"
+        },
+        {
+          "entry_name": "实惠好吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b75d47fca5134e5a881794a08380d43a.png"
+        },
+        {
+          "entry_name": "短保面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8f258e9f51f1490f8f728cca82b2ddc6.png"
+        },
+        {
+          "entry_name": "经典面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b6b4a209b1be4d96b30b44d3ffce24fc.png"
+        },
+        {
+          "entry_name": "老牌面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 16.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/91bd9352da0d463098e66471b72ee582.png"
+        },
+        {
+          "entry_name": "吐司品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/aca92edcd4b84e4e8ae3307f696a9d1a.png"
+        },
+        {
+          "entry_name": "吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/05e62f3d0524430e8672154d82e8d13b.png"
+        },
+        {
+          "entry_name": "品质好的吐司推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 6.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9caed871b97c41418d00d6ddf51165c2.png"
+        },
+        {
+          "entry_name": "周末超市买的早餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/50093e6964a74579875609108baaffd9.png"
+        },
+        {
+          "entry_name": "不用现烤的家庭早餐面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7d4a54eefd3742c98e41f858780dbe51.png"
+        },
+        {
+          "entry_name": "学校小卖部常见面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ff26bd8f844747b48f091414f3c4da06.png"
+        },
+        {
+          "entry_name": "孩子上学带的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7d582b22f6c24647aadb356d8ea6be39.png"
+        },
+        {
+          "entry_name": "郊游携带的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/949e0c9cb71847f5a02d4b34ede1a4c4.png"
+        },
+        {
+          "entry_name": "多口味可选的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/de7b57d81e9f4bb1b35f058c46ed6e7c.png"
+        },
+        {
+          "entry_name": "口感软糯的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/99562a9e8f0947b5bcce1f3a1730bef2.png"
+        },
+        {
+          "entry_name": "好吃不发硬的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 11.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/568d72cd4aa448b28b95f359415ce1dc.png"
+        },
+        {
+          "entry_name": "无防腐剂的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 6.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/abe1b957014c4c0ab4cc68e0d8079c35.png"
+        },
+        {
+          "entry_name": "东北超市常买的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/20394ad8c0364823bab80ce493e16a22.png"
+        },
+        {
+          "entry_name": "全国都能买到的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 7.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/bdfe7d1930524580a56e08455d6fe4ad.png"
+        },
+        {
+          "entry_name": "便利店能买到的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7fcf3059757d4e2481ef3619c4c7ffe0.png"
+        },
+        {
+          "entry_name": "商超烘焙区常买的面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/558f1a7d8fbc4fd7a6dcced6aba8c50c.png"
+        },
+        {
+          "entry_name": "短保切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d8159bcdbf8842e1986b999c8859e8a2.png"
+        },
+        {
+          "entry_name": "短保手撕面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f91e27d7dfbf434e93671c3e6631c5f3.png"
+        },
+        {
+          "entry_name": "短保手撕面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e18b6641a4ab4ada96fa9def963f9ab1.png"
+        },
+        {
+          "entry_name": "夹心面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 9.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/34b505abd5044bb6a7509ec80cf978a9.png"
+        },
+        {
+          "entry_name": "口感软的切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/fcb2abec8a5a4dc0a7c6038245bb2593.png"
+        },
+        {
+          "entry_name": "家庭装切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a71112e1cbbf42b2a9acfc9108899d4c.png"
+        },
+        {
+          "entry_name": "家庭常备面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/20a24413d46a4f60919ba0fd55edbd5d.png"
+        },
+        {
+          "entry_name": "适合天天吃的切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e762542d41e743d6bdabab4f43e84339.png"
+        },
+        {
+          "entry_name": "全家都适合吃的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/59723013963644c5a1008b9b03395f62.png"
+        },
+        {
+          "entry_name": "晚上买第二天吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3112dbed07354ecb87ddcf740b71d73d.png"
+        },
+        {
+          "entry_name": "早上买当天吃的短保面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 6.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5f77dfc3996d42d38cca09c4e0599fe3.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/184858cab6414a14a3607e79c8c718b3.png"
+        },
+        {
+          "entry_name": "学生课间加餐面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1deccee157b74bc1b014d0e605ee629a.png"
+        },
+        {
+          "entry_name": "办公室便携面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/31ab0274c77a425e898a88749624fbb8.png"
+        },
+        {
+          "entry_name": "适合当上班族早餐的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0cc824d8aea34de4951e2e368dde5ddc.png"
+        },
+        {
+          "entry_name": "口感软糯的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c721a3a556ad473fbd6d85d5b965efbd.png"
+        },
+        {
+          "entry_name": "日式软面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0bc26f779ef44fa095facfcd89f74b4b.png"
+        },
+        {
+          "entry_name": "品质好的日式软面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c1d65132ec9347cd99782c4b75f57b2b.png"
+        },
+        {
+          "entry_name": "比面包房实惠的早餐面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3016c8d6be9b4ce7bce74238a6cb1523.png"
+        },
+        {
+          "entry_name": "孩子上学带的吐司推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/bb9da0f362154b84b0875475af198ea5.png"
+        },
+        {
+          "entry_name": "代餐面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/602ef5029b5d43bbbd42994c890b6c36.png"
+        },
+        {
+          "entry_name": "常温保存方便的面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/daa116c1cb80491c9d73e123e8d27e29.png"
+        },
+        {
+          "entry_name": "口感软的手撕面包推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/caffa079155e4dc2ad509774da33f301.png"
+        }
+      ]
+    },
+    "tob": {
+      "1": [
+        {
+          "entry_name": "适合便利店长期铺货、口味多上新快的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d836812cfe824a2daeb6c0aab6307f0c.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 7.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c4a550c5d4ff4acbb09e4f12d785e256.png"
+        },
+        {
+          "entry_name": "适合便利店进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e36ff3b64c924e08baf5d8006c334934.png"
+        },
+        {
+          "entry_name": "适合小超市进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f5c17354b5a4464182fe74961957ab53.png"
+        },
+        {
+          "entry_name": "独立包装适合批发渠道销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6544a04c414d48d3bdd85f57eeab319b.png"
+        },
+        {
+          "entry_name": "好卖、不容易滞销的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c767494d23cc480995d8fbae5eba87b7.png"
+        },
+        {
+          "entry_name": "小包装适合便利店销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b219831767da4042bc31747dce355c00.png"
+        },
+        {
+          "entry_name": "华北区域好卖的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/4004755ae83847bba7d418a594916655.png"
+        },
+        {
+          "entry_name": "铺货广、终端常见的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/14dc40b054904ff3b14b9732d82f7774.png"
+        },
+        {
+          "entry_name": "适合超市和便利店合作的正规大品牌面包供应商推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d5b852895b7f431592ea04ba8f4df741.png"
+        },
+        {
+          "entry_name": "供货稳定、配送及时的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6dd7bab013bd471da060ceb1202b7fb5.png"
+        },
+        {
+          "entry_name": "适合商超便利店供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ef0c83d61bb74798a2bf86253b273d90.png"
+        },
+        {
+          "entry_name": "适合便利店进货的高性价比面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b6411d7376d0422697c8f129be052940.png"
+        },
+        {
+          "entry_name": "适合便利店长期铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6c0fafaab6a7448990f744a5db18a2b4.png"
+        },
+        {
+          "entry_name": "独立包装适合便利店销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/16797f081b58457286be650ee1a6e3d6.png"
+        },
+        {
+          "entry_name": "保质期短、好控库存的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/079d8c7ac25140c6adbf768189760f50.png"
+        },
+        {
+          "entry_name": "适合商超便利店供货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e56708af88d3403b8ed10c3f2fdc06e0.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的高品质短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/735aa41386ab479c90186d7745497fa4.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的高性价比短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3e48693e410a4be7919581f6699857a5.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的短保面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/bd6038277cb047ec905bb477065140c4.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/09ad7a1ea3ca4e2bb9d6122f878f1aa7.png"
+        },
+        {
+          "entry_name": "适合便利店进货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/34ea6b3eae3e4d80bb4dc3f6b1271230.png"
+        },
+        {
+          "entry_name": "适合小超市进货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ee40f117148f4bf5b885da589d4c4613.png"
+        },
+        {
+          "entry_name": "适合小超市和便利店铺货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/11ddc6ba7ece4405bfd2293070fb9ac8.png"
+        },
+        {
+          "entry_name": "毛利高的短保面包批发品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/583dd5c1d59544ea91746eb9c7d30117.png"
+        },
+        {
+          "entry_name": "适合批发渠道销售的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ad4261ceff24401fbfd1d6609eb255cb.png"
+        },
+        {
+          "entry_name": "好卖、不容易滞销的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f84c20fa45c343bf81b21dbc11a1eae0.png"
+        },
+        {
+          "entry_name": "适合街边小卖部铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3c21d27f830f40c68b53e1da88bbe72e.png"
+        },
+        {
+          "entry_name": "适合便利店早餐柜销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1c27ecb588b0451d8419407270318574.png"
+        },
+        {
+          "entry_name": "适合社区超市进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6a530490b10444149c29359da3508937.png"
+        },
+        {
+          "entry_name": "适合多门店统配的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/793909cb5fa34ad69a6459a829cf5636.png"
+        },
+        {
+          "entry_name": "适合家庭早餐货架的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/eed122f1868f4400a59edb812ad4fa56.png"
+        },
+        {
+          "entry_name": "适合便利店进货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8ddd0eea5a1e4a91a412c0b2f1c42cce.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a54fdba268f443a784606f7317a76b72.png"
+        },
+        {
+          "entry_name": "经典款好卖的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/770ca02900c1474ea48de8a0350523db.png"
+        },
+        {
+          "entry_name": "品控稳定的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/cd0d9e68924049e6a6447abada301ebb.png"
+        },
+        {
+          "entry_name": "全国覆盖正规大厂的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c46f097f987c443583341aa31a4b3751.png"
+        },
+        {
+          "entry_name": "适合学校小卖部供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/4f8dfd03c04b4ad9b269f513a5249445.png"
+        },
+        {
+          "entry_name": "适合外卖早餐供应的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/63c46aa3279f4ecf8a62c28e4b4e07f2.png"
+        },
+        {
+          "entry_name": "适合商超供货的短保切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/45b2b58431c14361a19293273c5aa218.png"
+        },
+        {
+          "entry_name": "适合商超铺货的短保手撕面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1ca072e908c4451aa33a28af60302a3c.png"
+        },
+        {
+          "entry_name": "适合便利店销售的短保夹心面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9733bed6d6214171850caa7d80078840.png"
+        },
+        {
+          "entry_name": "适合批发的短保切片面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/23c71d5a2d1f435eba67e9856f5e1e46.png"
+        },
+        {
+          "entry_name": "日配短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3b98e56185824d3992203abc5ec5db80.png"
+        },
+        {
+          "entry_name": "适合高频补货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/18d3170cb9ea466fa15e8e964a4935bf.png"
+        },
+        {
+          "entry_name": "毛利高的面包批发品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9ab54021b21a427085e03cf645f0fa61.png"
+        },
+        {
+          "entry_name": "适合小超市进货的便宜实惠型面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/fcce040bc3a549c8be1384c0bf4c6db9.png"
+        },
+        {
+          "entry_name": "适合经销商代理合作的短保面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/07b48a028ff04017b8691fb36c89d3f1.png"
+        },
+        {
+          "entry_name": "适合新开社区店首批进货的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/aa1c9538eafe4d0ea4f5c6b1a5882614.png"
+        },
+        {
+          "entry_name": "适合商超烘焙区上架的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/041a525da47644fe82ba65ca6ebbdaf9.png"
+        },
+        {
+          "entry_name": "进货门槛低的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b67d112247cf4b088e445b9b8922ff44.png"
+        },
+        {
+          "entry_name": "有食品安全认证的面包供应商推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9b83a752f5af406c9a8a240b37128aff.png"
+        },
+        {
+          "entry_name": "适合学校供货的短保吐司品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5e4b8ce3dfb6419fb3f990071012683a.png"
+        },
+        {
+          "entry_name": "适合学校食堂采购的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9a712c963f7543ba81643570ece5a2e6.png"
+        },
+        {
+          "entry_name": "适合酒店早餐采购的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/cba0492d890042818230440c8e367ca1.png"
+        },
+        {
+          "entry_name": "适合东北市场铺货的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/984b4acda3754ef3b088ca5c543694a5.png"
+        },
+        {
+          "entry_name": "适合中心城市直营供货的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/48c87547345d4760acfb1ec8d62e24fb.png"
+        },
+        {
+          "entry_name": "适合县乡小店进货的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b80021528d77410a8c90110db226d8c2.png"
+        },
+        {
+          "entry_name": "规模化生产的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/972929a0b45b47ef8070b1e1039eb8a6.png"
+        },
+        {
+          "entry_name": "新鲜配送的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7f70243e477646f8aab0a5e80c3f09dc.png"
+        }
+      ],
+      "2": [
+        {
+          "entry_name": "适合便利店长期铺货、口味多上新快的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/06ffa6ea2a694bf5a05c0c1678810168.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0bba0c1ed3a24d9e9953df3069d8e4bd.png"
+        },
+        {
+          "entry_name": "适合便利店进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b3651b5991374ba498184fcce96f8fe7.png"
+        },
+        {
+          "entry_name": "适合小超市进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/521a7b3797d54d5a8316795f314669be.png"
+        },
+        {
+          "entry_name": "独立包装适合批发渠道销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ea3729cccab44449adcb73b167dc2e55.png"
+        },
+        {
+          "entry_name": "好卖、不容易滞销的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c8e50ea67c6e4186ac4cb356c9393821.png"
+        },
+        {
+          "entry_name": "小包装适合便利店销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/094b361bcb404554bd245cea96d4443f.png"
+        },
+        {
+          "entry_name": "华北区域好卖的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/bf5fe73f51064c28843973e2d5ed7f3b.png"
+        },
+        {
+          "entry_name": "铺货广、终端常见的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9826c2bd40bf4d0cba8f61925272ad43.png"
+        },
+        {
+          "entry_name": "适合超市和便利店合作的正规大品牌面包供应商推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f00bf460bee3476d937d447f0675d174.png"
+        },
+        {
+          "entry_name": "供货稳定、配送及时的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7d403aa522964543a2bf559217bd3f28.png"
+        },
+        {
+          "entry_name": "适合小超市进货的便宜实惠型面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 19.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0e13a2ce8d764ff5bdca929cd35ef366.png"
+        },
+        {
+          "entry_name": "适合商超便利店供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a786ba5e984e4da6b360fa3ffd049244.png"
+        },
+        {
+          "entry_name": "适合便利店进货的高性价比面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/93f3200c88f644fc89988b12f3bbad63.png"
+        },
+        {
+          "entry_name": "适合便利店长期铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/15c8b356b41c46c0b6a45bad481766ed.png"
+        },
+        {
+          "entry_name": "独立包装适合便利店销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b546d181aad849f4b34728a1952923fa.png"
+        },
+        {
+          "entry_name": "保质期短、好控库存的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5b985cce8d4d42e0b747117a821f2b24.png"
+        },
+        {
+          "entry_name": "适合经销商代理合作的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/14a06976c203468fb43b4789964cf24c.png"
+        },
+        {
+          "entry_name": "适合商超便利店供货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/efc8c0c280a9490eb9a490fa9fc22a12.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的高品质短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8011e0fb06f44ba69c2222566b1b12e1.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的高性价比短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ee763db7aa1241af9c998e771e3d0feb.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的短保面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/289addcd64f94462ba8aaef34b8affac.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c6482e69c8314823aecdf72bf002aa10.png"
+        },
+        {
+          "entry_name": "适合便利店进货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/be1f92f8723e47098ee07034721f22b3.png"
+        },
+        {
+          "entry_name": "适合小超市进货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c4f56de306fb4b68a44077c2fac91f05.png"
+        },
+        {
+          "entry_name": "适合小超市和便利店铺货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/87cf3f7fa04e4b08a344a7eb26daa3b4.png"
+        },
+        {
+          "entry_name": "毛利高的短保面包批发品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e4da17426b444ad8a7b4e99225471dcf.png"
+        },
+        {
+          "entry_name": "适合批发渠道销售的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9d8a4545eb0d4f24af349192a857d6d3.png"
+        },
+        {
+          "entry_name": "好卖、不容易滞销的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/997ae8644d8f478f8e1eb1250693d17e.png"
+        },
+        {
+          "entry_name": "适合街边小卖部铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 13.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3553812a74a3409186023f49d7db45bd.png"
+        },
+        {
+          "entry_name": "适合便利店早餐柜销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d8437d34490747b9af5a677cdb8e2520.png"
+        },
+        {
+          "entry_name": "适合社区超市进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/927c42e00cb94e14bfb2b47d8a9414e0.png"
+        },
+        {
+          "entry_name": "适合多门店统配的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3ee1e210f0e84efda477a7a1aaa3a8a6.png"
+        },
+        {
+          "entry_name": "适合家庭早餐货架的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/2258bec878ce45a2bfad2b0827136aec.png"
+        },
+        {
+          "entry_name": "适合商超烘焙区上架的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/de9fbb6840fe484e94724fdac41367ea.png"
+        },
+        {
+          "entry_name": "适合便利店进货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3bce3607628b420183b75a9876f00828.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/40bc14e196c44a3ab10623e5d153aa93.png"
+        },
+        {
+          "entry_name": "经典款好卖的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/191e8e2402ae428086dccf0788f36f9b.png"
+        },
+        {
+          "entry_name": "进货门槛低的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/75e1e463baf24a4ea34650484eddbb7f.png"
+        },
+        {
+          "entry_name": "品控稳定的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/df7051cedd1846e5b00c3033e166d8e0.png"
+        },
+        {
+          "entry_name": "全国覆盖正规大厂的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8a6e2d947a9e43389b764d0b984c9afb.png"
+        },
+        {
+          "entry_name": "有食品安全认证的面包供应商推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/df0d5dad5e5b4549a40b3e050fbb7f96.png"
+        },
+        {
+          "entry_name": "适合学校小卖部供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/948a5117071042448a92fcbab656d96d.png"
+        },
+        {
+          "entry_name": "适合学校供货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e9fec558cf1942638f222d84484f011a.png"
+        },
+        {
+          "entry_name": "适合学校食堂采购的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0765989700264b25b785e1026496a469.png"
+        },
+        {
+          "entry_name": "适合酒店早餐采购的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 7.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1ac0c9bd68864070a53ab5dacc03a24e.png"
+        },
+        {
+          "entry_name": "适合东北市场铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ed4f4b43c4b64cf2b7863e359557ce98.png"
+        },
+        {
+          "entry_name": "适合中心城市直营供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5316c340476040449533543af481b7e2.png"
+        },
+        {
+          "entry_name": "适合县乡小店进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/17196a3d09044812b797504863797423.png"
+        },
+        {
+          "entry_name": "适合商超供货的短保切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/07a67b83080c41018b40e42accd45e78.png"
+        },
+        {
+          "entry_name": "适合商超铺货的短保手撕面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/fd214becf86f4472b90236c961fb0d2b.png"
+        },
+        {
+          "entry_name": "适合便利店销售的短保夹心面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/979027e3cd3f4b80845ab235b5c39f42.png"
+        },
+        {
+          "entry_name": "适合批发的短保切片面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6a243cf8e3334e3ab54a33a888b0d79d.png"
+        },
+        {
+          "entry_name": "日配短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1a9ace5196284a178af318bc4dffb7a6.png"
+        },
+        {
+          "entry_name": "规模化生产的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/c76209b6969f42fd8bf29e258cb9d1f5.png"
+        },
+        {
+          "entry_name": "适合高频补货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/4b2af668520e4a3497c0d07deddda424.png"
+        },
+        {
+          "entry_name": "新鲜配送的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 12.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/618cde89c0824c9490613e37ae8c3809.png"
+        },
+        {
+          "entry_name": "毛利高的面包批发品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9af93fe5a2704fd3bfab19ecc5a7716c.png"
+        },
+        {
+          "entry_name": "适合新开社区店首批进货的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/51dd2ff51361430eb26519b1ce60b22f.png"
+        },
+        {
+          "entry_name": "适合外卖早餐供应的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e9aa4247a44241d5afc9a844d157a234.png"
+        }
+      ],
+      "5": [
+        {
+          "entry_name": "适合便利店长期铺货、口味多上新快的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b0bd32eb02f3480ea138530f74d3ed1f.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/8b60a41f776f4920a50964ebdc53c402.png"
+        },
+        {
+          "entry_name": "毛利高的面包批发品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/6abf55cd12f24993a621460d1003fe54.png"
+        },
+        {
+          "entry_name": "适合便利店进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/83c3f06c43e14786b8290c97cbc829fe.png"
+        },
+        {
+          "entry_name": "适合小超市进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/4265c2d7e2e74a90809b14736d9dcd36.png"
+        },
+        {
+          "entry_name": "独立包装适合批发渠道销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 5.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/ff7b17d348464b4186721c77ff943e23.png"
+        },
+        {
+          "entry_name": "好卖、不容易滞销的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/13096c34582745aba83b28bb12740707.png"
+        },
+        {
+          "entry_name": "小包装适合便利店销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/787234494ba74c12a45cfc5f2a3c83e7.png"
+        },
+        {
+          "entry_name": "华北区域好卖的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e730ca277eeb4ae0a8afcd0a97a51e6b.png"
+        },
+        {
+          "entry_name": "铺货广、终端常见的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/24c5fddfbe314d74b8018dee6cc23bca.png"
+        },
+        {
+          "entry_name": "适合超市和便利店合作的正规大品牌面包供应商推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/03083a463f0f4004a833187781c0a6d2.png"
+        },
+        {
+          "entry_name": "供货稳定、配送及时的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/7e036cf1367c4b67be9150c4337a8f2f.png"
+        },
+        {
+          "entry_name": "适合小超市进货的便宜实惠型面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/e9ef65c348d94811bfe8395bb2b4980e.png"
+        },
+        {
+          "entry_name": "适合商超便利店供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6275811af6894245b2bc67981094acab.png"
+        },
+        {
+          "entry_name": "适合便利店进货的高性价比面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b7ecd4cf4eba44329fa3614a1bcf9fd1.png"
+        },
+        {
+          "entry_name": "适合便利店长期铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/13f2399dff7742379e174702b98cb5d8.png"
+        },
+        {
+          "entry_name": "独立包装适合便利店销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 10.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1a128ec9a9004561aa7fb567c6bd0575.png"
+        },
+        {
+          "entry_name": "保质期短、好控库存的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/2341399b463d47e6b0c00b3b3197b25d.png"
+        },
+        {
+          "entry_name": "适合经销商代理合作的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/3c3eb673d5a2477784747d5ae90f6900.png"
+        },
+        {
+          "entry_name": "适合商超便利店供货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/79b35bb772fe476cb112e14069e31e20.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的高品质短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ac74ae84413e48449e4f253963dec71d.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的高性价比短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/06c1f0da91434898bd8296b5906da4e4.png"
+        },
+        {
+          "entry_name": "适合商超便利店采购的短保面包品牌排行榜",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/6620c6c85a774b6ea3e9b8006ac788aa.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/d78d3999607a48a19f731d6abc304939.png"
+        },
+        {
+          "entry_name": "适合便利店进货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/78ada17776f44422a59fde5191a5b839.png"
+        },
+        {
+          "entry_name": "适合小超市进货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f3a7aa6675f942449deb1b25cbf12c55.png"
+        },
+        {
+          "entry_name": "适合小超市和便利店铺货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/abd772361c6140eaaacd8b689ee337b5.png"
+        },
+        {
+          "entry_name": "毛利高的短保面包批发品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5c5e9995637a49beb9b88e039c3a1d1e.png"
+        },
+        {
+          "entry_name": "适合批发渠道销售的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0218849f2ef0484e8aaf314229f0dc1b.png"
+        },
+        {
+          "entry_name": "好卖、不容易滞销的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/858251007fe14639a19bbefbbbf25fb8.png"
+        },
+        {
+          "entry_name": "适合街边小卖部铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ca3c72c3574643248f3d1485f76a6292.png"
+        },
+        {
+          "entry_name": "适合便利店早餐柜销售的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/de45505a56c5492ba83e90442687c7ee.png"
+        },
+        {
+          "entry_name": "适合社区超市进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/950ea43285274857883da460d6dc05d4.png"
+        },
+        {
+          "entry_name": "适合多门店统配的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 12.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/300834b616b1427eb44bba5a8f1cc1a8.png"
+        },
+        {
+          "entry_name": "适合家庭早餐货架的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/ec3cb647b0a34d5d891e510b3a82b422.png"
+        },
+        {
+          "entry_name": "适合新开社区店首批进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/a43f64b776244a0c928ca9b717db14e9.png"
+        },
+        {
+          "entry_name": "适合商超烘焙区上架的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/904dbbe62d0e4c36856600afcf035b19.png"
+        },
+        {
+          "entry_name": "适合便利店进货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/94d21aa606cf4e588980cb79dbdc8c6a.png"
+        },
+        {
+          "entry_name": "适合连锁超市供货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/78730efc1a814299a7510a883e9414ce.png"
+        },
+        {
+          "entry_name": "经典款好卖的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/236a5f2d95cc4b62839084ae957b557e.png"
+        },
+        {
+          "entry_name": "品控稳定的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/f333cb44009446308fd7dbb64636867f.png"
+        },
+        {
+          "entry_name": "全国覆盖正规大厂的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 13.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/d1b261cf627f4966955994a36be6bb5c.png"
+        },
+        {
+          "entry_name": "有食品安全认证的面包供应商推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 3.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/0b77d555a6fe48cb9d6aea7ced260209.png"
+        },
+        {
+          "entry_name": "适合学校小卖部供货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/60b75424fd0840a2aceea8cca981546b.png"
+        },
+        {
+          "entry_name": "适合学校供货的短保吐司品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/96b301ed0eb24a04ae50b63002517c8f.png"
+        },
+        {
+          "entry_name": "适合外卖早餐供应的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 14.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/bb023c7769e44923a06bc9b90d270f91.png"
+        },
+        {
+          "entry_name": "适合学校食堂采购的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/5317562be59c458c861e75526018e714.png"
+        },
+        {
+          "entry_name": "适合东北市场铺货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/421f96aee1144c958d959e6e24f047e0.png"
+        },
+        {
+          "entry_name": "适合县乡小店进货的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 10.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1c1b6dc3997c4af7816809e31461115b.png"
+        },
+        {
+          "entry_name": "适合商超供货的短保切片面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9a284c1d1c1c4f47895dc17e0edfb8fe.png"
+        },
+        {
+          "entry_name": "适合商超铺货的短保手撕面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 2.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/054c9bb1f14c44e0b029b285b1d555f4.png"
+        },
+        {
+          "entry_name": "适合便利店销售的短保夹心面包推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 4.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260919/f2758094324f42f9b29dd130dd48395f.png"
+        },
+        {
+          "entry_name": "适合批发的短保切片面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/4b716bdf50764bcabea2a3d19d756aa5.png"
+        },
+        {
+          "entry_name": "日配短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/dfad2980cff74e48b1bbbb21cb3a7558.png"
+        },
+        {
+          "entry_name": "规模化生产的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/1a9986b383c9437a9a40404d9e93d966.png"
+        },
+        {
+          "entry_name": "适合高频补货的短保面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/dd59c212c3c8442ca1943e53bcfa15ea.png"
+        },
+        {
+          "entry_name": "新鲜配送的面包品牌推荐",
+          "mention_rate": "100.0%",
+          "position": "NO. 1.0",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/9e3aab0628964f8299dc38d2ac42836d.png"
+        },
+        {
+          "entry_name": "进货门槛低的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/b4be3fe9594b42739264d775d7b7600a.png"
+        },
+        {
+          "entry_name": "适合酒店早餐采购的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/52afef9298044fff93fb6496b2faf5a6.png"
+        },
+        {
+          "entry_name": "适合中心城市直营供货的面包品牌推荐",
+          "mention_rate": "0.0%",
+          "position": "-",
+          "last_conversation_time": "2026/9/22",
+          "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260920/2761d0e7c7b646f79f9beb15f1bc4645.png"
+        }
+      ]
+    }
+  }
+}

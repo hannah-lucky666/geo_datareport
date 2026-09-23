@@ -1,0 +1,12 @@
+---
+description: 本工作区只做桃李面包报告，禁止和其他报告分支、目录串改
+alwaysApply: true
+---
+
+# 桃李面包报告隔离
+
+- 本目录只对应分支 `report_taolimianbao`，只跟踪 `origin/report_taolimianbao`。
+- 禁止 checkout / merge / rebase / cherry-pick 其他报告分支：`Report_gujinggong`、`Report_Jinjiu`、`Report_Musi`、`report_yuanyue` 等。
+- 禁止把其他报告目录里的页面、文案、PPT、数据 JSON 拷进本目录。
+- 其他报告只在各自目录改：`../report_gujinggong`、`../report_jinjiu`、`../report_musi`、`../report_yuanyue`。
+- 古井贡未提交改动属于 `../report_gujinggong`，不要在本目录恢复或提交那些文件。
