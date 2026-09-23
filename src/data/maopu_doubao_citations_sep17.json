@@ -1,0 +1,116 @@
+{
+  "platform_stats": [
+    {
+      "platform_name": "抖音精选",
+      "domain": "iesdouyin.com",
+      "logo_url": "https://app.geoindexfuture.com/site-icons/iesdouyin.com-jingxuan.png",
+      "citation_count": 221,
+      "share": 57.6,
+      "platform_name_zh": "抖音精选"
+    },
+    {
+      "platform_name": "光明网",
+      "domain": "gmw.cn",
+      "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/m_gmw_cn.ico",
+      "citation_count": 16,
+      "share": 4.2,
+      "platform_name_zh": "光明网"
+    },
+    {
+      "platform_name": "今日头条",
+      "domain": "toutiao.com",
+      "logo_url": "https://app.geoindexfuture.com/site-icons/toutiao.com.ico",
+      "citation_count": 16,
+      "share": 4.2,
+      "platform_name_zh": "今日头条"
+    },
+    {
+      "platform_name": "新浪",
+      "domain": "sina.com.cn",
+      "logo_url": "https://app.geoindexfuture.com/site-icons/sina.com.cn.ico",
+      "citation_count": 12,
+      "share": 3.1,
+      "platform_name_zh": "新浪"
+    },
+    {
+      "platform_name": "广州中医药大学第一附属医院",
+      "domain": "gztcm.com.cn",
+      "logo_url": "https://app.geoindexfuture.com/site-icons/gztcm.com.cn.png",
+      "citation_count": 8,
+      "share": 2.1,
+      "platform_name_zh": "广州中医药大学第一附属医院"
+    }
+  ],
+  "articles": [
+    {
+      "title": "养生酒测评来啦！熬夜整理，制作不易。看看有没有你在喝的。#谷益堂酒#养生酒测评#排行榜#男士养生#种草",
+      "platform_name": "抖音精选",
+      "domain": "iesdouyin.com",
+      "total_citations": 14,
+      "has_target_product": false
+    },
+    {
+      "title": "公认好喝的养生酒实测分享#种草#图文#谷益堂酒#测评",
+      "platform_name": "抖音精选",
+      "domain": "iesdouyin.com",
+      "total_citations": 12,
+      "has_target_product": false
+    },
+    {
+      "title": "梅雨季的温润选择｜9款中式养生酒分享。梅雨季阴雨绵绵的，总想来点温热的东西暖暖身子。比起冰镇果酒，中式养生酒更像给成年人准备的“液态小保养”✨  整理了9款适合自己泡的养生酒方子，食材都是常见的，做法",
+      "platform_name": "抖音精选",
+      "domain": "iesdouyin.com",
+      "total_citations": 11,
+      "has_target_product": false
+    },
+    {
+      "title": "2026热门养生酒梯度，看看你喝的养生酒在哪班#养生酒评测 #梯度排行 #久公子黄精酒 #男士养生",
+      "platform_name": "抖音精选",
+      "domain": "iesdouyin.com",
+      "total_citations": 9,
+      "has_target_product": false
+    },
+    {
+      "title": "小白别再乱买热门养生酒了！#谷益堂酒#养生酒#生活小常识#约会#真实分享计划",
+      "platform_name": "抖音精选",
+      "domain": "iesdouyin.com",
+      "total_citations": 9,
+      "has_target_product": false
+    },
+    {
+      "title": "中医常识_广州中医药大学第一附属医院",
+      "platform_name": "广州中医药大学第一附属医院",
+      "domain": "gztcm.com.cn",
+      "total_citations": 8,
+      "has_target_product": false
+    },
+    {
+      "title": "自泡药酒禁忌多",
+      "platform_name": "生命时报",
+      "domain": "lifetimes.cn",
+      "total_citations": 8,
+      "has_target_product": false
+    },
+    {
+      "title": "中医提醒:药酒养生不是“人人适合”，对症饮用才健康，附正确搭配方案",
+      "platform_name": "光明网",
+      "domain": "gmw.cn",
+      "total_citations": 6,
+      "has_target_product": false
+    },
+    {
+      "title": "四款质感低度白酒推荐：商务宴请与品质之选",
+      "platform_name": "抖音精选",
+      "domain": "iesdouyin.com",
+      "total_citations": 5,
+      "has_target_product": false
+    },
+    {
+      "title": "几口下肚，男子当场昏迷!医生提醒",
+      "platform_name": "光明网",
+      "domain": "gmw.cn",
+      "total_citations": 5,
+      "has_target_product": false
+    }
+  ]
+}

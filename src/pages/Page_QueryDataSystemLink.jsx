@@ -44,7 +44,7 @@ export default function Page_QueryDataSystemLink({
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4">
           {slideTitle}
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月）</span>
         </h1>
       </div>
 
@@ -57,7 +57,7 @@ export default function Page_QueryDataSystemLink({
           <div className="flex items-center gap-1.5 bg-white border border-zinc-200/80 rounded-md px-3 py-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
             <span className="text-zinc-400 text-xs">📅</span>
             <span>日期</span>
-            <span className="text-zinc-400 text-[10px] ml-1">08-24 ~ 08-30</span>
+            <span className="text-zinc-400 text-[10px] ml-1">9月</span>
             <span className="text-zinc-300 text-[9px] ml-1">▼</span>
           </div>
 
@@ -105,7 +105,7 @@ export default function Page_QueryDataSystemLink({
                 <th className="py-3 px-2 w-[6%] text-center">序号</th>
                 <th className="py-3 px-4 w-[38%] text-left font-black text-zinc-500">词条</th>
                 <th className="py-3 px-3 w-[12%] text-center font-black text-zinc-500">提及率 ↓</th>
-                <th className="py-3 px-3 w-[14%] text-center font-black text-zinc-500">平均提及位次</th>
+                <th className="py-3 px-3 w-[14%] text-center font-black text-zinc-500">top1提及率</th>
                 <th className="py-3 px-3 w-[12%] text-center font-black text-zinc-500">监测平台</th>
                 <th className="py-3 px-3 w-[11%] text-center font-black text-zinc-500">会话截图</th>
                 <th className="py-3 px-4 w-[12%] text-center font-black text-zinc-500">最近更新时间</th>
@@ -122,19 +122,19 @@ export default function Page_QueryDataSystemLink({
                     {row.entry_name}
                   </td>
                   <td className="py-1 px-3 text-center font-bold text-zinc-700 font-sans">{row.mention_rate}</td>
-                  <td className="py-1 px-3 text-center text-zinc-500 font-sans">{row.position}</td>
+                  <td className="py-1 px-3 text-center text-zinc-500 font-sans">{row.top1_mention_rate}</td>
                   <td className="py-1 px-3 text-center">
-                    <div className="inline-flex items-center -space-x-1.5 justify-center">
-                      {Object.entries(LOGOS).map(([id, url]) => (
+                    <div className="inline-flex items-center justify-center">
+                      {LOGOS[platformId] ? (
                         <img
-                          key={id}
-                          src={url}
-                          alt=""
-                          className={`w-[18px] h-[18px] rounded-full object-cover border border-white bg-white shadow-sm ${
-                            Number(id) === platformId ? 'opacity-100 z-10 scale-105 border-[#004CE5]' : 'opacity-85'
-                          }`}
+                          src={LOGOS[platformId]}
+                          alt={platformName}
+                          title={platformName}
+                          className="w-[18px] h-[18px] rounded-full object-cover border border-white bg-white shadow-sm"
                         />
-                      ))}
+                      ) : (
+                        <span className="text-zinc-300 text-xs">--</span>
+                      )}
                     </div>
                   </td>
                   <td className="py-1 px-3 text-center">

@@ -1,5 +1,5 @@
 import React from 'react';
-import report from '../data/jinjiuAugustReport.json';
+import report from '../data/jinjiuSeptemberReport.json';
 
 function createPage({ productKey, title, analysis, strategies }) {
   const data = report.products[productKey];
@@ -59,14 +59,14 @@ function createPage({ productKey, title, analysis, strategies }) {
           <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
           <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
             {title}
-            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
+            <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月）</span>
           </h1>
         </div>
         <div className="flex-grow flex flex-col min-h-0 justify-start">
           <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
             {renderTable('提及率排名', ['产品名称', '提及率'], data.compare.mention_rate)}
             {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], data.compare.top1)}
-            {renderTable('竞品排名', ['产品名称', '行业影响力排名'], data.compare.influence)}
+            {renderTable('综合竞品排名', ['产品名称', '行业影响力'], data.compare.influence)}
           </div>
           <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
             <div className="flex flex-col gap-3 h-full min-h-0">
@@ -108,12 +108,12 @@ export default createPage({
   productKey: 'yangsheng',
   title: '养生一号竞品分析',
   analysis: [
-    '1. 养生一号8月提及率回升至58.3%、Top1首推率提升至44%，竞品排名稳居NO.1；广誉远以59.5%仍略高居提及率榜首。',
-    '2. 广誉远龟龄集酒提及率仍压一头，中国劲酒（14.3%）又在送礼词条中分走首推流量，高端送礼心智仍需继续加厚。',
+    '1. 养生一号9月提及率56%、Top1首推率42.9%，综合竞品排名回到NO.1；广誉远以70.2%居提及率第一，综合排名NO.2。',
+    '2. 椰岛鹿龟酒47.6%列提及率第三，中国劲酒Top1达11.9%分流送礼首推；豆包端提及率19%，高端送礼覆盖仍偏薄。',
   ],
   strategies: [
-    { num: '01', title: '广誉远正面对抗', desc: '针对龟龄集酒做配方功效、非遗背书与礼盒体验对比，收窄59.5%对58.3%的提及率差距。' },
-    { num: '02', title: '送礼心智加厚', desc: '加大“给长辈送礼/千元养生酒礼盒”语料密度，把44%的Top1优势扩展到更多送礼词条。' },
-    { num: '03', title: '品牌辨识补强', desc: '减少与中国劲酒的心智混用，突出养生一号高端独立定位与“品质认可、送礼体面”卖点。' },
+    { num: '01', title: '广誉远正面对抗', desc: '针对龟龄集酒做配方功效、非遗背书与礼盒体验对比，收窄70.2%对56%的提及率差距。' },
+    { num: '02', title: '送礼心智加厚', desc: '加大“给长辈送礼/千元养生酒礼盒”语料密度，把42.9%的Top1优势扩展到更多送礼词条。' },
+    { num: '03', title: '豆包端补齐', desc: '豆包端提及率19%，需加密可被豆包引用的送礼场景内容，减少与中国劲酒的心智混用。' },
   ],
 });

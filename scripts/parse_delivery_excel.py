@@ -78,7 +78,7 @@ def parse_file(path: Path):
     unique = []
     for r in range(2, detail.max_row + 1):
         title = detail.cell(r, 2).value
-        if not title:
+        if not title or "汇总" in str(title):
             continue
         link = str(detail.cell(r, 13).value or "")
         key = link or f"{title}|{detail.cell(r, 3).value}"
@@ -151,7 +151,7 @@ def parse_file(path: Path):
             if not name:
                 continue
             short = short_platform(name)
-            if short and short not in channels:
+            if short and short not in channels and short not in {"未标注", "未知"}:
                 channels.append(short)
 
     insights = []

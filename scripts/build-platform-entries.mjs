@@ -71,12 +71,18 @@ function fmtDate(v) {
   return `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}`;
 }
 
-const PROJECTS = [125, 126, 127]; // 劲酒 / 毛铺 / 养生一号
+const ALL_PROJECTS = [125, 126, 127]; // 劲酒 / 毛铺 / 养生一号
 const dateFlagIndex = process.argv.indexOf('--date');
 const DATE = dateFlagIndex !== -1 ? process.argv[dateFlagIndex + 1] : '2026-08-27';
+const projectsFlagIndex = process.argv.indexOf('--projects');
+const PROJECTS = projectsFlagIndex !== -1
+  ? process.argv[projectsFlagIndex + 1].split(',').map((id) => Number(id))
+  : ALL_PROJECTS;
+const partial = PROJECTS.length !== ALL_PROJECTS.length || PROJECTS.some((id) => !ALL_PROJECTS.includes(id));
 
 await login();
-const out = {};
+const outPath = path.join(root, 'src/data/platform_entries.json');
+const out = partial && existsSync(outPath) ? JSON.parse(readFileSync(outPath, 'utf8')) : {};
 
 for (const projectId of PROJECTS) {
   const platforms = (await api('/api/platforms', { project_id: projectId })).data;
@@ -96,7 +102,7 @@ for (const projectId of PROJECTS) {
     const list = (entries.data.list || []).map((e) => ({
       entry_name: e.entry_name,
       mention_rate: fmtRate(e.mention_rate),
-      position: fmtPos(e.position),
+      top1_mention_rate: fmtRate(e.top1_mention_rate),
       last_conversation_time: fmtDate(e.last_conversation_time),
       last_screenshot_url: e.last_screenshot_url || null,
     }));
@@ -106,7 +112,6 @@ for (const projectId of PROJECTS) {
   }
 }
 
-const outPath = path.join(root, 'src/data/platform_entries.json');
 mkdirSync(path.dirname(outPath), { recursive: true });
 writeFileSync(outPath, JSON.stringify(out, null, 2), 'utf-8');
 console.log('wrote', outPath);
