@@ -15,7 +15,7 @@ const LOGOS = {
   6: 'https://app.geoindexfuture.com/logo/kimi.png'
 };
 
-/** 词条明细按当月单日口径展示。古20取 9月23日，古16仍为 9月16日。 */
+/** 词条明细按当月单日口径展示。古16取 9月21日，古20取 9月23日。 */
 
 export default function Page_QueryDataSystemLink({ projectId = 123, platformId = 1 }) {
   const data = platformData[String(projectId)]?.[String(platformId)] || [];
@@ -23,8 +23,8 @@ export default function Page_QueryDataSystemLink({ projectId = 123, platformId =
   const platformName = PLATFORM_NAMES[platformId] || '';
 
   const isGu20 = projectId === 124;
-  const dateLabel = isGu20 ? '2026年9月23日' : '2026年9月';
-  const dateRangeLabel = isGu20 ? '9月23日' : '9月';
+  const dateLabel = isGu20 ? '2026年9月23日' : '2026年9月21日';
+  const dateRangeLabel = isGu20 ? '9月23日' : '9月21日';
   const slideTitle = `${projectId === 123 ? '古16' : '古20'}词条数据明细（${platformName}）`;
 
   return (
@@ -128,18 +128,13 @@ export default function Page_QueryDataSystemLink({ projectId = 123, platformId =
                     {row.top1_mention_rate}
                   </td>
                   <td className="py-1 px-3 text-center">
-                    <div className="inline-flex items-center -space-x-1.5 justify-center">
-                      {Object.entries(LOGOS).map(([id, url]) => (
-                        <img 
-                          key={id}
-                          src={url}
-                          alt=""
-                          className={`w-[18px] h-[18px] rounded-full object-cover border border-white bg-white shadow-sm ${
-                            Number(id) === platformId ? 'opacity-100 z-10 scale-105 border-[#004CE5]' : 'opacity-85'
-                          }`}
-                        />
-                      ))}
-                    </div>
+                    {/* 本页数据已按 platformId 过滤，监测平台只渲染当前这一个图标 */}
+                    <img
+                      src={LOGOS[platformId]}
+                      alt={platformName}
+                      title={platformName}
+                      className="w-[18px] h-[18px] rounded-full object-cover border border-white bg-white shadow-sm mx-auto"
+                    />
                   </td>
                   <td className="py-1 px-3 text-center">
                     {row.last_screenshot_url ? (

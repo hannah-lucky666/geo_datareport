@@ -3,21 +3,21 @@ import React from 'react';
 export default function Page_CompetitorAnalysis() {
   const TARGET = '古井贡酒·古16';
 
-  // 数据口径：2026年9月（数据系统项目 351）
+  // 数据口径：2026年9月21日单日（数据系统项目 351）
   const mentionRateData = [
-    { name: '水晶剑', value: '83.3%' },
-    { name: TARGET, value: '75.0%' },
-    { name: '青花20', value: '41.7%' },
-    { name: '国缘四开', value: '40.0%' },
-    { name: '梦之蓝M3水晶版', value: '36.7%' },
+    { name: '水晶剑', value: '90.0%' },
+    { name: TARGET, value: '86.7%' },
+    { name: '国缘四开', value: '43.3%' },
+    { name: '红花郎15', value: '41.7%' },
+    { name: '臻酿八号', value: '41.7%' },
   ];
 
   const top1RateData = [
-    { name: TARGET, value: '36.7%' },
-    { name: '水晶剑', value: '23.3%' },
-    { name: '国缘四开', value: '10.0%' },
-    { name: '四开', value: '6.7%' },
-    { name: '普五八代', value: '6.7%' },
+    { name: TARGET, value: '46.7%' },
+    { name: '水晶剑', value: '20.0%' },
+    { name: '普五八代', value: '8.3%' },
+    { name: '国缘四开', value: '6.7%' },
+    { name: '飞天茅台', value: '3.3%' },
   ];
 
   // 竞品排名 = 行业影响力排名
@@ -25,8 +25,8 @@ export default function Page_CompetitorAnalysis() {
     { name: TARGET, value: 'NO. 1' },
     { name: '水晶剑', value: 'NO. 2' },
     { name: '国缘四开', value: 'NO. 3' },
-    { name: '青花20', value: 'NO. 4' },
-    { name: '梦之蓝M3水晶版', value: 'NO. 5' },
+    { name: '红花郎15', value: 'NO. 4' },
+    { name: '臻酿八号', value: 'NO. 5' },
   ];
 
   const renderTable = (title, headers, data) => {
@@ -119,7 +119,7 @@ export default function Page_CompetitorAnalysis() {
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
           古16竞品分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月）</span>
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月21日）</span>
         </h1>
       </div>
 
@@ -142,11 +142,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 水晶剑仍是核心对手：提及率83.3%对古16的75.0%，差距扩大至8.3个百分点；竞品排名古16居 NO.1，水晶剑居 NO.2，影响力几乎咬平。
+                1. 水晶剑仍是核心对手：提及率90.0%对古16的86.7%，差距收窄至3.3个百分点；竞品排名古16居 NO.1，水晶剑居 NO.2。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 古16 Top1提及率36.7%仍居首位，领先水晶剑（23.3%）；国缘四开升至10.0%，四开、普五八代各6.7%，需盯防首推分流。
+                2. 古16 Top1提及率46.7%仍居首位，领先水晶剑（20.0%）；普五八代8.3%，国缘四开6.7%，飞天茅台3.3%，需盯防首推分流。
               </p>
             </div>
           </div>
@@ -162,17 +162,17 @@ export default function Page_CompetitorAnalysis() {
                 {
                   num: '01',
                   title: '提及率补齐',
-                  desc: '差距已扩至8.3个百分点（83.3% vs 75.0%），优先在低提及词条补量，把曝光拉回与水晶剑接近。',
+                  desc: '差距收窄至3.3个百分点（90.0% vs 86.7%），优先在低提及词条补量，把曝光拉回与水晶剑接近。',
                 },
                 {
                   num: '02',
                   title: '守住竞品排名',
-                  desc: '行业影响力刚从 NO.2 追回 NO.1，但与水晶剑分差极小，需在婚宴清单类语料中强化首位表述。',
+                  desc: '行业影响力稳居 NO.1，领先水晶剑，需在婚宴清单类语料中强化首位表述。',
                 },
                 {
                   num: '03',
                   title: '首推位守卫',
-                  desc: 'Top1从48.3%回至36.7%仍领先，需守住高转化词条，拦截国缘四开（10.0%）的首推渗透。',
+                  desc: 'Top1从48.3%回至46.7%仍大幅领先水晶剑（20.0%），需守住高转化词条，拦截普五八代（8.3%）的首推渗透。',
                 },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">

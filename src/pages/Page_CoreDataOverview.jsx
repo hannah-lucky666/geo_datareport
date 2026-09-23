@@ -7,7 +7,7 @@ export default function Page_CoreDataOverview() {
       <div className="flex items-center shrink-0 mb-[27px]">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4">
-          核心数据总览 <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月 · 古20为9月23日）</span>
+          核心数据总览 <span className="text-2xl font-bold text-zinc-400 ml-4">（古16 · 9月21日 / 古20 · 9月23日）</span>
         </h1>
       </div>
 
@@ -46,11 +46,11 @@ export default function Page_CoreDataOverview() {
                 古井贡酒古16
               </td>
               <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">83.3%</td>
-              <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">75.0%</td>
+              <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">86.7%</td>
               <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">48.3%</td>
-              <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">36.7%</td>
+              <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">46.7%</td>
               <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">60.0%</td>
-              <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">53.3%</td>
+              <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">63.3%</td>
               <td className="py-1.5 px-2 text-center border-r border-zinc-200 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 2</td>
               <td className="py-1.5 px-2 text-center border-r-2 border-[#004CE5]/15 text-4xl font-bold text-zinc-900 font-['Montserrat',sans-serif]">NO. 1</td>
             </tr>
@@ -91,7 +91,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              相较8月，古16提及率由83.3%回落至75.0%，Top1由48.3%回至36.7%，竞品排名由 NO.2 追回 NO.1；古20提及率由85.0%升至88.3%，Top1由28.3%升至31.7%，竞品排名稳守 NO.1。
+              相较8月，古16提及率由83.3%升至86.7%，Top1由48.3%回至46.7%，竞品排名由 NO.2 升至 NO.1；古20提及率由85.0%升至88.3%，Top1由28.3%升至31.7%，竞品排名稳守 NO.1。
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function Page_CoreDataOverview() {
           </div>
           <div className="flex-1 flex items-center min-h-0">
             <p className="text-[22px] leading-snug text-zinc-700 font-bold">
-              古16需把提及率从75.0%拉回、缩小与水晶剑8.3个百分点的差距，并守住刚追回的 NO.1；古20守住88.3%的提及广度与 NO.1，重点压住升至竞品排名 NO.2 的水晶剑。
+              古16提及率86.7%仍落后水晶剑3.3个百分点，需继续补齐并守住 NO.1 与 Top1 46.7%的领先；古20守住88.3%的提及广度与 NO.1，重点压住升至竞品排名 NO.2 的水晶剑。
             </p>
           </div>
         </div>
