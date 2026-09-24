@@ -69,6 +69,11 @@ const EXPORT_CSS = `
   div.pointer-events-none.opacity-20 {
     display: none !important;
   }
+  /* 淡入动画约 0.7s。截图若赶在中途，正文会停在半透明，整页发灰 */
+  .animate-fadeIn {
+    animation: none !important;
+    opacity: 1 !important;
+  }
 `;
 
 const MIME = {
@@ -131,6 +136,16 @@ async function waitForSlideReady(page) {
       pending.map((im) => new Promise((res) => { im.onload = im.onerror = res; }))
     );
     await new Promise((res) => requestAnimationFrame(() => requestAnimationFrame(res)));
+    const anims = document.getAnimations().filter((a) => {
+      if (a.playState === 'finished' || a.playState === 'idle') return false;
+      return a.effect?.getComputedTiming?.().iterations !== Infinity;
+    });
+    if (anims.length) {
+      await Promise.race([
+        Promise.all(anims.map((a) => a.finished.catch(() => {}))),
+        new Promise((res) => setTimeout(res, 1200)),
+      ]);
+    }
   });
 }
 

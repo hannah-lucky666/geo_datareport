@@ -9,6 +9,14 @@ import Page_CompetitorAnalysis_AI from '../pages/Page_CompetitorAnalysis_AI';
 import Page_CompetitorAnalysis_Musi from '../pages/Page_CompetitorAnalysis_Musi';
 import Page_ContentDetails_Musi from '../pages/Page_ContentDetails_Musi';
 import Page_QueryDataSystemLink from '../pages/Page_QueryDataSystemLink';
+import Page_AiPlatformUserScale from '../pages/Page_AiPlatformUserScale';
+import Page_ModelVersionChanges from '../pages/Page_ModelVersionChanges';
+import Page_ModelChangesOverview from '../pages/Page_ModelChangesOverview';
+import Page_DoubaoNetworkShift from '../pages/Page_DoubaoNetworkShift';
+import Page_DoubaoNoNetworkCases from '../pages/Page_DoubaoNoNetworkCases';
+import Page_WorkBuddyWorkflow from '../pages/Page_WorkBuddyWorkflow';
+import Page_WorkBuddyMarket from '../pages/Page_WorkBuddyMarket';
+import Page_WorkBuddyMarketEvents from '../pages/Page_WorkBuddyMarketEvents';
 
 // 词条明细：与 Report_gujinggong 同款数据系统 UI
 // 30 词产品：每平台 2 页（每页 15）
@@ -71,6 +79,17 @@ export const slideConfig = [
   { type: 'page', title: '慕思智能床 投放明细', component: Page_ContentDetails },
   { type: 'page', title: '慕思AI床垫 投放明细', component: Page_ContentDetails_AI },
   { type: 'page', title: '慕思床垫 投放明细', component: Page_ContentDetails_Musi },
+
+  { type: 'chapter', title: '各AI平台\n模型变更情况', subtitle: 'AI PLATFORM MODEL UPDATES', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'section', title: '近期主流AI模型更迭' },
+  { type: 'page', title: '各AI平台用户量', component: Page_AiPlatformUserScale, hideHeader: true },
+  { type: 'page', title: '主流AI模型版本变更', component: Page_ModelVersionChanges, hideHeader: true },
+  { type: 'page', title: '近期主流模型更新记录', component: Page_ModelChangesOverview, hideHeader: true },
+  { type: 'page', title: '豆包隐性变动：搜索不联网', component: Page_DoubaoNetworkShift, hideHeader: true },
+  { type: 'page', title: '豆包不联网的两类情形', component: Page_DoubaoNoNetworkCases, hideHeader: true },
+  { type: 'page', title: 'AI新产品：腾讯WorkBuddy（架构与界面）', component: Page_WorkBuddyWorkflow, hideHeader: true },
+  { type: 'page', title: 'AI新产品：腾讯WorkBuddy（市场定位与用户量）', component: Page_WorkBuddyMarket, hideHeader: true },
+  { type: 'page', title: 'AI新产品：腾讯WorkBuddy（市场反馈与代表事件）', component: Page_WorkBuddyMarketEvents, hideHeader: true },
 
   { type: 'chapter', title: '词条数据明细', subtitle: 'KEYWORD DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '词条监测明细' },
