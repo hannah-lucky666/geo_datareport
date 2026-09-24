@@ -55,12 +55,6 @@ function fmtRate(v) {
   return Number.isFinite(n) ? `${n.toFixed(1)}%` : String(v);
 }
 
-function fmtPos(v) {
-  if (v == null || v === '') return '--';
-  const n = Number(v);
-  return Number.isFinite(n) ? `NO. ${n.toFixed(1)}` : String(v);
-}
-
 function fmtDate(v) {
   if (!v) return '--';
   const d = new Date(v);
@@ -92,13 +86,13 @@ for (const { id: projectId, date: DATE } of PROJECTS) {
       page_size: 100,
       sort_by: 'mention_rate',
       sort_order: 'desc',
-      // 注意：必须用 platform_ids（复数）。platform_id 仍返回全平台汇总位次，与数据系统 UI 不一致。
+      // 必须用 platform_ids（复数）。词条明细列与数据系统一致，展示 top1_mention_rate，不展示 position。
       platform_ids: pl.id,
     });
     const list = (entries.data.list || []).map((e) => ({
       entry_name: e.entry_name,
       mention_rate: fmtRate(e.mention_rate),
-      position: fmtPos(e.position),
+      top1_mention_rate: fmtRate(e.top1_mention_rate),
       last_conversation_time: fmtDate(e.last_conversation_time),
       last_screenshot_url: e.last_screenshot_url || null,
     }));

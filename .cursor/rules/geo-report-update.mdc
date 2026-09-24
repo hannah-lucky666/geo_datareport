@@ -40,9 +40,10 @@
 | 页面/指标 | 正确来源（数据系统「总览」口径） | ❌ 易错的错误来源 |
 |---|---|---|
 | 提及率 | `conversations/stats.brand_mention_rate`（逐日见 `daily_stats.mention_rate` / `overview_daily.mention_rate`） | — |
-| 平均提及位次 | `conversations/stats.avg_position`（逐日见 `daily_stats.avg_position` / `overview_daily.avg_position`） | `compare.position_ranking` 里本品的 `avg_position`（这是「竞品对比」页口径，与总览可能差 0.1） |
 | 竞品排名 / 行业影响力排名 | `competitors/influence` 中本品(`is_target`)的 `rank`（逐日见 `overview_daily.influence_rank`） | `compare.mention_rate_ranking` 的名次（提及率排名 ≠ 影响力排名，可能不同） |
 
-- `fetch-geo-report.mjs` 已产出 `report.overview_daily`（逐日 `{date, mention_rate, avg_position, influence_rank}`），**核心数据总览页 / 竞品排名请直接按对应日期取这里的值**。
-- 「竞品分析」页里的三张榜单（提及率排名 / Top1 提及率排名 / 提及位次排名）对应数据系统「竞品对比」界面，用 `compare.*_ranking` / `top1_ranking` 是对的——它与「总览」的位次可能有 0.1 级差异，属正常（两个界面算法不同），不要为对齐而改错。
+- **对外报告禁止出现「位次」**：不要在任何页面、表头、总结文案里写「位次」「平均提及位次」「平均位次」「提及位次排名」。采集脚本内部可保留 `position` / `avg_position`，页面一律不展示。
+- **词条数据明细**与数据系统一致：表头用「top1提及率」，数值取 `/api/entries` 的 `top1_mention_rate`（分平台必须传 `platform_ids`），不要用 `position`。
+- `fetch-geo-report.mjs` 已产出 `report.overview_daily`（逐日 `{date, mention_rate, influence_rank}`），**核心数据总览页 / 竞品排名请直接按对应日期取这里的值**。
+- 「竞品分析」页里的榜单用提及率排名 / Top1 提及率排名 / 行业影响力（竞品排名），不要做「提及位次排名」。
 - 单个数据日期（如 6/25、7/22）与其所在周窗口（如 06-22~06-28、07-20~07-26）的总览指标一致，可用单日区间取数。

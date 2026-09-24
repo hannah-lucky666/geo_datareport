@@ -177,8 +177,10 @@ async function main() {
   try {
     await Promise.all(
       chunks.map(async ([start, end]) => {
+        const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
         const browser = await puppeteer.launch({
           headless: 'new',
+          executablePath: existsSync(chromePath) ? chromePath : undefined,
           args: ['--no-sandbox', '--disable-setuid-sandbox'],
           protocolTimeout: 120000,
         });

@@ -13,6 +13,8 @@
     "fetch:geo-overview": "node scripts/fetch-geo-overview.mjs",
     "fetch:yuanyue-extra": "node scripts/fetch-yuanyue-extra.mjs",
     "build:yuanyue-report": "node scripts/build-yuanyue-report.mjs",
+    "fetch:awada-extra": "node scripts/fetch-awada-extra.mjs",
+    "build:awada-report": "node scripts/build-awada-report.mjs",
     "export:pptx": "node scripts/export-pptx.mjs"
   },
   "dependencies": {

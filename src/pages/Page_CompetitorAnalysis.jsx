@@ -1,9 +1,8 @@
 import React from 'react';
-import report from '../data/yuanyueAugustReport.json';
+import report from '../data/awadaSeptemberReport.json';
 
-const { compare, before, august } = report;
+const { compare } = report;
 
-// 名次样式沿用原版：1/2/3 奖牌圆标，其余用数字。本品用真实 rank，不要写成第 5。
 function RankBadge({ rank, index }) {
   const n = rank || index + 1;
   if (n === 1) {
@@ -105,8 +104,8 @@ export default function Page_CompetitorAnalysis() {
       <div className="flex items-center shrink-0 mb-3">
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
-          美素佳儿源悦竞品分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
+          Awada竞品分析
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月）</span>
         </h1>
       </div>
 
@@ -114,7 +113,7 @@ export default function Page_CompetitorAnalysis() {
         <div className="grid grid-cols-3 gap-6 h-[490px] shrink-0 mt-4">
           {renderTable('提及率排名', ['产品名称', '提及率'], compare.mention_rate)}
           {renderTable('Top1提及率排名', ['产品名称', 'Top1提及率'], compare.top1)}
-          {renderTable('竞品排名', ['产品名称', '影响力指数'], compare.influence)}
+          {renderTable('综合竞品排名', ['产品名称', '综合竞品排名'], compare.influence)}
         </div>
 
         <div className="grid grid-cols-2 gap-8 h-[340px] shrink-0 mt-[60px]">
@@ -125,11 +124,11 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/5 border border-[#004CE5]/20 p-5 flex flex-col justify-evenly min-h-0">
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                1. 领先的四款产品分属合生元、爱他美、飞鹤、伊利四大集团，均为沉淀多年的主力单品：派星提及率 51.6%、Top1 14.8%，所属集团合生元占据竞品排名 NO.1；卓傲、星飞帆、金领冠珍护铂萃以 31%—34% 构成第二梯队。
+                1. 火枫提及率 60.6%、Top1 27.5%，综合竞品排名稳居 NO.1，仍是户外餐厨推荐的默认答案；挪客、Snow Peak、MSR 以 21%—32% 组成第二梯队。
               </p>
               <div className="h-px bg-[#004CE5]/10 my-1" />
               <p className="text-[22px] leading-relaxed text-zinc-800 font-bold">
-                2. 品牌层存量差距同样明显：AI回答共出现36个品牌、102款产品，君乐宝、金领冠、雀巢各10款、爱他美8款同时在榜，美素佳儿仅4款。源悦本月提及率15.6%（排名 NO.12），影响力指数由{before.influence_score}升至{august.influence_score}、竞品排名 NO.41→NO.15，进位最快且Top1提及率已破零至1.6%（排名 NO.12）。
+                2. Awada 本月提及率 6.9%（排名 NO.17），综合竞品排名 NO.43→NO.16；Top1 升至 1.3%（排名 NO.9），首推刚打开。
               </p>
             </div>
           </div>
@@ -141,9 +140,9 @@ export default function Page_CompetitorAnalysis() {
             </h2>
             <div className="flex-grow rounded-2xl bg-[#004CE5]/[0.015] border border-[#004CE5]/15 p-5 flex flex-col justify-evenly min-h-0">
               {[
-                { num: '01', title: '放大首推成果', desc: 'Top1已破零至1.6%，针对派星、星飞帆垄断的Top1场景，继续加码奶源、蛋白结构等高转化词条的定性对比内容。' },
-                { num: '02', title: '扩大提及广度', desc: '把“婴儿奶粉排行榜”“口碑好的奶粉”等泛选购词从单点提及扩展到稳定进榜，缩小与第二梯队的差距。' },
-                { num: '03', title: '提升竞品排名', desc: '行业影响力现居 NO.15，需在成分与配方对比类内容中强化第一顺位表达，继续向头部集团靠拢。' },
+                { num: '01', title: '拦截火枫', desc: '火枫独占首推两成以上，需在专业餐厨、精致露营同台对比里给出 Awada 更优的结论。' },
+                { num: '02', title: '扩大提及广度', desc: '「露营厨具哪个牌子好」仍是 0，「口碑好的户外厨具推荐」刚破零，泛选购大词还要继续铺。' },
+                { num: '03', title: '提升综合竞品排名', desc: '综合竞品排名现居 NO.16，需在已覆盖的 10 个词条里抢前三，继续向第二梯队靠拢。' },
               ].map((strat, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <span className="text-[#004CE5] font-black text-2xl shrink-0 mt-0.5">{strat.num}</span>

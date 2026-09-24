@@ -1,10 +1,7 @@
 #!/usr/bin/env node
 /**
- * 采集美素佳儿源悦(项目 535) 报告所需的补充数据：
- *   · 情感分析（sentiments/stats）
- *   · Top1 提及率完整排名（含本品名次）
- *   · 分平台词条明细（platform_entries）
- * 输出：src/data/yuanyue_extra.json
+ * 采集 Awada-优化词(668) 报告补充数据：情感、分平台词条、竞品进榜明细。
+ * 优化前 = 2026-09-03，9 月 = 2026-09-21。
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import path from 'path';
@@ -24,9 +21,10 @@ if (existsSync(envPath)) {
 }
 
 const API_BASE = process.env.GEO_API_BASE;
-const PROJECT_ID = 535;
-const BEFORE_DATE = '2026-08-12';
-const AUGUST_DATE = '2026-08-31';
+const PROJECT_ID = 668;
+const MONITOR_ID = 670;
+const BEFORE_DATE = '2026-09-03';
+const SEPT_DATE = '2026-09-21';
 
 let cookie = '';
 
@@ -65,9 +63,9 @@ const fmtDate = (v) => {
 
 await login();
 
-const out = { project_id: PROJECT_ID, before_date: BEFORE_DATE, august_date: AUGUST_DATE };
+const out = { project_id: PROJECT_ID, before_date: BEFORE_DATE, september_date: SEPT_DATE };
 
-for (const [key, date] of [['before', BEFORE_DATE], ['august', AUGUST_DATE]]) {
+for (const [key, date] of [['before', BEFORE_DATE], ['september', SEPT_DATE]]) {
   const range = { project_id: PROJECT_ID, start_date: date, end_date: date };
 
   let sentiments = null;
@@ -79,10 +77,29 @@ for (const [key, date] of [['before', BEFORE_DATE], ['august', AUGUST_DATE]]) {
 
   let top1 = null;
   try {
-    top1 = (await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1' })).data;
+    top1 = (await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1', page_size: 100 })).data;
   } catch (e) {
     console.warn(`top1 ${date} 不可用: ${e.message}`);
   }
+
+  let mentionFull = null;
+  try {
+    mentionFull = (await api('/api/competitors/mention-rate', { ...range, page: 1, page_size: 200 })).data;
+  } catch (e) {
+    console.warn(`mention-rate ${date} 不可用: ${e.message}`);
+  }
+
+  let entryBrand = null;
+  try {
+    entryBrand = (await api('/api/competitors/compare', range)).data;
+  } catch (e) {
+    console.warn(`compare ${date} 不可用: ${e.message}`);
+  }
+
+  const brands = mentionFull?.list || [];
+  const brandCount = new Set(brands.map((b) => b.brand_name).filter(Boolean)).size;
+  const productCount = brands.length;
+  const selfMention = brands.find((b) => b.is_target || b.is_self);
 
   out[key] = {
     date,
@@ -93,19 +110,31 @@ for (const [key, date] of [['before', BEFORE_DATE], ['august', AUGUST_DATE]]) {
       rate: b.selected_top_mention_rate == null ? null : Number(b.selected_top_mention_rate),
       is_target: !!(b.is_self ?? b.is_target),
     })),
+    brand_count: brandCount,
+    product_count: productCount,
+    self_mention_rank: selfMention?.rank ?? null,
+    mention_top: brands.slice(0, 15).map((b) => ({
+      rank: b.rank,
+      name: b.display_name || b.product_name || b.brand_name,
+      brand: b.brand_name,
+      rate: Number(b.mention_rate),
+      is_target: !!(b.is_target || b.is_self),
+    })),
+    entry_brand_details: entryBrand?.entry_brand_details || entryBrand?.entry_details || null,
+    compare_keys: entryBrand ? Object.keys(entryBrand) : [],
   };
-  console.log(`${key} (${date}) 情感=${sentiments ? 'ok' : '-'} top1条数=${out[key].top1_list.length}`);
+  const selfTop1 = out[key].top1_list.find((b) => b.is_target);
+  console.log(`${key} (${date}) 情感=${sentiments ? 'ok' : '-'} top1条数=${out[key].top1_list.length} 本品Top1名次=${selfTop1?.rank ?? '-'} 品牌数=${brandCount} 产品数=${productCount}`);
 }
 
-// 分平台词条明细（取 8/31 单日）
 const platforms = (await api('/api/platforms', { project_id: PROJECT_ID })).data;
 out.platforms = platforms.map((p) => ({ id: p.id, name: p.name, url: p.url || null }));
 out.platform_entries = {};
 for (const pl of platforms) {
   const entries = await api('/api/entries', {
     project_id: PROJECT_ID,
-    start_date: AUGUST_DATE,
-    end_date: AUGUST_DATE,
+    start_date: SEPT_DATE,
+    end_date: SEPT_DATE,
     page: 1,
     page_size: 200,
     sort_by: 'mention_rate',
@@ -122,5 +151,36 @@ for (const pl of platforms) {
   console.log(`platform ${pl.id}(${pl.name}): ${out.platform_entries[String(pl.id)].length} 条`);
 }
 
-writeFileSync(path.join(root, 'src/data/yuanyue_extra.json'), JSON.stringify(out, null, 2), 'utf-8');
-console.log('已写入 src/data/yuanyue_extra.json');
+// 监测词（仅 9/10 有数据）
+try {
+  const mon = await api('/api/sentiments/stats', {
+    project_id: MONITOR_ID,
+    start_date: '2026-09-10',
+    end_date: '2026-09-10',
+  });
+  out.monitor = { date: '2026-09-10', sentiments: mon.data };
+  console.log('监测词情感', mon.data?.positive_percentage, mon.data?.negative_percentage);
+} catch (e) {
+  console.warn('监测词情感不可用', e.message);
+}
+
+// 探测更多接口，找词条竞品明细
+const probes = [
+  '/api/competitors/entry-details',
+  '/api/entries/brand-details',
+  '/api/competitors/entry-brand-details',
+  '/api/conversations/entry-brands',
+];
+out.probe = {};
+for (const p of probes) {
+  try {
+    const r = await api(p, { project_id: PROJECT_ID, start_date: SEPT_DATE, end_date: SEPT_DATE });
+    out.probe[p] = { ok: true, keys: Object.keys(r.data || {}), sample: JSON.stringify(r.data).slice(0, 200) };
+    console.log('probe', p, 'ok', Object.keys(r.data || {}));
+  } catch (e) {
+    out.probe[p] = { ok: false, error: e.message.slice(0, 120) };
+  }
+}
+
+writeFileSync(path.join(root, 'src/data/awada_extra.json'), JSON.stringify(out, null, 2), 'utf-8');
+console.log('已写入 src/data/awada_extra.json');

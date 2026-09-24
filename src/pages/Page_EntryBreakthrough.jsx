@@ -1,30 +1,29 @@
 import React from 'react';
-import report from '../data/yuanyueAugustReport.json';
+import report from '../data/awadaSeptemberReport.json';
 
-const { entries, august } = report;
+const { entries, september } = report;
 
 const covered = entries.filter((e) => Number(e.mention_rate) > 0);
 
 const GROUPS = [
   {
-    name: '消化吸收类',
-    match: (n) => n.includes('消化') || n.includes('吸收'),
+    name: '专业精致类',
+    match: (n) => n.includes('专业') || n.includes('精致'),
     badgeClass: 'bg-emerald-50 text-emerald-600 border border-emerald-100',
   },
   {
-    name: '便秘调理类',
-    match: (n) => n.includes('便秘'),
+    name: '颜值出片类',
+    match: (n) => n.includes('高颜值') || n.includes('好出片'),
     badgeClass: 'bg-sky-50 text-sky-600 border border-sky-100',
   },
   {
-    name: '口碑榜单类',
+    name: '实用选购类',
     match: () => true,
     badgeClass: 'bg-violet-50 text-violet-600 border border-violet-100',
   },
 ];
 
-// 便秘类词条部分也含「消化」表述，按更具体的语义优先归类
-const ORDER = [1, 0, 2];
+const ORDER = [0, 1, 2];
 function groupOf(name) {
   for (const i of ORDER) {
     if (GROUPS[i].match(name)) return GROUPS[i];
@@ -35,7 +34,7 @@ function groupOf(name) {
 const distribution = GROUPS.map((g) => {
   const items = covered.filter((e) => groupOf(e.name) === g);
   const breakthrough = items.filter((e) => !Number(e.before_mention_rate));
-  const best = items.slice().sort((a, b) => b.mention_rate - a.mention_rate)[0];
+  const best = items.slice().sort((a, b) => b.mention_rate - a.mention_rate || (a.position ?? 99) - (b.position ?? 99))[0];
   return {
     name: g.name,
     badgeClass: g.badgeClass,
@@ -49,7 +48,7 @@ const totalBreakthrough = distribution.reduce((s, g) => s + g.breakthrough, 0);
 
 const coveredList = covered
   .slice()
-  .sort((a, b) => b.mention_rate - a.mention_rate || a.position - b.position)
+  .sort((a, b) => b.mention_rate - a.mention_rate || (a.position ?? 99) - (b.position ?? 99))
   .map((e) => ({ ...e, isNew: !Number(e.before_mention_rate), group: groupOf(e.name) }));
 
 export default function Page_EntryBreakthrough() {
@@ -59,14 +58,14 @@ export default function Page_EntryBreakthrough() {
         <div className="w-2 h-10 bg-[#004CE5] rounded-full shadow-[0_0_15px_rgba(0,76,229,0.25)]" />
         <h1 className="text-4xl font-black text-zinc-900 tracking-wider ml-4 flex items-center">
           词条突破分布分析
-          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年8月）</span>
+          <span className="text-2xl font-bold text-zinc-400 ml-4">（2026年9月）</span>
         </h1>
       </div>
 
       <div className="grid grid-cols-3 gap-5 shrink-0 mb-5">
         {[
           { label: '监测词条总数', value: report.scope.entries, unit: '个', tone: 'text-zinc-900' },
-          { label: '有效覆盖词条', value: august.covered_entries, unit: '个', tone: 'text-[#004CE5]' },
+          { label: '有效覆盖词条', value: september.covered_entries, unit: '个', tone: 'text-[#004CE5]' },
           { label: '本月新破零词条', value: totalBreakthrough, unit: '个', tone: 'text-emerald-600' },
         ].map((m) => (
           <div key={m.label} className="rounded-2xl border border-[#004CE5]/15 bg-[#004CE5]/[0.02] py-4 px-6 flex flex-col justify-center">
@@ -99,7 +98,11 @@ export default function Page_EntryBreakthrough() {
                   <p className="text-[1.3rem] font-semibold text-zinc-600 leading-relaxed">
                     代表词条「{row.best.name}」提及率
                     <strong className="text-[#004CE5] font-black mx-1 font-['Montserrat',sans-serif]">{row.best.mention_rate}%</strong>
-                    ，位次 NO.{Number(row.best.position).toFixed(1)}
+                    {row.best.position != null && (
+                      <>
+                        ，位次 NO.{Number(row.best.position).toFixed(1)}
+                      </>
+                    )}
                     <span className="text-zinc-400 ml-2">（优化前 {Number(row.best.before_mention_rate) || 0}%）</span>
                   </p>
                 </div>
@@ -135,7 +138,7 @@ export default function Page_EntryBreakthrough() {
                       </td>
                       <td className="py-0.5 px-2 text-center text-[1.18rem] font-black text-[#004CE5] font-['Montserrat',sans-serif]">{e.mention_rate}%</td>
                       <td className="py-0.5 px-2 text-center text-[1.12rem] font-bold text-zinc-500 font-['Montserrat',sans-serif]">
-                        NO.{Number(e.position).toFixed(1)}
+                        {e.position != null ? `NO.${Number(e.position).toFixed(1)}` : '--'}
                       </td>
                     </tr>
                   ))}
@@ -148,13 +151,13 @@ export default function Page_EntryBreakthrough() {
         <div className="shrink-0 rounded-[1.25rem] border-l-[6px] border-[#004CE5] border-y border-r border-zinc-200 bg-gradient-to-r from-blue-50/40 via-white to-white py-4 px-8 flex flex-col gap-2">
           <h3 className="text-[1.6rem] font-black text-zinc-900 tracking-wider">分布解读</h3>
           <p className="text-[1.32rem] leading-relaxed text-zinc-700 font-bold">
-            1. 消化吸收类与便秘调理类合计 6 个词条，仍是「症状 + 选购」的具体问法，模型更容易把源悦作为对应答案；其中「好消化易吸收奶粉排行榜推荐」提及率已到 100%、位次 NO.3。
+            1. 专业精致类覆盖 4 个词条，仍是最稳的方向；「精致露营厨具品牌推荐」位次 NO.7.3，「专业户外厨具推荐」新破零。
           </p>
           <p className="text-[1.32rem] leading-relaxed text-zinc-700 font-bold">
-            2. 口碑榜单类覆盖扩到 12 个，但除个别位次较好外，绝大多数仍是 50% 的单点提及、位次分布在 NO.4—NO.9.5，属于「偶尔进榜」而非稳定进榜，还需持续补料。
+            2. 实用选购类本月打开最快：「露营厨具推荐」位次做到 NO.3.3，「露营厨具品牌推荐」提及率 50%；颜值出片类仅「高颜值户外厨具推荐」1 个。
           </p>
           <p className="text-[1.32rem] leading-relaxed text-zinc-700 font-bold">
-            3. 剩余 {report.scope.entries - august.covered_entries} 个未破零词条主要是水解转普通奶粉类与长肉类；水解转奶仅个别词条破零，长肉类仍全部为零，是下一阶段最值得攻的方向。
+            3. 剩余 {report.scope.entries - september.covered_entries} 个未破零词条主要是新手/亲子/房车/自驾场景，以及轻量化、易收纳和刀具、水壶、烤盘等单品，是下一阶段最值得攻的方向。
           </p>
         </div>
       </div>
