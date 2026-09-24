@@ -28,21 +28,24 @@ function DefaultPlaceholder({ title, subtitle }) {
 
 
 export default function ChapterPage({ chapterIndex, sectionIndex, pageIndex, component: ContentComponent, title, subtitle }) {
+  const bleed = Boolean(ContentComponent?.fullBleed);
 
   return (
-    <div className="w-full h-full flex flex-col relative bg-slate-50 overflow-hidden text-zinc-800">
-      <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 opacity-[0.2]"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 2px 2px, #94a3b8 1.5px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+    <div className={`w-full h-full flex flex-col relative overflow-hidden text-zinc-800 ${bleed ? '' : 'bg-slate-50'}`}>
+      {!bleed && (
+        <div className="absolute inset-0 z-0">
+          <div
+            className="absolute inset-0 opacity-[0.2]"
+            style={{
+              backgroundImage:
+                'radial-gradient(circle at 2px 2px, #94a3b8 1.5px, transparent 0)',
+              backgroundSize: '40px 40px',
+            }}
+          />
+        </div>
+      )}
 
-      <div className="flex-1 relative z-10 w-full flex items-stretch mt-8 pb-8 overflow-hidden">
+      <div className={`flex-1 relative z-10 w-full flex items-stretch overflow-hidden ${bleed ? '' : 'mt-8 pb-8'}`}>
         {ContentComponent ? (
           <ContentComponent />
         ) : (

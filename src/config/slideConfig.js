@@ -1,4 +1,6 @@
 import React from 'react';
+import Page_PhaseSummary from '../pages/Page_PhaseSummary';
+import Page_PlatformMentionRates from '../pages/Page_PlatformMentionRates';
 import Page_CoreDataOverview from '../pages/Page_CoreDataOverview';
 import Page_CompetitorAnalysis from '../pages/Page_CompetitorAnalysis';
 import Page_ContentDetails from '../pages/Page_ContentDetails';
@@ -54,6 +56,9 @@ export const slideConfig = [
   },
 
   { type: 'chapter', title: '核心数据与竞品分析', subtitle: 'DATA OVERVIEW & COMPETITOR ANALYSIS', backgroundImage: '/' },
+  { type: 'section', title: '阶段总结' },
+  { type: 'page', title: '慕思GEO优化阶段性总结', component: Page_PhaseSummary },
+  { type: 'page', title: '三产品各AI平台提及率现状', component: Page_PlatformMentionRates },
   { type: 'section', title: '核心数据总览' },
   { type: 'page', title: '核心数据总览', component: Page_CoreDataOverview },
   { type: 'section', title: '竞品分析' },
