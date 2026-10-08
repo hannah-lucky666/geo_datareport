@@ -17,8 +17,8 @@
  *     --build              强制重新构建
  *     --concurrency=<N>    并行浏览器数，默认按 CPU 核数取，上限 6
  *     --scale=<N>          截图像素密度，默认 2（1920×1080 → 3840×2160）
- *     --format=png|jpeg    截图格式，默认 png；jpeg 快约一倍、体积小三成
- *     --quality=<N>        jpeg 质量，默认 92
+ *     --format=png|jpeg    截图格式，默认 jpeg；png 更慢、体积更大
+ *     --quality=<N>        jpeg 质量，默认 90
  *     --keep-shots         同时把图片留在 export-screenshots/
  */
 import { readFileSync, mkdirSync, writeFileSync, statSync, readdirSync, existsSync } from 'node:fs';
@@ -40,8 +40,8 @@ const has = (name) => args.includes(`--${name}`);
 
 const EXTERNAL_URL = flag('url', null);
 const OUTPUT = path.resolve(root, flag('output', 'Presentation_2026.pptx'));
-const FORMAT = flag('format', 'png');
-const QUALITY = Number(flag('quality', 92));
+const FORMAT = flag('format', 'jpeg');
+const QUALITY = Number(flag('quality', 90));
 const SCALE = Number(flag('scale', 2));
 const KEEP_SHOTS = has('keep-shots');
 const DIST = path.join(root, 'dist');
@@ -54,7 +54,10 @@ const slideOrder = JSON.parse(readFileSync(path.join(root, 'src/slideOrder.json'
 const TOTAL = slideOrder.length;
 const CONCURRENCY = Math.max(
   1,
-  Math.min(Number(flag('concurrency', Math.min(6, Math.ceil(cpus().length / 4)))), TOTAL)
+  Math.min(
+    Number(flag('concurrency', Math.min(6, Math.max(2, Math.ceil(cpus().length / 4))))),
+    TOTAL
+  )
 );
 
 // 隐藏只在预览时出现的控件，并把自适应缩放还原成 1:1
@@ -69,10 +72,16 @@ const EXPORT_CSS = `
   div.pointer-events-none.opacity-20 {
     display: none !important;
   }
-  /* 淡入动画约 0.7s。截图若赶在中途，正文会停在半透明，整页发灰 */
+  /* 淡入大约 0.7s。不打断的话，截图会停在半透明，整页发灰 */
   .animate-fadeIn {
     animation: none !important;
     opacity: 1 !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
   }
 `;
 
@@ -113,14 +122,20 @@ function distIsFresh() {
 }
 
 function serveDist() {
+  const cache = new Map();
   const server = createServer((req, res) => {
     const url = decodeURIComponent((req.url || '/').split('?')[0]);
     let file = path.join(DIST, url === '/' ? 'index.html' : url);
     if (!file.startsWith(DIST) || !existsSync(file) || statSync(file).isDirectory()) {
       file = path.join(DIST, 'index.html');
     }
+    let body = cache.get(file);
+    if (!body) {
+      body = readFileSync(file);
+      cache.set(file, body);
+    }
     res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });
-    res.end(readFileSync(file));
+    res.end(body);
   });
   return new Promise((resolve) => {
     server.listen(0, '127.0.0.1', () => resolve({ server, port: server.address().port }));
@@ -135,17 +150,12 @@ async function waitForSlideReady(page) {
     await Promise.all(
       pending.map((im) => new Promise((res) => { im.onload = im.onerror = res; }))
     );
-    await new Promise((res) => requestAnimationFrame(() => requestAnimationFrame(res)));
-    const anims = document.getAnimations().filter((a) => {
-      if (a.playState === 'finished' || a.playState === 'idle') return false;
-      return a.effect?.getComputedTiming?.().iterations !== Infinity;
-    });
-    if (anims.length) {
-      await Promise.race([
-        Promise.all(anims.map((a) => a.finished.catch(() => {}))),
-        new Promise((res) => setTimeout(res, 1200)),
-      ]);
+    for (const anim of document.getAnimations()) {
+      const infinite = anim.effect?.getComputedTiming?.().iterations === Infinity;
+      if (infinite) anim.cancel();
+      else anim.finish();
     }
+    await new Promise((res) => requestAnimationFrame(() => requestAnimationFrame(res)));
   });
 }
 
@@ -180,7 +190,9 @@ async function main() {
 
   const shots = new Array(TOTAL);
   const shotOptions =
-    FORMAT === 'jpeg' ? { type: 'jpeg', quality: QUALITY } : { type: 'png' };
+    FORMAT === 'jpeg'
+      ? { type: 'jpeg', quality: QUALITY, optimizeForSpeed: true }
+      : { type: 'png' };
   let finished = 0;
 
   // 每个浏览器负责一段连续页码，用 #slide=N 直达段首再逐页截图
@@ -196,7 +208,14 @@ async function main() {
       chunks.map(async ([start, end]) => {
         const browser = await puppeteer.launch({
           headless: 'new',
-          args: ['--no-sandbox', '--disable-setuid-sandbox'],
+          args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-extensions',
+            '--disable-background-networking',
+            '--mute-audio',
+          ],
           protocolTimeout: 120000,
         });
         browsers.push(browser);
@@ -207,7 +226,8 @@ async function main() {
           height: SLIDE_H + 128,
           deviceScaleFactor: SCALE,
         });
-        await page.goto(`${url}#slide=${start}`, { waitUntil: 'networkidle0', timeout: 60000 });
+        await page.goto(`${url}#slide=${start}`, { waitUntil: 'domcontentloaded', timeout: 60000 });
+        await page.waitForSelector(SLIDE_SELECTOR, { timeout: 20000 });
         await page.addStyleTag({ content: EXPORT_CSS });
         await waitForSlideReady(page);
 

@@ -1,0 +1,1265 @@
+{
+  "meta": {
+    "months": [
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月"
+    ],
+    "competitorMonths": [
+      "6月",
+      "7月",
+      "8月",
+      "9月"
+    ]
+  },
+  "products": {
+    "smart": {
+      "name": "慕思智能床",
+      "mention_rate": [
+        73.6,
+        87.8,
+        89.4,
+        91.1,
+        86.6
+      ],
+      "top1_mention_rate": [
+        40.1,
+        41.1,
+        42.8,
+        45.6,
+        37.3
+      ],
+      "top3_mention_rate": [
+        65.6,
+        69.4,
+        76.7,
+        76.7,
+        64.2
+      ],
+      "influence_rank": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "ai": {
+      "name": "慕思AI床垫",
+      "mention_rate": [
+        82.4,
+        88.9,
+        90.6,
+        85.6,
+        88.9
+      ],
+      "top1_mention_rate": [
+        51,
+        61.7,
+        60,
+        60,
+        55
+      ],
+      "top3_mention_rate": [
+        78.5,
+        80.6,
+        81.7,
+        80.6,
+        82.2
+      ],
+      "influence_rank": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "mattress": {
+      "name": "慕思床垫",
+      "mention_rate": [
+        null,
+        64.2,
+        75.8,
+        83.3,
+        81.1
+      ],
+      "top1_mention_rate": [
+        null,
+        21.7,
+        24.2,
+        33.3,
+        22.2
+      ],
+      "top3_mention_rate": [
+        null,
+        36.5,
+        48.3,
+        43.3,
+        37.8
+      ],
+      "influence_rank": [
+        null,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "competitors": {
+    "smart": {
+      "mention": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 87.8,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 76.7,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "MPE",
+            "value": 52.8,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "喜临门",
+            "value": 30,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "舒达",
+            "value": 28.3,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 89.4,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 70.6,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 34.4,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "8H",
+            "value": 32.2,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "MPE",
+            "value": 28.3,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 91.1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 70,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "梦百合",
+            "value": 41.1,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "喜临门",
+            "value": 40,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "8H",
+            "value": 35,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 86.6,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 73.1,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 56.7,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "MPE",
+            "value": 37.3,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "梦百合",
+            "value": 33.3,
+            "isTarget": false
+          }
+        ]
+      ],
+      "top1": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 41.1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 24.4,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "MPE",
+            "value": 12.8,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "慕思AI床垫",
+            "value": 5,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "8H",
+            "value": 2.2,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 42.8,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 32.2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "MPE",
+            "value": 3.9,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "舒达",
+            "value": 3.3,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "淘布斯利普",
+            "value": 2.2,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 45.6,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 27.8,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "慕思AI床垫",
+            "value": 5,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "梦百合",
+            "value": 3.3,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "MPE",
+            "value": 2.8,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 37.3,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 28.4,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "MPE",
+            "value": 7.5,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "喜临门",
+            "value": 3.5,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "慕思AI床垫",
+            "value": 3.5,
+            "isTarget": false
+          }
+        ]
+      ],
+      "influence": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "MPE",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "喜临门",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "舒达",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "8H",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "MPE",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "梦百合",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "8H",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思智能床",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "舒福德",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "MPE",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "梦百合",
+            "value": 5,
+            "isTarget": false
+          }
+        ]
+      ]
+    },
+    "ai": {
+      "mention": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 88.9,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 66.7,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "HEKA",
+            "value": 55,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "舒达",
+            "value": 50,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "梦百合",
+            "value": 31.1,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 90.6,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 57.2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "舒达",
+            "value": 34.4,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "顾家家居",
+            "value": 30,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "慕思智能床",
+            "value": 28.9,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 85.6,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 73.3,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "HEKA",
+            "value": 42.8,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "8H",
+            "value": 33.3,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "梦百合",
+            "value": 31.7,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 88.9,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 72.8,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "HEKA",
+            "value": 42.8,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "舒达",
+            "value": 37.2,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "8H",
+            "value": 28.9,
+            "isTarget": false
+          }
+        ]
+      ],
+      "top1": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 61.7,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "HEKA",
+            "value": 13.3,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "慕思智能床",
+            "value": 7.2,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "喜临门",
+            "value": 6.7,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "8H",
+            "value": 2.2,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 60,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "慕思智能床",
+            "value": 10.6,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "HEKA",
+            "value": 4.4,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "喜临门",
+            "value": 4.4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "顾家家居",
+            "value": 4.4,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 60,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "慕思智能床",
+            "value": 9.4,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 7.2,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "HEKA",
+            "value": 5,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "8H",
+            "value": 2.2,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 55,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "HEKA",
+            "value": 13.3,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 10,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "舒达",
+            "value": 3.9,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "MPE",
+            "value": 2.8,
+            "isTarget": false
+          }
+        ]
+      ],
+      "influence": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "HEKA",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "舒达",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "梦百合",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "舒达",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "慕思智能床",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "顾家家居",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "HEKA",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "慕思智能床",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "梦百合",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思AI床垫",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "HEKA",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "舒达",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "MPE",
+            "value": 5,
+            "isTarget": false
+          }
+        ]
+      ]
+    },
+    "mattress": {
+      "mention": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 64.2,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 55.8,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "雅兰",
+            "value": 52.5,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "舒达",
+            "value": 47.5,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "丝涟",
+            "value": 46.7,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 75.8,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 52.5,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "金可儿",
+            "value": 50.8,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "丝涟",
+            "value": 50,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "舒达",
+            "value": 48.3,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 83.3,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "金可儿",
+            "value": 62.2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "雅兰",
+            "value": 62.2,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "丝涟",
+            "value": 56.7,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "喜临门",
+            "value": 56.7,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 81.1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 68.9,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "金可儿",
+            "value": 64.4,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "丝涟",
+            "value": 56.7,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "雅兰",
+            "value": 55.6,
+            "isTarget": false
+          }
+        ]
+      ],
+      "top1": [
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 21.7,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 11.7,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "TLK",
+            "value": 10,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "丝涟",
+            "value": 7.5,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "席梦思",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 24.2,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "丝涟",
+            "value": 13.3,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 10,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "TLK特蕾卡",
+            "value": 5.8,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "萌小叁",
+            "value": 5.8,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 33.3,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 15.6,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "TLK特蕾卡",
+            "value": 6.7,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "席梦思",
+            "value": 5.6,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "海丝腾",
+            "value": 5.6,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "喜临门",
+            "value": 26.7,
+            "isTarget": false
+          },
+          {
+            "rank": 2,
+            "name": "慕思",
+            "value": 22.2,
+            "isTarget": true
+          },
+          {
+            "rank": 3,
+            "name": "席梦思",
+            "value": 11.1,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "丝涟",
+            "value": 6.7,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "蓝盒子",
+            "value": 5.6,
+            "isTarget": false
+          }
+        ]
+      ],
+      "influence": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "丝涟",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "喜临门",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "金可儿",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "舒达",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "雅兰",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "金可儿",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "喜临门",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "丝涟",
+            "value": 5,
+            "isTarget": false
+          }
+        ],
+        [
+          {
+            "rank": 1,
+            "name": "慕思",
+            "value": 1,
+            "isTarget": true
+          },
+          {
+            "rank": 2,
+            "name": "喜临门",
+            "value": 2,
+            "isTarget": false
+          },
+          {
+            "rank": 3,
+            "name": "金可儿",
+            "value": 3,
+            "isTarget": false
+          },
+          {
+            "rank": 4,
+            "name": "丝涟",
+            "value": 4,
+            "isTarget": false
+          },
+          {
+            "rank": 5,
+            "name": "雅兰",
+            "value": 5,
+            "isTarget": false
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -38,7 +38,6 @@ export default defineConfig({
   server: {
     host: true,
     port: 7646,
-    strictPort: true,
     allowedHosts: true,
   },
 })

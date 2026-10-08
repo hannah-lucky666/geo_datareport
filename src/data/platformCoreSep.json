@@ -1,0 +1,178 @@
+{
+  "products": {
+    "smart": {
+      "name": "慕思智能床",
+      "project_id": 182,
+      "date": "2026-09-21",
+      "mention_rate": 86.6,
+      "top1_mention_rate": 37.3,
+      "top3_mention_rate": 64.2,
+      "platforms": [
+        {
+          "platform_id": 1,
+          "platform_name": "DeepSeek",
+          "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+          "mention_rate": 90.3,
+          "top1_mention_rate": 54.8,
+          "top3_mention_rate": 87.1
+        },
+        {
+          "platform_id": 2,
+          "platform_name": "豆包",
+          "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+          "mention_rate": 97.1,
+          "top1_mention_rate": 23.5,
+          "top3_mention_rate": 58.8
+        },
+        {
+          "platform_id": 3,
+          "platform_name": "元宝",
+          "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+          "mention_rate": 63.2,
+          "top1_mention_rate": 26.3,
+          "top3_mention_rate": 52.6
+        },
+        {
+          "platform_id": 4,
+          "platform_name": "文心",
+          "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+          "mention_rate": 97,
+          "top1_mention_rate": 51.5,
+          "top3_mention_rate": 78.8
+        },
+        {
+          "platform_id": 5,
+          "platform_name": "通义千问",
+          "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+          "mention_rate": 77.1,
+          "top1_mention_rate": 5.7,
+          "top3_mention_rate": 31.4
+        },
+        {
+          "platform_id": 6,
+          "platform_name": "kimi",
+          "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+          "mention_rate": 100,
+          "top1_mention_rate": 70,
+          "top3_mention_rate": 83.3
+        }
+      ]
+    },
+    "ai": {
+      "name": "慕思AI床垫",
+      "project_id": 181,
+      "date": "2026-09-18",
+      "mention_rate": 88.9,
+      "top1_mention_rate": 55,
+      "top3_mention_rate": 82.2,
+      "platforms": [
+        {
+          "platform_id": 1,
+          "platform_name": "DeepSeek",
+          "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+          "mention_rate": 100,
+          "top1_mention_rate": 96.7,
+          "top3_mention_rate": 100
+        },
+        {
+          "platform_id": 2,
+          "platform_name": "豆包",
+          "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+          "mention_rate": 80,
+          "top1_mention_rate": 20,
+          "top3_mention_rate": 73.3
+        },
+        {
+          "platform_id": 3,
+          "platform_name": "元宝",
+          "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+          "mention_rate": 73.3,
+          "top1_mention_rate": 36.7,
+          "top3_mention_rate": 66.7
+        },
+        {
+          "platform_id": 4,
+          "platform_name": "文心",
+          "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+          "mention_rate": 100,
+          "top1_mention_rate": 70,
+          "top3_mention_rate": 86.7
+        },
+        {
+          "platform_id": 5,
+          "platform_name": "通义千问",
+          "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+          "mention_rate": 80,
+          "top1_mention_rate": 46.7,
+          "top3_mention_rate": 80
+        },
+        {
+          "platform_id": 6,
+          "platform_name": "kimi",
+          "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+          "mention_rate": 100,
+          "top1_mention_rate": 60,
+          "top3_mention_rate": 86.7
+        }
+      ]
+    },
+    "mattress": {
+      "name": "慕思床垫",
+      "project_id": 239,
+      "date": "2026-09-23",
+      "mention_rate": 81.1,
+      "top1_mention_rate": 22.2,
+      "top3_mention_rate": 37.8,
+      "platforms": [
+        {
+          "platform_id": 1,
+          "platform_name": "DeepSeek",
+          "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+          "mention_rate": 93.3,
+          "top1_mention_rate": 33.3,
+          "top3_mention_rate": 53.3
+        },
+        {
+          "platform_id": 2,
+          "platform_name": "豆包",
+          "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+          "mention_rate": 100,
+          "top1_mention_rate": 33.3,
+          "top3_mention_rate": 46.7
+        },
+        {
+          "platform_id": 3,
+          "platform_name": "元宝",
+          "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+          "mention_rate": 46.7,
+          "top1_mention_rate": 13.3,
+          "top3_mention_rate": 26.7
+        },
+        {
+          "platform_id": 4,
+          "platform_name": "文心",
+          "platform_logo": "https://app.geoindexfuture.com/logo/wenxin.webp",
+          "mention_rate": 86.7,
+          "top1_mention_rate": 20,
+          "top3_mention_rate": 46.7
+        },
+        {
+          "platform_id": 5,
+          "platform_name": "通义千问",
+          "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+          "mention_rate": 66.7,
+          "top1_mention_rate": 0,
+          "top3_mention_rate": 13.3
+        },
+        {
+          "platform_id": 6,
+          "platform_name": "kimi",
+          "platform_logo": "https://app.geoindexfuture.com/logo/kimi.png",
+          "mention_rate": 93.3,
+          "top1_mention_rate": 33.3,
+          "top3_mention_rate": 40
+        }
+      ]
+    }
+  }
+}
